@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content_language" content="ru">
+  <meta name="description" content="Supimer"> 
+  <title>Supimer</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="libs/swiperjs/swiper.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head> 
+ 
+<body> 
+
+  <header>
+    <div class="header__top">
+      <div class="mainContainer">
+        <div class="header__top__wrapp">
+          <ul class="header__top__nav">
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="news.html">Blog</a></li>
+          </ul>
+          <div class="header__top__panel">
+            <div class="language-toggler click-item" data-action="languageToggler">
+              <div class="language-toggler__list">
+                <div class="language-toggler__item active">
+                  <div class="icon" style="background-image: url('img/eng-lang-icon.svg');"></div>
+                  <span>en</span>
+                </div>
+                <a class="language-toggler__item" href="#">
+                  <div class="icon" style="background-image: url('img/flag-germany.png');"></div>
+                  <span>de</span>
+                </a>
+                <a class="language-toggler__item" href="#">
+                  <div class="icon" style="background-image: url('img/China_Flag_-_Alternative.svg.png');"></div>
+                  <span>ch</span>
+                </a>
+              </div>
+            </div>
+            <div class="header__top__login">
+              <div class="icon">
+                <img src="img/login-icon.svg" alt="">
+              </div>
+              <a href="sign_in.html">Sign in</a>
+              <a href="sign_up.html">Sign up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mainContainer">
+      <div class="header__main">
+        <div class="header__nav">
+          <a href="index.html" class="header__logo">
+            <img src="img/logo.svg" alt="">
+          </a>
+          <div class="header__togglers">
+            <a href="sign_up.html">
+              <img src="img/profile-icon.svg" alt="">
+            </a>
+            <button class="header__toggler click-item" data-action="headerToggler">
+              <span></span>
+            </button>
+          </div>
+        </div>
+        <div class="header__content">
+          <ul class="header__menu">
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="about.html">How it works</a></li>
+            <li><a href="#">Become Manufacturing Partner</a></li>
+            <li class="mob-link"><a href="about.html">About us</a></li>
+            <li class="mob-link"><a href="contacts.html">Contacts</a></li>
+            <li class="mob-link"><a href="news.html">Blog</a></li>
+          </ul>
+          <div class="language-toggler click-item" data-action="languageToggler">
+            <div class="language-toggler__list">
+              <div class="language-toggler__item active">
+                <div class="icon" style="background-image: url('img/eng-lang-icon.svg');"></div>
+                <span>en</span>
+              </div>
+              <a class="language-toggler__item" href="#">
+                <div class="icon" style="background-image: url('img/flag-germany.png');"></div>
+                <span>de</span>
+              </a>
+              <a class="language-toggler__item" href="#">
+                <div class="icon" style="background-image: url('img/China_Flag_-_Alternative.svg.png');"></div>
+                <span>ch</span>
+              </a>
+            </div>
+          </div>
+          <div class="header__links">
+            <a href="find_order.html">Place an order</a>
+            <a href="find_order.html">Find an order</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<main>
+  <section class="pricing">
+    <div class="mainContainer">
+      <ul class="top-breadcrumbs">
+        <li><a href="#">Main page</a></li>
+        <li class="active"><a href="#">Find an order</a></li>
+      </ul>
+
+      <div class="pricing__heading">Pricing</div>
+      <div class="pricing__descr">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod tempor</div>
+
+      <div class="pricing__nav ">
+        <button class="tabs-nav__item is-active" data-tab-name="tab-customers">For customers</button>
+        <button class="tabs-nav__item" data-tab-name="tab-performes">For performes</button>
+      </div>
+
+      <div class="tabs-content">
+        <div class="tabs-content__item tab-customers is-active">
+          <div class="pricing-section__slider swiper-container">
+            <div class="pricing__list swiper-wrapper">
+              <div class="pricing__item free swiper-slide">
+                <div class="pricing__item__name">Free</div>
+                <div class="pricing__item__price">0 <span>€</span></div>
+                <div class="pricing__item__descr">1 time only</div>
+                <ul class="pricing__item__params">
+                  <li>By default, the profile is hidden</li>
+                  <li>Limit on placing oprders: 3</li>
+                </ul>
+                <a href="#" class="pricing__item__link">Subscribe</a>
+              </div>
+      
+              <div class="pricing__item short swiper-slide">
+                <div class="pricing__item__name">Short</div>
+                <div class="pricing__item__price">25 <span>€</span></div>
+                <div class="pricing__item__tariff">
+                  <span>1 month</span>
+                  <input type="checkbox" id="short-variant">
+                  <label class="pricing__item__tariff__icon" for="short-variant"></label>
+                  <span>3 month</span>
+                </div>
+                <ul class="pricing__item__params">
+                  <li>Profile is open to everyone</li>
+                  <li>Limit on placing oprders: 5</li>
+                  <li>Monitor order status</li>
+                </ul>
+                <a href="#" class="pricing__item__link">Subscribe</a>
+                <div class="pricing__label popular">
+                  <div class="icon">
+                    <img src="img/popular-icon.svg" alt="">
+                  </div>
+                  <p>most popular</p>
+                </div>
+              </div>
+      
+              <div class="pricing__item middle swiper-slide">
+                <div class="pricing__item__name">Middle</div>
+                <div class="pricing__item__price">65 <span>€</span></div>
+                <div class="pricing__item__tariff">
+                  <span>1 month</span>
+                  <input type="checkbox" id="middle-variant">
+                  <label class="pricing__item__tariff__icon" for="middle-variant"></label>
+                  <span>3 month</span>
+                </div>
+                <ul class="pricing__item__params">
+                  <li>Profile is open to everyone</li>
+                  <li>No limit on placing orders</li>
+                  <li>Monitor order status</li>
+                </ul>
+                <a href="#" class="pricing__item__link">Subscribe</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tabs-content__item tab-performes">
+          <div class="pricing-section__slider swiper-container">
+            <div class="pricing__list swiper-wrapper">
+              <div class="pricing__item free swiper-slide">
+                <div class="pricing__item__name">Free</div>
+                <div class="pricing__item__price">0 <span>€</span></div>
+                <div class="pricing__item__descr">1 time only</div>
+                <ul class="pricing__item__params">
+                  <li>By default, the profile is hidden</li>
+                  <li>Access to the full version of the order</li>
+                  <li>Limit for submitting offers: 2</li>
+                </ul>
+                <a href="#" class="pricing__item__link">Subscribe</a>
+              </div>
+      
+              <div class="pricing__item short swiper-slide">
+                <div class="pricing__item__name">Short</div>
+                <div class="pricing__item__price">75 <span>€</span></div>
+                <div class="pricing__item__tariff">
+                  <span>1 month</span>
+                  <input type="checkbox" id="short-variant2">
+                  <label class="pricing__item__tariff__icon" for="short-variant2"></label>
+                  <span>3 month</span>
+                </div>
+                <ul class="pricing__item__params">
+                  <li>Access to contacts/customer profile</li>
+                  <li>Access to the full version of the order</li>
+                  <li>Limit for submitting offers: 10</li>
+                </ul>
+                <a href="#" class="pricing__item__link">Subscribe</a>
+                <div class="pricing__label popular">
+                  <div class="icon">
+                    <img src="img/popular-icon.svg" alt="">
+                  </div>
+                  <p>most popular</p>
+                </div>
+              </div>
+      
+              <div class="pricing__item middle swiper-slide">
+                <div class="pricing__item__name">Middle</div>
+                <div class="pricing__item__price">125 <span>€</span></div>
+                <div class="pricing__item__tariff">
+                  <span>1 month</span>
+                  <input type="checkbox" id="middle-variant2">
+                  <label class="pricing__item__tariff__icon" for="middle-variant2"></label>
+                  <span>3 month</span>
+                </div>
+                <ul class="pricing__item__params">
+                  <li>Access to contacts/customer profile</li>
+                  <li>Access to the full version of the order</li>
+                  <li>No limit for submitting offers</li>
+                  <li>Recommended Artist status</li>
+                </ul>
+                <a href="#" class="pricing__item__link">Subscribe</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bglist">
+      <div class="bgel"></div>
+      <div class="bgel"></div>
+    </div>
+  </section>
+
+  <div class="tabs-content">
+    <div class="tabs-content__item tab-customers is-active">
+  <section class="services-section main-section">
+    <div class="mainContainer">
+      <div class="main-heading">Additional services</div>
+      <div class="services-section__descr">Withdrawn as a bonus when submitting an application</div>
+      <div class="services-section__wrapp">
+        <div class="services-section__preview">
+          <img src="img/service-preview-1.svg" alt="">
+        </div>
+        <div class="services-section__container">
+          <div class="services-section__issue">
+            <div class="services-section__list">
+              <div class="services-section__item">
+                <div class="services-section__item__name">Display application at the top of the list (for 24 hours)</div>
+                <div class="services-section__item__price">10 <span>€</span></div>
+                <div class="box-check">
+                  <input type="checkbox" id="service1" checked>
+                  <label for="service1"></label>
+                </div>
+              </div>
+              <div class="services-section__item">
+                <div class="services-section__item__name">Highlight application in bold/red</div>
+                <div class="services-section__item__price">5 <span>€</span></div>
+                <div class="box-check">
+                  <input type="checkbox" id="service2">
+                  <label for="service2"></label>
+                </div>
+              </div>
+              <div class="services-section__item">
+                <div class="services-section__item__name">Raise the application to the top of the list</div>
+                <div class="services-section__item__price">5 <span>€</span></div>
+                <div class="box-check">
+                  <input type="checkbox" id="service3">
+                  <label for="service3"></label>
+                </div>
+              </div>
+              <div class="services-section__item">
+                <div class="services-section__item__name">Display application at the top of the list (for 24 hours)</div>
+                <div class="services-section__item__price">10 <span>€</span></div>
+                <div class="box-check">
+                  <input type="checkbox" id="service4">
+                  <label for="service4"></label>
+                </div>
+              </div>
+              <div class="services-section__item">
+                <div class="services-section__item__name">Highlight application in bold/red</div>
+                <div class="services-section__item__price">5 <span>€</span></div>
+                <div class="box-check">
+                  <input type="checkbox" id="service5">
+                  <label for="service5"></label>
+                </div>
+              </div>
+              <div class="services-section__item">
+                <div class="services-section__item__name">Raise the application to the top of the list</div>
+                <div class="services-section__item__price">5 <span>€</span></div>
+                <div class="box-check">
+                  <input type="checkbox" id="service6">
+                  <label for="service6"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="services-section__link">Order</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <section class="faq-section">
+    <div class="mainContainer">
+      <div class="main-heading">FAQ</div>
+      <div class="faq-section__container swiper-container">
+        <div class="faq-section__list swiper-wrapper">
+          <div class="faq-section__item swiper-slide">
+            <div class="faq-section__item__heading">How does subscription service work?</div>
+            <div class="faq-section__item__descr">Subscription provides you with advanced functionality to speed up your search for an expert or customer. Are you interested in getting the best deals? Check out our "Prices" page and choose the offer that suits you best!</div>
+          </div>
+          <div class="faq-section__item swiper-slide">
+            <div class="faq-section__item__heading">Is there any time limit for the starting subscription plan?</div>
+            <div class="faq-section__item__descr">There is no limit to the validity of the free account.</div>
+          </div>
+          <div class="faq-section__item swiper-slide">
+            <div class="faq-section__item__heading">Who is the audience for this site?</div>
+            <div class="faq-section__item__descr">The platform brings together customers and performers in the metal, woodworking, and 3D printing industries. So, if you need to place an order related to these areas, you can submit it on our website and choose a contractor. If you offer services in these fields, you can register a company and get recurring orders.</div>
+          </div>
+          <div class="faq-section__item swiper-slide">
+            <div class="faq-section__item__heading">Where will my parts be produced?</div>
+            <div class="faq-section__item__descr">Once you place an order, the performers registered on our platform will offer individual proposals regarding the production of your parts. The best partners are specialists/workshops that have the necessary capabilities and readiness to do your job so that they can get started on your order immediately. Most of our orders Once you place an order, the performers registered on our platform will offer individual proposals regarding the production of your parts. The best partners are specialists/workshops that have the necessary capabilities and readiness to do your job so that they can get started on your order immediately. Most of our orders</div>
+          </div>
+          <div class="faq-section__item swiper-slide">
+            <div class="faq-section__item__heading">What about shipping costs?</div>
+            <div class="faq-section__item__descr">The shipping arrangements are made individually with your chosen performer. When placing an order, please specify any shipping preferences/requirements. Both you or the performer can pay for the delivery.</div>
+          </div>
+          <div class="faq-section__item swiper-slide">
+            <div class="faq-section__item__heading">What models or drawings do I need to have to get an offer?</div>
+            <div class="faq-section__item__descr">Our platform supports downloading drawings in popular formats (STEP | STEP | SLDPRT | IPT | 3D XML | PRT | SAT). No need to worry if you don't have a 3D model. You can send a PDF or any other type of file.</div>
+          </div>
+          <div class="faq-section__item swiper-slide">
+            <div class="faq-section__item__heading">In which industries do you work?</div>
+            <div class="faq-section__item__descr">Our platform covers specialists and production facilities for all industries requiring metal, wood and polymer parts, such as automotive, machinery, railroads, aerospace, energy and many other sectors.</div>
+          </div>
+          <div class="faq-section__item swiper-slide">
+            <div class="faq-section__item__heading">What are the benefits of working with the platform?</div>
+            <div class="faq-section__item__descr">Users of Oxese platform can be both material suppliers and companies that can fulfill orders placed by platform customers. In return, we provide win-win terms of cooperation that are discussed individually. Fill in the feedback form, and we will contact you.</div>
+          </div>
+        </div>
+      </div>
+      <div class="faq-section__descr">
+        <p>Didn't find the answer to your question?</p>
+        <p>Do not hesitate, ask everything that interests you!</p>
+      </div>
+      <a href="#" class="faq-section__link">Ask a question</a>
+    </div>
+  </section>
+</main>
+
+  <footer>
+    <div class="mainContainer">
+      <div class="footer__wrapp">
+        <div class="footer__info">
+          <div class="footer__logo">
+            <img src="img/footer-logo.svg" alt="">
+          </div>
+          <div class="footer__descr">
+            We help to find new customers, increase demand for products and services of enterprises, as well as significantly reduce the time it takes to find suppliers of industrial products
+          </div>
+          <a href="tel:+79227373101" class="footer__phone">+7 (922) 737-31-01</a>
+          <a href="mailto:info@oxese.com" class="footer__mail">info@oxese.com</a>
+          <div class="footer__socials">
+            <a href="#">
+              <img src="img/fb-icon.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="img/linked-icon.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="img/youtube-icon.svg" alt="">
+            </a>
+          </div>
+          <div class="footer__terms">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="footer__content">
+          <div class="footer__menu">
+            <div class="footer__menu__list">
+              <div class="footer__menu__list__heading click-item" data-action="toggle">metall</div>
+              <div class="footer__menu__list__content">
+                <a href="#">CNC Machining</a>
+                <a href="#">Sheet Metal Processing</a>
+                <a href="#">Bending</a>
+                <a href="#">Surface Treatment</a>
+                <a href="#">Welding</a>
+                <a href="#">Tubes</a>
+              </div>
+            </div>
+            <div class="footer__menu__list">
+              <div class="footer__menu__list__heading click-item" data-action="toggle">wood</div>
+              <div class="footer__menu__list__content">
+                <a href="#">CNC Woodworking</a>
+                <a href="#">Sign Cutting</a>
+                <a href="#">Edge Banding</a>
+                <a href="#">Lacquer finishing</a>
+                <a href="#">Wood Suppliers</a>
+              </div>
+            </div>
+            <div class="footer__menu__list">
+              <div class="footer__menu__list__heading click-item" data-action="toggle">company</div>
+              <div class="footer__menu__list__content">
+                <a href="pricing.html">Pricing</a>
+                <a href="about.html">About us</a>
+                <a href="about.html">How it works</a>
+                <a href="news.html">News</a>
+                <a href="#">Become Manufacturing Partner</a>
+                <a href="contacts.html">Contacts</a>
+              </div>
+            </div>
+          </div>
+          
+            <div class="footer__subscribe">
+              <div class="footer__subscribe__descr">Subscribe to the most important news (1-2 emails per month)</div>
+              <form action="" class="footer__subscribe__form">
+                <input type="text" placeholder="Email" required>
+                <button><span>Subscribe</span> <img src="img/send-icon.svg" alt=""></button>
+              </form>
+            </div>
+            <div class="language-toggler click-item" data-action="languageToggler">
+              <div class="language-toggler__list">
+                <div class="language-toggler__item active">
+                  <div class="icon" style="background-image: url('img/eng-lang-icon.svg');"></div>
+                  <span>en</span>
+                </div>
+                <a class="language-toggler__item" href="#">
+                  <div class="icon" style="background-image: url('img/flag-germany.png');"></div>
+                  <span>de</span>
+                </a>
+                <a class="language-toggler__item" href="#">
+                  <div class="icon" style="background-image: url('img/China_Flag_-_Alternative.svg.png');"></div>
+                  <span>ch</span>
+                </a>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      © Copyright 2021 Oxese. All rights reserved
+    </div>
+  </footer>
+
+
+
+  <script src="libs/swiperjs/swiper.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/main.js"></script>
+  
+  <script>
+    if(window.innerWidth < 993){
+      let mySwiper = new Swiper('.pricing-section__slider', {
+        direction: 'horizontal',
+        slidesPerView: "auto",
+        spaceBetween: 16,
+      });
+
+      document.querySelector('.pricing .tabs-content').classList.add('loaded');
+
+      let mySwiper2 = new Swiper('.faq-section__container', {
+        direction: 'horizontal',
+        slidesPerView: "auto",
+        spaceBetween: 24,
+      });
+    }
+  </script>
+
+</body>
+</html>

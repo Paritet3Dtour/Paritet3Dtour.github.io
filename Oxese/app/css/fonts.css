@@ -1,0 +1,30 @@
+
+@font-face {
+  font-family: 'Circle Bold';
+  src: url('../fonts/Circe/Circe-Bold.ttf');
+  src: url('../fonts/Circe/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Circe/Circe-Bold.woff') format('woff'),
+    url('../fonts/Circe/Circe-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'Circle Regular';
+  src: url('../fonts/Circe/Circe-Regular.eot');
+  src: url('../fonts/Circe/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Circe/Circe-Regular.woff') format('woff'),
+    url('../fonts/Circe/Circe-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circle Light';
+  src: url('../fonts/Circe/Circe-Light.eot');
+  src: url('../fonts/Circe/Circe-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Circe/Circe-Light.woff') format('woff'),
+    url('../fonts/Circe/Circe-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

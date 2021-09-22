@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content_language" content="ru">
+  <meta name="description" content="Supimer"> 
+  <title>Supimer</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="libs/swiperjs/swiper.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head> 
+ 
+<body> 
+
+  <header>
+    <div class="header__top">
+      <div class="mainContainer">
+        <div class="header__top__wrapp">
+          <ul class="header__top__nav">
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="news.html">Blog</a></li>
+          </ul>
+          <div class="header__top__panel">
+            <div class="language-toggler click-item" data-action="languageToggler">
+              <div class="language-toggler__list">
+                <div class="language-toggler__item active">
+                  <div class="icon" style="background-image: url('img/eng-lang-icon.svg');"></div>
+                  <span>en</span>
+                </div>
+                <a class="language-toggler__item" href="#">
+                  <div class="icon" style="background-image: url('img/flag-germany.png');"></div>
+                  <span>de</span>
+                </a>
+                <a class="language-toggler__item" href="#">
+                  <div class="icon" style="background-image: url('img/China_Flag_-_Alternative.svg.png');"></div>
+                  <span>ch</span>
+                </a>
+              </div>
+            </div>
+            <div class="header__top__login">
+              <div class="icon">
+                <img src="img/login-icon.svg" alt="">
+              </div>
+              <a href="sign_in.html">Sign in</a>
+              <a href="sign_up.html">Sign up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mainContainer">
+      <div class="header__main">
+        <a href="index.html" class="header__logo">
+          <img src="img/logo.svg" alt="">
+        </a>
+        <ul class="header__menu">
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">How it works</a></li>
+          <li><a href="#">Become Manufacturing Partner</a></li>
+        </ul>
+        <div class="header__links">
+          <a href="find_order.html">Place an order</a>
+          <a href="find_order.html">Find an order</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<main>
+  <section class="profile">
+    <div class="profile__top">
+      <div class="mainContainer">
+        <div class="profile__top__wrapp">
+          <div class="profile__user">
+            <div class="profile__user__avatar" style="background-image: url('img/profile-avatar.jpg');"></div>
+            <div class="profile__user__info">
+              <div class="profile__user__name">Alex Key</div>
+              <div class="profile__user__location">
+                <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 1.00146e-08C5.89206 -0.00010539 3.86926 0.831759 2.37124 2.31479C0.873231 3.79782 0.0210794 5.81216 0 7.92C0 13.4 7.05 19.5 7.35 19.76C7.53113 19.9149 7.76165 20.0001 8 20.0001C8.23835 20.0001 8.46887 19.9149 8.65 19.76C9 19.5 16 13.4 16 7.92C15.9789 5.81216 15.1268 3.79782 13.6288 2.31479C12.1307 0.831759 10.1079 -0.00010539 8 1.00146e-08ZM8 17.65C6.33 16.06 2 11.65 2 7.92C2 6.3287 2.63214 4.80258 3.75736 3.67736C4.88258 2.55214 6.4087 1.92 8 1.92C9.5913 1.92 11.1174 2.55214 12.2426 3.67736C13.3679 4.80258 14 6.3287 14 7.92C14 11.62 9.67 16.06 8 17.65Z" fill="white"/>
+                  <path d="M8 4C7.30777 4 6.63108 4.20527 6.05551 4.58986C5.47993 4.97444 5.03133 5.52107 4.76642 6.16061C4.50152 6.80015 4.4322 7.50388 4.56725 8.18282C4.7023 8.86175 5.03564 9.48539 5.52513 9.97487C6.01461 10.4644 6.63825 10.7977 7.31719 10.9327C7.99612 11.0678 8.69985 10.9985 9.33939 10.7336C9.97894 10.4687 10.5256 10.0201 10.9101 9.4445C11.2947 8.86892 11.5 8.19223 11.5 7.5C11.5 6.57174 11.1313 5.6815 10.4749 5.02513C9.8185 4.36875 8.92826 4 8 4ZM8 9C7.70333 9 7.41332 8.91203 7.16665 8.7472C6.91997 8.58238 6.72771 8.34811 6.61418 8.07403C6.50065 7.79994 6.47095 7.49834 6.52882 7.20736C6.5867 6.91639 6.72956 6.64912 6.93934 6.43934C7.14912 6.22956 7.41639 6.0867 7.70737 6.02882C7.99834 5.97094 8.29994 6.00065 8.57403 6.11418C8.84812 6.22771 9.08238 6.41997 9.24721 6.66665C9.41203 6.91332 9.5 7.20333 9.5 7.5C9.5 7.89782 9.34197 8.27936 9.06066 8.56066C8.77936 8.84196 8.39783 9 8 9Z" fill="white"/>
+                </svg>                
+                <span>Munich, Germany</span>
+              </div>
+              <div class="profile__user__status offline">
+                Last online 28 minutes ago
+              </div>
+            </div>
+          </div>
+
+          <div class="profile__top__info">
+            <div class="profile__details">
+              <div class="profile__details__rating">
+                <div class="profile__details__rating__main">
+                  5
+                  <div class="stars">
+                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.189 4.51739L9.22178 3.94083L7.44834 0.345514C7.39991 0.247076 7.32022 0.167389 7.22178 0.118951C6.97491 -0.00292391 6.67491 0.0986386 6.55147 0.345514L4.77803 3.94083L0.810845 4.51739C0.70147 4.53301 0.60147 4.58458 0.524907 4.6627C0.432347 4.75784 0.381343 4.88583 0.383101 5.01855C0.384859 5.15127 0.439235 5.27786 0.534282 5.37051L3.40459 8.16895L2.72647 12.1205C2.71057 12.2124 2.72074 12.307 2.75583 12.3934C2.79093 12.4798 2.84953 12.5547 2.92501 12.6095C3.00049 12.6644 3.08982 12.6969 3.18288 12.7036C3.27593 12.7102 3.36898 12.6906 3.45147 12.6471L6.99991 10.7815L10.5483 12.6471C10.6452 12.6986 10.7577 12.7158 10.8655 12.6971C11.1374 12.6502 11.3202 12.3924 11.2733 12.1205L10.5952 8.16895L13.4655 5.37051C13.5437 5.29395 13.5952 5.19395 13.6108 5.08458C13.653 4.81114 13.4624 4.55801 13.189 4.51739Z" fill="#FFCE31"/>
+                    </svg>
+                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.189 4.51739L9.22178 3.94083L7.44834 0.345514C7.39991 0.247076 7.32022 0.167389 7.22178 0.118951C6.97491 -0.00292391 6.67491 0.0986386 6.55147 0.345514L4.77803 3.94083L0.810845 4.51739C0.70147 4.53301 0.60147 4.58458 0.524907 4.6627C0.432347 4.75784 0.381343 4.88583 0.383101 5.01855C0.384859 5.15127 0.439235 5.27786 0.534282 5.37051L3.40459 8.16895L2.72647 12.1205C2.71057 12.2124 2.72074 12.307 2.75583 12.3934C2.79093 12.4798 2.84953 12.5547 2.92501 12.6095C3.00049 12.6644 3.08982 12.6969 3.18288 12.7036C3.27593 12.7102 3.36898 12.6906 3.45147 12.6471L6.99991 10.7815L10.5483 12.6471C10.6452 12.6986 10.7577 12.7158 10.8655 12.6971C11.1374 12.6502 11.3202 12.3924 11.2733 12.1205L10.5952 8.16895L13.4655 5.37051C13.5437 5.29395 13.5952 5.19395 13.6108 5.08458C13.653 4.81114 13.4624 4.55801 13.189 4.51739Z" fill="#FFCE31"/>
+                    </svg>
+                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.189 4.51739L9.22178 3.94083L7.44834 0.345514C7.39991 0.247076 7.32022 0.167389 7.22178 0.118951C6.97491 -0.00292391 6.67491 0.0986386 6.55147 0.345514L4.77803 3.94083L0.810845 4.51739C0.70147 4.53301 0.60147 4.58458 0.524907 4.6627C0.432347 4.75784 0.381343 4.88583 0.383101 5.01855C0.384859 5.15127 0.439235 5.27786 0.534282 5.37051L3.40459 8.16895L2.72647 12.1205C2.71057 12.2124 2.72074 12.307 2.75583 12.3934C2.79093 12.4798 2.84953 12.5547 2.92501 12.6095C3.00049 12.6644 3.08982 12.6969 3.18288 12.7036C3.27593 12.7102 3.36898 12.6906 3.45147 12.6471L6.99991 10.7815L10.5483 12.6471C10.6452 12.6986 10.7577 12.7158 10.8655 12.6971C11.1374 12.6502 11.3202 12.3924 11.2733 12.1205L10.5952 8.16895L13.4655 5.37051C13.5437 5.29395 13.5952 5.19395 13.6108 5.08458C13.653 4.81114 13.4624 4.55801 13.189 4.51739Z" fill="#FFCE31"/>
+                    </svg>
+                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.189 4.51739L9.22178 3.94083L7.44834 0.345514C7.39991 0.247076 7.32022 0.167389 7.22178 0.118951C6.97491 -0.00292391 6.67491 0.0986386 6.55147 0.345514L4.77803 3.94083L0.810845 4.51739C0.70147 4.53301 0.60147 4.58458 0.524907 4.6627C0.432347 4.75784 0.381343 4.88583 0.383101 5.01855C0.384859 5.15127 0.439235 5.27786 0.534282 5.37051L3.40459 8.16895L2.72647 12.1205C2.71057 12.2124 2.72074 12.307 2.75583 12.3934C2.79093 12.4798 2.84953 12.5547 2.92501 12.6095C3.00049 12.6644 3.08982 12.6969 3.18288 12.7036C3.27593 12.7102 3.36898 12.6906 3.45147 12.6471L6.99991 10.7815L10.5483 12.6471C10.6452 12.6986 10.7577 12.7158 10.8655 12.6971C11.1374 12.6502 11.3202 12.3924 11.2733 12.1205L10.5952 8.16895L13.4655 5.37051C13.5437 5.29395 13.5952 5.19395 13.6108 5.08458C13.653 4.81114 13.4624 4.55801 13.189 4.51739Z" fill="#FFCE31"/>
+                    </svg>
+                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.189 4.51739L9.22178 3.94083L7.44834 0.345514C7.39991 0.247076 7.32022 0.167389 7.22178 0.118951C6.97491 -0.00292391 6.67491 0.0986386 6.55147 0.345514L4.77803 3.94083L0.810845 4.51739C0.70147 4.53301 0.60147 4.58458 0.524907 4.6627C0.432347 4.75784 0.381343 4.88583 0.383101 5.01855C0.384859 5.15127 0.439235 5.27786 0.534282 5.37051L3.40459 8.16895L2.72647 12.1205C2.71057 12.2124 2.72074 12.307 2.75583 12.3934C2.79093 12.4798 2.84953 12.5547 2.92501 12.6095C3.00049 12.6644 3.08982 12.6969 3.18288 12.7036C3.27593 12.7102 3.36898 12.6906 3.45147 12.6471L6.99991 10.7815L10.5483 12.6471C10.6452 12.6986 10.7577 12.7158 10.8655 12.6971C11.1374 12.6502 11.3202 12.3924 11.2733 12.1205L10.5952 8.16895L13.4655 5.37051C13.5437 5.29395 13.5952 5.19395 13.6108 5.08458C13.653 4.81114 13.4624 4.55801 13.189 4.51739Z" fill="#FFCE31"/>
+                    </svg>                      
+                  </div>
+                </div>
+                <div class="profile__details__rating__descr">avarage rating</div>
+              </div>
+              <div class="profile__details__experience">
+                <div class="profile__details__experience__main">2 years</div>
+                <div class="profile__details__experience__descr">on the stock exchange</div>
+              </div>
+            </div>
+            <div class="profile__top__nav">
+              <a href="#">Customer</a>
+              <a href="#" class="active">Performer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mainContainer">
+      <div class="profile__wrapp">
+        <div class="profile__info">
+          <div class="profile__info__container profile__info__about" id="profile_info_about">
+            <div class="profile__info__heading">About me</div>
+            <div class="profile__info__about__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+          </div>
+          <div class="profile__info__container profile__info__verified" id="profile_info_verified">
+            <div class="profile__info__heading">Verified by</div>
+            <ul class="profile__info__verified__list">
+              <li>Phone</li>
+              <li>Email</li>
+              <li>VAT Number</li>
+            </ul>
+          </div>
+          <div class="profile__info__container profile__info__skills" id="profile_info_skills">
+            <div class="profile__info__heading">Skills</div>
+            <ul class="profile__info__skills__list">
+              <li>Metall</li>
+              <li>Metal Extrusion</li>
+              <li>Wood</li>
+              <li>Wire Harness</li>
+              <li>Springs & Wife Forming</li>
+            </ul>
+          </div>
+          <div class="profile__info__container profile__info__portfolio" id="profile_info_portfolio">
+            <div class="profile__info__heading">Portfolio</div>
+            
+          </div>
+          <div class="profile__info__container profile__info__reviews" id="profile_info_reviews">
+            <div class="profile__info__heading">Reviews</div>
+            <div class="profile__info__reviews__list">
+              <div class="profile__info__review">
+                <div class="profile__info__review__info">
+                  <div class="profile__info__review__product">Titanium parts manufacturing</div>
+                  <div class="profile__info__review__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                  <div class="profile__info__review__user">
+                    <div class="profile__info__review__user__avatar" style="background-image: url('img/reviews/review_user1.jpg')"></div>
+                    <div class="profile__info__review__user__name">
+                      Andrew Lincoln
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3714 1.41796L12.939 2.98558H15.1571C16.2086 2.98558 17.0619 3.83892 17.0619 4.89035L17.0609 7.10749L18.6305 8.67701C19.3733 9.41987 19.3733 10.6265 18.6305 11.3703L17.0609 12.9389V15.157C17.0609 16.2084 16.2086 17.0618 15.1562 17.0618L12.939 17.0608L11.3705 18.6303C10.6276 19.3732 9.42094 19.3732 8.67713 18.6303L7.10761 17.0608H4.89047C3.83904 17.0608 2.98571 16.2084 2.98571 15.1561V12.9389L1.41809 11.3703C0.674277 10.6275 0.674277 9.42082 1.41809 8.67701L2.98571 7.10749V4.89035C2.98571 3.83892 3.83904 2.98558 4.89047 2.98558H7.10761L8.67713 1.41796C9.41999 0.674155 10.6267 0.674155 11.3705 1.41796H11.3714Z" fill="#008990"/>
+                        <path d="M6.39795 9.82932L8.98557 12.4179L13.4684 7.93408" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>                     
+                    </div>
+                  </div>
+                </div>
+                <div class="profile__info__review__details">
+                  <div class="profile__info__review__labels">
+                    <div class="price">900 €</div>
+                    <div class="date">05.08.2021</div>
+                  </div>
+                  <ul class="rofile__info__review__details__list">
+                    <li>
+                      <div class="label">Quality</div>
+                      <div class="stars">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="label">Professionalism</div>
+                      <div class="stars">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="label">Price</div>
+                      <div class="stars">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="label">Availability</div>
+                      <div class="stars">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="label">Terms</div>
+                      <div class="stars">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="label empty">Average rating</div>
+                      <div class="stars">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="profile__info__review">
+                <div class="profile__info__review__info">
+                  <div class="profile__info__review__product">Woods parts manufacturing</div>
+                  <div class="profile__info__review__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                  <div class="profile__info__review__user">
+                    <div class="profile__info__review__user__avatar" style="background-image: url('img/reviews/review_user2.jpg')"></div>
+                    <div class="profile__info__review__user__name">
+                      Eduard Bond                    
+                    </div>
+                  </div>
+                </div>
+                <div class="profile__info__review__details">
+                  <div class="profile__info__review__labels">
+                    <div class="price">2000 €</div>
+                    <div class="date">08.07.2021</div>
+                  </div>
+                  <ul class="rofile__info__review__details__list">
+                    <li>
+                      <div class="label">Quality</div>
+                      <div class="stars">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="label">Professionalism</div>
+                      <div class="stars">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="label">Price</div>
+                      <div class="stars">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="label">Availability</div>
+                      <div class="stars">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="label">Terms</div>
+                      <div class="stars">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="label empty">Average rating</div>
+                      <div class="stars">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                        <img src="img/star-icon.svg" alt="">
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="profile__nav">
+          <div class="profile__nav__heading">Information</div>
+          <ul class="profile__nav__list">
+            <li><a href="#profile_info_about">About me</a></li>
+            <li><a href="#profile_info_verified">Verified by</a></li>
+            <li><a href="#profile_info_skills">Skills</a></li>
+            <li><a href="#profile_info_portfolio">Portfolio</a></li>
+            <li><a href="#profile_info_reviews">Review</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+  </section>
+</main>
+
+<footer>
+  <div class="mainContainer">
+    <div class="footer__wrapp">
+      <div class="footer__info">
+        <div class="footer__logo">
+          <img src="img/footer-logo.svg" alt="">
+        </div>
+        <div class="footer__descr">
+          We help to find new customers, increase demand for products and services of enterprises, as well as significantly reduce the time it takes to find suppliers of industrial products
+        </div>
+        <a href="tel:+79227373101" class="footer__phone">+7 (922) 737-31-01</a>
+        <a href="mailto:info@oxese.com" class="footer__mail">info@oxese.com</a>
+        <div class="footer__socials">
+          <a href="#">
+            <img src="img/fb-icon.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="img/linked-icon.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="img/youtube-icon.svg" alt="">
+          </a>
+        </div>
+        <div class="footer__terms">
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer__content">
+        <div class="footer__menu">
+          <div class="footer__menu__list">
+            <div class="footer__menu__list__heading">metall</div>
+            <a href="#">CNC Machining</a>
+            <a href="#">Sheet Metal Processing</a>
+            <a href="#">Bending</a>
+            <a href="#">Surface Treatment</a>
+            <a href="#">Welding</a>
+            <a href="#">Tubes</a>
+          </div>
+          <div class="footer__menu__list">
+            <div class="footer__menu__list__heading">wood</div>
+            <a href="#">CNC Woodworking</a>
+            <a href="#">Sign Cutting</a>
+            <a href="#">Edge Banding</a>
+            <a href="#">Lacquer finishing</a>
+            <a href="#">Wood Suppliers</a>
+          </div>
+          <div class="footer__menu__list">
+            <div class="footer__menu__list__heading">company</div>
+            <a href="pricing.html">Pricing</a>
+            <a href="about.html">About us</a>
+            <a href="about.html">How it works</a>
+            <a href="news.html">News</a>
+            <a href="#">Become Manufacturing Partner</a>
+            <a href="contacts.html">Contacts</a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__subscribe">
+            <div class="footer__subscribe__descr">Subscribe to the most important news (1-2 emails per month)</div>
+            <form action="" class="footer__subscribe__form">
+              <input type="text" placeholder="Email" required>
+              <button>Subscribe</button>
+            </form>
+          </div>
+          <div class="language-toggler click-item" data-action="languageToggler">
+            <div class="language-toggler__list">
+              <div class="language-toggler__item active">
+                <div class="icon" style="background-image: url('img/eng-lang-icon.svg');"></div>
+                <span>en</span>
+              </div>
+              <a class="language-toggler__item" href="#">
+                <div class="icon" style="background-image: url('img/flag-germany.png');"></div>
+                <span>de</span>
+              </a>
+              <a class="language-toggler__item" href="#">
+                <div class="icon" style="background-image: url('img/China_Flag_-_Alternative.svg.png');"></div>
+                <span>ch</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    © Copyright 2021 Oxese. All rights reserved
+  </div>
+</footer>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>

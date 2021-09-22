@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content_language" content="ru">
+  <meta name="description" content="Supimer"> 
+  <title>Supimer</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="libs/swiperjs/swiper.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head> 
+ 
+<body> 
+
+  <header>
+    <div class="header__top">
+      <div class="mainContainer">
+        <div class="header__top__wrapp">
+          <ul class="header__top__nav">
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="news.html">Blog</a></li>
+          </ul>
+          <div class="header__top__panel">
+            <div class="language-toggler click-item" data-action="languageToggler">
+              <div class="language-toggler__list">
+                <div class="language-toggler__item active">
+                  <div class="icon" style="background-image: url('img/eng-lang-icon.svg');"></div>
+                  <span>en</span>
+                </div>
+                <a class="language-toggler__item" href="#">
+                  <div class="icon" style="background-image: url('img/flag-germany.png');"></div>
+                  <span>de</span>
+                </a>
+                <a class="language-toggler__item" href="#">
+                  <div class="icon" style="background-image: url('img/China_Flag_-_Alternative.svg.png');"></div>
+                  <span>ch</span>
+                </a>
+              </div>
+            </div>
+            <div class="header__top__login">
+              <div class="icon">
+                <img src="img/login-icon.svg" alt="">
+              </div>
+              <a href="sign_in.html">Sign in</a>
+              <a href="sign_up.html">Sign up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mainContainer">
+      <div class="header__main">
+        <div class="header__nav">
+          <a href="index.html" class="header__logo">
+            <img src="img/logo.svg" alt="">
+          </a>
+          <div class="header__togglers">
+            <a href="sign_up.html">
+              <img src="img/profile-icon.svg" alt="">
+            </a>
+            <button class="header__toggler click-item" data-action="headerToggler">
+              <span></span>
+            </button>
+          </div>
+        </div>
+        <div class="header__content">
+          <ul class="header__menu">
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="about.html">How it works</a></li>
+            <li><a href="#">Become Manufacturing Partner</a></li>
+            <li class="mob-link"><a href="about.html">About us</a></li>
+            <li class="mob-link"><a href="contacts.html">Contacts</a></li>
+            <li class="mob-link"><a href="news.html">Blog</a></li>
+          </ul>
+          <div class="language-toggler click-item" data-action="languageToggler">
+            <div class="language-toggler__list">
+              <div class="language-toggler__item active">
+                <div class="icon" style="background-image: url('img/eng-lang-icon.svg');"></div>
+                <span>en</span>
+              </div>
+              <a class="language-toggler__item" href="#">
+                <div class="icon" style="background-image: url('img/flag-germany.png');"></div>
+                <span>de</span>
+              </a>
+              <a class="language-toggler__item" href="#">
+                <div class="icon" style="background-image: url('img/China_Flag_-_Alternative.svg.png');"></div>
+                <span>ch</span>
+              </a>
+            </div>
+          </div>
+          <div class="header__links">
+            <a href="find_order.html">Place an order</a>
+            <a href="find_order.html">Find an order</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<main>
+  <section class="contacts">
+    <div class="mainContainer">
+      <ul class="top-breadcrumbs">
+        <li><a href="#">Main page</a></li>
+        <li class="active"><a href="#">Contacts</a></li>
+      </ul>
+
+      <div class="contacts__top">
+        <div class="page-heading">Contacts</div>
+        <div class="contacts__descr">Do you have questions about our service? <br>
+          We are happy to take the time to answer them</div>
+      </div>
+
+      <div class="contacts__wrapp">
+        <div class="contacts__main">
+          <div class="contacts__item">
+            <div class="contacts__item__label">visit us</div>
+            <div class="contacts__item__content">
+              <p>Harju maakond, Tallinn,</p>
+              <p>Kesklinna linnaosa,</p>
+              <p>Tuukri tn 19-315, 10120</p>
+            </div>
+          </div>
+          <div class="contacts__item">
+            <div class="contacts__item__label">contact us</div>
+            <a class="contacts__item__link" href="tel:37255548558">+372 55548558</a>
+            <a class="contacts__item__link" href="malto:info@supimex.com">info@supimex.com</a>
+            <div class="contacts__socials">
+              <a href="#"><img src="img/fb-icon-color.svg" alt=""></a>
+              <a href="#"><img src="img/linkedin-icon-color.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__request">
+          <div class="contacts__item__label">message us</div>
+          <form class="contacts__form">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts-map" id="map">
+
+  </section>
+</main>
+
+  <footer>
+    <div class="mainContainer">
+      <div class="footer__wrapp">
+        <div class="footer__info">
+          <div class="footer__logo">
+            <img src="img/footer-logo.svg" alt="">
+          </div>
+          <div class="footer__descr">
+            We help to find new customers, increase demand for products and services of enterprises, as well as significantly reduce the time it takes to find suppliers of industrial products
+          </div>
+          <a href="tel:+79227373101" class="footer__phone">+7 (922) 737-31-01</a>
+          <a href="mailto:info@oxese.com" class="footer__mail">info@oxese.com</a>
+          <div class="footer__socials">
+            <a href="#">
+              <img src="img/fb-icon.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="img/linked-icon.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="img/youtube-icon.svg" alt="">
+            </a>
+          </div>
+          <div class="footer__terms">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="footer__content">
+          <div class="footer__menu">
+            <div class="footer__menu__list">
+              <div class="footer__menu__list__heading click-item" data-action="toggle">metall</div>
+              <div class="footer__menu__list__content">
+                <a href="#">CNC Machining</a>
+                <a href="#">Sheet Metal Processing</a>
+                <a href="#">Bending</a>
+                <a href="#">Surface Treatment</a>
+                <a href="#">Welding</a>
+                <a href="#">Tubes</a>
+              </div>
+            </div>
+            <div class="footer__menu__list">
+              <div class="footer__menu__list__heading click-item" data-action="toggle">wood</div>
+              <div class="footer__menu__list__content">
+                <a href="#">CNC Woodworking</a>
+                <a href="#">Sign Cutting</a>
+                <a href="#">Edge Banding</a>
+                <a href="#">Lacquer finishing</a>
+                <a href="#">Wood Suppliers</a>
+              </div>
+            </div>
+            <div class="footer__menu__list">
+              <div class="footer__menu__list__heading click-item" data-action="toggle">company</div>
+              <div class="footer__menu__list__content">
+                <a href="pricing.html">Pricing</a>
+                <a href="about.html">About us</a>
+                <a href="about.html">How it works</a>
+                <a href="news.html">News</a>
+                <a href="#">Become Manufacturing Partner</a>
+                <a href="contacts.html">Contacts</a>
+              </div>
+            </div>
+          </div>
+          
+            <div class="footer__subscribe">
+              <div class="footer__subscribe__descr">Subscribe to the most important news (1-2 emails per month)</div>
+              <form action="" class="footer__subscribe__form">
+                <input type="text" placeholder="Email" required>
+                <button><span>Subscribe</span> <img src="img/send-icon.svg" alt=""></button>
+              </form>
+            </div>
+            <div class="language-toggler click-item" data-action="languageToggler">
+              <div class="language-toggler__list">
+                <div class="language-toggler__item active">
+                  <div class="icon" style="background-image: url('img/eng-lang-icon.svg');"></div>
+                  <span>en</span>
+                </div>
+                <a class="language-toggler__item" href="#">
+                  <div class="icon" style="background-image: url('img/flag-germany.png');"></div>
+                  <span>de</span>
+                </a>
+                <a class="language-toggler__item" href="#">
+                  <div class="icon" style="background-image: url('img/China_Flag_-_Alternative.svg.png');"></div>
+                  <span>ch</span>
+                </a>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      © Copyright 2021 Oxese. All rights reserved
+    </div>
+  </footer>
+
+
+<script src="js/main.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd1JxsBzPGjhusEs2PK4kP-ZxGllebT6A&callback=initMap"></script>
+<script type="text/javascript">
+
+function CustomMarker(latlng, map, args) {
+	this.latlng = latlng;	
+	this.args = args;	
+	this.setMap(map);	
+}
+
+CustomMarker.prototype = new google.maps.OverlayView();
+
+CustomMarker.prototype.draw = function() {
+	
+	var self = this;
+	
+	var div = this.div;
+	
+	if (!div) {
+	
+		div = this.div = document.createElement('div');
+		
+		div.className = 'marker';
+		
+		div.style.position = 'absolute';
+
+		div.innerHTML += '<div class="icon"></div>';
+		
+		if (typeof(self.args.marker_id) !== 'undefined') {
+			div.dataset.marker_id = self.args.marker_id;
+		}
+		
+		/*google.maps.event.addDomListener(div, "click", function(event) {
+			alert('You clicked on a custom marker!');			
+			google.maps.event.trigger(self, "click");
+		});*/
+		
+		var panes = this.getPanes();
+		panes.overlayImage.appendChild(div);
+	}
+	
+	var point = this.getProjection().fromLatLngToDivPixel(this.latlng);
+	
+	if (point) {
+		div.style.left = (point.x - 10) + 'px';
+		div.style.top = (point.y - 20) + 'px';
+	}
+};
+
+CustomMarker.prototype.remove = function() {
+	if (this.div) {
+		this.div.parentNode.removeChild(this.div);
+		this.div = null;
+	}	
+};
+
+CustomMarker.prototype.getPosition = function() {
+	return this.latlng;	
+};
+
+function initialize() {
+
+	var myLatlng = new google.maps.LatLng(59.440919,24.774506);
+	var mapOptions = {
+		center: { lat: 59.440319, lng: 24.772206 },
+      	zoom: 16,
+		mapTypeId: 'roadmap',
+		disableDefaultUI: true,
+		  styles: [
+        {
+          featureType: "poi.business",
+          stylers: [{ visibility: "off" }],
+        },
+        {
+          featureType: "transit",
+          elementType: "labels.icon",
+          stylers: [{ visibility: "off" }],
+        },
+        {
+          "featureType": "all",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#878787"
+            }
+          ]
+        },
+        {
+          "featureType": "all",
+          "elementType": "labels.text.stroke",
+          "stylers": [
+            
+            {
+              "color": "#000"
+            },
+            {
+              "lightness": 16
+            }
+          ]
+        },
+        
+        {
+          "featureType": "administrative",
+          "elementType": "geometry.fill",
+          "stylers": [
+            {
+              "color": "#878787"
+            },
+            {
+              "lightness": 20
+            }
+          ]
+        },
+        {
+          "featureType": "administrative",
+          "elementType": "geometry.stroke",
+          "stylers": [
+            {
+              "color": "#878787"
+            },
+            {
+              "lightness": 17
+            },
+            {
+              "weight": 0.2
+            }
+          ]
+        },
+        
+        {
+          "featureType": "landscape",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#fafafa"
+            }
+          ]
+        },
+        
+        {
+          "featureType": "road.highway",
+          "elementType": "geometry.fill",
+          "stylers": [
+            {
+              "color": "#e4e4e4"
+            },
+            {
+              "lightness": 17
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "geometry.stroke",
+          "stylers": [
+            {
+              "color": "#e4e4e4"
+            },
+            {
+              "lightness": 19
+            },
+            {
+              "weight": 0.2
+            }
+          ]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#e4e4e4"
+            }
+          ]
+        },
+        {
+          "featureType": "road.local",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#e4e4e4"
+            },
+          ]
+        },
+        {
+          "featureType": "transit",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#f1f1f1"
+            }
+          ]
+        }
+      ]
+	}
+	
+	var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+	
+	
+	overlay = new CustomMarker( 
+		myLatlng, 
+		map,
+		{
+			marker_id: 'marker'
+		}
+	);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+
+</body>
+</html>

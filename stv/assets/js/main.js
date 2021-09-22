@@ -74,7 +74,7 @@ window.onload = function(){
                 notebook: 3,
                 touch: 2,
                 mobile: 1,
-                multiShift: true,
+                multiShift: false,
             }
         });
     }
