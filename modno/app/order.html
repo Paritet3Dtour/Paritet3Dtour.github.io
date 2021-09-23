@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content_language" content="ru">
+  <meta name="description" content="modnodostupno"> 
+  <title>modnodostupno</title> 
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <script src="https://modnodostupno.com.ua/design/modno/js/jquery-3.3.1.min.js"></script>
+  <script src="https://modnodostupno.com.ua/design/modno/js/slick.min.js"></script>  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+  <link href="https://modnodostupno.com.ua/design/modno/css/libs.css" rel="stylesheet">
+  <link href="https://modnodostupno.com.ua/design/modno/css/style.css" rel="stylesheet">
+  <link href="https://modnodostupno.com.ua/design/modno/css/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head> 
+<body>
+
+  <header class="header">
+    <nav class="top_nav">
+       <div class="container container-nav">
+          <div class="header__left-container">
+             <div class="header__logo">
+                <a class="logo" href="">
+                <img src="https://modnodostupno.com.ua/design/modno/images/MD-logo 1.png" alt="logo">
+                </a>
+             </div>
+             <div class="informer languages">
+                <div class="fn_switch lang_switch">
+                   <span class="informer_name ">ua</span>
+                   <i class="angle_icon">
+                      <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path fill-rule="evenodd" clip-rule="evenodd" d="M5.9732 5.33091L10.8752 0.42894L11.5712 1.125L6.32123 6.375L5.62517 6.375L0.37517 1.125L1.07123 0.428939L5.9732 5.33091Z" fill="#F1F2F4"></path>
+                      </svg>
+                   </i>
+                </div>
+                <div class="dropdown">
+                   <a class="dropdown_item active" href="https://modnodostupno.com.ua/wishlist">
+                   <span class="">ua</span>
+                   </a>
+                   <a class="dropdown_item" href="https://modnodostupno.com.ua/ru/wishlist">
+                   <span class="">ru</span>
+                   </a>
+                </div>
+             </div>
+          </div>
+          <div class="header__centre-container">
+             <form id="fn_search" class="search" action="all-products">
+                <input class="fn_search search_input" type="text" name="keyword" value="" placeholder="Пошук..." data-language="index_search" autocomplete="off">
+                <button class="search_button">
+                   <div class="search_icon">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M0.796875 21.8531L6.31875 16.3312C4.95 14.6625 4.125 12.525 4.125 10.1953C4.125 4.85156 8.46094 0.515625 13.8047 0.515625C19.1531 0.515625 23.4844 4.85156 23.4844 10.1953C23.4844 15.5391 19.1531 19.875 13.8047 19.875C11.475 19.875 9.34219 19.0547 7.67344 17.6859L2.15156 23.2031C1.77656 23.5781 1.17188 23.5781 0.796875 23.2031C0.421875 22.8328 0.421875 22.2234 0.796875 21.8531ZM13.8047 17.9484C18.0844 17.9484 21.5625 14.4703 21.5625 10.1953C21.5625 5.92031 18.0844 2.4375 13.8047 2.4375C9.52969 2.4375 6.04688 5.92031 6.04688 10.1953C6.04688 14.4703 9.52969 17.9484 13.8047 17.9484Z" fill="white"></path>
+                      </svg>
+                   </div>
+                </button>
+             </form>
+          </div>
+          <div class="header__right-container">
+             <ul class="informers">
+                <li class="informer">
+                   <a class="account_informer" href="javascript:;" onclick="document.location.href = 'user/login'" title="Вхід">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <g clip-path="url(#clip0)">
+                            <path d="M12 12C8.69168 12 6 9.30836 6 5.99997C6 2.69158 8.69168 -5.72205e-06 12 -5.72205e-06C15.3084 -5.72205e-06 18 2.69163 18 6.00002C18 9.3084 15.3084 12 12 12ZM12 1.50001C9.51859 1.50001 7.50002 3.51854 7.50002 6.00002C7.50002 8.48149 9.51855 10.5 12 10.5C14.4815 10.5 16.5 8.48145 16.5 6.00002C16.5 3.51858 14.4815 1.50001 12 1.50001Z" fill="white"></path>
+                            <path d="M21.75 24H2.25001C1.83544 24 1.5 23.6645 1.5 23.25V18.0871C1.5 17.3122 1.89623 16.5842 2.53345 16.1857C8.16577 12.6723 15.8394 12.673 21.4659 16.185C22.1038 16.5842 22.5001 17.3122 22.5001 18.0871V23.2499C22.5001 23.6645 22.1646 24 21.75 24ZM3.00002 22.5H21V18.0871C21 17.8257 20.8741 17.584 20.6712 17.4573C15.5215 14.2427 8.48218 14.2405 3.32819 17.458C3.12604 17.584 3.00006 17.8257 3.00006 18.0872L3.00002 22.5Z" fill="white"></path>
+                         </g>
+                         <defs>
+                            <clipPath id="clip0">
+                               <rect width="24" height="24" fill="white"></rect>
+                            </clipPath>
+                         </defs>
+                      </svg>
+                   </a>
+                </li>
+                <li id="wishlist" class="informer">
+                   <a href="wishlist" class="wish_icon">
+                      <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M19.8393 1.96468C18.7838 0.697724 17.3195 0 15.7162 0C13.4612 0 12.0336 1.42463 11.2331 2.61978C11.0254 2.92991 10.8487 3.24088 10.7004 3.5335C10.552 3.24088 10.3754 2.92991 10.1676 2.61978C9.36713 1.42463 7.9395 0 5.68457 0C4.08127 0 2.61695 0.697768 1.56138 1.96472C0.554538 3.17332 0 4.79197 0 6.52248C0 8.4062 0.695231 10.1582 2.18793 12.0362C3.52201 13.7146 5.44126 15.4447 7.66372 17.448C8.49187 18.1946 9.34827 18.9666 10.26 19.8104L10.2874 19.8358C10.4056 19.9453 10.553 20 10.7004 20C10.8477 20 10.9951 19.9453 11.1133 19.8358L11.1407 19.8104C12.0525 18.9666 12.9089 18.1946 13.7371 17.448C15.9595 15.4447 17.8787 13.7146 19.2128 12.0362C20.7055 10.1582 21.4007 8.4062 21.4007 6.52248C21.4007 4.79197 20.8462 3.17332 19.8393 1.96468ZM12.9237 16.4384C12.2098 17.0819 11.4751 17.7442 10.7004 18.4567C9.92568 17.7443 9.1909 17.082 8.47686 16.4383C4.12737 12.5176 1.25395 9.9274 1.25395 6.52248C1.25395 5.11509 1.69722 3.8079 2.50213 2.84174C3.31628 1.86462 4.44646 1.32647 5.68457 1.32647C7.40369 1.32647 8.51498 2.44681 9.14447 3.38666C9.70912 4.22959 10.0038 5.07932 10.1042 5.4055C10.1883 5.67853 10.4289 5.86331 10.7004 5.86331C10.9718 5.86331 11.2124 5.67853 11.2965 5.4055C11.397 5.07932 11.6916 4.22959 12.2563 3.38661C12.8857 2.44681 13.997 1.32647 15.7162 1.32647C16.9543 1.32647 18.0845 1.86462 18.8986 2.84174C19.7035 3.8079 20.1468 5.11509 20.1468 6.52248C20.1468 9.9274 17.2734 12.5176 12.9237 16.4384Z" fill="black"></path>
+                      </svg>
+                      <span class="informer_counter">1</span>
+                   </a>
+                </li>
+                <li id="cart_informer" class="informer">
+                   <div class="cart_info">
+                      <span class="cart_counter">0</span>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <g clip-path="url(#clip0)">
+                            <path d="M22.3918 23.0442L21.1501 6.68652C21.1208 6.29563 20.7944 5.99326 20.402 5.99326H3.58222C3.18982 5.99326 2.86345 6.29563 2.83419 6.68727L1.58197 23.1935C1.56621 23.4013 1.63824 23.6069 1.78004 23.7599C1.92185 23.913 2.12142 24 2.33 24H21.655C21.6595 24 21.6647 24 21.67 24C22.0842 24 22.4203 23.6639 22.4203 23.249C22.4203 23.1785 22.4105 23.1094 22.3918 23.0442ZM3.1388 22.4995L4.27773 7.49383H19.7065L20.8454 22.4995H3.1388Z" fill="white"></path>
+                            <path d="M11.9921 0C8.68263 0 5.98987 2.69351 5.98987 6.00375V8.99437C5.98987 9.40853 6.32599 9.74465 6.74015 9.74465C7.15431 9.74465 7.49043 9.40853 7.49043 8.99437V6.00375C7.49043 3.52032 9.50944 1.50056 11.9921 1.50056C14.4748 1.50056 16.4938 3.52032 16.4938 6.00375V8.99437C16.4938 9.40853 16.8299 9.74465 17.2441 9.74465C17.6583 9.74465 17.9944 9.40853 17.9944 8.99437V6.00375C17.9944 2.69351 15.3016 0 11.9921 0Z" fill="white"></path>
+                         </g>
+                         <defs>
+                            <clipPath id="clip0">
+                               <rect width="24" height="24" fill="white"></rect>
+                            </clipPath>
+                         </defs>
+                      </svg>
+                   </div>
+                </li>
+             </ul>
+          </div>
+       </div>
+    </nav>
+    <div class=" container nav-header-wrapper">
+       <nav class="categories_nav">
+          <div class="categories--wrapper">
+             <ul class="level_1 categories_menu ">
+                <li class="category_item has_child">
+                   <a class="category_link" href="https://modnodostupno.com.ua/catalog/zhenschinam" data-category="5">
+                   <span>Жінкам</span>
+                   </a>
+                   <i class="angle_icon">
+                      <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path fill-rule="evenodd" clip-rule="evenodd" d="M5.9732 5.33091L10.8752 0.42894L11.5712 1.125L6.32123 6.375L5.62517 6.375L0.37517 1.125L1.07123 0.428939L5.9732 5.33091Z" fill="#F1F2F4"></path>
+                      </svg>
+                   </i>
+                   <div class="categories--wrapper">
+                      <ul class="level_2 subcategory">
+                         <li class="category_item">
+                            <div class="category--image">
+                               <img src="https://modnodostupno.com.ua/files/resized/categories/45_85263.160x175.png" alt="Туфлі" width="159" height="174">
+                            </div>
+                            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <circle cx="3" cy="3" r="3" fill="black"></circle>
+                            </svg>
+                            <a class="category_link" href="catalog/tufli" data-category="2">Туфлі</a>
+                         </li>
+                         <li class="category_item">
+                            <div class="category--image">
+                               <img src="https://modnodostupno.com.ua/files/resized/categories/summer_vacation_slippers_footwear_flipflops_beach_wear_icon_133404.160x175.png" alt="Балетки" width="159" height="174">
+                            </div>
+                            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <circle cx="3" cy="3" r="3" fill="black"></circle>
+                            </svg>
+                            <a class="category_link" href="catalog/baletki" data-category="3">Балетки</a>
+                         </li>
+                         <li class="category_item">
+                            <div class="category--image">
+                               <img src="https://modnodostupno.com.ua/files/resized/categories/free-icon-hight-heel-sandals-107532.160x175.png" alt="Босоніжки" width="159" height="174">
+                            </div>
+                            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <circle cx="3" cy="3" r="3" fill="black"></circle>
+                            </svg>
+                            <a class="category_link" href="catalog/bosonozhki" data-category="4">Босоніжки</a>
+                         </li>
+                      </ul>
+                   </div>
+                </li>
+                <li class="category_item has_child">
+                   <a class="category_link" href="https://modnodostupno.com.ua/catalog/muzhchinam" data-category="6">
+                   <span>Чоловікам</span>
+                   </a>
+                   <i class="angle_icon">
+                      <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path fill-rule="evenodd" clip-rule="evenodd" d="M5.9732 5.33091L10.8752 0.42894L11.5712 1.125L6.32123 6.375L5.62517 6.375L0.37517 1.125L1.07123 0.428939L5.9732 5.33091Z" fill="#F1F2F4"></path>
+                      </svg>
+                   </i>
+                   <div class="categories--wrapper">
+                      <ul class="level_2 subcategory">
+                         <li class="category_item">
+                            <div class="category--image">
+                               <img src="https://modnodostupno.com.ua/files/resized/categories/821a4f38c7e9952452a8ad3becfd1add_1.160x175.png" alt="Кросівки" width="159" height="174">
+                            </div>
+                            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <circle cx="3" cy="3" r="3" fill="black"></circle>
+                            </svg>
+                            <a class="category_link" href="catalog/krosivki" data-category="1">Кросівки</a>
+                         </li>
+                         <li class="category_item">
+                            <div class="category--image">
+                               <img src="https://modnodostupno.com.ua/files/resized/categories/62187019.160x175.jpg" alt="Туфлі чоловічі" width="159" height="174">
+                            </div>
+                            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <circle cx="3" cy="3" r="3" fill="black"></circle>
+                            </svg>
+                            <a class="category_link" href="catalog/tufli-muzhskie" data-category="8">Туфлі чоловічі</a>
+                         </li>
+                      </ul>
+                   </div>
+                </li>
+                <li class="category_item has_child">
+                   <a class="category_link" href="https://modnodostupno.com.ua/catalog/detyam" data-category="7">
+                   <span>Дітям</span>
+                   </a>
+                   <i class="angle_icon">
+                      <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path fill-rule="evenodd" clip-rule="evenodd" d="M5.9732 5.33091L10.8752 0.42894L11.5712 1.125L6.32123 6.375L5.62517 6.375L0.37517 1.125L1.07123 0.428939L5.9732 5.33091Z" fill="#F1F2F4"></path>
+                      </svg>
+                   </i>
+                   <div class="categories--wrapper">
+                      <ul class="level_2 subcategory">
+                         <li class="category_item">
+                            <div class="category--image">
+                            </div>
+                            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <circle cx="3" cy="3" r="3" fill="black"></circle>
+                            </svg>
+                            <a class="category_link" href="catalog/krosivki-dlya-ditej" data-category="10">Кросівки для дітей</a>
+                         </li>
+                      </ul>
+                   </div>
+                </li>
+                <li class="category_item">
+                   <a class="category_link" href="catalog/sport" data-category="9">Спорт</a>
+                </li>
+             </ul>
+          </div>
+       </nav>
+    </div>
+    <div class="line"></div>
+ </header>
+
+ <div class="main">
+  <section class="order-section">
+    <div class="container">
+      <ol itemscope="" itemtype="https://schema.org/BreadcrumbList" class="breadcrumbs">
+        <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="https://modnodostupno.com.ua" data-language="breadcrumb_home">
+              <span itemprop="name">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 0.373428L0 7.30929L0.818937 8.25073L1.56791 7.60137V13.7303C1.56791 14.7616 2.40831 15.6007 3.44134 15.6007H6.93841V9.49092H9.12406V15.6007H12.5587C13.5917 15.6007 14.4321 14.7616 14.4321 13.7303V7.6014L15.1811 8.25076L16 7.30932L8 0.373428ZM13.1832 13.7303C13.1832 14.0741 12.903 14.3538 12.5587 14.3538H10.373V8.24405H5.68944V14.3538H3.44131C3.09697 14.3538 2.81684 14.0741 2.81684 13.7304V6.51857L8 2.02487L13.1832 6.51857V13.7303Z" fill="black"></path>
+                  </svg>
+              </span>
+            </a>
+            <meta itemprop="position" content="1">
+        </li>
+        <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" data-language="breadcrumbs_enter">
+            <span itemprop="name">Корзина</span>
+            <meta itemprop="position" content="2">
+        </li>
+      </ol>
+
+      <div class="order_title">
+        <h1>Корзина </h1>
+      </div>
+      
+      <div class="order_wrapp">
+        <div class="order_personal">
+          <div class="order_request_heading">Оформление заказа</div>
+          <div class="order_request_nav">
+            <button class="tabs-nav-item is-active" data-tab-name="standart">Быстрый заказ</button>
+            <button class="tabs-nav-item" data-tab-name="extended">Расширенный заказ</button>
+          </div>
+          <div class="order_request_tabs">
+            <div class="order_request_tab tabs-content-item standart is-active">
+              <div class="order_request_container">
+                <div class="order_form_heading">Контактные данные</div>
+                <form action="" class="order_form">
+                  <div class="form-group">
+                    <input type="text" name="name" placeholder="Имя *" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" name="phone" placeholder="Номер телефона*" required>
+                  </div>
+                  <button type="submit" class="order_form_submit">Оформить заказ</button>
+                </form>
+              </div>
+            </div>
+            <div class="order_request_tab tabs-content-item extended">
+              <form action="">
+                <div class="order_request_container">
+                  <div class="order_form_heading">Контактные данные</div>
+                  <div class="order_form extended">
+                    <div class="form-group">
+                      <input type="text" name="name" placeholder="Имя *" required>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" name="name" placeholder="Фамилия">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" name="phone" placeholder="Номер телефона*" required>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" name="email" placeholder="Email*" required>
+                    </div>
+                    <div class="form-group full">
+                      <textarea name="" id="" placeholder="Комментарии к заказу"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="order_request_additionals">
+                  <div class="order_request_additional">
+                    <div class="order_request_additional_list">
+                      <div class="order_request_additional_heading">
+                        Способы доставки
+                      </div>
+                      <div class="order_request_check">
+                        <input type="radio" id="delivery1"
+                        name="deliveryType" value="delivery1">
+                        <label for="delivery1"><div class="label">Новая почта <span>(выберите город, для расчета стоимости)</span></div></label>
+                      </div>
+                      <div class="order_request_check">
+                        <input type="radio" id="delivery2"
+                        name="deliveryType" value="delivery2" checked>
+                        <label for="delivery2"><div class="label">Самовывоз <span>(бесплатно)</span></div></label>
+                      </div>
+                    </div>
+    
+                    <div class="order_request_additional_list">
+                      <div class="order_request_additional_heading">
+                        Способы оплаты
+                      </div>
+                      <div class="order_request_check">
+                        <input type="radio" id="payment1"
+                        name="paymentType" value="payment1">
+                        <label for="payment1"><div class="label">Оплата при получении <span>(наложенный платеж)</span></div></label>
+                      </div>
+                      <div class="order_request_check">
+                        <input type="radio" id="payment2"
+                        name="paymentType" value="payment2" checked>
+                        <label for="payment2"><div class="label">Оплата картой</div></label>
+                      </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="order_form_submit">Оформить заказ</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+        <div class="order_details">
+          <div class="order_details_heading">Ваши товары:</div>
+          <div class="order_products">
+            <div class="order_product">
+              <div class="order_product_params">
+                <div class="order_product_preview" style="background-image: url('img/product.png');"></div>
+                <div class="order_product_descr">
+                  <p>Босоножки WS5516-19 Khaki</p>
+                  <p>Цвет: Салатовый</p>
+                  <p>Размер: 37</p>
+                </div>
+              </div>
+              <div class="order_product_info">
+                <div class="order_product_price price">
+                  <div class="order_product_info_heading">Цена</div>
+                  <div class="order_product_info_price">2 969 грн</div>
+                </div>
+                <div class="order_product_count">
+                  <div class="order_product_info_heading">Количество</div>
+                  <div class="amount fn_product_amount">
+                    <span class="minus">−</span>
+                    <input class="input_amount" type="text" name="amount" value="1" data-max="100">
+                    <span class="plus">+</span>
+                  </div>
+                </div>
+                <div class="order_product_price summ">
+                  <div class="order_product_info_heading">Сумма</div>
+                  <div class="order_product_info_price">2 969 грн</div>
+                </div>
+              </div>
+              <button class="remove" type="button">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.0625 0.999999L7 6.0625L1.9375 1C1.67861 0.741109 1.25889 0.741109 1 1C0.741109 1.25889 0.74111 1.67861 1 1.9375L6.0625 7L1 12.0625C0.74111 12.3214 0.741109 12.7411 1 13C1.25889 13.2589 1.67861 13.2589 1.9375 13L7 7.9375L12.0625 13C12.3214 13.2589 12.7411 13.2589 13 13C13.2589 12.7411 13.2589 12.3214 13 12.0625L7.9375 7L13 1.9375C13.2589 1.67861 13.2589 1.25889 13 1C12.7411 0.741109 12.3214 0.741108 12.0625 0.999999Z" fill="#EB5757"/>
+                </svg>                    
+              </button>
+            </div>
+          </div>
+          <div class="order_details_total">
+            <div class="order_details_total_item">
+              <div class="label">Сумма заказа:</div>
+              <div class="value">2 969 грн</div>
+            </div>
+            <div class="order_details_total_item">
+              <div class="label">Доставка:</div>
+              <div class="value">бесплатно</div>
+            </div>
+            <div class="order_details_total_item result">
+              <div class="label">Вместе</div>
+              <div class="value">2 969 грн</div>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+  </section>
+
+  <section class="guarantees-section">
+   <div class="container">
+     <div class="guarantees_list">
+       <div class="guarantees_item">
+         <div class="guarantees_item_icon">
+           <img src="img/guarantees_item1.svg" alt="">  
+         </div>
+         <div class="guarantees_item_descr">
+           100% гаранития качества
+         </div>
+       </div>
+       <div class="guarantees_item">
+         <div class="guarantees_item_icon">
+           <img src="img/guarantees_item2.svg" alt="">  
+         </div>
+         <div class="guarantees_item_descr">
+           Доставка по всей стране
+         </div>
+       </div>
+       <div class="guarantees_item">
+         <div class="guarantees_item_icon">
+           <img src="img/guarantees_item3.svg" alt="">  
+         </div>
+         <div class="guarantees_item_descr">
+           14 дней на возврат товара
+         </div>
+       </div>
+       <div class="guarantees_item">
+         <div class="guarantees_item_icon">
+           <img src="img/guarantees_item4.svg" alt="">  
+         </div>
+         <div class="guarantees_item_descr">
+           Самовывоз из магазина
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+</div>
+
+
+<footer class="footer">
+  <div class="container footer--content">
+     <div class="footer--content_row">
+        <div class="footer--content_column">
+           <div class="h3">
+              <span data-language="index_categories">Інформація</span>
+           </div>
+           <div class="menu_group menu_group_footer">
+              <ul class="fn_menu_list menu_list menu_list_1">
+                 <li class="menu_item menu_item_1 ">
+                    <a class="menu_link">
+                    <span>Отзывы</span>
+                    </a>
+                 </li>
+                 <li class="menu_item menu_item_1 ">
+                    <a class="menu_link">
+                    <span>Распродажа</span>
+                    </a>
+                 </li>
+                 <li class="menu_item menu_item_1 ">
+                    <a class="menu_link">
+                    <span>О нас</span>
+                    </a>
+                 </li>
+                 <li class="menu_item menu_item_1 ">
+                    <a class="menu_link">
+                    <span>Стоимость доставки</span>
+                    </a>
+                 </li>
+                 <li class="menu_item menu_item_1 ">
+                    <a class="menu_link">
+                    <span>Отзывы</span>
+                    </a>
+                 </li>
+                 <li class="menu_item menu_item_1 ">
+                    <a class="menu_link">
+                    <span>Распродажа</span>
+                    </a>
+                 </li>
+                 <li class="menu_item menu_item_1 ">
+                    <a class="menu_link">
+                    <span>О нас</span>
+                    </a>
+                 </li>
+              </ul>
+           </div>
+        </div>
+        <div class="footer--content_column">
+           <div class="h3">
+              <span data-language="index_about_store">Меню сайта</span>
+           </div>
+           <div class="foot_menu">
+              <div class="foot_item">
+                 <a href="catalog/zhenschinam">Жінкам</a>
+              </div>
+              <div class="foot_item">
+                 <a href="catalog/muzhchinam">Чоловікам</a>
+              </div>
+              <div class="foot_item">
+                 <a href="catalog/detyam">Дітям</a>
+              </div>
+              <div class="foot_item">
+                 <a href="catalog/sport">Спорт</a>
+              </div>
+           </div>
+        </div>
+        <div class="footer--content_column">
+           <div class="h3">
+              <span data-language="index_contacts">Контакти</span>
+           </div>
+           <div class="foot_menu">
+              <div class="foot_item">
+                 <i class="email_icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M20.55 4.08936H3.40715C1.92807 4.08986 0.729246 5.28885 0.728577 6.76793V16.7695C0.729246 18.2486 1.92807 19.4478 3.40715 19.4481H20.55C22.0291 19.4478 23.2279 18.2486 23.2286 16.7695V6.76793C23.2279 5.28885 22.0291 4.08986 20.55 4.08936ZM3.40715 5.16078H20.55C21.3216 5.16279 21.9837 5.71039 22.1304 6.46776L11.9786 12.1251L1.82679 6.46776C1.97344 5.71039 2.63555 5.16279 3.40715 5.16078ZM20.55 18.3715H3.40715C2.52071 18.3688 1.80252 17.6508 1.80001 16.7644V7.67864L11.7161 13.207C11.7964 13.2512 11.8867 13.2753 11.9786 13.2769C12.0708 13.2779 12.1614 13.2538 12.2411 13.207L22.1571 7.67864V16.7644C22.1565 17.6516 21.4373 18.3707 20.55 18.3715Z" fill="white"></path>
+                    </svg>
+                 </i>
+                 <a href="mailto:info_shoes@buts.ua " data-language="company_email">
+                 info_shoes@buts.ua </a>
+              </div>
+              <div class="foot_item">
+                 <i class="phone_icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M4.89047 15.9536C7.25765 18.7833 10.1072 21.0112 13.3596 22.5877C14.5979 23.1745 16.2539 23.8707 18.0989 23.9901C18.2133 23.995 18.3227 24 18.4371 24C19.6754 24 20.67 23.5723 21.4806 22.6921C21.4856 22.6871 21.4955 22.6772 21.5005 22.6672C21.7889 22.3191 22.1172 22.0058 22.4603 21.6726C22.694 21.4488 22.9327 21.2151 23.1615 20.9764C24.2208 19.8724 24.2208 18.47 23.1516 17.4007L20.1627 14.4119C19.6555 13.8848 19.0488 13.6063 18.4122 13.6063C17.7757 13.6063 17.164 13.8848 16.6418 14.407L14.8615 16.1873C14.6974 16.0928 14.5283 16.0083 14.3691 15.9287C14.1702 15.8293 13.9862 15.7348 13.8221 15.6303C12.2009 14.6009 10.7288 13.2582 9.32147 11.5325C8.61032 10.6324 8.13291 9.8765 7.79972 9.10568C8.26718 8.68297 8.70481 8.24037 9.12752 7.80771C9.27672 7.65354 9.43088 7.49938 9.58504 7.34521C10.1221 6.80812 10.4106 6.18649 10.4106 5.55491C10.4106 4.92333 10.1271 4.3017 9.58504 3.76461L8.10307 2.28264C7.92902 2.10858 7.7649 1.93949 7.59582 1.76544C7.2676 1.42727 6.92446 1.07915 6.58629 0.765852C6.07406 0.263572 5.47232 0 4.83577 0C4.20419 0 3.59748 0.263572 3.06536 0.770825L1.20543 2.63075C0.529098 3.30709 0.146173 4.12764 0.0666036 5.0775C-0.0278846 6.26606 0.19093 7.52922 0.757859 9.05595C1.62815 11.4182 2.94103 13.6113 4.89047 15.9536ZM1.28003 5.18193C1.33971 4.52051 1.59333 3.9685 2.07075 3.49109L3.92073 1.64111C4.20916 1.36262 4.52744 1.2184 4.83577 1.2184C5.13913 1.2184 5.44746 1.36262 5.73092 1.65106C6.06412 1.95939 6.37742 2.28264 6.71559 2.62578C6.88467 2.79983 7.05873 2.97389 7.23279 3.15292L8.71476 4.63489C9.02309 4.94322 9.18223 5.25653 9.18223 5.56486C9.18223 5.87319 9.02309 6.18649 8.71476 6.49482C8.56059 6.64898 8.40643 6.80812 8.25226 6.96229C7.78977 7.42976 7.35711 7.87236 6.8797 8.29507C6.86975 8.30501 6.86478 8.30999 6.85483 8.31993C6.44207 8.7327 6.50672 9.12557 6.60618 9.42395C6.61115 9.43887 6.61613 9.44882 6.6211 9.46374C7.00403 10.3838 7.53614 11.259 8.36664 12.3034C9.85856 14.1434 11.4301 15.5707 13.1607 16.6697C13.3745 16.809 13.6033 16.9184 13.8171 17.0278C14.016 17.1272 14.2 17.2217 14.3642 17.3261C14.384 17.3361 14.399 17.346 14.4189 17.356C14.583 17.4405 14.7421 17.4803 14.9012 17.4803C15.2991 17.4803 15.5577 17.2267 15.6422 17.1421L17.5022 15.2822C17.7906 14.9938 18.1039 14.8396 18.4122 14.8396C18.7902 14.8396 19.0985 15.0734 19.2925 15.2822L22.2912 18.276C22.888 18.8728 22.883 19.5193 22.2763 20.1509C22.0674 20.3746 21.8486 20.5885 21.6149 20.8123C21.2668 21.1504 20.9037 21.4986 20.5755 21.8914C20.0036 22.5081 19.3223 22.7965 18.4421 22.7965C18.3575 22.7965 18.268 22.7915 18.1835 22.7866C16.5523 22.6821 15.0355 22.0456 13.8967 21.5035C10.8034 20.0066 8.08815 17.8831 5.83536 15.1877C3.9804 12.9548 2.73217 10.8761 1.90664 8.64816C1.39441 7.28056 1.20046 6.18152 1.28003 5.18193Z" fill="white"></path>
+                    </svg>
+                 </i>
+                 <a href="tel:+380999999999" data-language="company_phone_1">
+                 +380999999999</a>
+              </div>
+           </div>
+        </div>
+        <div class="footer--content_column">
+           <div class="h3">
+              <span data-language="index_in_networks">Ми у соцмережах:</span>
+           </div>
+           <div class="foot_menu foot_social">
+              <a class="fb foot_item" href="#" target="_blank" title="Facebook">
+                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18 0C8.05887 0 0 8.05887 0 18C0 27.9411 8.05887 36 18 36C27.9411 36 36 27.9411 36 18C36 8.05887 27.9411 0 18 0ZM19.8762 18.7907V28.5836H15.8244V18.791H13.8001V15.4163H15.8244V13.3902C15.8244 10.6371 16.9674 9 20.215 9H22.9186V12.3751H21.2286C19.9645 12.3751 19.8808 12.8467 19.8808 13.7269L19.8762 15.416H22.9378L22.5795 18.7907H19.8762Z" fill="#F1F2F4"></path>
+                 </svg>
+              </a>
+              <a class="ins foot_item" href="#" target="_blank" title="Instagram">
+                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18 0C8.05887 0 0 8.05887 0 18C0 27.9411 8.05887 36 18 36C27.9411 36 36 27.9411 36 18C36 8.05887 27.9411 0 18 0ZM14.0424 8.45807C15.0665 8.41147 15.3937 8.40007 18.0009 8.40007H17.9979C20.6059 8.40007 20.9319 8.41147 21.9559 8.45807C22.9779 8.50487 23.6759 8.66668 24.288 8.90408C24.92 9.14908 25.454 9.47708 25.988 10.0111C26.522 10.5447 26.85 11.0803 27.096 11.7117C27.332 12.3221 27.494 13.0197 27.542 14.0417C27.588 15.0657 27.6 15.3929 27.6 18.0002C27.6 20.6074 27.588 20.9338 27.542 21.9578C27.494 22.9794 27.332 23.6772 27.096 24.2878C26.85 24.919 26.522 25.4547 25.988 25.9883C25.4546 26.5223 24.9198 26.8511 24.2886 27.0963C23.6777 27.3337 22.9793 27.4955 21.9573 27.5423C20.9333 27.5889 20.6071 27.6003 17.9997 27.6003C15.3927 27.6003 15.0657 27.5889 14.0416 27.5423C13.0198 27.4955 12.322 27.3337 11.7112 27.0963C11.0802 26.8511 10.5446 26.5223 10.0112 25.9883C9.4774 25.4547 9.1494 24.919 8.90399 24.2876C8.66679 23.6772 8.50499 22.9796 8.45799 21.9576C8.41159 20.9336 8.39999 20.6074 8.39999 18.0002C8.39999 15.3929 8.41199 15.0655 8.45779 14.0415C8.50379 13.0199 8.66579 12.3221 8.90379 11.7115C9.1498 11.0803 9.4778 10.5447 10.0118 10.0111C10.5454 9.47728 11.081 9.14928 11.7124 8.90408C12.3228 8.66668 13.0204 8.50487 14.0424 8.45807Z" fill="#F1F2F4"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1397 10.1301C17.307 10.1298 17.4868 10.1299 17.681 10.13L18.0009 10.1301C20.5642 10.1301 20.868 10.1393 21.8802 10.1853C22.8162 10.2281 23.3242 10.3845 23.6626 10.5159C24.1106 10.6899 24.43 10.8979 24.7658 11.2339C25.1018 11.5699 25.3098 11.8899 25.4842 12.3379C25.6156 12.6759 25.7722 13.1839 25.8148 14.1199C25.8608 15.1319 25.8708 15.4359 25.8708 17.998C25.8708 20.56 25.8608 20.864 25.8148 21.876C25.772 22.812 25.6156 23.32 25.4842 23.658C25.3102 24.106 25.1018 24.425 24.7658 24.7608C24.4298 25.0968 24.1108 25.3048 23.6626 25.4788C23.3246 25.6108 22.8162 25.7668 21.8802 25.8096C20.8682 25.8556 20.5642 25.8656 18.0009 25.8656C15.4375 25.8656 15.1337 25.8556 14.1217 25.8096C13.1857 25.7664 12.6777 25.61 12.3391 25.4786C11.8911 25.3046 11.5711 25.0966 11.2351 24.7606C10.8991 24.4246 10.6911 24.1054 10.5167 23.6572C10.3853 23.3192 10.2287 22.8112 10.1861 21.8752C10.1401 20.8632 10.1309 20.5592 10.1309 17.9956C10.1309 15.4319 10.1401 15.1295 10.1861 14.1175C10.2289 13.1815 10.3853 12.6735 10.5167 12.3351C10.6907 11.8871 10.8991 11.5671 11.2351 11.2311C11.5711 10.8951 11.8911 10.6871 12.3391 10.5127C12.6775 10.3807 13.1857 10.2247 14.1217 10.1817C15.0073 10.1417 15.3505 10.1297 17.1397 10.1277V10.1301ZM23.1254 11.7241C22.4894 11.7241 21.9734 12.2395 21.9734 12.8757C21.9734 13.5117 22.4894 14.0277 23.1254 14.0277C23.7614 14.0277 24.2774 13.5117 24.2774 12.8757C24.2774 12.2397 23.7614 11.7237 23.1254 11.7237V11.7241ZM13.0709 18.0002C13.0709 15.2776 15.2783 13.0702 18.0009 13.0702H18.0007C20.7234 13.0702 22.9302 15.2776 22.9302 18.0002C22.9302 20.7228 20.7236 22.9293 18.0009 22.9293C15.2783 22.9293 13.0709 20.7228 13.0709 18.0002Z" fill="#F1F2F4"></path>
+                    <path d="M18.0009 14.8C19.7682 14.8 21.201 16.2327 21.201 18.0001C21.201 19.7673 19.7682 21.2001 18.0009 21.2001C16.2335 21.2001 14.8009 19.7673 14.8009 18.0001C14.8009 16.2327 16.2335 14.8 18.0009 14.8Z" fill="#F1F2F4"></path>
+                 </svg>
+              </a>
+           </div>
+        </div>
+     </div>
+  </div>
+  <div class="line"></div>
+  <div class="container footer--content">
+     <div class="footer--content_row">
+        <div class="footer--content_column">
+           <span>© <span data-language="index_copyright">Магазин обуви, Модно и доступно, </span> 2021</span>
+        </div>
+        <div class="footer--content_column" data-language="created_by_Sago_Group">
+           Сайт создан в Sago Group
+        </div>
+     </div>
+  </div>
+</footer>
+
+
+<script>
+  const tab = function () {
+      let tabNav = document.querySelectorAll('.tabs-nav-item'),
+          tabContent = document.querySelectorAll('.tabs-content-item'),
+          tabName;
+
+      tabNav.forEach((item) => {
+          item.addEventListener('click', selectTabNav)
+      });
+
+      function selectTabNav() {
+          tabNav.forEach((item) => {
+              item.classList.remove('is-active');
+          });
+          this.classList.add('is-active');
+          tabName = this.getAttribute('data-tab-name');
+          selectTabContent(tabName);
+      }
+
+      function selectTabContent(tab) {
+          tabContent.forEach((item) => {
+              let classList = item.classList;
+              classList.contains(tab) ? classList.add('is-active') : classList.remove('is-active');
+          });
+      }
+  };
+
+  if('.tabs-nav'){
+      tab();
+  }
+
+  $(document).ready(function(){
+    $(".guarantees_list").slick({
+      infinite: false,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            dots: true
+          }
+        }
+      ]
+    })
+  });
+</script>
+</body>
+</html>
