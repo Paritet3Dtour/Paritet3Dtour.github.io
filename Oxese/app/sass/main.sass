@@ -29,6 +29,22 @@ input,textarea
   &::focus
     &::placeholder
       color: #fff
+textarea, input[type="text"], input[type="button"], input[type="submit"]
+  -webkit-appearance: none
+  border-radius: 0
+input[type=text]::-ms-clear
+  display: none
+  width : 0
+  height: 0
+input[type=text]::-ms-reveal
+  display: none
+  width : 0
+  height: 0
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration
+  display: none
 
 .text-left
   text-align: left
@@ -1642,6 +1658,16 @@ header
     svg
       path
         stroke: #fff
+select.catalog__result__sort__item
+  -webkit-appearance: none
+  -moz-appearance: none
+  text-indent: 1px
+  text-overflow: ''
+  background-image: url('../img/arrow-select.svg')
+  background-repeat: no-repeat
+  background-size: 12px
+  background-position: 88% 17px
+  padding-right: 26px
 .catalog__article
   background: #fff
   margin-bottom: 20px
