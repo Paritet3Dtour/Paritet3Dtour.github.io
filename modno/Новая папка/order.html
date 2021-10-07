@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content_language" content="ru">
+  <meta name="description" content="modnodostupno"> 
+  <title>modnodostupno</title> 
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <script src="https://modnodostupno.com.ua/design/modno/js/jquery-3.3.1.min.js"></script>
+  <script src="https://modnodostupno.com.ua/design/modno/js/slick.min.js"></script>  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+  <link href="https://modnodostupno.com.ua/design/modno/css/libs.css" rel="stylesheet">
+  <link href="https://modnodostupno.com.ua/design/modno/css/style.css" rel="stylesheet">
+  <link href="https://modnodostupno.com.ua/design/modno/css/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head> 
+<body>
+
+<div class="main">
+   <section class="order-section">
+      <div class="container">
+         <div class="order_title">
+            <h1>Корзина </h1>
+         </div>
+         <div class="order_wrapp">
+            <div class="order_personal">
+               <div class="order_request_heading">Оформление заказа</div>
+               <div class="order_request_nav">
+                  <button class="tabs-nav-item is-active" data-tab-name="standart">Быстрый заказ</button>
+                  <button class="tabs-nav-item" data-tab-name="extended">Расширенный заказ</button>
+               </div>
+               <div class="order_request_tabs">
+                  <div class="order_request_tab tabs-content-item standart is-active">
+                     <div class="order_request_container">
+                        <div class="order_form_heading">Контактные данные</div>
+                        <form action="" class="order_form">
+                           <div class="form-group">
+                              <input type="text" name="name" placeholder="Имя *" required>
+                           </div>
+                           <div class="form-group">
+                              <input type="text" name="phone" placeholder="Номер телефона*" required>
+                           </div>
+                           <button type="submit" class="order_form_submit">Оформить заказ</button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="order_request_tab tabs-content-item extended">
+                     <form action="">
+                        <div class="order_request_container">
+                           <div class="order_form_heading">Контактные данные</div>
+                           <div class="order_form extended">
+                              <div class="form-group">
+                                 <input type="text" name="name" placeholder="Имя *" required>
+                              </div>
+                              <div class="form-group">
+                                 <input type="text" name="name" placeholder="Фамилия">
+                              </div>
+                              <div class="form-group">
+                                 <input type="text" name="phone" placeholder="Номер телефона*" required>
+                              </div>
+                              <div class="form-group">
+                                 <input type="text" name="email" placeholder="Email*" required>
+                              </div>
+                              <div class="form-group full">
+                                 <textarea name="" id="" placeholder="Комментарии к заказу"></textarea>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="order_request_additionals">
+                           <div class="order_request_additional">
+                              <div class="order_request_additional_list">
+                                 <div class="order_request_additional_heading">
+                                    Способы доставки
+                                 </div>
+                                 <div class="order_request_check">
+                                    <input type="radio" id="delivery1"
+                                       name="deliveryType" value="delivery1">
+                                    <label for="delivery1">
+                                       <div class="label">Новая почта <span>(выберите город, для расчета стоимости)</span></div>
+                                    </label>
+                                 </div>
+                                 <div class="order_request_check">
+                                    <input type="radio" id="delivery2"
+                                       name="deliveryType" value="delivery2" checked>
+                                    <label for="delivery2">
+                                       <div class="label">Самовывоз <span>(бесплатно)</span></div>
+                                    </label>
+                                 </div>
+                              </div>
+                              <div class="order_request_additional_list">
+                                 <div class="order_request_additional_heading">
+                                    Способы оплаты
+                                 </div>
+                                 <div class="order_request_check">
+                                    <input type="radio" id="payment1"
+                                       name="paymentType" value="payment1">
+                                    <label for="payment1">
+                                       <div class="label">Оплата при получении <span>(наложенный платеж)</span></div>
+                                    </label>
+                                 </div>
+                                 <div class="order_request_check">
+                                    <input type="radio" id="payment2"
+                                       name="paymentType" value="payment2" checked>
+                                    <label for="payment2">
+                                       <div class="label">Оплата картой</div>
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <button type="submit" class="order_form_submit">Оформить заказ</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+
+            <div class="order_details">
+               <div class="order_details_heading">Ваши товары:</div>
+               <div class="order_products">
+                  <div class="order_product">
+                     <div class="order_product_params">
+                        <div class="order_product_preview" style="background-image: url('img/product.png');"></div>
+                        <div class="order_product_descr">
+                           <p>Босоножки WS5516-19 Khaki</p>
+                           <p>Цвет: Салатовый</p>
+                           <p>Размер: 37</p>
+                        </div>
+                     </div>
+                     <div class="order_product_info">
+                        <div class="order_product_price price">
+                           <div class="order_product_info_heading">Цена</div>
+                           <div class="order_product_info_price">2 969 грн</div>
+                        </div>
+                        <div class="order_product_count">
+                           <div class="order_product_info_heading">Количество</div>
+                           <div class="amount fn_product_amount">
+                              <span class="minus">−</span>
+                              <input class="input_amount" type="text" name="amount" value="1" data-max="100">
+                              <span class="plus">+</span>
+                           </div>
+                        </div>
+                        <div class="order_product_price summ">
+                           <div class="order_product_info_heading">Сумма</div>
+                           <div class="order_product_info_price">2 969 грн</div>
+                        </div>
+                     </div>
+                     <button class="remove" type="button">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M12.0625 0.999999L7 6.0625L1.9375 1C1.67861 0.741109 1.25889 0.741109 1 1C0.741109 1.25889 0.74111 1.67861 1 1.9375L6.0625 7L1 12.0625C0.74111 12.3214 0.741109 12.7411 1 13C1.25889 13.2589 1.67861 13.2589 1.9375 13L7 7.9375L12.0625 13C12.3214 13.2589 12.7411 13.2589 13 13C13.2589 12.7411 13.2589 12.3214 13 12.0625L7.9375 7L13 1.9375C13.2589 1.67861 13.2589 1.25889 13 1C12.7411 0.741109 12.3214 0.741108 12.0625 0.999999Z" fill="#EB5757"/>
+                        </svg>
+                     </button>
+                  </div>
+               </div>
+               <div class="order_details_total">
+                  <div class="order_details_total_item">
+                     <div class="label">Сумма заказа:</div>
+                     <div class="value">2 969 грн</div>
+                  </div>
+                  <div class="order_details_total_item">
+                     <div class="label">Доставка:</div>
+                     <div class="value">бесплатно</div>
+                  </div>
+                  <div class="order_details_total_item result">
+                     <div class="label">Вместе</div>
+                     <div class="value">2 969 грн</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="guarantees-section">
+      <div class="container">
+         <div class="guarantees_list">
+            <div class="guarantees_item">
+               <div class="guarantees_item_icon">
+                  <img src="img/guarantees_item1.svg" alt="">  
+               </div>
+               <div class="guarantees_item_descr">
+                  100% гаранития качества
+               </div>
+            </div>
+            <div class="guarantees_item">
+               <div class="guarantees_item_icon">
+                  <img src="img/guarantees_item2.svg" alt="">  
+               </div>
+               <div class="guarantees_item_descr">
+                  Доставка по всей стране
+               </div>
+            </div>
+            <div class="guarantees_item">
+               <div class="guarantees_item_icon">
+                  <img src="img/guarantees_item3.svg" alt="">  
+               </div>
+               <div class="guarantees_item_descr">
+                  14 дней на возврат товара
+               </div>
+            </div>
+            <div class="guarantees_item">
+               <div class="guarantees_item_icon">
+                  <img src="img/guarantees_item4.svg" alt="">  
+               </div>
+               <div class="guarantees_item_descr">
+                  Самовывоз из магазина
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+</div>
+
+
+<script>
+  const tab = function () {
+      let tabNav = document.querySelectorAll('.tabs-nav-item'),
+          tabContent = document.querySelectorAll('.tabs-content-item'),
+          tabName;
+
+      tabNav.forEach((item) => {
+          item.addEventListener('click', selectTabNav)
+      });
+
+      function selectTabNav() {
+          tabNav.forEach((item) => {
+              item.classList.remove('is-active');
+          });
+          this.classList.add('is-active');
+          tabName = this.getAttribute('data-tab-name');
+          selectTabContent(tabName);
+      }
+
+      function selectTabContent(tab) {
+          tabContent.forEach((item) => {
+              let classList = item.classList;
+              classList.contains(tab) ? classList.add('is-active') : classList.remove('is-active');
+          });
+      }
+  };
+
+  if('.tabs-nav'){
+      tab();
+  }
+
+  $(document).ready(function(){
+    $(".guarantees_list").slick({
+      infinite: false,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            dots: true
+          }
+        }
+      ]
+    })
+  });
+</script>
+</body>
+</html>
