@@ -108,7 +108,7 @@ main
     width: 63%
     color: #fff
     padding: 72px 30px 64px 120px
-    animation: banner_item 0.2s linear
+    animation: banner_item 1s linear
     animation-delay: 0.1s
     animation-fill-mode: both
     &::before
@@ -252,6 +252,9 @@ main
   min-height: 333px
   display: flex
   flex-direction: column
+  transition: all 0.2s
+  &:hover
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.08)
   .labels
     display: flex
     justify-content: space-between
@@ -635,6 +638,10 @@ main
   display: flex
   align-items: flex-end
   position: relative
+  transition: all 0.2s
+  &:hover
+    &::before
+      background: rgba(0, 0, 0, 0.4)
   &::before
     content: ''
     position: absolute
@@ -643,6 +650,7 @@ main
     width: 100%
     height: 100%
     background: rgba(0, 0, 0, 0.6)
+    transition: all 0.2s
   .link
     position: absolute
     left: 0
@@ -731,12 +739,15 @@ main
 /** MAP SECTION**/
 .map-section
   margin: 140px 0 120px
+  position: relative
   .main-heading
     text-align: left
     margin-bottom: 20px
   .desc
     font-size: 20px
     line-height: 25px
+  .mainContainer
+    position: relative
 .map-section__top
   margin-bottom: -120px
 .map-section__container
@@ -750,13 +761,28 @@ main
   position: absolute
   cursor: pointer
   &.active
-    .map-section__item__inside
-      svg
-        transform: scale(1.05)
-        z-index: 9
-        path
-          fill: #00BEC8
-          stroke: #A3B8B9
+    @media screen and (max-width: 992px)
+      .map-section__item__inside
+        svg
+          transform: scale(1.05)
+          z-index: 9
+          path
+            fill: #00BEC8
+            stroke: #A3B8B9
+    @media screen and (min-width: 992px)
+      .map-section__item__content
+        .map-section__item__name
+          //color: #fff
+          transform: translateY(-8px)
+          &::after
+            background-image: url('../img/map-item-icon-active.svg')
+        &+.map-section__item__inside
+          svg
+            transform: scale(1.05)
+            z-index: 9
+            path
+              fill: #00BEC8
+              stroke: #A3B8B9
 .map_content_item_content
   position: absolute
   top: 50%
@@ -1101,31 +1127,91 @@ main
     color: #2A3232
 .map-section__info
   display: none
+  .close
+    display: none
+  @media screen and (min-width: 992px)
+    position: absolute
+    bottom: 50%
+    right: 0
+    width: 366px
+    padding: 30px 35px 35px
+    background: #FFFFFF
+    border-radius: 4px
+    z-index: 10
+    display: block
+    opacity: 0
+    transition: all 0.2s
+    &.active
+      opacity: 1
+    .close
+      display: flex
+      align-items: center
+      justify-content: center
+      position: absolute
+      right: 21px
+      top: 21px
+      width: 29px
+      height: 29px
+      border-radius: 50%
+      border: 2px solid #000000
+      padding: 0
+      background: transparent
+      &:focus
+        outline: none
+  
 .map-section__info__country
-  margin-bottom: 8px
-  text-align: center
-  font-weight: 600
-  font-size: 22px
-  line-height: 28px
+  @media screen and (min-width: 992px)
+    text-align: left
+    margin-bottom: 24px
+    font-size: 28px
+    font-weight: 600
+    line-height: 37px
+  @media screen and (max-width: 992px)
+    margin-bottom: 8px
+    text-align: center
+    font-weight: 600
+    font-size: 22px
+    line-height: 28px
 .map-section__info__count
-  text-align: center
-  margin-bottom: 20px
-  font-weight: 600
-  font-size: 18px
-  line-height: 23px
-  color: #698486
-  span
-    vertical-align: baseline
+  @media screen and (min-width: 992px)
+    text-align: left
+    margin-bottom: 24px
+    font-size: 20px
+    font-weight: 600
+    line-height: 28px
+    color: #698486
+    display: block
+    span
+      vertical-align: baseline
+  @media screen and (max-width: 992px)
+    text-align: center
+    margin-bottom: 20px
+    font-weight: 600
+    font-size: 18px
+    line-height: 23px
+    color: #698486
+    span
+      vertical-align: baseline
 .map-section__info__link
-  width: 100%
-  padding: 20px 10px
-  font-weight: 600
-  font-size: 16px
-  color: #fff
-  background: #00BEC8
-  border-radius: 4px
-  display: block
-  text-align: center
+  @media screen and (min-width: 992px)
+    padding: 20px 40px
+    background: #00BEC8
+    border-radius: 4px
+    color: #FFFFFF
+    font-weight: 600
+    font-size: 16px
+    display: block
+    width: max-content
+  @media screen and (max-width: 992px)
+    width: 100%
+    padding: 20px 10px
+    font-weight: 600
+    font-size: 16px
+    color: #fff
+    background: #00BEC8
+    border-radius: 4px
+    display: block
+    text-align: center
 .map-section__item__name
   opacity: 0
   transition: all 0.2s
@@ -1321,6 +1407,10 @@ footer
   font-weight: bold
   font-size: 14px
   line-height: 18px
+  &.click-item
+    display: none
+    &.show
+      display: block
 .footer__content
   .language-toggler
     color: #fff
@@ -1660,6 +1750,9 @@ select.catalog__result__sort__item
   margin-bottom: 20px
   padding: 24px 24px 32px 24px
   border-radius: 4px
+  transition: all 0.2s
+  &:hover
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.08)
   .labels
     display: flex
     align-items: center
@@ -2129,6 +2222,7 @@ select.catalog__result__sort__item
   display: flex
   justify-content: space-between
   align-items: flex-start
+  position: relative
 .new__top
   margin-bottom: 40px
   .page-heading
@@ -2165,6 +2259,9 @@ select.catalog__result__sort__item
   align-items: center
   width: 27.2%
   margin-top: 30px
+  position: sticky
+  top: 30px
+  right: 0
   .icon
     width: 80px
     height: 80px
@@ -3114,11 +3211,52 @@ select.catalog__result__sort__item
   &.middle
     .pricing__item__name
       color: #62C692
+  &.full-tariff
+    .pricing__item__sale
+      opacity: 1
 .pricing__item__name
   margin-bottom: 12px
   font-weight: 600
   font-size: 32px
   line-height: 40px
+.pricing__item__price-wrapp
+  display: flex
+  justify-content: flex-start
+  align-items: center
+.pricing__item__sale
+  opacity: 0
+  transition: all 0.2s
+  margin-left: 14px
+  .value
+    letter-spacing: 0.04em
+    text-transform: uppercase
+    color: #EF4137
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    span
+      vertical-align: baseline
+  .old
+    font-size: 28px
+    line-height: normal
+    color: #698486
+    margin-top: -6px
+    position: relative
+    width: max-content
+    span
+      font-weight: 600
+      font-size: 16px
+      line-height: 20px
+    &::after
+      content: ''
+      display: block
+      width: calc(100% + 5px)
+      transform: rotate(-19.57deg)
+      height: 1px
+      background-color: #698486
+      position: absolute
+      left: -1px
+      top: 23px
 .pricing__item__price
   font-weight: 600
   font-size: 56px
@@ -3248,9 +3386,7 @@ select.catalog__result__sort__item
   margin-left: 47px
 .services-section__issue
   width: 100%
-  overflow: auto
   margin-bottom: 32px
-  padding-bottom: 20px
   &::-webkit-scrollbar 
     -webkit-appearance: none
     width: 2px
@@ -3263,10 +3399,17 @@ select.catalog__result__sort__item
     cursor: pointer
     background-color: #00BEC8
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15)
+.services-section__slider
+  padding-bottom: 22px
+  .swiper-scrollbar
+    bottom: 0
+    height: 2px
+    background-color: #ccdcde
+    .swiper-scrollbar-drag
+      background-color: #00BEC8
 .services-section__list
-  width: max-content
-  display: flex
-  justify-content: flex-start
+  //display: flex
+  //justify-content: flex-start
   align-items: stretch
 .services-section__item
   width: 190px
@@ -3274,21 +3417,31 @@ select.catalog__result__sort__item
   border: 1px solid #CCDCDE
   border-radius: 8px
   padding: 24px 20px
-  margin-right: 12px
   display: flex
   flex-direction: column
   justify-content: flex-end
+  height: auto
   .box-check
     margin: 0 auto
     width: max-content
     label
-      line-height: 32px
       display: block
-      height: 32px
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      z-index: 10
+      padding: 0
       &::before
+        content: ''
         width: 32px
         height: 32px
         background-size: 18px
+        left: 50%
+        margin-left: - 16px
+        bottom: 24px
+        top: auto
   &:last-child
     margin-right: 0
 .services-section__item__name
@@ -3303,7 +3456,7 @@ select.catalog__result__sort__item
   font-weight: 600
   font-size: 40px
   line-height: 50px
-  margin-bottom: 28px
+  margin-bottom: 60px
   margin-top: 32px
   span
     font-weight: 600
@@ -3343,6 +3496,7 @@ select.catalog__result__sort__item
   border: 1px solid #E1ECED
   border-radius: 4px
   padding: 24px 24px 34px 24px
+  height: auto
 .faq-section__item__heading
   margin-bottom: 12px
   font-weight: 600
@@ -3399,6 +3553,8 @@ select.catalog__result__sort__item
   img
     max-width: 200px
     height: auto
+  &:focus
+    outline: none
 .authorization__title
   text-align: center
   margin-bottom: 40px
@@ -3445,20 +3601,21 @@ select.catalog__result__sort__item
       color: #698486
 .pass-toggler
   position: absolute
-  padding: 5px 3px
   right: 20px
-  top: 16px
+  top: 17px
   border: none
   background: transparent
-  svg
-    path
-      transition: all 0.2s
+  width: 22px
+  height: 22px
+  background-image: url('../img/pass-eye-icon.svg')
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center center
+  padding: 0
   &:focus
     outline: none
   &.active
-    svg
-      path
-        stroke: #00BEC8
+    background-image: url('../img/pass-eye-icon-show.svg')
 .authorization__descr
   margin-bottom: 32px
   margin-top: -8px
@@ -4107,6 +4264,16 @@ select.catalog__result__sort__item
   .map-section__item__name::after
     width: 21px
     height: 17px
+  .map-section__info
+    width: 302px
+    padding: 30px 20px 30px
+    bottom: 45%
+  .map-section__info__country
+    font-size: 24px
+    margin-bottom: 18px
+  .map-section__info__count
+    font-size: 17px
+    margin-bottom: 20px
   /* PARTNERS SECTION */
   .partners-section .partners-section__item
     height: 256px
@@ -4301,7 +4468,7 @@ select.catalog__result__sort__item
     font-size: 14px
     line-height: 21px
   .services-section__item__price
-    margin-bottom: 20px
+    margin-bottom: 52px
     margin-top: 28px
   /* FAQ */
   .faq-section__item
@@ -4684,6 +4851,9 @@ select.catalog__result__sort__item
       background-repeat: no-repeat
       background-size: 15px
       background-position: center center
+    display: none !important
+    &.click-item
+      display: block !important
   .footer__menu__list:last-child .footer__menu__list__heading
     color: #fff
   .footer__subscribe__descr
@@ -5548,6 +5718,21 @@ select.catalog__result__sort__item
     order: 0
     margin-right: 16px
     flex-shrink: 0
+    margin-left: 0
+  .services-section__item .box-check label
+    position: static
+    width: 32px
+    height: 32px
+  .services-section__item .box-check label::before
+    bottom: auto
+    top: 0
+    left: 0
+    margin-left: 0
+    position: static
+  .services-section__slider .swiper-scrollbar
+    display: none
+  .services-section__slider
+    padding-bottom: 0
   .services-section__item:last-child
     margin-bottom: 0
   .services-section__issue

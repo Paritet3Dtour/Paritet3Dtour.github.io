@@ -126,7 +126,9 @@
             <div class="pricing__list swiper-wrapper">
               <div class="pricing__item free swiper-slide">
                 <div class="pricing__item__name">Free</div>
-                <div class="pricing__item__price">0 <span>€</span></div>
+                <div class="pricing__item__price-wrapp">
+                  <div class="pricing__item__price"><b>0</b> <span>€</span></div>
+                </div>
                 <div class="pricing__item__descr">1 time only</div>
                 <ul class="pricing__item__params">
                   <li>By default, the profile is hidden</li>
@@ -135,13 +137,19 @@
                 <a href="#" class="pricing__item__link">Subscribe</a>
               </div>
       
-              <div class="pricing__item short swiper-slide">
+              <div class="pricing__item short swiper-slide" data-fullprice="60" data-defaultprice="25">
                 <div class="pricing__item__name">Short</div>
-                <div class="pricing__item__price">25 <span>€</span></div>
+                <div class="pricing__item__price-wrapp">
+                  <div class="pricing__item__price"><b>25</b> <span>€</span></div>
+                  <div class="pricing__item__sale">
+                    <div class="value">SAVE <span> -20%</span></div>
+                    <div class="old"><b>75</b> <span>€</span></div>
+                  </div>
+                </div>
                 <div class="pricing__item__tariff">
                   <span>1 month</span>
                   <input type="checkbox" id="short-variant">
-                  <label class="pricing__item__tariff__icon" for="short-variant"></label>
+                  <label class="pricing__item__tariff__icon click-item" data-action="pricingToggler" for="short-variant"></label>
                   <span>3 month</span>
                 </div>
                 <ul class="pricing__item__params">
@@ -158,13 +166,19 @@
                 </div>
               </div>
       
-              <div class="pricing__item middle swiper-slide">
+              <div class="pricing__item middle swiper-slide" data-fullprice="150" data-defaultprice="65">
                 <div class="pricing__item__name">Middle</div>
-                <div class="pricing__item__price">65 <span>€</span></div>
+                <div class="pricing__item__price-wrapp">
+                  <div class="pricing__item__price"><b>65</b> <span>€</span></div>
+                  <div class="pricing__item__sale">
+                    <div class="value">SAVE <span> -24%</span></div>
+                    <div class="old"><b>195</b> <span>€</span></div>
+                  </div>
+                </div>
                 <div class="pricing__item__tariff">
                   <span>1 month</span>
                   <input type="checkbox" id="middle-variant">
-                  <label class="pricing__item__tariff__icon" for="middle-variant"></label>
+                  <label class="pricing__item__tariff__icon click-item" data-action="pricingToggler" for="middle-variant"></label>
                   <span>3 month</span>
                 </div>
                 <ul class="pricing__item__params">
@@ -251,60 +265,67 @@
       <div class="main-heading">Additional services</div>
       <div class="services-section__descr">Withdrawn as a bonus when submitting an application</div>
       <div class="services-section__wrapp">
-        <div class="services-section__preview">
-          <img src="img/service-preview-1.svg" alt="">
+        <div class="services-section__preview swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/service-preview-1.svg" alt=""></div>
+            <div class="swiper-slide"><img src="img/service-preview-2.svg" alt=""></div>
+            <div class="swiper-slide"><img src="img/service-preview-3.svg" alt=""></div>
+          </div>
         </div>
         <div class="services-section__container">
           <div class="services-section__issue">
-            <div class="services-section__list">
-              <div class="services-section__item">
-                <div class="services-section__item__name">Display application at the top of the list (for 24 hours)</div>
-                <div class="services-section__item__price">10 <span>€</span></div>
-                <div class="box-check">
-                  <input type="checkbox" id="service1" checked>
-                  <label for="service1"></label>
+            <div class="services-section__slider swiper-container ">
+              <div class="services-section__list swiper-wrapper">
+                <div class="services-section__item swiper-slide">
+                  <div class="services-section__item__name">Display application at the top of the list (for 24 hours)</div>
+                  <div class="services-section__item__price">10 <span>€</span></div>
+                  <div class="box-check">
+                    <input type="checkbox" id="service1" checked>
+                    <label for="service1"></label>
+                  </div>
+                </div>
+                <div class="services-section__item swiper-slide">
+                  <div class="services-section__item__name">Highlight application in bold/red</div>
+                  <div class="services-section__item__price">5 <span>€</span></div>
+                  <div class="box-check">
+                    <input type="checkbox" id="service2">
+                    <label for="service2"></label>
+                  </div>
+                </div>
+                <div class="services-section__item swiper-slide">
+                  <div class="services-section__item__name">Raise the application to the top of the list</div>
+                  <div class="services-section__item__price">5 <span>€</span></div>
+                  <div class="box-check">
+                    <input type="checkbox" id="service3">
+                    <label for="service3"></label>
+                  </div>
+                </div>
+                <div class="services-section__item swiper-slide">
+                  <div class="services-section__item__name">Display application at the top of the list (for 24 hours)</div>
+                  <div class="services-section__item__price">10 <span>€</span></div>
+                  <div class="box-check">
+                    <input type="checkbox" id="service4">
+                    <label for="service4"></label>
+                  </div>
+                </div>
+                <div class="services-section__item swiper-slide">
+                  <div class="services-section__item__name">Highlight application in bold/red</div>
+                  <div class="services-section__item__price">5 <span>€</span></div>
+                  <div class="box-check">
+                    <input type="checkbox" id="service5">
+                    <label for="service5"></label>
+                  </div>
+                </div>
+                <div class="services-section__item swiper-slide">
+                  <div class="services-section__item__name">Raise the application to the top of the list</div>
+                  <div class="services-section__item__price">5 <span>€</span></div>
+                  <div class="box-check">
+                    <input type="checkbox" id="service6">
+                    <label for="service6"></label>
+                  </div>
                 </div>
               </div>
-              <div class="services-section__item">
-                <div class="services-section__item__name">Highlight application in bold/red</div>
-                <div class="services-section__item__price">5 <span>€</span></div>
-                <div class="box-check">
-                  <input type="checkbox" id="service2">
-                  <label for="service2"></label>
-                </div>
-              </div>
-              <div class="services-section__item">
-                <div class="services-section__item__name">Raise the application to the top of the list</div>
-                <div class="services-section__item__price">5 <span>€</span></div>
-                <div class="box-check">
-                  <input type="checkbox" id="service3">
-                  <label for="service3"></label>
-                </div>
-              </div>
-              <div class="services-section__item">
-                <div class="services-section__item__name">Display application at the top of the list (for 24 hours)</div>
-                <div class="services-section__item__price">10 <span>€</span></div>
-                <div class="box-check">
-                  <input type="checkbox" id="service4">
-                  <label for="service4"></label>
-                </div>
-              </div>
-              <div class="services-section__item">
-                <div class="services-section__item__name">Highlight application in bold/red</div>
-                <div class="services-section__item__price">5 <span>€</span></div>
-                <div class="box-check">
-                  <input type="checkbox" id="service5">
-                  <label for="service5"></label>
-                </div>
-              </div>
-              <div class="services-section__item">
-                <div class="services-section__item__name">Raise the application to the top of the list</div>
-                <div class="services-section__item__price">5 <span>€</span></div>
-                <div class="box-check">
-                  <input type="checkbox" id="service6">
-                  <label for="service6"></label>
-                </div>
-              </div>
+              <div class="swiper-scrollbar"></div>
             </div>
           </div>
           <a href="#" class="services-section__link">Order</a>
@@ -465,6 +486,24 @@
   <script src="js/main.js"></script>
   
   <script>
+    if(window.innerWidth > 992){
+      let previewSlider = new Swiper(".services-section__preview", {
+        effect: "fade"
+      });
+      let servicesSlider = new Swiper('.services-section__slider', {
+        direction: 'horizontal',
+        slidesPerView: 3,
+        slidesPerGroup: 2,
+        spaceBetween: 12,
+        scrollbar: {
+          el: ".services-section__slider .swiper-scrollbar",
+          hide: false,
+        },
+      });
+
+      previewSlider.controller.control = servicesSlider;
+      servicesSlider.controller.control = previewSlider;
+    }
     if(window.innerWidth < 993){
       let mySwiper = new Swiper('.pricing-section__slider', {
         direction: 'horizontal',

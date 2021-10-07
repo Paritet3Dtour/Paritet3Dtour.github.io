@@ -47,6 +47,48 @@ function clickItemHandler(event){
               target.closest('.popup_container').classList.remove('active');
             }
         },
+        'mapPopup': function (target) {
+            let targetName = target.querySelector('.map-section__item__name').innerHTML;
+            let targetApplications = target.getAttribute('data-applications');
+            let targetLink = target.getAttribute('data-href');
+            let infoContainer = document.querySelector('.map-section__info');
+
+            infoContainer.classList.add('active');
+            document.querySelector('.map-section__info__country').innerHTML = targetName;
+            document.querySelector('.map-section__info__count span').innerHTML = targetApplications;
+            document.querySelector('.map-section__info__link').setAttribute('href', targetLink);
+
+            let mapItems = document.querySelectorAll('.map-section__item');
+        
+            mapItems.forEach((item) => {
+                item.classList.remove('active');
+            });
+
+            target.classList.add('active');
+        },
+        'mapPopupClose': function (target) {
+            document.querySelector('.map-section__info').classList.remove('active');
+        
+            document.querySelectorAll('.map-section__item').forEach((item) => {
+                item.classList.remove('active');
+            });
+        },
+        'pricingToggler': function (target) {
+            let wrapp = target.closest('.pricing__item');
+            let fullPrice = wrapp.getAttribute('data-fullprice');
+            let defaultPrice = wrapp.getAttribute('data-defaultprice');
+
+            setTimeout(() => {
+                if((wrapp.querySelector('.pricing__item__tariff input').checked)){
+                    wrapp.classList.add('full-tariff');
+                    wrapp.querySelector('.pricing__item__price b').innerHTML = fullPrice;
+                }else{
+                    wrapp.classList.remove('full-tariff');
+                    wrapp.querySelector('.pricing__item__price b').innerHTML = defaultPrice;
+                }
+            }, 100);
+        }
+        
     }
 
     if(item.dataset.action){
@@ -189,7 +231,7 @@ function bannerToggler(target){
     target.classList.add('active');
 };
 
-if('#map-country-select'){
+if(document.querySelector('#map-country-select')){
     document.querySelector('#map-country-select').onchange = function(){
         selectMapCountry(this.value);
     };
@@ -200,7 +242,7 @@ function selectMapCountry(target){
         let targetCountry = document.querySelector('.map-section__item[data-country="'+target+'"]');
         let targetName = targetCountry.querySelector('.map-section__item__name').innerHTML;
         let targetApplications = targetCountry.getAttribute('data-applications');
-        let targetLink = targetCountry.querySelector('.map-section__item__content').getAttribute('href');
+        let targetLink = targetCountry.getAttribute('data-href');
         let infoContainer = document.querySelector('.map-section__info');
 
         infoContainer.classList.add('active');
@@ -224,3 +266,4 @@ function selectMapCountry(target){
         document.querySelector('.map-section__info').classList.remove('active');
     }
 }
+
