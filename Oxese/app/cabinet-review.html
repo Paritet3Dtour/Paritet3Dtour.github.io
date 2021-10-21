@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="libs/swiperjs/swiper.min.css">
+  <link rel="stylesheet" href="css/circle.css">
   <link rel="stylesheet" href="css/main.css">
 </head> 
  
@@ -48,8 +48,7 @@
               <div class="icon">
                 <img src="img/login-icon.svg" alt="">
               </div>
-              <a href="sign_in.html">Sign in</a>
-              <a href="sign_up.html">Sign up</a>
+              <a href="#">alexeykliumk@gmail.com</a>
             </div>
           </div>
         </div>
@@ -96,8 +95,12 @@
             </div>
           </div>
           <div class="header__links">
+            <div class="header__links__tariff">
+              <input type="checkbox" id="profile-variant">
+              <label class="pricing__item__tariff__icon" for="profile-variant"></label>
+              <span>I'm a customer</span>
+            </div>
             <a href="find_order.html" class="primary-btn">Place an order</a>
-            <a href="find_order.html" class="primary-btn">Find an order</a>
           </div>
         </div>
       </div>
@@ -105,121 +108,75 @@
   </header>
 
 <main>
- <div class="news">
-   <div class="mainContainer">
-    <ul class="top-breadcrumbs">
-      <li><a href="#">Main page</a></li>
-      <li class="active"><a href="#">Find an order</a></li>
-    </ul>
+  <section class="cabinet">
+    <div class="mainContainer">
+      <div class="cabinet__review">
+        <div class="cabinet__top__heading">Leave a review about this performer</div>
+        <div class="cabinet__review__descr">This will help other customers make a decision on the choice of the contractor!</div>
+        <form class="cabinet__review__form">
+          <div class="cabinet__review__wrapp">
+            <div class="cabinet__form-group">
+              <textarea name="" placeholder="Review"></textarea>
+            </div>
+            <ul class="cabinet__review__labels">
+              <li>
+                <div class="label">Quality</div>
+                <div class="stars">
+                  <img src="img/star-icon.svg" alt="">
+                  <img src="img/star-icon.svg" alt="">
+                  <img src="img/star-icon.svg" alt="">
+                  <img src="img/star-icon.svg" alt="">
+                  <img src="img/star-icon.svg" alt="">
+                </div>
+              </li>
+              <li>
+                <div class="label">Professionalism</div>
+                <div class="stars">
+                  <img src="img/star-icon.svg" alt="">
+                  <img src="img/star-icon.svg" alt="">
+                  <img src="img/star-icon.svg" alt="">
+                  <img src="img/star-icon.svg" alt="">
+                  <img src="img/star-icon.svg" alt="">
+                </div>
+              </li>
+              <li>
+                <div class="label">Price</div>
+                <div class="stars">
+                  <img src="img/star-icon.svg" alt="">
+                  <img src="img/star-icon.svg" alt="">
+                  <img src="img/star-icon.svg" alt="">
+                  <img src="img/star-icon.svg" alt="">
+                  <img src="img/star-icon.svg" alt="">
+                </div>
+              </li>
+              <li>
+                <div class="label">Availability</div>
+                <div class="stars">
+                  <img src="img/star-icon.svg" alt="">
+                  <img src="img/star-icon.svg" alt="">
+                  <img src="img/star-icon.svg" alt="">
+                  <img src="img/star-icon.svg" alt="">
+                  <img src="img/star-icon.svg" alt="">
+                </div>
+              </li>
+              <li>
+                <div class="label">Terms</div>
+                <div class="stars">
+                  <img src="img/star-icon.svg" alt="">
+                  <img src="img/star-icon.svg" alt="">
+                  <img src="img/star-icon.svg" alt="">
+                  <img src="img/star-icon.svg" alt="">
+                  <img src="img/star-icon.svg" alt="">
+                </div>
+              </li>
+            </ul>
+          </div>
 
-    <div class="news__top">
-      <div class="page-heading">Blog</div>
-      <div class="news-sort">
-        <button class="news-sort__tag">All topics</button>
-        <select name="" id="">
-          <option value="">Select a topic</option>
-          <option value="">Select a topic</option>
-          <option value="">Select a topic</option>
-          <option value="">Select a topic</option>
-          <option value="">Select a topic</option>
-          <option value="">Select a topic</option>
-        </select>
+          <button type="submit" class="cabinet__review_submit primary-btn">Submit review</button>
+        </form>
       </div>
     </div>
-
-    <div class="news__list">
-      <div class="news__banner-item" style="background-image: url('img/news/new-banner-item.jpg');">
-        <div class="news__banner-item__content">
-          <div class="news__banner-item__date">June 22, 2021</div>
-          <div class="news__banner-item__name">Design Tips for Injection Moulding</div>
-        </div>
-        <a href="new.html" class="news__banner-item__link"></a>
-      </div>
-      <div class="news__item">
-        <div class="news__item__preview" style="background-image: url('img/news/new-item1.jpg');"></div>
-        <div class="news__item__date">June 22, 2021</div>
-        <div class="news__item__name">Design Tips for Injection Moulding</div>
-        <a href="new.html" class="news__item__link"></a>
-      </div>
-      <div class="news__item">
-        <div class="news__item__preview" style="background-image: url('img/news/new-item2.jpg');"></div>
-        <div class="news__item__date">June 18, 2021</div>
-        <div class="news__item__name">Selective laser sintering (SLS) 3D printing: Technology overview</div>
-        <a href="new.html" class="news__item__link"></a>
-      </div>
-      <div class="news__item">
-        <div class="news__item__preview" style="background-image: url('img/news/new-item3.jpg');"></div>
-        <div class="news__item__date">June 4, 2021</div>
-        <div class="news__item__name">Injection Moulding Surface Finishes: SPI and VDI</div>
-        <a href="new.html" class="news__item__link"></a>
-      </div>
-      <div class="news__item">
-        <div class="news__item__preview" style="background-image: url('img/news/new-item4.jpg');"></div>
-        <div class="news__item__date">June 22, 2021</div>
-        <div class="news__item__name">Design Tips for Injection Moulding</div>
-        <a href="new.html" class="news__item__link"></a>
-      </div>
-      <div class="news__item">
-        <div class="news__item__preview" style="background-image: url('img/news/new-item5.jpg');"></div>
-        <div class="news__item__date">June 18, 2021</div>
-        <div class="news__item__name">Selective laser sintering (SLS) 3D printing: Technology overview</div>
-        <a href="new.html" class="news__item__link"></a>
-      </div>
-      <div class="news__item">
-        <div class="news__item__preview" style="background-image: url('img/news/new-item6.jpg');"></div>
-        <div class="news__item__date">June 4, 2021</div>
-        <div class="news__item__name">Injection Moulding Surface Finishes: SPI and VDI</div>
-        <a href="new.html" class="news__item__link"></a>
-      </div>
-      <div class="news__item">
-        <div class="news__item__preview" style="background-image: url('img/news/new-item7.jpg');"></div>
-        <div class="news__item__date">June 22, 2021</div>
-        <div class="news__item__name">Design Tips for Injection Moulding</div>
-        <a href="new.html" class="news__item__link"></a>
-      </div>
-      <div class="news__item">
-        <div class="news__item__preview" style="background-image: url('img/news/new-item8.jpg');"></div>
-        <div class="news__item__date">June 18, 2021</div>
-        <div class="news__item__name">Selective laser sintering (SLS) 3D printing: Technology overview</div>
-        <a href="new.html" class="news__item__link"></a>
-      </div>
-      <div class="news__item">
-        <div class="news__item__preview" style="background-image: url('img/news/new-item9.jpg');"></div>
-        <div class="news__item__date">June 4, 2021</div>
-        <div class="news__item__name">Injection Moulding Surface Finishes: SPI and VDI</div>
-        <a href="new.html" class="news__item__link"></a>
-      </div>
-      <div class="news__item">
-        <div class="news__item__preview" style="background-image: url('img/news/new-item10.jpg');"></div>
-        <div class="news__item__date">June 22, 2021</div>
-        <div class="news__item__name">Design Tips for Injection Moulding</div>
-        <a href="new.html" class="news__item__link"></a>
-      </div>
-      <div class="news__item">
-        <div class="news__item__preview" style="background-image: url('img/news/new-item11.jpg');"></div>
-        <div class="news__item__date">June 18, 2021</div>
-        <div class="news__item__name">Selective laser sintering (SLS) 3D printing: Technology overview</div>
-        <a href="new.html" class="news__item__link"></a>
-      </div>
-      <div class="news__item">
-        <div class="news__item__preview" style="background-image: url('img/news/new-item12.jpg');"></div>
-        <div class="news__item__date">June 4, 2021</div>
-        <div class="news__item__name">Injection Moulding Surface Finishes: SPI and VDI</div>
-        <a href="new.html" class="news__item__link"></a>
-      </div>
-    </div>
-    <div class="news__pagination pagination-container">
-      <ul class="pagination-list">
-        <li class="active"><a href="">1</a></li>
-        <li><a href="">2</a></li>
-        <li><a href="">3</a></li>
-        <li class="delimetr">...</li>
-        <li><a href="">300</a></li>
-      </ul>
-      <button type="button" class="pagination-btn next"></button>
-    </div>
-   </div>
- </div>
+  </section>
 </main>
 
 <footer>
@@ -319,7 +276,6 @@
     © Copyright 2021 Oxese. All rights reserved
   </div>
 </footer>
-
 
 <script src="js/main.js"></script>
 

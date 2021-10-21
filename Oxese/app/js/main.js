@@ -24,10 +24,10 @@ function clickItemHandler(event){
         'passToggler': function(target){
             if(target.classList.contains('active')){
                 target.classList.remove('active');
-                target.closest('.form-group').querySelector('input').setAttribute('type', 'password');
+                target.closest('div').querySelector('input').setAttribute('type', 'password');
             }else{
                 target.classList.add('active');
-                target.closest('.form-group').querySelector('input').setAttribute('type', 'text');
+                target.closest('div').querySelector('input').setAttribute('type', 'text');
             }
         },
         'headerToggler': function(target){
@@ -212,12 +212,18 @@ const tab = function () {
         tabName = this.getAttribute('data-tab-name');
         selectTabContent(tabName);
     }
+    
 
     function selectTabContent(tab) {
         tabContent.forEach((item) => {
             let classList = item.classList;
             classList.contains(tab) ? classList.add('is-active') : classList.remove('is-active');
         });
+        if(document.querySelector('.tabs-content__item.tab-performes').classList.contains('is-active')){
+            document.querySelector('.bglist').classList.add('active');
+        }else{
+            document.querySelector('.bglist').classList.remove('active');
+        }
     }
 };
 
