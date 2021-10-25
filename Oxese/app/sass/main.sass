@@ -3728,6 +3728,83 @@ select.catalog__result__sort__item
     &:focus
       outline: none
 
+.authorization__form.promo-form
+  .form-group
+    margin-bottom: 12px
+  .form-group__descr
+    margin-bottom: 24px
+    font-size: 13px
+    line-height: 19px
+
+
+.authorization__counter
+  margin-bottom: 40px
+.authorization__counter__heading
+  text-align: center
+  color: #2A3232
+  font-weight: 600
+  font-size: 20px
+  line-height: 25px
+  margin-bottom: 8px
+.authorization__counter__wrapp
+  display: flex
+  justify-content: center
+  align-items: flex-start
+.authorization__counter__item
+  margin-right: 40px
+  position: relative
+  &::after
+    content: ':'
+    position: absolute
+    top: 24px
+    right: -20px
+    font-weight: bold
+    font-size: 24px
+    line-height: 35px
+  &:last-child
+    margin-right: 0
+    &::after
+      display: none
+  span
+    display: block
+    text-align: center
+    color: #00BEC8
+    font-weight: 600
+    font-size: 64px
+    line-height: 80px
+  p
+    text-align: center
+    color: #2A3232
+    font-size: 15px
+    line-height: 19px
+    margin-top: -5px
+
+.authorization-promo__wrapp
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  .aboutus-presentation__video
+    margin-left: 80px
+    width: 341px
+    height: 341px
+    &::before
+      top: 7px
+      left: 0
+      background-size: contain
+      width: 341px
+      height: 341px
+    &::after
+      width: 270px
+      height: 270px
+      margin-left: -135px
+      margin-top: -135px
+      background-size: contain
+    &:hover .icon
+      transform: scale(1.2)
+  .authorization__container
+    margin: inherit
+
+
 /** PROFILE **/
 .profile
   padding-bottom: 120px
@@ -5900,6 +5977,43 @@ select.catalog__result__sort__item
 
   .catalog, .order, .news, .new, .contacts
     padding-top: 24px
+  
+  .authorization-promo__wrapp
+    flex-direction: column
+  .authorization-promo__wrapp .aboutus-presentation__video
+    width: 286px
+    height: 286px
+    margin: 0 auto
+    order: 0
+    margin-bottom: 20px
+  .authorization-promo__wrapp .authorization__container
+    order: 1
+  .authorization__counter__item span
+    font-size: 39px
+    line-height: 64px
+  .authorization__counter__item::after
+    top: 11px
+    font-size: 18px
+    right: -17px
+  .authorization__counter__item
+    margin-right: 30px
+  .authorization-promo__wrapp .aboutus-presentation__video::before
+    width: 286px
+    height: 286px
+    top: 0
+  .authorization-promo__wrapp .aboutus-presentation__video::after
+    background-image: url(../img/playbg2.svg)
+    width: 230px
+    height: 230px
+    margin-left: -115px
+    margin-top: -115px
+    top: 50%
+    left: 50%
+  .authorization-promo__wrapp .aboutus-presentation__video .icon
+    margin-bottom: 8px
+  .authorization-promo__wrapp .aboutus-presentation__video .icon svg path
+    fill: #fff
+  
   
 @media screen and (max-width: 368px)
   .pricing__label

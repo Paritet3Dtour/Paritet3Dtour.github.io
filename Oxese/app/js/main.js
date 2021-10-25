@@ -273,3 +273,29 @@ function selectMapCountry(target){
     }
 }
 
+function aboutTimerCountdown(){
+    if(!document.querySelector('#authorization-countdown')) return;
+    let timer = document.querySelector('#authorization-countdown');
+    timer.style.hidden = false;
+    let days = timer.querySelector('#days');
+    let hours = timer.querySelector('#hours');
+    let minutes = timer.querySelector('#minutes');
+    let seconds = timer.querySelector('#seconds');
+    let ssty = timer.getAttribute('date-end');
+    let begin = new Date(timer.getAttribute('date-end')).getTime();
+
+    function calc(){
+        let now = new Date().getTime();
+        let timePassed = begin - now;
+
+        days.textContent = Math.round(timePassed / (1000 * 60 * 60 * 24));
+        hours.textContent = Math.round((timePassed % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        minutes.textContent = Math.round((timePassed % (1000 * 60 * 60)) / (1000 * 60));
+        seconds.textContent = Math.round((timePassed % (1000 * 60)) / 1000);
+    }
+
+    calc();
+    setInterval(calc,1000);
+};
+
+aboutTimerCountdown();
