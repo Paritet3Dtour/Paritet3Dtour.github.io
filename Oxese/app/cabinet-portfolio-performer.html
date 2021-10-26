@@ -235,15 +235,17 @@
 
             <form class="cabinet__form">
               <div class="cabinet__form__container">
-                <div class="cabinet__form__heading">personal information</div>
+                <div class="cabinet__form__heading">work information</div>
                 <div class="cabinet__form-group full">
-                  <input type="text" placeholder="Name of work">
+                  <input type="text" id="namework">
+                  <label for="namework">Name of work</label>
                 </div>
                 <div class="cabinet__form-group full">
                   <textarea name="" placeholder="Description of the work"></textarea>
                 </div>
                 <div class="cabinet__form-group">
-                  <input type="text" placeholder="When was it done" class="date-input">
+                  <input type="text" class="date-input" id="date">
+                  <label for="date">When was it done</label>
                 </div>
                 <div class="cabinet__form-group">
                   <select name="">
@@ -259,7 +261,7 @@
                   <img src="img/upload-photo-icon.svg" alt="">
                 </div>
                 <div class="cabinet__form__upload__descr">
-                  <p>jpeg / png up to 4MB - only you should be shown in the photo</p>
+                  <p>File size should not exceed 4 MB. Format: jpg, gif, png, doc, xls, gzip, zip, rar, txt, pdf, mp3.</p>
                   <button class="border-btn">Upload</button>
                 </div>
               </div>

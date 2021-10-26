@@ -160,7 +160,7 @@
         <div class="cabinet__content">
           <div class="cabinet__top">
             <div class="cabinet__top__content">
-              <div class="cabinet__top__heading">Private information</div>
+              <div class="cabinet__top__heading">Settings</div>
               <div class="cabinet__top__nav">
                 <a href="cabinet-settings.html" class="cabinet__top__nav__item">
                   Service settings
@@ -175,20 +175,23 @@
             <div class="cabinet__form__container">
               <div class="cabinet__form__heading">change password</div>
               <div class="cabinet__form-group full">
-                <input type="text" placeholder="Current password">
+                <input type="text" id="currentpassword">
+                <label for="currentpassword">Current password</label>
               </div>
               <div class="cabinet__form-group">
                 <button type="button" class="pass-toggler click-item" data-action="passToggler">            
                 </button>
-                <input type="password" placeholder="New password">
+                <input type="password" id="currentpassword">
+                <label for="newpassword">New password</label>
               </div>
               <div class="cabinet__form-group">
                 <button type="button" class="pass-toggler click-item" data-action="passToggler">            
                 </button>
-                <input type="password" placeholder="New password again">
+                <input type="password" id="newpasswordagain">
+                <label for="newpasswordagain">New password again</label>
               </div>
             </div>
-            <div class="cabinet__form__heading">change password</div>
+            <div class="cabinet__form__heading">search engines</div>
             <div class="cabinet__form__check-box">
               <div class="box-check">
                 <input type="checkbox" id="hide" checked>

@@ -229,10 +229,12 @@
             <div class="cabinet__form__container">
               <div class="cabinet__form__heading">personal information</div>
               <div class="cabinet__form-group">
-                <input type="text" placeholder="Name*">
+                <input type="text" id="name">
+                <label for="name">Name*</label>
               </div>
               <div class="cabinet__form-group">
-                <input type="text" placeholder="Surname*">
+                <input type="text" id="surname">
+                <label for="surname">Surname*</label>
               </div>
               <div class="cabinet__form-group">
                 <select name="">
@@ -271,10 +273,12 @@
               <div class="cabinet__form__heading">contact information</div>
               <div class="cabinet__form__alert">This information details won't be publicly available</div>
               <div class="cabinet__form-group">
-                <input type="text" placeholder="phone*" value="(063) 123-45-67">
+                <input type="text" value="(063) 123-45-67" id="phone">
+                <label for="phone">Phone*</label>
               </div>
               <div class="cabinet__form-group">
-                <input type="text" placeholder="email*" value="alexeykliumk@gmail.com">
+                <input type="text" value="alexeykliumk@gmail.com" id="email">
+                <label for="email">Email*</label>
               </div>
             </div>
             <div class="cabinet__form__radios">
@@ -303,7 +307,8 @@
             <div class="cabinet__form__container">
               <div class="cabinet__form__heading">company information</div>
               <div class="cabinet__form-group full">
-                <input type="text" placeholder="Company name*" value="easyagency">
+                <input type="text" value="easyagency" id="companyname">
+                <label for="companyname">Company name*</label>
               </div>
               <div class="cabinet__form-group full">
                 <textarea name="" placeholder="About company"></textarea>
@@ -314,7 +319,7 @@
                 <img src="img/upload-photo-icon.svg" alt="">
               </div>
               <div class="cabinet__form__upload__descr">
-                <p>jpeg / png up to 4MB - only you should be shown in the photo</p>
+                <p>jpeg / png up to 4MB - add your company logo</p>
                 <button class="border-btn">Upload</button>
               </div>
             </div>

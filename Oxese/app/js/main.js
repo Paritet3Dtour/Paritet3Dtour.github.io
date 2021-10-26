@@ -299,3 +299,31 @@ function aboutTimerCountdown(){
 };
 
 aboutTimerCountdown();
+
+
+function checkInputLabel(){
+    let inputs = document.querySelectorAll('.cabinet__form-group input');
+
+    inputs.forEach((item) => {
+        if(item.value.length > 0){
+            item.closest('.cabinet__form-group').classList.add('label-active')
+        }else{
+            item.closest('.cabinet__form-group').classList.remove('label-active')
+        }
+    });
+}
+checkInputLabel();
+
+
+
+let inputs = document.querySelectorAll('.cabinet__form-group input');
+inputs.forEach((item) => {
+    item.oninput = function() {
+        if(this.value.length > 0){
+            this.closest('.cabinet__form-group').classList.add('label-active')
+        }else{
+            this.closest('.cabinet__form-group').classList.remove('label-active')
+        }
+        //document.getElementById('result').innerHTML = input.value;
+    };
+});
