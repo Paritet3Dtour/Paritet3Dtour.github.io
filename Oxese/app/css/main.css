@@ -9219,6 +9219,12 @@ select.catalog__result__sort__item {
 .cabinet__orders-issue .catalog__article .mobile-labels {
   display: none; }
 
+.header__menu.menu-cabinet {
+  display: none; }
+
+.logout-link {
+  display: none; }
+
 @media screen and (max-width: 1199px) {
   .cabinet__nav {
     width: 220px;
@@ -9483,7 +9489,11 @@ select.catalog__result__sort__item {
     margin-bottom: 40px; }
   .cabinet__form__specializations__wrapp {
     width: calc(100% + 12px);
-    overflow: auto; }
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none; }
+    .cabinet__form__specializations__wrapp::-webkit-scrollbar {
+      display: none; }
   .cabinet__form__specializations__list {
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -9506,7 +9516,11 @@ select.catalog__result__sort__item {
   .cabinet__orders-issue .catalog__article .tags {
     margin-top: 20px; }
   .cabinet__orders-issue .catalog__article .tags__wrapp {
-    overflow: auto; }
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none; }
+    .cabinet__orders-issue .catalog__article .tags__wrapp::-webkit-scrollbar {
+      display: none; }
   .cabinet__orders-issue .catalog__article .tags__list {
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -9636,7 +9650,86 @@ select.catalog__result__sort__item {
   .cabinet__top__wrapp {
     display: block; }
     .cabinet__top__wrapp .cabinet__form-group {
-      display: none; } }
+      display: none; }
+  .cabinet-header .header__main {
+    position: relative; }
+  .cabinet-header .header__main .language-toggler {
+    display: none; }
+  .cabinet-header .header__links__tariff {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    position: absolute;
+    top: 40px;
+    left: 0; }
+  .cabinet-header .pricing__item__tariff__icon {
+    margin-left: 0; }
+  .cabinet-header .logout-link {
+    color: #698486;
+    font-size: 24px;
+    line-height: 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 40px; }
+    .cabinet-header .logout-link svg {
+      margin-right: 13px;
+      max-width: 20px;
+      vertical-align: sub; }
+  .cabinet-header .header__menu {
+    display: none;
+    margin-bottom: 44px; }
+    .cabinet-header .header__menu.menu-cabinet {
+      display: block; }
+      .cabinet-header .header__menu.menu-cabinet li:first-child a {
+        padding-top: 0; }
+      .cabinet-header .header__menu.menu-cabinet li:last-child a {
+        padding-bottom: 0; }
+      .cabinet-header .header__menu.menu-cabinet li a {
+        color: #698486;
+        font-size: 24px;
+        line-height: 30px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 16px 0; }
+        .cabinet-header .header__menu.menu-cabinet li a.active {
+          color: #2E3737; }
+          .cabinet-header .header__menu.menu-cabinet li a.active svg:not(.stroke-icon) path {
+            fill: #00BEC8; }
+          .cabinet-header .header__menu.menu-cabinet li a.active svg.stroke-icon path {
+            stroke: #00BEC8; }
+        .cabinet-header .header__menu.menu-cabinet li a svg {
+          margin-right: 11px;
+          max-width: 20px;
+          vertical-align: sub; }
+  .cabinet-header.active .header__links__feed {
+    display: none !important; }
+  .cabinet-header.active .header__logo {
+    display: none; }
+  .cabinet-header.active .header__nav {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .cabinet-header.active .header__content {
+    padding-top: 0; }
+  .cabinet-header.active .header__togglers a {
+    display: none; }
+  .cabinet-header .header__links__feed .toggler span {
+    display: none; }
+  .cabinet-header .header__links__feed {
+    margin-right: 12px; } }
 
 @media screen and (max-width: 364px) {
   .cabinet-header .header__logo {

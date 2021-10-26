@@ -6914,6 +6914,12 @@ select.catalog__result__sort__item
   .mobile-labels
     display: none
 
+.header__menu
+  &.menu-cabinet
+    display: none
+.logout-link
+  display: none
+
 
 @media screen and (max-width: 1199px)
   .cabinet__nav
@@ -7128,6 +7134,10 @@ select.catalog__result__sort__item
   .cabinet__form__specializations__wrapp
     width: calc(100% + 12px)
     overflow: auto
+    -ms-overflow-style: none
+    scrollbar-width: none
+    &::-webkit-scrollbar
+      display: none
   .cabinet__form__specializations__list
     width: max-content
   .cabinet__form__specializations__list .box-check
@@ -7149,6 +7159,10 @@ select.catalog__result__sort__item
     margin-top: 20px
   .cabinet__orders-issue .catalog__article .tags__wrapp
     overflow: auto
+    -ms-overflow-style: none
+    scrollbar-width: none 
+    &::-webkit-scrollbar
+      display: none
   .cabinet__orders-issue .catalog__article .tags__list
     width: max-content
   .cabinet__orders-issue .catalog__article .tags__list .label
@@ -7236,6 +7250,77 @@ select.catalog__result__sort__item
     display: block
     .cabinet__form-group
       display: none
+  .cabinet-header
+    .header__main
+      position: relative
+    .header__main .language-toggler
+      display: none
+    .header__links__tariff
+      width: max-content
+      position: absolute
+      top: 40px
+      left: 0
+    .pricing__item__tariff__icon
+      margin-left: 0
+    .logout-link
+      color: #698486
+      font-size: 24px
+      line-height: 30px
+      display: flex
+      align-items: center
+      margin-bottom: 40px
+      svg
+        margin-right: 13px
+        max-width: 20px
+        vertical-align: sub
+    .header__menu
+      display: none
+      margin-bottom: 44px
+      &.menu-cabinet
+        display: block
+        li
+          &:first-child
+            a
+              padding-top: 0
+          &:last-child
+            a
+              padding-bottom: 0
+          a
+            color: #698486
+            font-size: 24px
+            line-height: 30px
+            display: flex
+            align-items: center
+            padding: 16px 0
+            &.active
+              color: #2E3737
+              svg:not(.stroke-icon)
+                path
+                  fill: #00BEC8
+              svg
+                &.stroke-icon
+                  path
+                    stroke: #00BEC8
+            svg
+              margin-right: 11px
+              max-width: 20px
+              vertical-align: sub
+    &.active
+      .header__links__feed
+        display: none !important
+      .header__logo
+        display: none
+      .header__nav
+        justify-content: flex-end
+      .header__content
+        padding-top: 0
+      .header__togglers a
+        display: none
+    .header__links__feed .toggler span
+      display: none
+    .header__links__feed
+      margin-right: 12px
+
     
 
 @media screen and (max-width: 364px)
