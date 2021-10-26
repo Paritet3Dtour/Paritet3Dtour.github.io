@@ -319,7 +319,7 @@ input[type="search"]::-webkit-search-results-decoration {
   background: transparent;
   width: 22px;
   height: 22px;
-  background-image: url("../img/pass-eye-icon.svg");
+  background-image: url("../img/pass-eye-icon-show.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -327,7 +327,7 @@ input[type="search"]::-webkit-search-results-decoration {
   .pass-toggler:focus {
     outline: none; }
   .pass-toggler.active {
-    background-image: url("../img/pass-eye-icon-show.svg"); }
+    background-image: url("../img/pass-eye-icon.svg"); }
 
 .box-check input {
   display: none; }
