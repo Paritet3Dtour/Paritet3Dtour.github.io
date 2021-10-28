@@ -4,6 +4,8 @@ window.onload = function(){
 
     document.addEventListener('click', clickItemHandler);
     document.addEventListener('click', handlerClickLinks);
+    checkScrollInput();
+    checkInputLabel();
 
 };
 
@@ -305,6 +307,13 @@ function checkInputLabel(){
     let inputs = document.querySelectorAll('.cabinet__form-group input');
 
     inputs.forEach((item) => {
+        item.oninput = function() {
+            if(this.value.length > 0){
+                this.closest('.cabinet__form-group').classList.add('label-active')
+            }else{
+                this.closest('.cabinet__form-group').classList.remove('label-active')
+            }
+        };
         if(item.value.length > 0){
             item.closest('.cabinet__form-group').classList.add('label-active')
         }else{
@@ -312,18 +321,21 @@ function checkInputLabel(){
         }
     });
 }
-checkInputLabel();
 
+function checkScrollInput(){
+    let input = document.querySelectorAll(".input-slider");
 
+    input.forEach((item) => {
+        let maxCount = item.querySelector('.range').getAttribute('max');
+        let range = item.querySelector('.range');
+        item.querySelector('.value').innerHTML = range.value;
+        let slideWidth = range.value * 100 / maxCount;
+        item.querySelector('.slide').style.width = slideWidth + "%";
 
-let inputs = document.querySelectorAll('.cabinet__form-group input');
-inputs.forEach((item) => {
-    item.oninput = function() {
-        if(this.value.length > 0){
-            this.closest('.cabinet__form-group').classList.add('label-active')
-        }else{
-            this.closest('.cabinet__form-group').classList.remove('label-active')
-        }
-        //document.getElementById('result').innerHTML = input.value;
-    };
-});
+        range.oninput = function() {
+        item.querySelector('.value').innerHTML = this.value;
+        let slideWidth = this.value * 100 / maxCount;
+        item.querySelector('.slide').style.width = slideWidth + "%";
+        };
+    });
+}
