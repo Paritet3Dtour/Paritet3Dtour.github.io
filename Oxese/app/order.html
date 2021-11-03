@@ -108,8 +108,9 @@
   <section class="order">
     <div class="mainContainer">
       <ul class="top-breadcrumbs">
-        <li><a href="#">Main page</a></li>
-        <li class="active"><a href="#">Find an order</a></li>
+        <li><a href="index.html">Main page</a></li>
+        <li><a href="find_order.html">Find an order</a></li>
+        <li class="active">Titanium parts manufacturing</li>
       </ul>
       <div class="order__top">
         <div class="page-heading">Titanium parts manufacturing</div>
@@ -188,7 +189,7 @@
             <div class="order-reviews__request">
               <form action="">
                 <input type="text" placeholder="Price, €" required>
-                <input type="text" placeholder="Deadline" required>
+                <input type="text" class="date-input" placeholder="Deadline" required>
                 <textarea placeholder="Comment" required></textarea>
                 <button type="submit" class="primary-btn">Add a bet</button>
               </form>
@@ -211,10 +212,26 @@
                 <div class="tabs-content__item tab-bets is-active">
                   <div class="order-reviews__list">
                     <div class="order-reviews__sort">
-                      <span>Date</span>
-                      <span>Price</span>
-                      <span>Date of publication</span>
-                      <span>Deadline</span>
+                      <select name="">
+                        <option value="0">Date</option>
+                        <option value="1">Date1</option>
+                        <option value="2">Date2</option>
+                      </select>
+                      <select name="">
+                        <option value="0">Price</option>
+                        <option value="1">Price1</option>
+                        <option value="2">Price2</option>
+                      </select>
+                      <select name="">
+                        <option value="0">Date of publication</option>
+                        <option value="1">Date of publication1</option>
+                        <option value="2">Date of publication2</option>
+                      </select>
+                      <select name="">
+                        <option value="0">Deadline</option>
+                        <option value="1">Deadline1</option>
+                        <option value="2">Deadline2</option>
+                      </select>
                     </div>
                     <div class="order-review">
                       <div class="order-review__info">
