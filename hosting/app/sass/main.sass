@@ -666,21 +666,21 @@ input[type="search"]::-webkit-search-results-decoration
       border: 1px solid #E5E6E5
       border-radius: 4px
       height: 40px
-    .add-more
-      display: block
-      border: none
-      background: transparent
-      padding: 0
-      color: #009440
-      font-size: 13px
-      line-height: 18px
-      margin-top: 13px
-      margin-bottom: -20px
-      svg
-        margin-right: 6px
-        vertical-align: sub
     &.full-group
       width: 100%
+  .add-more
+    display: block
+    border: none
+    background: transparent
+    padding: 0
+    color: #009440
+    font-size: 13px
+    line-height: 18px
+    margin-top: 13px
+    margin-bottom: -20px
+    svg
+      margin-right: 6px
+      vertical-align: sub
 
 
 .cabinet_form
@@ -1103,6 +1103,11 @@ input[type="search"]::-webkit-search-results-decoration
   margin-right: auto
   padding-right: 20px
   max-width: 300px
+.cabinet-contracts_item_aside
+  flex-shrink: 0
+  display: flex
+  align-items: center
+  justify-content: flex-end
 .cabinet-contracts_item_balance
   margin-right: 30px
   min-width: 16%
@@ -1125,20 +1130,35 @@ input[type="search"]::-webkit-search-results-decoration
   align-items: center
   flex-shrink: 0
   button
-    width: 40px
-    height: 40px
-    border-radius: 50%
-    background: #EDF3ED
-    display: flex
-    align-items: center
-    justify-content: center
     margin-right: 12px
     border: none
-    transition: all 0.2s
+    background: transparent
+    padding: 0
+    .icon
+      width: 40px
+      height: 40px
+      border-radius: 50%
+      display: flex
+      align-items: center
+      background: #EDF3ED
+      justify-content: center
+      transition: all 0.2s
     &:focus
       outline: none
     &:last-child
       margin-right: 0
+  .mob-name
+    display: none
+.cabinet-contracts_item_toggler
+  width: 40px
+  height: 40px
+  border-radius: 50%
+  background: #EDF3ED
+  display: flex
+  align-items: center
+  justify-content: center
+  border: none
+  display: none
 
 .nav-toggler
   input
@@ -1201,6 +1221,8 @@ input[type="search"]::-webkit-search-results-decoration
     width: 30%
   .permission
     width: 27%
+.cabinet-contracts_item_close
+  display: none
 .cabinet-contracts_item_user
   display: flex
   align-items: center
@@ -1216,6 +1238,8 @@ input[type="search"]::-webkit-search-results-decoration
   .permission
     width: 27%
 .cabinet-contracts_item_user_group
+  .label
+    display: none
   select
     border: none
     background: #F4F7F4
@@ -1268,6 +1292,11 @@ input[type="search"]::-webkit-search-results-decoration
         margin-bottom: 0
         .form-group
           width: 32%
+        .add-more
+          width: 100%
+          margin-top: -8px
+          text-align: left
+          margin-bottom: 1px
       .form-group
         select
           height: 40px
@@ -1350,6 +1379,8 @@ input[type="search"]::-webkit-search-results-decoration
     button
       &:last-child
         margin-right: 0
+    .submit-btn
+      margin-bottom: 0
 
 .cabinet_container_contact
   margin-bottom: 32px
@@ -1409,6 +1440,8 @@ input[type="search"]::-webkit-search-results-decoration
         transform: rotate(180deg)
     .cabinet_container_contact_user_content
       display: block
+.cabinet-contacts_user_toggler
+  display: none
 .cabinet_container_contact_user_top
   padding: 8px 24px
   display: flex
@@ -1465,10 +1498,16 @@ input[type="search"]::-webkit-search-results-decoration
     padding-right: 20px
 .cabinet_container_contact_user_item
   display: flex
-  align-items: center
+  align-items: flex-start
   justify-content: flex-start
   font-size: 15px
   margin-bottom: 16px
+  .label
+    display: none
+  .user-param
+    margin-bottom: 16px
+    &:last-child
+      margin-bottom: 0
   .phone
     width: 24%
     padding-right: 20px
@@ -2091,6 +2130,7 @@ input[type="search"]::-webkit-search-results-decoration
       svg
         margin: 0
     .cabinet_container_nav
+      margin-bottom: 24px
       .form-group
         width: auto
         input
@@ -2098,5 +2138,312 @@ input[type="search"]::-webkit-search-results-decoration
           width: 40px
           padding: 0
           background-position: center center
+          background-image: url(../img/search-icon.svg)
           &::placeholder
             color: transparent
+
+  .cabinet-contracts_item_toggler
+    display: flex
+    flex-shrink: 0
+    margin-left: 20px
+  .cabinet-contracts_item_aside
+    position: absolute
+    left: 0
+    top: 72px
+    width: 100%
+    z-index: 20
+    background: #FFFFFF
+    box-shadow: 0px 0px 50px #F4F7F4
+    border-radius: 8px
+    flex-direction: column-reverse
+    padding: 12px 20px 16px
+    display: none
+  .cabinet-contracts_item_nav
+    display: block
+    width: 100%
+    margin-bottom: 16px
+    button, .nav-toggler
+      width: 100%
+      display: flex
+      align-items: center
+      border-bottom: 1px solid #E5E6E5
+      padding-bottom: 12px
+      margin-right: 0
+      padding-top: 12px
+      font-family: 'Museo Regular', sans-serif
+      .icon
+        flex-shrink: 0
+        margin-right: 12px
+      &:first-child
+        padding-top: 0
+      &.delete-btn
+        color: #ED4C5C
+    .mob-name
+      display: inline-block
+      font-size: 16px
+      line-height: 19px
+    .nav-toggler
+      label
+        margin-right: 0
+  .cabinet-contracts_item_top
+    padding: 10px 20px
+    box-shadow: 0px 0px 50px #F4F7F4
+    background: #fff
+  .cabinet-contracts_item_name
+    max-width: 100%
+    font-size: 16px
+    padding-right: 0
+  .cabinet-contracts_item
+    position: relative
+    box-shadow: none
+    background: transparent
+  .cabinet-contracts_item_balance
+    margin-right: 0
+    text-align: left
+    width: 100%
+  .cabinet-contracts_users_nav
+    display: none
+  .cabinet-contracts_item_user
+    flex-wrap: wrap
+    align-items: flex-end
+    .name
+      width: 100%
+      margin-bottom: 16px
+  .cabinet-contracts_item_content
+    padding: 12px 20px 16px
+    box-shadow: 0px 0px 50px #F4F7F4
+    border-radius: 8px
+    background: #fff
+    border: none
+    z-index: 20
+    position: absolute
+    top: 72px
+    width: 100%
+  .cabinet-contracts_item_user_group .label
+    margin-bottom: 8px
+    width: 100%
+    color: #828580
+    font-size: 13px
+    line-height: 16px
+    display: block
+    width: 100%
+  .cabinet-contracts_item_user_group select
+    font-size: 15px
+  .cabinet-contracts_item_user
+    padding: 16px 0
+    &:last-child
+      padding-bottom: 0
+      border-bottom: none
+  .cabinet-contracts_item_user_group.permission
+    flex-wrap: wrap
+    width: 88%
+  .cabinet-contracts_item_user .action
+    padding-bottom: 3px
+  .cabinet-contracts_item_close
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    margin-bottom: 4px
+    font-size: 16px
+    line-height: 19px
+    .icon
+      width: 40px
+      height: 40px
+      flex-shrink: 0
+      margin-right: 12px
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      background: #EDF3ED
+  .cabinet_container_heading
+    line-height: 30px
+  .cabinet-contragents-search .cabinet_container_top
+    margin-bottom: 18px
+    max-width: 80%
+  .form-group input.search-input
+    background-image: none
+    padding-left: 16px
+    padding-right: 16px
+    &::placeholder
+      color: #828580
+      font-size: 15px
+  .form-group.search-group
+    align-items: stretch
+    margin-bottom: 32px
+    .submit-btn
+      padding: 0
+      width: 51px
+      display: flex
+      align-items: center
+      justify-content: center
+      background-image: url('../img/search-icon-white.svg')
+      background-position: center center
+      background-size: 15px
+      background-repeat: no-repeat
+      span
+        display: none
+  .cabinet_container_user-preview
+    display: block
+    padding: 12px 16px
+  .cabinet_container_user-preview_info
+    width: 100%
+    margin-bottom: 12px
+  .cabinet_container_user-preview_nav
+    justify-content: space-between
+  .cabinet_container_user-preview_nav select
+    max-width: 167px
+    min-width: 20%
+    margin-right: 0
+  .cabinet_container_user-preview_nav .submit-btn
+    padding: 16px 33px
+    flex-shrink: 0
+    margin-left: 16px
+  .cabinet_container_user-preview_search
+    width: 100%
+    margin-right: 0
+    margin-bottom: 12px
+  
+
+  .cabinet-contracts-list
+    .cabinet_container_nav
+      margin-bottom: 24px
+      .primary-btn
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 40px
+        height: 40px
+        padding: 0
+        flex-shrink: 0
+        span
+          display: none
+        svg
+          margin: 0
+      .form-group
+        width: auto
+        input
+          height: 40px
+          width: 40px
+          padding: 0
+          background-position: center center
+          background-image: url(../img/search-icon.svg)
+          &::placeholder
+            color: transparent
+
+  .cabinet-contracts-setting
+    .cabinet_container_nav
+      flex-wrap: wrap
+    .toggle-btn
+      margin-right: 0
+    .form-group
+      width: 100%
+      max-width: 100%
+      margin-top: 22px
+  .cabinet-contracts-toggler label
+    margin-right: 16px
+  .cabinet_form.cabinet-contracts-settings .cabinet_form_wrapp
+    margin-left: -16px
+    width: calc(100% + 32px)
+    padding: 32px 16px
+    margin-bottom: 32px
+  .cabinet_form.cabinet-contracts-settings .cabinet_form_wrapp .form-list .form-group
+    width: 100%
+    margin-right: 0
+    margin-top: 16px
+    &:last-child
+      margin-bottom: 0
+  .cabinet_form.cabinet-contracts-settings .cabinet_form_wrapp .form-list .add-more
+    margin-top: 0
+  
+  .cabinet-contacts .cabinet_container_nav .submit-btn
+    width: 40px
+    height: 40px
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 0
+    margin-bottom: 0
+    span
+      display: none
+    svg
+      margin: 0
+  .cabinet_container_nav .toggle-btn
+    margin-right: 16px
+  .cabinet_container_contact_top
+    display: block
+  .cabinet_container_contact_info button.create
+    span
+      display: none
+    svg
+      margin-right: 0
+  .cabinet_container_contact_info
+    margin-bottom: 12px
+  .cabinet_container_contact_nav
+    flex-wrap: wrap
+    justify-content: flex-start
+  .cabinet_container_contact_user_top
+    padding: 10px 20px
+  .cabinet_container_contact_user_top .status
+    display: none
+  .cabinet_container_contact_user_top .nav
+    display: none
+  .cabinet-contacts_user_toggler
+    display: flex
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    align-items: center
+    justify-content: center
+    background: #EDF3ED
+    border: none
+    &:focus
+      outline: none
+  .cabinet_container_contact_user_nav
+    display: none
+  .cabinet_container_contact_user_item
+    display: block
+    .label
+      width: 100%
+      color: #828580
+      font-size: 13px
+      line-height: 16px
+      display: block
+      margin-bottom: 8px
+    .phone
+      width: 100%
+      margin-bottom: 16px
+    .email
+      width: 100%
+      margin-bottom: 16px
+    .permission
+      width: 100%
+  .cabinet_container_contact_user
+    position: relative
+    box-shadow: none
+    border-radius: 0
+    background: transparent
+  .cabinet_container_contact_user.active .cabinet_container_contact_user_top
+    border-bottom: none
+  .cabinet_container_contact_user_top
+    box-shadow: 0px 0px 50px #F4F7F4
+    border-radius: 8px
+    background: #FFFFFF
+  .cabinet_container_contact_user_content
+    padding: 12px 20px 16px
+    box-shadow: 0px 0px 50px #f4f7f4
+    border-radius: 8px
+    background: #fff
+    border: none
+    z-index: 20
+    position: absolute
+    top: 72px
+    width: 100%
+  .cabinet_container_contact_user_item select
+    width: 100%
+    max-width: 100%
+    
+
+
+    
+      
