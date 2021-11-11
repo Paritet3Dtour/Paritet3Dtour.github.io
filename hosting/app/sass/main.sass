@@ -591,6 +591,7 @@ input[type="search"]::-webkit-search-results-decoration
 .cabinet_main
   width: 100%
   padding-right: 40px
+  overflow: hidden
   .header_wrapp
     justify-content: flex-end
   .header_logo
@@ -1888,8 +1889,12 @@ input[type="search"]::-webkit-search-results-decoration
   margin-bottom: 32px
 .cabinet_allotment_top
   display: flex
-  align-items: center
+  align-items: flex-end
   justify-content: space-between
+  margin-top: -42px
+  margin-bottom: 24px
+  .cabinet_container_tabs
+    margin-bottom: 0
 .cabinet_allotment_top_heading
   margin-bottom: 20px
   font-size: 18px
@@ -1904,6 +1909,7 @@ input[type="search"]::-webkit-search-results-decoration
     text-align: center
     font-size: 13px
     margin-bottom: 11px
+    text-transform: uppercase
   .value
     font-size: 18px
     line-height: 22px
@@ -1985,6 +1991,25 @@ input[type="search"]::-webkit-search-results-decoration
     font-size: 15px
   .cabinet-contracts_item_user_group select
     font-size: 14px
+
+  .refferals-table
+    .cabinet_table_wrapp
+      width: 100%
+      overflow: auto
+    .cabinet_table_list
+      width: max-content
+      min-width: 100%
+      .date
+        width: 157px
+      .cost-down
+        width: 157px
+      .cost-up
+        width: 157px
+      .user-id
+        width: 157px
+      .user-name
+        width: 157px
+  
 @media screen and (max-width: 992px)
   .box-check label
     line-height: 24px
@@ -2058,6 +2083,7 @@ input[type="search"]::-webkit-search-results-decoration
     max-width: 40%
   .cabinet_table_list
     width: max-content
+    min-width: 100%
   .cabinet_table_wrapp
     width: 100%
     overflow: auto
@@ -2442,6 +2468,63 @@ input[type="search"]::-webkit-search-results-decoration
   .cabinet_container_contact_user_item select
     width: 100%
     max-width: 100%
+
+  .cabinet_refferals
+    .cabinet_container_top
+      margin-bottom: 32px
+  .cabinet_container_notification
+    padding: 12px 72px 12px 16px
+    margin-bottom: 32px
+  .cabinet_container_notification p
+    line-height: 22px
+  .cabinet_container_notification .close
+    top: 50%
+    margin-top: -16px
+  .cabinet_invite
+    margin-left: -16px
+    width: calc(100% + 32px)
+    padding: 32px 16px
+  .cabinet_invite_heading
+    margin-bottom: 16px
+  .cabinet_invite_link
+    background-position: 94% 50%
+  .cabinet_table.refferals-table
+    margin-bottom: 32px
+  .cabinet_allotment
+    width: calc(100% + 32px)
+    margin-left: -16px
+    padding: 32px 16px
+  .cabinet_allotment_top
+    margin-top: 0
+    flex-direction: column-reverse
+  .cabinet_allotment_top_info
+    width: 100%
+    margin-bottom: 24px
+    padding-left: 20px
+    padding-right: 20px
+  .cabinet_allotment_top_nav
+    width: 100%
+  .cabinet_allotment_top_heading
+    margin-bottom: 16px
+  .cabinet_allotment_top .cabinet_container_tabs
+    justify-content: flex-start
+  .cabinet_allotment_top .cabinet_container_tabs-container
+    margin-bottom: 0
+  .cabinet_allotment_top
+    margin-bottom: 32px
+  .cabinet_allotment_content_descr
+    margin-bottom: 32px
+  .cabinet_allotment_form_list
+    display: block
+  .cabinet_allotment_form .form-group
+    max-width: 100%
+    width: 100%
+  .cabinet_allotment_form .box-check
+    padding-top: 0
+  .cabinet_allotment_form .primary-btn
+    width: 100%
+    margin-top: 32px
+
     
 
 
