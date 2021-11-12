@@ -43,6 +43,18 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration
   display: none
 
+select
+  -webkit-appearance: none
+  -moz-appearance: none
+  &::-ms-expand
+    display: none
+  background-image: url(../img/arrow-select-black.svg)
+  background-repeat: no-repeat
+  background-position-x: calc(100% - 14px)
+  background-position-y: 50%
+  background-size: 10px
+  padding-right: 30px
+
 .text-left
   text-align: left
 .text-right
@@ -53,6 +65,14 @@ input[type="search"]::-webkit-search-results-decoration
 .hidden
   display: none !important
 
+.main-section
+  margin: 120px 0
+.main-heading
+  text-align: center
+  font-weight: 600
+  font-size: 32px
+  line-height: 40px
+  margin-bottom: 40px
 
 .primary-btn
   background: #009440
@@ -109,15 +129,6 @@ input[type="search"]::-webkit-search-results-decoration
     border: 1px solid #06853d
     color: #FFFFFF
 
-.main-section
-  margin: 120px 0
-.main-heading
-  text-align: center
-  font-weight: 600
-  font-size: 32px
-  line-height: 40px
-  margin-bottom: 40px
-
 .tabs-content__item
   display: none
   &.is-active
@@ -130,69 +141,6 @@ input[type="search"]::-webkit-search-results-decoration
   line-height: 50px
   margin-bottom: 20px
 
-
-.autorization_wrapp
-  min-height: 100vh
-  display: flex
-  justify-content: space-between
-  align-items: stretch
-.autorization_preview
-  width: 100%
-  background: #009440
-  display: flex
-  align-items: center
-  justify-content: center
-  img
-    max-width: 100%
-    height: auto
-.autorization_content
-  flex-shrink: 0
-  padding: 60px 120px
-  display: flex
-  flex-direction: column
-  justify-content: center
-.autorization_logo
-  margin-bottom: 32px
-  text-align: center
-  img
-    max-width: 100%
-    height: auto
-.autorization_heading
-  margin-bottom: 40px
-  font-size: 32px
-  line-height: 38px
-  text-align: center
-.autorization_form
-  width: 613px
-  padding: 40px
-  background: #F4F7F4
-  border-radius: 4px
-  .link
-    font-size: 13px
-    line-height: 18px
-    color: #009440
-  button[type="submit"]
-    margin: 0 auto
-    display: block
-    width: max-content
-.autorization_form_top
-  display: flex
-  align-items: center
-  justify-content: space-between
-  margin-bottom: 29px
-.autorization_form_heading
-  font-size: 20px
-  line-height: 24px
-.autorization_form_toggler
-  text-align: right
-  font-size: 13px
-  line-height: 18px
-.autorization_form_bottom
-  display: flex
-  align-items: center
-  justify-content: space-between
-  margin-bottom: 34px
-
 .form-group
   width: 100%
   position: relative
@@ -201,7 +149,7 @@ input[type="search"]::-webkit-search-results-decoration
     border: 1px solid #E5E7E5
     border-radius: 4px
     height: 51px
-    padding: 0 16px
+    padding: 0 30px 0 16px
     font-size: 16px
     width: 100%
   label
@@ -318,6 +266,7 @@ input[type="search"]::-webkit-search-results-decoration
     label
       &::before
         top: 4px
+
 .cabinet_form_checks
   .box-check
     margin-bottom: 16px
@@ -357,29 +306,79 @@ input[type="search"]::-webkit-search-results-decoration
       border-radius: 50%
       transition: all 0.1s
       box-sizing: border-box
-
-.authorization__check
+.form-list
   display: flex
-  align-items: center
-  .box-check
-    flex-shrink: 0
-    margin-bottom: 0
+  flex-wrap: wrap
+  align-items: stretch
+  justify-content: space-between
+  width: 100%
+  margin-bottom: 32px
+  .form-group
+    width: 48%
+    margin-bottom: 20px
+    input
+      border: 1px solid #E5E6E5
+      border-radius: 4px
+      height: 40px
+    &.full-group
+      width: 100%
+  .add-more
+    display: block
+    border: none
+    background: transparent
+    padding: 0
+    color: #009440
+    font-size: 13px
+    line-height: 18px
+    margin-top: 13px
+    margin-bottom: -20px
+    svg
+      margin-right: 6px
+      vertical-align: sub
 
-.autorization_form_descr
-  margin-bottom: 38px
-  font-size: 13px
-  line-height: 19px
-
-.autorization_form
-  &.login-form
-    .autorization_form_bottom
-      margin-top: -6px
-  &.registration-form
-    .autorization_form_descr
-      margin-top: -4px
-    .autorization_form_bottom
-      margin-bottom: 24px
-
+.nav-toggler
+  input
+    display: none
+    &:checked
+      &+label
+        &::after
+          transform: translateX(12px)
+        &::before
+          background: #009440
+  label
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    background: #EDF3ED
+    margin-right: 12px
+    border: none
+    transition: all 0.2s
+    cursor: pointer
+    &::before
+      content: ''
+      width: 28px
+      height: 16px
+      display: block
+      background: #d6d6d6
+      border-radius: 80px
+      transition: all 0.2s
+    &::after
+      transition: all 0.2s
+      content: ''
+      display: block
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      background-color: #fff
+      position: absolute
+      left: 9px
+      top: 50%
+      margin-top: -5px
+      transform: translateX(0)
 
 /* HEADER */
 .header
@@ -470,6 +469,397 @@ input[type="search"]::-webkit-search-results-decoration
   border: none
   display: none
 
+/** CABINET TEMPLATE**/
+.cabinet-wrapp
+  display: flex
+  justify-content: space-between
+  align-items: stretch
+.cabinet_sidebar
+  flex-shrink: 0
+  width: 303px
+  min-height: 100vh
+  padding: 20px 0
+  background: #F4F7F4
+  margin-right: 59px
+.cabinet_logo
+  margin-bottom: 28px
+  margin-left: 32px
+  display: block
+  img
+    max-width: 160px
+    height: auto
+.cabinet_sidebar_menu
+  list-style: none
+  padding: 0
+  li
+    a
+      padding: 12px 32px
+      display: flex
+      display: block
+      color: #828580
+      font-size: 14px
+      line-height: 17px
+      svg
+        margin-right: 7px
+        vertical-align: middle
+      span
+        vertical-align: middle
+      &.active
+        color: #009440
+        background: #fff
+        position: relative
+        svg
+          &.settings-icon
+            path
+              stroke: #009440
+          &.refferals-icon
+            path
+              stroke: #009440
+          &.contacts-icon
+            path
+              fill: #009440
+            rect
+              &:nth-child(1)
+                stroke: #009440
+              &:nth-child(4)
+                fill: #009440
+              &:nth-child(5)
+                fill: #009440
+          &.contracts-icon
+            path
+              fill: #009440
+          &.contragents-icon
+            path
+              stroke: #009440
+          &.balance-icon
+            path
+              fill: #009440
+      &:hover
+        outline: none
+.cabinet_main
+  width: 100%
+  padding-right: 40px
+  overflow: hidden
+  .header_wrapp
+    justify-content: flex-end
+  .header_logo
+    display: none
+  .header
+    .mainContainer
+      padding: 0
+.cabinet_container
+  padding-top: 45px
+  padding-bottom: 80px
+.cabinet_container_top
+  margin-bottom: 20px
+.cabinet_container_heading
+  font-size: 20px
+  line-height: 24px
+  &.bold-heading
+    font-weight: 700
+  &+.cabinet_container_descr
+    margin-top: 20px
+.cabinet_container_subheading
+  font-size: 13px
+  font-weight: 700
+  margin-bottom: 8px
+  text-transform: uppercase
+.cabinet_container_descr
+  color: #828580
+  line-height: 21px
+  font-size: 13px
+.cabinet_container_tabs
+  padding: 0
+  list-style: none
+  display: flex
+  align-items: stretch
+  margin-bottom: 24px
+  li
+    a
+      margin-right: 40px
+      display: block
+      padding-bottom: 7px
+      border-bottom: 2px solid transparent
+      color: #828580
+      text-transform: uppercase
+      font-size: 14px
+      line-height: 20px
+      font-family: 'Museo Regular', sans-serif
+      font-weight: 600
+      &.active
+        color: #009440
+        border-color: #009440
+    &:last-child
+      a
+        margin-right: 0
+.cabinet_form_heading
+  margin-bottom: 16px
+  font-family: 'Museo Regular', sans-serif
+  font-weight: 600
+  font-size: 13px
+  line-height: 18px
+  text-transform: uppercase
+.cabinet_form
+  .cabinet_form_radios
+    margin-bottom: 32px
+.cabinet_container_nav
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  margin-bottom: 20px
+  width: 100%
+  .form-group
+    max-width: 264px
+  .cabinet_container_heading
+    margin-right: auto
+  .primary-btn
+    margin-right: 16px
+  .toggle-btn
+    margin-right: 20px
+    background: #EDF3ED
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    border: none
+    &:focus
+      outline: none
+  .form-group
+    margin-bottom: 0
+    select
+      &::placeholder
+        color: #828580
+        font-size: 15px
+    input
+      border: 1px solid #E5E7E5
+      border-radius: 4px
+      &::placeholder
+        color: #828580
+        font-size: 15px
+.cabinet_form
+  &.cabinet-contracts-settings
+    .cabinet_form_nav
+      justify-content: flex-end
+    .cabinet_form_wrapp
+      margin-bottom: 40px
+      padding: 40px 32px
+      box-shadow: 0px 0px 50px #F4F7F4
+      border-radius: 8px
+      .cabinet_form_heading
+        margin-bottom: 16px
+        font-size: 18px
+        line-height: 22px
+        text-decoration: none
+        font-weight: normal
+        text-transform: none
+      .form-list
+        margin-bottom: 0
+        .form-group
+          width: 32%
+        .add-more
+          width: 100%
+          margin-top: -8px
+          text-align: left
+          margin-bottom: 1px
+      .form-group
+        select
+          height: 40px
+.cabinet_table
+  padding: 40px 32px
+  box-shadow: 0px 0px 50px #F4F7F4
+  border-radius: 8px
+.cabinet_table_nav
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 13px
+.cabinet_table_heading
+  font-size: 18px
+.cabinet_table_sort
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  span
+    color: #828580
+    font-size: 13px
+    margin-right: 12px
+  select
+    min-width: 127px
+    max-width: 190px
+    background-color: #F4F7F4
+    border-radius: 80px
+    height: 32px
+    padding: 0 6px 0 16px
+    font-size: 16px
+    border: none
+.cabinet_table_headers
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  font-size: 13px
+  color: #828580
+  margin-bottom: 6px
+  .cost-down
+    padding-right: 20px
+    width: 26.5%
+  .cost-up
+    padding-right: 20px
+    width: 20%
+  .date
+    padding-right: 20px
+    width: 23.5%
+.cabinet_table_item
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  font-size: 15px
+  padding: 14px 0
+  border-bottom: 1px dashed #D6D6D6
+  .cost-down
+    padding-right: 20px
+    color: #ED4C5C
+    width: 26.5%
+    &::after
+      content: ''
+      display: inline-block
+      width: 20px
+      height: 20px
+      border-radius: 50%
+      background-image: url('../img/cost-down-icon.svg')
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: 10px
+      background-color: #EDF3ED
+      margin-left: 6px
+      vertical-align: sub
+  .cost-up
+    padding-right: 20px
+    color: #009440
+    width: 20%
+  .date
+    padding-right: 20px
+    width: 23.5%
+.cabinet_form_item
+  margin-bottom: 12px
+  .form-list
+    margin-bottom: 0
+  .box-check
+    margin-bottom: 32px
+.cabinet_form_item_heading
+  margin-bottom: 16px
+  font-size: 18px
+  line-height: 22px
+.cabinet_radio-group
+  margin-bottom: 32px
+.cabinet_radio_heading
+  margin-bottom: 16px
+  font-weight: 700
+  font-size: 13px
+  text-transform: uppercase
+.cabinet_radio-group_list
+  display: flex
+  justify-content: flex-start
+  align-items: stretch
+  .box-radio
+    margin-right: 40px
+    margin-bottom: 0
+    &:last-child
+      margin-right: 0
+.cabinet_form_item
+  &.btn-group
+    margin-bottom: 32px
+    button
+      display: flex
+      align-items: center
+      justify-content: center
+      svg
+        margin-right: 8px
+
+/** AUTORIZATION **/
+.autorization_wrapp
+  min-height: 100vh
+  display: flex
+  justify-content: space-between
+  align-items: stretch
+.autorization_preview
+  width: 100%
+  background: #009440
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    max-width: 100%
+    height: auto
+.autorization_content
+  flex-shrink: 0
+  padding: 60px 120px
+  display: flex
+  flex-direction: column
+  justify-content: center
+.autorization_logo
+  margin-bottom: 32px
+  text-align: center
+  img
+    max-width: 100%
+    height: auto
+.autorization_heading
+  margin-bottom: 40px
+  font-size: 32px
+  line-height: 38px
+  text-align: center
+.autorization_form
+  width: 613px
+  padding: 40px
+  background: #F4F7F4
+  border-radius: 4px
+  .link
+    font-size: 13px
+    line-height: 18px
+    color: #009440
+  button[type="submit"]
+    margin: 0 auto
+    display: block
+    width: max-content
+.autorization_form_top
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 29px
+.autorization_form_heading
+  font-size: 20px
+  line-height: 24px
+.autorization_form_toggler
+  text-align: right
+  font-size: 13px
+  line-height: 18px
+.autorization_form_bottom
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 34px
+.authorization__check
+  display: flex
+  align-items: center
+  .box-check
+    flex-shrink: 0
+    margin-bottom: 0
+.autorization_form_descr
+  margin-bottom: 38px
+  font-size: 13px
+  line-height: 19px
+.autorization_form
+  &.login-form
+    .autorization_form_bottom
+      margin-top: -6px
+  &.registration-form
+    .autorization_form_descr
+      margin-top: -4px
+    .autorization_form_bottom
+      margin-bottom: 24px
+
+/** PLAN SECTION **/
 .plan-section
   width: 100%
   margin-top: 16px
@@ -544,150 +934,7 @@ input[type="search"]::-webkit-search-results-decoration
   margin: 0 auto
 
 
-
-.cabinet-wrapp
-  display: flex
-  justify-content: space-between
-  align-items: stretch
-.cabinet_sidebar
-  flex-shrink: 0
-  width: 303px
-  min-height: 100vh
-  padding: 20px 0
-  background: #F4F7F4
-  margin-right: 59px
-.cabinet_logo
-  margin-bottom: 28px
-  margin-left: 32px
-  display: block
-  img
-    max-width: 160px
-    height: auto
-
-.cabinet_sidebar_menu
-  list-style: none
-  padding: 0
-  li
-    a
-      padding: 12px 32px
-      display: flex
-      display: block
-      color: #828580
-      font-size: 14px
-      line-height: 17px
-      svg
-        margin-right: 7px
-        vertical-align: middle
-      span
-        vertical-align: middle
-      &.active
-        color: #009440
-        background: #fff
-        position: relative
-        svg
-          path
-            stroke: #009440
-
-.cabinet_main
-  width: 100%
-  padding-right: 40px
-  overflow: hidden
-  .header_wrapp
-    justify-content: flex-end
-  .header_logo
-    display: none
-  .header
-    .mainContainer
-      padding: 0
-.cabinet_container
-  padding-top: 45px
-  padding-bottom: 80px
-.cabinet_container_top
-  margin-bottom: 20px
-.cabinet_container_heading
-  font-size: 20px
-  line-height: 24px
-  &.bold-heading
-    font-weight: 700
-  &+.cabinet_container_descr
-    margin-top: 20px
-.cabinet_container_subheading
-  font-size: 13px
-  font-weight: 700
-  margin-bottom: 8px
-  text-transform: uppercase
-.cabinet_container_descr
-  color: #828580
-  line-height: 21px
-  font-size: 13px
-.cabinet_container_tabs
-  padding: 0
-  list-style: none
-  display: flex
-  align-items: stretch
-  margin-bottom: 24px
-  li
-    a
-      margin-right: 40px
-      display: block
-      padding-bottom: 7px
-      border-bottom: 2px solid transparent
-      color: #828580
-      text-transform: uppercase
-      font-size: 14px
-      line-height: 20px
-      font-family: 'Museo Regular', sans-serif
-      font-weight: 600
-      &.active
-        color: #009440
-        border-color: #009440
-    &:last-child
-      a
-        margin-right: 0
-.cabinet_form_heading
-  margin-bottom: 16px
-  font-family: 'Museo Regular', sans-serif
-  font-weight: 600
-  font-size: 13px
-  line-height: 18px
-  text-transform: uppercase
-
-
-.form-list
-  display: flex
-  flex-wrap: wrap
-  align-items: stretch
-  justify-content: space-between
-  width: 100%
-  margin-bottom: 32px
-  .form-group
-    width: 48%
-    margin-bottom: 20px
-    input
-      border: 1px solid #E5E6E5
-      border-radius: 4px
-      height: 40px
-    &.full-group
-      width: 100%
-  .add-more
-    display: block
-    border: none
-    background: transparent
-    padding: 0
-    color: #009440
-    font-size: 13px
-    line-height: 18px
-    margin-top: 13px
-    margin-bottom: -20px
-    svg
-      margin-right: 6px
-      vertical-align: sub
-
-
-.cabinet_form
-  .cabinet_form_radios
-    margin-bottom: 32px
-        
+/** CABINET SETTINGS **/    
 .cabinet-settings
   .form-list
     max-width: 485px
@@ -695,7 +942,6 @@ input[type="search"]::-webkit-search-results-decoration
   margin-bottom: 32px
   .cabinet_form_heading
     margin-bottom: 16px
-    
 .cabinet_form_upload
   margin-bottom: 32px
   .cabinet_form_heading
@@ -766,116 +1012,838 @@ input[type="search"]::-webkit-search-results-decoration
     &:focus
       outline: none
 
+/** CABINET SITES **/    
+.cabinet-sites
+  .submit-btn
+    margin-bottom: 32px
+.cabinet_container_alert
+  padding: 14px 20px
+  background: #F4F7F4
+  border-radius: 4px
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  font-size: 20px
+  line-height: 24px
+  svg
+    margin-right: 9px
+  a
+    display: inline-block
+    border-bottom: 1px solid #A6D8C6
+    color: #009440
+    font-size: 16px
+    margin-left: 8px
+  
+/** CABINET CONTACTS **/    
+.cabinet-contacts
+  .submit-btn
+    margin-bottom: 32px
+  .cabinet_container_descr
+    max-width: 470px
+.cabinet-contracts-toggler
+  input
+    display: none
+    &:checked
+      &+label
+        background: #009440
+        &::after
+          transform: translateX(42px)
+        .off
+          display: none
+        .on
+          display: block
+  label
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    width: 84px
+    height: 42px
+    background: #d6d6d6
+    border-radius: 80px
+    margin-right: 20px
+    border: none
+    transition: all 0.2s
+    cursor: pointer
+    .on
+      display: none
+      font-size: 18px
+      line-height: 22px
+      text-transform: uppercase
+      color: #fff
+      position: absolute
+      top: 11px
+      left: 13px
+    .off
+      font-size: 18px
+      line-height: 22px
+      text-transform: uppercase
+      position: absolute
+      top: 11px
+      right: 11px
+    &::after
+      transition: all 0.2s
+      content: ''
+      display: block
+      width: 30px
+      height: 30px
+      border-radius: 50%
+      background-color: #fff
+      position: absolute
+      left: 6px
+      top: 50%
+      margin-top: -15px
+      transform: translateX(0)
+
+/** CABINET CONTRACTS **/    
+.cabinet-contracts_list
+  margin-bottom: 32px
+.cabinet-contracts_item
+  background: #FFFFFF
+  box-shadow: 0px 0px 50px #F4F7F4
+  border-radius: 8px
+  margin-bottom: 16px
+  &:last-child
+    margin-bottom: 0
+  &.active
+    .cabinet-contracts_item_content
+      display: block
+    .tab-toggler
+      transform: rotate(180deg)
+.cabinet-contracts_item_top
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  padding: 8px 24px
+.cabinet-contracts_item_name
+  margin-right: auto
+  padding-right: 20px
+  max-width: 300px
+.cabinet-contracts_item_aside
+  flex-shrink: 0
+  display: flex
+  align-items: center
+  justify-content: flex-end
+.cabinet-contracts_item_balance
+  margin-right: 30px
+  min-width: 16%
+  display: flex
+  align-items: center
+  svg
+    margin-right: 6px
+  span
+    color: #828580
+    font-size: 13px
+    line-height: 18px
+    margin-right: 8px
+  a
+    color: #009440
+    font-size: 15px
+    border-bottom: 1px dashed #009440
+    padding-bottom: 1px
+.cabinet-contracts_item_nav
+  display: flex
+  align-items: center
+  flex-shrink: 0
+  button
+    margin-right: 12px
+    border: none
+    background: transparent
+    padding: 0
+    .icon
+      width: 40px
+      height: 40px
+      border-radius: 50%
+      display: flex
+      align-items: center
+      background: #EDF3ED
+      justify-content: center
+      transition: all 0.2s
+    &:focus
+      outline: none
+    &:last-child
+      margin-right: 0
+  .mob-name
+    display: none
+.cabinet-contracts_item_toggler
+  width: 40px
+  height: 40px
+  border-radius: 50%
+  background: #EDF3ED
+  display: flex
+  align-items: center
+  justify-content: center
+  border: none
+  display: none
+    
+.cabinet-contracts_item_content
+  display: none
+  border-top: 1px solid #E5E6E5
+  padding: 16px 24px 40px
+.cabinet-contracts_users_nav
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  margin-bottom: 16px
+  color: #828580
+  font-size: 13px
+  .action
+    margin-left: auto
+  .name
+    width: 30%
+  .permission
+    width: 27%
+.cabinet-contracts_item_close
+  display: none
+.cabinet-contracts_item_user
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  font-size: 15px
+  line-height: 21px
+  padding: 8px 0
+  border-bottom: 1px dashed #D6D6D6
+  .action
+    margin-left: auto
+  .name
+    width: 30%
+  .permission
+    width: 27%
+.cabinet-contracts_item_user_group
+  .label
+    display: none
+  select
+    border: none
+    background-color: #F4F7F4
+    border-radius: 80px
+    height: 32px
+    padding: 0 16px
+    min-width: 167px
+    max-width: 230px
+    font-size: 16px
+  &.permission
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    select
+      margin-right: 18px
+    button
+      padding: 0
+      border: none
+      background: transparent
+      margin-right: 10px
+      &:last-child
+        margin-right: 0
+      &:focus
+        outline: none
+  &.action
+    button
+      padding: 0
+      border: none
+      background-color: transparent
+      &:focus
+        outline: none
+
+/** CABINET USERS **/ 
+.cabinet_container_users-preview
+  .cabinet_container_heading
+    font-size: 18px
+    margin-bottom: 16px
+.cabinet_container_user-preview
+  margin-bottom: 16px
+  padding: 12px 24px
+  background: #FFFFFF
+  box-shadow: 0px 0px 50px #F4F7F4
+  border-radius: 8px
+  display: flex
+  align-items: center
+  justify-content: space-between
+.cabinet_container_user-preview_info
+  display: flex
+  align-items: center
+  .avatar
+    width: 56px
+    height: 56px
+    border-radius: 50%
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    margin-right: 12px
+    flex-shrink: 0
+  .details
+    font-size: 16px
+    div
+      margin-bottom: 6px
+      &:last-child
+        margin-bottom: 0
+    .link
+      font-size: 14px
+      color: #828580
+.cabinet_container_user-preview_nav
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  select
+    min-width: 167px
+    max-width: 230px
+    background-color: #F4F7F4
+    border-radius: 80px
+    height: 32px
+    padding: 0 6px 0 16px
+    font-size: 16px
+    border: none
+    margin-right: 32px
+  .disabled-btn
+    background-color: #B8C3B8
+    color: #fff
+.cabinet_container_user-preview_search
+  width: 48.5%
+  margin-right: 20px
+  input
+    width: 100%
+    height: 40px
+    border: 1px solid #E5E7E5
+    border-radius: 4px
+    padding-left: 16px
+    &::placeholder
+      color: #323942
+      font-size: 16px
+    &:focus
+      &::placeholder
+        color: transparent
+.cabinet_container_users-hint
+  color: #828580
+  font-size: 13px
+  line-height: 23px
+  p
+    margin: 0
+
+/** CABINET CONTACTS **/ 
+.cabinet-contacts
+  .cabinet_container_nav
+    button
+      &:last-child
+        margin-right: 0
+    .submit-btn
+      margin-bottom: 0
+.cabinet_container_contact
+  margin-bottom: 32px
+  &:last-child
+    margin-bottom: 0
+.cabinet_container_contact_top
+  margin-bottom: 17px
+  display: flex
+  align-items: center
+  justify-content: space-between
+.cabinet_container_contact_info
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  .name
+    margin-right: 16px
+    font-family: 'Museo Regular', sans-serif
+    text-transform: uppercase
+  button.create
+    padding: 0
+    border: 0
+    color: #009440
+    background: transparent
+    font-size: 13px
+    display: flex
+    align-items: center
+    svg
+      margin-right: 8px
+      vertical-align: middle
+    &:focus
+      outline: none
+.cabinet_container_contact_nav
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  span
+    color: #828580
+    font-size: 13px
+  .nav-toggler label
+    background: transparent
+    width: auto
+    height: auto
+    margin: 0 12px
+    &::after
+      left: 3px
+.cabinet_container_contact_user
+  box-shadow: 0px 0px 50px #F4F7F4
+  border-radius: 8px
+  margin-bottom: 16px
+  &:last-child
+    margin-bottom: 0
+  &.active
+    .cabinet_container_contact_user_top
+      border-bottom: 1px solid #E5E6E5
+      .tab-toggler
+        transform: rotate(180deg)
+    .cabinet_container_contact_user_content
+      display: block
+.cabinet-contacts_user_toggler
+  display: none
+.cabinet_container_contact_user_top
+  padding: 8px 24px
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  .name
+    margin-right: auto
+    font-size: 16px
+    padding-right: 30px
+  .status
+    margin-right: 32px
+    min-width: 15%
+    max-width: 35%
+    font-size: 13px
+    color: #828580
+    display: flex
+    align-items: center
+    svg
+      margin-right: 8px
+  .nav
+    button
+      width: 40px
+      height: 40px
+      border-radius: 50%
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-right: 12px
+      border: none
+      svg, img
+        max-width: 100%
+        height: auto
+        max-height: 100%
+      &:focus
+        outline: none
+      &:last-child
+        margin-right: 0
+.cabinet_container_contact_user_content
+  padding: 24px 24px 40px 24px
+  display: none
+.cabinet_container_contact_user_nav
+  margin-bottom: 16px
+  color: #828580
+  font-size: 13px
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  .phone
+    width: 24%
+    padding-right: 20px
+  .email
+    width: 30%
+    padding-right: 20px
+.cabinet_container_contact_user_item
+  display: flex
+  align-items: flex-start
+  justify-content: flex-start
+  font-size: 15px
+  margin-bottom: 16px
+  .label
+    display: none
+  .user-param
+    margin-bottom: 16px
+    &:last-child
+      margin-bottom: 0
+  .phone
+    width: 24%
+    padding-right: 20px
+  .email
+    width: 30%
+    padding-right: 20px
+  &:last-child
+    margin-bottom: 0
+  select
+    min-width: 167px
+    max-width: 230px
+    background-color: #F4F7F4
+    border-radius: 80px
+    height: 32px
+    padding: 0 6px 0 16px
+    font-size: 16px
+    border: none
+    margin-right: 32px
+
+/** CABINET BALANCE **/ 
+.cabinet-balance_top
+  margin-bottom: 20px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  .cabinet_container_descr
+    max-width: 450px
+.cabinet-balance_top_info
+  flex-shrink: 0
+  margin-left: 30px
+  padding: 24px 42px 21px
+  background: #F4F7F4
+  border-radius: 8px
+  .heading
+    text-align: center
+    margin-bottom: 10px
+    font-size: 13px
+    text-transform: uppercase
+    font-weight: 700
+  .value
+    font-size: 18px
+    display: flex
+    align-items: center
+    justify-content: center
+    svg
+      margin-right: 10px
+
+.cabinet-balance_container
+  padding: 40px 32px 80px
+  box-shadow: 0px 0px 50px #F4F7F4
+  border-radius: 8px
+  margin-bottom: 20px
+  .cabinet_container_descr
+    max-width: 724px
+    width: 100%
+    margin-bottom: 32px
+.cabinet-balance_heading
+  margin-bottom: 20px
+  font-size: 18px
+.cabinet-balance_payment
+  display: flex
+  align-items: flex-end
+  justify-content: flex-start
+.cabinet-balance_payment_form
+  margin-right: 35px
+  width: 100%
+  max-width: 227px
+  .submit-btn
+    width: 100%
+  .form-group
+    margin-bottom: 24px
+    label
+      margin-bottom: 12px
+      color: #828580
+      font-size: 15px
+    input
+      width: 100%
+      height: 40px
+      border: 1px solid #E5E6E5
+      border-radius: 4px
+.cabinet-balance_instruction
+  padding: 16px 24px
+  background: #F4F7F4
+  border-radius: 8px
+  font-size: 13px
+  line-height: 23px
+  p
+    margin-bottom: 8px
+    &:last-child
+      margin-bottom: 0
+
+/** CABINET CONTRAGENTS **/ 
+.cabinet-contragent-add
+  width: 100%
+  max-width: 484px
+  .cabinet_form_nav
+    justify-content: flex-end
+    margin-top: 12px
+  .cabinet_container_top
+    margin-bottom: 32px
+  .cabinet_radio-group
+    margin-bottom: 40px
+.cabinet_bankid
+  margin-bottom: 32px
+.cabinet_bankid_heading
+  margin-bottom: 16px
+  text-transform: uppercase
+  font-size: 13px
+  line-height: 18px
+  font-weight: 700
+.cabinet_bankid_wrapp
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 35px 24px
+  background: #F4F7F4
+  border-radius: 4px
+.cabinet_bankid_content
+  img
+    max-width: 100%
+    height: auto
+    margin-bottom: 8px
+  p
+    font-size: 15px
+    line-height: 21px
+    svg
+      margin-left: 4px
+      vertical-align: sub
+.cabinet_bankid_submit
+  padding: 17px 40px
+  border-radius: 4px
+  font-size: 16px
+
+/** CABINET ORDER **/ 
+.order-section
+  padding-top: 80px
+  padding-bottom: 120px
+.order_container
+  margin: 0 auto
+  max-width: 500px
+  width: 100%
+  .cabinet_form_heading
+    margin-bottom: 20px
+  .cabinet_container_heading + .cabinet_container_descr
+    margin-top: 12px
+  .cabinet_container_top
+    margin-bottom: 24px
+  .cabinet_container_tabs
+    margin-bottom: 40px
+    justify-content: space-between
+  .cabinet_form_nav
+    justify-content: center
+    margin-top: 32px
+  .cabinet_form_checks
+    .add-more
+      padding: 0
+      background-color: transparent
+      display: flex
+      align-items: center
+      color: #009440
+      font-size: 13px
+      border: none
+      margin-top: 20px
+      svg
+        margin-right: 8px
+      &:focus
+        outline: none
+.value-text-group
+  .form-group
+    margin-bottom: 24px
+.cabinet_pay
+  .cabinet-balance_container
+    padding: 0
+    box-shadow: none
+    margin: 0
+  .cabinet-balance_instruction
+    display: none
+.cabinet_container_notification
+  border-radius: 4px
+  border: 1px solid #E5E6E5
+  padding: 15px 72px 15px 24px
+  margin-bottom: 20px
+  position: relative
+  p
+    font-size: 16px
+    a
+      color: #009440
+  .close
+    width: 32px
+    height: 32px
+    border-radius: 50%
+    text-align: center
+    line-height: 32px
+    background: #F4F7F4
+    border: none
+    padding: 0
+    position: absolute
+    right: 24px
+    top: 8px
+    &:focus
+      outline: none
+
+/** CABINET INVITE **/ 
+.cabinet_invite
+  padding: 40px 32px
+  box-shadow: 0px 0px 50px #F4F7F4
+  border-radius: 8px
+  margin-bottom: 20px
+.cabinet_invite_heading
+  margin-bottom: 20px
+  font-size: 18px
+  line-height: 22px
+.cabinet_invite_link
+  text-align: left
+  width: 100%
+  padding: 9px 52px 9px 16px
+  font-size: 16px
+  line-height: 22px
+  color: #828580
+  background: #F4F7F4
+  border-radius: 4px
+  border: none
+  background-image: url('../img/copy-icon.svg')
+  background-repeat: no-repeat
+  background-size: 20px
+  background-position: 98% 50%
+
+/** CABINET REFFERALS **/ 
+.refferals-table
+  margin-bottom: 20px
+  .date
+    width: 19%
+    padding-right: 20px
+  .cost-down
+    width: 17%
+    padding-right: 20px
+    &::after
+      display: none
+  .cost-up
+    width: 16%
+    padding-right: 20px
+  .user-id
+    width: 21%
+    padding-right: 20px
+  .user-name
+    width: 27%
+    padding-right: 20px
+  .cabinet_table_item
+    align-items: flex-start
+    .date, .cost-down, .cost-up, .user-id, .user-name
+      div
+        margin-bottom: 16px
+        &:last-child
+          margin-bottom: 0
+
+/** CABINET ALLOTMENT **/ 
+.cabinet_allotment
+  padding: 40px 32px
+  box-shadow: 0px 0px 50px #F4F7F4
+  border-radius: 8px
+  margin-bottom: 32px
+.cabinet_allotment_top
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  margin-top: -42px
+  margin-bottom: 24px
+  .cabinet_container_tabs
+    margin-bottom: 0
+.cabinet_allotment_top_heading
+  margin-bottom: 20px
+  font-size: 18px
+  line-height: 22px
+.cabinet_allotment_top_info
+  padding: 21px 62px 18px
+  background: #F4F7F4
+  border-radius: 8px
+  text-align: center
+  .heading
+    font-weight: 700
+    text-align: center
+    font-size: 13px
+    margin-bottom: 11px
+    text-transform: uppercase
+  .value
+    font-size: 18px
+    line-height: 22px
+    svg
+      vertical-align: tex-top
+      margin-right: 6px
+.cabinet_allotment_content_heading
+  font-size: 13px
+  font-weight: 700
+  text-transform: uppercase
+  margin-bottom: 8px
+.cabinet_allotment_content_descr
+  color: #828580
+  font-size: 13px
+  line-height: 23px
+  margin-bottom: 32px
+  max-width: 724px
+.cabinet_allotment_form
+  .form-group
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    max-width: 224px
+    margin-right: 20px
+    &:last-child
+      margin-right: 0
+    label
+      width: 100%
+    input, select
+      border: 1px solid #E5E6E5
+      border-radius: 4px
+      height: 40px
+  .box-check
+    padding-top: 12px
+    label
+      margin-bottom: 0
+.cabinet_allotment_form_list
+  display: flex
+  align-items: center
+  justify-content: flex-start
 
 
 @media screen and (max-width: 1200px)
+  /** Cabinet template **/
+  .cabinet_container_heading
+    font-size: 18px
+    line-height: 22px
+  .cabinet_sidebar
+    width: 265px
+    margin-right: 30px
+  .cabinet_sidebar_menu li a
+    padding: 12px 14px
+  .cabinet_logo
+    margin-left: 14px
+  .cabinet-balance_top .cabinet_container_descr
+    margin-top: 15px
+  .cabinet-balance_top_info
+    padding: 19px 28px 17px
+  .cabinet-balance_top_info .heading
+    font-size: 12px
+  .cabinet-balance_top_info .value
+    font-size: 16px
+  .cabinet-balance_container
+    padding: 30px 20px 40px
+  .cabinet_container_tabs li a
+    font-size: 12px
+  .cabinet_container_alert
+    font-size: 17px
+  .cabinet_table_headers .cost-up
+    width: 25%
+  /** Cabinet autorization **/
   .autorization_content
     padding: 60px
   .autorization_form
     width: 575px
-
+  /** Cabinet contracts **/
+  .cabinet-contracts_item_name
+    max-width: 170px
+  .cabinet-contracts_item_name
+    font-size: 15px
+  .cabinet-contracts_item_user .name
+    font-size: 15px
+  .cabinet-contracts_item_user_group select
+    font-size: 14px
+  /** Cabinet refferals **/
+  .refferals-table
+    .cabinet_table_wrapp
+      width: 100%
+      overflow: auto
+    .cabinet_table_list
+      width: max-content
+      min-width: 100%
+      .date
+        width: 157px
+      .cost-down
+        width: 157px
+      .cost-up
+        width: 157px
+      .user-id
+        width: 157px
+      .user-name
+        width: 157px
+  
 @media screen and (max-width: 992px)
-  .autorization_wrapp
-    display: block
-    min-height: auto
-    display: block
-  .autorization_preview
-    display: none
-  .autorization_content
-    padding: 125px 16px
-  .autorization_logo
-    margin-bottom: 24px
-  .autorization_heading
-    margin-bottom: 40px
-    font-size: 26px
-    line-height: 31px
-  .autorization_form
-    width: 100%
-    padding: 32px 20px
-  .autorization_form_top
-    display: block
-    margin-bottom: 24px
-  .autorization_form_heading
-    margin-bottom: 10px
-  .autorization_form_toggler
-    text-align: left
+  /** Main **/
   .form-group
     margin-bottom: 16px
   .pass-toggler
     right: 15px
-  .autorization_form_bottom
-    margin-bottom: 32px
-  .autorization_form button[type="submit"]
-    width: 100%
-  .autorization_form.registration-form .autorization_form_descr
-    margin-top: 0
-    margin-bottom: 24px
-  .authorization__check .box-check
-    width: 100%
-  .authorization__check .box-check label
-    line-height: 25px
-  .authorization__check .box-check label a
-    display: block
-  .autorization_form.registration-form .autorization_form_bottom
-    margin-bottom: 20px
-  .header_wrapp
-    padding: 16px 0
-  .header_balance, .header_details, .header_profile, .header_lang
-    display: none
-  .header_subscription
-    margin-right: 16px
-  .plan-section
-    margin: 24px 0
-  .plan_wrapp
-    display: block
-    padding: 16px 20px
-  .plan_info
-    display: flex
-    align-items: center
-    justify-content: space-between
-    margin-bottom: 12px
-    span
-      flex-shrink: 0
-  .plan_link
-    width: 100%
-    text-align: center
-  .start-section
-    margin-top: 56px
-    margin-bottom: 56px
-  .start_heading
-    font-size: 26px
-    line-height: 31px
-    margin-bottom: 20px
-  .start_list
-    display: block
-    margin-bottom: 20px
-  .start_item
-    width: 100%
-    margin: 0
-    margin-bottom: 16px
-    border-radius: 4px
-    padding: 18px 24px
-    display: flex
-    align-items: center
-    justify-content: flex-start
-  .start_item .icon
-    margin-right: 16px
-    width: 48px
-    height: 48px
-    display: flex
-    align-items: center
-    justify-content: flex-start
-  .start_item svg
-    margin-bottom: 0
-    max-width: 90%
-    max-height: 90%
-    height: auto
-  .start_item span
-    width: auto
-    text-align: left
-  .start_skip
-    width: 100%
-    text-align: center
+  /** Cabinet template **/
   .cabinet-wrapp
     display: block
   .cabinet_logo
@@ -959,1058 +1927,6 @@ input[type="search"]::-webkit-search-results-decoration
     display: flex
   .cabinet_main .header .mainContainer
     padding: 0 16px
-
-
-.cabinet-sites
-  .submit-btn
-    margin-bottom: 32px
-.cabinet_container_alert
-  padding: 14px 20px
-  background: #F4F7F4
-  border-radius: 4px
-  display: flex
-  align-items: center
-  justify-content: flex-start
-  font-size: 20px
-  line-height: 24px
-  svg
-    margin-right: 9px
-  a
-    display: inline-block
-    border-bottom: 1px solid #A6D8C6
-    color: #009440
-    font-size: 16px
-    margin-left: 8px
-  
-.cabinet-contacts
-  .submit-btn
-    margin-bottom: 32px
-  .cabinet_container_descr
-    max-width: 470px
-
-.cabinet_container_nav
-  display: flex
-  justify-content: flex-end
-  align-items: center
-  margin-bottom: 20px
-  width: 100%
-  .form-group
-    max-width: 264px
-  .cabinet_container_heading
-    margin-right: auto
-  .primary-btn
-    margin-right: 16px
-  .toggle-btn
-    margin-right: 20px
-    background: #EDF3ED
-    width: 40px
-    height: 40px
-    border-radius: 50%
-    display: flex
-    align-items: center
-    justify-content: center
-    border: none
-    &:focus
-      outline: none
-  .form-group
-    margin-bottom: 0
-    select
-      &::placeholder
-        color: #828580
-        font-size: 15px
-    input
-      border: 1px solid #E5E7E5
-      border-radius: 4px
-      &::placeholder
-        color: #828580
-        font-size: 15px
-
-.cabinet-contracts-toggler
-  input
-    display: none
-    &:checked
-      &+label
-        background: #009440
-        &::after
-          transform: translateX(42px)
-        .off
-          display: none
-        .on
-          display: block
-  label
-    display: flex
-    align-items: center
-    justify-content: center
-    position: relative
-    width: 84px
-    height: 42px
-    background: #d6d6d6
-    border-radius: 80px
-    margin-right: 20px
-    border: none
-    transition: all 0.2s
-    cursor: pointer
-    .on
-      display: none
-      font-size: 18px
-      line-height: 22px
-      text-transform: uppercase
-      color: #fff
-      position: absolute
-      top: 11px
-      left: 13px
-    .off
-      font-size: 18px
-      line-height: 22px
-      text-transform: uppercase
-      position: absolute
-      top: 11px
-      right: 11px
-    &::after
-      transition: all 0.2s
-      content: ''
-      display: block
-      width: 30px
-      height: 30px
-      border-radius: 50%
-      background-color: #fff
-      position: absolute
-      left: 6px
-      top: 50%
-      margin-top: -15px
-      transform: translateX(0)
-
-
-.cabinet-contracts_list
-  margin-bottom: 32px
-.cabinet-contracts_item
-  background: #FFFFFF
-  box-shadow: 0px 0px 50px #F4F7F4
-  border-radius: 8px
-  margin-bottom: 16px
-  &:last-child
-    margin-bottom: 0
-  &.active
-    .cabinet-contracts_item_content
-      display: block
-    .tab-toggler
-      transform: rotate(180deg)
-.cabinet-contracts_item_top
-  display: flex
-  align-items: center
-  justify-content: flex-end
-  padding: 8px 24px
-.cabinet-contracts_item_name
-  margin-right: auto
-  padding-right: 20px
-  max-width: 300px
-.cabinet-contracts_item_aside
-  flex-shrink: 0
-  display: flex
-  align-items: center
-  justify-content: flex-end
-.cabinet-contracts_item_balance
-  margin-right: 30px
-  min-width: 16%
-  display: flex
-  align-items: center
-  svg
-    margin-right: 6px
-  span
-    color: #828580
-    font-size: 13px
-    line-height: 18px
-    margin-right: 8px
-  a
-    color: #009440
-    font-size: 15px
-    border-bottom: 1px dashed #009440
-    padding-bottom: 1px
-.cabinet-contracts_item_nav
-  display: flex
-  align-items: center
-  flex-shrink: 0
-  button
-    margin-right: 12px
-    border: none
-    background: transparent
-    padding: 0
-    .icon
-      width: 40px
-      height: 40px
-      border-radius: 50%
-      display: flex
-      align-items: center
-      background: #EDF3ED
-      justify-content: center
-      transition: all 0.2s
-    &:focus
-      outline: none
-    &:last-child
-      margin-right: 0
-  .mob-name
-    display: none
-.cabinet-contracts_item_toggler
-  width: 40px
-  height: 40px
-  border-radius: 50%
-  background: #EDF3ED
-  display: flex
-  align-items: center
-  justify-content: center
-  border: none
-  display: none
-
-.nav-toggler
-  input
-    display: none
-    &:checked
-      &+label
-        &::after
-          transform: translateX(12px)
-        &::before
-          background: #009440
-  label
-    display: flex
-    align-items: center
-    justify-content: center
-    position: relative
-    width: 40px
-    height: 40px
-    border-radius: 50%
-    background: #EDF3ED
-    margin-right: 12px
-    border: none
-    transition: all 0.2s
-    cursor: pointer
-    &::before
-      content: ''
-      width: 28px
-      height: 16px
-      display: block
-      background: #d6d6d6
-      border-radius: 80px
-      transition: all 0.2s
-    &::after
-      transition: all 0.2s
-      content: ''
-      display: block
-      width: 10px
-      height: 10px
-      border-radius: 50%
-      background-color: #fff
-      position: absolute
-      left: 9px
-      top: 50%
-      margin-top: -5px
-      transform: translateX(0)
-    
-.cabinet-contracts_item_content
-  display: none
-  border-top: 1px solid #E5E6E5
-  padding: 16px 24px 40px
-.cabinet-contracts_users_nav
-  display: flex
-  align-items: center
-  justify-content: flex-start
-  margin-bottom: 16px
-  color: #828580
-  font-size: 13px
-  .action
-    margin-left: auto
-  .name
-    width: 30%
-  .permission
-    width: 27%
-.cabinet-contracts_item_close
-  display: none
-.cabinet-contracts_item_user
-  display: flex
-  align-items: center
-  justify-content: flex-start
-  font-size: 15px
-  line-height: 21px
-  padding: 8px 0
-  border-bottom: 1px dashed #D6D6D6
-  .action
-    margin-left: auto
-  .name
-    width: 30%
-  .permission
-    width: 27%
-.cabinet-contracts_item_user_group
-  .label
-    display: none
-  select
-    border: none
-    background: #F4F7F4
-    border-radius: 80px
-    height: 32px
-    padding: 0 16px
-    min-width: 167px
-    max-width: 230px
-    font-size: 16px
-  &.permission
-    display: flex
-    align-items: center
-    justify-content: flex-start
-    select
-      margin-right: 18px
-    button
-      padding: 0
-      border: none
-      background: transparent
-      margin-right: 10px
-      &:last-child
-        margin-right: 0
-      &:focus
-        outline: none
-  &.action
-    button
-      padding: 0
-      border: none
-      background-color: transparent
-      &:focus
-        outline: none
-
-.cabinet_form
-  &.cabinet-contracts-settings
-    .cabinet_form_nav
-      justify-content: flex-end
-    .cabinet_form_wrapp
-      margin-bottom: 40px
-      padding: 40px 32px
-      box-shadow: 0px 0px 50px #F4F7F4
-      border-radius: 8px
-      .cabinet_form_heading
-        margin-bottom: 16px
-        font-size: 18px
-        line-height: 22px
-        text-decoration: none
-        font-weight: normal
-        text-transform: none
-      .form-list
-        margin-bottom: 0
-        .form-group
-          width: 32%
-        .add-more
-          width: 100%
-          margin-top: -8px
-          text-align: left
-          margin-bottom: 1px
-      .form-group
-        select
-          height: 40px
-
-.cabinet_container_users-preview
-  .cabinet_container_heading
-    font-size: 18px
-    margin-bottom: 16px
-.cabinet_container_user-preview
-  margin-bottom: 16px
-  padding: 12px 24px
-  background: #FFFFFF
-  box-shadow: 0px 0px 50px #F4F7F4
-  border-radius: 8px
-  display: flex
-  align-items: center
-  justify-content: space-between
-.cabinet_container_user-preview_info
-  display: flex
-  align-items: center
-  .avatar
-    width: 56px
-    height: 56px
-    border-radius: 50%
-    background-size: cover
-    background-repeat: no-repeat
-    background-position: center center
-    margin-right: 12px
-    flex-shrink: 0
-  .details
-    font-size: 16px
-    div
-      margin-bottom: 6px
-      &:last-child
-        margin-bottom: 0
-    .link
-      font-size: 14px
-      color: #828580
-.cabinet_container_user-preview_nav
-  display: flex
-  align-items: center
-  justify-content: flex-start
-  select
-    min-width: 167px
-    max-width: 230px
-    background: #F4F7F4
-    border-radius: 80px
-    height: 32px
-    padding: 0 6px 0 16px
-    font-size: 16px
-    border: none
-    margin-right: 32px
-  .disabled-btn
-    background-color: #B8C3B8
-    color: #fff
-.cabinet_container_user-preview_search
-  width: 48.5%
-  margin-right: 20px
-  input
-    width: 100%
-    height: 40px
-    border: 1px solid #E5E7E5
-    border-radius: 4px
-    padding-left: 16px
-    &::placeholder
-      color: #323942
-      font-size: 16px
-    &:focus
-      &::placeholder
-        color: transparent
-.cabinet_container_users-hint
-  color: #828580
-  font-size: 13px
-  line-height: 23px
-  p
-    margin: 0
-
-.cabinet-contacts
-  .cabinet_container_nav
-    button
-      &:last-child
-        margin-right: 0
-    .submit-btn
-      margin-bottom: 0
-
-.cabinet_container_contact
-  margin-bottom: 32px
-  &:last-child
-    margin-bottom: 0
-.cabinet_container_contact_top
-  margin-bottom: 17px
-  display: flex
-  align-items: center
-  justify-content: space-between
-.cabinet_container_contact_info
-  display: flex
-  align-items: center
-  justify-content: flex-start
-  .name
-    margin-right: 16px
-    font-family: 'Museo Regular', sans-serif
-    text-transform: uppercase
-  button.create
-    padding: 0
-    border: 0
-    color: #009440
-    background: transparent
-    font-size: 13px
-    display: flex
-    align-items: center
-    svg
-      margin-right: 8px
-      vertical-align: middle
-    &:focus
-      outline: none
-.cabinet_container_contact_nav
-  display: flex
-  align-items: center
-  justify-content: flex-end
-  span
-    color: #828580
-    font-size: 13px
-  .nav-toggler label
-    background: transparent
-    width: auto
-    height: auto
-    margin: 0 12px
-    &::after
-      left: 3px
-
-.cabinet_container_contact_user
-  box-shadow: 0px 0px 50px #F4F7F4
-  border-radius: 8px
-  margin-bottom: 16px
-  &:last-child
-    margin-bottom: 0
-  &.active
-    .cabinet_container_contact_user_top
-      border-bottom: 1px solid #E5E6E5
-      .tab-toggler
-        transform: rotate(180deg)
-    .cabinet_container_contact_user_content
-      display: block
-.cabinet-contacts_user_toggler
-  display: none
-.cabinet_container_contact_user_top
-  padding: 8px 24px
-  display: flex
-  align-items: center
-  justify-content: flex-end
-  .name
-    margin-right: auto
-    font-size: 16px
-    padding-right: 30px
-  .status
-    margin-right: 32px
-    min-width: 15%
-    max-width: 35%
-    font-size: 13px
-    color: #828580
-    display: flex
-    align-items: center
-    svg
-      margin-right: 8px
-  .nav
-    button
-      width: 40px
-      height: 40px
-      border-radius: 50%
-      display: flex
-      justify-content: center
-      align-items: center
-      margin-right: 12px
-      border: none
-      svg, img
-        max-width: 100%
-        height: auto
-        max-height: 100%
-      &:focus
-        outline: none
-      &:last-child
-        margin-right: 0
-
-.cabinet_container_contact_user_content
-  padding: 24px 24px 40px 24px
-  display: none
-.cabinet_container_contact_user_nav
-  margin-bottom: 16px
-  color: #828580
-  font-size: 13px
-  display: flex
-  align-items: center
-  justify-content: flex-start
-  .phone
-    width: 24%
-    padding-right: 20px
-  .email
-    width: 30%
-    padding-right: 20px
-.cabinet_container_contact_user_item
-  display: flex
-  align-items: flex-start
-  justify-content: flex-start
-  font-size: 15px
-  margin-bottom: 16px
-  .label
-    display: none
-  .user-param
-    margin-bottom: 16px
-    &:last-child
-      margin-bottom: 0
-  .phone
-    width: 24%
-    padding-right: 20px
-  .email
-    width: 30%
-    padding-right: 20px
-  &:last-child
-    margin-bottom: 0
-  select
-    min-width: 167px
-    max-width: 230px
-    background: #F4F7F4
-    border-radius: 80px
-    height: 32px
-    padding: 0 6px 0 16px
-    font-size: 16px
-    border: none
-    margin-right: 32px
-
-
-.cabinet-balance_top
-  margin-bottom: 20px
-  display: flex
-  justify-content: space-between
-  align-items: center
-  .cabinet_container_descr
-    max-width: 450px
-.cabinet-balance_top_info
-  flex-shrink: 0
-  margin-left: 30px
-  padding: 24px 42px 21px
-  background: #F4F7F4
-  border-radius: 8px
-  .heading
-    text-align: center
-    margin-bottom: 10px
-    font-size: 13px
-    text-transform: uppercase
-    font-weight: 700
-  .value
-    font-size: 18px
-    display: flex
-    align-items: center
-    justify-content: center
-    svg
-      margin-right: 10px
-
-.cabinet-balance_container
-  padding: 40px 32px 80px
-  box-shadow: 0px 0px 50px #F4F7F4
-  border-radius: 8px
-  margin-bottom: 20px
-  .cabinet_container_descr
-    max-width: 724px
-    width: 100%
-    margin-bottom: 32px
-.cabinet-balance_heading
-  margin-bottom: 20px
-  font-size: 18px
-.cabinet-balance_payment
-  display: flex
-  align-items: flex-end
-  justify-content: flex-start
-.cabinet-balance_payment_form
-  margin-right: 35px
-  width: 100%
-  max-width: 227px
-  .submit-btn
-    width: 100%
-  .form-group
-    margin-bottom: 24px
-    label
-      margin-bottom: 12px
-      color: #828580
-      font-size: 15px
-    input
-      width: 100%
-      height: 40px
-      border: 1px solid #E5E6E5
-      border-radius: 4px
-.cabinet-balance_instruction
-  padding: 16px 24px
-  background: #F4F7F4
-  border-radius: 8px
-  font-size: 13px
-  line-height: 23px
-  p
-    margin-bottom: 8px
-    &:last-child
-      margin-bottom: 0
-
-.cabinet_table
-  padding: 40px 32px
-  box-shadow: 0px 0px 50px #F4F7F4
-  border-radius: 8px
-.cabinet_table_nav
-  display: flex
-  align-items: center
-  justify-content: space-between
-  margin-bottom: 13px
-.cabinet_table_heading
-  font-size: 18px
-.cabinet_table_sort
-  display: flex
-  align-items: center
-  justify-content: flex-start
-  span
-    color: #828580
-    font-size: 13px
-    margin-right: 12px
-  select
-    min-width: 127px
-    max-width: 190px
-    background: #F4F7F4
-    border-radius: 80px
-    height: 32px
-    padding: 0 6px 0 16px
-    font-size: 16px
-    border: none
-.cabinet_table_headers
-  display: flex
-  align-items: center
-  justify-content: flex-start
-  font-size: 13px
-  color: #828580
-  margin-bottom: 6px
-  .cost-down
-    padding-right: 20px
-    width: 26.5%
-  .cost-up
-    padding-right: 20px
-    width: 20%
-  .date
-    padding-right: 20px
-    width: 23.5%
-.cabinet_table_item
-  display: flex
-  align-items: center
-  justify-content: flex-start
-  font-size: 15px
-  padding: 14px 0
-  border-bottom: 1px dashed #D6D6D6
-  .cost-down
-    padding-right: 20px
-    color: #ED4C5C
-    width: 26.5%
-    &::after
-      content: ''
-      display: inline-block
-      width: 20px
-      height: 20px
-      border-radius: 50%
-      background-image: url('../img/cost-down-icon.svg')
-      background-repeat: no-repeat
-      background-position: center center
-      background-size: 10px
-      background-color: #EDF3ED
-      margin-left: 6px
-      vertical-align: sub
-  .cost-up
-    padding-right: 20px
-    color: #009440
-    width: 20%
-  .date
-    padding-right: 20px
-    width: 23.5%
-
-
-.cabinet-contragent-add
-  width: 100%
-  max-width: 484px
-  .cabinet_form_nav
-    justify-content: flex-end
-    margin-top: 12px
-  .cabinet_container_top
-    margin-bottom: 32px
-  .cabinet_radio-group
-    margin-bottom: 40px
-.cabinet_radio-group
-  margin-bottom: 32px
-.cabinet_radio_heading
-  margin-bottom: 16px
-  font-weight: 700
-  font-size: 13px
-  text-transform: uppercase
-.cabinet_radio-group_list
-  display: flex
-  justify-content: flex-start
-  align-items: stretch
-  .box-radio
-    margin-right: 40px
-    margin-bottom: 0
-    &:last-child
-      margin-right: 0
-
-.cabinet_form_item
-  margin-bottom: 12px
-  .form-list
-    margin-bottom: 0
-  .box-check
-    margin-bottom: 32px
-.cabinet_form_item_heading
-  margin-bottom: 16px
-  font-size: 18px
-  line-height: 22px
-
-.cabinet_bankid
-  margin-bottom: 32px
-.cabinet_bankid_heading
-  margin-bottom: 16px
-  text-transform: uppercase
-  font-size: 13px
-  line-height: 18px
-  font-weight: 700
-.cabinet_bankid_wrapp
-  display: flex
-  align-items: center
-  justify-content: space-between
-  padding: 35px 24px
-  background: #F4F7F4
-  border-radius: 4px
-.cabinet_bankid_content
-  img
-    max-width: 100%
-    height: auto
-    margin-bottom: 8px
-  p
-    font-size: 15px
-    line-height: 21px
-    svg
-      margin-left: 4px
-      vertical-align: sub
-.cabinet_bankid_submit
-  padding: 17px 40px
-  border-radius: 4px
-  font-size: 16px
-
-
-
-.order-section
-  padding-top: 80px
-  padding-bottom: 120px
-.order_container
-  margin: 0 auto
-  max-width: 500px
-  width: 100%
-  .cabinet_form_heading
-    margin-bottom: 20px
-  .cabinet_container_heading + .cabinet_container_descr
-    margin-top: 12px
-  .cabinet_container_top
-    margin-bottom: 24px
-  .cabinet_container_tabs
-    margin-bottom: 40px
-    justify-content: space-between
-  .cabinet_form_nav
-    justify-content: center
-    margin-top: 32px
-  .cabinet_form_checks
-    .add-more
-      padding: 0
-      background-color: transparent
-      display: flex
-      align-items: center
-      color: #009440
-      font-size: 13px
-      border: none
-      margin-top: 20px
-      svg
-        margin-right: 8px
-      &:focus
-        outline: none
-
-.value-text-group
-  .form-group
-    margin-bottom: 24px
-
-.cabinet_form_item
-  &.btn-group
-    margin-bottom: 32px
-    button
-      display: flex
-      align-items: center
-      justify-content: center
-      svg
-        margin-right: 8px
-
-.cabinet_pay
-  .cabinet-balance_container
-    padding: 0
-    box-shadow: none
-    margin: 0
-  .cabinet-balance_instruction
-    display: none
-
-
-
-.cabinet_container_notification
-  border-radius: 4px
-  border: 1px solid #E5E6E5
-  padding: 15px 72px 15px 24px
-  margin-bottom: 20px
-  position: relative
-  p
-    font-size: 16px
-    a
-      color: #009440
-  .close
-    width: 32px
-    height: 32px
-    border-radius: 50%
-    text-align: center
-    line-height: 32px
-    background: #F4F7F4
-    border: none
-    padding: 0
-    position: absolute
-    right: 24px
-    top: 8px
-    &:focus
-      outline: none
-
-.cabinet_invite
-  padding: 40px 32px
-  box-shadow: 0px 0px 50px #F4F7F4
-  border-radius: 8px
-  margin-bottom: 20px
-.cabinet_invite_heading
-  margin-bottom: 20px
-  font-size: 18px
-  line-height: 22px
-.cabinet_invite_link
-  text-align: left
-  width: 100%
-  padding: 9px 52px 9px 16px
-  font-size: 16px
-  line-height: 22px
-  color: #828580
-  background: #F4F7F4
-  border-radius: 4px
-  border: none
-  background-image: url('../img/copy-icon.svg')
-  background-repeat: no-repeat
-  background-size: 20px
-  background-position: 98% 50%
-
-.refferals-table
-  margin-bottom: 20px
-  .date
-    width: 19%
-    padding-right: 20px
-  .cost-down
-    width: 17%
-    padding-right: 20px
-    &::after
-      display: none
-  .cost-up
-    width: 16%
-    padding-right: 20px
-  .user-id
-    width: 21%
-    padding-right: 20px
-  .user-name
-    width: 27%
-    padding-right: 20px
-  .cabinet_table_item
-    align-items: flex-start
-    .date, .cost-down, .cost-up, .user-id, .user-name
-      div
-        margin-bottom: 16px
-        &:last-child
-          margin-bottom: 0
-    
-.cabinet_allotment
-  padding: 40px 32px
-  box-shadow: 0px 0px 50px #F4F7F4
-  border-radius: 8px
-  margin-bottom: 32px
-.cabinet_allotment_top
-  display: flex
-  align-items: flex-end
-  justify-content: space-between
-  margin-top: -42px
-  margin-bottom: 24px
-  .cabinet_container_tabs
-    margin-bottom: 0
-.cabinet_allotment_top_heading
-  margin-bottom: 20px
-  font-size: 18px
-  line-height: 22px
-.cabinet_allotment_top_info
-  padding: 21px 62px 18px
-  background: #F4F7F4
-  border-radius: 8px
-  text-align: center
-  .heading
-    font-weight: 700
-    text-align: center
-    font-size: 13px
-    margin-bottom: 11px
-    text-transform: uppercase
-  .value
-    font-size: 18px
-    line-height: 22px
-    svg
-      vertical-align: tex-top
-      margin-right: 6px
-.cabinet_allotment_content_heading
-  font-size: 13px
-  font-weight: 700
-  text-transform: uppercase
-  margin-bottom: 8px
-.cabinet_allotment_content_descr
-  color: #828580
-  font-size: 13px
-  line-height: 23px
-  margin-bottom: 32px
-  max-width: 724px
-.cabinet_allotment_form
-  .form-group
-    display: flex
-    align-items: center
-    flex-wrap: wrap
-    max-width: 224px
-    margin-right: 20px
-    &:last-child
-      margin-right: 0
-    label
-      width: 100%
-    input, select
-      border: 1px solid #E5E6E5
-      border-radius: 4px
-      height: 40px
-  .box-check
-    padding-top: 12px
-    label
-      margin-bottom: 0
-.cabinet_allotment_form_list
-  display: flex
-  align-items: center
-  justify-content: flex-start
-
-
-
-@media screen and (max-width: 1200px)
-  /** Main **/
-  .cabinet_container_heading
-    font-size: 18px
-    line-height: 22px
-  .cabinet_sidebar
-    width: 265px
-    margin-right: 30px
-  .cabinet_sidebar_menu li a
-    padding: 12px 14px
-  .cabinet_logo
-    margin-left: 14px
-  .cabinet-balance_top .cabinet_container_descr
-    margin-top: 15px
-  .cabinet-balance_top_info
-    padding: 19px 28px 17px
-  .cabinet-balance_top_info .heading
-    font-size: 12px
-  .cabinet-balance_top_info .value
-    font-size: 16px
-  .cabinet-balance_container
-    padding: 30px 20px 40px
-  .cabinet_container_tabs li a
-    font-size: 12px
-  .cabinet_container_alert
-    font-size: 17px
-
-  .cabinet_table_headers .cost-up
-    width: 25%
-
-  .cabinet-contracts_item_name
-    max-width: 170px
-  .cabinet-contracts_item_name
-    font-size: 15px
-  .cabinet-contracts_item_user .name
-    font-size: 15px
-  .cabinet-contracts_item_user_group select
-    font-size: 14px
-
-  .refferals-table
-    .cabinet_table_wrapp
-      width: 100%
-      overflow: auto
-    .cabinet_table_list
-      width: max-content
-      min-width: 100%
-      .date
-        width: 157px
-      .cost-down
-        width: 157px
-      .cost-up
-        width: 157px
-      .user-id
-        width: 157px
-      .user-name
-        width: 157px
-  
-@media screen and (max-width: 992px)
   .box-check label
     line-height: 24px
   .box-check label a
@@ -2026,6 +1942,170 @@ input[type="search"]::-webkit-search-results-decoration
     margin-top: 8px
   .cabinet_container_top
     margin-bottom: 20px
+  .cabinet_table
+    margin-left: -16px
+    width: calc(100% + 32px)
+    padding: 32px 16px
+  .cabinet_table_nav
+    margin-bottom: 24px
+  .cabinet_table_sort
+    span
+      display: none
+  .cabinet_table_heading
+    max-width: 40%
+  .cabinet_table_list
+    width: max-content
+    min-width: 100%
+  .cabinet_table_wrapp
+    width: 100%
+    overflow: auto
+  .cabinet_table_headers .date, .cabinet_table_item .date
+    width: 157px
+  .cabinet_table_headers .cost-down, .cabinet_table_item .cost-down
+    width: 157px
+  .cabinet_table_headers .cost-up, .cabinet_table_item .cost-up
+    width: 157px
+  .order_container .cabinet_container_top
+    margin-bottom: 32px
+  .cabinet_container_tabs
+    justify-content: space-between
+    width: 100%
+  .order_container .cabinet_container_tabs
+    margin-bottom: 0
+  .cabinet_radio-group_list
+    display: block
+  .cabinet_radio-group_list .box-radio
+    width: 100%
+    margin-right: 0
+    margin-bottom: 16px
+  .cabinet_container_heading
+    line-height: 30px
+  .form-group input.search-input
+    background-image: none
+    padding-left: 16px
+    padding-right: 16px
+    &::placeholder
+      color: #828580
+      font-size: 15px
+  .form-group.search-group
+    align-items: stretch
+    margin-bottom: 32px
+    .submit-btn
+      padding: 0
+      width: 51px
+      display: flex
+      align-items: center
+      justify-content: center
+      background-image: url('../img/search-icon-white.svg')
+      background-position: center center
+      background-size: 15px
+      background-repeat: no-repeat
+      span
+        display: none
+  .cabinet_container_nav .toggle-btn
+      margin-right: 16px
+  /** Cabinet autorization **/
+  .autorization_wrapp
+    display: block
+    min-height: auto
+    display: block
+  .autorization_preview
+    display: none
+  .autorization_content
+    padding: 125px 16px
+  .autorization_logo
+    margin-bottom: 24px
+  .autorization_heading
+    margin-bottom: 40px
+    font-size: 26px
+    line-height: 31px
+  .autorization_form
+    width: 100%
+    padding: 32px 20px
+  .autorization_form_top
+    display: block
+    margin-bottom: 24px
+  .autorization_form_heading
+    margin-bottom: 10px
+  .autorization_form_toggler
+    text-align: left
+  .autorization_form_bottom
+    margin-bottom: 32px
+  .autorization_form button[type="submit"]
+    width: 100%
+  .autorization_form.registration-form .autorization_form_descr
+    margin-top: 0
+    margin-bottom: 24px
+  .authorization__check .box-check
+    width: 100%
+  .authorization__check .box-check label
+    line-height: 25px
+  .authorization__check .box-check label a
+    display: block
+  .autorization_form.registration-form .autorization_form_bottom
+    margin-bottom: 20px
+  /** Cabinet header **/
+  .header_wrapp
+    padding: 16px 0
+  .header_balance, .header_details, .header_profile, .header_lang
+    display: none
+  .header_subscription
+    margin-right: 16px
+  /** Cabinet plan **/
+  .plan-section
+    margin: 24px 0
+  .plan_wrapp
+    display: block
+    padding: 16px 20px
+  .plan_info
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 12px
+    span
+      flex-shrink: 0
+  .plan_link
+    width: 100%
+    text-align: center
+  /** Cabinet start **/
+  .start-section
+    margin-top: 56px
+    margin-bottom: 56px
+  .start_heading
+    font-size: 26px
+    line-height: 31px
+    margin-bottom: 20px
+  .start_list
+    display: block
+    margin-bottom: 20px
+  .start_item
+    width: 100%
+    margin: 0
+    margin-bottom: 16px
+    border-radius: 4px
+    padding: 18px 24px
+    display: flex
+    align-items: center
+    justify-content: flex-start
+  .start_item .icon
+    margin-right: 16px
+    width: 48px
+    height: 48px
+    display: flex
+    align-items: center
+    justify-content: flex-start
+  .start_item svg
+    margin-bottom: 0
+    max-width: 90%
+    max-height: 90%
+    height: auto
+  .start_item span
+    width: auto
+    text-align: left
+  .start_skip
+    width: 100%
+    text-align: center
+  /** Cabinet sites **/
   .cabinet-sites .submit-btn
     width: 100%
   .cabinet_container_alert
@@ -2036,6 +2116,7 @@ input[type="search"]::-webkit-search-results-decoration
   .cabinet_container_alert a
     margin-left: 0
     display: block
+  /** Cabinet balance **/
   .cabinet-balance_top
     display: block
   .cabinet-balance_top_info
@@ -2070,45 +2151,9 @@ input[type="search"]::-webkit-search-results-decoration
   .cabinet-balance_instruction
     width: 100%
     padding: 14px 24px 16px
-  .cabinet_table
-    margin-left: -16px
-    width: calc(100% + 32px)
-    padding: 32px 16px
-  .cabinet_table_nav
-    margin-bottom: 24px
-  .cabinet_table_sort
-    span
-      display: none
-  .cabinet_table_heading
-    max-width: 40%
-  .cabinet_table_list
-    width: max-content
-    min-width: 100%
-  .cabinet_table_wrapp
-    width: 100%
-    overflow: auto
-  .cabinet_table_headers .date, .cabinet_table_item .date
-    width: 157px
-  .cabinet_table_headers .cost-down, .cabinet_table_item .cost-down
-    width: 157px
-  .cabinet_table_headers .cost-up, .cabinet_table_item .cost-up
-    width: 157px
-
+  /** Cabinet order **/
   .order-section
     padding-top: 32px
-  .order_container .cabinet_container_top
-    margin-bottom: 32px
-  .cabinet_container_tabs
-    justify-content: space-between
-    width: 100%
-  .order_container .cabinet_container_tabs
-    margin-bottom: 0
-  .cabinet_radio-group_list
-    display: block
-  .cabinet_radio-group_list .box-radio
-    width: 100%
-    margin-right: 0
-    margin-bottom: 16px
   .cabinet_bankid_wrapp
     padding: 24px 20px
     display: block
@@ -2139,9 +2184,94 @@ input[type="search"]::-webkit-search-results-decoration
     .cabinet-balance_container
       margin-left: 0
       width: 100%
-
+  /** Cabinet contacts **/
   .cabinet-contacts .submit-btn
     width: 100%
+  .cabinet-contacts .cabinet_container_nav .submit-btn
+    width: 40px
+    height: 40px
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 0
+    margin-bottom: 0
+    span
+      display: none
+    svg
+      margin: 0
+  .cabinet_container_contact_top
+    display: block
+  .cabinet_container_contact_info button.create
+    span
+      display: none
+    svg
+      margin-right: 0
+  .cabinet_container_contact_info
+    margin-bottom: 12px
+  .cabinet_container_contact_nav
+    flex-wrap: wrap
+    justify-content: flex-start
+  .cabinet_container_contact_user_top
+    padding: 10px 20px
+  .cabinet_container_contact_user_top .status
+    display: none
+  .cabinet_container_contact_user_top .nav
+    display: none
+  .cabinet-contacts_user_toggler
+    display: flex
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    align-items: center
+    justify-content: center
+    background: #EDF3ED
+    border: none
+    &:focus
+      outline: none
+  .cabinet_container_contact_user_nav
+    display: none
+  .cabinet_container_contact_user_item
+    display: block
+    .label
+      width: 100%
+      color: #828580
+      font-size: 13px
+      line-height: 16px
+      display: block
+      margin-bottom: 8px
+    .phone
+      width: 100%
+      margin-bottom: 16px
+    .email
+      width: 100%
+      margin-bottom: 16px
+    .permission
+      width: 100%
+  .cabinet_container_contact_user
+    position: relative
+    box-shadow: none
+    border-radius: 0
+    background: transparent
+  .cabinet_container_contact_user.active .cabinet_container_contact_user_top
+    border-bottom: none
+  .cabinet_container_contact_user_top
+    box-shadow: 0px 0px 50px #F4F7F4
+    border-radius: 8px
+    background: #FFFFFF
+  .cabinet_container_contact_user_content
+    padding: 12px 20px 16px
+    box-shadow: 0px 0px 50px #f4f7f4
+    border-radius: 8px
+    background: #fff
+    border: none
+    z-index: 20
+    position: absolute
+    top: 72px
+    width: 100%
+  .cabinet_container_contact_user_item select
+    width: 100%
+    max-width: 100%
+  /** Cabinet contragents **/
   .cabinet-contragents-list
     .cabinet_container_nav .primary-btn
       display: flex
@@ -2167,7 +2297,7 @@ input[type="search"]::-webkit-search-results-decoration
           background-image: url(../img/search-icon.svg)
           &::placeholder
             color: transparent
-
+  /** Cabinet contracts **/
   .cabinet-contracts_item_toggler
     display: flex
     flex-shrink: 0
@@ -2282,55 +2412,6 @@ input[type="search"]::-webkit-search-results-decoration
       justify-content: center
       border-radius: 50%
       background: #EDF3ED
-  .cabinet_container_heading
-    line-height: 30px
-  .cabinet-contragents-search .cabinet_container_top
-    margin-bottom: 18px
-    max-width: 80%
-  .form-group input.search-input
-    background-image: none
-    padding-left: 16px
-    padding-right: 16px
-    &::placeholder
-      color: #828580
-      font-size: 15px
-  .form-group.search-group
-    align-items: stretch
-    margin-bottom: 32px
-    .submit-btn
-      padding: 0
-      width: 51px
-      display: flex
-      align-items: center
-      justify-content: center
-      background-image: url('../img/search-icon-white.svg')
-      background-position: center center
-      background-size: 15px
-      background-repeat: no-repeat
-      span
-        display: none
-  .cabinet_container_user-preview
-    display: block
-    padding: 12px 16px
-  .cabinet_container_user-preview_info
-    width: 100%
-    margin-bottom: 12px
-  .cabinet_container_user-preview_nav
-    justify-content: space-between
-  .cabinet_container_user-preview_nav select
-    max-width: 167px
-    min-width: 20%
-    margin-right: 0
-  .cabinet_container_user-preview_nav .submit-btn
-    padding: 16px 33px
-    flex-shrink: 0
-    margin-left: 16px
-  .cabinet_container_user-preview_search
-    width: 100%
-    margin-right: 0
-    margin-bottom: 12px
-  
-
   .cabinet-contracts-list
     .cabinet_container_nav
       margin-bottom: 24px
@@ -2356,7 +2437,6 @@ input[type="search"]::-webkit-search-results-decoration
           background-image: url(../img/search-icon.svg)
           &::placeholder
             color: transparent
-
   .cabinet-contracts-setting
     .cabinet_container_nav
       flex-wrap: wrap
@@ -2382,93 +2462,31 @@ input[type="search"]::-webkit-search-results-decoration
   .cabinet_form.cabinet-contracts-settings .cabinet_form_wrapp .form-list .add-more
     margin-top: 0
   
-  .cabinet-contacts .cabinet_container_nav .submit-btn
-    width: 40px
-    height: 40px
-    display: flex
-    align-items: center
-    justify-content: center
-    padding: 0
-    margin-bottom: 0
-    span
-      display: none
-    svg
-      margin: 0
-  .cabinet_container_nav .toggle-btn
-    margin-right: 16px
-  .cabinet_container_contact_top
+  
+  .cabinet-contragents-search .cabinet_container_top
+    margin-bottom: 18px
+    max-width: 80%
+  .cabinet_container_user-preview
     display: block
-  .cabinet_container_contact_info button.create
-    span
-      display: none
-    svg
-      margin-right: 0
-  .cabinet_container_contact_info
+    padding: 12px 16px
+  .cabinet_container_user-preview_info
+    width: 100%
     margin-bottom: 12px
-  .cabinet_container_contact_nav
-    flex-wrap: wrap
-    justify-content: flex-start
-  .cabinet_container_contact_user_top
-    padding: 10px 20px
-  .cabinet_container_contact_user_top .status
-    display: none
-  .cabinet_container_contact_user_top .nav
-    display: none
-  .cabinet-contacts_user_toggler
-    display: flex
-    width: 40px
-    height: 40px
-    border-radius: 50%
-    align-items: center
-    justify-content: center
-    background: #EDF3ED
-    border: none
-    &:focus
-      outline: none
-  .cabinet_container_contact_user_nav
-    display: none
-  .cabinet_container_contact_user_item
-    display: block
-    .label
-      width: 100%
-      color: #828580
-      font-size: 13px
-      line-height: 16px
-      display: block
-      margin-bottom: 8px
-    .phone
-      width: 100%
-      margin-bottom: 16px
-    .email
-      width: 100%
-      margin-bottom: 16px
-    .permission
-      width: 100%
-  .cabinet_container_contact_user
-    position: relative
-    box-shadow: none
-    border-radius: 0
-    background: transparent
-  .cabinet_container_contact_user.active .cabinet_container_contact_user_top
-    border-bottom: none
-  .cabinet_container_contact_user_top
-    box-shadow: 0px 0px 50px #F4F7F4
-    border-radius: 8px
-    background: #FFFFFF
-  .cabinet_container_contact_user_content
-    padding: 12px 20px 16px
-    box-shadow: 0px 0px 50px #f4f7f4
-    border-radius: 8px
-    background: #fff
-    border: none
-    z-index: 20
-    position: absolute
-    top: 72px
+  .cabinet_container_user-preview_nav
+    justify-content: space-between
+  .cabinet_container_user-preview_nav select
+    max-width: 167px
+    min-width: 20%
+    margin-right: 0
+  .cabinet_container_user-preview_nav .submit-btn
+    padding: 16px 33px
+    flex-shrink: 0
+    margin-left: 16px
+  .cabinet_container_user-preview_search
     width: 100%
-  .cabinet_container_contact_user_item select
-    width: 100%
-    max-width: 100%
-
+    margin-right: 0
+    margin-bottom: 12px
+  /** Cabinet refferals **/
   .cabinet_refferals
     .cabinet_container_top
       margin-bottom: 32px
