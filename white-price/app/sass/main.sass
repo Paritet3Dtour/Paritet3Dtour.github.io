@@ -1,0 +1,689 @@
+// MAIN ELEMENTS
+body   
+  background-color: #fff
+  font-family: 'Halvar Mittel Th', sans-serif
+  color: #3F4349
+  overflow-x: hidden
+
+*, :after, :before
+  box-sizing: border-box
+
+.mainContainer
+  max-width: 1320px 
+  width: 100%
+  margin: 0 auto
+  padding: 0 20px
+  box-sizing: border-box  
+  @media screen and (max-width: 768px)
+    padding: 0 16px
+
+.default-section
+  margin: 120px 0
+.color-text
+  color: #0049CC
+  vertical-align: baseline
+
+.header_wrapp
+  padding: 10px 0
+  display: flex
+  align-items: center
+  justify-content: space-between
+.header_logo
+  &:focus
+    outline: none
+.header_menu
+  padding: 0
+  list-style: none
+  display: flex
+  align-items: center
+  li
+    margin-right: 65px
+    &:last-child
+      margin-right: 0
+    a
+      color: #3F4349
+      letter-spacing: 0.02em
+      text-transform: uppercase
+      font-family: 'Halvar Mittel Md'
+      &:focus
+        outline: none
+
+.banner
+  min-height: 600px
+  padding: 105px 0
+  background-color: #0049CC
+  background-image: url('../img/banner-bg-1.png')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center center
+  margin: 0 20px
+  width: 100%
+  max-width: 1400px
+  border-radius: 40px
+  position: relative
+  .banner_heading
+    text-align: center
+    color: #fff
+    font-size: 150px
+    line-height: 195px
+    text-transform: uppercase
+    font-weight: bold
+    font-family: 'RF Rufo', sans-serif
+    position: relative
+    z-index: 1
+  .bgel
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    svg
+      max-width: 100%
+      height: auto
+
+
+
+.about_heading
+  text-align: center
+  margin-bottom: 20px
+  font-size: 80px
+  text-transform: uppercase
+  line-height: 96px
+  font-family: 'RF Rufo', sans-serif
+  font-weight: normal
+.about_descr
+  text-align: center
+  margin-bottom: 32px
+  font-size: 24px
+  line-height: 43px
+.about_partners
+  display: flex
+  align-items: stretch
+  justify-content: center
+  margin-bottom: 80px
+.about_partner
+  display: flex
+  align-items: center
+  padding: 0 40px
+  border-right: 1px solid #D3D8DF
+  &:last-child
+    border-right: none
+  &:first-child
+    margin-left: -60px
+
+.about_list
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+.about_item
+  width: 31%
+.about_item_preview
+  margin-bottom: 32px
+  img
+    max-width: 100%
+    height: auto
+    width: auto
+    max-height: 200px
+.about_item_heading
+  font-family: 'RF Rufo', sans-serif
+  font-weight: bold
+  margin-bottom: 8px
+  font-size: 32px
+  line-height: 51px
+.about_item_descr
+  font-size: 18px
+  line-height: 32px
+
+
+.how-work_wrapp
+  padding: 120px 80px
+  background: #F5F7F9
+  border-radius: 40px
+.how-work_heading
+  margin-bottom: 40px
+  font-size: 80px
+  line-height: 96px
+  text-transform: uppercase
+  font-family: 'RF Rufo', sans-serif
+  font-weight: normal
+  svg
+    vertical-align: middle
+.how-work_item
+  margin-bottom: 80px
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  &:last-child
+    margin-bottom: 0
+  &:nth-child(even)
+    flex-direction: row-reverse
+    .how-work_item_preview
+      margin-left: 0
+      margin-right: 65px
+.how-work_item_preview
+  width: 48%
+  flex-shrink: 0
+  margin-left: 30px
+  img
+    max-width: 100%
+    height: auto
+.how-work_item_content
+  width: 100%
+  padding-top: 27px
+.how-work_item_heading
+  font-size: 32px
+  line-height: 51px
+  font-family: 'RF Rufo', sans-serif
+  font-weight: bold
+  text-transform: uppercase
+  margin-bottom: 16px
+.how-work_item_descr
+  font-size: 24px
+  line-height: 43px
+
+
+.partners_heading
+  text-align: center
+  margin-bottom: 40px
+  text-transform: uppercase
+  font-size: 80px
+  line-height: 96px
+  font-family: 'RF Rufo', sans-serif
+  font-weight: normal
+.partners_list
+  display: flex
+  justify-content: space-between
+  align-items: stretch
+  flex-wrap: wrap
+  position: relative
+  &::after
+    content: ''
+    display: block
+    width: 1px
+    height: 100%
+    z-index: 2
+    position: absolute
+    right: 0
+    top: 0
+    background: #fff
+  &::before
+    content: ''
+    display: block
+    width: 100%
+    height: 1px
+    z-index: 2
+    position: absolute
+    left: 0
+    bottom: 0
+    background: #fff
+.partners_item
+  width: 25%
+  height: 200px
+  display: flex
+  align-items: center
+  justify-content: center
+  border-bottom: 1px solid #D3D8DF
+  border-right: 1px solid #D3D8DF
+.partners_item_logo
+  width: 140px
+  height: 140px
+  img,svg
+    max-width: 100%
+    height: auto
+
+
+.criterions_heading
+  margin-bottom: 20px
+  text-align: center
+  text-transform: uppercase
+  font-size: 80px
+  line-height: 96px
+  font-family: 'RF Rufo', sans-serif
+  font-weight: normal
+.criterions_descr
+  margin-bottom: 40px
+  text-align: center
+  font-size: 18px
+  line-height: 32px
+.criterions_list
+  display: flex
+  justify-content: flex-start
+  align-items: stretch
+  flex-wrap: wrap
+  margin-bottom: 60px
+.criterions_item
+  width: 23.5%
+  margin-right: 2%
+  padding: 40px 20px
+  border: 2px solid #D3D8DF
+  border-radius: 40px
+  position: relative
+  margin-bottom: 20px
+  &:nth-child(+4n)
+    margin-right: 0
+  &:hover
+    .criterions_item_btn
+      color: #0049CC
+      svg
+        path
+          fill: #FFCD00
+.criterions_item_icon
+  margin: 0 auto
+  width: 120px
+  height: 120px
+  border-radius: 50%
+  background: #F2F4F7
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-bottom: 24px
+  img,svg
+    max-width: 70%
+    height: auto
+.criterions_item_heading
+  text-align: center
+  margin-bottom: 24px
+  font-size: 20px
+  line-height: 32px
+  text-transform: uppercase
+  font-family: 'RF Rufo', sans-serif
+  font-weight: bold
+.criterions_item_btn
+  margin: 0 auto
+  width: 153px
+  height: 101px
+  color: #B8BEC7
+  text-transform: uppercase
+  letter-spacing: 0.08em
+  font-size: 16px
+  text-align: center
+  font-weight: bold
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  transition: all 0.2s
+  font-family: 'Halvar Mittel Rg', sans-serif
+  svg
+    position: absolute
+    left: 0
+    top: 0
+    max-width: 100%
+    height: auto
+    path
+      transition: all 0.2s
+.criterions_item_link
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  z-index: 3
+  &:focus
+    outline: none
+
+
+
+.criterions_questionary
+  display: flex
+  align-items: center
+  justify-content: space-between
+.criterions_questionary_heading
+  margin-bottom: 12px
+  font-size: 26px
+  font-family: 'RF Rufo', sans-serif
+  font-weight: bold
+  line-height: 42px
+  text-transform: uppercase
+.criterions_questionary_descr
+  font-size: 18px
+  line-height: 32px
+.criterions_questionary_link
+  margin-left: 50px
+  display: flex
+  align-items: center
+  flex-shrink: 0
+  color: #0049CC
+  text-transform: uppercase
+  letter-spacing: 0.08em
+  font-family: 'Halvar Mittel Rg', sans-serif
+  font-weight: bold
+  span
+    margin-right: 20px
+  &:focus
+    outline: none
+
+
+
+.instructions_heading
+  margin-bottom: 40px
+  font-size: 80px
+  line-height: 96px
+  text-transform: uppercase
+  font-family: 'RF Rufo', sans-serif
+  font-weight: normal
+  svg
+    vertical-align: middle
+.instructions_item
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-bottom: 40px
+  margin-bottom: 40px
+  border-bottom: 1px solid #D3D8DF
+.instructions_item_number
+  margin-bottom: 16px
+  color: #B8BEC7
+  text-transform: uppercase
+  font-size: 16px
+  line-height: 26px
+  letter-spacing: 0.08em
+.instructions_item_heading
+  margin-bottom: 8px
+  font-size: 32px
+  font-weight: bold
+  font-family: 'RF Rufo', sans-serif
+  text-transform: uppercase
+  line-height: 51px
+.instructions_item_descr
+  font-size: 18px
+  line-height: 32px
+.instructions_item_preview
+  flex-shrink: 0
+  margin-left: 80px
+  width: 47.6%
+  img,svg
+    max-width: 100%
+    height: auto
+.instructions_descr
+  font-size: 14px
+  line-height: 28px
+
+
+.scheme_wrapp
+  padding: 120px 80px
+  background: #F5F7F9
+  border-radius: 40px
+.scheme_heading
+  text-align: center
+  margin-bottom: 40px
+  font-size: 80px;
+  line-height: 96px
+  text-align: center
+  text-transform: uppercase
+  font-family: 'RF Rufo', sans-serif
+  font-weight: normal
+.scheme_container
+  position: relative
+  width: 100%
+  height: 580px
+  margin-bottom: 60px
+.scheme_item
+  position: absolute
+  .scheme_item_arrow
+    position: absolute
+    color: #D5DADD
+    text-transform: uppercase
+    font-weight: bold
+    font-size: 14px
+    font-family: 'Halvar Mittel Rg', sans-serif
+    font-weight: bold
+    span
+      display: block
+  &:nth-child(1)
+    width: 460px
+    height: 164px
+    background: #0049CC
+    border-radius: 20px
+    font-size: 32px
+    font-weight: 500
+    text-align: center
+    line-height: 37px
+    color: #fff
+    display: flex
+    align-items: center
+    justify-content: center
+    left: 325px
+    font-family: 'Halvar Mittel Md'
+  &:nth-child(2),&:nth-child(3),&:nth-child(4)
+    width: 300px
+    height: 121px
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    color: #0049CC
+    font-size: 24px
+    line-height: 28px
+    background: #CCDBF5
+    border-radius: 20px
+    font-weight: normal
+    font-family: 'Halvar Mittel Lt'
+  &:nth-child(2)
+    left: 0
+    top: 200px
+    .scheme_item_arrow
+      top: -80px
+      right: 0
+      transform: rotate(-45deg)
+  &:nth-child(3)
+    left: 412px
+    top: 250px
+    .scheme_item_arrow
+      top: -56px
+      left: 120px
+      display: flex
+      flex-direction: row-reverse
+      align-items: center
+      svg
+        transform: rotate(-90deg)
+  &:nth-child(4)
+    right: 0
+    left: auto
+    top: 200px
+    .scheme_item_arrow
+      top: -80px
+      left: 0
+      transform: rotate(45deg)
+      svg
+        transform: rotate(-180deg)
+  &:nth-child(5),&:nth-child(6),&:nth-child(7)
+    width: 260px
+    height: 121px
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    color: #0049CC
+    font-size: 20px
+    line-height: 28px
+    background: #FFCD00
+    border-radius: 20px
+    font-weight: normal
+    padding: 10px 65px
+  &:nth-child(5)
+    left: 100px
+    top: 440px
+    .scheme_item_arrow
+      top: -80px
+      right: -25px
+      transform: rotate(-45deg)
+  &:nth-child(6)
+    left: 430px
+    top: 460px
+    .scheme_item_arrow
+      top: -56px
+      left: 109px
+      display: flex
+      flex-direction: row-reverse
+      align-items: center
+      svg
+        transform: rotate(-90deg)
+  &:nth-child(7)
+    right: 100px
+    left: auto
+    top: 440px
+    .scheme_item_arrow
+      top: -80px
+      left: -25px
+      transform: rotate(45deg)
+      svg
+        transform: rotate(-180deg)
+
+.scheme_about
+  width: 100%
+  max-width: 800px
+.scheme_about_item
+  margin-bottom: 32px
+  font-size: 18px
+  line-height: 36px
+  span
+    vertical-align: baseline
+    font-family: 'Halvar Mittel Rg', sans-serif
+    font-weight: bold
+.scheme_about_descr
+  font-size: 14px
+  line-height: 28px
+  p
+    margin-bottom: 12px
+    &:last-child
+      margin-bottom: 0
+
+    
+
+.faq_heading
+  margin-bottom: 40px
+  font-size: 80px
+  line-height: 96px
+  text-transform: uppercase
+  font-family: 'RF Rufo', sans-serif
+  font-weight: normal
+  svg
+    vertical-align: middle
+.faq_list
+  margin-bottom: 80px
+.faq_item
+  padding: 32px 0
+  border-top: 1px solid #D3D8DF
+  position: relative
+  padding-right: 95px
+  cursor: pointer
+  &:last-child
+    border-bottom: 1px solid #D3D8DF
+  &.active
+    .faq_item_descr
+      height: auto
+      margin-top: 12px
+    .faq_item_toggler
+      background: #F5F7F9
+      svg
+        transform: rotate(45deg)
+.faq_item_heading
+  width: 100%
+  max-width: 700px
+  font-size: 20px
+  line-height: 32px
+  text-transform: uppercase
+  font-family: 'RF Rufo', sans-serif
+  font-weight: bold
+.faq_item_descr
+  font-size: 18px
+  line-height: 32px
+  height: 0
+  overflow: hidden
+  width: 100%
+  max-width: 700px
+  transition: all 0.2s
+.faq_item_toggler
+  background: transparent
+  border: none
+  padding: 0
+  position: absolute
+  top: 24px
+  right: 0
+  width: 48px
+  height: 48px
+  display: flex
+  align-items: center
+  justify-content: center
+  background: transparent
+  border-radius: 50%
+  transition: all 0.2s
+  &:focus
+    outline: none
+  svg
+    transition: all 0.2s
+
+footer
+  margin-bottom: 20px
+  margin-top: 60px
+.footer_wrapp
+  background: #0049CC
+  border-radius: 40px
+  padding: 120px 80px 40px
+.footer_menu
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  margin-bottom: 120px
+.footer_contacts
+  margin-right: auto
+  a
+    display: block
+    color: #fff
+    font-size: 28px
+    margin-bottom: 14px
+    font-family: 'Halvar Mittel Md'
+    &:last-child
+      font-size: 20px
+      margin-bottom: 0
+    &:focus
+      outline: none
+.footer_links
+  margin-left: auto
+  text-align: right
+  a
+    display: block
+    color: #fff
+    font-size: 16px
+    margin-bottom: 20px
+    font-family: 'Halvar Mittel Md'
+    &:last-child
+      margin-bottom: 0
+    &:focus
+      outline: none
+.footer_socials
+  padding-top: 20px
+  a
+    text-transform: uppercase
+    letter-spacing: 0.08em
+    color: #fff
+    font-size: 16px
+    margin-right: 64px
+    font-family: 'Halvar Mittel Rg', sans-serif
+    &:last-child
+      margin-right: 0
+    &:focus
+      outline: none
+.footer_descr
+  text-align: center
+  color: rgba(255, 255, 255, 0.5)
+  font-size: 16px
+  font-family: 'Halvar Mittel Md'
+
+.scrollup
+  margin-bottom: 20px
+.scrollup_btn
+  display: flex
+  align-items: center
+  margin: 0 auto
+  border: none
+  background: transparent
+  padding: 0
+  font-family: 'Halvar Mittel Md'
+  span
+    margin-right: 12px
+    font-size: 16px
+  &:focus
+    outline: none
+
+

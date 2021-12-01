@@ -1,0 +1,227 @@
+@font-face {
+  font-family: 'RF Rufo';
+  src: url('../fonts/RFRufo/RFRufo-Thin.eot');
+  src: local('RFRufo-Thin'),
+      url('../fonts/RFRufo/RFRufo-Thin.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/RFRufo/RFRufo-Thin.woff2') format('woff2'),
+      url('../fonts/RFRufo/RFRufo-Thin.woff') format('woff'),
+      url('../fonts/RFRufo/RFRufo-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RF Rufo';
+  src: url('../fonts/RFRufo/RFRufo-BlackItalic.eot');
+  src: local('RF Rufo Black Italic'), local('RFRufo-BlackItalic'),
+      url('../fonts/RFRufo/RFRufo-BlackItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/RFRufo/RFRufo-BlackItalic.woff2') format('woff2'),
+      url('../fonts/RFRufo/RFRufo-BlackItalic.woff') format('woff'),
+      url('../fonts/RFRufo/RFRufo-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'RF Rufo';
+  src: url('../fonts/RFRufo/RFRufo-Regular.eot');
+  src: local('RFRufo-Regular'),
+      url('../fonts/RFRufo/RFRufo-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/RFRufo/RFRufo-Regular.woff2') format('woff2'),
+      url('../fonts/RFRufo/RFRufo-Regular.woff') format('woff'),
+      url('../fonts/RFRufo/RFRufo-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RF Rufo';
+  src: url('../fonts/RFRufo/RFRufo-Italic.eot');
+  src: local('RF Rufo Italic'), local('RFRufo-Italic'),
+      url('../fonts/RFRufo/RFRufo-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/RFRufo/RFRufo-Italic.woff2') format('woff2'),
+      url('../fonts/RFRufo/RFRufo-Italic.woff') format('woff'),
+      url('../fonts/RFRufo/RFRufo-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'RF Rufo';
+  src: url('../fonts/RFRufo/RFRufo-LightItalic.eot');
+  src: local('RF Rufo Light Italic'), local('RFRufo-LightItalic'),
+      url('../fonts/RFRufo/RFRufo-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/RFRufo/RFRufo-LightItalic.woff2') format('woff2'),
+      url('../fonts/RFRufo/RFRufo-LightItalic.woff') format('woff'),
+      url('../fonts/RFRufo/RFRufo-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'RF Rufo';
+  src: url('../fonts/RFRufo/RFRufo-Semibold.eot');
+  src: local('RFRufo-Semibold'),
+      url('../fonts/RFRufo/RFRufo-Semibold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/RFRufo/RFRufo-Semibold.woff2') format('woff2'),
+      url('../fonts/RFRufo/RFRufo-Semibold.woff') format('woff'),
+      url('../fonts/RFRufo/RFRufo-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RF Rufo';
+  src: url('../fonts/RFRufo/RFRufo-Bold.eot');
+  src: local('RF Rufo Bold'), local('RFRufo-Bold'),
+      url('../fonts/RFRufo/RFRufo-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/RFRufo/RFRufo-Bold.woff2') format('woff2'),
+      url('../fonts/RFRufo/RFRufo-Bold.woff') format('woff'),
+      url('../fonts/RFRufo/RFRufo-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RF Rufo';
+  src: url('../fonts/RFRufo/RFRufo-Light.eot');
+  src: local('RFRufo-Light'),
+      url('../fonts/RFRufo/RFRufo-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/RFRufo/RFRufo-Light.woff2') format('woff2'),
+      url('../fonts/RFRufo/RFRufo-Light.woff') format('woff'),
+      url('../fonts/RFRufo/RFRufo-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RF Rufo';
+  src: url('../fonts/RFRufo/RFRufo-ThinItalic.eot');
+  src: local('RF Rufo Thin Italic'), local('RFRufo-ThinItalic'),
+      url('../fonts/RFRufo/RFRufo-ThinItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/RFRufo/RFRufo-ThinItalic.woff2') format('woff2'),
+      url('../fonts/RFRufo/RFRufo-ThinItalic.woff') format('woff'),
+      url('../fonts/RFRufo/RFRufo-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'RF Rufo';
+  src: url('../fonts/RFRufo/RFRufo-BoldItalic.eot');
+  src: local('RF Rufo Bold Bold Italic'), local('RFRufo-BoldItalic'),
+      url('../fonts/RFRufo/RFRufo-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/RFRufo/RFRufo-BoldItalic.woff2') format('woff2'),
+      url('../fonts/RFRufo/RFRufo-BoldItalic.woff') format('woff'),
+      url('../fonts/RFRufo/RFRufo-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'RF Rufo';
+  src: url('../fonts/RFRufo/RFRufo-SemiboldItalic.eot');
+  src: local('RF Rufo Semibold Italic'), local('RFRufo-SemiboldItalic'),
+      url('../fonts/RFRufo/RFRufo-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/RFRufo/RFRufo-SemiboldItalic.woff2') format('woff2'),
+      url('../fonts/RFRufo/RFRufo-SemiboldItalic.woff') format('woff'),
+      url('../fonts/RFRufo/RFRufo-SemiboldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'RF Rufo';
+  src: url('../fonts/RFRufo/RFRufo-Black.eot');
+  src: local('RFRufo-Black'),
+      url('../fonts/RFRufo/RFRufo-Black.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/RFRufo/RFRufo-Black.woff2') format('woff2'),
+      url('../fonts/RFRufo/RFRufo-Black.woff') format('woff'),
+      url('../fonts/RFRufo/RFRufo-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: 'Halvar Mittel Lt';
+  src: url('../fonts/Halvar/HalvarMittel-Lt.eot');
+  src: local('Halvar Mittelschrift Light'), local('HalvarMittel-Lt'),
+      url('../fonts/Halvar/HalvarMittel-Lt.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Halvar/HalvarMittel-Lt.woff2') format('woff2'),
+      url('../fonts/Halvar/HalvarMittel-Lt.woff') format('woff'),
+      url('../fonts/Halvar/HalvarMittel-Lt.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Halvar Mittel Hl';
+  src: url('../fonts/Halvar/HalvarMittel-Hl.eot');
+  src: local('Halvar Mittelschrift Hairline'), local('HalvarMittel-Hl'),
+      url('../fonts/Halvar/HalvarMittel-Hl.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Halvar/HalvarMittel-Hl.woff2') format('woff2'),
+      url('../fonts/Halvar/HalvarMittel-Hl.woff') format('woff'),
+      url('../fonts/Halvar/HalvarMittel-Hl.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Halvar Mittel Th';
+  src: url('../fonts/Halvar/HalvarMittel-Th.eot');
+  src: local('Halvar Mittelschrift Thin'), local('HalvarMittel-Th'),
+      url('../fonts/Halvar/HalvarMittel-Th.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Halvar/HalvarMittel-Th.woff2') format('woff2'),
+      url('../fonts/Halvar/HalvarMittel-Th.woff') format('woff'),
+      url('../fonts/Halvar/HalvarMittel-Th.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Halvar Mittel Rg';
+  src: url('../fonts/Halvar/HalvarMittel-Bd.eot');
+  src: local('Halvar Mittelschrift Bold'), local('HalvarMittel-Bd'),
+      url('../fonts/Halvar/HalvarMittel-Bd.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Halvar/HalvarMittel-Bd.woff2') format('woff2'),
+      url('../fonts/Halvar/HalvarMittel-Bd.woff') format('woff'),
+      url('../fonts/Halvar/HalvarMittel-Bd.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Halvar Mittel Md';
+  src: url('../fonts/Halvar/HalvarMittel-Md.eot');
+  src: local('Halvar Mittelschrift Medium'), local('HalvarMittel-Md'),
+      url('../fonts/Halvar/HalvarMittel-Md.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Halvar/HalvarMittel-Md.woff2') format('woff2'),
+      url('../fonts/Halvar/HalvarMittel-Md.woff') format('woff'),
+      url('../fonts/Halvar/HalvarMittel-Md.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

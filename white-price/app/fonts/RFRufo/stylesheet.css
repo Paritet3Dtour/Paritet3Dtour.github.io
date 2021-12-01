@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'RF Rufo';
+    src: url('RFRufo-Thin.eot');
+    src: local('RFRufo-Thin'),
+        url('RFRufo-Thin.eot?#iefix') format('embedded-opentype'),
+        url('RFRufo-Thin.woff2') format('woff2'),
+        url('RFRufo-Thin.woff') format('woff'),
+        url('RFRufo-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Rufo';
+    src: url('RFRufo-BlackItalic.eot');
+    src: local('RF Rufo Black Italic'), local('RFRufo-BlackItalic'),
+        url('RFRufo-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('RFRufo-BlackItalic.woff2') format('woff2'),
+        url('RFRufo-BlackItalic.woff') format('woff'),
+        url('RFRufo-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Rufo';
+    src: url('RFRufo-Regular.eot');
+    src: local('RFRufo-Regular'),
+        url('RFRufo-Regular.eot?#iefix') format('embedded-opentype'),
+        url('RFRufo-Regular.woff2') format('woff2'),
+        url('RFRufo-Regular.woff') format('woff'),
+        url('RFRufo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Rufo';
+    src: url('RFRufo-Italic.eot');
+    src: local('RF Rufo Italic'), local('RFRufo-Italic'),
+        url('RFRufo-Italic.eot?#iefix') format('embedded-opentype'),
+        url('RFRufo-Italic.woff2') format('woff2'),
+        url('RFRufo-Italic.woff') format('woff'),
+        url('RFRufo-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Rufo';
+    src: url('RFRufo-LightItalic.eot');
+    src: local('RF Rufo Light Italic'), local('RFRufo-LightItalic'),
+        url('RFRufo-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('RFRufo-LightItalic.woff2') format('woff2'),
+        url('RFRufo-LightItalic.woff') format('woff'),
+        url('RFRufo-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Rufo';
+    src: url('RFRufo-Semibold.eot');
+    src: local('RFRufo-Semibold'),
+        url('RFRufo-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('RFRufo-Semibold.woff2') format('woff2'),
+        url('RFRufo-Semibold.woff') format('woff'),
+        url('RFRufo-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Rufo';
+    src: url('RFRufo-Bold.eot');
+    src: local('RF Rufo Bold'), local('RFRufo-Bold'),
+        url('RFRufo-Bold.eot?#iefix') format('embedded-opentype'),
+        url('RFRufo-Bold.woff2') format('woff2'),
+        url('RFRufo-Bold.woff') format('woff'),
+        url('RFRufo-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Rufo';
+    src: url('RFRufo-Light.eot');
+    src: local('RFRufo-Light'),
+        url('RFRufo-Light.eot?#iefix') format('embedded-opentype'),
+        url('RFRufo-Light.woff2') format('woff2'),
+        url('RFRufo-Light.woff') format('woff'),
+        url('RFRufo-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Rufo';
+    src: url('RFRufo-ThinItalic.eot');
+    src: local('RF Rufo Thin Italic'), local('RFRufo-ThinItalic'),
+        url('RFRufo-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('RFRufo-ThinItalic.woff2') format('woff2'),
+        url('RFRufo-ThinItalic.woff') format('woff'),
+        url('RFRufo-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Rufo';
+    src: url('RFRufo-BoldItalic.eot');
+    src: local('RF Rufo Bold Bold Italic'), local('RFRufo-BoldItalic'),
+        url('RFRufo-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('RFRufo-BoldItalic.woff2') format('woff2'),
+        url('RFRufo-BoldItalic.woff') format('woff'),
+        url('RFRufo-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Rufo';
+    src: url('RFRufo-SemiboldItalic.eot');
+    src: local('RF Rufo Semibold Italic'), local('RFRufo-SemiboldItalic'),
+        url('RFRufo-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('RFRufo-SemiboldItalic.woff2') format('woff2'),
+        url('RFRufo-SemiboldItalic.woff') format('woff'),
+        url('RFRufo-SemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RF Rufo';
+    src: url('RFRufo-Black.eot');
+    src: local('RFRufo-Black'),
+        url('RFRufo-Black.eot?#iefix') format('embedded-opentype'),
+        url('RFRufo-Black.woff2') format('woff2'),
+        url('RFRufo-Black.woff') format('woff'),
+        url('RFRufo-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
