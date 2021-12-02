@@ -21,26 +21,42 @@
       <a href="#" class="header_logo">
         <img src="img/logo.svg" alt="">
       </a>
-      <ul class="header_menu">
-        <li><a href="#about-section">Що таке "Біла ціна"</a></li>
-        <li><a href="#how-work-section">Як це працює</a></li>
-        <li><a href="#partners-section">Учасники</a></li>
-        <li><a href="#instructions-section">Як приєднатись</a></li>
-        <li><a href="#footer-section">Зв'язатися з нами</a></li>
-      </ul>
+      <button class="header_toggler" id="header_toggler">
+        меню
+      </button>
+      <div class="header_main">
+        <ul class="header_menu">
+          <li><a href="#about-section">Що таке "Біла ціна"</a></li>
+          <li><a href="#how-work-section">Як це працює</a></li>
+          <li><a href="#partners-section">Учасники</a></li>
+          <li><a href="#instructions-section">Як приєднатись</a></li>
+          <li><a href="#footer-section">Зв'язатися з нами</a></li>
+        </ul>
+        <div class="header_contacts">
+          <a href="tel:+380442275317" class="phone">+380 (44) 227-53-17</a>
+          <a href="mailto:info@case-ukraine.com.ua" class="mail">info@case-ukraine.com.ua</a>
+          <div class="socials">
+            <a href="#" >facebook</a>
+            <a href="#" >youtube</a>
+            <a href="#" >telegram</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </header>
 
 <section class="banner">
-  <div class="mainContainer">
-    <div class="banner_heading">
-      <h1>Наповнюйте бюджет разом з нами</h1>
-    </div>
-    <div class="bgel">
-      <svg width="671" height="441" viewBox="0 0 671 441" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M303.432 440.051V390.311L0 440.051V60.273L367.686 0V49.7398L671 0V379.778L303.432 440.051ZM314.771 377.086V426.826L659.779 370.298V13.342L356.347 62.9648V13.2249L11.3389 69.7528V426.709L314.771 377.086Z" fill="#FFCD00" fill-opacity="0.7"/>
-      </svg>        
+  <div class="banner_wrapp">
+    <div class="mainContainer">
+      <div class="banner_heading">
+        <h1>Наповнюйте бюджет разом з нами</h1>
+      </div>
+      <div class="bgel">
+        <svg width="671" height="441" viewBox="0 0 671 441" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M303.432 440.051V390.311L0 440.051V60.273L367.686 0V49.7398L671 0V379.778L303.432 440.051ZM314.771 377.086V426.826L659.779 370.298V13.342L356.347 62.9648V13.2249L11.3389 69.7528V426.709L314.771 377.086Z" fill="#FFCD00" fill-opacity="0.7"/>
+        </svg>        
+      </div>
     </div>
   </div>
 </section>
@@ -158,57 +174,59 @@
   <div class="mainContainer">
     <div class="criterions_heading">Критерії доброчесності</div>
     <div class="criterions_descr">Сайт рибатекст допоможе дизайнеру, верстальнику, вебмайстру<br/> згенерувати кілька абзаців більш-менш осмисленого тексту</div>
-    <div class="criterions_list">
-      <div class="criterions_item">
-        <a class="criterions_item_link" href="#"></a>
-        <div class="criterions_item_icon">
-          <img src="img/criterion1.png" alt="">
+    <div class="criterions_list_wrapp">
+      <div class="criterions_list">
+        <div class="criterions_item">
+          <a class="criterions_item_link" href="#"></a>
+          <div class="criterions_item_icon">
+            <img src="img/criterion1.png" alt="">
+          </div>
+          <div class="criterions_item_heading">Реалізація пального</div>
+          <div class="criterions_item_btn">
+            <svg width="153" height="101" viewBox="0 0 153 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M71.7584 86.5513V97.9613L150.417 84.9872V3.03846L81.2416 14.4484V3.03846L2.58373 16.0125V97.9613L71.7584 86.5513ZM69.1747 101V89.59L0 101V13.8262L83.8253 0V11.4097L153 0V87.1735L69.1747 101Z" fill="#D3D8DF"/>
+            </svg>            
+            <span>дивитися</span>
+          </div>
         </div>
-        <div class="criterions_item_heading">Реалізація пального</div>
-        <div class="criterions_item_btn">
-          <svg width="153" height="101" viewBox="0 0 153 101" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M71.7584 86.5513V97.9613L150.417 84.9872V3.03846L81.2416 14.4484V3.03846L2.58373 16.0125V97.9613L71.7584 86.5513ZM69.1747 101V89.59L0 101V13.8262L83.8253 0V11.4097L153 0V87.1735L69.1747 101Z" fill="#D3D8DF"/>
-          </svg>            
-          <span>дивитися</span>
+        <div class="criterions_item">
+          <a class="criterions_item_link" href="#"></a>
+          <div class="criterions_item_icon">
+            <img src="img/criterion2.png" alt="">
+          </div>
+          <div class="criterions_item_heading">Техніка та електроніка</div>
+          <div class="criterions_item_btn">
+            <svg width="153" height="101" viewBox="0 0 153 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M71.7584 86.5513V97.9613L150.417 84.9872V3.03846L81.2416 14.4484V3.03846L2.58373 16.0125V97.9613L71.7584 86.5513ZM69.1747 101V89.59L0 101V13.8262L83.8253 0V11.4097L153 0V87.1735L69.1747 101Z" fill="#D3D8DF"/>
+            </svg>            
+            <span>дивитися</span>
+          </div>
         </div>
-      </div>
-      <div class="criterions_item">
-        <a class="criterions_item_link" href="#"></a>
-        <div class="criterions_item_icon">
-          <img src="img/criterion2.png" alt="">
+        <div class="criterions_item">
+          <a class="criterions_item_link" href="#"></a>
+          <div class="criterions_item_icon">
+            <img src="img/criterion3.png" alt="">
+          </div>
+          <div class="criterions_item_heading">Алкогольні напої</div>
+          <div class="criterions_item_btn">
+            <svg width="153" height="101" viewBox="0 0 153 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M71.7584 86.5513V97.9613L150.417 84.9872V3.03846L81.2416 14.4484V3.03846L2.58373 16.0125V97.9613L71.7584 86.5513ZM69.1747 101V89.59L0 101V13.8262L83.8253 0V11.4097L153 0V87.1735L69.1747 101Z" fill="#D3D8DF"/>
+            </svg>            
+            <span>дивитися</span>
+          </div>
         </div>
-        <div class="criterions_item_heading">Техніка та електроніка</div>
-        <div class="criterions_item_btn">
-          <svg width="153" height="101" viewBox="0 0 153 101" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M71.7584 86.5513V97.9613L150.417 84.9872V3.03846L81.2416 14.4484V3.03846L2.58373 16.0125V97.9613L71.7584 86.5513ZM69.1747 101V89.59L0 101V13.8262L83.8253 0V11.4097L153 0V87.1735L69.1747 101Z" fill="#D3D8DF"/>
-          </svg>            
-          <span>дивитися</span>
-        </div>
-      </div>
-      <div class="criterions_item">
-        <a class="criterions_item_link" href="#"></a>
-        <div class="criterions_item_icon">
-          <img src="img/criterion3.png" alt="">
-        </div>
-        <div class="criterions_item_heading">Алкогольні напої</div>
-        <div class="criterions_item_btn">
-          <svg width="153" height="101" viewBox="0 0 153 101" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M71.7584 86.5513V97.9613L150.417 84.9872V3.03846L81.2416 14.4484V3.03846L2.58373 16.0125V97.9613L71.7584 86.5513ZM69.1747 101V89.59L0 101V13.8262L83.8253 0V11.4097L153 0V87.1735L69.1747 101Z" fill="#D3D8DF"/>
-          </svg>            
-          <span>дивитися</span>
-        </div>
-      </div>
-      <div class="criterions_item">
-        <a class="criterions_item_link" href="#"></a>
-        <div class="criterions_item_icon">
-          <img src="img/criterion4.png" alt="">
-        </div>
-        <div class="criterions_item_heading">Лікарські засоби</div>
-        <div class="criterions_item_btn">
-          <svg width="153" height="101" viewBox="0 0 153 101" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M71.7584 86.5513V97.9613L150.417 84.9872V3.03846L81.2416 14.4484V3.03846L2.58373 16.0125V97.9613L71.7584 86.5513ZM69.1747 101V89.59L0 101V13.8262L83.8253 0V11.4097L153 0V87.1735L69.1747 101Z" fill="#D3D8DF"/>
-          </svg>            
-          <span>дивитися</span>
+        <div class="criterions_item">
+          <a class="criterions_item_link" href="#"></a>
+          <div class="criterions_item_icon">
+            <img src="img/criterion4.png" alt="">
+          </div>
+          <div class="criterions_item_heading">Лікарські засоби</div>
+          <div class="criterions_item_btn">
+            <svg width="153" height="101" viewBox="0 0 153 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M71.7584 86.5513V97.9613L150.417 84.9872V3.03846L81.2416 14.4484V3.03846L2.58373 16.0125V97.9613L71.7584 86.5513ZM69.1747 101V89.59L0 101V13.8262L83.8253 0V11.4097L153 0V87.1735L69.1747 101Z" fill="#D3D8DF"/>
+            </svg>            
+            <span>дивитися</span>
+          </div>
         </div>
       </div>
     </div>
@@ -289,10 +307,10 @@
       <div class="scheme_heading">Схема прийняття рішення про присвоєння відзнаки «Біла Ціна»</div>
       <div class="scheme_container">
         <div class="scheme_item">
-          Оргкомітет
+          <span>Оргкомітет</span>
         </div>
         <div class="scheme_item">
-          Профільна асоціація
+          <span>Профільна асоціація</span>
           <div class="scheme_item_arrow">
             <span>1 голос</span>
             <svg width="52" height="16" viewBox="0 0 52 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -301,7 +319,7 @@
           </div>
         </div>
         <div class="scheme_item">
-          Експертна рада
+          <span>Експертна рада</span>
           <div class="scheme_item_arrow">
             <span>1 голос</span>
             <svg width="52" height="16" viewBox="0 0 52 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -310,7 +328,7 @@
           </div>
         </div>
         <div class="scheme_item">
-          CASE Україна
+          <span>CASE Україна</span>
           <div class="scheme_item_arrow">
             <span>1 голос</span>
             <svg width="52" height="16" viewBox="0 0 52 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -319,7 +337,7 @@
           </div>
         </div>
         <div class="scheme_item">
-          Незалежний аудитор №1
+          <span>Незалежний аудитор №1</span>
           <div class="scheme_item_arrow">
             <span>висновок</span>
             <svg width="52" height="16" viewBox="0 0 52 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -328,7 +346,7 @@
           </div>
         </div>
         <div class="scheme_item">
-          Незалежний аудитор №2
+          <span>Незалежний аудитор №2</span>
           <div class="scheme_item_arrow">
             <span>висновок</span>
             <svg width="52" height="16" viewBox="0 0 52 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -337,7 +355,7 @@
           </div>
         </div>
         <div class="scheme_item">
-          Незалежний аудитор №3
+          <span>Незалежний аудитор №3</span>
           <div class="scheme_item_arrow">
             <span>висновок</span>
             <svg width="52" height="16" viewBox="0 0 52 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -461,27 +479,4 @@
 
 
 
-<script>
-  let faqList = document.querySelectorAll('.faq_item');
-
-  for(let faq of faqList){
-    faq.addEventListener("click", toggleFaq, false);
-  }
-
-  function toggleFaq(){
-    this.classList.toggle('active');
-  }
-
-  document.getElementById('scrollTop').addEventListener('click', function() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  })
-
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-  });
-</script>
+<script src="js/main.js"></script>
