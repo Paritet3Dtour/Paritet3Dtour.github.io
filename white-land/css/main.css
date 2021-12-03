@@ -401,6 +401,7 @@ header {
   margin-bottom: 60px; }
 
 .criterions-scrollicon {
+  display: none;
   text-align: center;
   width: 100%; }
   .criterions-scrollicon svg {
@@ -1190,6 +1191,8 @@ footer {
     margin-bottom: 4px; }
   .about_item_descr {
     line-height: 26px; }
+  .criterions-scrollicon {
+    display: block; }
   .how-work .mainContainer {
     padding: 0; }
   .how-work_wrapp {
