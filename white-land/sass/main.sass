@@ -4,6 +4,7 @@ body
   font-family: 'Halvar Mittel Th', sans-serif
   color: #3F4349
   overflow-x: hidden
+  padding-top: 80px
 
 *, :after, :before
   box-sizing: border-box
@@ -23,6 +24,15 @@ body
   color: #0049CC
   vertical-align: baseline
 
+
+header
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 99
+  background: #fff
+  box-shadow: 0px 0px 7px -1px rgba(0, 0, 0, 0.2%);
 .header_wrapp
   padding: 10px 0
   display: flex
@@ -110,12 +120,14 @@ body
   display: flex
   align-items: stretch
   justify-content: center
-  margin-bottom: 80px
+  margin-bottom: 50px
 .about_partner
   display: flex
   align-items: center
   padding: 0 40px
   border-right: 1px solid #D3D8DF
+  &:focus
+    outline: none
   &:last-child
     border-right: none
   &:first-child
@@ -125,6 +137,14 @@ body
   display: flex
   justify-content: space-between
   align-items: flex-start
+.about_list_heading
+  text-align: center
+  margin-bottom: 40px
+  font-size: 56px
+  text-transform: uppercase
+  line-height: 66px
+  font-family: 'RF Rufo', sans-serif
+  font-weight: normal
 .about_item
   width: 31%
 .about_item_preview
@@ -262,6 +282,21 @@ body
   align-items: stretch
   flex-wrap: wrap
   margin-bottom: 60px
+.criterions-scrollicon
+  text-align: center
+  width: 100%
+  svg
+    animation: 4s scrollicon infinite
+    width: 40px
+    path
+      fill: #0049CC
+
+@keyframes scrollicon
+  0%
+    transform: translateX(0)
+  100%
+    transform: translateX(-100%)
+
 .criterions_item
   width: 23.5%
   margin-right: 2%
@@ -802,6 +837,8 @@ footer
     font-size: 15px
 
 @media screen and (max-width: 992px)
+  body
+    padding-top: 92px
   .banner
     padding: 0
   .banner_wrapp
@@ -1161,6 +1198,11 @@ footer
         font-family: 'Halvar Mittel Rg', sans-serif
   .banner_wrapp
     background-image: url('../img/banner-bg-mob.png')
+
+  .about_list_heading
+    font-size: 34px
+    line-height: 44px
+    text-align: left
 
 @media screen and (max-width: 359px)
   .header_contacts .socials a
