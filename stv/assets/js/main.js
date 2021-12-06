@@ -575,7 +575,7 @@ function clickItemHandler(event){
 
             setTimeout(() => {
                 message.remove();
-            }, 4000);
+            }, 400000);
         },
         'scrollTop': function(){
             window.scroll({

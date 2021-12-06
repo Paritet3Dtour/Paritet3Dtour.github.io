@@ -897,7 +897,6 @@ header {
   height: 0;
   overflow: hidden;
   width: 100%;
-  max-width: 700px;
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s; }

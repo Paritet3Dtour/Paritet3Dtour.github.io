@@ -3261,7 +3261,7 @@ input[type="search"]::-webkit-search-results-decoration{ display: none; }
   font-family: 'Circe', sans-serif;
 }
 
-.success-message{
+.action-message{
   position: fixed;
   top: 20px;
   right: 20px;
@@ -3271,20 +3271,20 @@ input[type="search"]::-webkit-search-results-decoration{ display: none; }
   border: 1px solid #4CAE01;
   border-radius: 8px;
   padding: 23px 32px 23px 75px;
-  background-image: url(../img/success-icon.svg);
+  /*background-image: url(../img/success-icon.svg);*/
   background-size: 31px;
   background-repeat: no-repeat;
   background-position: 27px 28px;
   text-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
   font-size: 19px;
   font-weight: bold;
-  animation: successmessage .4s;
+  animation: actionmessage .4s;
   animation-fill-mode: both;
   transform: translateY(-100%);
   opacity: 0;
 }
 
-@keyframes successmessage{
+@keyframes actionmessage{
   0%{
     transform: translateY(-100%);
     opacity: 0;
