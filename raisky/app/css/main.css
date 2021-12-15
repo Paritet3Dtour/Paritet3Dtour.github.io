@@ -1,0 +1,2849 @@
+body {
+  padding-top: 90px;
+  background: #000; }
+
+.ski-page {
+  /*overflow-x: hidden;*/
+  background-color: #F2FAFB;
+  font-family: 'Gotham Pro', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  background: #000;
+  min-height: 100vh;
+  width: 100%; }
+  .ski-page * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+
+.mainContainer {
+  max-width: 1142px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+textarea, input[type="text"], input[type="button"], input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0; }
+
+input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0; }
+
+input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0; }
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none; }
+
+button, input {
+  font-family: 'Gotham Pro', sans-serif; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.hidden {
+  display: none !important; }
+
+.tab-content{
+  display: none !important;
+}
+.tab-content.active{
+  display: block !important;
+}
+.ski-catalog_list.tab-content.active{
+  display: flex !important;
+}
+
+
+
+.ski-banner {
+  min-height: 100vh;
+  padding: 175px 0 40px;
+  background-image: url("../img/ski-banner.png");
+  background-repeat: no-repeat;
+  background-size: 560px;
+  background-position: 86% top; }
+
+.ski-banner_top {
+  margin-bottom: 140px; }
+  .ski-banner_top p {
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 22px; }
+  .ski-banner_top h1 {
+    margin-bottom: 60px;
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 60px;
+    color: #DDD7C1; }
+
+.ski-banner_submit {
+  padding: 16px 25px;
+  border: none;
+  margin: 0;
+  color: #000000;
+  font-weight: 500;
+  font-size: 14px;
+  /*background: #D8D2BA;*/
+  background: linear-gradient(rgba(243, 239, 224, 1) 0%, rgba(210, 204, 178, 1) 100%);
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
+  .ski-banner_submit:hover{
+    background: linear-gradient(rgba(240, 232, 201, 1) 0%, rgba(200, 190, 151, 1) 100%);
+  }
+  .ski-banner_submit:focus {
+    outline: none; }
+
+.ski-banner_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  max-width: 552px;
+  position: relative;
+  padding-top: 30px; }
+  .ski-banner_list::before {
+    width: 100%;
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 1px;
+    background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+    background: -o-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(90deg, white 0%, rgba(255, 255, 255, 0) 100%); }
+  .ski-banner_list li {
+    font-size: 16px;
+    line-height: 22px;
+    color: #C4C4C4;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    width: 48%;
+    position: relative; }
+    .ski-banner_list li::before {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      background: #D7D2BE;
+      position: absolute;
+      left: 0;
+      top: 4px; }
+
+.ski-statistics {
+  padding: 100px 0 120px; }
+
+.ski-statistics_heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 38px;
+  margin-bottom: 60px; }
+
+.ski-statistics_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.ski-statistics_item {
+  cursor: pointer;
+  margin-right: 0;
+  width: 20%;
+  margin-bottom: 20px;
+  padding-bottom: 35px;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
+  /*.ski-statistics_item:hover {
+    background: rgba(255, 255, 255, 0.05); }*/
+.ski-statistics_item.active{
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.ski-statistics_icon {
+  width: 100%;
+  height: 220px;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center center;
+  margin-bottom: 15px; }
+
+.ski-statistics_name {
+  text-align: center;
+  margin-bottom: 24px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+  padding: 0 10px; }
+
+.ski-statistics_list {
+  list-style: none;
+  padding: 0 10px; }
+  .ski-statistics_list li {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 2px;
+    color: #C4C4C4;
+    font-size: 12px;
+    line-height: 20px; }
+    .ski-statistics_list li:last-child {
+      margin-bottom: 0; }
+
+.ski-personaloffer {
+  padding: 54px 0 72px;
+  background-color: #000; }
+
+.ski-personaloffer_wrapp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.ski-personaloffer_img {
+  width: 400px;
+  height: 550px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-filter: drop-shadow(0px 20px 60px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(0px 20px 60px rgba(0, 0, 0, 0.3));
+  margin-right: -60px; }
+
+.ski-personaloffer_content {
+  padding: 60px 60px 60px 120px;
+  background: #FFFFFF;
+  width: 100%;
+  max-width: 775px;
+  margin-top: 110px;
+  color: #000000; }
+
+.ski-personaloffer_heading {
+  margin-bottom: 10px;
+  font-size: 35px;
+  line-height: 38px;
+  font-weight: bold; }
+
+.ski-personaloffer_descr {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #FFFFFF;
+  font-size: 16px;
+  background: #333434;
+  border: 1px solid #000000;
+  padding: 12px 18px;
+  margin-bottom: 30px; }
+
+.ski-personaloffer_list {
+  margin-bottom: 44px; }
+  .ski-personaloffer_list li {
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+    margin-bottom: 11px;
+    padding-left: 20px;
+    width: 100%;
+    position: relative; }
+    .ski-personaloffer_list li:last-child {
+      margin-bottom: 0; }
+    .ski-personaloffer_list li::before {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      background: #D7D2BE;
+      position: absolute;
+      left: 0;
+      top: 4px; }
+
+.ski-personaloffer_form_heading {
+  margin-bottom: 20px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px; }
+
+.ski-personaloffer_content form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+  .ski-personaloffer_content form input {
+    width: 245px;
+    height: 44px;
+    padding: 0 13px;
+    font-size: 14px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    margin-right: 16px;
+    font-weight: 300; }
+    .ski-personaloffer_content form input::-webkit-input-placeholder {
+      color: #C4C4C4; }
+    .ski-personaloffer_content form input::-moz-placeholder {
+      color: #C4C4C4; }
+    .ski-personaloffer_content form input:-ms-input-placeholder {
+      color: #C4C4C4; }
+    .ski-personaloffer_content form input::-ms-input-placeholder {
+      color: #C4C4C4; }
+    .ski-personaloffer_content form input::placeholder {
+      color: #C4C4C4; }
+  .ski-personaloffer_content form button[type="submit"] {
+    height: 44px;
+    padding: 0 20px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3C3C3C), to(#000000));
+    background: -o-linear-gradient(top, #3C3C3C 0%, #000000 100%);
+    background: linear-gradient(180deg, #3C3C3C 0%, #000000 100%);
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    border: 1px solid #575757;
+    font-weight: 500; }
+  .ski-personaloffer_content form button[type="submit"]:hover{
+    background: linear-gradient(180deg, rgba(92, 92, 92, 1) 0%, rgba(23, 23, 23, 1) 100%);
+  }
+
+.ski-benefits {
+  padding: 80px 0 100px 0; }
+
+.ski-benefits_heading {
+  text-align: center;
+  margin-bottom: 85px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 38px; }
+.ski-benefits_heading span{
+  color: #E6E1CE;
+  vertical-align: baseline;
+}
+
+.ski-benefits_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.ski-benefits_item {
+  width: 49%;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.ski-benefits_item_number {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.14)), to(rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0) 100%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 23px;
+  border: 1px solid #262623;
+  border-bottom: none; }
+
+.ski-benefits_item_content b {
+  display: block;
+  width: 100%;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px; }
+
+.ski-benefits_item_content p {
+  margin: 0;
+  color: #EAE9E9;
+  font-size: 16px;
+  line-height: 20px; }
+
+.ski-catalog {
+  padding: 80px 0 0;
+  background-color: #fff; }
+
+.ski-catalog_heading {
+  text-align: center;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 38px; }
+
+.ski-catalog_nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin-bottom: 30px;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid #C4C4C4; }
+  .ski-catalog_nav a {
+    padding: 11px 25px;
+    color: #C4C4C4;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
+    display: inline-block;
+    margin-bottom: -1px; }
+    .ski-catalog_nav a.active {
+      border-color: #000000;
+      color: #000000; }
+    .ski-catalog_nav a:focus{
+      outline: none;
+    }
+
+.ski-catalog_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-bottom: 60px; }
+
+.ski-catalog_item {
+  box-shadow: 0px 10px 40px rgba(23, 23, 37, 0.16);
+  width: 48.5%;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative; }
+  .ski-catalog_item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; }
+  .ski-catalog_item:hover::before {
+    background-color: rgba(0, 0, 0, 0.2); }
+
+.ski-catalog_item_link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%; }
+
+.ski-catalog_item_content {
+  position: relative;
+  z-index: 1;
+  padding: 130px 30px 40px; }
+
+.ski-catalog_item_heading {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 26px; }
+
+.ski-catalog_item_info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin-bottom: 75px; }
+  .ski-catalog_item_info span {
+    margin: 0 5px;
+    background: #D7D2BE;
+    padding: 6px 12px;
+    color: #000000;
+    font-size: 14px;
+    line-height: 20px;
+    display: inline-block; }
+
+.ski-catalog_item_btn {
+  margin: 0 auto;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  margin: 0 auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content; }
+  .ski-catalog_item_btn svg {
+    margin-left: 5px;
+    vertical-align: middle; }
+
+.ski-catalog_country {
+  padding-bottom: 60px; }
+  .ski-catalog_country .name {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 38px; }
+  .ski-catalog_country p {
+    color: #000000;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 18px; }
+    .ski-catalog_country p:last-child {
+      margin-bottom: 0; }
+  .ski-catalog_country ul {
+    margin-bottom: 20px; }
+    .ski-catalog_country ul li {
+      font-size: 16px;
+      line-height: 20px;
+      color: #000;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      width: 100%;
+      position: relative;
+      margin-left: 40px; }
+      .ski-catalog_country ul li:last-child {
+        margin-bottom: 0; }
+      .ski-catalog_country ul li::before {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: #D7D2BE;
+        position: absolute;
+        left: 0;
+        top: 4px; }
+
+.ski-catalog_video {
+  width: 100%;
+  height: 800px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .ski-catalog_video .play-btn {
+    padding: 0;
+    background: transparent;
+    border: none; }
+    .ski-catalog_video .play-btn:focus {
+      outline: none; }
+.ski-catalog_video iframe{
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.ski-catalog_video.active .play-btn{
+  display: none;
+}
+.ski-catalog_video.active iframe{
+  display: block;
+}
+
+.ski-emotions {
+  padding: 100px 0; }
+
+.ski-emotions_heading {
+  text-align: center;
+  margin-bottom: 150px;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 38px;
+  color: #fff; }
+  .ski-emotions_heading span {
+    vertical-align: baseline;
+    color: #E6E1CE; }
+
+.ski-emotions_item {
+  text-align: left;
+  padding-left: 265px;
+  position: relative;
+  margin-bottom: 185px; }
+  .ski-emotions_item:nth-child(even) {
+    padding-left: 0;
+    padding-right: 240px;
+    text-align: right; }
+    .ski-emotions_item:nth-child(even) .ski-emotions_item_content {
+      margin-left: auto; }
+    .ski-emotions_item:nth-child(even) .ski-emotions_item_preview {
+      top: -200px;
+      right: 0;
+      left: auto; }
+
+.ski-emotions_item_preview {
+  position: absolute;
+  width: 360px;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  left: 0;
+  top: -47px; }
+  .ski-emotions_item_preview::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); }
+
+.ski-emotions_item_content {
+  max-width: 460px;
+  position: relative;
+  width: 100%;
+  z-index: 1; }
+  .ski-emotions_item_content b {
+    display: block;
+    margin-bottom: 14px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+    color: #fff; }
+  .ski-emotions_item_content p {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px; }
+
+.ski-emotions-delimetr {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.ski-emotions-delimetr_wrapp {
+  height: 640px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.ski-emotions-delimetr_heading {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 35px;
+  line-height: 38px;
+  width: 100%;
+  padding: 50px 38px;
+  position: relative;
+  border: 1px solid transparent;
+  -o-border-image: -o-linear-gradient(320deg, white 0, rgba(255, 255, 255, 0) 95%);
+     border-image: linear-gradient(130deg, white 0, rgba(255, 255, 255, 0) 95%);
+  border-image-slice: 1; }
+  .ski-emotions-delimetr_heading span {
+    vertical-align: baseline;
+    color: #E6E1CE; }
+
+.ski-consultation {
+  padding: 120px 0 100px;
+  background-color: #000; }
+
+.ski-consultation_wrapp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.ski-consultation_img {
+  width: 400px;
+  height: 550px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-filter: drop-shadow(0px 20px 60px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(0px 20px 60px rgba(0, 0, 0, 0.3));
+  margin-left: -60px;
+  padding: 40px 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .ski-consultation_img .name {
+    text-align: center;
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+    color: #fff; }
+  .ski-consultation_img .position {
+    text-align: center;
+    color: #D7D2BE;
+    font-size: 16px;
+    line-height: 24px; }
+
+.ski-consultation_content {
+  padding: 60px 120px 60px 60px;
+  background: #FFFFFF;
+  width: 100%;
+  max-width: 775px;
+  margin-top: 100px;
+  color: #000000; }
+
+.ski-consultation_heading {
+  margin-bottom: 40px;
+  font-size: 35px;
+  line-height: 38px;
+  font-weight: bold; }
+
+.ski-consultation_descr {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #FFFFFF;
+  font-size: 16px;
+  background: #333434;
+  border: 1px solid #000000;
+  padding: 12px 18px;
+  margin-bottom: 30px; }
+
+.ski-consultation_list {
+  margin-bottom: 60px; }
+  .ski-consultation_list li {
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+    margin-bottom: 11px;
+    padding-left: 20px;
+    width: 100%;
+    position: relative; }
+    .ski-consultation_list li:last-child {
+      margin-bottom: 0; }
+    .ski-consultation_list li::before {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      background: #D7D2BE;
+      position: absolute;
+      left: 0;
+      top: 4px; }
+
+.ski-consultation_form_heading {
+  margin-bottom: 20px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px; }
+
+.ski-consultation_content form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+  .ski-consultation_content form input {
+    width: 245px;
+    height: 44px;
+    padding: 0 13px;
+    font-size: 14px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    margin-right: 16px;
+    font-weight: 300; }
+    .ski-consultation_content form input::-webkit-input-placeholder {
+      color: #C4C4C4; }
+    .ski-consultation_content form input::-moz-placeholder {
+      color: #C4C4C4; }
+    .ski-consultation_content form input:-ms-input-placeholder {
+      color: #C4C4C4; }
+    .ski-consultation_content form input::-ms-input-placeholder {
+      color: #C4C4C4; }
+    .ski-consultation_content form input::placeholder {
+      color: #C4C4C4; }
+  .ski-consultation_content form button[type="submit"] {
+    height: 44px;
+    padding: 0 20px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3C3C3C), to(#000000));
+    background: -o-linear-gradient(top, #3C3C3C 0%, #000000 100%);
+    background: linear-gradient(180deg, #3C3C3C 0%, #000000 100%);
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    border: 1px solid #575757;
+    font-weight: 500; }
+  .ski-consultation_content form button[type="submit"]:hover{
+    background: linear-gradient(180deg, rgba(92, 92, 92, 1) 0%, rgba(23, 23, 23, 1) 100%);
+  }
+
+.ski-advantage {
+  padding: 100px 0 140px; }
+
+.ski-advantage_heading {
+  text-align: center;
+  margin-bottom: 80px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 38px; }
+
+.ski-advantage_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.ski-advantage_item {
+  width: 31%;
+  margin-bottom: 52px; }
+
+.ski-advantage_item_icon {
+  margin-bottom: 20px;
+  text-align: center; }
+  .ski-advantage_item_icon svg, .ski-advantage_item_icon img {
+    max-width: 40px;
+    max-height: 40px;
+    height: auto; }
+
+.ski-advantage_item_heading {
+  text-align: center;
+  margin-bottom: 8px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px; }
+
+.ski-advantage_item_descr {
+  text-align: center;
+  color: #EAE9E9;
+  font-size: 16px;
+  line-height: 20px; }
+
+
+
+.sli-office{
+  background: #fff;
+  padding: 70px 0 100px;
+}
+.sli-office_heading{
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 38px;
+  margin-bottom: 50px;
+  color: #000000;
+}
+.sli-office_slide img{
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+}
+.sli-office_slider_nav button{
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+.sli-office_slider_nav button:focus{
+  outline: none;
+}
+.sli-office_slider_nav button{
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  left: -30px;
+}
+.sli-office_slider_nav button.prev{
+  left: -60px;
+  right: auto;
+}
+.sli-office_slider_nav button.next{
+  left: auto;
+  right: -60px;
+}
+.sli-office_slider_wrapp{
+  position: relative;
+}
+
+
+.sli-reviews{
+  padding: 140px 0 70px;
+}
+.sli-reviews_heading{
+  text-align: center;
+  margin-bottom: 75px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 38px;
+}
+
+.sli-reviews_slide{
+  width: 100%;
+  min-height: 260px;
+}
+.sli-reviews_slide_avatar{
+  margin: 0 auto;
+  display: block;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  margin-bottom: 14px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.sli-reviews_slide_name{
+  text-align: center;
+  margin-bottom: 30px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+}
+.sli-reviews_slide_descr{
+  color: #EAE9E9;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}
+.sli-reviews_slider{
+  max-width: 920px;
+  margin: 0 auto;
+}
+.sli-reviews_slider_nav button{
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+.sli-reviews_slider_nav button:focus{
+  outline: none;
+}
+.sli-reviews_slider_nav button{
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  left: -30px;
+}
+.sli-reviews_slider_nav button.prev{
+  left: -60px;
+  right: auto;
+}
+.sli-reviews_slider_nav button.next{
+  left: auto;
+  right: -60px;
+}
+.sli-reviews_slider_wrapp{
+  position: relative;
+}
+
+.sli-reviews_slider .swiper-pagination-bullet{
+  opacity: 0.4;
+  background: #fff;
+  width: 4px;
+  height: 4px;
+}
+.sli-reviews_slider .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  opacity: 1;
+}
+.sli-reviews_slider .swiper-pagination{
+  bottom: 0;
+}
+
+.sli-office_slider .swiper-pagination{
+  display: none;
+}
+
+
+.sli-partners{
+  padding: 47px 0 60px;
+  background: #fff;
+}
+.sli-partners_heading{
+  text-align: center;
+  margin-bottom: 60px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 38px;
+}
+.sli-partners_list{
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.sli-partners_item{
+  width: 25%;
+  height: 140px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+.sli-partners_item img{
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+.sli-footer-delimetr{
+  width: 100%;
+}
+.sli-footer-delimetr img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/** POPUP**/
+.sli-popup_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 10px;
+  opacity: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: -10; }
+  .sli-popup_container.active {
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition-delay: 0.1;
+         -o-transition-delay: 0.1;
+            transition-delay: 0.1;
+    z-index: 999999; }
+    .sli-popup_container.active .sli-popup {
+      bottom: 0;
+      -webkit-transition: all 0.6s ease-in-out;
+      -o-transition: all 0.6s ease-in-out;
+      transition: all 0.6s ease-in-out;
+      -webkit-transition-delay: 0.1;
+           -o-transition-delay: 0.1;
+              transition-delay: 0.1; }
+
+.sli-popup_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.sli-popup {
+  position: relative;
+  z-index: 200;
+  width: 100%;
+  max-width: 656px;
+  margin: auto;
+  background-color: #FFFFFF;
+  bottom: -100vh;
+  -webkit-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out; }
+
+.sli-popup_close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .popup_close img {
+    width: 16px;
+    height: auto; }
+
+
+.sli-request-popup{
+  max-width: 484px;
+}
+.sli-request-popup__content{
+  padding: 60px 87px 60px;
+}
+.sli-request-popup__heading{
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+  color: #000000;
+}
+.sli-request-popup__descr{
+  text-align: center;
+  margin-bottom: 40px;
+  color: #000000;
+  font-size: 16px;
+  line-height: 20px;
+}
+.sli-request-popup__content form{
+  max-width: 268px;
+  width: 100%;
+  margin: 0 auto;
+}
+.sli-request-popup__content form input{
+  width: 100%;
+  height: 44px;
+  border: 1px solid #000000;
+  padding: 0 13px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.sli-request-popup__content form input::placeholder{
+  color: #C4C4C4;
+  font-size: 14px;
+  font-weight: 300;
+}
+.sli-request-popup__content form button[type="submit"] {
+  height: 44px;
+  width: 100%;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3C3C3C), to(#000000));
+  background: -o-linear-gradient(top, #3C3C3C 0%, #000000 100%);
+  background: linear-gradient(180deg, #3C3C3C 0%, #000000 100%);
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  border: 1px solid #575757;
+  font-weight: 500; }
+.sli-request-popup__content form button[type="submit"]:hover{
+  background: linear-gradient(180deg, rgba(92, 92, 92, 1) 0%, rgba(23, 23, 23, 1) 100%);
+} 
+
+.sli-popup_close{
+  padding: 0;
+  background: transparent;
+  border: none;
+  top: 30px;
+  right: 30px;
+}
+.sli-popup_close:focus{
+  outline: none;
+}
+
+
+
+
+@media screen and (max-width: 1200px){
+  .mainContainer{
+    max-width: 722px;
+  }
+  .ski-statistics_heading, .ski-personaloffer_heading, .ski-benefits_heading, .ski-catalog_heading, .ski-catalog_country .name, .ski-emotions_heading, .ski-consultation_heading, .ski-advantage_heading, .sli-office_heading, .sli-reviews_heading, .sli-partners_heading{
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .ski-banner_top{
+    max-width: 388px;
+    margin-bottom: 186px;
+  }
+  .ski-banner_top p{
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .ski-banner{
+    padding-top: 140px;
+    background-size: 425px;
+    background-position: 94% top;
+  }
+  .ski-banner_list{
+    margin: 0 auto;
+  }
+  .ski-statistics{
+    padding: 40px 0 10px;
+  }
+  .ski-statistics_heading{
+    margin-bottom: 40px;
+  }
+  .ski-statistics_list{
+    justify-content: space-between;
+  }
+  .ski-statistics_item{
+    width: 48%;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+  }
+  .ski-statistics_icon{
+    width: 136px;
+    height: 112px;
+    margin-right: 9px;
+    background-size: 85%;
+  }
+  .ski-statistics_name{
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0;
+  }
+  .ski-statistics_list{
+    padding: 0;
+  }
+  .ski-statistics_list li{
+    text-align: left;
+    margin-bottom: 1px;
+  }
+  .ski-personaloffer{
+    padding: 40px 0 214px;
+  }
+  .ski-personaloffer_wrapp{
+    display: block;
+  }
+  .ski-personaloffer_content{
+    margin: 0;
+    width: 100%;
+  }
+  .ski-personaloffer_content{
+    padding: 40px 40px 36px 40px;
+  }
+  .ski-personaloffer_list{
+    margin-bottom: 40px;
+  }
+  .ski-personaloffer_form{
+    width: 298px;
+    margin-left: auto;
+  }
+  .ski-personaloffer_form_heading{
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+  .ski-personaloffer_content form{
+    display: block;
+  }
+  .ski-personaloffer_content form input{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  .ski-personaloffer_content form button[type="submit"]{
+    width: 100%;
+  }
+  .ski-personaloffer_wrapp{
+    position: relative;
+  }
+  .ski-personaloffer_img{
+    position: absolute;
+    bottom: -154px;
+    left: 40px;
+    width: 272px;
+    height: 374px;
+  }
+  .ski-benefits{
+    padding: 40px 0 80px;
+  }
+  .ski-benefits_heading{
+    margin-bottom: 40px;
+  }
+  .ski-benefits_list{
+    display: block;
+  }
+  .ski-benefits_item{
+    width: 100%;
+    margin-bottom: 44px;
+  }
+  .ski-benefits_item:last-child{
+    margin-bottom: 0;
+  }
+  .ski-catalog{
+    padding-top: 60px;
+  }
+  .ski-catalog_heading{
+    margin-bottom: 30px;
+  }
+  .ski-catalog_nav a{
+    font-size: 18px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .ski-catalog_item_content{
+    padding: 84px 15px 30px 15px;
+  }
+  .ski-catalog_item_heading{
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .ski-catalog_item_info{
+    margin-bottom: 36px;
+  }
+  .ski-catalog_list{
+    margin-bottom: 10px;
+  }
+  .ski-catalog_country ul li{
+    margin-left: 30px;
+  }
+  .ski-catalog_video{
+    height: 510px;
+  }
+  .ski-catalog_video .play-btn svg{
+    width: 80px;
+    height: 80px;
+  }
+  .ski-emotions{
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+  .ski-emotions_heading{
+    margin-bottom: 60px;
+  }
+  .ski-emotions_item{
+    margin-bottom: 60px;
+    height: 322px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  .ski-emotions_item_preview{
+    width: 290px;
+    height: 322px;
+    top: 0;
+  }
+  .ski-emotions_item_content{
+    max-width: 480px;
+    margin-left: auto;
+  }
+  .ski-emotions_item:nth-child(even) .ski-emotions_item_preview{
+    top: 0;
+  }
+  .ski-emotions_item:nth-child(even){
+    padding: 0;
+  }
+  .ski-emotions_item:nth-child(even) .ski-emotions_item_content{
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .ski-emotions-delimetr_wrapp{
+    height: 551px;
+  }
+  .ski-emotions-delimetr_heading{
+    padding: 35px 26px 49px 26px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .ski-emotions-delimetr{
+    background-size: cover;
+  }
+
+  .ski-consultation{
+    padding: 40px 0 230px;
+  }
+  .ski-consultation_wrapp{
+    display: block;
+    position: relative;
+  }
+  .ski-consultation_content{
+    margin: 0;
+    width: 100%;
+  }
+  .ski-consultation_content{
+    padding: 40px 40px 36px 40px;
+  }
+  .ski-consultation_list{
+    margin-bottom: 40px;
+  }
+  .ski-consultation_form{
+    width: 298px;
+  }
+  .ski-consultation_form_heading{
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+  .ski-consultation_content form{
+    display: block;
+  }
+  .ski-consultation_content form input{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  .ski-consultation_content form button[type="submit"]{
+    width: 100%;
+  }
+  .ski-consultation_wrapp{
+    position: relative;
+  }
+  .ski-consultation_img{
+    position: absolute;
+    bottom: -154px;
+    width: 272px;
+    height: 374px;
+    right: 40px;
+    left: auto;
+  }
+  .ski-consultation_heading{
+    margin-bottom: 30px;
+  }
+  .ski-consultation_img .name{
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 1px;
+  }
+  .ski-consultation_img{
+    padding-bottom: 20px;
+  }
+  .ski-consultation_img .position{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .ski-advantage{
+    padding: 40px 0 70px;
+  }
+  .ski-advantage_heading{
+    margin-bottom: 50px;
+  }
+  .ski-advantage_item{
+    width: 48%;
+    margin-bottom: 40px;
+  }
+  .sli-office{
+    padding-top: 40px;
+    padding-bottom: 26px;
+  }
+  .sli-office_heading{
+    margin-bottom: 30px;
+  }
+  .sli-office_slide img{
+    height: 373px;
+  }
+  .sli-office_slider .swiper-pagination{
+    display: block;
+  }
+  .sli-office_slider{
+    padding-bottom: 25px;
+  }
+  .sli-office_slider .swiper-pagination-bullet{
+    opacity: 0.4;
+    background: #000000;
+    width: 4px;
+    height: 4px;
+  }
+  .sli-office_slider .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    opacity: 1;
+  }
+  .sli-office_slider .swiper-pagination{
+    bottom: 0;
+  }
+  .sli-office_slider_nav{
+    display: none;
+  }
+  .sli-reviews{
+    padding: 60px 0 57px;
+  }
+  .sli-reviews_heading{
+    margin-bottom: 60px;
+  }
+  .sli-reviews_slider_nav{
+    display: none;
+  }
+  .sli-partners{
+    padding: 40px 0 30px;
+  }
+  .sli-partners_item{
+    height: 84px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px){
+  .ski-banner{
+    padding-top: 68px;
+    padding-bottom: 46px;
+    background-size: 242px;
+    background-position: center 30px;
+  }
+  .ski-banner_top{
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 77px;
+  }
+  .ski-banner_top p{
+    margin-bottom: 13px;
+  }
+  .ski-banner_top h1{
+    font-size: 42px;
+    line-height: 48px;
+    margin-bottom: 40px;
+  }
+  .ski-banner_list{
+    max-width: 279px;
+    display: block;
+  }
+  .ski-banner_list li{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .ski-banner_list li:nth-child(2){
+    margin-bottom: 20px;
+  }
+  .ski-banner_list li:last-child{
+    margin-bottom: 0;
+  }
+  .ski-statistics_heading{
+    margin-bottom: 30px;
+  }
+  .ski-statistics_list{
+    display: block;
+  }
+  .ski-statistics_item{
+    width: 100%;
+    margin-bottom: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .ski-statistics_icon{
+    margin-bottom: 0;
+    background-size: contain;
+    height: 96px;
+    width: 125px;
+    margin-right: 20px;
+  }
+  .ski-statistics{
+    padding-bottom: 40px;
+  }
+  .ski-personaloffer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .ski-personaloffer_content{
+    padding: 20px;
+  }
+  .ski-personaloffer_img{
+    display: none;
+  }
+  .ski-personaloffer_descr{
+    width: 100%;
+    padding: 10px 18px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .ski-personaloffer_list{
+    margin-bottom: 30px;
+  }
+  .ski-personaloffer_form{
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+  .ski-benefits{
+    padding: 50px 0 70px;
+  }
+  .ski-benefits_item_number{
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .ski-benefits_item_content b{
+    margin-bottom: 4px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .ski-benefits_item{
+    margin-bottom: 30px;
+  }
+  .ski-benefits_item:last-child{
+    margin-bottom: 0;
+  }
+  .ski-catalog{
+    padding-top: 40px;
+    overflow: hidden;
+  }
+  .ski-catalog_heading{
+    margin-bottom: 20px;
+  }
+  .ski-catalog_nav_wrapp{
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    margin-right: -16px;
+    width: calc(100% + 32px);
+  }
+  .ski-catalog_nav{
+    width: max-content;
+    margin-bottom: 0;
+  }
+  .ski-catalog_nav a{
+    font-size: 20px;
+    margin-right: 40px;
+  }
+  .ski-catalog_nav li:last-child a{
+    margin-right: 0;
+  }
+  .ski-catalog_list{
+    display: block;
+    margin-bottom: 40px;
+  }
+  .ski-catalog_item{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .ski-catalog_item_content{
+    padding: 50px 15px 20px 15px;
+  }
+  .ski-catalog_item_heading{
+    margin-bottom: 18px;
+  }
+  .ski-catalog_item_info{
+    margin-bottom: 40px;
+  }
+  .ski-catalog_country ul li{
+    margin-left: 10px;
+  }
+  .ski-catalog_country{
+    padding-bottom: 50px;
+  }
+  .ski-catalog_video{
+    height: 400px;
+  }
+  .ski-emotions{
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .ski-emotions_heading{
+    margin-bottom: 40px;
+  }
+  .ski-emotions_item{
+    height: auto !important;
+    padding-top: 200px !important;
+  }
+  .ski-emotions_item:last-child{
+    margin-bottom: 0 !important;
+  }
+  .ski-emotions_item_content{
+    text-align: center;
+    margin: 0;
+    max-width: 100%;
+  }
+  .ski-emotions_item_content b{
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .ski-emotions_item_preview{
+    width: 249px !important;
+    height: 277px !important;
+    top: 0 !important;
+    left: 50% !important;
+    margin-left: -124px !important;
+  }
+  .ski-emotions_item_preview::after{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  }
+  .ski-emotions-delimetr_wrapp{
+    height: 315px;
+  }
+  .ski-emotions-delimetr_heading{
+    padding: 20px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .ski-consultation{
+    padding: 40px 0;
+  }
+  .ski-consultation_content{
+    padding: 30px 20px 20px;
+  }
+  .ski-consultation_heading{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .ski-consultation_list li{
+    margin-bottom: 10px;
+  }
+  .ski-consultation_list li:last-child{
+    margin-bottom: 0;
+  }
+  .ski-consultation_list{
+    margin-bottom: 30px;
+  }
+  .ski-consultation_img{
+    position: static;
+  }
+  .ski-consultation_wrapp{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .ski-consultation_img{
+    margin: 0;
+    width: 100%;
+    height: 439px;
+    filter: none;
+    padding-bottom: 40px;
+    background-position: center top;
+  }
+  .ski-consultation_img .name{
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
+  .ski-consultation_img .position{
+    font-size: 16px;
+    line-height: 18px;
+    color: #C4C4C4;
+  }
+  .ski-advantage{
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  .ski-advantage_heading{
+    margin-bottom: 30px;
+  }
+  .ski-advantage_list{
+    display: block;
+  }
+  .ski-advantage_item{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .ski-advantage_item:last-child{
+    margin-bottom: 0;
+  }
+  .ski-advantage_item_heading{
+    line-height: 22px;
+  }
+  .sli-office{
+    padding-bottom: 50px;
+  }
+  .sli-office_slide img{
+    height: 203px;
+  }
+  .sli-office_slider_wrapp{
+    margin-left: -16px;
+    margin-right: -16px;
+    width: calc(100% + 32px);
+  }
+  .sli-reviews{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .sli-reviews_heading{
+    margin-bottom: 40px;
+  }
+  .sli-reviews_slide_name{
+    margin-bottom: 20px;
+  }
+  .sli-reviews_slider{
+    padding-bottom: 55px;
+  }
+  .sli-partners{
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .sli-partners_heading{
+    margin-bottom: 20px;
+    opacity: 0.4;
+  }
+  .sli-partners_item{
+    width: 50%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .sli-partners_item img{
+    max-width: 95%;
+    max-height: 95%;
+  }
+
+  .sli-request-popup__content{
+    padding: 60px 17px 60px 17px;
+  }
+  .sli-popup_close{
+    top: 20px;
+    right: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+.ski-resort{
+  background-color: #fff;
+}
+.ski-resort_banner{
+  width: 100%;
+  height: 380px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.ski-resort_banner::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, 0.4);
+}
+.ski-resort_banner .mainContainer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.ski-resort_banner h1{
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 38px;
+}
+.ski-resort_content{
+  color: #000;
+}
+.ski-resort_descr{
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.ski-resort_descr p{
+  margin-bottom: 10px;
+}
+.ski-resort_descr p:last-child{
+  margin-bottom: 0;
+}
+.ski-resort_params{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+.ski-resort_param{
+  width: 200px;
+  padding-right: 10px;
+}
+.ski-resort_param .name{
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+}
+.ski-resort_param .value{
+  font-size: 16px;
+  line-height: 20px;
+}
+.ski-resort_advantages{
+  margin-bottom: 40px;
+}
+.ski-resort_advantages .heading{
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+}
+.ski-resort_advantages p{
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+.ski-resort_issue{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 120px;
+}
+.ski-resort_toggler{
+  height: 44px;
+  padding: 5px 62px;
+  background: transparent;
+  border: 1px solid #000000;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  margin-bottom: 30px;
+  display: none;
+}
+.ski-resort_toggler svg{
+  margin-right: 14px;
+}
+.ski-resort_toggler:focus{
+  outline: none;
+}
+.ski-resort_filter{
+  width: 255px;
+  flex-shrink: 0;
+  margin-right: 30px;
+  box-shadow: 0px 4px 24px rgba(23, 23, 37, 0.12);
+  padding: 20px;
+  position: sticky;
+  left: 0;
+  top: 20px;
+}
+.ski-resort_filter .heading{
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px
+}
+.ski-resort_filter_container{
+  margin-bottom: 20px;
+}
+.ski-resort_filter_container .name{
+  margin-bottom: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+.ski-resort_filter .ckeck-item{
+  margin-bottom: 12px;
+
+}
+.ski-resort_filter .ckeck-item:last-child{
+  margin-bottom: 0;
+}
+.ski-resort_filter .ckeck-item input{
+  display: none;
+}
+.ski-resort_filter .ckeck-item label{
+  padding-left: 30px;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative;
+  height: 20px;
+  display: block;
+  cursor: pointer;
+}
+.ski-resort_filter .ckeck-item label::before{
+  content: '';
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+  display: block;
+  border: 1px solid #838383;
+  border-radius: 2px;
+}
+.ski-resort_filter .ckeck-item input:checked + label::before{
+  background-color: #000000;
+  border-color: #000;
+  background-image: url('../img/check-icon.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 14px;
+}
+.ski-resort_filter .submit{
+  height: 44px;
+  padding: 0 10px;
+  width: 100%;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3C3C3C), to(#000000));
+  background: -o-linear-gradient(top, #3C3C3C 0%, #000000 100%);
+  background: linear-gradient(180deg, #3C3C3C 0%, #000000 100%);
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  border: 1px solid #575757;
+  font-weight: 500; }
+.ski-resort_filter .submit:hover{
+  background: linear-gradient(180deg, rgba(92, 92, 92, 1) 0%, rgba(23, 23, 23, 1) 100%);
+}
+.ski-resort_filter .cancel{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  border: none;
+  background: transparent;
+}
+.ski-resort_filter .cancel:focus{
+  outline: none;
+}
+.ski-resort_list{
+  width: 100%;
+}
+.ski-resort_list[complexity-type="1"] .ski-resort_item[data-complexity="1"]{
+  display: block;
+}
+.ski-resort_list[complexity-type="1"] .ski-resort_item[data-complexity="2"]{
+  display: none !important;
+}
+.ski-resort_list[complexity-type="1"] .ski-resort_item[data-complexity="3"]{
+  display: none !important;
+}
+.ski-resort_list[complexity-type="2"] .ski-resort_item[data-complexity="1"]{
+  display: none !important;
+}
+.ski-resort_list[complexity-type="2"] .ski-resort_item[data-complexity="2"]{
+  display: block;
+}
+.ski-resort_list[complexity-type="2"] .ski-resort_item[data-complexity="3"]{
+  display: none !important;
+}
+.ski-resort_list[complexity-type="3"] .ski-resort_item[data-complexity="1"]{
+  display: none !important;
+}
+.ski-resort_list[complexity-type="3"] .ski-resort_item[data-complexity="2"]{
+  display: none !important;
+}
+.ski-resort_list[complexity-type="3"] .ski-resort_item[data-complexity="3"]{
+  display: block;
+}
+.ski-resort_item{
+  width: 100%;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 24px rgba(23, 23, 37, 0.12);
+  padding: 20px;
+  width: 100%;
+}
+.ski-resort_list .ski-resort_item:last-child{
+  margin-bottom: 0;
+}
+.ski-resort_item_content{
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-bottom: 20px;
+}
+.ski-resort_item_preview{
+  flex-shrink: 0;
+  margin-right: 30px;
+  width: 272px;
+  height: 272px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.ski-resort_item_name{
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 26px;
+}
+.ski-resort_item_params{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.ski-resort_item_param{
+  margin-right: 30px;
+}
+.ski-resort_item_param:last-child{
+  margin-right: 0;
+}
+.ski-resort_item_container{
+  width: 100%;
+}
+.ski-resort_item_param .name{
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+.ski-resort_item_param .value{
+  font-size: 16px;
+  line-height: 20px;
+}
+.ski-resort_item_descr{
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 438px;
+}
+.ski-resort_item_bottom{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.ski-resort_item_price{
+  width: 272px;
+  text-align: center;
+  margin-right: 30px;
+  flex-shrink: 0;
+}
+.ski-resort_item_price b{
+  display: block;
+  margin-bottom: 1px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+.ski-resort_item_price p{
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+.ski-resort_item_nav{
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.ski-resort_item_nav .submit{
+  height: 44px;
+  line-height: 44px;
+  padding: 0 10px;
+  width: 48%;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  display: block;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3C3C3C), to(#000000));
+  background: -o-linear-gradient(top, #3C3C3C 0%, #000000 100%);
+  background: linear-gradient(180deg, #3C3C3C 0%, #000000 100%);
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  border: 1px solid #575757;
+  font-weight: 500; }
+.ski-resort_item_nav .submit:hover{
+  background: linear-gradient(180deg, rgba(92, 92, 92, 1) 0%, rgba(23, 23, 23, 1) 100%);
+}
+.ski-resort_item_nav .details{
+  width: 48%;
+  height: 44px;
+  line-height: 44px;
+  font-size: 14px;
+  color: #000000;
+  text-align: center;
+  border: 1px solid #000000;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+}
+
+.ski-resort .ski-personaloffer{
+  padding: 0 0 72px;
+  background: #fff;
+}
+.ski-resort .ski-personaloffer_content{
+  box-shadow: 0px 4px 24px rgba(23, 23, 37, 0.12);
+}
+
+.sli-filter-popup__content{
+  background: #fff;
+  padding: 30px 40px 34px 40px;
+  color: #000;
+}
+.sli-filter-popup__content .ski-resort_filter{
+  display: block;
+  color: #000;
+  width: 100%;
+  box-shadow: none;
+  position: static;
+  margin: 0;
+  padding: 0;
+}
+.sli-filter-popup .sli-popup_close{
+  top: 20px;
+  right: 20px;
+}
+.sli-filter-popup{
+  max-width: 347px;
+}
+.sli-filter-popup__content .ski-resort_filter .heading{
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px){
+  .ski-resort_issue{
+    display: block;
+  }
+  .ski-resort_filter{
+    display: none;
+  }
+  .ski-resort_banner h1{
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .ski-resort_banner{
+    height: 230px;
+  }
+  .ski-resort_advantages{
+    margin-bottom: 30px;
+  }
+  .ski-resort_item_preview{
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+  }
+  .ski-resort_item_name{
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+  .ski-resort_item_content{
+    margin-bottom: 26px;
+  }
+  .ski-resort_item_price p{
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .ski-resort_item_price{
+    width: 200px;
+    margin-right: 20px;
+  }
+  .ski-resort_issue{
+    padding-bottom: 60px;
+  }
+  .ski-resort .ski-personaloffer_img{
+    display: none;
+  }
+  .ski-resort .ski-personaloffer_form{
+    width: 100%;
+    margin: 0;
+  }
+  .ski-resort .ski-personaloffer_content form input{
+    width: 240px;
+    margin-right: 16px;
+    margin-bottom: 0;
+  }
+  .ski-resort .ski-personaloffer_content form button{
+    width: 220px;
+  }
+  .ski-resort .ski-personaloffer{
+    padding-bottom: 40px;
+  }
+  .ski-resort_toggler{
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .ski-resort_banner{
+    height: 200px;
+  }
+  .ski-resort_banner h1{
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .ski-resort_params{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .ski-resort_param{
+    width: 49%;
+    margin-bottom: 30px;
+  }
+  .ski-resort_param:last-child{
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .ski-resort_item{
+    margin-bottom: 20px;
+  }
+  .ski-resort_item_content{
+    display: block;
+  }
+  .ski-resort_item_preview{
+    width: 100%;
+    margin-right: 0;
+    height: 170px;
+    margin-bottom: 16px;
+  }
+  .ski-resort_item_params{
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  .ski-resort_item_param{
+    margin-bottom: 16px;
+  }
+  .ski-resort_item_param:last-child{
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .ski-resort_item_descr{
+    display: none;
+  }
+  .ski-resort_item_bottom{
+    display: block;
+  }
+  .ski-resort_item_price{
+    width: 100%;
+    margin-right: 0;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .ski-resort_item_content{
+    margin-bottom: 0;
+  }
+  .ski-resort_item_nav{
+    display: block;
+  }
+  .ski-resort_item_nav .submit{
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .ski-resort_item_nav .details{
+    width: 100%;
+  }
+  .ski-resort_item_preview{
+    background-position: center top;
+  }
+  .ski-resort .ski-personaloffer_content form input{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+  .ski-resort .ski-personaloffer_content form button{
+    width: 100%;
+  }
+  .ski-resort .ski-personaloffer{
+    padding-bottom: 30px;
+  }
+  .ski-resort_toggler{
+    width: 100%;
+  }
+  .sli-filter-popup__content{
+    padding: 30px 35px 35px 35px;
+  }
+}
+
+
+
+/** HOTEL PAGE **/
+.ski-hotel{
+  background-color: #fff;
+  color: #000000;
+  padding-top: 30px;
+}
+.ski-hotel_heading{
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 38px;
+}
+.ski-hotel_slide img{
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+  object-position: center;
+}
+.ski-hotel_slider_nav button{
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+.ski-hotel_slider_nav button:focus{
+  outline: none;
+}
+.ski-hotel_slider_nav button{
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  left: -30px;
+}
+.ski-hotel_slider_nav button.prev{
+  left: -60px;
+  right: auto;
+}
+.ski-hotel_slider_nav button.next{
+  left: auto;
+  right: -60px;
+}
+.ski-hotel_slider_wrapp{
+  position: relative;
+}
+.ski-hotel_slider .swiper-pagination{
+  display: none;
+}
+.ski-hotel_slider{
+  margin-bottom: 30px;
+}
+.ski-hotel_wrapp{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  position: relative;
+}
+.ski-hotel_descr{
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.ski-hotel_descr p{
+  margin-bottom: 20px;
+}
+.ski-hotel_descr p:last-child{
+  margin-bottom: 0;
+}
+.ski-hotel_info{
+  margin-left: 30px;
+  width: 445px;
+  padding: 26px;
+  box-shadow: 0px 4px 24px rgba(23, 23, 37, 0.12);
+  flex-shrink: 0;
+}
+.ski-hotel_info_params{
+  margin-bottom: 26px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.ski-hotel_info_param{
+  margin-right: 30px;
+}
+.ski-hotel_info_param span{
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+.ski-hotel_info_param p{
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+.ski-hotel_info_price{
+  margin-bottom: 26px;
+}
+.ski-hotel_info_price .value{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+.ski-hotel_info_price .descr{
+  font-size: 16px;
+  line-height: 20px;
+}
+.ski-hotel_info_submit{
+  height: 44px;
+  width: 100%;
+  line-height: 44px;
+  padding: 0 10px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  display: block;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3C3C3C), to(#000000));
+  background: -o-linear-gradient(top, #3C3C3C 0%, #000000 100%);
+  background: linear-gradient(180deg, #3C3C3C 0%, #000000 100%);
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  border: 1px solid #575757;
+  font-weight: 500; }
+.ski-hotel_info_submit:hover{
+  background: linear-gradient(180deg, rgba(92, 92, 92, 1) 0%, rgba(23, 23, 23, 1) 100%);
+}
+.ski-hotel_advantages_heading{
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+}
+.ski-hotel_advantages ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.ski-hotel_advantages ul li{
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.ski-hotel_advantages ul li:last-child{
+  margin-bottom: 0;
+}
+.ski-hotel_advantages ul li img{
+  margin-right: 10px;
+}
+.ski-hotel .ski-personaloffer{
+  background: #fff;
+  padding-top: 0;
+  padding-bottom: 72px;
+}
+.ski-personaloffer_content{
+  box-shadow: 0px 4px 24px rgba(23, 23, 37, 0.12);
+}
+.ski-hotel_info{
+  position: sticky;
+  right: 0;
+  top: 20px;
+}
+.ski-hotel_back{
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #000000;
+  padding: 12px 18px 12px 16px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  width: max-content;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.ski-hotel_back:focus{
+  outline: none;
+}
+.ski-hotel_back:hover{
+  background: #000;
+  color: #fff;
+}
+.ski-hotel_back svg{
+  margin-right: 16px;
+}
+.ski-hotel_back svg path{
+  transition: all 0.2s;
+}
+.ski-hotel_back:hover svg path{
+  fill: #fff;
+}
+
+@media screen and (max-width: 1200px){
+  .ski-hotel_slider_nav{
+    display: none;
+  }
+  .ski-hotel_heading{
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .ski-hotel_slide img{
+    height: 350px;
+  }
+  .ski-hotel_slider{
+    margin-bottom: 50px;
+  }
+  .ski-hotel_info{
+    width: 270px;
+    padding: 16px;
+  }
+  .ski-hotel_info_params{
+    display: block;
+    margin-bottom: 20px;
+  }
+  .ski-hotel_info_param{
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .ski-hotel_info_param:last-child{
+    margin-bottom: 0;
+  }
+  .ski-hotel_info_price{
+    margin-bottom: 20px;
+  }
+  .ski-hotel_advantages ul li{
+    font-size: 15px;
+  }
+  .ski-hotel .ski-personaloffer_content{
+    padding: 40px;
+  }
+  .ski-hotel_wrapp{
+    margin-bottom: 60px;
+  }
+  .ski-hotel .ski-personaloffer{
+    padding-bottom: 40px;
+  }
+  .ski-hotel .ski-personaloffer_descr{
+    margin-bottom: 30px;
+  }
+  .ski-hotel .ski-personaloffer_content form{
+    display: flex;
+  }
+  .ski-hotel .ski-personaloffer_content form input{
+    width: 240px;
+    margin-right: 16px;
+    margin-bottom: 0;
+  }
+  .ski-hotel .ski-personaloffer_content form button[type="submit"]{
+    width: max-content;
+  }
+  .ski-hotel_slider .swiper-pagination{
+    display: block;
+  }
+  .ski-hotel_slider{
+    padding-bottom: 25px;
+  }
+  .ski-hotel_slider .swiper-pagination-bullet{
+    opacity: 0.4;
+    background: #000000;
+    width: 4px;
+    height: 4px;
+  }
+  .ski-hotel_slider .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    opacity: 1;
+  }
+  .ski-hotel_slider .swiper-pagination{
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .ski-hotel{
+    padding-top: 20px;
+  }
+  .ski-hotel_back{
+    margin-bottom: 20px;
+  }
+  .ski-hotel_heading{
+    margin-bottom: 20px;
+  }
+  .ski-hotel_slide img{
+    height: 175px;
+  }
+  .ski-hotel_slider{
+    margin-bottom: 36px;
+  }
+  .ski-hotel_wrapp{
+    flex-direction: column-reverse;
+  }
+  .ski-hotel_info{
+    margin: 0;
+    width: 100%;
+    margin-bottom: 30px;
+    position: static;
+  }
+  .ski-hotel_info_params{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ski-hotel_info_param{
+    margin-right: 35px;
+    margin-bottom: 16px;
+  }
+  .ski-hotel_info_param:last-child{
+    margin-bottom: 0;
+  }
+  .ski-hotel_descr p{
+    margin-bottom: 15px;
+  }
+  .ski-hotel_descr p:last-child{
+    margin-bottom: 0;
+  }
+  .ski-hotel_advantages ul li{
+    font-size: 16px;
+    display: flex;
+  }
+  .ski-hotel_advantages ul li img{
+    flex-shrink: 0;
+  }
+  .ski-hotel .ski-personaloffer_content{
+    padding: 20px;
+  }
+  .ski-hotel .ski-personaloffer_descr{
+    margin-bottom: 20px;
+  }
+  .ski-hotel .ski-personaloffer_content form{
+    display: block;
+  }
+  .ski-hotel .ski-personaloffer_content form input{
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .ski-hotel .ski-personaloffer_content form button[type="submit"]{
+    width: 100%;
+  }
+  .ski-hotel .ski-personaloffer{
+    padding-bottom: 30px;
+  }
+}

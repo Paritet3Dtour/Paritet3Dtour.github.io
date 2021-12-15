@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content_language" content="ru">
+  <meta name="description" content="Горнолыжка"> 
+  <title>Горнолыжка</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="libs/swiperjs/swiper.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head> 
+ 
+<body>
+
+  <div class="ski-page">
+
+
+    <div class="ski-banner">
+      <div class="mainContainer">
+        <div class="ski-banner_wrapp">
+          <div class="ski-banner_top">
+            <p>Лучшие горнолыжные курорты мира вместе с</p>
+            <h1>RaiSky Travel Concierge</h1>
+            <button class="ski-banner_submit" id="request-toggler">Оставить заявку</button>
+          </div>
+          <ul class="ski-banner_list">
+            <li>Индивидуальный подход</li>
+            <li>Инкогнито путешествия</li>
+            <li>Мгновенное решение запросов любой сложности</li>
+            <li>Доступ к любому Premium отелю</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="ski-statistics">
+      <div class="mainContainer">
+        <div class="ski-statistics_heading"><h2>Лучшие курорты европы</h2></div>
+        <div class="ski-statistics_list">
+          <div class="ski-statistics_item tab active" data-toggle-target=".tab-content-1">
+            <div class="ski-statistics_icon" style="background-image: url('img/statistics-item1.svg');"></div>
+            <div class="ski-statistics_content">
+              <div class="ski-statistics_name">Швейцария</div>
+              <ul class="ski-statistics_list">
+                <li>Кол-во курортов: 12</li>
+                <li>Стоимость: от 25 000 ₴</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ski-statistics_item tab" data-toggle-target=".tab-content-2">
+            <div class="ski-statistics_icon" style="background-image: url('img/statistics-item2.svg');"></div>
+            <div class="ski-statistics_content">
+              <div class="ski-statistics_name">Италия</div>
+              <ul class="ski-statistics_list">
+                <li>Кол-во курортов: 12</li>
+                <li>Стоимость: от 25 000 ₴</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ski-statistics_item tab" data-toggle-target=".tab-content-3">
+            <div class="ski-statistics_icon" style="background-image: url('img/statistics-item3.svg');"></div>
+            <div class="ski-statistics_content">
+              <div class="ski-statistics_name">Франция</div>
+              <ul class="ski-statistics_list">
+                <li>Кол-во курортов: 12</li>
+                <li>Стоимость: от 25 000 ₴</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ski-statistics_item tab" data-toggle-target=".tab-content-4">
+            <div class="ski-statistics_icon" style="background-image: url('img/statistics-item4.svg');"></div>
+            <div class="ski-statistics_content">
+              <div class="ski-statistics_name">Австрия</div>
+              <ul class="ski-statistics_list">
+                <li>Кол-во курортов: 12</li>
+                <li>Стоимость: от 25 000 ₴</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ski-statistics_item tab" data-toggle-target=".tab-content-5">
+            <div class="ski-statistics_icon" style="background-image: url('img/statistics-item5.svg');"></div>
+            <div class="ski-statistics_content">
+              <div class="ski-statistics_name">Андорра</div>
+              <ul class="ski-statistics_list">
+                <li>Кол-во курортов: 12</li>
+                <li>Стоимость: от 25 000 ₴</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ski-personaloffer">
+      <div class="mainContainer">
+        <div class="ski-personaloffer_wrapp">
+          <div class="ski-personaloffer_img" style="background-image: url('img/ski-personaloffer.png');"></div>
+          <div class="ski-personaloffer_content">
+            <div class="ski-personaloffer_heading">Не тратьте время на поиск!</div>
+            <div class="ski-personaloffer_descr">Озвучьте свои пожелания - мы подберем лучшее за 5 мин!</div>
+            <ul class="ski-personaloffer_list">
+              <li>Оптимальные предложения согласно Ваших пожеланий и бюджета</li>
+              <li>Уникальные сервисы и условия для Вашего комфорта</li>
+              <li>Доступ к эксклюзивным предложениям и закрытым мероприятиям в любом уголке мира</li>
+              <li>Экспертные рекомендации специалиста RAISKY</li>
+            </ul>
+            <div class="ski-personaloffer_form">
+              <div class="ski-personaloffer_form_heading">Получить индивидуальное предложение от тревел консьержа</div>
+              <form action="">
+                <input type="text" placeholder="Телефон">
+                <button type="submit">Получить предложение</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ski-benefits">
+      <div class="mainContainer">
+        <div class="ski-benefits_heading"><h2>Берем на себя <span>все заботы</span></h2></div>
+        <div class="ski-benefits_list">
+          <div class="ski-benefits_item">
+            <div class="ski-benefits_item_number">
+              1
+            </div>
+            <div class="ski-benefits_item_content">
+              <b>Определяем Ваши пожелания и предпочтения</b>
+              <p>Согласование всех услуг и сервисов будущего путешествия.</p>
+            </div>
+          </div>
+          <div class="ski-benefits_item">
+            <div class="ski-benefits_item_number">
+              2
+            </div>
+            <div class="ski-benefits_item_content">
+              <b>Составляем индивидуальный оффер</b>
+              <p>Разработка уникального тура под Ваши персональные требования.</p>
+            </div>
+          </div>
+          <div class="ski-benefits_item">
+            <div class="ski-benefits_item_number">
+              3
+            </div>
+            <div class="ski-benefits_item_content">
+              <b>Утверждаем программу тура</b>
+              <p>Внесение необходимых дополнений и финальное согласование программы. </p>
+            </div>
+          </div>
+          <div class="ski-benefits_item">
+            <div class="ski-benefits_item_number">
+              4
+            </div>
+            <div class="ski-benefits_item_content">
+              <b>Производим бронирование и оплату всех услуг</b>
+              <p>На этом этапе Вы совершаете оплату в любой удобной для Вас форме. Мы в свою очередь предоставляем 100% подтверждение отправки платежа.</p>
+            </div>
+          </div>
+          <div class="ski-benefits_item">
+            <div class="ski-benefits_item_number">
+              5
+            </div>
+            <div class="ski-benefits_item_content">
+              <b>Готовим и выдаем пакет документов</b>
+              <p>Подготовка и выдача всех необходимых документов для путешествия. </p>
+            </div>
+          </div>
+          <div class="ski-benefits_item">
+            <div class="ski-benefits_item_number">
+              6
+            </div>
+            <div class="ski-benefits_item_content">
+              <b>Начало путешествия</b>
+              <p>Помощь в прохождении всех формальностей в аэропорту, индивидуальная рассадка в самолете, встреча в стране назначения с именной табличкой, трансферы премиум/люкс классов, привилегированное размещение в отеле.</p>
+            </div>
+          </div>
+          <div class="ski-benefits_item">
+            <div class="ski-benefits_item_number">
+              7
+            </div>
+            <div class="ski-benefits_item_content">
+              <b>Контроль программы путешествия</b>
+              <p>Сопровождаем и контролируем программу на всех этапах Вашего путешествия. При необходимости предоставляем дополнительные услуги и сервисы.</p>
+            </div>
+          </div>
+          <div class="ski-benefits_item">
+            <div class="ski-benefits_item_number">
+              8
+            </div>
+            <div class="ski-benefits_item_content">
+              <b>Обратный вылет</b>
+              <p>Контролируем время вылета, своевременную подачу автомобиля для трансфера, предоставление и качество всех забронированных сервисов вплоть до Вашего возвращения домой.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="ski-catalog">
+      <div class="mainContainer">
+        <div class="ski-catalog_heading">Выбирай из лучших</div>
+        <div class="ski-catalog_nav_wrapp">
+          <ul class="ski-catalog_nav">
+            <li><a href="#" class="active tab" data-toggle-target=".tab-content-1">Швейцария</a></li>
+            <li><a href="#" class="tab" data-toggle-target=".tab-content-2">Италия</a></li>
+            <li><a href="#" class="tab" data-toggle-target=".tab-content-3">Франция</a></li>
+            <li><a href="#" class="tab" data-toggle-target=".tab-content-4">Австрия</a></li>
+            <li><a href="#" class="tab" data-toggle-target=".tab-content-5">Андорра</a></li>
+          </ul>
+        </div>
+        <div class="ski-catalog_list tab-content tab-content-1 active">
+          <div class="ski-catalog_item" style="background-image: url('img/catalog-item1.png');">
+            <a href="#" class="ski-catalog_item_link"></a>
+            <div class="ski-catalog_item_content">
+              <div class="ski-catalog_item_heading">Андерматт (Andermatt)</div>
+              <div class="ski-catalog_item_info">
+                <span>14 отелей</span>
+                <span>от 24 000 ₴</span>
+              </div>
+              <div class="ski-catalog_item_btn">
+                <span>Подробнее</span>
+                <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.77676 18L11.7768 9L2.77676 0L0.222656 2.55411L6.67045 9L0.222656 15.4459L2.77676 18Z" fill="white"/>
+                </svg>                  
+              </div>
+            </div>
+          </div>
+          <div class="ski-catalog_item" style="background-image: url('img/catalog-item2.png');">
+            <a href="#" class="ski-catalog_item_link"></a>
+            <div class="ski-catalog_item_content">
+              <div class="ski-catalog_item_heading">Валь ди Фасса (Val di Fassa)</div>
+              <div class="ski-catalog_item_info">
+                <span>14 отелей</span>
+                <span>от 24 000 ₴</span>
+              </div>
+              <div class="ski-catalog_item_btn">
+                <span>Подробнее</span>
+                <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.77676 18L11.7768 9L2.77676 0L0.222656 2.55411L6.67045 9L0.222656 15.4459L2.77676 18Z" fill="white"/>
+                </svg>                  
+              </div>
+            </div>
+          </div>
+          <div class="ski-catalog_item" style="background-image: url('img/catalog-item2.png');">
+            <a href="#" class="ski-catalog_item_link"></a>
+            <div class="ski-catalog_item_content">
+              <div class="ski-catalog_item_heading">Валь ди Фасса (Val di Fassa)</div>
+              <div class="ski-catalog_item_info">
+                <span>14 отелей</span>
+                <span>от 24 000 ₴</span>
+              </div>
+              <div class="ski-catalog_item_btn">
+                <span>Подробнее</span>
+                <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.77676 18L11.7768 9L2.77676 0L0.222656 2.55411L6.67045 9L0.222656 15.4459L2.77676 18Z" fill="white"/>
+                </svg>                  
+              </div>
+            </div>
+          </div>
+          <div class="ski-catalog_item" style="background-image: url('img/catalog-item1.png');">
+            <a href="#" class="ski-catalog_item_link"></a>
+            <div class="ski-catalog_item_content">
+              <div class="ski-catalog_item_heading">Андерматт (Andermatt)</div>
+              <div class="ski-catalog_item_info">
+                <span>14 отелей</span>
+                <span>от 24 000 ₴</span>
+              </div>
+              <div class="ski-catalog_item_btn">
+                <span>Подробнее</span>
+                <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.77676 18L11.7768 9L2.77676 0L0.222656 2.55411L6.67045 9L0.222656 15.4459L2.77676 18Z" fill="white"/>
+                </svg>                  
+              </div>
+            </div>
+          </div>
+          <div class="ski-catalog_item" style="background-image: url('img/catalog-item1.png');">
+            <a href="#" class="ski-catalog_item_link"></a>
+            <div class="ski-catalog_item_content">
+              <div class="ski-catalog_item_heading">Андерматт (Andermatt)</div>
+              <div class="ski-catalog_item_info">
+                <span>14 отелей</span>
+                <span>от 24 000 ₴</span>
+              </div>
+              <div class="ski-catalog_item_btn">
+                <span>Подробнее</span>
+                <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.77676 18L11.7768 9L2.77676 0L0.222656 2.55411L6.67045 9L0.222656 15.4459L2.77676 18Z" fill="white"/>
+                </svg>                  
+              </div>
+            </div>
+          </div>
+          <div class="ski-catalog_item" style="background-image: url('img/catalog-item2.png');">
+            <a href="#" class="ski-catalog_item_link"></a>
+            <div class="ski-catalog_item_content">
+              <div class="ski-catalog_item_heading">Валь ди Фасса (Val di Fassa)</div>
+              <div class="ski-catalog_item_info">
+                <span>14 отелей</span>
+                <span>от 24 000 ₴</span>
+              </div>
+              <div class="ski-catalog_item_btn">
+                <span>Подробнее</span>
+                <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.77676 18L11.7768 9L2.77676 0L0.222656 2.55411L6.67045 9L0.222656 15.4459L2.77676 18Z" fill="white"/>
+                </svg>                  
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ski-catalog_list tab-content tab-content-2">
+          <div class="ski-catalog_item" style="background-image: url('img/catalog-item1.png');">
+            <a href="#" class="ski-catalog_item_link"></a>
+            <div class="ski-catalog_item_content">
+              <div class="ski-catalog_item_heading">Андерматт (Andermatt)</div>
+              <div class="ski-catalog_item_info">
+                <span>14 отелей</span>
+                <span>от 24 000 ₴</span>
+              </div>
+              <div class="ski-catalog_item_btn">
+                <span>Подробнее</span>
+                <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.77676 18L11.7768 9L2.77676 0L0.222656 2.55411L6.67045 9L0.222656 15.4459L2.77676 18Z" fill="white"/>
+                </svg>                  
+              </div>
+            </div>
+          </div>
+          <div class="ski-catalog_item" style="background-image: url('img/catalog-item2.png');">
+            <a href="#" class="ski-catalog_item_link"></a>
+            <div class="ski-catalog_item_content">
+              <div class="ski-catalog_item_heading">Валь ди Фасса (Val di Fassa)</div>
+              <div class="ski-catalog_item_info">
+                <span>14 отелей</span>
+                <span>от 24 000 ₴</span>
+              </div>
+              <div class="ski-catalog_item_btn">
+                <span>Подробнее</span>
+                <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.77676 18L11.7768 9L2.77676 0L0.222656 2.55411L6.67045 9L0.222656 15.4459L2.77676 18Z" fill="white"/>
+                </svg>                  
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ski-catalog_list tab-content tab-content-3">
+          <div class="ski-catalog_item" style="background-image: url('img/catalog-item1.png');">
+            <a href="#" class="ski-catalog_item_link"></a>
+            <div class="ski-catalog_item_content">
+              <div class="ski-catalog_item_heading">Андерматт (Andermatt)</div>
+              <div class="ski-catalog_item_info">
+                <span>14 отелей</span>
+                <span>от 24 000 ₴</span>
+              </div>
+              <div class="ski-catalog_item_btn">
+                <span>Подробнее</span>
+                <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.77676 18L11.7768 9L2.77676 0L0.222656 2.55411L6.67045 9L0.222656 15.4459L2.77676 18Z" fill="white"/>
+                </svg>                  
+              </div>
+            </div>
+          </div>
+          <div class="ski-catalog_item" style="background-image: url('img/catalog-item2.png');">
+            <a href="#" class="ski-catalog_item_link"></a>
+            <div class="ski-catalog_item_content">
+              <div class="ski-catalog_item_heading">Валь ди Фасса (Val di Fassa)</div>
+              <div class="ski-catalog_item_info">
+                <span>14 отелей</span>
+                <span>от 24 000 ₴</span>
+              </div>
+              <div class="ski-catalog_item_btn">
+                <span>Подробнее</span>
+                <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.77676 18L11.7768 9L2.77676 0L0.222656 2.55411L6.67045 9L0.222656 15.4459L2.77676 18Z" fill="white"/>
+                </svg>                  
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ski-catalog_list tab-content tab-content-4">
+          <div class="ski-catalog_item" style="background-image: url('img/catalog-item1.png');">
+            <a href="#" class="ski-catalog_item_link"></a>
+            <div class="ski-catalog_item_content">
+              <div class="ski-catalog_item_heading">Андерматт (Andermatt)</div>
+              <div class="ski-catalog_item_info">
+                <span>14 отелей</span>
+                <span>от 24 000 ₴</span>
+              </div>
+              <div class="ski-catalog_item_btn">
+                <span>Подробнее</span>
+                <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.77676 18L11.7768 9L2.77676 0L0.222656 2.55411L6.67045 9L0.222656 15.4459L2.77676 18Z" fill="white"/>
+                </svg>                  
+              </div>
+            </div>
+          </div>
+          <div class="ski-catalog_item" style="background-image: url('img/catalog-item2.png');">
+            <a href="#" class="ski-catalog_item_link"></a>
+            <div class="ski-catalog_item_content">
+              <div class="ski-catalog_item_heading">Валь ди Фасса (Val di Fassa)</div>
+              <div class="ski-catalog_item_info">
+                <span>14 отелей</span>
+                <span>от 24 000 ₴</span>
+              </div>
+              <div class="ski-catalog_item_btn">
+                <span>Подробнее</span>
+                <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.77676 18L11.7768 9L2.77676 0L0.222656 2.55411L6.67045 9L0.222656 15.4459L2.77676 18Z" fill="white"/>
+                </svg>                  
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ski-catalog_list tab-content tab-content-5">
+          <div class="ski-catalog_item" style="background-image: url('img/catalog-item1.png');">
+            <a href="#" class="ski-catalog_item_link"></a>
+            <div class="ski-catalog_item_content">
+              <div class="ski-catalog_item_heading">Андерматт (Andermatt)</div>
+              <div class="ski-catalog_item_info">
+                <span>14 отелей</span>
+                <span>от 24 000 ₴</span>
+              </div>
+              <div class="ski-catalog_item_btn">
+                <span>Подробнее</span>
+                <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.77676 18L11.7768 9L2.77676 0L0.222656 2.55411L6.67045 9L0.222656 15.4459L2.77676 18Z" fill="white"/>
+                </svg>                  
+              </div>
+            </div>
+          </div>
+          <div class="ski-catalog_item" style="background-image: url('img/catalog-item2.png');">
+            <a href="#" class="ski-catalog_item_link"></a>
+            <div class="ski-catalog_item_content">
+              <div class="ski-catalog_item_heading">Валь ди Фасса (Val di Fassa)</div>
+              <div class="ski-catalog_item_info">
+                <span>14 отелей</span>
+                <span>от 24 000 ₴</span>
+              </div>
+              <div class="ski-catalog_item_btn">
+                <span>Подробнее</span>
+                <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.77676 18L11.7768 9L2.77676 0L0.222656 2.55411L6.67045 9L0.222656 15.4459L2.77676 18Z" fill="white"/>
+                </svg>                  
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ski-catalog_country tab-content tab-content-1 active">
+          <div class="name">Швейцария</div>
+          <p>Швейцария богатая горнолыжными курортами, которые входят в топы лучших курортов мира. Здесь все на самом высоком уровне: начиная от трасс и заканчивая сервисом. Эта страна будто создана для взыскательных клиентов, которые хотели бы получить от отдыха все и даже чуточку больше. </p>
+          <p>В Швейцарии нет понимания сезона как такового: любое время года идеально подходит для посещения этой страны. Природа тут великолепная, материальных ресурсов достаточно, чтобы радовать дорогих во всех смыслах гостей и как летом, так и зимой каждый гость найдет себе занятие по душе.</p>
+          <p>Въезд разрешен. При въезде необходимо предъявить:</p>
+          <ul>
+            <li>Сертификат о полном курсе вакцинации</li>
+            <li>или отрицательный результат ПЦР теста (за 72 часа до въезда)</li>
+            <li>или отрицательный результат быстрого теста на антиген COVID-19 (за 48 часов до въезда);</li>
+            <li>- или подтверждение, что вы имели заболевание COVID-19 в течение последних 6 месяцев и выздоровели.</li>
+          </ul>
+          <p>Лица, не вакцинированные или не выздоровевшие, должны сдать через 4-7 дней после въезда на территорию Швейцарии за свой счет повторный тест на COVID-19. Дети до 16 лет освобождаются от тестирования.</p>
+          <p>Также все без исключения лица, въезжающие в Швейцарию, должны заполнить при въезде специальную онлайн-форму: https://swissplf.admin.ch/formula</p>
+        </div>
+        <div class="ski-catalog_country tab-content tab-content-2">
+          <div class="name">Италия</div>
+          <p>Италия богатая горнолыжными курортами, которые входят в топы лучших курортов мира. Здесь все на самом высоком уровне: начиная от трасс и заканчивая сервисом. Эта страна будто создана для взыскательных клиентов, которые хотели бы получить от отдыха все и даже чуточку больше. </p>
+          <p>В Швейцарии нет понимания сезона как такового: любое время года идеально подходит для посещения этой страны. Природа тут великолепная, материальных ресурсов достаточно, чтобы радовать дорогих во всех смыслах гостей и как летом, так и зимой каждый гость найдет себе занятие по душе.</p>
+          <p>Въезд разрешен. При въезде необходимо предъявить:</p>
+          <ul>
+            <li>Сертификат о полном курсе вакцинации</li>
+            <li>или отрицательный результат ПЦР теста (за 72 часа до въезда)</li>
+            <li>или отрицательный результат быстрого теста на антиген COVID-19 (за 48 часов до въезда);</li>
+            <li>- или подтверждение, что вы имели заболевание COVID-19 в течение последних 6 месяцев и выздоровели.</li>
+          </ul>
+          <p>Лица, не вакцинированные или не выздоровевшие, должны сдать через 4-7 дней после въезда на территорию Швейцарии за свой счет повторный тест на COVID-19. Дети до 16 лет освобождаются от тестирования.</p>
+          <p>Также все без исключения лица, въезжающие в Швейцарию, должны заполнить при въезде специальную онлайн-форму: https://swissplf.admin.ch/formula</p>
+        </div>
+        <div class="ski-catalog_country tab-content tab-content-3">
+          <div class="name">Франция</div>
+          <p>Франция богатая горнолыжными курортами, которые входят в топы лучших курортов мира. Здесь все на самом высоком уровне: начиная от трасс и заканчивая сервисом. Эта страна будто создана для взыскательных клиентов, которые хотели бы получить от отдыха все и даже чуточку больше. </p>
+          <p>В Швейцарии нет понимания сезона как такового: любое время года идеально подходит для посещения этой страны. Природа тут великолепная, материальных ресурсов достаточно, чтобы радовать дорогих во всех смыслах гостей и как летом, так и зимой каждый гость найдет себе занятие по душе.</p>
+          <p>Въезд разрешен. При въезде необходимо предъявить:</p>
+          <ul>
+            <li>Сертификат о полном курсе вакцинации</li>
+            <li>или отрицательный результат ПЦР теста (за 72 часа до въезда)</li>
+            <li>или отрицательный результат быстрого теста на антиген COVID-19 (за 48 часов до въезда);</li>
+            <li>- или подтверждение, что вы имели заболевание COVID-19 в течение последних 6 месяцев и выздоровели.</li>
+          </ul>
+          <p>Лица, не вакцинированные или не выздоровевшие, должны сдать через 4-7 дней после въезда на территорию Швейцарии за свой счет повторный тест на COVID-19. Дети до 16 лет освобождаются от тестирования.</p>
+          <p>Также все без исключения лица, въезжающие в Швейцарию, должны заполнить при въезде специальную онлайн-форму: https://swissplf.admin.ch/formula</p>
+        </div>
+        <div class="ski-catalog_country tab-content tab-content-4">
+          <div class="name">Австрия</div>
+          <p>Австрия богатая горнолыжными курортами, которые входят в топы лучших курортов мира. Здесь все на самом высоком уровне: начиная от трасс и заканчивая сервисом. Эта страна будто создана для взыскательных клиентов, которые хотели бы получить от отдыха все и даже чуточку больше. </p>
+          <p>В Швейцарии нет понимания сезона как такового: любое время года идеально подходит для посещения этой страны. Природа тут великолепная, материальных ресурсов достаточно, чтобы радовать дорогих во всех смыслах гостей и как летом, так и зимой каждый гость найдет себе занятие по душе.</p>
+          <p>Въезд разрешен. При въезде необходимо предъявить:</p>
+          <ul>
+            <li>Сертификат о полном курсе вакцинации</li>
+            <li>или отрицательный результат ПЦР теста (за 72 часа до въезда)</li>
+            <li>или отрицательный результат быстрого теста на антиген COVID-19 (за 48 часов до въезда);</li>
+            <li>- или подтверждение, что вы имели заболевание COVID-19 в течение последних 6 месяцев и выздоровели.</li>
+          </ul>
+          <p>Лица, не вакцинированные или не выздоровевшие, должны сдать через 4-7 дней после въезда на территорию Швейцарии за свой счет повторный тест на COVID-19. Дети до 16 лет освобождаются от тестирования.</p>
+          <p>Также все без исключения лица, въезжающие в Швейцарию, должны заполнить при въезде специальную онлайн-форму: https://swissplf.admin.ch/formula</p>
+        </div>
+        <div class="ski-catalog_country tab-content tab-content-5">
+          <div class="name">Андорра</div>
+          <p>Андорра богатая горнолыжными курортами, которые входят в топы лучших курортов мира. Здесь все на самом высоком уровне: начиная от трасс и заканчивая сервисом. Эта страна будто создана для взыскательных клиентов, которые хотели бы получить от отдыха все и даже чуточку больше. </p>
+          <p>В Швейцарии нет понимания сезона как такового: любое время года идеально подходит для посещения этой страны. Природа тут великолепная, материальных ресурсов достаточно, чтобы радовать дорогих во всех смыслах гостей и как летом, так и зимой каждый гость найдет себе занятие по душе.</p>
+          <p>Въезд разрешен. При въезде необходимо предъявить:</p>
+          <ul>
+            <li>Сертификат о полном курсе вакцинации</li>
+            <li>или отрицательный результат ПЦР теста (за 72 часа до въезда)</li>
+            <li>или отрицательный результат быстрого теста на антиген COVID-19 (за 48 часов до въезда);</li>
+            <li>- или подтверждение, что вы имели заболевание COVID-19 в течение последних 6 месяцев и выздоровели.</li>
+          </ul>
+          <p>Лица, не вакцинированные или не выздоровевшие, должны сдать через 4-7 дней после въезда на территорию Швейцарии за свой счет повторный тест на COVID-19. Дети до 16 лет освобождаются от тестирования.</p>
+          <p>Также все без исключения лица, въезжающие в Швейцарию, должны заполнить при въезде специальную онлайн-форму: https://swissplf.admin.ch/formula</p>
+        </div>
+      </div>
+      <div class="ski-catalog_video" style="background: url('img/catalog-video-bg.png');">
+        <div class="video" id="player"></div>
+        <button class="play-btn" id="play" onclick="play();">
+          <svg width="228" height="228" viewBox="0 0 228 228" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle opacity="0.3" cx="114" cy="114" r="114" fill="black"/>
+            <circle cx="114" cy="114" r="69.9387" fill="black"/>
+            <path d="M138.105 113.655L102.11 88.8223V138.489L138.105 113.655Z" fill="white"/>
+          </svg>            
+        </button>
+
+      </div>
+    </div>
+
+    <div class="ski-emotions">
+      <div class="mainContainer">
+        <div class="ski-emotions_heading"><span>Не забудьте</span> положить в копилку эмоции.</div>
+        <div class="ski-emotions_list">
+          <div class="ski-emotions_item">
+            <div class="ski-emotions_item_preview" style="background-image: url('img/emotion1.png');"></div>
+            <div class="ski-emotions_item_content">
+              <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </b>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus orci lectus aenean nec pretium, aliquam, pretium feugiat. Parturient faucibus molestie egestas pellentesque vitae, aliquam tincidunt senectus enim. Tellus adipiscing dui pretium volutpat egestas enim. Cursus ornare justo.</p>
+            </div>
+          </div>
+          <div class="ski-emotions_item">
+            <div class="ski-emotions_item_preview" style="background-image: url('img/emotion2.png');"></div>
+            <div class="ski-emotions_item_content">
+              <b>Eleifend ultrices scelerisque.</b>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ante fermentum mauris erat eu ultrices nulla sed facilisi. Ut pellentesque lacinia vel vitae faucibus orci lorem tortor. </p>
+            </div>
+          </div>
+          <div class="ski-emotions_item">
+            <div class="ski-emotions_item_preview" style="background-image: url('img/emotion3.png');"></div>
+            <div class="ski-emotions_item_content">
+              <b>Est facilisi viverra viverra ut quis.</b>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus orci lectus aenean nec pretium, aliquam, pretium feugiat. Parturient faucibus molestie egestas pellentesque vitae, aliquam tincidunt senectus enim. Tellus adipiscing dui pretium volutpat egestas enim. Cursus ornare justo.</p>
+            </div>
+          </div>
+          <div class="ski-emotions_item">
+            <div class="ski-emotions_item_preview" style="background-image: url('img/emotion4.png');"></div>
+            <div class="ski-emotions_item_content">
+              <b>Eleifend ultrices scelerisque.</b>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu mauris, nisl sagittis, in libero, sociis risus et. Fusce et mattis phasellus maecenas. Metus, pellentesque aliquet enim urna viverra eget pharetra, enim. Vel gravida.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ski-emotions-delimetr" style="background-image: url('img/emotions-delimetr.png');">
+      <div class="mainContainer">
+        <div class="ski-emotions-delimetr_wrapp">
+          <div class="ski-emotions-delimetr_heading">Отправьтесь в одну из лучших поездок в своей жизни вместе с <span>Raisky Travel Concierge</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ski-consultation">
+      <div class="mainContainer">
+        <div class="ski-consultation_wrapp">
+          <div class="ski-consultation_content">
+            <div class="ski-consultation_heading">Ваш персональный консультант</div>
+            <ul class="ski-consultation_list">
+              <li>Эксперт в нишевом, люксовом туризме</li>
+              <li>Составит путешествие любой сложности в любой точке мира</li>
+              <li>С опытом 10+ лет</li>
+              <li>Подберет уникальное предложение под Ваши индивидуальные предпочтения</li>
+              <li>Всегда на связи 24/7</li>
+              <li>Оперативно решает весь спектр проблем, даже те, которые не относятся к путешествию</li>
+              <li>Ведет коммуникацию напрямую любым удобным для Вас способом</li>
+            </ul>
+            <div class="ski-consultation_form">
+              <div class="ski-consultation_form_heading">Получить индивидуальное предложение от тревел консьержа</div>
+              <form action="">
+                <input type="text" placeholder="Телефон">
+                <button type="submit">Получить предложение</button>
+              </form>
+            </div>
+          </div>
+          <div class="ski-consultation_img" style="background-image: url('img/ski-consultation-manager.png');">
+            <div class="name">Юлия Неизвестная</div>
+            <div class="position">эксперт RaiSky Travel Concierge</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ski-advantage">
+      <div class="mainContainer">
+        <div class="ski-advantage_heading">Преимущества нашей компании</div>
+        <div class="ski-advantage_list">
+          <div class="ski-advantage_item">
+            <div class="ski-advantage_item_icon">
+              <img src="img/ski-advantage1.svg" alt="">
+            </div>
+            <div class="ski-advantage_item_heading">
+              Специализация <br>на премиальных продуктах
+            </div>
+            <div class="ski-advantage_item_descr">
+              Наши консьержи- специализируются на продаже нишевых- премиальных продуктов.
+            </div>
+          </div>
+          <div class="ski-advantage_item">
+            <div class="ski-advantage_item_icon">
+              <img src="img/ski-advantage2.svg" alt="">
+            </div>
+            <div class="ski-advantage_item_heading">
+              Индивидуальный подход
+            </div>
+            <div class="ski-advantage_item_descr">
+              Составляем программу путешествий в любой точке мира в соответствии с вашими индивидуальными пожеланиями.
+            </div>
+          </div>
+          <div class="ski-advantage_item">
+            <div class="ski-advantage_item_icon">
+              <img src="img/ski-advantage3.svg" alt="">
+            </div>
+            <div class="ski-advantage_item_heading">
+              Лучшая честная стоимость
+            </div>
+            <div class="ski-advantage_item_descr">
+              Анализируем все предложения на рынке и подбираем только самые выгодные варианты.
+            </div>
+          </div>
+          <div class="ski-advantage_item">
+            <div class="ski-advantage_item_icon">
+              <img src="img/ski-advantage4.svg" alt="">
+            </div>
+            <div class="ski-advantage_item_heading">
+              Надежность
+            </div>
+            <div class="ski-advantage_item_descr">
+              Работаем с проверенными поставщиками услуг без посредников, что гарантирует безопасность и высокое качество.
+            </div>
+          </div>
+          <div class="ski-advantage_item">
+            <div class="ski-advantage_item_icon">
+              <img src="img/ski-advantage5.svg" alt="">
+            </div>
+            <div class="ski-advantage_item_heading">
+              Конфиденциальность
+            </div>
+            <div class="ski-advantage_item_descr">
+              Гарантия сохранности любой информации о туристах – на всех этапах сотрудничества.
+            </div>
+          </div>
+          <div class="ski-advantage_item">
+            <div class="ski-advantage_item_icon">
+              <img src="img/ski-advantage6.svg" alt="">
+            </div>
+            <div class="ski-advantage_item_heading">
+              Поддержка 24/7
+            </div>
+            <div class="ski-advantage_item_descr">
+              Служба поддержки клиентов 24/7 решает любые вопросы.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sli-office">
+      <div class="mainContainer">
+        <div class="sli-office_heading">Офис Raisky Travel Concierge</div>
+
+        <div class="sli-office_slider_wrapp">
+          <div class="sli-office_slider swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide sli-office_slide" href="img/office1.png" data-fancybox="office-slider">
+                <img src="img/office1.png" alt="">
+              </div>
+              <div class="swiper-slide sli-office_slide" href="img/office1.png" data-fancybox="office-slider">
+                <img src="img/office1.png" alt="">
+              </div>
+              <div class="swiper-slide sli-office_slide" href="img/office1.png" data-fancybox="office-slider">
+                <img src="img/office1.png" alt="">
+              </div>
+              <div class="swiper-slide sli-office_slide" href="img/office1.png" data-fancybox="office-slider">
+                <img src="img/office1.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="sli-office_slider_nav">
+            <button class="prev">
+              <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_127_7835)">
+                <path d="M25 0L2.5 22.5L25 45" stroke="url(#paint0_linear_127_7835)"/>
+                <path d="M15.6001 22.9518L27.5469 12.4033V18.7815L22.8368 22.9518L27.5469 27.1222V33.5004L15.6001 22.9518Z" fill="black"/>
+                </g>
+                <defs>
+                <linearGradient id="paint0_linear_127_7835" x1="1.5" y1="22.5" x2="25" y2="22.5" gradientUnits="userSpaceOnUse">
+                <stop/>
+                <stop offset="1" stop-opacity="0"/>
+                </linearGradient>
+                <clipPath id="clip0_127_7835">
+                <rect width="46" height="46" fill="white" transform="matrix(-1 0 0 1 46 0)"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </button>
+            <button class="next">
+              <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_127_7834)">
+                <path d="M21 0L43.5 22.5L21 45" stroke="url(#paint0_linear_127_7834)"/>
+                <path d="M30.3999 22.9518L18.4531 12.4033V18.7815L23.1632 22.9518L18.4531 27.1222V33.5004L30.3999 22.9518Z" fill="black"/>
+                </g>
+                <defs>
+                <linearGradient id="paint0_linear_127_7834" x1="44.5" y1="22.5" x2="21" y2="22.5" gradientUnits="userSpaceOnUse">
+                <stop/>
+                <stop offset="1" stop-opacity="0"/>
+                </linearGradient>
+                <clipPath id="clip0_127_7834">
+                <rect width="46" height="46" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>                
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="sli-reviews">
+      <div class="mainContainer">
+        <div class="sli-reviews_heading">Отзывы</div>
+        <div class="sli-reviews_slider_wrapp">
+          <div class="sli-reviews_slider swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide sli-reviews_slide">
+                <div class="sli-reviews_slide_avatar" style="background-image: url('img/avatar.png');"></div>
+                <div class="sli-reviews_slide_name">Юлия Неизвестная</div>
+                <div class="sli-reviews_slide_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sodales scelerisque donec velit pharetra. Libero, eget bibendum integer vulputate etiam massa turpis integer. Non pretium vitae. Urna morbi ultricies tempus diam suscipit in aliquam vitae.</div>
+              </div>
+              <div class="swiper-slide sli-reviews_slide">
+                <div class="sli-reviews_slide_avatar" style="background-image: url('img/avatar.png');"></div>
+                <div class="sli-reviews_slide_name">Юлия Неизвестная</div>
+                <div class="sli-reviews_slide_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sodales scelerisque donec velit pharetra. Libero, eget bibendum integer vulputate etiam massa turpis integer. Non pretium vitae. Urna morbi ultricies tempus diam suscipit in aliquam vitae.</div>
+              </div>
+              <div class="swiper-slide sli-reviews_slide">
+                <div class="sli-reviews_slide_avatar" style="background-image: url('img/avatar.png');"></div>
+                <div class="sli-reviews_slide_name">Юлия Неизвестная</div>
+                <div class="sli-reviews_slide_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sodales scelerisque donec velit pharetra. Libero, eget bibendum integer vulputate etiam massa turpis integer. Non pretium vitae. Urna morbi ultricies tempus diam suscipit in aliquam vitae.</div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="sli-reviews_slider_nav">
+            <button class="prev">
+              <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_127_7845)">
+                <path d="M25 0L2.5 22.5L25 45" stroke="url(#paint0_linear_127_7845)"/>
+                <path d="M15.6001 22.9518L27.5469 12.4033V18.7815L22.8368 22.9518L27.5469 27.1222V33.5004L15.6001 22.9518Z" fill="white"/>
+                </g>
+                <defs>
+                <linearGradient id="paint0_linear_127_7845" x1="1.5" y1="22.5" x2="25" y2="22.5" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </linearGradient>
+                <clipPath id="clip0_127_7845">
+                <rect width="46" height="46" fill="white" transform="matrix(-1 0 0 1 46 0)"/>
+                </clipPath>
+                </defs>
+              </svg>                
+            </button>
+            <button class="next">
+              <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_127_7846)">
+                <path d="M21 0L43.5 22.5L21 45" stroke="url(#paint0_linear_127_7846)"/>
+                <path d="M30.3999 22.9518L18.4531 12.4033V18.7815L23.1632 22.9518L18.4531 27.1222V33.5004L30.3999 22.9518Z" fill="white"/>
+                </g>
+                <defs>
+                <linearGradient id="paint0_linear_127_7846" x1="44.5" y1="22.5" x2="21" y2="22.5" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </linearGradient>
+                <clipPath id="clip0_127_7846">
+                <rect width="46" height="46" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>                             
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sli-footer-delimetr">
+      <img src="img/footer-delimetr-bg.png" alt="">
+    </div>
+
+    <div class="sli-partners">
+      <div class="mainContainer">
+        <div class="sli-partners_heading">Наши партнеры</div>
+        <div class="sli-partners_list">
+          <div class="sli-partners_item">
+            <img src="img/partner1.png" alt="">
+          </div>
+          <div class="sli-partners_item">
+            <img src="img/partner2.png" alt="">
+          </div>
+          <div class="sli-partners_item">
+            <img src="img/partner3.png" alt="">
+          </div>
+          <div class="sli-partners_item">
+            <img src="img/partner4.png" alt="">
+          </div>
+          <div class="sli-partners_item">
+            <img src="img/partner5.png" alt="">
+          </div>
+          <div class="sli-partners_item">
+            <img src="img/partner6.png" alt="">
+          </div>
+          <div class="sli-partners_item">
+            <img src="img/partner7.png" alt="">
+          </div>
+          <div class="sli-partners_item">
+            <img src="img/partner8.png" alt="">
+          </div>
+          <div class="sli-partners_item">
+            <img src="img/partner9.png" alt="">
+          </div>
+          <div class="sli-partners_item">
+            <img src="img/partner10.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="request-popup" class="sli-popup_container click-obj">
+      <div class="sli-popup_background click-item popup-close" data-action="popup-close"></div>
+      <div class="sli-popup sli-request-popup">
+        <button class="sli-popup_close click-item popup-close" data-action="popup-close">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 2.72842L21.2716 0L12 9.27158L2.72842 0L0 2.72842L9.27158 12L0 21.2716L2.72842 24L12 14.7284L21.2716 24L24 21.2716L14.7284 12L24 2.72842Z" fill="black"/>
+          </svg>          
+        </button>
+        <div class="sli-request-popup__content">
+          <div class="sli-request-popup__heading">Укажите ваш номер</div>
+          <div class="sli-request-popup__descr">С вами в ближайшее время свяжется ваш персональный консультант</div>
+          <form action="">
+            <input type="text" placeholder="Телефон" required>
+            <button type="submit">Оставить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="libs/swiperjs/swiper.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+  let mySwiper = new Swiper('.sli-office_slider', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    loop: false,
+    dots: true,
+
+    navigation: {
+      nextEl: '.sli-office_slider_nav .next',
+      prevEl: '.sli-office_slider_nav .prev',
+    },
+
+    pagination: {
+      el: ".sli-office_slider .swiper-pagination",
+    },
+  });
+
+  let mySwiperReviews = new Swiper('.sli-reviews_slider', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    loop: false,
+    pagination: {
+      el: ".sli-reviews_slider .swiper-pagination",
+    },
+    navigation: {
+      nextEl: '.sli-reviews_slider_nav .next',
+      prevEl: '.sli-reviews_slider_nav .prev',
+    },
+  });
+
+  $('#request-toggler').click(function(){
+    $("#request-popup").addClass('active');
+  })
+  $('.popup-close').click(function(){
+    $(".sli-popup_container").removeClass('active');
+  })
+
+  $('.tab').on('click', function(evt) {
+    evt.preventDefault();
+    $('.tab').removeClass('active');
+    $('.tab[data-toggle-target="'+$(this).attr('data-toggle-target')+'"]').addClass('active');
+    if($(this).hasClass('ski-statistics_item')){
+      $('html, body').animate({
+        scrollTop: $(".ski-catalog_nav_wrapp").offset().top
+      }, 1000);
+    }
+    var sel = this.getAttribute('data-toggle-target');
+    $('.tab-content').removeClass('active').filter(sel).addClass('active');
+  });
+</script>
+
+<script>
+  // 2. This code loads the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // 3. This function creates an <iframe> (and YouTube player)
+  //    after the API code downloads.
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      videoId: 'LFOx-vmYrts',
+      events: {
+        /*'onStateChange': onPlayerStateChange*/
+      }
+    });
+  }
+
+  // 4. The API will call this function when the video player is ready.
+  function onPlayerReady(event) { 
+    document.getElementById('play').innerHTML = '<a href="#" onclick="play();">Play Video</a>';
+  }
+
+
+  function play(){
+    $(".ski-catalog_video").addClass('active');
+    player.playVideo();
+  }
+
+  // 5. The API calls this function when the player's state changes.
+  //    The function indicates that when playing a video (state=1),
+  //    the player should play for six seconds and then stop.
+  var done = false;
+  /*function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.PLAYING && !done) {
+      setTimeout(stopVideo, 6000);
+      done = true;
+    }
+  }*/
+  function stopVideo() {
+    player.stopVideo();
+  }
+</script>
+
+
+</body>
+</html>
