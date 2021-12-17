@@ -16,9 +16,13 @@ document.getElementById('scrollTop').addEventListener('click', function() {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
       e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-      });
+      document.querySelector('header').classList.remove('active');
+      const id = this.getAttribute('href').substring(1);
+      const yOffset = -110; 
+      const element = document.getElementById(id);
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({top: y, behavior: 'smooth'});
   });
 });
 
