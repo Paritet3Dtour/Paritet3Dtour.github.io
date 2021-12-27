@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content_language" content="ru">
+  <meta name="description" content="Горнолыжка"> 
+  <title>Горнолыжка</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="libs/swiperjs/swiper.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head> 
+ 
+<body>
+
+  <div class="ski-page">
+
+
+    <div class="ski-resort">
+      <div class="ski-resort_banner" style="background-image: url('img/resort-banner.png');">
+        <div class="mainContainer">
+          <h1>Андерматт (Andermatt)</h1>
+        </div>
+      </div>
+      <div class="ski-resort_content">
+        <div class="mainContainer">
+        <div class="ski-resort_descr">
+          <p>Этот курорт считается одним из эксклюзивных курортов мирового масштаба, куда следует отправиться в путешествие. </p>
+          <p>Развитие инфраструктуры высочайшего класса, красивые горные пейзажи, удачное месторасположение – главные преимущества курорта.<br>
+            Регион катания состоит из 4 частей, максимальная высота достигает 2961 м.<br>
+            Уютно расположившийся у перевала Сен-Готард курорт Андерматт становится все более популярным среди фрирайдеров и продвинутых лыжников. Для новичков предлагается обучение в лыжной школе.</p>
+          <p>Чередование длинных и относительно узких трасс верхних участков с очень широкими «полянами» нижних склонов, позволяющие сохранить хороший снежный покров благодаря северной ориентации. – является характерной особенностью курорта.</p>
+        </div>
+        <div class="ski-resort_params">
+          <div class="ski-resort_param">
+            <div class="name">Высота:</div>
+            <div class="value">1437 м</div>
+          </div>
+          <div class="ski-resort_param">
+            <div class="name">Длина трасс:</div>
+            <div class="value">101 км</div>
+          </div>
+          <div class="ski-resort_param">
+            <div class="name">Сложность трасс:</div>
+            <div class="value">Средний, Высокий</div>
+          </div>
+        </div>
+        <div class="ski-resort_advantages">
+          <div class="heading">Преимущества:</div>
+          <p>Славится рекордными показателями по количеству снега и считается одним из лучших в Швейцарии и Альпах для фрирайда.</p>
+        </div>
+        <button class="ski-resort_toggler" id="filter-toggler">
+          <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0.25V2.55488H18V0.25H0ZM3.21429 8.15244H14.7857V5.84756H3.21429V8.15244ZM6.42857 13.75H11.5714V11.4451H6.42857V13.75Z" fill="black"/>
+          </svg> 
+          <span>Фильтр</span>           
+        </button>
+        <div class="ski-resort_issue">
+          <div class="ski-resort_filter">
+            <div class="heading">Фильтр</div>
+            <div class="ski-resort_filter_container">
+              <div class="name">Цена:</div>
+              <div class="ckeck-item price-check">
+                <input type="radio" class="price1" id="price1" name="filter-price" value="1" checked>
+                <label for="price1">10 000 - 20 000 грн</label>
+              </div>
+              <div class="ckeck-item price-check">
+                <input type="radio" class="price2" id="price2" name="filter-price" value="2" >
+                <label for="price2">20 000 - 40 000 грн</label>
+              </div>
+              <div class="ckeck-item price-check">
+                <input type="radio" class="price3" id="price3" name="filter-price" value="3">
+                <label for="price3">50 000 +</label>
+              </div>
+              <div style="display: none;">
+                <input type="text" class="rangemin range" name="rangemin" value="2000" placeholder="2000"/>
+                <input type="text" class="rangemax range" name="rangemax" value="10000" placeholder="10000"/>
+              </div>
+            </div>
+            <div class="ski-resort_filter_container complexity-container">
+              <div class="name">Сложность трасс:</div>
+              <div class="ckeck-item complexity-check">
+                <input type="radio" class="complexity1" id="complexity1" name="complexity-price" value="1">
+                <label for="complexity1">Новичок</label>
+              </div>
+              <div class="ckeck-item complexity-check">
+                <input type="radio" class="complexity2" id="complexity2" name="complexity-price" value="2">
+                <label for="complexity2">Средняя</label>
+              </div>
+              <div class="ckeck-item complexity-check">
+                <input type="radio" class="complexity3" id="complexity3" name="complexity-price" value="3">
+                <label for="complexity3">Высокая</label>
+              </div>
+            </div>
+            <button class="submit">Применить</button>
+            <button class="cancel">Сбросить фильтр</button>
+          </div>
+          <div class="ski-resort_list">
+            <div class="ski-resort_item mix" data-price="15000" data-complexity="1">
+              <div class="ski-resort_item_content">
+                <div class="ski-resort_item_preview" style="background-image: url('img/resort-item-preview.png');"></div>
+                <div class="ski-resort_item_container">
+                  <div class="ski-resort_item_name">The Chedi Andermatt 5*</div>
+                  <div class="ski-resort_item_params">
+                    <div class="ski-resort_item_param">
+                      <div class="name">Проживание:</div>
+                      <div class="value">с 23.10 по 30.10</div>
+                    </div>
+                    <div class="ski-resort_item_param">
+                      <div class="name">Ночей:</div>
+                      <div class="value">7</div>
+                    </div>
+                    <div class="ski-resort_item_param">
+                      <div class="name">Питание:</div>
+                      <div class="value">Завтраки</div>
+                    </div>
+                  </div>
+                  <div class="ski-resort_item_descr">Отель, который получил высшую оценку от Forbes Travel Guide 2021 снова стал одним из лучших в Европе. Очень стильный и по-настоящему швейцарский, он предлагает своим гостям поистине первоклассный отдых.</div>
+                </div>
+              </div>
+              <div class="ski-resort_item_bottom">
+                <div class="ski-resort_item_price">
+                  <b>от 5945 €</b>
+                  <p>за двоих человек на 7 ночей</p>
+                </div>
+                <div class="ski-resort_item_nav">
+                  <a href="hotel.html" class="submit">Получить предложение</a>
+                  <a href="hotel.html" class="details">Подробнее</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="ski-resort_item mix" data-price="25000" data-complexity="1">
+              <div class="ski-resort_item_content">
+                <div class="ski-resort_item_preview" style="background-image: url('img/resort-item-preview.png');"></div>
+                <div class="ski-resort_item_container">
+                  <div class="ski-resort_item_name">The Chedi Andermatt 5*</div>
+                  <div class="ski-resort_item_params">
+                    <div class="ski-resort_item_param">
+                      <div class="name">Проживание:</div>
+                      <div class="value">с 23.10 по 30.10</div>
+                    </div>
+                    <div class="ski-resort_item_param">
+                      <div class="name">Ночей:</div>
+                      <div class="value">7</div>
+                    </div>
+                    <div class="ski-resort_item_param">
+                      <div class="name">Питание:</div>
+                      <div class="value">Завтраки</div>
+                    </div>
+                  </div>
+                  <div class="ski-resort_item_descr">Отель, который получил высшую оценку от Forbes Travel Guide 2021 снова стал одним из лучших в Европе. Очень стильный и по-настоящему швейцарский, он предлагает своим гостям поистине первоклассный отдых.</div>
+                </div>
+              </div>
+              <div class="ski-resort_item_bottom">
+                <div class="ski-resort_item_price">
+                  <b>от 5945 €</b>
+                  <p>за двоих человек на 7 ночей</p>
+                </div>
+                <div class="ski-resort_item_nav">
+                  <a href="hotel.html" class="submit">Получить предложение</a>
+                  <a href="hotel.html" class="details">Подробнее</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="ski-resort_item mix" data-price="15000" data-complexity="2">
+              <div class="ski-resort_item_content">
+                <div class="ski-resort_item_preview" style="background-image: url('img/resort-item-preview.png');"></div>
+                <div class="ski-resort_item_container">
+                  <div class="ski-resort_item_name">The Chedi Andermatt 5*</div>
+                  <div class="ski-resort_item_params">
+                    <div class="ski-resort_item_param">
+                      <div class="name">Проживание:</div>
+                      <div class="value">с 23.10 по 30.10</div>
+                    </div>
+                    <div class="ski-resort_item_param">
+                      <div class="name">Ночей:</div>
+                      <div class="value">7</div>
+                    </div>
+                    <div class="ski-resort_item_param">
+                      <div class="name">Питание:</div>
+                      <div class="value">Завтраки</div>
+                    </div>
+                  </div>
+                  <div class="ski-resort_item_descr">Отель, который получил высшую оценку от Forbes Travel Guide 2021 снова стал одним из лучших в Европе. Очень стильный и по-настоящему швейцарский, он предлагает своим гостям поистине первоклассный отдых.</div>
+                </div>
+              </div>
+              <div class="ski-resort_item_bottom">
+                <div class="ski-resort_item_price">
+                  <b>от 5945 €</b>
+                  <p>за двоих человек на 7 ночей</p>
+                </div>
+                <div class="ski-resort_item_nav">
+                  <a href="hotel.html" class="submit">Получить предложение</a>
+                  <a href="hotel.html" class="details">Подробнее</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="ski-resort_item mix" data-price="35000" data-complexity="2">
+              <div class="ski-resort_item_content">
+                <div class="ski-resort_item_preview" style="background-image: url('img/resort-item-preview.png');"></div>
+                <div class="ski-resort_item_container">
+                  <div class="ski-resort_item_name">The Chedi Andermatt 5*</div>
+                  <div class="ski-resort_item_params">
+                    <div class="ski-resort_item_param">
+                      <div class="name">Проживание:</div>
+                      <div class="value">с 23.10 по 30.10</div>
+                    </div>
+                    <div class="ski-resort_item_param">
+                      <div class="name">Ночей:</div>
+                      <div class="value">7</div>
+                    </div>
+                    <div class="ski-resort_item_param">
+                      <div class="name">Питание:</div>
+                      <div class="value">Завтраки</div>
+                    </div>
+                  </div>
+                  <div class="ski-resort_item_descr">Отель, который получил высшую оценку от Forbes Travel Guide 2021 снова стал одним из лучших в Европе. Очень стильный и по-настоящему швейцарский, он предлагает своим гостям поистине первоклассный отдых.</div>
+                </div>
+              </div>
+              <div class="ski-resort_item_bottom">
+                <div class="ski-resort_item_price">
+                  <b>от 5945 €</b>
+                  <p>за двоих человек на 7 ночей</p>
+                </div>
+                <div class="ski-resort_item_nav">
+                  <a href="hotel.html" class="submit">Получить предложение</a>
+                  <a href="hotel.html" class="details">Подробнее</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="ski-resort_item mix" data-price="55000" data-complexity="3">
+              <div class="ski-resort_item_content">
+                <div class="ski-resort_item_preview" style="background-image: url('img/resort-item-preview.png');"></div>
+                <div class="ski-resort_item_container">
+                  <div class="ski-resort_item_name">The Chedi Andermatt 5*</div>
+                  <div class="ski-resort_item_params">
+                    <div class="ski-resort_item_param">
+                      <div class="name">Проживание:</div>
+                      <div class="value">с 23.10 по 30.10</div>
+                    </div>
+                    <div class="ski-resort_item_param">
+                      <div class="name">Ночей:</div>
+                      <div class="value">7</div>
+                    </div>
+                    <div class="ski-resort_item_param">
+                      <div class="name">Питание:</div>
+                      <div class="value">Завтраки</div>
+                    </div>
+                  </div>
+                  <div class="ski-resort_item_descr">Отель, который получил высшую оценку от Forbes Travel Guide 2021 снова стал одним из лучших в Европе. Очень стильный и по-настоящему швейцарский, он предлагает своим гостям поистине первоклассный отдых.</div>
+                </div>
+              </div>
+              <div class="ski-resort_item_bottom">
+                <div class="ski-resort_item_price">
+                  <b>от 5945 €</b>
+                  <p>за двоих человек на 7 ночей</p>
+                </div>
+                <div class="ski-resort_item_nav">
+                  <a href="hotel.html" class="submit">Получить предложение</a>
+                  <a href="hotel.html" class="details">Подробнее</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="ski-resort_item mix" data-price="25000" data-complexity="3">
+              <div class="ski-resort_item_content">
+                <div class="ski-resort_item_preview" style="background-image: url('img/resort-item-preview.png');"></div>
+                <div class="ski-resort_item_container">
+                  <div class="ski-resort_item_name">The Chedi Andermatt 5*</div>
+                  <div class="ski-resort_item_params">
+                    <div class="ski-resort_item_param">
+                      <div class="name">Проживание:</div>
+                      <div class="value">с 23.10 по 30.10</div>
+                    </div>
+                    <div class="ski-resort_item_param">
+                      <div class="name">Ночей:</div>
+                      <div class="value">7</div>
+                    </div>
+                    <div class="ski-resort_item_param">
+                      <div class="name">Питание:</div>
+                      <div class="value">Завтраки</div>
+                    </div>
+                  </div>
+                  <div class="ski-resort_item_descr">Отель, который получил высшую оценку от Forbes Travel Guide 2021 снова стал одним из лучших в Европе. Очень стильный и по-настоящему швейцарский, он предлагает своим гостям поистине первоклассный отдых.</div>
+                </div>
+              </div>
+              <div class="ski-resort_item_bottom">
+                <div class="ski-resort_item_price">
+                  <b>от 5945 €</b>
+                  <p>за двоих человек на 7 ночей</p>
+                </div>
+                <div class="ski-resort_item_nav">
+                  <a href="hotel.html" class="submit">Получить предложение</a>
+                  <a href="hotel.html" class="details">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ski-personaloffer">
+      <div class="mainContainer">
+        <div class="ski-personaloffer_wrapp">
+          <div class="ski-personaloffer_img" style="background-image: url('img/ski-personaloffer.png');"></div>
+          <div class="ski-personaloffer_content">
+            <div class="ski-personaloffer_heading">Не тратьте время на поиск!</div>
+            <div class="ski-personaloffer_descr">Озвучьте свои пожелания - мы подберем лучшее за 5 мин!</div>
+            <ul class="ski-personaloffer_list">
+              <li>Оптимальные предложения согласно Ваших пожеланий и бюджета</li>
+              <li>Уникальные сервисы и условия для Вашего комфорта</li>
+              <li>Доступ к эксклюзивным предложениям и закрытым мероприятиям в любом уголке мира</li>
+              <li>Экспертные рекомендации специалиста RAISKY</li>
+            </ul>
+            <div class="ski-personaloffer_form">
+              <div class="ski-personaloffer_form_heading">Получить индивидуальное предложение от тревел консьержа</div>
+              <form action="">
+                <input type="text" placeholder="Телефон">
+                <button type="submit">Получить предложение</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    <div id="filter-popup" class="sli-popup_container click-obj">
+      <div class="sli-popup_background click-item popup-close" data-action="popup-close"></div>
+      <div class="sli-popup sli-filter-popup">
+        <button class="sli-popup_close click-item popup-close" data-action="popup-close">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 2.72842L21.2716 0L12 9.27158L2.72842 0L0 2.72842L9.27158 12L0 21.2716L2.72842 24L12 14.7284L21.2716 24L24 21.2716L14.7284 12L24 2.72842Z" fill="black"/>
+          </svg>          
+        </button>
+        <div class="sli-filter-popup__content">
+          <div class="ski-resort_filter">
+            <div class="heading">Фильтр</div>
+            <div class="ski-resort_filter_container">
+              <div class="name">Цена:</div>
+              <div class="ckeck-item price-check">
+                <input type="radio" class="price1" id="price11" name="filter-price-popup" value="1" checked>
+                <label for="price11">10 000 - 20 000 грн</label>
+              </div>
+              <div class="ckeck-item price-check">
+                <input type="radio" class="price2" id="price12" name="filter-price-popup" value="2" >
+                <label for="price12">20 000 - 40 000 грн</label>
+              </div>
+              <div class="ckeck-item price-check">
+                <input type="radio" class="price3" id="price13" name="filter-price-popup" value="3">
+                <label for="price13">50 000 +</label>
+              </div>
+              <div style="display: none;">
+                <input type="text" class="rangemin range" name="rangemin" value="2000" placeholder="2000"/>
+                <input type="text" class="rangemax range" name="rangemax" value="10000" placeholder="10000"/>
+              </div>
+            </div>
+            <div class="ski-resort_filter_container complexity-container">
+              <div class="name">Сложность трасс:</div>
+              <div class="ckeck-item complexity-check">
+                <input type="radio" class="complexity1" id="complexity11" name="complexity-price" value="1">
+                <label for="complexity11">Новичок</label>
+              </div>
+              <div class="ckeck-item complexity-check">
+                <input type="radio" class="complexity2" id="complexity12" name="complexity-price" value="2">
+                <label for="complexity12">Средняя</label>
+              </div>
+              <div class="ckeck-item complexity-check">
+                <input type="radio" class="complexity3" id="complexity13" name="complexity-price" value="3">
+                <label for="complexity13">Высокая</label>
+              </div>
+            </div>
+            <button class="submit popup-close" data-action="popup-close">Применить</button>
+            <button class="cancel popup-close" data-action="popup-close">Сбросить фильтр</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+ 
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="libs/swiperjs/swiper.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+
+  $('#filter-toggler').click(function(){
+    $("#filter-popup").addClass('active');
+  })
+  $('.popup-close').click(function(){
+    $(".sli-popup_container").removeClass('active');
+  })
+
+
+</script>
+
+<script>
+  setTimeout(() => {
+    $('.ski-resort_filter .submit').click();
+  }, 100);
+  $('.ski-resort_filter .submit').click(function(){
+    let complexityCheck = $('.complexity-check input:checked').val();
+    let selectedCheck = $('.price-check input:checked').val();
+    if(selectedCheck === '1'){
+      $('.rangemin').val(10000);
+      $('.rangemax').val(20000);
+    }else if(selectedCheck === '2'){
+      $('.rangemin').val(20000);
+      $('.rangemax').val(40000);
+    }else if(selectedCheck === '3'){
+      $('.rangemin').val(50000);
+      $('.rangemax').val(1000000);
+    }
+
+    $(function() {
+      function c() {
+          var d = +a[0].value || 0, e = +a[1].value || 0;
+          b.not(b.filter(function(a, c) {
+              var b = +$(c).data("price");
+              return d && b < d || e && b > e ? !1 : !0
+          }).fadeIn()).fadeOut()
+      }
+      var a = $(".range"),b = $(".mix");
+      a.on({change: c });
+      c()
+  });
+
+  if(complexityCheck){
+    $('.ski-resort_list').attr('complexity-type', complexityCheck);
+  }
+  });
+
+  $('.ski-resort_filter .cancel').click(function(){
+    $('.price1').closest('.ckeck-item').find('label').click();
+    $('.ski-resort_filter_container.complexity-container').html(
+      `<div class="name">Сложность трасс:</div>
+      <div class="ckeck-item complexity-check">
+        <input type="radio" class="complexity1" id="complexity1" name="complexity-price" value="1">
+        <label for="complexity1">Новичок</label>
+      </div>
+      <div class="ckeck-item complexity-check">
+        <input type="radio" class="complexity2" id="complexity2" name="complexity-price" value="2">
+        <label for="complexity2">Средняя</label>
+      </div>
+      <div class="ckeck-item complexity-check">
+        <input type="radio" class="complexity3" id="complexity3" name="complexity-price" value="3">
+        <label for="complexity3">Высокая</label>
+      </div>`
+    );
+    $('.ski-resort_list').removeAttr('complexity-type');
+    $('.ski-resort_filter .submit').click();
+  })
+
+  if (screen.width < 1200) {
+    $(".ski-resort_issue .ski-resort_filter").remove();
+  }
+  </script>
+</body>
+</html>

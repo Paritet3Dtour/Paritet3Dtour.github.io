@@ -1,0 +1,708 @@
+// MAIN ELEMENTS
+
+body
+  padding-top: 90px
+  background: #000
+
+.ski-page  
+  background-color: #F2FAFB
+  font-family: 'Gotham Pro', sans-serif
+  font-weight: 300
+  color: #fff
+  background: #000
+  min-height: 100vh
+  width: 100%
+  *
+    box-sizing: border-box
+
+.mainContainer
+  max-width: 1142px 
+  width: 100%
+  margin: 0 auto
+  padding: 0 16px
+  box-sizing: border-box
+
+textarea, input[type="text"], input[type="button"], input[type="submit"]
+  -webkit-appearance: none
+  border-radius: 0
+input[type=text]::-ms-clear
+  display: none
+  width : 0
+  height: 0
+input[type=text]::-ms-reveal
+  display: none
+  width : 0
+  height: 0
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration
+  display: none
+
+button,input
+  font-family: 'Gotham Pro', sans-serif
+
+.text-left
+  text-align: left
+.text-right
+  text-align: right
+.text-center
+  text-align: center
+
+.hidden
+  display: none !important
+
+.tab-content
+  display: none !important
+
+
+.ski-banner
+  min-height: 100vh
+  padding: 175px 0 40px
+  background-image: url('../img/ski-banner.png')
+  background-repeat: no-repeat
+  background-size: 560px
+  background-position: 86% top
+.ski-banner_top
+  margin-bottom: 140px
+  p
+    margin: 0
+    margin-bottom: 16px
+    font-size: 20px
+    line-height: 22px
+  h1
+    margin-bottom: 60px
+    font-size: 56px
+    font-weight: bold
+    line-height: 60px
+    color: #DDD7C1
+.ski-banner_submit
+  padding: 16px 25px
+  border: none
+  margin: 0
+  color: #000000
+  font-weight: 500
+  font-size: 14px
+  transition: all 0.2s
+  background-image: linear-gradient(rgba(243, 239, 224, 1) 0%, rgba(210, 204, 178, 1) 100%)
+  &:focus
+    outline: none
+.ski-banner_list
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  flex-wrap: wrap
+  max-width: 552px
+  position: relative
+  padding-top: 30px
+  &::before
+    width: 100%
+    content: ''
+    display: block
+    position: absolute
+    left: 0
+    top: 0
+    height: 1px
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)
+  li
+    font-size: 16px
+    line-height: 22px
+    color: #C4C4C4
+    margin-bottom: 20px
+    padding-left: 20px
+    width: 48%
+    position: relative
+    &::before
+      content: ''
+      display: block
+      width: 10px
+      height: 10px
+      background: #D7D2BE
+      position: absolute
+      left: 0
+      top: 4px
+
+.ski-statistics
+  padding: 100px 0 120px
+.ski-statistics_heading
+  text-align: center
+  font-weight: bold
+  font-size: 35px
+  line-height: 38px
+  margin-bottom: 60px
+.ski-statistics_list
+  display: flex
+  justify-content: flex-start
+  align-items: stretch
+  flex-wrap: wrap
+.ski-statistics_item
+  margin-right: 0
+  width: 20%
+  margin-bottom: 20px
+  padding-bottom: 35px
+  transition: all 0.2s
+  &:hover
+    background: rgba(255, 255, 255, 0.05)
+.ski-statistics_icon
+  width: 100%
+  height: 220px
+  background-repeat: no-repeat
+  background-size: 70%
+  background-position: center center
+  margin-bottom: 15px
+.ski-statistics_name
+  text-align: center
+  margin-bottom: 24px
+  font-weight: bold
+  font-size: 20px
+  line-height: 22px
+  padding: 0 10px
+.ski-statistics_list
+  list-style: none
+  padding: 0 10px
+  li
+    width: 100%
+    display: block
+    text-align: center
+    margin-bottom: 2px
+    color: #C4C4C4
+    font-size: 12px
+    line-height: 20px
+    &:last-child
+      margin-bottom: 0
+
+.ski-personaloffer
+  padding: 54px 0 72px
+  background-color: #000
+.ski-personaloffer_wrapp
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+.ski-personaloffer_img
+  width: 400px
+  height: 550px
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+  filter: drop-shadow(0px 20px 60px rgba(0, 0, 0, 0.3))
+  margin-right: -60px
+.ski-personaloffer_content
+  padding: 60px 60px 60px 120px
+  background: #FFFFFF
+  width: 100%
+  max-width: 775px
+  margin-top: 110px
+  color: #000000
+.ski-personaloffer_heading
+  margin-bottom: 10px
+  font-size: 35px
+  line-height: 38px
+  font-weight: bold
+.ski-personaloffer_descr
+  width: max-content
+  color: #FFFFFF
+  font-size: 16px
+  background: #333434
+  border: 1px solid #000000
+  padding: 12px 18px
+  margin-bottom: 30px
+.ski-personaloffer_list
+  margin-bottom: 44px
+  li
+    font-size: 16px
+    line-height: 20px
+    color: #000
+    margin-bottom: 11px
+    padding-left: 20px
+    width: 100%
+    position: relative
+    &:last-child
+      margin-bottom: 0
+    &::before
+      content: ''
+      display: block
+      width: 10px
+      height: 10px
+      background: #D7D2BE
+      position: absolute
+      left: 0
+      top: 4px
+.ski-personaloffer_form_heading
+  margin-bottom: 20px
+  color: #000000
+  font-weight: bold
+  font-size: 20px
+  line-height: 22px
+.ski-personaloffer_content
+  form
+    display: flex
+    justify-content: flex-start
+    align-items: stretch
+    input
+      width: 245px
+      height: 44px
+      padding: 0 13px
+      font-size: 14px
+      background: #FFFFFF
+      border: 1px solid #000000
+      margin-right: 16px
+      font-weight: 300
+      &::placeholder
+        color: #C4C4C4
+    button[type="submit"]
+      height: 44px
+      padding: 0 20px
+      color: #FFFFFF
+      text-align: center
+      font-size: 14px
+      background: linear-gradient(180deg, #3C3C3C 0%, #000000 100%)
+      transition: all 0.2s
+      border: 1px solid #575757
+      font-weight: 500
+
+
+.ski-benefits
+  padding: 80px 0 100px 0
+.ski-benefits_heading
+  text-align: center
+  margin-bottom: 85px
+  color: #FFFFFF
+  font-weight: bold
+  font-size: 35px
+  line-height: 38px
+.ski-benefits_list
+  display: flex
+  justify-content: space-between
+  align-items: stretch
+  flex-wrap: wrap
+.ski-benefits_item
+  width: 49%
+  margin-bottom: 50px
+  display: flex
+  justify-content: flex-start
+  align-items: flex-start
+.ski-benefits_item_number
+  flex-shrink: 0
+  margin-right: 20px
+  width: 60px
+  height: 60px
+  flex-shrink: 0
+  border-radius: 50%
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0) 100%)
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #FFFFFF
+  font-weight: bold
+  font-size: 24px
+  line-height: 23px
+  border: 1px solid #262623
+  border-bottom: none
+.ski-benefits_item_content
+  b
+    display: block
+    width: 100%
+    margin-bottom: 6px
+    font-weight: bold
+    font-size: 20px
+    line-height: 22px
+  p
+    margin: 0
+    color: #EAE9E9
+    font-size: 16px
+    line-height: 20px
+
+
+.ski-catalog
+  padding: 80px 0 0
+  background-color: #fff
+.ski-catalog_heading
+  text-align: center
+  margin-bottom: 50px
+  text-align: center
+  color: #000000
+  font-weight: bold
+  font-size: 35px
+  line-height: 38px
+.ski-catalog_nav
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: stretch
+  margin-bottom: 30px
+  padding: 0
+  list-style: none
+  border-bottom: 1px solid #C4C4C4
+  a
+    padding: 11px 25px
+    color: #C4C4C4
+    font-size: 20px
+    font-weight: bold
+    border-bottom: 1px solid transparent
+    display: inline-block
+    margin-bottom: -1px
+    &.active
+      border-color: #000000
+      color: #000000
+
+.ski-catalog_list
+  display: flex
+  justify-content: space-between
+  align-items: stretch
+  flex-wrap: wrap
+  margin-bottom: 60px
+.ski-catalog_item
+  width: 48.5%
+  margin-bottom: 30px
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0,0.5)
+    display: block
+    transition: all 0.2s
+  &:hover
+    &::before
+      background-color: rgba(0,0,0,0.2)
+.ski-catalog_item_link
+  position: absolute
+  left: 0
+  top: 0
+  z-index: 2
+  width: 100%
+  height: 100%
+.ski-catalog_item_content
+  position: relative
+  z-index: 1
+  padding: 130px 30px 40px
+.ski-catalog_item_heading
+  text-align: center
+  margin-bottom: 20px
+  color: #FFFFFF
+  font-weight: bold
+  font-size: 24px
+  line-height: 26px
+.ski-catalog_item_info
+  display: flex
+  justify-content: center
+  align-items: stretch
+  margin-bottom: 75px
+  span
+    margin: 0 5px
+    background: #D7D2BE
+    padding: 6px 12px
+    color: #000000
+    font-size: 14px
+    line-height: 20px
+    display: inline-block
+.ski-catalog_item_btn
+  margin: 0 auto
+  color: #FFFFFF
+  font-size: 16px
+  line-height: 18px
+  font-weight: 500
+  margin: 0 auto
+  width: max-content
+  svg
+    margin-left: 5px
+    vertical-align: middle
+
+.ski-catalog_country
+  padding-bottom: 60px
+  .name
+    display: block
+    width: 100%
+    margin-bottom: 20px
+    color: #000000
+    font-weight: bold
+    font-size: 35px
+    line-height: 38px
+  p
+    color: #000000
+    font-size: 16px
+    line-height: 20px
+    margin-bottom: 18px
+    &:last-child
+      margin-bottom: 0
+  ul
+    margin-bottom: 20px
+    li
+      font-size: 16px
+      line-height: 20px
+      color: #000
+      margin-bottom: 10px
+      padding-left: 20px
+      width: 100%
+      position: relative
+      margin-left: 40px
+      &:last-child
+        margin-bottom: 0
+      &::before
+        content: ''
+        display: block
+        width: 10px
+        height: 10px
+        background: #D7D2BE
+        position: absolute
+        left: 0
+        top: 4px
+
+.ski-catalog_video
+  width: 100%
+  height: 800px
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+  display: flex
+  align-items: center
+  justify-content: center
+  .play-btn
+    padding: 0
+    background: transparent
+    border: none
+    &:focus
+      outline: none
+
+
+.ski-emotions
+  padding: 100px 0
+.ski-emotions_heading
+  text-align: center
+  margin-bottom: 150px
+  font-weight: bold
+  font-size: 35px
+  line-height: 38px
+  color: #fff
+  span
+    vertical-align: baseline
+    color: #E6E1CE
+.ski-emotions_item
+  text-align: left
+  padding-left: 265px
+  position: relative
+  margin-bottom: 185px
+  &:nth-child(even)
+    padding-left: 0
+    padding-right: 240px
+    text-align: right
+    .ski-emotions_item_content
+      margin-left: auto
+    .ski-emotions_item_preview
+      top: -200px
+      right: 0
+      left: auto
+.ski-emotions_item_preview
+  position: absolute
+  width: 360px
+  height: 400px
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+  left: 0
+  top: -47px
+  &::after
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: rgba(0,0,0, .4)
+.ski-emotions_item_content
+  max-width: 460px
+  position: relative
+  width: 100%
+  z-index: 1
+  b
+    display: block
+    margin-bottom: 14px
+    font-weight: bold
+    font-size: 24px
+    line-height: 26px
+    color: #fff
+  p
+    margin: 0
+    color: #FFFFFF
+    font-size: 16px
+    line-height: 20px
+
+.ski-emotions-delimetr
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center center
+.ski-emotions-delimetr_wrapp
+  height: 640px
+  display: flex
+  align-items: center
+  justify-content: center
+.ski-emotions-delimetr_heading
+  color: #FFFFFF
+  text-align: center
+  font-size: 35px
+  line-height: 38px
+  width: 100%
+  padding: 50px 38px
+  position: relative
+  border: 1px solid transparent
+  border-image: linear-gradient(130deg, white 0, rgba(255, 255, 255, 0) 95%)
+  border-image-slice: 1
+  span
+    vertical-align: baseline
+    color: #E6E1CE
+
+  
+.ski-consultation
+  padding: 120px 0 100px
+  background-color: #000
+.ski-consultation_wrapp
+  display: flex
+  justify-content: flex-end
+  align-items: flex-start
+.ski-consultation_img
+  width: 400px
+  height: 550px
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+  filter: drop-shadow(0px 20px 60px rgba(0, 0, 0, 0.3))
+  margin-left: -60px
+  padding: 40px 10px
+  display: flex
+  justify-content: flex-end
+  flex-direction: column
+  .name
+    text-align: center
+    margin-bottom: 4px
+    font-weight: bold
+    font-size: 24px
+    line-height: 26px
+    color: #fff
+  .position
+    text-align: center
+    color: #D7D2BE
+    font-size: 16px
+    line-height: 24px
+.ski-consultation_content
+  padding: 60px 120px 60px 60px
+  background: #FFFFFF
+  width: 100%
+  max-width: 775px
+  margin-top: 100px
+  color: #000000
+.ski-consultation_heading
+  margin-bottom: 40px
+  font-size: 35px
+  line-height: 38px
+  font-weight: bold
+.ski-consultation_descr
+  width: max-content
+  color: #FFFFFF
+  font-size: 16px
+  background: #333434
+  border: 1px solid #000000
+  padding: 12px 18px
+  margin-bottom: 30px
+.ski-consultation_list
+  margin-bottom: 60px
+  li
+    font-size: 16px
+    line-height: 20px
+    color: #000
+    margin-bottom: 11px
+    padding-left: 20px
+    width: 100%
+    position: relative
+    &:last-child
+      margin-bottom: 0
+    &::before
+      content: ''
+      display: block
+      width: 10px
+      height: 10px
+      background: #D7D2BE
+      position: absolute
+      left: 0
+      top: 4px
+.ski-consultation_form_heading
+  margin-bottom: 20px
+  color: #000000
+  font-weight: bold
+  font-size: 20px
+  line-height: 22px
+.ski-consultation_content
+  form
+    display: flex
+    justify-content: flex-start
+    align-items: stretch
+    input
+      width: 245px
+      height: 44px
+      padding: 0 13px
+      font-size: 14px
+      background: #FFFFFF
+      border: 1px solid #000000
+      margin-right: 16px
+      font-weight: 300
+      &::placeholder
+        color: #C4C4C4
+    button[type="submit"]
+      height: 44px
+      padding: 0 20px
+      color: #FFFFFF
+      text-align: center
+      font-size: 14px
+      background: linear-gradient(180deg, #3C3C3C 0%, #000000 100%)
+      transition: all 0.2s
+      border: 1px solid #575757
+      font-weight: 500
+
+
+.ski-advantage
+  padding: 100px 0 140px
+.ski-advantage_heading
+  text-align: center
+  margin-bottom: 80px
+  color: #FFFFFF
+  font-weight: bold
+  font-size: 35px
+  line-height: 38px
+.ski-advantage_list
+  display: flex
+  flex-wrap: wrap
+  align-items: stretch
+  justify-content: space-between
+.ski-advantage_item
+  width: 31%
+  margin-bottom: 52px
+.ski-advantage_item_icon
+  margin-bottom: 20px
+  text-align: center
+  svg,img
+    max-width: 40px
+    max-height: 40px
+    height: auto
+.ski-advantage_item_heading
+  text-align: center
+  margin-bottom: 8px
+  color: #fff
+  font-weight: bold
+  font-size: 20px
+  line-height: 25px
+.ski-advantage_item_descr
+  text-align: center
+  color: #EAE9E9
+  font-size: 16px
+  line-height: 20px
+
+
+.sli-footer-delimetr
+  img
+    width: 100%
+    height: auto
