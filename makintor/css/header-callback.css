@@ -1,0 +1,315 @@
+.header-calback {
+  -webkit-box-shadow: 0 12px 26px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 12px 26px rgba(0, 0, 0, 0.05);
+  width: 720px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  background-color: #ffffff;
+  height: 474px;       
+  padding: 0;   
+  font-family: 'Montserrat', sans-serif; }
+  .header-calback .remodal-close {
+    left: auto;
+    right: 10px;
+    top: 10px; }
+
+.header-calback__wrapp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.header-calback__img {
+  height: 474px;
+  width: 319px;
+  border-top-left-radius: 20px; 
+  border-bottom-left-radius: 20px;
+  -webkit-box-shadow: 0 12px 26px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 12px 26px rgba(0, 0, 0, 0.05);
+  -webkit-background-size: cover !important;
+          background-size: cover !important;
+  background-position: center right  !important; }    
+
+.header-calback__form {
+  padding: 30px 33px 26px 38px;
+  width: 395px; }
+
+.header-calback__form__manager {
+      width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid #e6e6e6;
+    line-height: 197px;
+  text-align: center;
+  margin-bottom: 10px;          
+  margin-bottom: 17px; }
+.header-calback__form__manager img{width: 180px;}         
+
+.header-calback__form__heading {
+  color: #2c2c2c;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-align: left; }
+
+.header-calback__form__descr {
+  color: #464646;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 23px;
+  text-align: left; }
+
+.header-calback__form__descr span{
+  font-weight: 700;               
+}
+.header-calback__form__main .intl-tel-input{
+  width: 100%;
+  margin-bottom: 8px;
+}
+.header-calback__form__main .selected-flag{
+  border-top-left-radius: 24px;   
+  border-bottom-left-radius: 24px;      
+} 
+.header-calback__form__main .intl-tel-input.separate-dial-code .selected-dial-code{
+  padding-left: 13px; 
+}
+.header-calback__form__main input {
+  width: 100%;
+  height: 50px;
+  -webkit-border-radius: 24px;
+          border-radius: 24px;
+  border: 1px solid #e2e2e2;
+  outline: none;
+  padding-left: 24px;
+  color: #464646;
+  font-size: 16px;
+  font-weight: 400;}
+
+.header-calback__form__main button {
+  width: 100%;
+  height: 48px;
+  -webkit-border-radius: 24px;
+          border-radius: 24px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  outline: none; }
+
+.header-calback__form__main p {
+  margin-top: 0;
+  color: #464646;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 5px;
+  text-align: left; }
+
+.header-calback__form__main select {
+  outline: none;
+  height: 50px;
+  width: 100%;
+  -webkit-border-radius: 24px;
+          border-radius: 24px;
+  border: 1px solid #e2e2e2;
+  color: #464646;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 24px; }
+
+.header-calback__form__btn_a {
+  background-color: #009de1;
+  -webkit-box-shadow: 0 2px 0 #0085b7;
+          box-shadow: 0 2px 0 #0085b7; }
+.header-calback__form__btn_b {
+  background-color: #52b80f;
+  -webkit-box-shadow: 0 2px 0 #368800;
+          box-shadow: 0 2px 0 #368800; }
+
+.header-calback__form__timer {
+  margin-top: 18px; }
+
+.header-calback__form__timer__heading {
+  color: #2c2c2c;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px; }
+
+.header-calback__form__timer__count {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2c2c2c;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .header-calback__form__timer__count b {
+    display: block;
+    font-size: 10px;
+    color: #464646;
+    font-weight: 400; }
+  .header-calback__form__timer__count span {
+    margin-left: 10px;
+    width: 42.4px;     
+    margin-right: 10px; }
+
+.header-calback__form__pol {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: #0085b7;
+  margin-top: 12px; }
+
+.header-calback__form_other_time .header-calback__form__descr {
+  margin-bottom: 10px; }
+
+.header-calback__form_other_time button {
+  margin-top: 8px; }
+
+.header-calback__form-ty {
+  padding: 70px;
+  width: 395px;
+  height: 489px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .header-calback__form-ty img {
+    text-align: center;
+    margin-bottom: 35px; }
+  .header-calback__form-ty b {
+    color: #2c2c2c;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center; }
+  .header-calback__form-ty p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #464646;
+    text-align: center; }
+
+@media screen and (max-width: 750px) {
+  .header-calback__img{
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px; 
+  }
+  .header-calback {
+    width: 95%;
+    height: auto; }
+  .header-calback__wrapp {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .header-calback__img {
+    width: 100%;
+    height: 240px; }
+  .header-calback__form {
+    width: 100%; }
+  .header-calback__form__heading {
+    text-align: center; }
+  .header-calback__form__descr {
+    text-align: center; }
+  .header-calback__form {
+    padding-top: 0;
+    margin-top: -52px; }
+  .header-calback__form-ty {
+    width: 100%;
+    height: auto;
+    padding: 20px 25px 50px 25px; }
+  .header-calback__form__main p {
+    text-align: center; } }
+
+@media screen and (max-width: 500px) {
+  .header-calback__img {
+    height: 216px; }
+  .header-calback {
+    width: 95%; }    
+  .header-calback__form__manager{
+    width: 167px;
+    height: 167px;
+    line-height: 163px;        
+  } 
+  .header-calback__form__manager{margin-bottom: 9px;}          
+  .header-calback__form__manager img{width: 151px;}   
+  .header-calback__form {                      
+    margin-top: -80px;
+    padding: 30px 18px 26px 18px;
+    padding-top: 0; }
+  .header-calback__form__heading {
+    font-size: 16px;
+    color: #2c2c2c; }
+  .header-calback__form__heading {
+    margin-bottom: 6px; }
+  .header-calback__form__descr {
+    font-size: 14px; }
+  .header-calback__form__main input {
+    height: 40px;
+    font-size: 14px; }
+  .header-calback__form__main button {
+    height: 43px;
+    font-size: 12px;
+    letter-spacing: 0.1px; }
+  .header-calback__form__timer__heading {
+    font-size: 14px;
+    font-weight: 500; }
+  .remodal-close {
+    color: #95979c;
+    background-color: #fff;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    width: 25px;
+    height: 25px; }
+  .remodal-close:before {
+    font-size: 20px;
+    line-height: 25px;
+    width: 25px; } 
+  .header-calback__img {
+    height: 193px; }
+  .header-calback__form-ty img {
+    width: 44px; }
+  .header-calback__form-ty b {
+    font-size: 17px; }
+  .header-calback__form-ty p {
+    font-size: 13px; }
+  .header-calback__form__main p {
+    font-size: 14px; }
+  .header-calback__form__main select {
+    height: 40px;
+    font-size: 14px; } }

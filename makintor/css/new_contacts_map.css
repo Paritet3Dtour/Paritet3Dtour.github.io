@@ -1,0 +1,704 @@
+.about_us_map {
+  font-family: 'Montserrat', 'Roboto Condensed', sans-serif !important; 
+  padding-top: 45px; 
+  padding-bottom: 30px;
+  background-color: #eff4f8;  }   
+  .about_us_map .about_us_map_heading {
+    color: #f4f4f4;
+    text-align: center;
+    position: relative;
+    font-size: 136px;
+    font-weight: 700; }
+    .about_us_map .about_us_map_heading span {
+      color: #2f2f2f;
+      font-size: 36px;
+      font-weight: 700;
+      display: block;
+      margin-top: -113px; }
+  .about_us_map .about_us_map_main {
+    margin-top: 5px; }
+    .about_us_map .about_us_map_main .about_us_map_main_map {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      -webkit-border-radius: 20px;
+              border-radius: 20px;
+      overflow: hidden;   
+      background: #fff;}
+    .about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas {
+        position: absolute;
+        z-index: 1000;
+        background: white;
+        transition: 0.4s;
+    }
+    
+    .about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        list-style-type: none;
+        padding: 30px;
+        margin: 0;
+    }
+    .about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info li {
+        width: 100%;
+        margin-right: 10%;
+    }
+    .about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info li .office_city {
+        padding-bottom: 20px;
+        border-bottom: 2px solid #f1f1f1;
+    }
+    .about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info li .location {
+        line-height: 1.5em;
+        display: flex;
+        margin-top: 30px;
+    }
+    .about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info li .location .strong {
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    .about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info li .location.marker .icon:before {
+        font-family: Font Awesome\ 5 Free;
+        font-weight: 900;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+        margin-right: 7px;
+        color: #dd127b;
+        content: "\f3c5";
+    }
+    .about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info li .location.metro .icon{
+        border: 1px solid green;
+        border-radius: 10px;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: -5px;
+    }
+    .about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info li .location.metro .icon:before {
+        /*font-family: Font Awesome\ 5 Free;*/
+        font-weight: 900;
+        font-size: 0.8em;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;        
+        color: #dd127b;
+        content: "M";        
+        color: green;
+        
+    }
+      .about_us_map .about_us_map_main .about_us_map_main_map #map-canvas, .about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas {
+        height: 400px;
+        width: 100%;
+        margin: 0 auto; }
+      .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info {
+        width: 691px; 
+        padding: 45px 45px 30px 30px; }  
+        .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_heading {
+          color: #2c2c2c;
+          font-size: 24px;
+          font-weight: 700;
+          margin-bottom: 30px; }
+        .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_descr {
+          font-weight: 400;
+          font-size: 16px;
+          color: #464646; 
+          margin-bottom: 20px; }
+        .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_tel {
+          color: #2c2c2c;
+          font-weight: 700;
+          font-size: 18px;
+          margin-top: 4px; }
+          .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_tel:nth-child(6) {
+            margin-bottom: 20px; }
+        .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_tel_descr {
+          font-size: 12px;
+          font-weight: 300; }
+        .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_tel_time_work {
+          font-size: 16px;
+          color: #5d5d5d;
+          font-weight: 400; }   
+        .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_tel_time_work.gr_all{font-size: 18px; color: #2c2c2c; font-weight: 700;}
+    .about_us_map .about_us_map_main .about_us_map_main_map_img { 
+      margin-top: 12px; } 
+      .about_us_map .about_us_map_main .about_us_map_main_map_img .about_us_map_main_map_img_list {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+    .about_us_map .about_us_map_main .about_us_map_main_map_img .about_us_map_main_map_img_list .about_us_map_main_map_img_item {
+          margin-right: 5px;
+          margin-left: 5px;
+          -webkit-background-size: cover !important;
+                  background-size: cover !important;
+          background-repeat: no-repeat !important;
+          background-position: center center !important; 
+          -webkit-border-radius: 10px; 
+          border-radius: 10px; 
+          height: 111px;
+          width: 215px;
+          margin-bottom: 12px;
+    }
+
+#map-canvas.map-right {
+  width: 692px !important; }
+
+.about_us_map_main_nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end; 
+  -ms-flex-pack: end;  
+  justify-content: flex-end;}  
+
+.select-city-map {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 210px;
+  margin-top: 5px;
+  color: #5d5d5d;
+  vertical-align: middle;
+  text-align: left;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-touch-callout: none;
+  margin-right: 13px; }
+  .select-city-map .placeholder {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #393d41;
+    z-index: 1;
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
+    cursor: pointer;
+    color: #464646 !important;
+    font-weight: 400;
+    font-size: 16px;   
+    -webkit-border-radius: 24px;
+            border-radius: 24px;
+    border: 1px solid #e2e2e2;   
+    height: 48px;  
+    padding-left: 24px; }  
+    .select-city-map .placeholder:hover {
+      background: #34383c; }
+    .select-city-map .placeholder:after {  
+      position: absolute;
+      right: 1em;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      font-family: 'FontAwesome';
+      content: '\f078';
+      z-index: 10;
+      color: #9b9b9b;
+      font-size: 10px;}
+  .select-city-map.is-open .placeholder:after {
+    content: '\f077';
+    color: #9b9b9b; }
+  .select-city-map.is-open ul {
+    display: block; }
+  .select-city-map.select--white .placeholder {
+    background: #fff;
+    color: #999; }
+    .select-city-map.select--white .placeholder:hover {
+      background: #fafafa; }
+  .select-city-map ul {
+    -webkit-box-shadow: 0 4px 24px rgba(13, 14, 14, 0.08);
+    box-shadow: 0 4px 24px rgba(13, 14, 14, 0.08); 
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    overflow-y: auto;
+    width: 100%;
+    background: #fff;
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    margin: 5px 0 0 0;
+    padding: 0;
+    z-index: 100; }
+    .select-city-map ul li {
+      display: block;
+      text-align: left;
+      padding: 0.5em 1em 0.5em 1em;
+      color: #999;
+      cursor: pointer; }
+      .select-city-map ul li:hover {
+        background: #dd127b;
+        color: #fff; }
+
+
+.about_us_map_alldescr{
+  width: 100%; 
+  background: #fff; 
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding: 55px 60px 30px 30px; 
+  margin-bottom: 30px; 
+}
+.about_us_map_alldescr_list{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; 
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;      
+}
+.about_us_map_alldescr_item{width: 26%; margin-right: 11%; margin-bottom: 14px;} 
+.about_us_map_alldescr_item:nth-child(3),.about_us_map_alldescr_item:nth-child(6),.about_us_map_alldescr_item:nth-child(9){margin-right: 0;}
+.about_us_map_alldescr_item_heading{    
+  color: #2c2c2c;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 15px; 
+  border-bottom: 1px solid #e2e2e2; 
+  display: block;
+  width: 100%;  
+  margin-bottom: 23px;
+} 
+.about_us_map_alldescr_item_descrItem{
+  margin-bottom: 23px;
+  position: relative;
+  padding-left: 26px; 
+}
+.about_us_map_alldescr_item_descrItem p{
+  color: #464646;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; 
+  margin-top: 0;
+  margin-bottom: 3px;
+  position: relative;
+}
+.about_us_map_alldescr_item_descrItem a{
+  color: #2c2c2c;
+  font-size: 18px;
+  font-weight: 700;   
+}
+.about_us_map_alldescr_item_descrItem p:before{  
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -25px; 
+  width: 15px;
+  height: 21px;  
+  background: url('../images/location_mini_icon.svg') no-repeat center center;
+}
+.about_us_map_alldescr_item_descrItem p.metroContact:before{
+  content: ''; 
+  position: absolute;
+  top: 0; 
+  left: -25px; 
+  width: 18px; 
+  height: 18px; 
+  background: url('../images/metro_mini_icon.svg') no-repeat center center; 
+}
+
+.about_us_map_main_topInfo{
+  display: -moz-flex;  
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;   
+  margin-bottom: 45px;
+}
+.about_us_map_main_topInfo_text{
+  width: 60%;
+}
+.about_us_map_main_topInfo_text p{
+  color: #2c2c2c;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.about_us_map_main_topInfo_text span{
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 18px;
+  color: #2c2c2c;
+}
+.about_us_map_main_topInfo_text span a{
+  color: #0085b7;
+}
+.about_us_map_main_nav{width: 40%;} 
+
+
+.contact_map_canvas_stub{
+    width: 100%;
+    height: 100%;
+    background-size: cover !important; 
+    background-position: center center;  
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;  
+    height: 400px;
+    width: 100%;    
+    }
+    .contact_map_canvas_stub_shadow{ 
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        background-image: url(../images/animated_loader_white.gif);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position-x: center;
+        background-position-y: center;
+    }
+    .contact_map_canvas_stub span{ 
+    font-family: 'Montserrat', 'Roboto Condensed', sans-serif;
+    color: #fff;
+    position: relative;
+    font-weight: 700; 
+    letter-spacing: 0.2px;
+    font-size: 21px;
+    text-align: center; 
+    } 
+.contact_map_canvas_stub.barishevka_location{
+  background: url(../images/barishevka_location.jpg);
+} 
+
+
+
+@media screen and (max-width: 1200px) {
+  .about_us_map .about_us_map_main .about_us_map_main_map_img .about_us_map_main_map_img_list .about_us_map_main_map_img_item {
+    height: 107px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map_img {
+    margin-top: 25px; }
+  .about_us_map_main_topInfo_text p{font-size: 41px; line-height: 51px;} 
+  .about_us_map_main_topInfo_text span{font-size: 16px;} 
+  .about_us_map_alldescr{padding: 45px 50px 17px 30px;} 
+  .about_us_map_alldescr_item_heading{font-size: 21px; padding-bottom: 12px; margin-bottom: 20px;} 
+  .about_us_map_alldescr_item_descrItem p{font-size: 15px;}   
+  .about_us_map_alldescr_item_descrItem a{font-size: 17px;} 
+
+}
+
+@media screen and (max-width: 1000px) {
+  .contact_map_canvas_stub{height: 380px;}   
+  .contact_map_canvas_stub span{font-size: 18px;}   
+  .about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info li .office_city{
+    font-size: 19px;
+    padding-bottom: 9px;
+    margin-top: 0;
+  }
+  .about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info li .location .strong{font-size: 16px;}  
+  .about_us_map .about_us_map_main .about_us_map_main_map #map-canvas, .about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas{
+    height: 370px;     
+  }
+  .about_us_map .about_us_map_main .about_us_map_main_map_img .about_us_map_main_map_img_list .about_us_map_main_map_img_item {
+    height: 83px; }
+  .about_us_map .about_us_map_heading {
+    font-size: 97px; }
+  .about_us_map .about_us_map_heading span {
+    margin-top: -89px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info {
+    padding: 40px 25px 29px 30px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_heading {
+    font-size: 23px;
+    margin-bottom: 19px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_descr {
+    font-size: 17px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_tel_time_work {
+    font-size: 17px; }
+  .about_us_map_main_topInfo_text p br{display: none;}   
+  .about_us_map_main_topInfo_text p{
+    font-size: 38px; 
+    line-height: 45px; 
+  }
+  .about_us_map_main_topInfo{-webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;} 
+  .about_us_map_main_topInfo_text{width: 100%; margin-bottom: 20px;}   
+  .about_us_map_main_nav{width: 100%;}    
+  .about_us_map_alldescr_list{
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;  
+  }
+  .about_us_map_alldescr_item{
+    width: 43%;
+    margin-right: 0;
+    margin-bottom: 10px;  
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info{
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;   
+    padding: 24px;    
+  }
+  .about_us_map .about_us_map_main .about_us_map_main_map #map-canvas, .about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas{
+    height: 458px; 
+  }
+  .about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info li .location{
+    margin-top: 17px;  
+  }
+  .about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info li{margin-bottom: 13px;}      
+
+  .about_us_map .about_us_map_main{margin-top: 25px;}
+  .about_us_map_main_map_img_item:nth-child(5) {
+    display: none !important; }
+  .about_us_map_main_map_img_item:nth-child(10) {
+    display: none !important; }
+  .about_us_map_main_map_img_item:nth-child(15) {
+    display: none !important; }
+  .about_us_map_main_map_img_item:nth-child(20) {
+    display: none !important; }
+  .about_us_map_main_map_img_item:nth-child(25) {
+    display: none !important; }
+  .about_us_map_main_map_img_item:nth-child(30) {
+    display: none !important; }
+  .about_us_map .about_us_map_heading span {
+    font-size: 33px;
+    margin-top: -75px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info {
+    width: 100%; }
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info {
+    padding: 22px 25px 17px 30px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_descr {
+    margin-bottom: 7px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_tel:nth-child(6) {
+    margin-bottom: 5px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_tel {
+    margin-top: 0; }
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_heading {
+    margin-bottom: 8px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map_img .about_us_map_main_map_img_list .about_us_map_main_map_img_item {
+    height: 69px; }
+  .about_us_map_main_nav{-webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;}  
+  .select-city-map{max-width: 100%;}  
+  .about_us_map_alldescr{
+    padding: 40px 30px 18px 30px;   
+  }
+  .about_us_map_alldescr_item{width: 100%;}   
+  .about_us_map_alldescr_item_heading{padding-bottom: 4px; margin-bottom: 15px; border-bottom: 1px solid #f0f0f0;}     
+  .about_us_map_alldescr_item_descrItem{margin-bottom: 15px;} 
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info{padding: 30px 25px 31px 30px;} 
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_heading{font-size: 20px;}
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_descr{font-size: 15px; margin-bottom: 17px;}  
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_tel{font-size: 16px;} 
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_tel_time_work.gr_all{font-size: 17px;} 
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_tel_time_work{font-size: 15px;}
+  .about_us_map_main_topInfo{margin-bottom: 30px;} 
+  .about_us_map .about_us_map_main .about_us_map_main_map #map-canvas, .about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas{
+    height: 380px; 
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+.contact_map_canvas_stub{height: 360px;}   
+.about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info {
+    padding: 17px 24px 17px 24px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_heading {
+    font-size: 20px;
+    margin-bottom: 4px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_descr {
+    margin-bottom: 4px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_descr {
+    font-size: 15px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_tel {
+    font-size: 16px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_tel_descr {
+    font-size: 11px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_tel:nth-child(6) {
+    margin-bottom: 1px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_tel_time_work {
+    font-size: 15px; }
+  .about_us_map_main_map_img_item:nth-child(4) {
+    display: none !important; }
+  .about_us_map_main_map_img_item:nth-child(8) {
+    display: none !important; }
+  .about_us_map_main_map_img_item:nth-child(12) {
+    display: none !important; }
+  .about_us_map_main_map_img_item:nth-child(16) {
+    display: none !important; }
+  .about_us_map_main_map_img_item:nth-child(20) {
+    display: none !important; }
+  .about_us_map_main_map_img_item:nth-child(24) {
+    display: none !important; }
+  .about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info{
+  padding: 17px;     
+}
+.about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info li .office_city{
+  font-size: 17px; 
+}
+.about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info li .location{font-size: 15px;} 
+.about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info li .location .strong{font-size: 15px; } 
+.about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info li{margin-bottom: 8px;}  
+.about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info li .location{margin-top: 13px;} 
+.about_us_map .about_us_map_main .about_us_map_main_map #map-canvas, .about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas{height: 419px;}
+.about_us_map_main_topInfo_text p{font-size: 28px; line-height: 35px;}  
+.about_us_map{padding-top: 33px;}   
+.about_us_map_main_topInfo_text{margin-bottom: 13px;}    
+.select-city-map.itm{order: 1;} 
+.select-city-map .placeholder{height: 40px;} 
+.about_us_map_main_topInfo{margin-bottom: 25px;}
+.about_us_map_alldescr{padding: 27px 20px 18px 20px;} 
+.about_us_map_alldescr_item_heading{font-size: 16px;}  
+.about_us_map_alldescr_item_descrItem p{
+  font-size: 14px;
+  font-weight: 500;
+  color: #2c2c2c;  
+  line-height: 21px; 
+}
+.about_us_map_alldescr_item_descrItem a{font-size: 14px;} 
+.about_us_map_alldescr_item_descrItem{margin-bottom: 13px;}  
+.about_us_map_alldescr_item{margin-bottom: 5px;} 
+.about_us_map_alldescr_item_descrItem p:before{
+  width: 13px;
+  height: 18px;
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+}
+.about_us_map_alldescr_item_descrItem p.metroContact:before{
+  width: 16px;
+  background-size: cover !important;
+  height: 17px; 
+}
+.about_us_map .about_us_map_main .about_us_map_main_map #map-canvas, .about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas{
+  height: 360px; 
+}
+.about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info{padding: 26px 19px 23px 19px;}   
+.about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_heading{font-size: 16px; margin-bottom: 6px;}   
+ .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_descr{
+  font-weight: 500;
+  color: #2c2c2c;
+ }
+ .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_descr{margin-bottom: 16px;}    
+ .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_tel{font-size: 16px;}  
+ .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_tel_time_work.gr_all{font-size: 16px; margin-top: 15px;}  
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_tel_time_work{
+    font-weight: 500;    
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .contact_map_canvas_stub{height: 419px;} 
+  .contact_map_canvas_stub span{font-size: 17px;}
+ .about_us_map .about_us_map_main {    
+    margin-top: 30px; }
+  .select-city-map .placeholder {
+    height: 42px;
+    font-size: 15px; }
+  .select-city-map:nth-child(2) {
+    margin-right: 0; }
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_heading {
+    font-size: 18px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_descr {
+    font-size: 14px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_tel {
+    font-size: 15px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map .about_us_map_main_map_info .about_us_map_main_map_info_tel_time_work {
+    font-size: 14px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map #map-canvas, .about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas {
+    height: 370px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map_img .about_us_map_main_map_img_list .about_us_map_main_map_img_item {
+    height: 65px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map_img {
+    margin-top: 12px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info{
+  padding: 17px;     
+}
+.about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info li .office_city{
+  font-size: 17px; 
+}
+.about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info li .location{font-size: 15px;} 
+.about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info li .location .strong{font-size: 15px; } 
+.about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info li{margin-bottom: 8px;}  
+.about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas ul.offices_info li .location{margin-top: 13px;} 
+.about_us_map .about_us_map_main .about_us_map_main_map #map-canvas, .about_us_map .about_us_map_main .about_us_map_main_map .over_map_canvas{height: 419px;}
+}
+
+@media screen and (max-width: 370px) {
+.about_us_map .about_us_map_main{margin-top: 20px;}  
+  .about_us_map_main_nav {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .select-city-map {
+    margin-right: 0;
+    max-width: 100%;
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; }
+  .remodal.modal-about_us_tours_in_installments_alfa_bank iframe {
+    height: 343px;
+    width: 280px; }
+  .about_us_map .about_us_map_main .about_us_map_main_map_img .about_us_map_main_map_img_list .about_us_map_main_map_img_item {
+    height: 56px;
+    margin-right: 3px;
+    margin-left: 3px; }    
+
+}
+

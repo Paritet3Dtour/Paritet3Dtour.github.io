@@ -1,0 +1,512 @@
+.flexMenu-popup_display {
+    display: none;
+!important;
+}
+.flexMenu-popup-margin-left {
+    margin-left: -140px;
+}
+.google-ico {
+    background: url("/files/public/img/google-ico.png") no-repeat;
+}
+.facebook-ico {
+    background: url("/files/public/img/facebook-ico.png") no-repeat;
+}
+.instagram-ico {
+    background: url("/files/public/img/instagram-ico.png") no-repeat;
+}
+.aboutUsPage .signInHolder {
+    margin-left: 10px;
+}
+.mobile_position {
+    float: none !important;
+    position: inherit !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background-color: white;!important;
+    -webkit-box-shadow: inherit!important;
+    box-shadow: inherit!important;
+}
+.footerMenuList .mobile_position li a {
+    color: grey !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+    text-align: center;
+}
+.test_none_display {
+    display: none;
+!important;
+}
+
+#menu li:hover {
+    border-bottom: 3px solid #ea1c89;
+}
+#menu li:hover a{
+    color: #2d2d2d;   
+}
+#menu li  {
+    padding-left: 10px;
+    padding-right: 10px;   
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; 
+    transition: all 0.3s; 
+    border-bottom: 3px solid transparent;    
+}
+.header_language_all span{    
+    margin-right: 3px;
+    margin-left: 3px;    
+}
+         
+.header_language_all span a{text-transform: uppercase;}       
+  
+.pick_up_tour_header{
+    width: 139px;
+    height: 32px;
+    -webkit-box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.18), 0 0 10px 1px rgba(0, 159, 227, 0.11);
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.18), 0 0 10px 1px rgba(0, 159, 227, 0.11);
+    border-radius: 4px;   
+    background-color: #009fe3;
+    border: none;
+    color: #ffffff;
+    font-size: 13px;  
+    outline: none;  
+    transition: all 0.4s;   
+}
+#login_head{padding-right: 0 !important;}   
+.pick_up_tour_header:hover{background-color: #0078ab;} 
+#city_home_border{margin-right: 0;}
+.login_head{margin-left: 0;}
+.ul_li_pre {
+    white-space: pre;
+}
+#menu .city_home {
+    white-space: pre;
+    padding: 3px 7px 4px 6px;   
+    border-bottom: 0;
+    border-left: 1px solid #939393;  
+    border-right: 1px solid #939393;      
+}
+#menu .city_home span{
+    
+    margin-right: 6px;
+}
+.show_login_form i {
+    font-size: 20px;     
+}
+#menu .city_home:hover{
+    border-bottom:0 ;
+}
+.city_home_border {
+    //border-right: 1px solid #d0d0d0;
+    //border-left: 1px solid #d0d0d0;
+    padding: 10px 6px 10px 6px;
+    margin-right: 20px;
+}
+#logo_test {
+    padding: 0px;
+}
+.logoHolder_mobile {
+    background: url("/files/public/img/header-mobile.png") no-repeat;
+    background-size: contain;
+    width: 143px;
+    height: 45px;
+}
+#mobile_header_logo {
+    width: 88%;
+}
+.mobile_text_home {
+    float: left;
+    padding: 12px 4px 2px 4px !important;
+    font-size: 18px;
+    color: black;
+    margin-left: 10px;
+}
+#end_test{
+    margin-right: 20px;
+}
+.mainHeaderMenu li a:hover{
+    text-decoration: none !important;
+}
+.mainHeaderMenu li a:focus{
+    text-decoration: none !important;
+}
+.callLogin {
+    color: #000;
+    font-size: 20px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 12px;
+}
+.mainHeaderMenu > li + li {
+    margin-left: 0; } 
+#pick_up_tour_header_form .select_wrapper {
+    width: 155px;
+    margin: 20px auto;
+    position: relative;
+}
+select.pick_up_tour_select_time {
+    width: 100%;
+    padding: 5px 0 5px 55px;
+    border: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 7px;
+    box-shadow: 3px 3px 27px 0px rgba(0,0,0,0.14);
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+#pick_up_tour_header_form .select_wrapper .select_arrow {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-right: 1px solid #ec008c;
+    border-bottom: 1px solid #ec008c;        
+    right: 15px;
+    
+    pointer-events: none;
+    transition: 0.4s;
+}
+#pick_up_tour_header_form .select_wrapper .select_arrow.down_arrow{
+    transform: scaleY(1) translate(0px,0px) rotate(45deg) ;
+    top: 8px;
+}
+#pick_up_tour_header_form .select_wrapper .select_arrow.top_arrow{
+    transform: scaleY(-1) translate(0px,-5px) rotate(45deg) ;
+    top: 8px;
+}
+select.pick_up_tour_select_time option {
+    font-size: 14px;
+    color: #bcbcbc;    
+}
+select.pick_up_tour_select_time option:last-child {
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.pick_up_tour_header_form_sl2_heading{
+    font-size: 19px;
+    font-weight: 700;   
+    margin-bottom: 10px;
+} 
+.pick_up_tour_header_form_sl2_descr{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.pick_up_tour_header_form .phoneInput{
+    padding: 0 !important;
+}
+.pick_up_tour_header_form .intl-tel-input.separate-dial-code .selected-dial-code{
+    padding-left: 13px;
+}
+
+@media screen and (max-width: 1200px){       
+    .pick_up_tour_header_wrapp{display: none !important;}
+}
+@media screen and (max-width: 1000px){
+    .logoHolder{
+        width: 175px;  
+        background-position: center center;               
+    }
+    .header .telNumberHolder p:first-child{
+        font-size: 17px;
+    }
+    .header .telNumberHolder p:nth-child(2){
+        font-size: 11px; 
+    }
+    .pick_up_tour_header{width: 123px; margin-right: 10px;}
+    #menu .city_home{padding: 2px 7px 0px 7px;}   
+}
+
+@media screen and (max-width: 767px) {
+    .pick_up_tour_header_wrapp{display: block !important;}        
+    .mainHeaderMenu{height: auto;}
+    .header{background-color: #fff;}
+    .mainHeaderMenu > li:first-child{margin-left: 0 !important;}
+    .mainHeaderMenu a{font-size: 16px;}
+    .mainHeaderMenu{padding-top: 11px; padding-bottom: 11px;}   
+    #menu li:nth-child(-n+5){border-bottom: 1px solid rgb(219, 219, 210); margin-left: 15px !important; padding-left: 0;}
+    .mainHeaderMenu{display: flex;flex-direction:column;align-items:flex-start;}
+    #menu li{width: 100%;}
+    /*#login_head{order: 6;}*/ 
+    /*#city_home_border{order: 7;}*/
+    /*.header_language_all{order: 8;}*/
+    /*.pick_up_tour_header_wrapp{order: 9;}*/    
+    .show_login_form{display: flex !important; align-items: center;}
+    .show_login_form i{margin-left: 4px;}
+    #menu .city_home{border-right: 0; border-left: 0;}
+    .mobile_text_home{font-size: 16px; color: #787878;}
+    #menu .city_home span{color: #000;}
+    .header_language_all_descr{display: inline !important; font-size: 16px; color: #787878;}   
+    .header_language_all span a{padding-left: 2px;padding-right: 2px;}
+    .header_language_all{padding-left: 20px !important;}
+    .pick_up_tour_header{margin-right: 0; width: 100%; font-size: 14px; height: 39px;}
+    .show_login_form_text{display: inline !important;}    
+}
+
+@media screen and (max-width: 755px) {
+    .mobile_text_home{
+        padding: 9px 4px 3px 3px !important;
+    }
+}
+
+.modal_pick_up_tour_header {
+  max-width: 442px !important;
+  padding: 0 !important;
+  background: transparent !important; }
+  .modal_pick_up_tour_header .remodal-close {
+    left: auto;
+    right: 10px;
+    top: -9px;
+    background-color: #606060;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    width: 20px !important;
+    height: 20px !important; }
+    .modal_pick_up_tour_header .remodal-close:before {
+      font-size: 20px !important;
+      line-height: 20px !important;
+      width: 20px !important;
+      color: #fff !important; }
+    
+
+    .pick_up_tour_header_form_text{
+        color: #2c2c2c;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 8px;  
+    }
+    .pick_up_tour_hotelName_form_text{
+        color: #2c2c2c;
+        font-weight: 400;
+        font-size: 15px;
+        margin-bottom: 21px;
+        line-height: normal;
+    } 
+    .header_callback-full-form-timer{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+.pick_up_tour_header_form {
+  font-family: 'Montserrat', 'Roboto Condensed', sans-serif;  
+  margin-top: 0; }
+.modal_pick_up_hotel_header .remodal-close{
+    right: 15px;
+    top: 0;
+    left: auto; 
+  }
+  .pick_up_tour_header_form .pick_up_tour_header_frm2 {
+    width: 384px;
+    height: 380px;
+    margin: 0 auto;
+    -webkit-box-shadow: 0 18px 122px rgba(14, 15, 15, 0.17);
+            box-shadow: 0 18px 122px rgba(14, 15, 15, 0.17);
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+    background-color: #ffffff;
+    margin-top: -372px; }      
+  .pick_up_tour_header_form .pick_up_tour_header_frm3 {
+    width: 339px;
+    height: 482px;     
+    margin: 0 auto;
+    -webkit-box-shadow: 0 18px 122px rgba(14, 15, 15, 0.17);
+            box-shadow: 0 18px 122px rgba(14, 15, 15, 0.17);
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+    background-color: #ffffff; }
+  .pick_up_tour_header_form .pick_up_tour_header_frm1 {
+    margin: 0 auto;
+    margin-top: -496px;
+    width: 418px;
+    height: auto;
+    -webkit-box-shadow: 0 18px 122px rgba(14, 15, 15, 0.17);
+            box-shadow: 0 18px 122px rgba(14, 15, 15, 0.17);
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+    background-color: #ffffff;
+    padding-top: 26px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    z-index: 1; }
+    .pick_up_tour_header_form .pick_up_tour_header_frm1 .pick_up_tour_header_form_heading {
+      color: #2c2c2c;
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      text-align: center; }
+    .pick_up_tour_header_form .pick_up_tour_header_frm1 .pick_up_tour_header_form_descr span{ font-weight: 700;}
+    .header_callback-full-form-timer{margin-top: 10px; margin-bottom: 7px;}
+    .pick_up_tour_header_pc a{text-align: center; color: #5d5d5d; font-size: 13px; text-decoration: underline;}
+    .pick_up_tour_header_form .pick_up_tour_header_frm1 form input:disabled{background: #fff !important; cursor:not-allowed;}    
+    .pick_up_tour_header_form .pick_up_tour_header_frm1 form button:disabled{background-color: #d457a1; cursor:not-allowed;}     
+    .header_callback-full-form-timer-icon{margin-right: 7px;}  
+    .header_callback-full-form-timer-icon img{width: 35px;}  
+    .header_callback-full-form-timer-text{color:#2c2c2c; font-size: 21px; font-weight: 700; letter-spacing: 0.5px;}
+    .header_callback-full-form-timer-text span{margin-left: 3px; margin-right: 3px;}      
+    .pick_up_tour_header_form .pick_up_tour_header_frm1 .pick_up_tour_header_form_img {
+      text-align: center;
+      margin-bottom: 10px; }
+    .pick_up_tour_header_form .pick_up_tour_header_frm1 .pick_up_tour_header_form_descr {
+      color: #5d5d5d;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 21px; 
+      text-align: center; }
+    .pick_up_tour_header_form .pick_up_tour_header_frm1 form {
+      margin-top: 20px; }
+      .pick_up_tour_header_form .pick_up_tour_header_frm1 form .intl-tel-input {
+        width: 100%;      
+        margin-bottom: 10px;
+      }
+      .pick_up_tour_header_form .pick_up_tour_header_frm1 form input {
+        height: 32px;
+        color: #000;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+        outline: none;
+        display: block;
+        border: none;
+        border-bottom: 2px solid #d7d7d7;
+        width: 100%;}
+      .pick_up_tour_header_form .pick_up_tour_header_frm1 form button {
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: #ff007b;
+        border-radius: 25px;
+        height: 49px;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        -webkit-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+        letter-spacing: 0.1px;
+        -webkit-box-shadow: 0 2px 0 #b50e65;
+                box-shadow: 0 2px 0 #b50e65; 
+        margin-bottom: 13px; } 
+        .pick_up_tour_header_form .pick_up_tour_header_frm1 form button:hover {
+          background-color: #d50067; } 
+
+.pick_up_tour_header_frm1-sl-two {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .pick_up_tour_header_frm1-sl-two .pick_up_tour_header_form_sl-two_heading {
+    text-align: center;
+    font-weight: 700;
+    font-size: 42px;
+    margin-bottom: 10px; }
+  .pick_up_tour_header_frm1-sl-two .pick_up_tour_header_form_sl-two_img {
+    text-align: center;
+    margin-bottom: 10px; }
+    .pick_up_tour_header_frm1-sl-two .pick_up_tour_header_form_sl-two_img img {
+      width: 180px; }
+  .pick_up_tour_header_frm1-sl-two .pick_up_tour_header_form_sl-two_descr {
+    text-align: center;
+    font-size: 17px;
+    line-height: 22px; }
+
+#pick_up_tour_header_form label.error {
+  display: none !important; }
+
+#pick_up_tour_header_form .pick_up_tour_header_pc {
+  text-align: center; }
+  #pick_up_tour_header_form .pick_up_tour_header_pc a {
+    color: #5d5d5d;
+    font-size: 13px;
+    font-weight: 300;
+    text-decoration: underline; }
+ .remodal-wrapper{z-index: 1009900 !important;}  
+ .remodal-overlay{z-index: 999999 !important;}   
+
+@media screen and (max-width: 500px) {
+  .pick_up_tour_header_form .pick_up_tour_header_frm1 {
+    width: 96%; } 
+  .pick_up_tour_header_form .pick_up_tour_header_frm2 {
+    width: 86%; }
+  .pick_up_tour_header_form .pick_up_tour_header_frm3 {
+    width: 74%; } }
+
+@media screen and (max-width: 400px) {
+  .pick_up_tour_hotelName_form_text{font-size: 14px;} 
+  .pick_up_tour_header_form_text{font-size: 20px; margin-bottom: 8px;}   
+  .header_callback-full-form-timer-text{font-size: 18px; letter-spacing: 0.2px; line-height: 18px; padding-top: 2px;}  
+  .header_callback-full-form-timer-icon img{width: 32px;} 
+  .header_callback-full-form-timer{margin-top: 6px; margin-bottom: 5px;}  
+  .pick_up_tour_header_form .pick_up_tour_header_frm1 .pick_up_tour_header_form_img img {
+    width: 160px; }
+  .pick_up_tour_header_form .pick_up_tour_header_frm1 {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .pick_up_tour_header_form .pick_up_tour_header_frm1 .pick_up_tour_header_form_descr {
+    font-size: 14px;
+    line-height: 19px; }
+  .pick_up_tour_header_form .pick_up_tour_header_frm1 .pick_up_tour_header_form_img {
+    margin-bottom: 5px; }
+  .pick_up_tour_header_form .pick_up_tour_header_frm1 form input {
+    font-size: 15px; }
+  .pick_up_tour_header_form .pick_up_tour_header_frm1 form input {
+    height: 29px; }
+  .pick_up_tour_header_form .pick_up_tour_header_frm1 form {
+    margin-top: 12px; }
+  .pick_up_tour_header_form .pick_up_tour_header_frm1 form button {
+    height: 43px;
+    font-size: 13px; } 
+  .modal_pick_up_tour_header .remodal-close {       
+    right: 3px; }
+  .pick_up_tour_header_form .pick_up_tour_header_frm1 {
+    height: 453px; 
+    margin-top: -462px; }
+  .pick_up_tour_header_form .pick_up_tour_header_frm2 {
+    margin-top: -465px;    
+    height: 457px; }
+  .pick_up_tour_header_form .pick_up_tour_header_frm3 {
+    height: 462px; } 
+  .modal_pick_up_tour_header .remodal-close {
+    right: 4px;
+    top: -14px; }
+  .pick_up_tour_header_frm1-sl-two .pick_up_tour_header_form_sl-two_heading {
+    font-size: 34px; }
+  .pick_up_tour_header_frm1-sl-two .pick_up_tour_header_form_sl-two_img img {
+    width: 148px; }
+  .pick_up_tour_header_frm1-sl-two .pick_up_tour_header_form_sl-two_img {
+    margin-bottom: 0; }
+  .pick_up_tour_header_frm1-sl-two .pick_up_tour_header_form_sl-two_descr {
+    font-size: 16px;
+    line-height: 18px; } }  

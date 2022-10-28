@@ -1,0 +1,252 @@
+/* ДЛЯ БЛОКА НОВОСТЕЙ НА ГЛАВНОЙ */
+.mainpage__news {
+  background-color: #ffffff;
+  padding-top: 75px;
+  padding-bottom: 50px;
+  font-family: 'Montserrat', 'Roboto Condensed', sans-serif; }
+
+.mainpage__news__heading {
+  font-size: 48px;
+  font-weight: 700;  
+  color: #2c2c2c; }
+
+.mainpage__news__list {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.mainpage__news__item {
+  cursor: pointer;
+  margin-bottom: 35px;
+  width: 31.5%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eff4f8;
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease; }
+  .mainpage__news__item:hover { } 
+    .mainpage__news__item:hover .mainpage__news__itemImg {
+      -webkit-background-size: 120% 120% !important;
+              background-size: 120% !important; }
+
+.mainpage__news__itemImg {
+  width: 100%;
+  height: 242px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  overflow: hidden;
+  -webkit-background-size: 100% 100% !important;
+          background-size: 100% !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  margin-bottom: 16px;
+  -webkit-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) !important;
+  -o-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) !important;
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) !important; }
+
+.mainpage__news__item__descr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.mainpage__news__item__tag {
+  font-size: 12px;
+  font-weight: 700;
+  color: #9b9b9b; }
+
+.mainpage__news__item__date {
+  font-size: 12px;
+  font-weight: 400;
+  color: #464646; }
+
+.mainpage__news__content {
+  margin-top: 15px;
+  max-height: 135px;
+  overflow: hidden; }
+
+.mainpage__news__item__heading {
+  font-size: 22px;
+  line-height: normal;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-bottom: 10px; }
+
+.mainpage__news__item__text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #464646; }
+
+.mainpage__news__watchs {
+  margin-top: 13px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #464646;
+  background: url("../images/watch_icon.svg") no-repeat center left; }
+  .mainpage__news__watchs span {
+    margin-left: 37px; }
+
+.mainpage__news__itemSubscribeImg {
+  width: 70px;  
+  height: 51px;
+  background: url("../images/convert.svg") no-repeat center center; }
+
+.mainpage__news__itemSubscribe {
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  border: 2px solid #eff4f8;
+  padding: 35px 20px 25px 29px; }
+
+.mainpage__news__itemSubscribeText {
+  margin-top: 25px;
+  color: #2c2c2c;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 15px; }
+
+.mainpage__news__itemSubscribeDescr {
+  color: #464646;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; }
+
+.mainpage__news__itemSubscribeBtns {
+  margin-top: 24px; }
+
+.mainpage__news__itemSubscribeBtnViber {
+  padding-left: 75px;
+  color: #6f3faa;
+  font-size: 18px;
+  font-weight: 700;
+  background: url("../images/telegramIcon.svg") no-repeat center left;
+  height: 55px;
+  line-height: 55px;
+  display: block;
+  margin-bottom: 15px; }
+
+.mainpage__news__itemSubscribeBtnTeleg {
+  padding-left: 75px;
+  color: #5786b5;
+  font-size: 18px;
+  font-weight: 700;
+  background: url("../images/telegram_icon.svg") no-repeat center left;
+  height: 55px;
+  line-height: 55px;
+  display: block; }
+
+.mainpage__news__itemSubscribeBtnViber.lnk2{display: none;}    
+
+@media screen and (max-width: 1200px) {
+  .mainpage__news__itemImg {
+    -webkit-background-size: cover !important;
+            background-size: cover !important; }
+  .mainpage__news__itemSubscribeText {
+    margin-top: 19px;
+    font-size: 20px;
+    line-height: 26px; }
+  .mainpage__news__itemSubscribe {
+    padding: 25px 20px 25px 20px; } }
+
+@media screen and (max-width: 1000px) {
+  .mainpage__news__itemSubscribeBtnViber.lnk2{display: block;}
+  .mainpage__news__itemSubscribeBtnViber.lnk1{display: none;}   
+  .mainpage__news__item {
+    width: 49%; }
+  .mainpage__news__heading {
+    font-size: 40px; }
+  .mainpage__news__list {
+    margin-top: 40px; }
+  .mainpage__news__itemImg {
+    height: 208px; }
+  .mainpage__news__item__heading {
+    font-size: 20px; }
+  .mainpage__news__item__text {
+    font-size: 13px; } }
+
+@media screen and (max-width: 750px) {
+  .mainpage__news__heading {
+    font-size: 33px; }
+  .mainpage__news {
+    padding-top: 55px; }
+  .mainpage__news__item {
+    width: 100%; }
+  .mainpage__news {
+    padding-bottom: 35px; }
+  .mainpage__news__itemImg {
+    height: 180px; } }
+
+@media screen and (max-width: 500px) {
+  .mainpage__news__heading {
+    font-size: 27px;
+    line-height: normal; }
+  .mainpage__news {
+    padding-top: 50px;
+    padding-bottom: 25px; }
+  .mainpage__news__itemImg {
+    height: 165px;
+    margin-bottom: 10px; }
+  .mainpage__news__item__tag {
+    font-size: 10px; }
+  .mainpage__news__item__date {
+    font-size: 10px; }
+  .mainpage__news__item__heading {
+    font-size: 18px; }
+  .mainpage__news__item__text {
+    line-height: 21px; }
+  .mainpage__news__item {
+    margin-bottom: 20px; }
+  .mainpage__news__watchs {
+    text-align: right;  
+    background: url(../images/watch_icon.svg) no-repeat 86% center; }
+  .mainpage__news__itemSubscribe {
+    padding: 20px 20px 25px 20px; }
+  .mainpage__news__itemSubscribeImg {
+    width: 60px;
+    height: 45px;
+    -webkit-background-size: 60px 60px;
+            background-size: 60px; }
+  .mainpage__news__itemSubscribeText {
+    margin-top: 11px; 
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 11px; }
+  .mainpage__news__itemSubscribeDescr {
+    font-size: 14px;
+    line-height: 22px; }
+  .mainpage__news__itemSubscribeBtnViber {
+    height: 43px;
+    line-height: 43px;
+    -webkit-background-size: 43px 43px;
+            background-size: 43px;
+    padding-left: 58px;
+    font-size: 16px; }
+  .mainpage__news__itemSubscribeBtnTeleg {
+    height: 43px;
+    line-height: 43px;
+    -webkit-background-size: 43px 43px;
+            background-size: 43px;
+    padding-left: 58px;
+    font-size: 16px; } } 

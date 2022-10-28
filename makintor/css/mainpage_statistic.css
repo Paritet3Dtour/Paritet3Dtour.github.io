@@ -1,0 +1,86 @@
+/* Для блока со статистикой отелю */ 
+
+.mainpage__statistic {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background-color: #ffffff; 
+  font-family: 'Montserrat', 'Roboto Condensed', sans-serif; }
+
+.mainpage__statistic__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.mainpage__statistic__item {
+  width: 22%;
+  text-align: left; }
+  .mainpage__statistic__item b {
+    height: 68px;
+    align-items: center;
+    display: flex;
+    color: #9b9b9b;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 1px; }
+  .mainpage__statistic__item p {
+    color: #2c2c2c;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px; }
+
+@media screen and (max-width: 1200px) {
+  .mainpage__statistic__item b {
+    height: 56px;
+    font-size: 41px; }
+  .mainpage__statistic__item b img {
+    width: 37px; }
+  .mainpage__statistic__item p {
+    font-size: 15px;
+    line-height: 19px; } }
+
+@media screen and (max-width: 1000px) {
+  .mainpage__statistic__item b {
+    font-size: 37px; }
+  .mainpage__statistic__item b img {
+    width: 33px; }
+  .mainpage__statistic__item {
+    width: 23%; }
+  .mainpage__statistic__item p {
+    font-size: 14px;
+    line-height: 17px; } }
+
+@media screen and (max-width: 750px) {
+  .mainpage__statistic__list {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .mainpage__statistic__item {
+    width: 47%;
+    margin-bottom: 4px; }
+  .mainpage__statistic__item b {
+    height: 40px;
+    font-size: 29px; }
+  .mainpage__statistic__item b img {
+    width: 28px; }
+  .mainpage__statistic__item p {
+    color: #2c2c2c;
+    font-weight: 500; } }
+
+@media screen and (max-width: 500px) {
+  .mainpage__statistic__item b {
+    font-size: 25px; }
+  .mainpage__statistic__item b img {
+    width: 24px; }
+  .mainpage__statistic__item p br {
+    display: none; }
+  .mainpage__statistic {
+    padding-bottom: 30px; } }

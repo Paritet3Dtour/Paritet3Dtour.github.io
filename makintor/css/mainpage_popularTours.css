@@ -1,0 +1,245 @@
+/* ДЛЯ БЛОКА ПОПУЛЯРНЫХ НАПРАВЛЕНИЙ */
+.mainpage__popularTours {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  background-color: #eff4f8; 
+  font-family: 'Montserrat', 'Roboto Condensed', sans-serif; }
+
+.mainpage__popularTours__heading {
+  color: #2c2c2c;
+  font-size: 48px;
+  font-weight: 700; }
+
+.mainpage__popularTours__list {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.mainpage__popularTours__item {
+  width: 32%;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  background-color: #ffffff;
+  overflow: hidden;
+  margin-bottom: 25px;
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+  display: none; }
+  .mainpage__popularTours__item:hover {
+    -webkit-box-shadow: 0 20px 44px -16px rgba(171, 171, 171, 0.9);
+            box-shadow: 0 20px 44px -16px rgba(171, 171, 171, 0.9);
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px); }
+    .mainpage__popularTours__item:hover .mainpage__popularTours__item__photo span {
+      opacity: 1; }
+
+.mainpage__popularTours__item__photo {
+  height: 178px;
+  -webkit-background-size: cover !important;
+          background-size: cover !important;
+  background-position: center center !important;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
+  .mainpage__popularTours__item__photo span {
+    opacity: 0;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    line-height: 178px; }
+
+.mainpage__popularTours__item__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px 18px 24px 25px; }
+
+.mainpage__popularTours__item__contentText {
+  width: 60%; }
+
+.mainpage__popularTours__item__name {
+  color: #2c2c2c;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 7px; }
+
+.mainpage__popularTours__item__location {
+  color: #464646;
+  font-size: 12px;
+  font-weight: 400; }
+
+.mainpage__popularTours__item__contentPrice {
+  width: 40%;
+  text-align: right; }
+
+.mainpage__popularTours__item__price {
+  color: #464646;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 3px; }
+  .mainpage__popularTours__item__price span {
+    color: #2c2c2c;
+    font-size: 24px;
+    font-weight: 700; }
+
+.mainpage__popularTours__item__val {
+  color: #2c2c2c;
+  font-size: 14px;
+  font-weight: 500; }
+
+.mainpage__popularTours__subscriptionSoc__text {
+  color: #2c2c2c;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px; }
+
+.mainpage__popularTours__subscriptionSoc {
+  padding: 36px 71px 34px 31px;
+  display: block;    
+  background: #fff url("../images/fire.png") no-repeat right top; }   
+
+.mainpage__popularTours__subscriptionSoc__btns {
+  margin-top: 16px; }
+
+.mainpage__popularTours__subscriptionSoc__viber {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  -webkit-border-radius: 24px;
+          border-radius: 24px;
+  border: 1px solid #6f3faa;
+  text-align: center;
+  color: #6f3faa;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  display: block; }
+  .mainpage__popularTours__subscriptionSoc__viber:hover {
+    background-color: #6f3faa;
+    color: #fff; }
+
+.mainpage__popularTours__subscriptionSoc__teleg {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  -webkit-border-radius: 24px;
+          border-radius: 24px;
+  border: 1px solid #7aa5da;
+  text-align: center;
+  color: #7aa5da;
+  font-size: 14px;
+  font-weight: 700;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  display: block; }
+  .mainpage__popularTours__subscriptionSoc__teleg:hover {
+    background-color: #7aa5da;
+    color: #fff; }
+  .mainpage__popularTours__subscriptionSoc__viber.lnk2{
+      display: none;  
+  }
+
+@media screen and (max-width: 1200px) {
+  .mainpage__popularTours__item__photo {
+    height: 155px; }
+  .mainpage__popularTours__item__photo span {
+    line-height: 155px; }
+  .mainpage__popularTours__item__name {
+    font-size: 17px; }
+  .mainpage__popularTours__item__price span {
+    font-size: 19px; }
+  .mainpage__popularTours__item__name {
+    margin-bottom: 4px; }
+  .mainpage__popularTours__item__content {
+    padding: 20px 18px 19px 25px; }
+  .mainpage__popularTours__subscriptionSoc {
+    padding: 16px 60px 30px 17px; }
+  .mainpage__popularTours__subscriptionSoc__text {
+    font-size: 16px;
+    line-height: 21px; }
+  .mainpage__popularTours__subscriptionSoc__viber {
+    font-size: 13px; }
+  .mainpage__popularTours__subscriptionSoc__teleg {
+    font-size: 13px; } }
+
+@media screen and (max-width: 1000px) {
+  .mainpage__popularTours__subscriptionSoc__viber.lnk2{
+    display: block;  
+  }
+  .mainpage__popularTours__subscriptionSoc__viber.lnk1{
+    display: none; 
+  }
+  .mainpage__popularTours__item {
+    width: 49%;
+    margin-bottom: 18px; }
+  .mainpage__popularTours__heading {
+    font-size: 40px; } }
+
+@media screen and (max-width: 750px) {
+  .mainpage__popularTours__item {
+    width: 100%; }
+  .mainpage__popularTours__heading {
+    font-size: 32px; }
+  .mainpage__popularTours {
+    padding-top: 60px;
+    padding-bottom: 45px; } }
+
+@media screen and (max-width: 500px) {
+  .mainpage__popularTours {
+    padding-top: 50px; }
+  .mainpage__popularTours__heading {
+    font-size: 27px;
+    line-height: normal; }
+  .mainpage__popularTours__item__photo {
+    height: 145px; }
+  .mainpage__popularTours__item__content {
+    padding: 16px 15px 17px 15px; }
+  .mainpage__popularTours__item__val {
+    font-size: 13px; }
+  .mainpage__popularTours__item__name {
+    margin-bottom: 2px; }
+  .mainpage__popularTours__subscriptionSoc__viber {
+    height: 40px;
+    line-height: 40px; }
+  .mainpage__popularTours__subscriptionSoc__teleg {
+    height: 40px;
+    line-height: 40px; } } 
