@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content_language" content="ru">
+  <meta name="description" content="SoulHub">
+  <link rel="icon" type="image/x-icon" href="img/rocket-icon.png">
+  <title>SoulHub</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="libs/swiperjs/swiper.min.css">
+  <link rel="stylesheet" href="css/main.css"> 
+</head> 
+ 
+<body>
+
+  <header class="header">
+    <div class="mainContainer">
+      <div class="header_wrapp">
+        <div class="header_logo">
+          <svg width="78" height="16" viewBox="0 0 78 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.29998 15.18C5.19331 15.18 4.19331 15.04 3.29998 14.76C2.40665 14.4667 1.63331 14.0467 0.97998 13.5L1.55998 12.18C2.23998 12.7 2.95331 13.0867 3.69998 13.34C4.44665 13.5933 5.31331 13.72 6.29998 13.72C7.49998 13.72 8.38665 13.5 8.95998 13.06C9.54665 12.6067 9.83998 12.0133 9.83998 11.28C9.83998 10.6933 9.62665 10.2267 9.19998 9.88C8.78665 9.53334 8.08665 9.26 7.09998 9.06L5.01998 8.64C3.76665 8.37333 2.82665 7.94 2.19998 7.34C1.58665 6.72667 1.27998 5.91334 1.27998 4.9C1.27998 4.06 1.49331 3.32667 1.91998 2.7C2.35998 2.07333 2.96665 1.58667 3.73998 1.24C4.51331 0.893335 5.40665 0.720001 6.41998 0.720001C7.36665 0.720001 8.24665 0.873335 9.05998 1.18C9.87331 1.47333 10.56 1.9 11.12 2.46L10.54 3.74C9.93998 3.19333 9.30665 2.8 8.63998 2.56C7.97331 2.30667 7.22665 2.18 6.39998 2.18C5.34665 2.18 4.50665 2.42667 3.87998 2.92C3.25331 3.4 2.93998 4.04 2.93998 4.84C2.93998 5.48 3.13331 5.98667 3.51998 6.36C3.91998 6.73334 4.56665 7.00667 5.45998 7.18L7.53998 7.62C8.88665 7.9 9.87998 8.32667 10.52 8.9C11.1733 9.46 11.5 10.2267 11.5 11.2C11.5 11.9867 11.2866 12.68 10.86 13.28C10.4466 13.88 9.84665 14.3467 9.05998 14.68C8.28665 15.0133 7.36665 15.18 6.29998 15.18Z" fill="black"/>
+            <path d="M17.8647 15.18C16.918 15.18 16.098 14.9733 15.4047 14.56C14.7113 14.1467 14.1713 13.5667 13.7847 12.82C13.4113 12.06 13.2247 11.1667 13.2247 10.14C13.2247 9.11334 13.4113 8.22667 13.7847 7.48C14.1713 6.72 14.7113 6.13333 15.4047 5.72C16.098 5.30667 16.918 5.1 17.8647 5.1C18.798 5.1 19.6113 5.30667 20.3047 5.72C21.0113 6.13333 21.5513 6.72 21.9247 7.48C22.3113 8.22667 22.5047 9.11334 22.5047 10.14C22.5047 11.1667 22.3113 12.06 21.9247 12.82C21.5513 13.5667 21.0113 14.1467 20.3047 14.56C19.6113 14.9733 18.798 15.18 17.8647 15.18ZM17.8647 13.88C18.7713 13.88 19.498 13.56 20.0447 12.92C20.5913 12.2667 20.8647 11.34 20.8647 10.14C20.8647 8.92667 20.5913 8 20.0447 7.36C19.498 6.72 18.7713 6.4 17.8647 6.4C16.9447 6.4 16.2113 6.72 15.6647 7.36C15.1313 8 14.8647 8.92667 14.8647 10.14C14.8647 11.34 15.1313 12.2667 15.6647 12.92C16.2113 13.56 16.9447 13.88 17.8647 13.88Z" fill="black"/>
+            <path d="M28.3779 15.18C26.0446 15.18 24.8779 13.8933 24.8779 11.32V5.28H26.4979V11.3C26.4979 12.1667 26.6713 12.8067 27.018 13.22C27.378 13.6333 27.9379 13.84 28.6979 13.84C29.5246 13.84 30.1979 13.5667 30.7179 13.02C31.2379 12.46 31.4979 11.72 31.4979 10.8V5.28H33.118V15H31.5379V13.36C31.2313 13.9467 30.7979 14.4 30.2379 14.72C29.6913 15.0267 29.0713 15.18 28.3779 15.18Z" fill="black"/>
+            <path d="M39.1289 15.18C38.1422 15.18 37.3956 14.8933 36.8889 14.32C36.3956 13.7333 36.1489 12.8867 36.1489 11.78V0.900001H37.7689V11.66C37.7689 13.0867 38.3356 13.8 39.4689 13.8C39.8022 13.8 40.1022 13.76 40.3689 13.68L40.3289 15.04C39.9156 15.1333 39.5156 15.18 39.1289 15.18Z" fill="black"/>
+            <path d="M42.2869 15V0.900001H43.9269V7.14H52.3869V0.900001H54.0269V15H52.3869V8.56H43.9269V15H42.2869Z" fill="black"/>
+            <path d="M60.7217 15.18C58.3884 15.18 57.2217 13.8933 57.2217 11.32V5.28H58.8417V11.3C58.8417 12.1667 59.015 12.8067 59.3617 13.22C59.7217 13.6333 60.2817 13.84 61.0417 13.84C61.8684 13.84 62.5417 13.5667 63.0617 13.02C63.5817 12.46 63.8417 11.72 63.8417 10.8V5.28H65.4617V15H63.8817V13.36C63.575 13.9467 63.1417 14.4 62.5817 14.72C62.035 15.0267 61.415 15.18 60.7217 15.18Z" fill="black"/>
+            <path d="M73.4126 15.18C72.6393 15.18 71.9593 15.0067 71.3726 14.66C70.7993 14.3133 70.366 13.84 70.0726 13.24V15H68.4926V0.900001H70.1126V6.96C70.3926 6.38667 70.826 5.93333 71.4126 5.6C71.9993 5.26667 72.666 5.1 73.4126 5.1C74.2793 5.1 75.0326 5.30667 75.6726 5.72C76.326 6.12 76.826 6.7 77.1726 7.46C77.5326 8.20667 77.7126 9.1 77.7126 10.14C77.7126 11.1667 77.5326 12.06 77.1726 12.82C76.826 13.5667 76.326 14.1467 75.6726 14.56C75.0326 14.9733 74.2793 15.18 73.4126 15.18ZM73.0726 13.88C73.9793 13.88 74.706 13.56 75.2526 12.92C75.7993 12.2667 76.0726 11.34 76.0726 10.14C76.0726 8.92667 75.7993 8 75.2526 7.36C74.706 6.72 73.9793 6.4 73.0726 6.4C72.166 6.4 71.4393 6.72 70.8926 7.36C70.346 8 70.0726 8.92667 70.0726 10.14C70.0726 11.34 70.346 12.2667 70.8926 12.92C71.4393 13.56 72.166 13.88 73.0726 13.88Z" fill="black"/>
+          </svg>            
+        </div>
+        <div class="header_lang">
+          UA
+        </div>
+        <button class="header_toggler">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="header_menu-wrapp">
+        <ul class="header_menu">
+          <li><a href="#faq">наши услуги</a></li>
+          <li><a href="#catalog">наши специалисты</a></li>
+          <li><a href="#footer">запись</a></li>
+        </ul>
+        <div class="header_lang">
+          UA
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="banner_bg"></div>
+    <div class="banner_element">
+      <div></div>
+    </div>
+    <div class="banner_element_two">
+      <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect y="18.1053" width="43" height="6.78947" fill="#F5C108"/>
+        <rect x="24.8948" width="43" height="6.78947" transform="rotate(90 24.8948 0)" fill="#1981E1"/>
+      </svg>        
+    </div>
+    <div class="mainContainer">
+      <h1 class="banner_heading">
+        САМЕ ЧАС РОЗІБРАТИСЯ В СОБІ ТА ПОВЕРНУТИ РАДІСТЬ ЖИТТЯ
+      </h1>
+      <div class="banner_descr">ЗА ДОПОМОГОЮ СЕСІЙ З ПСИХОЛОГОМ<br/>
+        ВИ ЗНАЙДЕТЕ РІШЕННЯ ДЛЯ РІЗНИХ ЖИТТЄВИХ СИТУАЦІЙ</div>
+      <div class="banner_catalog swiper-container">
+        <div class="banner_pagination"></div>
+        <div class="banner_catalog_wrapp swiper-wrapper">
+          <div class="banner_catalog_item swiper-slide">
+            <div class="banner_catalog_info-wrapp">
+              <div class="banner_catalog_info-heading">ВИ ЗМОЖЕТЕ:</div>
+              <ul class="banner_catalog_info">
+                <li>Впоратися із тривогою і стресом</li>
+                <li>Відчувати радість та впевненість у собі</li>
+                <li>Повернути єнергію та мотивацію</li>
+                <li>Відновити відносини з батьками</li>
+                <li>Налагодити стосунки у парі</li>
+                <li>Вийти із дипрессії</li>
+                <li>Позбутися залежностей </li>
+                <li>та багато іншого! </li>
+              </ul>
+            </div>
+        <div class="banner_catalog_specialists">
+          <div class="banner_catalog_specialist">
+            <div class="banner_catalog_specialist_user">
+              <div class="banner_catalog_specialist_avatar" style="background-image: url('img/specialist1.jpg');"></div>
+              <div class="banner_catalog_specialist_name">психолог</div>
+            </div>
+            <div class="banner_catalog_specialist_info">
+              <div class="banner_catalog_specialist_heading">ПІДІБРАТИ<br> ПСИХОЛОГА, </div>
+              <div class="banner_catalog_specialist_descr">ЩО ПРАЦЬЮЄ З ВАШИМ<br> ЗАПИТОМ</div>
+              <a class="banner_catalog_specialist_btn" href="#catalog">ПІДІБРАТИ ПСИХОЛОГА</a>
+            </div>
+          </div>
+          <div class="banner_catalog_nav">
+            <button class="prev">
+              <svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.98551 0.181293C8.10145 0.0604544 8.24638 3.53087e-05 8.4058 3.53231e-05C8.56522 3.53375e-05 8.71015 0.0604544 8.82609 0.181293C9.05797 0.422969 9.05797 0.815694 8.82609 1.05737L1.43478 8.76082L8.82609 16.4643C9.05797 16.7059 9.05797 17.0987 8.82609 17.3403C8.5942 17.582 8.21739 17.582 7.98551 17.3403L0.173913 9.19886C-0.0579707 8.95718 -0.0579707 8.56446 0.173913 8.32278L7.98551 0.181293Z" fill="black"/>
+              </svg>                
+            </button>
+            <button class="next">
+              <svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.01449 17.3403C0.898551 17.4612 0.753623 17.5216 0.594203 17.5216C0.434783 17.5216 0.289855 17.4612 0.173913 17.3403C-0.057971 17.0986 -0.057971 16.7059 0.173913 16.4642L7.56522 8.76079L0.173913 1.05734C-0.057971 0.815659 -0.057971 0.422934 0.173913 0.181258C0.405797 -0.0604192 0.782609 -0.0604192 1.01449 0.181258L8.82609 8.32275C9.05797 8.56442 9.05797 8.95715 8.82609 9.19883L1.01449 17.3403Z" fill="black"/>
+              </svg>                
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="banner_catalog_item swiper-slide">
+        <div class="banner_catalog_info-wrapp">
+          <div class="banner_catalog_info-heading">ВИ ЗМОЖЕТЕ:</div>
+          <ul class="banner_catalog_info">
+            <li>Впоратися із тривогою і стресом2</li>
+            <li>Відчувати радість та впевненість у собі2</li>
+            <li>Повернути єнергію та мотивацію2</li>
+            <li>Відновити відносини з батьками2</li>
+            <li>Налагодити стосунки у парі2</li>
+            <li>Вийти із дипрессії2</li>
+            <li>Позбутися залежностей2 </li>
+            <li>та багато іншого!2 </li>
+          </ul>
+        </div>
+        <div class="banner_catalog_specialists">
+          <div class="banner_catalog_specialist">
+            <div class="banner_catalog_specialist_user">
+              <div class="banner_catalog_specialist_avatar" style="background-image: url('img/catalog-avatar2.jpg');"></div>
+              <div class="banner_catalog_specialist_name">Сексолог</div>
+            </div>
+            <div class="banner_catalog_specialist_info">
+              <div class="banner_catalog_specialist_heading">ПІДІБРАТИ<br> Сексолога, </div>
+              <div class="banner_catalog_specialist_descr">ЩО ПРАЦЬЮЄ З ВАШИМ<br> ЗАПИТОМ</div>
+              <a class="banner_catalog_specialist_btn" href="#catalog">ПІДІБРАТИ Сексолога</a>
+            </div>
+          </div>
+          <div class="banner_catalog_nav">
+            <button class="prev">
+              <svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.98551 0.181293C8.10145 0.0604544 8.24638 3.53087e-05 8.4058 3.53231e-05C8.56522 3.53375e-05 8.71015 0.0604544 8.82609 0.181293C9.05797 0.422969 9.05797 0.815694 8.82609 1.05737L1.43478 8.76082L8.82609 16.4643C9.05797 16.7059 9.05797 17.0987 8.82609 17.3403C8.5942 17.582 8.21739 17.582 7.98551 17.3403L0.173913 9.19886C-0.0579707 8.95718 -0.0579707 8.56446 0.173913 8.32278L7.98551 0.181293Z" fill="black"/>
+              </svg>                
+            </button>
+            <button class="next">
+              <svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.01449 17.3403C0.898551 17.4612 0.753623 17.5216 0.594203 17.5216C0.434783 17.5216 0.289855 17.4612 0.173913 17.3403C-0.057971 17.0986 -0.057971 16.7059 0.173913 16.4642L7.56522 8.76079L0.173913 1.05734C-0.057971 0.815659 -0.057971 0.422934 0.173913 0.181258C0.405797 -0.0604192 0.782609 -0.0604192 1.01449 0.181258L8.82609 8.32275C9.05797 8.56442 9.05797 8.95715 8.82609 9.19883L1.01449 17.3403Z" fill="black"/>
+              </svg>                
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="banner_catalog_item swiper-slide">
+        <div class="banner_catalog_info-wrapp">
+          <div class="banner_catalog_info-heading">ВИ ЗМОЖЕТЕ:</div>
+          <ul class="banner_catalog_info">
+            <li>Впоратися із тривогою і стресом3</li>
+            <li>Відчувати радість та впевненість у собі3</li>
+            <li>Повернути єнергію та мотивацію3</li>
+            <li>Відновити відносини з батьками3</li>
+            <li>Налагодити стосунки у парі3</li>
+            <li>Вийти із дипрессії3</li>
+            <li>Позбутися залежностей3 </li>
+            <li>та багато іншого!3 </li>
+          </ul>
+        </div>
+        <div class="banner_catalog_specialists">
+          <div class="banner_catalog_specialist">
+            <div class="banner_catalog_specialist_user">
+              <div class="banner_catalog_specialist_avatar" style="background-image: url('img/catalog-avatar3.jpg');"></div>
+              <div class="banner_catalog_specialist_name">Коуч</div>
+            </div>
+            <div class="banner_catalog_specialist_info">
+              <div class="banner_catalog_specialist_heading">ПІДІБРАТИ<br> Коуча, </div>
+              <div class="banner_catalog_specialist_descr">ЩО ПРАЦЬЮЄ З ВАШИМ<br> ЗАПИТОМ</div>
+              <a class="banner_catalog_specialist_btn" href="#catalog">ПІДІБРАТИ Коуча</a>
+            </div>
+          </div>
+          <div class="banner_catalog_nav">
+            <button class="prev">
+              <svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.98551 0.181293C8.10145 0.0604544 8.24638 3.53087e-05 8.4058 3.53231e-05C8.56522 3.53375e-05 8.71015 0.0604544 8.82609 0.181293C9.05797 0.422969 9.05797 0.815694 8.82609 1.05737L1.43478 8.76082L8.82609 16.4643C9.05797 16.7059 9.05797 17.0987 8.82609 17.3403C8.5942 17.582 8.21739 17.582 7.98551 17.3403L0.173913 9.19886C-0.0579707 8.95718 -0.0579707 8.56446 0.173913 8.32278L7.98551 0.181293Z" fill="black"/>
+              </svg>                
+            </button>
+            <button class="next">
+              <svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.01449 17.3403C0.898551 17.4612 0.753623 17.5216 0.594203 17.5216C0.434783 17.5216 0.289855 17.4612 0.173913 17.3403C-0.057971 17.0986 -0.057971 16.7059 0.173913 16.4642L7.56522 8.76079L0.173913 1.05734C-0.057971 0.815659 -0.057971 0.422934 0.173913 0.181258C0.405797 -0.0604192 0.782609 -0.0604192 1.01449 0.181258L8.82609 8.32275C9.05797 8.56442 9.05797 8.95715 8.82609 9.19883L1.01449 17.3403Z" fill="black"/>
+              </svg>                
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="consultation">  
+    <div class="mainContainer">
+      <div class="consultation_wrapp">
+        <div class="consultation_list">
+          <div class="consultation_item">
+            ОНСУЛЬТАЦІЯ ПСИХОЛОГА /ПСИХОТЕРАПЕВТА
+          </div>
+          <div class="consultation_item">
+            СІМЕЙНА ПСИХОЛОГІЯ ДЛЯ ПОДРУЖЖІВ ТА ПАР
+          </div>
+          <div class="consultation_item">
+            КОНСУЛЬТАЦІЯ<br> СЕКСОЛОГА
+          </div>
+          <div class="consultation_item">
+            КОУЧИНГ
+          </div>
+        </div>
+        <div class="consultation_content">
+          <div class="consultation_heading">Потрібна консультація від перевіреного спеціаліста?</div>
+          <div class="consultation_descr">Обирайте професіонала та починайте<br> роботу над собою!</div>
+          <a href="#catalog" class="consultation_btn">Знайти фахівця</a>
+        </div>
+      </div>
+      <a href="#catalog" class="consultation_btn mob">Знайти фахівця</a>
+    </div>
+  </section>
+
+  <section class="specialists">
+    <div class="specialists_bgel_one"></div>
+    <div class="specialists_bgel_two"></div>
+    <div class="mainContainer">
+      <div class="specialists_heading">ЦЕЙ САЙТ -  БЕЗПЕЧНЕ МІСЦЕ,<br> ДЕ ВИ ЗМОЖЕТЕ</div>
+      <div class="specialists_wrapp"> 
+        <div class="specialists_list">
+          <div class="specialists_item">Підібрати та отримати онлайн консультацію з психологом, який спеціалізується на вирішення саме вашої проблеми;
+            <div class="iconelement"></div>
+            <div class="iconelement"></div>
+          </div>
+          <div class="specialists_item">знайти підхід до дитини або підлітка завдяки дитячому психологу;</div>
+          <div class="specialists_item">отримати заряд мотивації від коуча та разом визначити вектор особистісного розвитку;</div>
+          <div class="specialists_item">розібратися в сексуальному житті разом із сексологом.
+            <div class="iconelement"></div>
+            <div class="iconelement"></div>
+          </div>
+        </div>
+        <div class="specialists_form">
+          <div class="specialists_form_heading">Оберіть психолога</div>
+          <div class="specialists_form_descr">що працює саме з вашим запитом</div>
+          <a href="#catalog" class="specialists_form_btn">Переглянути спеціалістів</a>
+        </div>
+      </div>
+      <div class="specialists_info">
+        <div class="specialists_info_heading">Тут люди зі своїми проблемами та життєвими ситуаціями мають<br> змогу підібрати фахівців і працювати з ними у зручному форматі. </div>
+        <div class="specialists_info_descr">Ви можете зустрітися зі спеціалістом особисто, або працювати в режимі онлайн.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quiz">  
+    <div class="mainContainer">
+      <div class="quiz_heading">Нижче виберіть одну або декілька<br> тем, у яких ви хотіли б розібратися.</div>
+      <div class="quiz_list_wrapp">
+      <div class="quiz_list">
+        <div class="quiz_item">
+          <div class="quiz_item_heading">Здоров'я</div>
+          <div class="quiz_item_catalog">
+            <button>Здоров'я</button>
+            <button class="active">Тривога</button>
+            <button>Самореалізація</button>
+            <button>Панічні Атаки</button>
+            <button>Депресія</button>
+            <button>Ріст особистості</button>
+            <button>Пост Травматический Стресс</button>
+            <button>Безсоння</button>
+            <button>Cтpec</button>
+          </div>
+        </div>
+        <div class="quiz_item">
+          <div class="quiz_item_heading">робота</div>
+          <div class="quiz_item_catalog">
+            <button>Прокрастинація</button>
+            <button>Перевтома</button>
+            <button>Втома та відсутність сил</button>
+            <button class="active">Грощі та достаток</button>
+            <button>Кар'єра</button>
+            <button>Відносини на роботі</button>
+          </div>
+        </div>
+      </div>
+      <div class="quiz_list">
+        <div class="quiz_item">
+          <div class="quiz_item_heading">відносини</div>
+          <div class="quiz_item_catalog">
+            <button>Любовний трикутник</button>
+            <button class="active">Сімейні стосунки</button>
+            <button>Дружба</button>
+            <button class="active">любовні стосунки</button>
+          </div>
+        </div>
+        <div class="quiz_item">
+          <div class="quiz_item_heading">психологічний стан</div>
+          <div class="quiz_item_catalog">
+            <button>Страхи</button>
+            <button class="active">Стосунки з батьками</button>
+            <button>Відчуття самотності</button>
+            <button>Сенс життя</button>
+            <button>Стосунки з дітьми</button>
+            <button>Комплекси</button>
+            <button>Виховання дітей</button>
+            <button>Страхи старіння</button>
+            <button>Шкідливі звички</button>
+            <button>Комплекси внешности</button>
+            <button>Статеве виховання</button>
+            <button>Пожилые родители </button>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <a href="#catalog" class="quiz_btn">Переглянути спеціалістів</a>
+    </div>
+  </section>
+
+  <section class="blockquote">
+    <div class="mainContainer">
+      <div class="blockquote_wrapp">
+        <div class="blockquote_item">
+          Усі ми переживаємо складні часи. Хтось не знає як вийти з глухого кута у стосунках, дехто – як знайти своє призначення або владнати сексуальні проблеми, а комусь необхідно просто виговоритися й отримати заряд мотивації. Все це і навіть більше ви можете вирішити з досвідченим фахівцем!  
+        </div>
+        <div class="blockquote_item">Психолог допомагає усвідомити причини вашої поведінки, закрити дитячі травми, налагодити стосунки з батьками та партнером, гармонійно завершити важкі стосунки.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog" id="catalog">
+    <div class="catalog_bgelement"></div>
+    <div class="mainContainer">
+      <div class="catalog_heading">НАШІ СПЕЦІАЛІСТИ:</div>
+      <div class="catalog_list">
+        <div class="catalog_item">
+          <div class="catalog_item_avatar" style="background-image: url('img/catalog-avatar1.jpg');"></div>
+          <div class="catalog_item_heading">Психолог - психотерапевт</div>
+          <div class="catalog_item_descr">
+            <p>Працює із психологічними проблемами здорових людей. </p>
+            <p>Проблеми у сімʼї, роботі, занадто важкі переживання тощо...</p>
+            <p>Допомагає усвідомити причини вашої поведінки, закрити дитячі травми, налагодити стосунки з батьками та партнером, гармонійно завершити важкі стосунки.</p>
+          </div>
+          <a href="#footer" class="catalog_item_button">Консультація<br> ПСИХОЛОГА</a>
+        </div>
+        <div class="catalog_item">
+          <div class="catalog_item_avatar" style="background-image: url('img/catalog-avatar2.jpg');"></div>
+          <div class="catalog_item_heading">Сексолог</div>
+          <div class="catalog_item_descr">
+            <p>Сексолог – це психолог, що спеціалізується на труднощах у сексуальній сфері. Цей фахівець знає як гармонізувати сексуальне життя.</p>
+          </div>
+          <a href="#footer" class="catalog_item_button">Консультація<br> cексолога</a>
+        </div>
+        <div class="catalog_item">
+          <div class="catalog_item_avatar" style="background-image: url('img/catalog-avatar3.jpg');"></div>
+          <div class="catalog_item_heading">Коуч</div>
+          <div class="catalog_item_descr">
+            <p>Коуч – спеціаліст, який працює з цілями, мріями та діями, що стосуються майбутнього. Допоможе віднайти енергію та направити її в потрібне русло.</p>
+          </div>
+          <a href="#footer" class="catalog_item_button">Консультація<br> коуча</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="search">
+    <div class="search_bgel_one"></div>
+    <div class="search_bgel_two"></div>
+    <div class="mainContainer">
+      <div class="search_heading">ЗНАЙДІТЬ ПСИХОЛОГА ЩО СПЕЦІАЛІЗУЄТЬСЯ НА РІШЕННІ САМЕ ВАШОЇ ПРОБЛЕМИ</div>
+      <div class="search_descr">Дайте відповіді на <span><b>10 запитань</b></span> в онлайн-формі та ми підберемо для вас найкращого фахівця, який є експертом у питанні, що вас цікавить.</div>
+      <div class="search_wrapp">
+        <div class="search_specialists">
+          <div class="search_specialist" style="background-image: url('img/catalog-avatar1.jpg');"></div>
+          <div class="search_specialist" style="background-image: url('img/catalog-avatar2.jpg');"></div>
+          <div class="search_specialist" style="background-image: url('img/catalog-avatar3.jpg');"></div>
+          <div class="search_specialist" style="background-image: url('img/catalog-avatar1.jpg');"></div>
+          <div class="search_specialist" style="background-image: url('img/catalog-avatar2.jpg');"></div>
+          <div class="search_specialist" style="background-image: url('img/catalog-avatar3.jpg');"></div>
+        </div>
+        <div class="search_form">
+          <a href="#footer" class="search_form_btn">ПІДІБРАТИ ПСИХОЛОГА</a>
+          <div class="search_form_info">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.1666 18.3333L29.7999 27.2833L28.3333 27.5833L27.2666 27.7833C26.2166 28 25.6166 29.1667 26.0833 30.1167L26.5333 31.0833L28.7999 35.9833L26.4333 37.0833L24.1666 32.2L23.7333 31.2333C23.63 31.0039 23.4755 30.8012 23.2815 30.641C23.0875 30.4807 22.8592 30.3672 22.6144 30.3092C22.3696 30.2513 22.1147 30.2503 21.8694 30.3065C21.6241 30.3627 21.3951 30.4745 21.1999 30.6333L20.3499 31.3L19.1666 32.25V18.3333ZM17.9333 14.4833C17.5973 14.4833 17.2751 14.6168 17.0376 14.8543C16.8 15.0919 16.6666 15.4141 16.6666 15.75V34.8333C16.6666 35.5333 17.2333 36.1 17.9333 36.1C18.2499 36.1 18.5166 36 18.7333 35.8333L21.9166 33.25L24.6833 39.2833C24.8999 39.7333 25.3499 40 25.8333 40C26.0166 40 26.1999 40 26.3833 39.8667L30.9833 37.7333C31.6166 37.4333 31.9166 36.6667 31.5833 36.05L28.7999 30L32.8166 29.25C33.0925 29.1783 33.3416 29.0277 33.5333 28.8167C33.9833 28.2833 33.9166 27.5 33.3333 27.0167L18.7666 14.7667L18.7499 14.7833C18.522 14.5895 18.2325 14.4832 17.9333 14.4833ZM24.9999 16.6667V13.3333H33.3333V16.6667H24.9999ZM23.0499 7.93333L27.7666 3.21667L30.1166 5.56667L25.3999 10.2833L23.0499 7.93333ZM16.6666 0H19.9999V8.33333H16.6666V0ZM6.54992 24.4333L11.2666 19.7167L13.6166 22.0667L8.89992 26.7833L6.54992 24.4333ZM6.54992 5.56667L8.89992 3.21667L13.6166 7.93333L11.2666 10.2833L6.54992 5.56667ZM11.6666 16.6667H3.33325V13.3333H11.6666V16.6667Z" fill="black"/>
+            </svg>
+            <div class="search_form_info_content">
+              <div class="search_form_info_heading">CLICK</div>
+              <div class="search_form_info_descr">Натисні і пройди<br> короткий тест</div>
+            </div>           
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="faq_bgel"></div>
+    <div class="mainContainer">
+      <div class="faq_wrapp">
+        <div class="faq_heading">Ми гарантуємо:</div>
+        <div class="faq_list">
+          <div class="faq_item">
+            <div class="faq_item_icon">
+              <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M29.334 26.0016H2.66731V28.6683H29.334V26.0016ZM29.334 7.33496L22.6673 11.335L16.0006 3.33496L9.33398 11.335L2.66731 7.33496V23.335H29.334V7.33496Z" fill="black"/>
+              </svg>            
+            </div>
+            <div class="faq_item_content">
+              <div class="faq_item_heading">Професіоналізм</div>
+              <div class="faq_item_descr">Ми ретельно обираємо фахівців. Наш сервіс пропонує лише перевірених вузькопрофільних спеціалістів із досвідом роботи в особистій терапії.</div>
+            </div>
+          </div>
+          <div class="faq_item">
+            <div class="faq_item_icon">
+              <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M29.334 26.0016H2.66731V28.6683H29.334V26.0016ZM29.334 7.33496L22.6673 11.335L16.0006 3.33496L9.33398 11.335L2.66731 7.33496V23.335H29.334V7.33496Z" fill="black"/>
+              </svg>            
+            </div>
+            <div class="faq_item_content">
+              <div class="faq_item_heading">Індивідуальний супровід.</div>
+              <div class="faq_item_descr">Ви отримаєте наставника, який нагадуватиме вам про сесію, якщо ви забули, а також помічатиме консультації у вашому календарі.</div>
+            </div>
+          </div>
+          <div class="faq_item">
+            <div class="faq_item_icon">
+              <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M29.334 26.0016H2.66731V28.6683H29.334V26.0016ZM29.334 7.33496L22.6673 11.335L16.0006 3.33496L9.33398 11.335L2.66731 7.33496V23.335H29.334V7.33496Z" fill="black"/>
+              </svg>            
+            </div>
+            <div class="faq_item_content">
+              <div class="faq_item_heading">Безпечні консультації.</div>
+              <div class="faq_item_descr">Всі ваші розмови зі спеціалістом суворо засекречені та ніхто не має доступу до цієї інформації.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer" id="footer">
+    <div class="mainContainer">
+      <div class="footer_wrapp">
+        <div class="footer_info">
+          <div class="footer_info_heading">Вже відповіли вашім заявкам:</div>
+          <div class="footer_info_count">34 678</div>
+          <div class="footer_info_descr">Ми завжди йдемо вам на зустріч, бо ми дуже піклуємось за вас.<br> Заповніть форму і ми швидко з вами зв’яжимось</div>
+        </div>
+        <div class="footer_form">
+          <div class="footer_form_wrapp">
+            <div class="footer_form_heading">ФОРМА ЗВ’ЯЗКУ</div>
+            <form class="form">
+              <input type="text" placeholder="ІМ’Я">
+              <input type="text" placeholder="ПОШТА">
+              <input type="text" placeholder="ТЕЛЕФОН">
+              <div class="form_wrapp">
+                <div class="form_info">
+                  <div class="form_info_content">
+                    <div class="form_info_heading">CLICK</div>
+                    <div class="form_info_descr">Натисні і пройди короткий тест</div>
+                  </div>
+                  <div class="form_info_icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.1666 18.3333L29.7999 27.2833L28.3333 27.5833L27.2666 27.7833C26.2166 28 25.6166 29.1667 26.0833 30.1167L26.5333 31.0833L28.7999 35.9833L26.4333 37.0833L24.1666 32.2L23.7333 31.2333C23.63 31.0039 23.4755 30.8012 23.2815 30.641C23.0875 30.4807 22.8592 30.3672 22.6144 30.3092C22.3696 30.2513 22.1147 30.2503 21.8694 30.3065C21.6241 30.3627 21.3951 30.4745 21.1999 30.6333L20.3499 31.3L19.1666 32.25V18.3333ZM17.9333 14.4833C17.5973 14.4833 17.2751 14.6168 17.0376 14.8543C16.8 15.0919 16.6666 15.4141 16.6666 15.75V34.8333C16.6666 35.5333 17.2333 36.1 17.9333 36.1C18.2499 36.1 18.5166 36 18.7333 35.8333L21.9166 33.25L24.6833 39.2833C24.8999 39.7333 25.3499 40 25.8333 40C26.0166 40 26.1999 40 26.3833 39.8667L30.9833 37.7333C31.6166 37.4333 31.9166 36.6667 31.5833 36.05L28.7999 30L32.8166 29.25C33.0925 29.1783 33.3416 29.0277 33.5333 28.8167C33.9833 28.2833 33.9166 27.5 33.3333 27.0167L18.7666 14.7667L18.7499 14.7833C18.522 14.5895 18.2325 14.4832 17.9333 14.4833ZM24.9999 16.6667V13.3333H33.3333V16.6667H24.9999ZM23.0499 7.93333L27.7666 3.21667L30.1166 5.56667L25.3999 10.2833L23.0499 7.93333ZM16.6666 0H19.9999V8.33333H16.6666V0ZM6.54992 24.4333L11.2666 19.7167L13.6166 22.0667L8.89992 26.7833L6.54992 24.4333ZM6.54992 5.56667L8.89992 3.21667L13.6166 7.93333L11.2666 10.2833L6.54992 5.56667ZM11.6666 16.6667H3.33325V13.3333H11.6666V16.6667Z" fill="black"/>
+                    </svg>                  
+                  </div>
+                </div>
+                <button class="form_info_btn" type="button">ПІДІБРАТИ ПСИХОЛОГА</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="libs/swiperjs/swiper.min.js"></script>
+  <script>
+    $('.header_toggler').click(function(){
+      $('.header').toggleClass('active')
+    });
+    $('.header_menu a').click(function(){
+      $('.header').removeClass('active')
+    });
+    $('.quiz_item_catalog button').click(function(){
+      $(this).toggleClass('active')
+    });
+
+    let mySwiper = new Swiper('.banner_catalog', {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 0,
+    centeredSlides: true,
+    roundLengths: true,
+    effect: "fade",
+    //autoplay: true,
+
+    pagination: {
+      el: ".banner_pagination",
+    },
+    navigation: {
+      nextEl: '.banner_catalog_nav .next',
+      prevEl: '.banner_catalog_nav .prev',
+    },
+  });
+  // for scrolling to anchor
+  $('a[href*="#"], button[href*="#"]')
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function(event) {
+      if ( 
+        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+        && 
+        location.hostname == this.hostname
+      ) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 700, function() {
+            var $target = $(target); 
+            if ($target.is(":focus")) { 
+              return false;
+            } else {
+              $target.attr('tabindex','-1'); 
+            };
+          });
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
