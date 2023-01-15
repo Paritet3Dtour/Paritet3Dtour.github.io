@@ -31,10 +31,10 @@
 }
 @font-face {
   font-family: 'OpenSans Semibold';
-  src: url('../fonts/OpenSans-Semibold.eot');
-  src: url('../fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
-   url('../fonts/OpenSans-Semibold.woff') format('woff'),
-   url('../fonts/OpenSans-Semibold.ttf') format('truetype');
+  src: url('../fonts/OpenSans-SemiBold.eot');
+  src: url('../fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+   url('../fonts/OpenSans-SemiBold.woff') format('woff'),
+   url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
  font-weight: normal;
  font-style: normal;
 }
