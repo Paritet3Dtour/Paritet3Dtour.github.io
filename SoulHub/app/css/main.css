@@ -171,6 +171,10 @@ button:focus, a:focus{
 }
 .banner_catalog_info-wrapp{
   width: 60%;
+  opacity: 0;
+}
+.swiper-slide-active .banner_catalog_info-wrapp{
+  opacity: 1;
 }
 .banner_catalog_info-heading{
   display: none;
