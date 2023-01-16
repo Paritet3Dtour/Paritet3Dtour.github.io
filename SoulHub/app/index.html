@@ -40,9 +40,9 @@
       </div>
       <div class="header_menu-wrapp">
         <ul class="header_menu">
-          <li><a href="#faq">наши услуги</a></li>
-          <li><a href="#catalog">наши специалисты</a></li>
-          <li><a href="#footer">запись</a></li>
+          <li><a href="#specialists">Наші послуги</a></li>
+          <li><a href="#catalog">НАШІ ФАХІВЦІ</a></li>
+          <li><a href="#footer">запис</a></li>
         </ul>
         <div class="header_lang">
           UA
@@ -196,7 +196,7 @@
     </div>
   </section>
 
-  <section class="consultation">  
+  <section class="consultation" id="consultation">  
     <div class="mainContainer">
       <div class="consultation_wrapp">
         <div class="consultation_list">
@@ -216,14 +216,14 @@
         <div class="consultation_content">
           <div class="consultation_heading">Потрібна консультація від перевіреного спеціаліста?</div>
           <div class="consultation_descr">Обирайте професіонала та починайте<br> роботу над собою!</div>
-          <a href="#catalog" class="consultation_btn">Знайти фахівця</a>
+          <a href="#quiz" class="consultation_btn">Знайти фахівця</a>
         </div>
       </div>
-      <a href="#catalog" class="consultation_btn mob">Знайти фахівця</a>
+      <a href="#quiz" class="consultation_btn mob">Знайти фахівця</a>
     </div>
   </section>
 
-  <section class="specialists">
+  <section class="specialists" id="specialists">
     <div class="specialists_bgel_one"></div>
     <div class="specialists_bgel_two"></div>
     <div class="mainContainer">
@@ -248,13 +248,13 @@
         </div>
       </div>
       <div class="specialists_info">
-        <div class="specialists_info_heading">Тут люди зі своїми проблемами та життєвими ситуаціями мають<br> змогу підібрати фахівців і працювати з ними у зручному форматі. </div>
-        <div class="specialists_info_descr">Ви можете зустрітися зі спеціалістом особисто, або працювати в режимі онлайн.</div>
+        <div class="specialists_info_heading">Тут люди зі своїми проблемами та життєвими ситуаціями мають<br> змогу підібрати фахівців і працювати з ними у зручний час в форматі он-лайн. </div>
+        <!--<div class="specialists_info_descr">Ви можете зустрітися зі спеціалістом особисто, або працювати в режимі онлайн.</div>-->
       </div>
     </div>
   </section>
 
-  <section class="quiz">  
+  <section class="quiz" id="quiz">  
     <div class="mainContainer">
       <div class="quiz_heading">Нижче виберіть одну або декілька<br> тем, у яких ви хотіли б розібратися.</div>
       <div class="quiz_list_wrapp">
@@ -309,13 +309,13 @@
             <button>Шкідливі звички</button>
             <button>Комплекси внешности</button>
             <button>Статеве виховання</button>
-            <button>Пожилые родители </button>
+            <button>Літні батьки</button>
           </div>
         </div>
       </div>
       </div>
 
-      <a href="#catalog" class="quiz_btn">Переглянути спеціалістів</a>
+      <button class="quiz_btn popup-open-btn">ПІДІБРАТИ СПЕЦІАЛІСТА</button>
     </div>
   </section>
 
@@ -365,7 +365,7 @@
     </div>
   </section>
   
-  <section class="search">
+  <!--<section class="search">
     <div class="search_bgel_one"></div>
     <div class="search_bgel_two"></div>
     <div class="mainContainer">
@@ -394,7 +394,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
 
   <section class="faq" id="faq">
     <div class="faq_bgel"></div>
@@ -445,7 +445,7 @@
       <div class="footer_wrapp">
         <div class="footer_info">
           <div class="footer_info_heading">Вже відповіли вашім заявкам:</div>
-          <div class="footer_info_count">34 678</div>
+          <div class="footer_info_count">762</div>
           <div class="footer_info_descr">Ми завжди йдемо вам на зустріч, бо ми дуже піклуємось за вас.<br> Заповніть форму і ми швидко з вами зв’яжимось</div>
         </div>
         <div class="footer_form">
@@ -453,7 +453,7 @@
             <div class="footer_form_heading">ФОРМА ЗВ’ЯЗКУ</div>
             <form class="form">
               <input type="text" placeholder="ІМ’Я">
-              <input type="text" placeholder="ПОШТА">
+              <!--<input type="text" placeholder="ПОШТА">-->
               <input type="text" placeholder="ТЕЛЕФОН">
               <div class="form_wrapp">
                 <div class="form_info">
@@ -467,7 +467,7 @@
                     </svg>                  
                   </div>
                 </div>
-                <button class="form_info_btn" type="button">ПІДІБРАТИ ПСИХОЛОГА</button>
+                <button class="form_info_btn" type="button">ПІДІБРАТИ СПЕЦІАЛІСТА</button>
               </div>
             </form>
           </div>
@@ -476,9 +476,43 @@
     </div>
   </section>
 
+  <div id="request-popup" class="sli-popup_container click-obj">
+    <div class="sli-popup_background click-item popup-close" data-action="popup-close"></div>
+    <div class="sli-popup sli-request-popup">
+      <button class="sli-popup_close click-item popup-close" data-action="popup-close">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 2.72842L21.2716 0L12 9.27158L2.72842 0L0 2.72842L9.27158 12L0 21.2716L2.72842 24L12 14.7284L21.2716 24L24 21.2716L14.7284 12L24 2.72842Z" fill="black"/>
+        </svg>          
+      </button>
+      <div class="sli-request-popup__content">
+        <div class="sli-request-popup__heading">Заповніть форму</div>
+        <div class="sli-request-popup__descr">і ми підберемо спеціаліста згідно обраних пунктів</div>
+        <form action="">
+          <input type="text" placeholder="ІМ’Я" >
+          <input type="text" placeholder="Телефон" required>
+          <button type="submit">ПІДІБРАТИ СПЕЦІАЛІСТА</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script src="libs/swiperjs/swiper.min.js"></script>
   <script>
+    function utcdate(d){
+      return new Date(d.getFullYear(),d.getMonth(),d.getDate());
+    }
+    function days(a,b){
+      return Math.floor((utcdate(b)-utcdate(a))/86400000);
+    }
+
+    
+    // define starting count and a start date:
+    const count=1000, date0=new Date(2023,12,1); // 1 September 2022
+
+    console.log(1000 + 1*days(date0,new Date()));
+
+
     $('.header_toggler').click(function(){
       $('.header').toggleClass('active')
     });
@@ -489,23 +523,44 @@
       $(this).toggleClass('active')
     });
 
+  if ($(window).width() < 992) {
     let mySwiper = new Swiper('.banner_catalog', {
-    slidesPerView: 1,
-    loop: true,
-    spaceBetween: 0,
-    centeredSlides: true,
-    roundLengths: true,
-    effect: "fade",
-    //autoplay: true,
+      loop: true,
+      roundLengths: true,
+      //autoplay: true,
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 10,
 
-    pagination: {
-      el: ".banner_pagination",
-    },
-    navigation: {
-      nextEl: '.banner_catalog_nav .next',
-      prevEl: '.banner_catalog_nav .prev',
-    },
-  });
+      pagination: {
+        el: ".banner_pagination",
+      },
+      navigation: {
+        nextEl: '.banner_catalog_nav .next',
+        prevEl: '.banner_catalog_nav .prev',
+      },
+    });
+  }
+  else {
+    let mySwiper = new Swiper('.banner_catalog', {
+      loop: true,
+      roundLengths: true,
+      //autoplay: true,
+      slidesPerView: 1,
+      centeredSlides: false,
+      spaceBetween: 0,
+      effect: "fade",
+
+      pagination: {
+        el: ".banner_pagination",
+      },
+      navigation: {
+        nextEl: '.banner_catalog_nav .next',
+        prevEl: '.banner_catalog_nav .prev',
+      },
+    });
+  }
+  
   // for scrolling to anchor
   $('a[href*="#"], button[href*="#"]')
     .not('[href="#"]')
@@ -533,6 +588,14 @@
         }
       }
     });
+
+    $('.popup-open-btn').click(function(){
+      $('.sli-popup_container').addClass('active');
+    })
+
+    $('.popup-close').click(function(){
+      $('.sli-popup_container').removeClass('active');
+    })
   </script>
 
 </body>
