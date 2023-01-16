@@ -3,7 +3,7 @@ html {
 
 body {
   color: #000;
-  font-family: "OpenSans Semibold", Arial, sans-serif;
+  font-family: "Oksana Bold", Arial, sans-serif;
   overflow-x: hidden;
   background-repeat: no-repeat;
   position: relative; }
@@ -13,10 +13,13 @@ body {
           box-sizing: border-box; }
 
 input {
-  font-family: "OpenSans Regular", Arial, sans-serif; }
+  font-family: "Oksana Regular", Arial, sans-serif; }
 
 button:focus, a:focus{
   outline: none;
+}
+button{
+  font-family: "Oksana Bold", Arial, sans-serif;
 }
 
 .mainContainer {
@@ -82,7 +85,6 @@ button:focus, a:focus{
   font-size: 16px;
   line-height: 20px;
   color: #000;
-  font-family: "OpenSans Bold", Arial, sans-serif;
 }
 .header_menu li:last-child a{
   margin-right: 0;
@@ -149,7 +151,6 @@ button:focus, a:focus{
   font-size: 64px;
   line-height: 78px;
   max-width: 890px;
-  font-family: "OpenSans Bold", Arial, sans-serif;
 }
 .banner_descr{
   font-size: 32px;
@@ -319,7 +320,6 @@ button:focus, a:focus{
   padding: 0;
   min-height: 49px;
   padding: 10px 5px;
-  font-family: "OpenSans Bold", Arial, sans-serif;
   display: block;
   color: #000;
 }
@@ -444,7 +444,7 @@ button:focus, a:focus{
   font-size: 24px;
   line-height: 29px;
   margin-bottom: 69px;
-  font-family: "OpenSans Light", Arial, sans-serif;
+  font-family: "Oksana Regular", Arial, sans-serif;
   position: relative;
 }
 .consultation_descr::after{
@@ -468,7 +468,6 @@ button:focus, a:focus{
   padding: 10px 34px;
   font-size: 21px;
   line-height: 29px;
-  font-family: "OpenSans Bold", Arial, sans-serif;
   width: max-content;
   margin: 0 auto;
   display: block;
@@ -665,7 +664,7 @@ button:focus, a:focus{
 .specialists_form_descr{
   font-size: 20px;
   line-height: 24px;
-  font-family: "OpenSans Light", Arial, sans-serif;
+  font-family: "Oksana Regular", Arial, sans-serif;
   margin-bottom: 23px;
 }
 .specialists_form_btn{
@@ -679,7 +678,6 @@ button:focus, a:focus{
   padding: 10px 34px;
   font-size: 21px;
   line-height: 29px;
-  font-family: "OpenSans Bold", Arial, sans-serif;
   width: max-content;
   margin: 0 auto;
   display: block;
@@ -791,7 +789,6 @@ button:focus, a:focus{
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
-  font-family: "OpenSans Bold", Arial, sans-serif;
 }
 .quiz_item_catalog{
   display: flex;
@@ -812,7 +809,6 @@ button:focus, a:focus{
   line-height: 20px;
   border: none;
   margin-right: 14px;
-  font-family: "OpenSans Bold", Arial, sans-serif;
 }
 .quiz_item_catalog button::before{
   content: '';
@@ -857,7 +853,6 @@ button:focus, a:focus{
   padding: 10px 34px;
   font-size: 21px;
   line-height: 29px;
-  font-family: "OpenSans Bold", Arial, sans-serif;
   width: max-content;
   margin: 0 auto;
   display: block;
@@ -963,7 +958,7 @@ button:focus, a:focus{
   text-align: center;
   font-size: 16px;
   line-height: 20px;
-  font-family: "OpenSans Regular", Arial, sans-serif;
+  font-family: "Oksana Regular", Arial, sans-serif;
 }
 .catalog_item_descr p{
   margin-bottom: 14px;
@@ -984,7 +979,6 @@ button:focus, a:focus{
   line-height: 29px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "OpenSans Bold", Arial, sans-serif;
   color: #000;
 }
 @media screen and (min-width: 1200px){
@@ -1042,7 +1036,6 @@ button:focus, a:focus{
   margin-bottom: 32px;
   font-size: 64px;
   line-height: 78px;
-  font-family: "OpenSans Bold", Arial, sans-serif;
 }
 .search_descr{
   margin-bottom: 108px;
@@ -1050,7 +1043,6 @@ button:focus, a:focus{
   line-height: 29px;
   width: 100%;
   max-width: 997px;
-  font-family: "OpenSans Bold", Arial, sans-serif;
 }
 .search_descr span{
   position: relative;
@@ -1113,7 +1105,6 @@ button:focus, a:focus{
   padding: 10px 34px;
   font-size: 21px;
   line-height: 29px;
-  font-family: "OpenSans Bold", Arial, sans-serif;
   width: max-content;
   margin-right: 30px;
   display: block;
@@ -1141,7 +1132,7 @@ button:focus, a:focus{
   line-height: 29px;
 }
 .search_form_info_descr{
-  font-family: "OpenSans Light", Arial, sans-serif;
+  font-family: "Oksana Regular", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -1173,7 +1164,7 @@ button:focus, a:focus{
   max-width: 953px;
 }
 .faq_heading{
-  font-family: "OpenSans Bold", Arial, sans-serif;
+  font-family: "Oksana Bold", Arial, sans-serif;
   margin-bottom: 54px;
   font-size: 64px;
   line-height: 78px;
@@ -1194,7 +1185,7 @@ button:focus, a:focus{
   font-size: 16px;
   line-height: 20px;
   max-width: 516px;
-  font-family: "OpenSans Regular", Arial, sans-serif;
+  font-family: "Oksana Regular", Arial, sans-serif;
 }
 .faq_item_icon{
   margin-right: 43px;
@@ -1225,14 +1216,12 @@ button:focus, a:focus{
   margin-bottom: 20px;
   font-size: 64px;
   line-height: 78px;
-  font-family: "OpenSans Bold", Arial, sans-serif;
 }
 .footer_info_count{
   margin-bottom: 40px;
   font-size: 86px;
   line-height: 105px;
   color: #fff;
-  font-family: "OpenSans Bold", Arial, sans-serif;
   position: relative;
 }
 .footer_info_count::after{
@@ -1248,7 +1237,7 @@ button:focus, a:focus{
 .footer_info_descr{
   font-size: 18px;
   line-height: 22px;
-  font-family: "OpenSans Light", Arial, sans-serif;
+  font-family: "Oksana Regular", Arial, sans-serif;
 }
 .footer_form{
   padding-top: 81px;
@@ -1289,14 +1278,13 @@ button:focus, a:focus{
   padding-left: 30px;
   color: #000;
   font-size: 18px;
-  font-family: "OpenSans Bold", Arial, sans-serif;
   text-transform: uppercase;
   border-radius: 0;
   border: none;
   border-bottom: 1px solid #000;
 }
 .footer_form .form input::placeholder{
-  font-family: "OpenSans Bold", Arial, sans-serif;
+  font-family: "Oksana Bold", Arial, sans-serif;
   color: #1981E1;
 }
 .form_wrapp{
@@ -1324,7 +1312,6 @@ button:focus, a:focus{
 .form_info_heading{
   margin-bottom: 3px;
   font-size: 24px;
-  font-family: "OpenSans Bold", Arial, sans-serif;
   line-height: 29px;
   text-align: right;
 }
@@ -1332,7 +1319,7 @@ button:focus, a:focus{
   font-size: 16px;
   line-height: 20px;
   text-align: right;
-  font-family: "OpenSans Light", Arial, sans-serif;
+  font-family: "Oksana Regular", Arial, sans-serif;
 }
 .form_info_content{
   position: relative;
@@ -1358,7 +1345,6 @@ button:focus, a:focus{
   padding: 10px 34px;
   font-size: 21px;
   line-height: 29px;
-  font-family: "OpenSans Bold", Arial, sans-serif;
   width: max-content;
 }
 @media screen and (min-width: 1200px){
@@ -1463,7 +1449,6 @@ button:focus, a:focus{
   font-size: 25px;
   line-height: 30px;
   color: #000000;
-  font-family: "OpenSans Bold", Arial, sans-serif;
 }
 .sli-request-popup__descr{
   text-align: center;
@@ -1484,14 +1469,14 @@ button:focus, a:focus{
   width: 100%;
   padding-left: 30px;
   color: #000;
-  font-family: "OpenSans Bold", Arial, sans-serif;
+  font-family: "Oksana Bold", Arial, sans-serif;
   text-transform: uppercase;
   border-radius: 0;
   border: none;
   border-bottom: 1px solid #000;
 }
 .sli-request-popup__content form input::placeholder{
-  font-family: "OpenSans Bold", Arial, sans-serif;
+  font-family: "Oksana Bold", Arial, sans-serif;
   color: #1981E1;
 }
 .sli-request-popup__content form button[type="submit"] {
@@ -1505,7 +1490,7 @@ button:focus, a:focus{
   padding: 10px 34px;
   font-size: 17px;
   line-height: 29px;
-  font-family: "OpenSans Bold", Arial, sans-serif;
+  font-family: "Oksana Bold", Arial, sans-serif;
   width: max-content;
   margin: 0 auto;
   display: block;
@@ -1555,7 +1540,7 @@ button:focus, a:focus{
     line-height: 34px;
   }
   .banner_catalog_info{
-    padding: 43px 25px 23px 20px;
+    padding: 43px 15px 23px 20px;
   }
   .banner_catalog_info li{
     font-size: 14px;
@@ -1981,7 +1966,7 @@ button:focus, a:focus{
     line-height: 53px;
   }
   .form_info_content{
-    width: 116px;
+    width: 123px;
     margin-right: 10px;
   }
   .form_info_btn{
@@ -2356,7 +2341,10 @@ button:focus, a:focus{
     display: none;
   }
   .specialists_item:last-child{
-    display: none;
+    margin-bottom: 0;
+  }
+  .specialists_info_heading{
+    margin-bottom: 0;
   }
   .specialists::after{
     display: none;  
@@ -2780,7 +2768,7 @@ button:focus, a:focus{
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 340px;
+    top: 230px;
     height: auto;
     bottom: auto !important;
     z-index: 10;
@@ -2853,6 +2841,7 @@ button:focus, a:focus{
     display: block;
     margin: 0 auto;
     margin-bottom: 10px;
+    display: none;
   }
   .banner_catalog_item{
     width: 95% !important;
@@ -2885,5 +2874,11 @@ button:focus, a:focus{
   }
   .sli-request-popup{
     border-radius: 10px;
+  }
+  .specialists_heading{
+    max-width: 267px;
+  }
+  .blockquote_item{
+    font-size: 13px;
   }
 }
