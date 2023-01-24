@@ -2884,7 +2884,7 @@ button{
   
 }
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 520px) and (min-width: 359px){
   .header_wrapp{
     padding: 37px 5px 20px 14px;
   }
@@ -3256,9 +3256,28 @@ button{
   }
   .footer_form .form input{
     margin-bottom: 13px;
+    font-size: 12px;
   }
   .form_info_btn{
     font-size: 16px;
     padding: 9px 45px
+  }
+  .sli-request-popup__heading{
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .sli-request-popup__descr{
+    font-size: 15px;
+    line-height: 20px;
+    max-width: 230px;
+    margin-bottom: 10px;
+  }
+  .sli-request-popup__content form input{
+    font-size: 12px;
+  }
+  .sli-request-popup__content form button[type="submit"]{
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 30px;
   }
 }
