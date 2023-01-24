@@ -3220,4 +3220,45 @@ button{
     width: 39px;
     height: 39px;
   }
+  .footer_info{
+    padding: 64px 0 98px;
+  }
+  .footer_info_heading{
+    font-size: 30px;
+    line-height: 34px;
+    padding-left: 0.6%;
+    margin-bottom: 30px;
+  }
+  .footer_info_count{
+    margin-bottom: 52px;
+    font-size: 60px;
+    padding-left: 2%;
+  }
+  .footer_info_count::after{
+    left: 6px;
+    bottom: -21px;
+  }
+  .footer_info_descr{
+    font-size: 17px;
+    line-height: 20px;
+    padding-left: 1.9%;
+  }
+  .footer_form{
+    padding-top: 62px;
+    padding-bottom: 110px;
+  }
+  .footer_form_heading{
+    margin-bottom: 17px;
+    font-size: 30px;
+    line-height: 34px;
+    padding-left: 0.6%;
+    text-transform: none;
+  }
+  .footer_form .form input{
+    margin-bottom: 13px;
+  }
+  .form_info_btn{
+    font-size: 16px;
+    padding: 9px 45px
+  }
 }
