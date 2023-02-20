@@ -1,0 +1,36 @@
+
+@font-face {
+  font-family: 'BasisGrotesquePro Light';
+  src: url('../fonts/BasisGrotesquePro-Light.eot');
+  src: url('../fonts/BasisGrotesquePro-Light.eot?#iefix') format('embedded-opentype'),
+   url('../fonts/BasisGrotesquePro-Light.woff') format('woff'),
+   url('../fonts/BasisGrotesquePro-Light.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+  font-family: 'BasisGrotesquePro Regular';
+  src: url('../fonts/BasisGrotesquePro-Regular.eot');
+  src: url('../fonts/BasisGrotesquePro-Regular.eot?#iefix') format('embedded-opentype'),
+   url('../fonts/BasisGrotesquePro-Regular.woff') format('woff'),
+   url('../fonts/BasisGrotesquePro-Regular.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+  font-family: 'BasisGrotesquePro Bold';
+  src: url('../fonts/BasisGrotesquePro-Bold.eot');
+  src: url('../fonts/BasisGrotesquePro-Bold.eot?#iefix') format('embedded-opentype'),
+   url('../fonts/BasisGrotesquePro-Bold.woff') format('woff'),
+   url('../fonts/BasisGrotesquePro-Bold.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+  font-family: 'CormorantInfant Regular';
+  src: url('../fonts/Cormorantinfant.woff') format('woff'),
+   url('../fonts/Cormorantinfant.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}

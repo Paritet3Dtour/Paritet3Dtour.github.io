@@ -7,12 +7,38 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta http-equiv="content_language" content="ru">
   <meta name="description" content="SoulHub">
-  <link rel="icon" type="image/x-icon" href="img/rocket-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <title>SoulHub</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="libs/swiperjs/swiper.min.css">
-  <link rel="stylesheet" href="css/main.css"> 
+  <link rel="stylesheet" href="css/main.css">
+
+
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1257401441540569');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1257401441540569&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 </head> 
  
 <body>
@@ -87,7 +113,7 @@
                 </li>
                 <li>Відновити відносини з батьками
                 </li>
-                <li>Вийти із дипрессії </li>
+                <li>Вийти із депресії </li>
                 <li>та багато іншого! 
                 </li>
               </ul>
@@ -96,12 +122,12 @@
           <div class="banner_catalog_specialist">
             <div class="banner_catalog_specialist_user">
               <div class="banner_catalog_specialist_avatar" style="background-image: url('img/specialist1.jpg');"></div>
-              <div class="banner_catalog_specialist_name">психолог</div>
+              <div class="banner_catalog_specialist_name">Іванна</div>
             </div>
             <div class="banner_catalog_specialist_info">
-              <div class="banner_catalog_specialist_heading">ПІДІБРАТИ<br> ПСИХОЛОГА, </div>
+              <div class="banner_catalog_specialist_heading">КОНСУЛЬТАЦІЯ<br> ПСИХОТЕРАПЕВТА</div>
               <div class="banner_catalog_specialist_descr">ЩО ПРАЦЬЮЄ З ВАШИМ<br> ЗАПИТОМ</div>
-              <a class="banner_catalog_specialist_btn" href="#catalog">ПІДІБРАТИ ПСИХОЛОГА</a>
+              <button class="banner_catalog_specialist_btn popup-open-btn">ОТРИМАТИ КОНСУЛЬТАЦІЮ</button>
             </div>
           </div>
           <div class="banner_catalog_nav">
@@ -122,26 +148,33 @@
         <div class="banner_catalog_info-wrapp">
           <div class="banner_catalog_info-heading">ВИ ЗМОЖЕТЕ:</div>
           <ul class="banner_catalog_info">
-            <li>Впоратися із тривогою і стресом2</li>
-            <li>Відчувати радість та впевненість у собі2</li>
-            <li>Повернути єнергію та мотивацію2</li>
-            <li>Відновити відносини з батьками2</li>
-            <li>Налагодити стосунки у парі2</li>
-            <li>Вийти із дипрессії2</li>
-            <li>Позбутися залежностей2 </li>
-            <li>та багато іншого!2 </li>
+            <li>Впоратися із тривогою і стресом
+            </li>
+            <li>Повернути єнергію та мотивацію
+            </li>
+            <li>Налагодити стосунки у парі
+            </li>
+            <li>Позбутися залежностей 
+            </li>
+            <li>Відчути впевненість у собі
+            </li>
+            <li>Відновити відносини з батьками
+            </li>
+            <li>Вийти із депресії </li>
+            <li>та багато іншого! 
+            </li>
           </ul>
         </div>
         <div class="banner_catalog_specialists">
           <div class="banner_catalog_specialist">
             <div class="banner_catalog_specialist_user">
-              <div class="banner_catalog_specialist_avatar" style="background-image: url('img/catalog-avatar2.jpg');"></div>
-              <div class="banner_catalog_specialist_name">Сексолог</div>
+              <div class="banner_catalog_specialist_avatar" style="background-image: url('img/specialist2.jpeg');"></div>
+              <div class="banner_catalog_specialist_name">Дмитро</div>
             </div>
             <div class="banner_catalog_specialist_info">
-              <div class="banner_catalog_specialist_heading">ПІДІБРАТИ<br> Сексолога, </div>
+              <div class="banner_catalog_specialist_heading">КОНСУЛЬТАЦІЯ<br> ПСИХОТЕРАПЕВТА</div>
               <div class="banner_catalog_specialist_descr">ЩО ПРАЦЬЮЄ З ВАШИМ<br> ЗАПИТОМ</div>
-              <a class="banner_catalog_specialist_btn" href="#catalog">ПІДІБРАТИ Сексолога</a>
+              <button class="banner_catalog_specialist_btn popup-open-btn">ОТРИМАТИ КОНСУЛЬТАЦІЮ</button>
             </div>
           </div>
           <div class="banner_catalog_nav">
@@ -162,26 +195,81 @@
         <div class="banner_catalog_info-wrapp">
           <div class="banner_catalog_info-heading">ВИ ЗМОЖЕТЕ:</div>
           <ul class="banner_catalog_info">
-            <li>Впоратися із тривогою і стресом3</li>
-            <li>Відчувати радість та впевненість у собі3</li>
-            <li>Повернути єнергію та мотивацію3</li>
-            <li>Відновити відносини з батьками3</li>
-            <li>Налагодити стосунки у парі3</li>
-            <li>Вийти із дипрессії3</li>
-            <li>Позбутися залежностей3 </li>
-            <li>та багато іншого!3 </li>
+            <li>Впоратися із тривогою і стресом
+            </li>
+            <li>Повернути єнергію та мотивацію
+            </li>
+            <li>Налагодити стосунки у парі
+            </li>
+            <li>Позбутися залежностей 
+            </li>
+            <li>Відчути впевненість у собі
+            </li>
+            <li>Відновити відносини з батьками
+            </li>
+            <li>Вийти із депресії </li>
+            <li>та багато іншого! 
+            </li>
           </ul>
         </div>
         <div class="banner_catalog_specialists">
           <div class="banner_catalog_specialist">
             <div class="banner_catalog_specialist_user">
-              <div class="banner_catalog_specialist_avatar" style="background-image: url('img/catalog-avatar3.jpg');"></div>
-              <div class="banner_catalog_specialist_name">Коуч</div>
+              <div class="banner_catalog_specialist_avatar" style="background-image: url('img/specialist3.jpg');"></div>
+              <div class="banner_catalog_specialist_name">Олег</div>
             </div>
             <div class="banner_catalog_specialist_info">
-              <div class="banner_catalog_specialist_heading">ПІДІБРАТИ<br> Коуча, </div>
+              <div class="banner_catalog_specialist_heading">КОНСУЛЬТАЦІЯ<br> ПСИХОТЕРАПЕВТА</div>
               <div class="banner_catalog_specialist_descr">ЩО ПРАЦЬЮЄ З ВАШИМ<br> ЗАПИТОМ</div>
-              <a class="banner_catalog_specialist_btn" href="#catalog">ПІДІБРАТИ Коуча</a>
+              <button class="banner_catalog_specialist_btn popup-open-btn">ОТРИМАТИ КОНСУЛЬТАЦІЮ</button>
+            </div>
+          </div>
+          <div class="banner_catalog_nav">
+            <button class="prev">
+              <svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.98551 0.181293C8.10145 0.0604544 8.24638 3.53087e-05 8.4058 3.53231e-05C8.56522 3.53375e-05 8.71015 0.0604544 8.82609 0.181293C9.05797 0.422969 9.05797 0.815694 8.82609 1.05737L1.43478 8.76082L8.82609 16.4643C9.05797 16.7059 9.05797 17.0987 8.82609 17.3403C8.5942 17.582 8.21739 17.582 7.98551 17.3403L0.173913 9.19886C-0.0579707 8.95718 -0.0579707 8.56446 0.173913 8.32278L7.98551 0.181293Z" fill="black"/>
+              </svg>                
+            </button>
+            <button class="next">
+              <svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.01449 17.3403C0.898551 17.4612 0.753623 17.5216 0.594203 17.5216C0.434783 17.5216 0.289855 17.4612 0.173913 17.3403C-0.057971 17.0986 -0.057971 16.7059 0.173913 16.4642L7.56522 8.76079L0.173913 1.05734C-0.057971 0.815659 -0.057971 0.422934 0.173913 0.181258C0.405797 -0.0604192 0.782609 -0.0604192 1.01449 0.181258L8.82609 8.32275C9.05797 8.56442 9.05797 8.95715 8.82609 9.19883L1.01449 17.3403Z" fill="black"/>
+              </svg>                
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner_catalog_item swiper-slide">
+        <div class="banner_catalog_info-wrapp">
+          <div class="banner_catalog_info-heading">ВИ ЗМОЖЕТЕ:</div>
+          <ul class="banner_catalog_info">
+            <li>Впоратися із тривогою і стресом
+            </li>
+            <li>Повернути єнергію та мотивацію
+            </li>
+            <li>Налагодити стосунки у парі
+            </li>
+            <li>Позбутися залежностей 
+            </li>
+            <li>Відчути впевненість у собі
+            </li>
+            <li>Відновити відносини з батьками
+            </li>
+            <li>Вийти із депресії </li>
+            <li>та багато іншого! 
+            </li>
+          </ul>
+        </div>
+        <div class="banner_catalog_specialists">
+          <div class="banner_catalog_specialist">
+            <div class="banner_catalog_specialist_user">
+              <div class="banner_catalog_specialist_avatar" style="background-image: url('img/specialist4.jpg');"></div>
+              <div class="banner_catalog_specialist_name">Олеся</div>
+            </div>
+            <div class="banner_catalog_specialist_info">
+              <div class="banner_catalog_specialist_heading">КОНСУЛЬТАЦІЯ<br> ПСИХОТЕРАПЕВТА</div>
+              <div class="banner_catalog_specialist_descr">ЩО ПРАЦЬЮЄ З ВАШИМ<br> ЗАПИТОМ</div>
+              <button class="banner_catalog_specialist_btn popup-open-btn">ОТРИМАТИ КОНСУЛЬТАЦІЮ</button>
             </div>
           </div>
           <div class="banner_catalog_nav">
@@ -208,7 +296,7 @@
       <div class="consultation_wrapp">
         <div class="consultation_list">
           <div class="consultation_item">
-            ОНСУЛЬТАЦІЯ ПСИХОЛОГА /ПСИХОТЕРАПЕВТА
+            КОНСУЛЬТАЦІЯ ПСИХОЛОГА /ПСИХОТЕРАПЕВТА
           </div>
           <div class="consultation_item">
             СІМЕЙНА ПСИХОЛОГІЯ ДЛЯ ПОДРУЖЖІВ ТА ПАР
@@ -272,7 +360,7 @@
           <div class="quiz_item_heading">Здоров'я</div>
           <div class="quiz_item_catalog">
             <button>Здоров'я</button>
-            <button class="active">Тривога</button>
+            <button>Тривога</button>
             <button>Самореалізація</button>
             <button>Панічні Атаки</button>
             <button>Депресія</button>
@@ -287,8 +375,7 @@
           <div class="quiz_item_catalog">
             <button>Прокрастинація</button>
             <button>Перевтома</button>
-            <button>Втома та відсутність сил</button>
-            <button class="active">Грощі та достаток</button>
+            <button>Гроші та достаток</button>
             <button>Кар'єра</button>
             <button>Відносини на роботі</button>
           </div>
@@ -299,16 +386,16 @@
           <div class="quiz_item_heading">відносини</div>
           <div class="quiz_item_catalog">
             <button>Любовний трикутник</button>
-            <button class="active">Сімейні стосунки</button>
+            <button>Сімейні стосунки</button>
             <button>Дружба</button>
-            <button class="active">любовні стосунки</button>
+            <button>любовні стосунки</button>
           </div>
         </div>
         <div class="quiz_item">
           <div class="quiz_item_heading">психологічний стан</div>
           <div class="quiz_item_catalog">
             <button>Страхи</button>
-            <button class="active">Стосунки з батьками</button>
+            <button>Стосунки з батьками</button>
             <button>Відчуття самотності</button>
             <button>Сенс життя</button>
             <button>Стосунки з дітьми</button>
@@ -343,34 +430,104 @@
     <div class="catalog_bgelement"></div>
     <div class="mainContainer">
       <div class="catalog_heading">НАШІ СПЕЦІАЛІСТИ:</div>
-      <div class="catalog_list">
-        <div class="catalog_item">
-          <div class="catalog_item_avatar" style="background-image: url('img/catalog-avatar1.jpg');"></div>
-          <div class="catalog_item_heading">Психолог - психотерапевт</div>
+      <div class="catalog-container">
+      <div class="catalog_nav">
+        <button class="prev">
+          <svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.98551 0.181293C8.10145 0.0604544 8.24638 3.53087e-05 8.4058 3.53231e-05C8.56522 3.53375e-05 8.71015 0.0604544 8.82609 0.181293C9.05797 0.422969 9.05797 0.815694 8.82609 1.05737L1.43478 8.76082L8.82609 16.4643C9.05797 16.7059 9.05797 17.0987 8.82609 17.3403C8.5942 17.582 8.21739 17.582 7.98551 17.3403L0.173913 9.19886C-0.0579707 8.95718 -0.0579707 8.56446 0.173913 8.32278L7.98551 0.181293Z" fill="black"/>
+          </svg>                
+        </button>
+        <button class="next">
+          <svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.01449 17.3403C0.898551 17.4612 0.753623 17.5216 0.594203 17.5216C0.434783 17.5216 0.289855 17.4612 0.173913 17.3403C-0.057971 17.0986 -0.057971 16.7059 0.173913 16.4642L7.56522 8.76079L0.173913 1.05734C-0.057971 0.815659 -0.057971 0.422934 0.173913 0.181258C0.405797 -0.0604192 0.782609 -0.0604192 1.01449 0.181258L8.82609 8.32275C9.05797 8.56442 9.05797 8.95715 8.82609 9.19883L1.01449 17.3403Z" fill="black"/>
+          </svg>                
+        </button>
+      </div>
+      <div class="catalog-slider swiper-container">
+        <div class="catalog_pagination"></div>
+      <div class="catalog_list swiper-wrapper">
+        <div class="catalog_item swiper-slide">
+          <div class="catalog_item_avatar" style="background-image: url('img/specialist1.jpg');"></div>
+          <div class="catalog_item_heading">Іванна Скічко</div>
           <div class="catalog_item_descr">
-            <p>Працює із психологічними проблемами здорових людей. </p>
-            <p>Проблеми у сімʼї, роботі, занадто важкі переживання тощо...</p>
-            <p>Допомагає усвідомити причини вашої поведінки, закрити дитячі травми, налагодити стосунки з батьками та партнером, гармонійно завершити важкі стосунки.</p>
+            <p class="name"><b class="name-val">Психолог, Гештальт-терапевт</b>,</p>
+            <p><b>33-роки</b> </p>
+            <p><b>Професійний стаж: 10 років</b></p>
+            <div class="spec-head"><b>Спеціалізація:</b></div>
+            <ul>
+              <li>Гештальт-терапія залежної поведінки;</li>
+              <li>Клінічний підхід в гештальт-терапії;</li>
+              <li>Екзистенційна криза;</li>
+              <li>Міжособистісні стосунки, токсичні стосунки, близькість і відносини;</li>
+              <li>Робота з травмою насилля (психологічний, фізичний, сексуальний абьюз);</li>
+              <li>Проживання втрати, горювання;</li>
+              <li>Тривожні кризові стани;</li>
+              <li>Питання ідентичності і самореалізації;</li>
+              <li>Депресія, панічні атаки;</li>
+            </ul>
           </div>
-          <a href="#footer" class="catalog_item_button">Консультація<br> ПСИХОЛОГА</a>
+          <button class="catalog_item_button popup-open-btn">Отримати<br> Консультацію</button>
         </div>
-        <div class="catalog_item">
-          <div class="catalog_item_avatar" style="background-image: url('img/catalog-avatar2.jpg');"></div>
-          <div class="catalog_item_heading">Сексолог</div>
+        <div class="catalog_item swiper-slide">
+          <div class="catalog_item_avatar" style="background-image: url('img/specialist2.jpeg');"></div>
+          <div class="catalog_item_heading">Дмитро Блейчук</div>
           <div class="catalog_item_descr">
-            <p>Сексолог – це психолог, що спеціалізується на труднощах у сексуальній сфері. Цей фахівець знає як гармонізувати сексуальне життя.</p>
+            <p class="name"><b class="name-val">Гештальт-терапевт</b>,</p>
+            <p><b>45-років</b></p>
+            <p><b>Професійний стаж: 7 років</b></p>
+            <div class="spec-head"><b>Спеціалізація:</b></div>
+            <ul>
+              <li>Сімейні відносини;</li>
+              <li>Складності батьківства;</li>
+              <li>Проживання сімейних криз;</li>
+              <li>Адаптація та підтримка при розлученнях;</li>
+              <li>Любовна та емоційна залежності;</li>
+              <li>Криза особистості (Пошук сенсу життя);</li>
+            </ul>
           </div>
-          <a href="#footer" class="catalog_item_button">Консультація<br> cексолога</a>
+          <button class="catalog_item_button popup-open-btn">Отримати<br> Консультацію</button>
         </div>
-        <div class="catalog_item">
-          <div class="catalog_item_avatar" style="background-image: url('img/catalog-avatar3.jpg');"></div>
-          <div class="catalog_item_heading">Коуч</div>
+        <div class="catalog_item swiper-slide">
+          <div class="catalog_item_avatar" style="background-image: url('img/specialist3.jpg');"></div>
+          <div class="catalog_item_heading">Товкач Олег</div>
           <div class="catalog_item_descr">
-            <p>Коуч – спеціаліст, який працює з цілями, мріями та діями, що стосуються майбутнього. Допоможе віднайти енергію та направити її в потрібне русло.</p>
+            <p class="name"><b class="name-val">Гештальт-терапевт</b>,</p>
+            <p><b>32-роки</b></p>
+            <p><b>Професійний стаж: 5 років</b></p>
+            <div class="spec-head"><b>Спеціалізація:</b></div>
+            <ul>
+              <li>Терапія залежної поведінки;</li>
+              <li>Зміна роду діяльності та пошук своєї ідентичності;</li>
+              <li>Особисті кордони та агрессія;</li>
+              <li>Відносини в парі;</li>
+              <li>Любовна та емоційна залежності;</li>
+              <li>Криза особистості (Пошук сенсу життя);</li>
+              <li>Консультування організацій та власників бізнесу;</li>
+            </ul>
           </div>
-          <a href="#footer" class="catalog_item_button">Консультація<br> коуча</a>
+          <button class="catalog_item_button popup-open-btn">Отримати<br> Консультацію</button>
+        </div>
+
+        <div class="catalog_item swiper-slide">
+          <div class="catalog_item_avatar" style="background-image: url('img/specialist4.jpg');"></div>
+          <div class="catalog_item_heading">Божко Олеся</div>
+          <div class="catalog_item_descr">
+            <p class="name"><b class="name-val">ВОППГП, Гештальт-терапевт</b>,</p>
+            <p><b>25-років</b></p>
+            <p><b>Професійний стаж: 4 роки</b></p>
+            <div class="spec-head"><b>Спеціалізація:</b></div>
+            <ul>
+              <li>Кризи та травми;</li>
+              <li>Робота з залежностями в Гештальт підході;</li>
+              <li>Робота із співзалежною поведінкою;</li>
+              <li>Клінічний підхід в гештальт терапії;</li>
+            </ul>
+          </div>
+          <button class="catalog_item_button popup-open-btn">Отримати<br> Консультацію</button>
         </div>
       </div>
+    </div>
+  </div>
     </div>
   </section>
   
@@ -429,7 +586,7 @@
               </svg>            
             </div>
             <div class="faq_item_content">
-              <div class="faq_item_heading">Індивідуальний супровід.</div>
+              <div class="faq_item_heading">Індивідуальний супровід</div>
               <div class="faq_item_descr">Ви отримаєте наставника, який нагадуватиме вам про сесію, якщо ви забули, а також помічатиме консультації у вашому календарі.</div>
             </div>
           </div>
@@ -440,7 +597,7 @@
               </svg>            
             </div>
             <div class="faq_item_content">
-              <div class="faq_item_heading">Безпечні консультації.</div>
+              <div class="faq_item_heading">Безпечні консультації</div>
               <div class="faq_item_descr">Всі ваші розмови зі спеціалістом суворо засекречені та ніхто не має доступу до цієї інформації.</div>
             </div>
           </div>
@@ -453,17 +610,17 @@
     <div class="mainContainer">
       <div class="footer_wrapp">
         <div class="footer_info">
-          <div class="footer_info_heading">Вже відповіли вашім заявкам:</div>
+          <div class="footer_info_heading">Відповідей на ваші заявки:</div>
           <div class="footer_info_count">762</div>
-          <div class="footer_info_descr">Ми завжди йдемо вам на зустріч, бо ми дуже піклуємось за вас.<br> Заповніть форму і ми швидко з вами зв’яжимось</div>
+          <div class="footer_info_descr">Ми завжди йдемо вам на зустріч, бо дуже піклуємось про вас.<br> Заповніть форму і ми швидко з вами зв’яжемось</div>
         </div>
         <div class="footer_form">
           <div class="footer_form_wrapp">
             <div class="footer_form_heading">ФОРМА ЗВ’ЯЗКУ</div>
-            <form class="form">
-              <input type="text" placeholder="ІМ’Я">
-              <!--<input type="text" placeholder="ПОШТА">-->
-              <input type="text" placeholder="ТЕЛЕФОН">
+            <form class="form" id="request-form2">
+              <input type="text" name="Name" placeholder="ІМ’Я">
+              <input type="text" class="phone" name="Phone" placeholder="ТЕЛЕФОН" required>
+              <input type="hidden" name="Categories">
               <div class="form_wrapp">
                 <div class="form_info">
                   <div class="form_info_content">
@@ -476,9 +633,13 @@
                     </svg>                  
                   </div>
                 </div>
-                <button class="form_info_btn" type="button">ПІДІБРАТИ СПЕЦІАЛІСТА</button>
+                <button class="form_info_btn" type="submit">ПІДІБРАТИ СПЕЦІАЛІСТА</button>
               </div>
             </form>
+          </div>
+          <div class="footer-request-ty">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M4.19632 10.2058C4.04557 10.2058 3.89481 10.1481 3.77996 10.0333L0.172757 6.42595C-0.0575858 6.19571 -0.0575858 5.82345 0.172757 5.59322C0.402993 5.36298 0.775144 5.36298 1.00549 5.59322L4.19632 8.78406L10.9946 1.98591C11.2248 1.75567 11.597 1.75567 11.8273 1.98591C12.0575 2.21625 12.0575 2.5884 11.8273 2.81875L4.6128 10.0333C4.49795 10.1481 4.34708 10.2058 4.19632 10.2058Z" fill="#048225"></path> </svg>
+            <p>Дякуємо, ваше звернення успішно надіслано.</p>
           </div>
         </div>
       </div>
@@ -494,18 +655,28 @@
         </svg>          
       </button>
       <div class="sli-request-popup__content">
-        <div class="sli-request-popup__heading">Заповніть форму</div>
-        <div class="sli-request-popup__descr">і ми підберемо спеціаліста згідно обраних пунктів</div>
-        <form action="">
-          <input type="text" placeholder="ІМ’Я" >
-          <input type="text" placeholder="Телефон" required>
-          <button type="submit">ПІДІБРАТИ СПЕЦІАЛІСТА</button>
-        </form>
+        <div class="popup-request-main">
+          <div class="sli-request-popup__heading">Заповніть форму</div>
+          <div class="sli-request-popup__descr p1">і ми підберемо спеціаліста згідно обраних пунктів</div>
+          <div class="sli-request-popup__descr p2 hidden">і ми зв'яжемося з вами найближчим часом.</div>
+          <form  id="request-form">
+            <input type="text" name="Name" placeholder="ІМ’Я">
+            <input type="text" class="phone" name="Phone" placeholder="Телефон" required>
+            <input type="hidden" name="Categories">
+            <input type="hidden" name="Specialist">
+            <button type="submit">ПІДІБРАТИ СПЕЦІАЛІСТА</button>
+          </form>
+        </div>
+        <div class="popup-request-ty">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M4.19632 10.2058C4.04557 10.2058 3.89481 10.1481 3.77996 10.0333L0.172757 6.42595C-0.0575858 6.19571 -0.0575858 5.82345 0.172757 5.59322C0.402993 5.36298 0.775144 5.36298 1.00549 5.59322L4.19632 8.78406L10.9946 1.98591C11.2248 1.75567 11.597 1.75567 11.8273 1.98591C12.0575 2.21625 12.0575 2.5884 11.8273 2.81875L4.6128 10.0333C4.49795 10.1481 4.34708 10.2058 4.19632 10.2058Z" fill="#048225"></path> </svg>
+          <p>Дякуємо, ваше звернення успішно надіслано.</p>
+        </div>
       </div>
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="js/jquery.inputmask.bundle.min.js"></script>
   <script src="libs/swiperjs/swiper.min.js"></script>
   <script>
     function utcdate(d){
@@ -559,6 +730,7 @@
       centeredSlides: false,
       spaceBetween: 0,
       effect: "fade",
+      allowTouchMove: false,
 
       pagination: {
         el: ".banner_pagination",
@@ -566,6 +738,40 @@
       navigation: {
         nextEl: '.banner_catalog_nav .next',
         prevEl: '.banner_catalog_nav .prev',
+      },
+    });
+  }
+  if ($(window).width() < 992) {
+    let catalogSwiper = new Swiper('.catalog-slider', {
+      loop: true,
+      roundLengths: true,
+      //autoplay: true,
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 10,
+
+      pagination: {
+        el: ".catalog_pagination",
+      },
+      navigation: {
+        nextEl: '.catalog_nav .next',
+        prevEl: '.catalog_nav .prev',
+      },
+    });
+  }else{
+    let catalogSwiper = new Swiper('.catalog-slider', {
+      loop: true,
+      //autoplay: true,
+      slidesPerView: 3,
+      spaceBetween: 30,
+      allowTouchMove: false,
+
+      pagination: {
+        el: ".catalog_pagination",
+      },
+      navigation: {
+        nextEl: '.catalog_nav .next',
+        prevEl: '.catalog_nav .prev',
       },
     });
   }
@@ -605,6 +811,67 @@
     $('.popup-close').click(function(){
       $('.sli-popup_container').removeClass('active');
     })
+    
+    $('input.phone').inputmask('+389999999999', {
+      "clearIncomplete": true
+    });
+
+    $('.banner_catalog_specialist_btn').click(function(){
+      $('.sli-request-popup__descr.p1').addClass('hidden');
+      $('.sli-request-popup__descr.p2').removeClass('hidden');
+      $("#request-form button").text($(this).text());
+      $('input[name="Specialist"]').val($(this).closest('.banner_catalog_specialist').find('.banner_catalog_specialist_name').text());
+    });
+    $('.catalog_item_button').click(function(){
+      $('.sli-request-popup__descr.p1').addClass('hidden');
+      $('.sli-request-popup__descr.p2').removeClass('hidden');
+      $("#request-form button").text($(this).text());
+      $('input[name="Specialist"]').val($(this).closest('.catalog_item').find('.catalog_item_heading').text());
+    });
+    $('.quiz_btn').click(function(){
+      $('.sli-request-popup__descr.p2').addClass('hidden');
+      $('.sli-request-popup__descr.p1').removeClass('hidden');
+      $("#request-form button").text($(this).text());
+      $('input[name="Specialist"]').val('');
+    });
+
+    $(document).ready(function () {
+      $("#request-form").submit(function (e) { 
+        e.preventDefault();
+        let itemsArray = [];
+        $('.quiz_item_catalog button.active').each(function() {
+          itemsArray.push($(this).text())
+        });
+        $('input[name="Categories"]').val(itemsArray);
+        var th = $(this);
+        $.ajax({
+          type: "POST",
+          url: "mail.php",
+          data: th.serialize()
+        }).done(function () {
+          $('#request-popup').addClass('success');
+        });
+        return false;
+      });
+
+      $("#request-form2").submit(function (e) { 
+        e.preventDefault();
+        let itemsArray = [];
+        $('.quiz_item_catalog button.active').each(function() {
+          itemsArray.push($(this).text())
+        });
+        $('input[name="Categories"]').val(itemsArray);
+        var th = $(this);
+        $.ajax({
+          type: "POST",
+          url: "mail.php",
+          data: th.serialize()
+        }).done(function () {
+          $('.footer_form').addClass('success');
+        });
+        return false;
+      });
+    });
   </script>
 
 </body>
