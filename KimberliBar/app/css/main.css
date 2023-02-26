@@ -1380,12 +1380,13 @@ button{
   transition: all 0.6s ease-in-out; }
 
 .sli-popup_close {
+  padding: 0;
   position: absolute;
   cursor: pointer;
   transition: all 0.2s ease-in-out; }
-  .popup_close img {
+  .popup_close svg {
     width: 24px;
-    height: auto; }
+    height: 24px; }
 
 .sli-request-popup{
   background: #1C356E;
@@ -1405,6 +1406,7 @@ button{
   width: 63px;
   height: 63px;
   transition: all 0.2s;
+  padding: 0;
 }
 .sli-popup_close svg path{
   transition: all 0.2s;
@@ -2183,7 +2185,7 @@ button{
   }
   .consultations{
     padding-top: 80px;
-    min-height: 1383px;
+    min-height: 1283px;
   }
   .consultations_heading{
     margin-bottom: 24px;
@@ -2209,45 +2211,45 @@ button{
     height: 186px;
     margin-left: -195px;
     transform: translateX(39px);
-    top: 584px;
+    top: 614px;
   }
   .consultations .bg_elements .bgel:nth-child(2){
     width: 159px;
     height: 202px;
-    top: 711px;
+    top: 741px;
     margin-left: -79px;
     transform: translateX(82px);
   }
   .consultations .bg_elements .bgel:nth-child(3){
     width: 213px;
     height: 202px;
-    top: 848px;
+    top: 878px;
     margin-left: -106px;
     transform: translateX(-86px);
   }
   .consultations .bg_elements .bgel:nth-child(4){
     width: 159px;
     height: 202px;
-    top: 1100px;
+    top: 1130px;
     margin-left: -79px;
     transform: translateX(-86px);
   }
   .consultations .bg_elements .bgel:nth-child(5){
     width: 237px;
     height: 186px;
-    top: 1037px;
+    top: 1067px;
     margin-left: -118px;
     transform: translateX(160px);
   }
   .consultations .bgel img {
-    width: calc(100% + 10px);
-    height: calc(100% + 10px);
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
   }
   .consultations .bg_elements .bgel{
-    margin-top: 0 !important;
+    /*margin-top: 0 !important;*/
   }
   .consultations .bg_elements .bgel img{
-    margin-top: 0 !important;
+    /*margin-top: 0 !important;*/
   }
   .pickup .mainContainer{
     padding-left: 24px;
@@ -2381,9 +2383,6 @@ button{
     height: 40px;
     top: 24px;
     right: 24px;
-  }
-  .sli-popup_close svg{
-    width: 24px;
   }
   .sli-request-popup{
     justify-content: flex-start;
@@ -2549,7 +2548,8 @@ button{
     width: 100%;
   }
   .location_heading span{
-    margin-top: -77px;
+    margin-top: 4px;
+    margin-bottom: 8px;
   }
   .catalog_nav_btn{
     height: 52px;
@@ -2568,6 +2568,15 @@ button{
   }
   .consultations_heading span.mob{
     display: block;
+  }
+  .sli-popup_container{
+    overflow: auto;
+  }
+  .sli-request-popup{
+    min-height: 800px;
+  }
+  .popup-menu.sli-request-popup{
+    min-height: auto;
   }
 }
 

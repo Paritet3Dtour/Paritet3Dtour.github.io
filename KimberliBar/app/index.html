@@ -679,18 +679,34 @@
         logo.style.transform = "rotate("+window.pageYOffset/30+"deg)";
       }
 
-      if(consultationsPosition.top <= 450){
-        $('.consultations .bg_elements .bgel:nth-child(1)').css('margin-top', ''+(consultationsPosition.top*0.22)+'px');
-        $('.consultations .bg_elements .bgel:nth-child(2)').css('margin-top', ''+(consultationsPosition.top*0.05)+'px');
-        $('.consultations .bg_elements .bgel:nth-child(3)').css('margin-top', ''+(consultationsPosition.top*0.35)+'px');
-        $('.consultations .bg_elements .bgel:nth-child(4)').css('margin-top', ''+(consultationsPosition.top*0.29)+'px');
-        $('.consultations .bg_elements .bgel:nth-child(5)').css('margin-top', ''+(consultationsPosition.top*0.18)+'px');
+      if ($(window).width() > 992) {
+        if(consultationsPosition.top <= 450){
+          $('.consultations .bg_elements .bgel:nth-child(1)').css('margin-top', ''+(consultationsPosition.top*0.22)+'px');
+          $('.consultations .bg_elements .bgel:nth-child(2)').css('margin-top', ''+(consultationsPosition.top*0.05)+'px');
+          $('.consultations .bg_elements .bgel:nth-child(3)').css('margin-top', ''+(consultationsPosition.top*0.35)+'px');
+          $('.consultations .bg_elements .bgel:nth-child(4)').css('margin-top', ''+(consultationsPosition.top*0.29)+'px');
+          $('.consultations .bg_elements .bgel:nth-child(5)').css('margin-top', ''+(consultationsPosition.top*0.18)+'px');
 
-        $('.consultations .bg_elements .bgel:nth-child(1) img').css('margin-top', ''+(consultationsPosition.top*0.07)+'px');
-        $('.consultations .bg_elements .bgel:nth-child(2) img').css('margin-top', ''+(consultationsPosition.top*0.1)+'px');
-        $('.consultations .bg_elements .bgel:nth-child(3) img').css('margin-top', ''+(consultationsPosition.top*0.18)+'px');
-        $('.consultations .bg_elements .bgel:nth-child(4) img').css('margin-top', ''+(consultationsPosition.top*0.12)+'px');
-        $('.consultations .bg_elements .bgel:nth-child(5) img').css('margin-top', ''+(consultationsPosition.top*0.2)+'px');
+          $('.consultations .bg_elements .bgel:nth-child(1) img').css('margin-top', ''+(consultationsPosition.top*0.07)+'px');
+          $('.consultations .bg_elements .bgel:nth-child(2) img').css('margin-top', ''+(consultationsPosition.top*0.1)+'px');
+          $('.consultations .bg_elements .bgel:nth-child(3) img').css('margin-top', ''+(consultationsPosition.top*0.18)+'px');
+          $('.consultations .bg_elements .bgel:nth-child(4) img').css('margin-top', ''+(consultationsPosition.top*0.12)+'px');
+          $('.consultations .bg_elements .bgel:nth-child(5) img').css('margin-top', ''+(consultationsPosition.top*0.2)+'px');
+        }
+      }else{
+        if(consultationsPosition.top <= 450){
+          $('.consultations .bg_elements .bgel:nth-child(1)').css('margin-top', ''+(consultationsPosition.top*0.12)+'px');
+          $('.consultations .bg_elements .bgel:nth-child(2)').css('margin-top', ''+(consultationsPosition.top*0.07)+'px');
+          $('.consultations .bg_elements .bgel:nth-child(3)').css('margin-top', ''+(consultationsPosition.top*0.12)+'px');
+          $('.consultations .bg_elements .bgel:nth-child(4)').css('margin-top', ''+(consultationsPosition.top*0.11)+'px');
+          $('.consultations .bg_elements .bgel:nth-child(5)').css('margin-top', ''+(consultationsPosition.top*0.18)+'px');
+
+          $('.consultations .bg_elements .bgel:nth-child(1) img').css('margin-top', ''+(consultationsPosition.top*0.02)+'px');
+          $('.consultations .bg_elements .bgel:nth-child(2) img').css('margin-top', ''+(consultationsPosition.top*0.01)+'px');
+          $('.consultations .bg_elements .bgel:nth-child(3) img').css('margin-top', ''+(consultationsPosition.top*0.08)+'px');
+          $('.consultations .bg_elements .bgel:nth-child(4) img').css('margin-top', ''+(consultationsPosition.top*0.09)+'px');
+          $('.consultations .bg_elements .bgel:nth-child(5) img').css('margin-top', ''+(consultationsPosition.top*0.05)+'px');
+        }
       }
 
       var scroll = $(window).scrollTop();
