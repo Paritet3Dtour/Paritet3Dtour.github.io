@@ -340,7 +340,7 @@
     </div>
   </section>
 
-  <video autoplay muted loop>
+  <video autoplay muted loop id="testvideo">
     <source src="img/footer-bg-video.mp4" type="video/mp4">
   </video>
 
@@ -484,6 +484,9 @@
 
   <script>
     $(document).ready(function() {
+      setTimeout(() => {
+        $('#testvideo').play();
+      }, 2000);
 		  $('a[rel=gallery]').fancybox({});
       $('.lazy').lazy();
 
