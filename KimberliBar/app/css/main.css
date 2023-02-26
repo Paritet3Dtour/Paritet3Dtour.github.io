@@ -238,9 +238,13 @@ button{
   transition: all 0.4s;
   font-size: 13px;
   line-height: 17px;
+  padding: 0;
   padding-bottom: 2px;
   position: relative;
   overflow: hidden;
+  outline: none;
+  border: none;
+  background: transparent;
 }
 .header_link::after{
   content: '';
