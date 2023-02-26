@@ -1337,7 +1337,7 @@ button{
 .sli-popup_container {
   position: fixed;
   top: 0;
-  left: 101%;
+  left: 0;
   z-index: 10000;
   display: flex;
   align-items: center;
@@ -1350,11 +1350,11 @@ button{
   opacity: 1;
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
-  transform: translateX(0);
+  transform: translateX(101%);
   
   z-index: -10; }
   .sli-popup_container.active {
-    transform: translateX(-101%);
+    transform: translateX(0%);
     
     opacity: 1;
     transition: all 0.3s ease-in-out;
@@ -1638,7 +1638,7 @@ button{
 
 .header-mob{
   position: fixed;
-  left: 100%;
+  left: 0;
   top: 0;
   z-index: 90;
   width: 100%;
@@ -1650,7 +1650,7 @@ button{
   flex-direction: column;
   justify-content: center;
   transition: all 0.2s;
-  transform: translateX(0);
+  transform: translateX(101%);
   display: none;
 }
 .header-mob_menu{
@@ -2507,7 +2507,7 @@ button{
     display: flex;
   }
   .header.active .header-mob{
-    transform: translateX(-100%);
+    transform: translateX(0);
   }
   .header.active .header_logo svg path{
     fill: #172F69;
