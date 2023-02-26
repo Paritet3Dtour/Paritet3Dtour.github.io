@@ -2516,6 +2516,10 @@ button{
   }
   .header.active .header-toggler span:first-child{
     transform: rotate(45deg);
+    margin-top: -4px;
+  }
+  .header-toggler span{
+    width: 20px;
   }
   .header.scroll .header_logo{
     margin-left: 0;

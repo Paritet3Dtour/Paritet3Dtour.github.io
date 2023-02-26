@@ -340,10 +340,6 @@
     </div>
   </section>
 
-  <video id="testvideo" autoplay loop muted playsinline>
-    <source src="img/footer-bg-video.mp4" type="video/mp4">
-  </video>
-
   <section class="footer">
     <div class="footer-round"></div>
     <div class="footer_preview">
@@ -364,7 +360,7 @@
       </div>
       <div class="bg_elements">
         <div class="bgel">
-          <video loop="true" controls="controls" muted playsinline id="footerVideo">
+          <video loop="true" muted playsinline id="footerVideo">
             <source src="img/footer-bg-video.mp4" type="video/mp4">
           </video>
         </div>
@@ -484,9 +480,6 @@
 
   <script>
     $(document).ready(function() {
-      setTimeout(() => {
-        $('#testvideo').play();
-      }, 2000);
 		  $('a[rel=gallery]').fancybox({});
       $('.lazy').lazy();
 
