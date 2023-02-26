@@ -13,6 +13,8 @@ body {
           box-sizing: border-box; }
 
 input {
+  -webkit-appearance: none;
+  border-radius: 0;
   font-family: "BasisGrotesquePro Regular", Arial, sans-serif; }
 
 button:focus, a:focus{
@@ -2581,6 +2583,18 @@ button{
   }
   .popup-menu.sli-request-popup{
     min-height: auto;
+  }
+  .pickup_form input{
+    font-size: 20px;
+  }
+  .pickup_form input::placeholder{
+    font-size: 20px;
+  }
+  .sli-request-popup_form input{
+    font-size: 20px;
+  }
+  .sli-request-popup_form input::placeholder{
+    font-size: 20px;
   }
 }
 
