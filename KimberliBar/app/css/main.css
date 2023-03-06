@@ -1055,11 +1055,15 @@ button{
 }
 .pickup_ty{
   color: #A68F3C;
+  display: block;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   font-size: 40px;
   line-height: 40px;
   font-family: "CormorantInfant Regular", Arial, sans-serif;
+}
+.pickup_content_sl-ty a{
+  color: #A68F3C;
 }
 .pickup_heading{
   margin-bottom: 20px;
@@ -2857,6 +2861,11 @@ button{
   .pickup_ty{
     font-size: 32px;
     line-height: 32px;
+    color: #A68F3C;
+    display: block;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    font-family: "CormorantInfant Regular", Arial, sans-serif;
   }
   .restaurant .bgel img{
     width: calc(100% + 40px);
