@@ -62,13 +62,22 @@
     </div>
   </header>
 
-  <section class="banner" id="banner" style="background-image: radial-gradient(87.94% 87.94% at 50% 37.19%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url(img/banner.jpeg);">
+  <section class="banner" id="banner">
     <div class="mainContainer">
       <div class="banner_content">
         <div class="banner_heading">Перший <br> ювелірний бар <br> в Києві</div>
         <div class="banner_descr">Kimberli Bar — це багатогранний простір, де барне<br> мистецтво поєднується з діамантами</div>
       </div>
-      <button class="submit-btn request-open-btn">забронювати</button>
+    </div>
+    <button class="submit-btn request-open-btn">забронювати</button>
+    <div class="banner-bg">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: radial-gradient(87.94% 87.94% at 50% 37.19%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url(img/banner.jpeg);"></div>
+          <div class="swiper-slide" style="background-image: radial-gradient(87.94% 87.94% at 50% 37.19%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url(img/banner2.jpeg);"></div>
+          <div class="swiper-slide" style="background-image: radial-gradient(87.94% 87.94% at 50% 37.19%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url(img/banner3.jpeg);"></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -87,10 +96,18 @@
       </div>
     </div>
     <div class="bg_elements">
-      <div class="bgel lazy" data-src="img/atmosphere_bgel1.jpg"></div>
-      <div class="bgel lazy" data-src="img/atmosphere_bgel2.jpg"></div>
-      <div class="bgel lazy" data-src="img/atmosphere_bgel3.jpg"></div>
-      <div class="bgel lazy" data-src="img/atmosphere_bgel4.jpg"></div>
+      <div class="bgel">
+        <img class="lazy" data-src="img/atmosphere_bgel1.jpg" alt="">
+      </div>
+      <div class="bgel">
+        <img class="lazy" data-src="img/atmosphere_bgel2.jpg" alt="">
+      </div>
+      <div class="bgel">
+        <img class="lazy" data-src="img/atmosphere_bgel3.jpg" alt="">
+      </div>
+      <div class="bgel">
+        <img class="lazy" data-src="img/atmosphere_bgel4.jpg" alt="">
+      </div>
     </div>
   </section>
 
@@ -127,15 +144,15 @@
 
   <div class="restaurant-title">
     <div class="restaurant-title-container">
-      <span>наше меню</span>
-      <span>наше меню</span>
-      <span>наше меню</span>
-      <span>наше меню</span>
-      <span>наше меню</span>
-      <span>наше меню</span>
-      <span>наше меню</span>
-      <span>наше меню</span>
-      <span>наше меню</span>
+      <span>барне меню</span>
+      <span>барне меню</span>
+      <span>барне меню</span>
+      <span>барне меню</span>
+      <span>барне меню</span>
+      <span>барне меню</span>
+      <span>барне меню</span>
+      <span>барне меню</span>
+      <span>барне меню</span>
       <button class="restaurant-title-link menu-open-btn"></button>
     </div>
   </div>
@@ -152,9 +169,15 @@
       <button class="submit-btn request-open-btn">забронювати столик</button>
     </div>
     <div class="bg_elements">
-      <div class="bgel lazy" data-src="img/restaurant-bgel1.jpg"></div>
-      <div class="bgel lazy" data-src="img/restaurant-bgel2.jpg"></div>
-      <div class="bgel lazy" data-src="img/restaurant-bgel3.jpg"></div>
+      <div class="bgel">
+        <img class="lazy" data-src="img/restaurant-bgel1.jpg" alt="">
+      </div>
+      <div class="bgel">
+        <img class="lazy" data-src="img/restaurant-bgel2.jpg" alt="">
+      </div>
+      <div class="bgel">
+        <img class="lazy" data-src="img/restaurant-bgel3.jpg" alt="">
+      </div>
     </div>
   </section>
 
@@ -162,11 +185,57 @@
     <div class="mainContainer">
       <div class="catalog_line"></div>
       <div class="catalog_nav">
-        <button class="catalog_nav_btn tab active" data-toggle-target=".catalog-food">страви</button>
-        <button class="catalog_nav_btn tab" data-toggle-target=".catalog-drink">коктейлі</button>
+        <button class="catalog_nav_btn tab active" data-toggle-target=".catalog-drink">коктейлі</button>
+        <button class="catalog_nav_btn tab" data-toggle-target=".catalog-food">страви</button>
       </div>
     </div>
-    <div class="catalog_slider-container tab-content catalog-food active">
+
+    <div class="catalog_slider-container tab-content catalog-drink active">
+      <div class="catalog_slider_nav">
+        <button class="prev">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.5 12.5H6.5" stroke="#030F14" stroke-linecap="square" stroke-linejoin="round"/>
+            <path d="M12.5 5.5L5.5 12.5L12.5 19.5" stroke="#030F14" stroke-linecap="square" stroke-linejoin="round"/>
+          </svg>            
+        </button>
+        <button class="next">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 12.5H18.5" stroke="#030F14" stroke-linecap="square" stroke-linejoin="round"/>
+            <path d="M12.5 5.5L19.5 12.5L12.5 19.5" stroke="#030F14" stroke-linecap="square" stroke-linejoin="round"/>
+          </svg>                     
+        </button>
+      </div>
+      <div class="catalog_slider swiper-container">
+        <div class="catalog_slider-wrapp swiper-wrapper">
+          <div class="catalog_slide swiper-slide" style="width: 55.555%">
+            <a class="fancybox" rel="gallery" href="img/catalog-item3.jpg"></a>
+            <img src="img/catalog-item3.jpg" alt="">
+          </div>
+          <div class="catalog_slide swiper-slide" style="width: 32.291%;">
+            <a class="fancybox" rel="gallery" href="img/catalog-item2.jpg"></a>
+            <img src="img/catalog-item2.jpg" alt="">
+          </div>
+          <div class="catalog_slide swiper-slide" style="width: 28.125%;">
+            <a class="fancybox" rel="gallery" href="img/catalog-item1.jpg"></a>
+            <img src="img/catalog-item1.jpg" alt="">
+          </div>
+          <div class="catalog_slide swiper-slide" style="width: 55.555%">
+            <a class="fancybox" rel="gallery" href="img/catalog-item3.jpg"></a>
+            <img src="img/catalog-item3.jpg" alt="">
+          </div>
+          <div class="catalog_slide swiper-slide" style="width: 32.291%;">
+            <a class="fancybox" rel="gallery" href="img/catalog-item2.jpg"></a>
+            <img src="img/catalog-item2.jpg" alt="">
+          </div>
+          <div class="catalog_slide swiper-slide" style="width: 28.125%;">
+            <a class="fancybox" rel="gallery" href="img/catalog-item1.jpg"></a>
+            <img src="img/catalog-item1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog_slider-container tab-content catalog-food show">
       <div class="catalog_slider_nav">
         <button class="prev">
           <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -211,50 +280,6 @@
       </div>
     </div>
 
-    <div class="catalog_slider-container tab-content catalog-drink show">
-      <div class="catalog_slider_nav">
-        <button class="prev">
-          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M19.5 12.5H6.5" stroke="#030F14" stroke-linecap="square" stroke-linejoin="round"/>
-            <path d="M12.5 5.5L5.5 12.5L12.5 19.5" stroke="#030F14" stroke-linecap="square" stroke-linejoin="round"/>
-          </svg>            
-        </button>
-        <button class="next">
-          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5.5 12.5H18.5" stroke="#030F14" stroke-linecap="square" stroke-linejoin="round"/>
-            <path d="M12.5 5.5L19.5 12.5L12.5 19.5" stroke="#030F14" stroke-linecap="square" stroke-linejoin="round"/>
-          </svg>                     
-        </button>
-      </div>
-      <div class="catalog_slider swiper-container">
-        <div class="catalog_slider-wrapp swiper-wrapper">
-          <div class="catalog_slide swiper-slide" style="width: 55.555%">
-            <a class="fancybox" rel="gallery" href="img/catalog-item3.jpg"></a>
-            <img src="img/catalog-item3.jpg" alt="">
-          </div>
-          <div class="catalog_slide swiper-slide" style="width: 32.291%;">
-            <a class="fancybox" rel="gallery" href="img/catalog-item2.jpg"></a>
-            <img src="img/catalog-item2.jpg" alt="">
-          </div>
-          <div class="catalog_slide swiper-slide" style="width: 28.125%;">
-            <a class="fancybox" rel="gallery" href="img/catalog-item1.jpg"></a>
-            <img src="img/catalog-item1.jpg" alt="">
-          </div>
-          <div class="catalog_slide swiper-slide" style="width: 55.555%">
-            <a class="fancybox" rel="gallery" href="img/catalog-item3.jpg"></a>
-            <img src="img/catalog-item3.jpg" alt="">
-          </div>
-          <div class="catalog_slide swiper-slide" style="width: 32.291%;">
-            <a class="fancybox" rel="gallery" href="img/catalog-item2.jpg"></a>
-            <img src="img/catalog-item2.jpg" alt="">
-          </div>
-          <div class="catalog_slide swiper-slide" style="width: 28.125%;">
-            <a class="fancybox" rel="gallery" href="img/catalog-item1.jpg"></a>
-            <img src="img/catalog-item1.jpg" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
 
   <section class="events" id="events">
@@ -329,12 +354,19 @@
       <div class="pickup_wrapp">
         <div class="pickup_preview lazy" data-src="img/pickup-preview.jpg"></div>
         <div class="pickup_content">
-          <div class="pickup_heading">Хочете підібрати ідеальну прикрасу або розробити унікальний виріб на замовлення?</div>
-          <div class="pickup_descr">Записуйтесь на примірку і ми найближчим часом допоможемо вам у втіленні мрії! До зустрічі!</div>
-          <form action="" class="pickup_form">
-            <input type="text" placeholder="Ваш номер">
-            <button class="submit-btn">зателефонуйте мені</button>
-          </form>
+          <div class="pickup_content_sl-one">
+            <div class="pickup_heading">Хочете підібрати ідеальну прикрасу або розробити унікальний виріб на замовлення?</div>
+            <div class="pickup_descr">Записуйтесь на примірку і ми найближчим часом допоможемо вам у втіленні мрії! До зустрічі!</div>
+            <form action="" class="pickup_form">
+              <input type="text" placeholder="Ваш номер">
+              <button class="submit-btn" type="button">зателефонуйте мені</button>
+            </form>
+          </div>
+          <div class="pickup_content_sl-ty hidden">
+            <div class="pickup_heading">Дякуюємо за заявку! <br/>Ми зателефонуємо вам якомога швидше!</div>
+            <div class="pickup_descr">Довго очікуєте на дзвінок? <br/>Зателефонуйте нам, будь ласка, самі:</div>
+            <div class="pickup_ty">+38 (063) 154 34 41</div>
+          </div>
         </div>
       </div>
     </div>
@@ -363,6 +395,7 @@
           <video loop="true" muted playsinline id="footerVideo">
             <source src="img/footer-bg-video2.mp4" type="video/mp4">
           </video>
+          <!--<div class="footer-preview-bg"><span>@KIMBERLI.BAR</span> <span>@KIMBERLI.BAR</span> <span>@KIMBERLI.BAR</span> <span>@KIMBERLI.BAR</span> <span>@KIMBERLI.BAR</span> </div>-->
         </div>
         <div class="bgel lazy" data-src="img/footer-preview3.jpg"></div>
         <div class="bgel lazy" data-src="img/footer-preview2.jpg"></div>
@@ -378,8 +411,8 @@
             <button class="submit-btn request-open-btn">забронювати</button>
           </div>
           <div class="footer_info_details">
-            <a href="https://goo.gl/maps/ybLcTFQwvxkFrndy6" target="_blank" class="location-link">вул. московська 8, київ</a>
-            <a href="tel:380631543441" class="location-link">+38 (063) 154 34 41</a>
+            <a href="https://goo.gl/maps/rjc4kPrLyRXNvTt17" target="_blank" class="location-link">вул. Князів Острозьких, 8</a>
+            <a href="tel:380678520808" class="location-link">+38 (067) 852 08 08</a>
             <ul class="footer_info_menu">
               <li><button class="menu-open-btn">Meню</button></li>
               <li><a href="#events">заходи</a></li>
@@ -399,6 +432,39 @@
     </div>
   </section>
 
+  <div id="ty-popup" class="sli-popup_container click-obj">
+    <div class="sli-popup_background click-item popup-close" data-action="popup-close"></div>
+    <div class="sli-popup sli-request-popup popup-ty">
+      <button class="sli-popup_close click-item popup-close" data-action="popup-close">
+        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18.5 6.5L6.5 18.5" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
+          <path d="M6.5 6.5L18.5 18.5" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
+        </svg>              
+      </button>
+      <div class="sli-request-popup_content">
+        <div class="sli-request-popup_heading">ми вам скоро <br/> <span class="mob">зателе–фонуємо!</span> <span class="desk">зателефонуємо!</span></div>
+        <div class="sli-request-popup_form">
+          <button class="submit-btn popup-close" data-action="popup-close">на головну</button>
+        </div>
+      </div>
+      <div class="sli-request-popup_soc">
+        <div class="sli-request-popup_soc_descr">Підписуйтесь на Kimberli Bar<br/> у соціальних мережах</div>
+        <div class="sli-request-popup_soc_list">
+          <a href="https://www.facebook.com/bar.kimberli/" target="_blank">
+            <img src="img/facebook-item.svg" alt="">
+          </a>
+          <a href="https://www.instagram.com/bar.kimberli/" target="_blank">
+            <img src="img/instagram-item.svg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="bg_elements">
+        <div class="bgel" style="background-image: url('img/catalog-item2.jpg');"></div>
+        <div class="bgel" style="background-image: url('img/consultations-bgel2.jpg');"></div>
+      </div>
+    </div>
+  </div>
+
   <div id="request-popup" class="sli-popup_container click-obj">
     <div class="sli-popup_background click-item popup-close" data-action="popup-close"></div>
     <div class="sli-popup sli-request-popup">
@@ -412,7 +478,7 @@
         <div class="sli-request-popup_heading">бронь столика<br> в kimberli</div>
         <form class="sli-request-popup_form">
           <input type="text" placeholder="Ваш номер">
-          <button class="submit-btn">забронювати  столик</button>
+          <button class="submit-btn" type="button">забронювати  столик</button>
         </form>
       </div>
       <div class="sli-request-popup_descr">при бронюванні локаіції отримайте професійну фотосесію у подарунок!</div>
@@ -436,7 +502,7 @@
         <div class="sli-request-popup_heading">бронь локації<br> в kimberli</div>
         <form class="sli-request-popup_form">
           <input type="text" placeholder="Ваш номер">
-          <button class="submit-btn">забронювати  локацію</button>
+          <button class="submit-btn" type="button">забронювати  локацію</button>
         </form>
       </div>
       <div class="sli-request-popup_descr">при бронюванні локаіції отримайте професійну фотосесію у подарунок!</div>
@@ -461,7 +527,19 @@
           <img src="img/menu-item1.1.jpg" alt="">
         </div>
       </div>
-      <div class="bg-element"></div>
+      <div class="bg-element">
+        <div class="bg-element-container">
+          <span>барне меню</span>
+          <span>барне меню</span>
+          <span>барне меню</span>
+          <span>барне меню</span>
+          <span>барне меню</span>
+          <span>барне меню</span>
+          <span>барне меню</span>
+          <span>барне меню</span>
+          <span>барне меню</span>
+        </div>
+      </div>
       <a href="img/menu.pdf" target="_blank" class="download-btn" download="menu.pdf">
         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M21.5 15.5V19.5C21.5 20.0304 21.2893 20.5391 20.9142 20.9142C20.5391 21.2893 20.0304 21.5 19.5 21.5H5.5C4.96957 21.5 4.46086 21.2893 4.08579 20.9142C3.71071 20.5391 3.5 20.0304 3.5 19.5V15.5" stroke="#1C356E" stroke-linecap="square" stroke-linejoin="round"/>
@@ -492,7 +570,7 @@
       });
 
       setTimeout(() => {
-        $('.catalog-drink').removeClass('show');
+        $('.catalog-food').removeClass('show');
       },1000);
     
     let foodSwiper = new Swiper('.catalog-food .catalog_slider', {
@@ -531,6 +609,19 @@
       },
     });
 
+    let bannerSwiper = new Swiper('.banner-bg .swiper-container', {
+      loop: true,
+      roundLengths: true,
+      autoplay: {
+        delay: 4000,
+      },
+      spaceBetween: 0,
+      allowTouchMove: false,
+      
+    });
+
+    $('.footer .bgel .footer-preview-bg').css({"-webkit-transform":"translateX(-"+$(window).width()+"px)"});
+
     $('.request-open-btn').click(function(){
       $('.header').removeClass('active');
       $('#request-popup.sli-popup_container').addClass('active');
@@ -544,10 +635,17 @@
     $('.menu-open-btn').click(function(){
       $('.header').removeClass('active');
       $('#menu-popup.sli-popup_container').addClass('active');
+      $('#menu-popup .bg-element-container').addClass('bg-element-container-run');
+    });
+
+    $('.ty-open-btn').click(function(){
+      $('.header').removeClass('active');
+      $('#ty-popup.sli-popup_container').addClass('active');
     });
 
     $('.popup-close').click(function(){
       $('.sli-popup_container').removeClass('active');
+      $('#menu-popup .bg-element-container').removeClass('bg-element-container-run');
     });
 
     window.addEventListener('scroll', function() {
@@ -561,6 +659,12 @@
       var headerPosition = header.getBoundingClientRect();
       var consultations = document.querySelector('.consultations');
       var consultationsPosition = consultations.getBoundingClientRect();
+      var atmosphere = document.querySelector('.atmosphere');
+      var atmospherePosition = atmosphere.getBoundingClientRect();
+      var restaurant = document.querySelector('.restaurant');
+      var restaurantPosition = restaurant.getBoundingClientRect();
+      var restauranttitle = document.querySelector('.restaurant-title');
+      var restauranttitlePosition = restauranttitle.getBoundingClientRect();
 
       if(position.top <= 140 && position.top >= -610){
         $('.location-round').addClass('radius-1');
@@ -705,6 +809,61 @@
         }
       }
 
+      if ($(window).width() > 992) {
+        if(atmospherePosition.top <= 750 && atmospherePosition.bottom >= 20){
+          $('.atmosphere .bg_elements .bgel:nth-child(1)').css('margin-top', ''+(atmospherePosition.top*0.12)+'px');
+          $('.atmosphere .bg_elements .bgel:nth-child(2)').css('margin-top', ''+(atmospherePosition.top*0.05)+'px');
+          $('.atmosphere .bg_elements .bgel:nth-child(3)').css('margin-top', ''+(atmospherePosition.top*0.15)+'px');
+          $('.atmosphere .bg_elements .bgel:nth-child(4)').css('margin-top', ''+(atmospherePosition.top*0.20)+'px');
+
+          $('.atmosphere .bg_elements .bgel:nth-child(1) img').css('margin-top', ''+(atmospherePosition.top*0.04)+'px');
+          $('.atmosphere .bg_elements .bgel:nth-child(2) img').css('margin-top', ''+(atmospherePosition.top*0.1)+'px');
+          $('.atmosphere .bg_elements .bgel:nth-child(3) img').css('margin-top', ''+(atmospherePosition.top*0.11)+'px');
+          $('.atmosphere .bg_elements .bgel:nth-child(4) img').css('margin-top', ''+(atmospherePosition.top*0.09)+'px');
+        }
+      }else{
+        if(atmospherePosition.top <= 750 && atmospherePosition.bottom >= 20){
+          $('.atmosphere .bg_elements .bgel:nth-child(1)').css('margin-top', ''+(atmospherePosition.top*0.11)+'px');
+          $('.atmosphere .bg_elements .bgel:nth-child(2)').css('margin-top', ''+(atmospherePosition.top*0.02)+'px');
+          $('.atmosphere .bg_elements .bgel:nth-child(3)').css('margin-top', ''+(atmospherePosition.top*0.1)+'px');
+          $('.atmosphere .bg_elements .bgel:nth-child(4)').css('margin-top', ''+(atmospherePosition.top*0.06)+'px');
+
+          $('.atmosphere .bg_elements .bgel:nth-child(1) img').css('margin-top', ''+(atmospherePosition.top*0.02)+'px');
+          $('.atmosphere .bg_elements .bgel:nth-child(2) img').css('margin-top', ''+(atmospherePosition.top*0.01)+'px');
+          $('.atmosphere .bg_elements .bgel:nth-child(3) img').css('margin-top', ''+(atmospherePosition.top*0.05)+'px');
+          $('.atmosphere .bg_elements .bgel:nth-child(4) img').css('margin-top', ''+(atmospherePosition.top*0.06)+'px');
+        }
+      }
+
+      if(restauranttitlePosition.top <= 760){
+        $('.restaurant-title-container').addClass('restaurant-title-run');
+      }
+      if(restauranttitlePosition.bottom <= 20 || restauranttitlePosition.top >= 770){
+        $('.restaurant-title-container').removeClass('restaurant-title-run');
+      }
+
+      if ($(window).width() > 992) {
+        if(restaurantPosition.top <= 750 && restaurantPosition.bottom >= 20){
+          $('.restaurant .bg_elements .bgel:nth-child(1)').css('margin-top', ''+(restaurantPosition.top*0.12)+'px');
+          $('.restaurant .bg_elements .bgel:nth-child(2)').css('margin-top', ''+(restaurantPosition.top*0.05)+'px');
+          $('.restaurant .bg_elements .bgel:nth-child(3)').css('margin-top', ''+(restaurantPosition.top*0.15)+'px');
+
+          $('.restaurant .bg_elements .bgel:nth-child(1) img').css('margin-top', ''+(restaurantPosition.top*0.06)+'px');
+          $('.restaurant .bg_elements .bgel:nth-child(2) img').css('margin-top', ''+(restaurantPosition.top*0.04)+'px');
+          $('.restaurant .bg_elements .bgel:nth-child(3) img').css('margin-top', ''+(restaurantPosition.top*0.11)+'px');
+        }
+      }else{
+        if(restaurantPosition.top <= 750 && restaurantPosition.bottom >= 20){
+          $('.restaurant .bg_elements .bgel:nth-child(1)').css('margin-top', ''+(restaurantPosition.top*0.11)+'px');
+          $('.restaurant .bg_elements .bgel:nth-child(2)').css('margin-top', ''+(restaurantPosition.top*0.13)+'px');
+          $('.restaurant .bg_elements .bgel:nth-child(3)').css('margin-top', ''+(restaurantPosition.top*0.03)+'px');
+
+          $('.restaurant .bg_elements .bgel:nth-child(1) img').css('margin-top', ''+(restaurantPosition.top*0.02)+'px');
+          $('.restaurant .bg_elements .bgel:nth-child(2) img').css('margin-top', ''+(restaurantPosition.top*0.01)+'px');
+          $('.restaurant .bg_elements .bgel:nth-child(3) img').css('margin-top', ''+(restaurantPosition.top*0.08)+'px');
+        }
+      }
+
       var scroll = $(window).scrollTop();
       if (scroll >= 130) {
           $(".header").addClass("scroll");
@@ -743,6 +902,19 @@
 
     $('.header-toggler').click(function(){
       $('.header').toggleClass('active');
+    });
+
+    $('.pickup_form .submit-btn').click(function(){
+      $('.pickup_content_sl-one').addClass('hidden');
+      $('.pickup_content_sl-ty').removeClass('hidden');
+    });
+    $('#request-popup .sli-request-popup_form .submit-btn').click(function(){
+      $('.sli-popup_container').removeClass('active');
+      $('#ty-popup.sli-popup_container').addClass('active');
+    });
+    $('#location-popup .sli-request-popup_form .submit-btn').click(function(){
+      $('.sli-popup_container').removeClass('active');
+      $('#ty-popup.sli-popup_container').addClass('active');
     });
   });
   </script>
