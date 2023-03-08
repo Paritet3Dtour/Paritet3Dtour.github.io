@@ -2880,7 +2880,7 @@ button{
     padding-bottom: 240px;
   }
   .banner .submit-btn{
-    padding-bottom: 150px;
+    bottom: 150px;
   }
 }
 
