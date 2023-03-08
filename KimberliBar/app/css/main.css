@@ -2875,6 +2875,13 @@ button{
     width: calc(100% + 40px);
     height: calc(100% + 40px);
   }
+  .banner{
+    padding-top: 190px;
+    padding-bottom: 240px;
+  }
+  .banner .submit-btn{
+    padding-bottom: 150px;
+  }
 }
 
 @media screen and (max-width: 355px){
