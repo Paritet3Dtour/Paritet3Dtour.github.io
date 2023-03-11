@@ -1,923 +1,577 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta http-equiv="content_language" content="ru">
-  <meta name="description" content="SoulHub">
-  <link href="img/favicon.png" type="image/x-icon" rel="icon">
-  <link href="img/favicon.png" type="image/x-icon" rel="shortcut icon">
-  <meta name="theme-color" content="#ffffff">
-  <title>Kimberli Bar</title>
-  <link rel="stylesheet" href="css/jquery.fancybox.css">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="libs/swiperjs/swiper.min.css">
-  <link rel="stylesheet" href="css/main.css"> 
-</head> 
- 
-<body>
-
-  <header class="header">
-    <div class="headerContainer">
-      <div class="header_wrapp">
-        <ul class="header_menu">
-          <li class="header_menu_item"><button class="menu-open-btn">меню</button></li>
-          <li class="header_menu_item"><a href="#events">заходи</a></li>
-          <li class="header_menu_item"><a href="#consultations">прикраси</a></li>
-        </ul>
-        <div class="header_logo">
-          <svg width="261" height="39" viewBox="0 0 261 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 38.3427H4.80385V24.868L10.7691 18.2402L24.8111 38.3427H30.3012L13.8309 14.8441L27.2394 0H24.5999L4.80385 21.5815V0H0V38.3427Z" fill="white"/>
-            <path d="M40.8397 0V38.3427H45.6435V0H40.8397Z" fill="white"/>
-            <path d="M64.5492 0H60.9595V38.3427H63.2823V7.06601H63.4934L79.8054 39H80.7556L97.4371 7.28511H97.6482V38.3427H102.452V0H98.8096L81.7058 32.9199H81.4946L64.5492 0Z" fill="white"/>
-            <path d="M115.669 38.3427H128.919C131.277 38.3427 133.265 38.0323 134.884 37.4115C136.503 36.7542 137.805 35.9143 138.791 34.8919C139.776 33.8694 140.48 32.7191 140.902 31.441C141.36 30.1264 141.588 28.8118 141.588 27.4972C141.588 25.4157 141.149 23.7542 140.269 22.5126C139.424 21.2711 138.404 20.3216 137.207 19.6643C136.01 19.007 134.779 18.5688 133.512 18.3497C132.245 18.1306 131.224 18.0028 130.45 17.9663V17.7472C131.682 17.7472 132.843 17.5098 133.934 17.0351C135.025 16.5239 135.975 15.8848 136.785 15.118C137.629 14.3146 138.298 13.4017 138.791 12.3792C139.283 11.3202 139.53 10.2065 139.53 9.03792C139.53 8.01545 139.319 6.97472 138.896 5.91573C138.474 4.85674 137.823 3.88905 136.943 3.01264C136.098 2.13624 134.99 1.42416 133.617 0.876406C132.28 0.292135 130.696 0 128.866 0H115.669V38.3427ZM120.473 35.9326V19.1713H126.28C128.004 19.1713 129.5 19.4087 130.767 19.8834C132.034 20.3581 133.072 20.9972 133.881 21.8006C134.726 22.6039 135.342 23.5351 135.729 24.5941C136.151 25.6531 136.362 26.7669 136.362 27.9354C136.362 29.2135 136.134 30.3455 135.676 31.3315C135.254 32.3174 134.673 33.1573 133.934 33.8511C133.195 34.5449 132.315 35.0744 131.295 35.4396C130.309 35.7683 129.253 35.9326 128.127 35.9326H120.473ZM120.473 16.7612V2.41011H126.913C128.286 2.41011 129.447 2.61096 130.397 3.01264C131.383 3.41433 132.174 3.94382 132.773 4.60112C133.406 5.25843 133.864 6.00702 134.145 6.84691C134.427 7.6868 134.567 8.52669 134.567 9.36657C134.567 10.4256 134.356 11.4115 133.934 12.3244C133.547 13.2374 132.984 14.0225 132.245 14.6798C131.541 15.3371 130.714 15.8483 129.764 16.2135C128.849 16.5787 127.863 16.7612 126.807 16.7612H120.473Z" fill="white"/>
-            <path d="M151.098 0V38.3427H174.958V35.3301H155.901V19.2809H172.266V16.7612H155.901V3.01264H174.958V0H151.098Z" fill="white"/>
-            <path d="M183.382 0V38.3427H188.186V21.4171H190.508C191.494 21.4171 192.303 21.5084 192.937 21.691C193.605 21.8736 194.204 22.184 194.731 22.6222C195.259 23.0604 195.752 23.6264 196.21 24.3202C196.667 25.014 197.213 25.8722 197.846 26.8947L202.016 33.3034C202.544 34.1433 203.055 34.9101 203.547 35.6039C204.075 36.2978 204.638 36.9003 205.237 37.4115C205.835 37.8862 206.503 38.2697 207.243 38.5618C208.017 38.8539 208.932 39 209.988 39C210.762 39 211.395 38.9635 211.888 38.8905C212.381 38.8174 212.873 38.6348 213.366 38.3427V36.316C213.19 36.3525 213.014 36.389 212.838 36.4256C212.662 36.4256 212.486 36.4256 212.31 36.4256C211.571 36.4256 210.92 36.316 210.357 36.0969C209.794 35.8778 209.266 35.5674 208.773 35.1657C208.281 34.7275 207.806 34.2163 207.348 33.632C206.891 33.0112 206.416 32.3174 205.923 31.5506C204.445 29.323 203.301 27.552 202.491 26.2374C201.682 24.8862 201.031 23.8455 200.538 23.1152C200.081 22.3848 199.694 21.8553 199.377 21.5267C199.095 21.198 198.743 20.9242 198.321 20.7051L197.793 20.4312V20.2121C199.482 20.1025 200.925 19.7191 202.122 19.0618C203.354 18.4045 204.357 17.5829 205.131 16.5969C205.905 15.611 206.468 14.552 206.82 13.4199C207.172 12.2514 207.348 11.1194 207.348 10.0239C207.348 9.03792 207.155 7.96068 206.767 6.79214C206.416 5.6236 205.782 4.54635 204.867 3.56039C203.987 2.53792 202.773 1.69803 201.225 1.04073C199.676 0.34691 197.723 0 195.365 0H183.382ZM188.186 2.41011H193.517C194.855 2.41011 196.051 2.61096 197.107 3.01264C198.198 3.41433 199.131 3.98034 199.905 4.71068C200.679 5.4045 201.26 6.24438 201.647 7.23034C202.069 8.21629 202.28 9.29354 202.28 10.4621C202.28 11.448 202.087 12.4522 201.7 13.4747C201.348 14.4607 200.802 15.3736 200.063 16.2135C199.324 17.0169 198.409 17.6742 197.318 18.1854C196.262 18.6966 195.031 18.9522 193.623 18.9522H188.186V2.41011Z" fill="white"/>
-            <path d="M221.8 38.3427V0H226.604V35.3301H245.661V38.3427H221.8Z" fill="white"/>
-            <path d="M256.196 0V38.3427H261V0H256.196Z" fill="white"/>
-          </svg>            
-        </div>
-        <button class="header_link request-open-btn">
-          забронювати
-        </button>
-        <button class="header-toggler">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </div>
-    <div class="header-mob">
-      <ul class="header-mob_menu">
-        <li class="header_menu_item-mob"><button class="menu-open-btn">меню</button></li>
-        <li class="header_menu_item-mob"><a href="#events">заходи</a></li>
-        <li class="header_menu_item-mob"><a href="#consultations">прикраси</a></li>
-      </ul>
-      <button class="submit-btn request-open-btn">
-        забронювати
-      </button>
-    </div>
-  </header>
-
-  <section class="banner" id="banner">
-    <div class="mainContainer">
-      <div class="banner_content">
-        <div class="banner_heading">Перший <br> ювелірний бар <br> в Києві</div>
-        <div class="banner_descr">Kimberli Bar — це багатогранний простір, де барне<br> мистецтво поєднується з діамантами</div>
-      </div>
-    </div>
-    <button class="submit-btn request-open-btn">забронювати</button>
-    <div class="banner-bg">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image: radial-gradient(87.94% 87.94% at 50% 37.19%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url(img/banner.jpeg);"></div>
-          <div class="swiper-slide" style="background-image: radial-gradient(87.94% 87.94% at 50% 37.19%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url(img/banner2.jpeg);"></div>
-          <div class="swiper-slide" style="background-image: radial-gradient(87.94% 87.94% at 50% 37.19%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url(img/banner3.jpeg);"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="atmosphere">
-    <div class="mainContainer">
-      <div class="atmosphere_heading">
-        це <br>атмосфера <br>що <br><span><img src="img/atmosphere-heading.svg" alt=""></span>
-      </div>
-      <div class="atmosphere_content">
-        <div class="atmosphere_content_heading">це більше ніж просто<br> їжа чи напої</div>
-        <div class="atmosphere_content_descr">
-          <p>Унікальний бар для цінувальників ювелірних виробів, вишуканої кухні та коктейлів, подібних якому можна знайти лише в декількох куточках планети.</p>
-          <p>Місце, де можна придбати прикраси, провести бізнес-бранч, навчальний захід, або вечерю із партнерами.</p>
-          <p>Це простір із елегантною атмосферою свята. Він є магнітом для романтичних подій: побачення, освідчення у коханні, святкування заручин, проведення весілля.</p>
-        </div>
-      </div>
-    </div>
-    <div class="bg_elements">
-      <div class="bgel">
-        <img class="lazy" data-src="img/atmosphere_bgel1.jpg" alt="">
-      </div>
-      <div class="bgel">
-        <img class="lazy" data-src="img/atmosphere_bgel2.jpg" alt="">
-      </div>
-      <div class="bgel">
-        <img class="lazy" data-src="img/atmosphere_bgel3.jpg" alt="">
-      </div>
-      <div class="bgel">
-        <img class="lazy" data-src="img/atmosphere_bgel4.jpg" alt="">
-      </div>
-    </div>
-  </section>
-
-  <section class="location">
-    <div class="location-round"></div>
-    <div class="mainContainer">
-      <div class="location_heading">це місце,<br>
-        <span><img src="img/location-heading.svg" alt=""></span>
-        <span class="mob"><img src="img/location-heading-mob.svg" alt=""></span><br>
-        бажання
-      </div>
-      <div class="location_content">
-        <div class="location_content_heading">Тут дизайнери розповідають про нові колекції, музиканти роблять pre-party, а бізнесмени презентують нові проєкти.</div>
-        <div class="location_content_descr">Відчуйте цю надзвичайну атмосферу на смак! Забронюйте локацію та отримайте вигідну ціну!</div>
-      </div>
-      <button class="submit-btn location-open-btn">забронювати  локацію</button>
-    </div>
-  </section>
-
-  <section class="gallery">
-    <div class="galleryContainer">
-      <div class="gallery_item"><a class="fancybox" rel="gallery" href="img/gallery-img1.jpg"></a><img class="lazy" data-src="img/gallery-img1.jpg" alt=""></div>
-      <div class="gallery_item"><a class="fancybox" rel="gallery" href="img/gallery-img2.jpg"></a><img class="lazy" data-src="img/gallery-img2.jpg" alt=""></div>
-      <div class="gallery_item"><a class="fancybox" rel="gallery" href="img/gallery-img3.jpg"></a><img class="lazy" data-src="img/gallery-img3.jpg" alt=""></div>
-      <div class="gallery_item"><a class="fancybox" rel="gallery" href="img/gallery-img4.jpg"></a><img class="lazy" data-src="img/gallery-img4.jpg" alt=""></div>
-      <div class="gallery_item"><a class="fancybox" rel="gallery" href="img/gallery-img5.jpg"></a><img class="lazy" data-src="img/gallery-img5.jpg" alt=""></div>
-      <div class="gallery_item"><a class="fancybox" rel="gallery" href="img/gallery-img6.jpg"></a><img class="lazy" data-src="img/gallery-img6.jpg" alt=""></div>
-      <div class="gallery_item"><a class="fancybox" rel="gallery" href="img/gallery-img7.jpg"></a><img class="lazy" data-src="img/gallery-img7.jpg" alt=""></div>
-      <div class="gallery_item"><a class="fancybox" rel="gallery" href="img/gallery-img8.jpg"></a><img class="lazy" data-src="img/gallery-img8.jpg" alt=""></div>
-      <div class="gallery_item"><a class="fancybox" rel="gallery" href="img/gallery-img9.jpg"></a><img class="lazy" data-src="img/gallery-img9.jpg" alt=""></div>
-      <div class="gallery_item"><a class="fancybox" rel="gallery" href="img/gallery-img10.jpg"></a><img class="lazy" data-src="img/gallery-img10.jpg" alt=""></div>
-    </div>
-  </section>
-
-  <div class="restaurant-title">
-    <div class="restaurant-title-container">
-      <span>барне меню</span>
-      <span>барне меню</span>
-      <span>барне меню</span>
-      <span>барне меню</span>
-      <span>барне меню</span>
-      <span>барне меню</span>
-      <span>барне меню</span>
-      <span>барне меню</span>
-      <span>барне меню</span>
-      <button class="restaurant-title-link menu-open-btn"></button>
-    </div>
-  </div>
-  <section class="restaurant">
-    <div class="mainContainer">
-      <div class="restaurant_heading">
-        Це місце для<br>
-        <span><img src="img/restaurant-heading.svg" alt=""></span><br>
-        зустрічей
-      </div>
-      <div class="restaurant_descr">
-        Де можна поговорити, спробувати неймовірні коктейлі та придбати таку бажану прикрасу. Зарезервуйте столик заздалегідь та отримайте подарунок від закладу.
-      </div>
-      <button class="submit-btn request-open-btn">забронювати столик</button>
-    </div>
-    <div class="bg_elements">
-      <div class="bgel">
-        <img class="lazy" data-src="img/restaurant-bgel1.jpg" alt="">
-      </div>
-      <div class="bgel">
-        <img class="lazy" data-src="img/restaurant-bgel2.jpg" alt="">
-      </div>
-      <div class="bgel">
-        <img class="lazy" data-src="img/restaurant-bgel3.jpg" alt="">
-      </div>
-    </div>
-  </section>
-
-  <section class="catalog">
-    <div class="mainContainer">
-      <div class="catalog_line"></div>
-      <div class="catalog_nav">
-        <button class="catalog_nav_btn tab active" data-toggle-target=".catalog-drink">коктейлі</button>
-        <button class="catalog_nav_btn tab" data-toggle-target=".catalog-food">страви</button>
-      </div>
-    </div>
-
-    <div class="catalog_slider-container tab-content catalog-drink active">
-      <div class="catalog_slider_nav">
-        <button class="prev">
-          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M19.5 12.5H6.5" stroke="#030F14" stroke-linecap="square" stroke-linejoin="round"/>
-            <path d="M12.5 5.5L5.5 12.5L12.5 19.5" stroke="#030F14" stroke-linecap="square" stroke-linejoin="round"/>
-          </svg>            
-        </button>
-        <button class="next">
-          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5.5 12.5H18.5" stroke="#030F14" stroke-linecap="square" stroke-linejoin="round"/>
-            <path d="M12.5 5.5L19.5 12.5L12.5 19.5" stroke="#030F14" stroke-linecap="square" stroke-linejoin="round"/>
-          </svg>                     
-        </button>
-      </div>
-      <div class="catalog_slider swiper-container">
-        <div class="catalog_slider-wrapp swiper-wrapper">
-          <div class="catalog_slide swiper-slide" style="width: 55.555%">
-            <a class="fancybox" rel="gallery" href="img/catalog-item3.jpg"></a>
-            <img src="img/catalog-item3.jpg" alt="">
-          </div>
-          <div class="catalog_slide swiper-slide" style="width: 32.291%;">
-            <a class="fancybox" rel="gallery" href="img/catalog-item2.jpg"></a>
-            <img src="img/catalog-item2.jpg" alt="">
-          </div>
-          <div class="catalog_slide swiper-slide" style="width: 28.125%;">
-            <a class="fancybox" rel="gallery" href="img/catalog-item1.jpg"></a>
-            <img src="img/catalog-item1.jpg" alt="">
-          </div>
-          <div class="catalog_slide swiper-slide" style="width: 55.555%">
-            <a class="fancybox" rel="gallery" href="img/catalog-item3.jpg"></a>
-            <img src="img/catalog-item3.jpg" alt="">
-          </div>
-          <div class="catalog_slide swiper-slide" style="width: 32.291%;">
-            <a class="fancybox" rel="gallery" href="img/catalog-item2.jpg"></a>
-            <img src="img/catalog-item2.jpg" alt="">
-          </div>
-          <div class="catalog_slide swiper-slide" style="width: 28.125%;">
-            <a class="fancybox" rel="gallery" href="img/catalog-item1.jpg"></a>
-            <img src="img/catalog-item1.jpg" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="catalog_slider-container tab-content catalog-food show">
-      <div class="catalog_slider_nav">
-        <button class="prev">
-          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M19.5 12.5H6.5" stroke="#030F14" stroke-linecap="square" stroke-linejoin="round"/>
-            <path d="M12.5 5.5L5.5 12.5L12.5 19.5" stroke="#030F14" stroke-linecap="square" stroke-linejoin="round"/>
-          </svg>            
-        </button>
-        <button class="next">
-          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5.5 12.5H18.5" stroke="#030F14" stroke-linecap="square" stroke-linejoin="round"/>
-            <path d="M12.5 5.5L19.5 12.5L12.5 19.5" stroke="#030F14" stroke-linecap="square" stroke-linejoin="round"/>
-          </svg>                     
-        </button>
-      </div>
-      <div class="catalog_slider swiper-container">
-        <div class="catalog_slider-wrapp swiper-wrapper">
-          <div class="catalog_slide swiper-slide" style="width: 28.125%;">
-            <a class="fancybox" rel="gallery" href="img/catalog-item1.jpg"></a>
-            <img src="img/catalog-item1.jpg" alt="">
-          </div>
-          <div class="catalog_slide swiper-slide" style="width: 32.291%;">
-            <a class="fancybox" rel="gallery" href="img/catalog-item2.jpg"></a>
-            <img src="img/catalog-item2.jpg" alt="">
-          </div>
-          <div class="catalog_slide swiper-slide" style="width: 55.555%">
-            <a class="fancybox" rel="gallery" href="img/catalog-item3.jpg"></a>
-            <img src="img/catalog-item3.jpg" alt="">
-          </div>
-          <div class="catalog_slide swiper-slide" style="width: 28.125%;">
-            <a class="fancybox" rel="gallery" href="img/catalog-item1.jpg"></a>
-            <img src="img/catalog-item1.jpg" alt="">
-          </div>
-          <div class="catalog_slide swiper-slide" style="width: 32.291%;">
-            <a class="fancybox" rel="gallery" href="img/catalog-item2.jpg"></a>
-            <img src="img/catalog-item2.jpg" alt="">
-          </div>
-          <div class="catalog_slide swiper-slide" style="width: 55.555%">
-            <a class="fancybox" rel="gallery" href="img/catalog-item3.jpg"></a>
-            <img src="img/catalog-item3.jpg" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <section class="events" id="events">
-    <div class="events-textbg">
-    </div>
-    <div class="events-bg"></div>
-    <div class="events-bg-second"></div>
-    <div class="mainContainer">
-      <div class="events_content">
-        <div class="events_content_heading">проведення заходів<br> в kimberli bar</div>
-        <div class="events_content_descr">
-          <p>Концепція інтер’єру Kimberli Bar натхненна вишуканістю ювелірних прикрас. А сама ідея бару та шоу-руму два в одному робить досвід відвідувачів особливим. Нині, коли люди ведуть рахунок часу, як ніколи актуальною є багатофункціональність просторів. Тому, з турботою про вас і ваш час, був створений Kimberli Bar.</p>
-          <p>Унікальне поєднання мистецтва та смаку робить Kimberli Bar місцем must visit на карті столиці. Пропозиція руки та серця, вечеря з близькими людьми чи підписання контракту мрії. Ми потурбувалися, аби ви відчували себе тут розслаблено. </p>
-        </div>
-      </div>
-    </div>
-    <div class="events_container">
-      <div class="events_list">
-        <div class="events_item">
-          <div class="events_item_bg lazy" data-src="img/events-item1.png"></div>
-          <div class="events_item_heading">Незабутні освідчення</div>
-        </div>
-        <div class="events_item">
-          <div class="events_item_bg lazy" data-src="img/events-item2.png"></div>
-          <div class="events_item_heading">Бізнес-зустрічі спільноти підприємців</div>
-        </div>
-        <div class="events_item">
-          <div class="events_item_bg lazy" data-src="img/events-item3.png"></div>
-          <div class="events_item_heading">Бранчі з підписниками</div>
-        </div>
-        <div class="events_item">
-          <div class="events_item_bg lazy" data-src="img/events-item4.png"></div>
-          <div class="events_item_heading">Затишні весілля</div>
-        </div>
-      </div>
-    </div>
-    <div class="mainContainer">
-      <div class="events_blockquote">Забронюйте Kimberli Bar для проведення вашого заходу<br> та отримайте професійну фотосесію у подарунок!</div>
-      <button class="submit-btn location-open-btn">забронювати</button>
-    </div>
-  </section>
-
-  <section class="consultations" id="consultations">
-    <div class="mainContainer">
-      <div class="consultations_top">
-        <div class="consultations_heading">Ювелірні <span>консультанти</span> <span class="mob">консуль –танти</span></div>
-        <div class="consultations_content">
-          <div class="consultations_descr">
-            У Kimberli Bar також працюють ювелірні сомельє, здатні підібрати прикраси до будь-якої особливої події. Вони можуть запропонувати заручні обручки, пусети з діамантами, хрестики, брошки та безліч інших вишуканих варіантів.
-          </div>
-          <button class="submit-btn"> <a href="https://kimberli.ua/" target="_blank"></a>підібрати прикрасу</button>
-        </div>
-      </div>
-    </div>
-    <div class="bg_elements">
-      <div class="bgel">
-      <img class="lazy" data-src="img/consultations-bgel1.jpg" alt=""></div>
-      <div class="bgel">
-      <img class="lazy" data-src="img/consultations-bgel2.jpg" alt=""></div>
-      <div class="bgel">
-      <img class="lazy" data-src="img/consultations-bgel3.jpg" alt=""></div>
-      <div class="bgel">
-      <img class="lazy" data-src="img/consultations-bgel4.jpg" alt=""></div>
-      <div class="bgel">
-      <img class="lazy" data-src="img/consultations-bgel5.jpg" alt=""></div>
-    </div>
-  </section>
-
-  <section class="pickup">
-    <div class="mainContainer">
-      <div class="pickup_line"></div>
-      <div class="pickup_wrapp">
-        <div class="pickup_preview lazy" data-src="img/pickup-preview.jpg"></div>
-        <div class="pickup_content">
-          <div class="pickup_content_sl-one">
-            <div class="pickup_heading">Хочете підібрати ідеальну прикрасу або розробити унікальний виріб на замовлення?</div>
-            <div class="pickup_descr">Записуйтесь на примірку і ми найближчим часом допоможемо вам у втіленні мрії! До зустрічі!</div>
-            <form action="" class="pickup_form">
-              <input type="text" placeholder="Ваш номер">
-              <button class="submit-btn" type="button">зателефонуйте мені</button>
-            </form>
-          </div>
-          <div class="pickup_content_sl-ty hidden">
-            <div class="pickup_heading">Дякуюємо за заявку! <br/>Ми зателефонуємо вам якомога швидше!</div>
-            <div class="pickup_descr">Довго очікуєте на дзвінок? <br/>Зателефонуйте нам, будь ласка, самі:</div>
-            <a href="tel:+380631543441" class="pickup_ty">+38 (063) 154 34 41</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="footer">
-    <div class="footer-round"></div>
-    <div class="footer_preview">
-      <div class="footer-preview-bg"><span>@KIMBERLI.BAR</span> <span>@KIMBERLI.BAR</span> <span>@KIMBERLI.BAR</span> <span>@KIMBERLI.BAR</span> <span>@KIMBERLI.BAR</span></div>
-      <div class="mainContainer">
-        <div class="footer_label">Хочете знати про наші заходи та акції?</div>
-        <div class="footer_socials">
-          <div class="footer_socials_heading">Підписуйтесь на Kimberli Bar<br> у соціальних мережах</div>
-          <div class="footer_socials_list">
-            <a href="https://www.facebook.com/bar.kimberli/" target="_blank">
-              <img src="img/facebook-item.svg" alt="">
-            </a>
-            <a href="https://www.instagram.com/bar.kimberli/" target="_blank">
-              <img src="img/instagram-item.svg" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="bg_elements">
-        <div class="bgel">
-          <video loop="true" muted playsinline id="footerVideo">
-            <source src="img/footer-bg-video2.mp4" type="video/mp4">
-          </video>
-          <!--<div class="footer-preview-bg"><span>@KIMBERLI.BAR</span> <span>@KIMBERLI.BAR</span> <span>@KIMBERLI.BAR</span> <span>@KIMBERLI.BAR</span> <span>@KIMBERLI.BAR</span> </div>-->
-        </div>
-        <div class="bgel lazy" data-src="img/footer-preview3.jpg"></div>
-        <div class="bgel lazy" data-src="img/footer-preview2.jpg"></div>
-      </div>
-    </div>
-    <div class="footer_info">
-      <div class="mainContainer">
-        <div class="footer_info_line"></div>
-        <div class="footer_info_wrapp">
-          <div class="footer_info_content">
-            <div class="logo"><img src="img/footer-logo.svg" alt=""></div>
-            <div class="footer_info_content_descr">Kimberli Bar — це багатогранний простір, де барне мистецтво поєднується з діамантами</div>
-            <button class="submit-btn request-open-btn">забронювати</button>
-          </div>
-          <div class="footer_info_details">
-            <a href="https://goo.gl/maps/rjc4kPrLyRXNvTt17" target="_blank" class="location-link">вул. Князів Острозьких, 8</a>
-            <a href="tel:380678520808" class="location-link">+38 (067) 852 08 08</a>
-            <ul class="footer_info_menu">
-              <li><button class="menu-open-btn">Meню</button></li>
-              <li><a href="#events">заходи</a></li>
-              <li><a href="#consultations">прикраси</a></li>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta http-equiv="content_language" content="ru">
+      <meta name="description" content="SoulHub">
+      <link href="img/favicon.png" type="image/x-icon" rel="icon">
+      <link href="img/favicon.png" type="image/x-icon" rel="shortcut icon">
+      <meta name="theme-color" content="#ffffff">
+      <title>Kimberli Bar</title>
+      <link rel="stylesheet" href="css/jquery.fancybox.css">
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/fonts.css">
+      <link rel="stylesheet" href="libs/swiperjs/swiper.min.css">
+      <link rel="stylesheet" href="css/main.css">
+   </head>
+   <body>
+      <header class="header">
+         <div class="headerContainer">
+            <div class="header_wrapp">
+               <ul class="header_menu">
+                  <li class="header_menu_item"><button class="menu-open-btn">меню</button></li>
+                  <li class="header_menu_item"><a href="#events">заходи</a></li>
+                  <li class="header_menu_item"><a href="#consultations">прикраси</a></li>
+               </ul>
+               <div class="header_logo">
+                  <svg width="261" height="39" viewBox="0 0 261 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M0 38.3427H4.80385V24.868L10.7691 18.2402L24.8111 38.3427H30.3012L13.8309 14.8441L27.2394 0H24.5999L4.80385 21.5815V0H0V38.3427Z" fill="white"/>
+                     <path d="M40.8397 0V38.3427H45.6435V0H40.8397Z" fill="white"/>
+                     <path d="M64.5492 0H60.9595V38.3427H63.2823V7.06601H63.4934L79.8054 39H80.7556L97.4371 7.28511H97.6482V38.3427H102.452V0H98.8096L81.7058 32.9199H81.4946L64.5492 0Z" fill="white"/>
+                     <path d="M115.669 38.3427H128.919C131.277 38.3427 133.265 38.0323 134.884 37.4115C136.503 36.7542 137.805 35.9143 138.791 34.8919C139.776 33.8694 140.48 32.7191 140.902 31.441C141.36 30.1264 141.588 28.8118 141.588 27.4972C141.588 25.4157 141.149 23.7542 140.269 22.5126C139.424 21.2711 138.404 20.3216 137.207 19.6643C136.01 19.007 134.779 18.5688 133.512 18.3497C132.245 18.1306 131.224 18.0028 130.45 17.9663V17.7472C131.682 17.7472 132.843 17.5098 133.934 17.0351C135.025 16.5239 135.975 15.8848 136.785 15.118C137.629 14.3146 138.298 13.4017 138.791 12.3792C139.283 11.3202 139.53 10.2065 139.53 9.03792C139.53 8.01545 139.319 6.97472 138.896 5.91573C138.474 4.85674 137.823 3.88905 136.943 3.01264C136.098 2.13624 134.99 1.42416 133.617 0.876406C132.28 0.292135 130.696 0 128.866 0H115.669V38.3427ZM120.473 35.9326V19.1713H126.28C128.004 19.1713 129.5 19.4087 130.767 19.8834C132.034 20.3581 133.072 20.9972 133.881 21.8006C134.726 22.6039 135.342 23.5351 135.729 24.5941C136.151 25.6531 136.362 26.7669 136.362 27.9354C136.362 29.2135 136.134 30.3455 135.676 31.3315C135.254 32.3174 134.673 33.1573 133.934 33.8511C133.195 34.5449 132.315 35.0744 131.295 35.4396C130.309 35.7683 129.253 35.9326 128.127 35.9326H120.473ZM120.473 16.7612V2.41011H126.913C128.286 2.41011 129.447 2.61096 130.397 3.01264C131.383 3.41433 132.174 3.94382 132.773 4.60112C133.406 5.25843 133.864 6.00702 134.145 6.84691C134.427 7.6868 134.567 8.52669 134.567 9.36657C134.567 10.4256 134.356 11.4115 133.934 12.3244C133.547 13.2374 132.984 14.0225 132.245 14.6798C131.541 15.3371 130.714 15.8483 129.764 16.2135C128.849 16.5787 127.863 16.7612 126.807 16.7612H120.473Z" fill="white"/>
+                     <path d="M151.098 0V38.3427H174.958V35.3301H155.901V19.2809H172.266V16.7612H155.901V3.01264H174.958V0H151.098Z" fill="white"/>
+                     <path d="M183.382 0V38.3427H188.186V21.4171H190.508C191.494 21.4171 192.303 21.5084 192.937 21.691C193.605 21.8736 194.204 22.184 194.731 22.6222C195.259 23.0604 195.752 23.6264 196.21 24.3202C196.667 25.014 197.213 25.8722 197.846 26.8947L202.016 33.3034C202.544 34.1433 203.055 34.9101 203.547 35.6039C204.075 36.2978 204.638 36.9003 205.237 37.4115C205.835 37.8862 206.503 38.2697 207.243 38.5618C208.017 38.8539 208.932 39 209.988 39C210.762 39 211.395 38.9635 211.888 38.8905C212.381 38.8174 212.873 38.6348 213.366 38.3427V36.316C213.19 36.3525 213.014 36.389 212.838 36.4256C212.662 36.4256 212.486 36.4256 212.31 36.4256C211.571 36.4256 210.92 36.316 210.357 36.0969C209.794 35.8778 209.266 35.5674 208.773 35.1657C208.281 34.7275 207.806 34.2163 207.348 33.632C206.891 33.0112 206.416 32.3174 205.923 31.5506C204.445 29.323 203.301 27.552 202.491 26.2374C201.682 24.8862 201.031 23.8455 200.538 23.1152C200.081 22.3848 199.694 21.8553 199.377 21.5267C199.095 21.198 198.743 20.9242 198.321 20.7051L197.793 20.4312V20.2121C199.482 20.1025 200.925 19.7191 202.122 19.0618C203.354 18.4045 204.357 17.5829 205.131 16.5969C205.905 15.611 206.468 14.552 206.82 13.4199C207.172 12.2514 207.348 11.1194 207.348 10.0239C207.348 9.03792 207.155 7.96068 206.767 6.79214C206.416 5.6236 205.782 4.54635 204.867 3.56039C203.987 2.53792 202.773 1.69803 201.225 1.04073C199.676 0.34691 197.723 0 195.365 0H183.382ZM188.186 2.41011H193.517C194.855 2.41011 196.051 2.61096 197.107 3.01264C198.198 3.41433 199.131 3.98034 199.905 4.71068C200.679 5.4045 201.26 6.24438 201.647 7.23034C202.069 8.21629 202.28 9.29354 202.28 10.4621C202.28 11.448 202.087 12.4522 201.7 13.4747C201.348 14.4607 200.802 15.3736 200.063 16.2135C199.324 17.0169 198.409 17.6742 197.318 18.1854C196.262 18.6966 195.031 18.9522 193.623 18.9522H188.186V2.41011Z" fill="white"/>
+                     <path d="M221.8 38.3427V0H226.604V35.3301H245.661V38.3427H221.8Z" fill="white"/>
+                     <path d="M256.196 0V38.3427H261V0H256.196Z" fill="white"/>
+                  </svg>
+               </div>
+               <button class="header_link request-open-btn">
+               забронювати
+               </button>
+               <button class="header-toggler">
+               <span></span>
+               <span></span>
+               <span></span>
+               </button>
+            </div>
+         </div>
+         <div class="header-mob">
+            <ul class="header-mob_menu">
+               <li class="header_menu_item-mob"><button class="menu-open-btn">меню</button></li>
+               <li class="header_menu_item-mob"><a href="#events">заходи</a></li>
+               <li class="header_menu_item-mob"><a href="#consultations">прикраси</a></li>
             </ul>
-          </div>
-        </div>
+            <button class="submit-btn request-open-btn">
+            забронювати
+            </button>
+         </div>
+      </header>
+      <section class="banner" id="banner">
+         <div class="mainContainer">
+            <div class="banner_content">
+               <div class="banner_heading">Перший <br> ювелірний бар <br> в Києві</div>
+               <div class="banner_descr">Kimberli Bar — це багатогранний простір, де барне<br> мистецтво поєднується з діамантами</div>
+            </div>
+         </div>
+         <button class="submit-btn request-open-btn">забронювати</button>
+         <div class="banner-bg">
+            <div class="swiper-container">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image: radial-gradient(87.94% 87.94% at 50% 37.19%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url(img/banner.jpeg);"></div>
+                  <div class="swiper-slide" style="background-image: radial-gradient(87.94% 87.94% at 50% 37.19%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url(img/banner2.jpeg);"></div>
+                  <div class="swiper-slide" style="background-image: radial-gradient(87.94% 87.94% at 50% 37.19%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url(img/banner3.jpeg);"></div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="atmosphere">
+         <div class="mainContainer">
+            <div class="atmosphere_heading">
+               це <br>атмосфера <br>що <br><span><img src="img/atmosphere-heading.svg" alt=""></span>
+            </div>
+            <div class="atmosphere_content">
+               <div class="atmosphere_content_heading">це більше ніж просто<br> їжа чи напої</div>
+               <div class="atmosphere_content_descr">
+                  <p>Унікальний бар для цінувальників ювелірних виробів, вишуканої кухні та коктейлів, подібних якому можна знайти лише в декількох куточках планети.</p>
+                  <p>Місце, де можна придбати прикраси, провести бізнес-бранч, навчальний захід, або вечерю із партнерами.</p>
+                  <p>Це простір із елегантною атмосферою свята. Він є магнітом для романтичних подій: побачення, освідчення у коханні, святкування заручин, проведення весілля.</p>
+               </div>
+            </div>
+         </div>
+         <div class="bg_elements">
+            <div class="bgel">
+               <img class="lazy" data-src="img/atmosphere_bgel1.jpg" alt="">
+            </div>
+            <div class="bgel">
+               <img class="lazy" data-src="img/atmosphere_bgel2.jpg" alt="">
+            </div>
+            <div class="bgel">
+               <img class="lazy" data-src="img/atmosphere_bgel3.jpg" alt="">
+            </div>
+            <div class="bgel">
+               <img class="lazy" data-src="img/atmosphere_bgel4.jpg" alt="">
+            </div>
+         </div>
+      </section>
+      <section class="location">
+         <div class="location-round"></div>
+         <div class="mainContainer">
+            <div class="location_heading">це місце,<br>
+               <span><img src="img/location-heading.svg" alt=""></span>
+               <span class="mob"><img src="img/location-heading-mob.svg" alt=""></span><br>
+               бажання
+            </div>
+            <div class="location_content">
+               <div class="location_content_heading">Тут дизайнери розповідають про нові колекції, музиканти роблять pre-party, а бізнесмени презентують нові проєкти.</div>
+               <div class="location_content_descr">Відчуйте цю надзвичайну атмосферу на смак! Забронюйте локацію та отримайте вигідну ціну!</div>
+            </div>
+            <button class="submit-btn location-open-btn">забронювати  локацію</button>
+         </div>
+      </section>
+      <section class="gallery">
+         <div class="galleryContainer">
+            <div class="gallery_item"><a class="fancybox" rel="gallery" href="img/gallery-img1.jpg"></a><img class="lazy" data-src="img/gallery-img1.jpg" alt=""></div>
+            <div class="gallery_item"><a class="fancybox" rel="gallery" href="img/gallery-img2.jpg"></a><img class="lazy" data-src="img/gallery-img2.jpg" alt=""></div>
+            <div class="gallery_item"><a class="fancybox" rel="gallery" href="img/gallery-img3.jpg"></a><img class="lazy" data-src="img/gallery-img3.jpg" alt=""></div>
+            <div class="gallery_item"><a class="fancybox" rel="gallery" href="img/gallery-img4.jpg"></a><img class="lazy" data-src="img/gallery-img4.jpg" alt=""></div>
+            <div class="gallery_item"><a class="fancybox" rel="gallery" href="img/gallery-img5.jpg"></a><img class="lazy" data-src="img/gallery-img5.jpg" alt=""></div>
+            <div class="gallery_item"><a class="fancybox" rel="gallery" href="img/gallery-img6.jpg"></a><img class="lazy" data-src="img/gallery-img6.jpg" alt=""></div>
+            <div class="gallery_item"><a class="fancybox" rel="gallery" href="img/gallery-img7.jpg"></a><img class="lazy" data-src="img/gallery-img7.jpg" alt=""></div>
+            <div class="gallery_item"><a class="fancybox" rel="gallery" href="img/gallery-img8.jpg"></a><img class="lazy" data-src="img/gallery-img8.jpg" alt=""></div>
+            <div class="gallery_item"><a class="fancybox" rel="gallery" href="img/gallery-img9.jpg"></a><img class="lazy" data-src="img/gallery-img9.jpg" alt=""></div>
+            <div class="gallery_item"><a class="fancybox" rel="gallery" href="img/gallery-img10.jpg"></a><img class="lazy" data-src="img/gallery-img10.jpg" alt=""></div>
+         </div>
+      </section>
+      <div class="restaurant-title">
+         <div class="restaurant-title-container">
+            <span>барне меню</span>
+            <span>барне меню</span>
+            <span>барне меню</span>
+            <span>барне меню</span>
+            <span>барне меню</span>
+            <span>барне меню</span>
+            <span>барне меню</span>
+            <span>барне меню</span>
+            <span>барне меню</span>
+            <button class="restaurant-title-link menu-open-btn"></button>
+         </div>
       </div>
-    </div>
-    <div class="footer_nav">
-      <div class="mainContainer">
-        <div class="footer_nav_wrapp">
-          <div class="footer_nav_descr">© 2023 Kimberli Jewelry Bar</div>
-          <a href="#banner" class="footer_nav_link">Наверх</a>
-        </div>
+      <section class="restaurant">
+         <div class="mainContainer">
+            <div class="restaurant_heading">
+               Це місце для<br>
+               <span><img src="img/restaurant-heading.svg" alt=""></span><br>
+               зустрічей
+            </div>
+            <div class="restaurant_descr">
+               Де можна поговорити, спробувати неймовірні коктейлі та придбати таку бажану прикрасу. Зарезервуйте столик заздалегідь та отримайте подарунок від закладу.
+            </div>
+            <button class="submit-btn request-open-btn">забронювати столик</button>
+         </div>
+         <div class="bg_elements">
+            <div class="bgel">
+               <img class="lazy" data-src="img/restaurant-bgel1.jpg" alt="">
+            </div>
+            <div class="bgel">
+               <img class="lazy" data-src="img/restaurant-bgel2.jpg" alt="">
+            </div>
+            <div class="bgel">
+               <img class="lazy" data-src="img/restaurant-bgel3.jpg" alt="">
+            </div>
+         </div>
+      </section>
+      <section class="catalog">
+         <div class="mainContainer">
+            <div class="catalog_line"></div>
+            <div class="catalog_nav">
+               <button class="catalog_nav_btn tab active" data-toggle-target=".catalog-drink">коктейлі</button>
+               <button class="catalog_nav_btn tab" data-toggle-target=".catalog-food">страви</button>
+            </div>
+         </div>
+         <div class="catalog_slider-container tab-content catalog-drink active">
+            <div class="catalog_slider_nav">
+               <button class="prev">
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M19.5 12.5H6.5" stroke="#030F14" stroke-linecap="square" stroke-linejoin="round"/>
+                     <path d="M12.5 5.5L5.5 12.5L12.5 19.5" stroke="#030F14" stroke-linecap="square" stroke-linejoin="round"/>
+                  </svg>
+               </button>
+               <button class="next">
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M5.5 12.5H18.5" stroke="#030F14" stroke-linecap="square" stroke-linejoin="round"/>
+                     <path d="M12.5 5.5L19.5 12.5L12.5 19.5" stroke="#030F14" stroke-linecap="square" stroke-linejoin="round"/>
+                  </svg>
+               </button>
+            </div>
+            <div class="catalog_slider swiper-container">
+               <div class="catalog_slider-wrapp swiper-wrapper">
+                  <div class="catalog_slide swiper-slide" style="width: 45.555%">
+                     <a class="fancybox" rel="gallery" href="img/catalog-tab1-img1.jpg"></a>
+                     <img class="swiper-lazy"  src="img/catalog-tab1-img1.jpg" alt="">
+                  </div>
+                  <div class="catalog_slide swiper-slide" style="width: 32.291%;">
+                    <a class="fancybox" rel="gallery" href="img/catalog-tab1-img2.jpg"></a>
+                    <img  class="swiper-lazy" src="img/catalog-tab1-img2.jpg" alt="">
+                  </div>
+                  <div class="catalog_slide swiper-slide" style="width: 28.125%;">
+                    <a class="fancybox" rel="gallery" href="img/catalog-tab1-img3.jpg"></a>
+                    <img class="swiper-lazy"  src="img/catalog-tab1-img3.jpg" alt="">
+                  </div>
+                  <div class="catalog_slide swiper-slide" style="width: 45.555%">
+                    <a class="fancybox" rel="gallery" href="img/catalog-tab1-img10.jpg"></a>
+                    <img class="swiper-lazy"  src="img/catalog-tab1-img10.jpg" alt="">
+                  </div>
+                  <div class="catalog_slide swiper-slide" style="width: 32.291%;">
+                    <a class="fancybox" rel="gallery" href="img/catalog-tab1-img5.jpg"></a>
+                    <img class="swiper-lazy"  src="img/catalog-tab1-img5.jpg" alt="">
+                  </div>
+                  <div class="catalog_slide swiper-slide" style="width: 28.125%;">
+                    <a class="fancybox" rel="gallery" href="img/catalog-tab1-img6.jpg"></a>
+                    <img  class="swiper-lazy" src="img/catalog-tab1-img6.jpg" alt="">
+                  </div>
+                  <div class="catalog_slide swiper-slide" style="width: 45.555%">
+                    <a class="fancybox" rel="gallery" href="img/catalog-tab1-img7.jpg"></a>
+                    <img class="swiper-lazy"  src="img/catalog-tab1-img7.jpg" alt="">
+                  </div>
+                  <div class="catalog_slide swiper-slide" style="width: 32.291%;">
+                    <a class="fancybox" rel="gallery" href="img/catalog-tab1-img8.jpg"></a>
+                    <img class="swiper-lazy"  src="img/catalog-tab1-img8.jpg" alt="">
+                  </div>
+                  <div class="catalog_slide swiper-slide" style="width: 28.125%;">
+                    <a class="fancybox" rel="gallery" href="img/catalog-tab1-img4.jpg"></a>
+                    <img class="swiper-lazy"  src="img/catalog-tab1-img4.jpg" alt="">
+                  </div>
+                  <div class="catalog_slide swiper-slide" style="width: 45.555%">
+                    <a class="fancybox" rel="gallery" href="img/catalog-tab1-img9.jpg"></a>
+                    <img class="swiper-lazy"  src="img/catalog-tab1-img9.jpg" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="catalog_slider-container tab-content catalog-food show">
+            <div class="catalog_slider_nav">
+               <button class="prev">
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M19.5 12.5H6.5" stroke="#030F14" stroke-linecap="square" stroke-linejoin="round"/>
+                     <path d="M12.5 5.5L5.5 12.5L12.5 19.5" stroke="#030F14" stroke-linecap="square" stroke-linejoin="round"/>
+                  </svg>
+               </button>
+               <button class="next">
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M5.5 12.5H18.5" stroke="#030F14" stroke-linecap="square" stroke-linejoin="round"/>
+                     <path d="M12.5 5.5L19.5 12.5L12.5 19.5" stroke="#030F14" stroke-linecap="square" stroke-linejoin="round"/>
+                  </svg>
+               </button>
+            </div>
+            <div class="catalog_slider swiper-container">
+               <div class="catalog_slider-wrapp swiper-wrapper">
+                  <div class="catalog_slide swiper-slide" style="width: 28.125%;">
+                     <a class="fancybox" rel="gallery" href="img/catalog-item1.jpg"></a>
+                     <img class="swiper-lazy"  src="img/catalog-item1.jpg" alt="">
+                  </div>
+                  <div class="catalog_slide swiper-slide" style="width: 32.291%;">
+                     <a class="fancybox" rel="gallery" href="img/catalog-item2.jpg"></a>
+                     <img class="swiper-lazy"  src="img/catalog-item2.jpg" alt="">
+                  </div>
+                  <div class="catalog_slide swiper-slide" style="width: 55.555%">
+                     <a class="fancybox" rel="gallery" href="img/catalog-item3.jpg"></a>
+                     <img class="swiper-lazy"  src="img/catalog-item3.jpg" alt="">
+                  </div>
+                  <div class="catalog_slide swiper-slide" style="width: 28.125%;">
+                    <a class="fancybox" rel="gallery" href="img/catalog-tab2-img4.jpg"></a>
+                    <img class="swiper-lazy"  src="img/catalog-tab2-img4.jpg" alt="">
+                  </div>
+                  <div class="catalog_slide swiper-slide" style="width: 32.291%;">
+                    <a class="fancybox" rel="gallery" href="img/catalog-tab2-img6.jpg"></a>
+                    <img class="swiper-lazy"  src="img/catalog-tab2-img6.jpg" alt="">
+                  </div>
+                  <div class="catalog_slide swiper-slide" style="width: 55.555%">
+                    <a class="fancybox" rel="gallery" href="img/catalog-tab2-img7.jpg"></a>
+                    <img class="swiper-lazy"  src="img/catalog-tab2-img7.jpg" alt="">
+                  </div>
+                  <div class="catalog_slide swiper-slide" style="width: 28.125%;">
+                    <a class="fancybox" rel="gallery" href="img/catalog-tab2-img8.jpg"></a>
+                    <img class="swiper-lazy"  src="img/catalog-tab2-img8.jpg" alt="">
+                  </div>
+                  <div class="catalog_slide swiper-slide" style="width: 32.291%;">
+                    <a class="fancybox" rel="gallery" href="img/catalog-tab2-img9.jpg"></a>
+                    <img class="swiper-lazy"  src="img/catalog-tab2-img9.jpg" alt="">
+                  </div>
+                  <div class="catalog_slide swiper-slide" style="width: 55.555%">
+                    <a class="fancybox" rel="gallery" href="img/catalog-tab2-img5.jpg"></a>
+                    <img class="swiper-lazy"  src="img/catalog-tab2-img5.jpg" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="events" id="events">
+         <div class="events-textbg">
+         </div>
+         <div class="events-bg"></div>
+         <div class="events-bg-second"></div>
+         <div class="mainContainer">
+            <div class="events_content">
+               <div class="events_content_heading">проведення заходів<br> в kimberli bar</div>
+               <div class="events_content_descr">
+                  <p>Концепція інтер’єру Kimberli Bar натхненна вишуканістю ювелірних прикрас. А сама ідея бару та шоу-руму два в одному робить досвід відвідувачів особливим. Нині, коли люди ведуть рахунок часу, як ніколи актуальною є багатофункціональність просторів. Тому, з турботою про вас і ваш час, був створений Kimberli Bar.</p>
+                  <p>Унікальне поєднання мистецтва та смаку робить Kimberli Bar місцем must visit на карті столиці. Пропозиція руки та серця, вечеря з близькими людьми чи підписання контракту мрії. Ми потурбувалися, аби ви відчували себе тут розслаблено. </p>
+               </div>
+            </div>
+         </div>
+         <div class="events_container">
+            <div class="events_list" id="events-list">
+               <!--<div class="events_item">
+                  <div class="events_item_bg lazy" data-src="img/events-item1.png"></div>
+                  <div class="events_item_heading">Незабутні освідчення</div>
+                  </div>
+                  <div class="events_item">
+                  <div class="events_item_bg lazy" data-src="img/events-item2.png"></div>
+                  <div class="events_item_heading">Бізнес-зустрічі спільноти підприємців</div>
+                  </div>
+                  <div class="events_item">
+                  <div class="events_item_bg lazy" data-src="img/events-item3.png"></div>
+                  <div class="events_item_heading">Бранчі з підписниками</div>
+                  </div>
+                  <div class="events_item">
+                  <div class="events_item_bg lazy" data-src="img/events-item4.png"></div>
+                  <div class="events_item_heading">Затишні весілля</div>
+                  </div>-->
+            </div>
+         </div>
+         <div class="mainContainer">
+            <div class="events_blockquote">Забронюйте Kimberli Bar для проведення вашого заходу<br> та отримайте професійну фотосесію у подарунок!</div>
+            <button class="submit-btn location-open-btn">забронювати</button>
+         </div>
+      </section>
+      <section class="consultations" id="consultations">
+         <div class="mainContainer">
+            <div class="consultations_top">
+               <div class="consultations_heading">Ювелірні <span>консультанти</span> <span class="mob">консуль –танти</span></div>
+               <div class="consultations_content">
+                  <div class="consultations_descr">
+                     У Kimberli Bar також працюють ювелірні сомельє, здатні підібрати прикраси до будь-якої особливої події. Вони можуть запропонувати заручні обручки, пусети з діамантами, хрестики, брошки та безліч інших вишуканих варіантів.
+                  </div>
+                  <button class="submit-btn"> <a href="https://kimberli.ua/" target="_blank"></a>підібрати прикрасу</button>
+               </div>
+            </div>
+         </div>
+         <div class="bg_elements">
+            <div class="bgel">
+               <img class="lazy" data-src="img/consultations-bgel1.jpg" alt="">
+            </div>
+            <div class="bgel">
+               <img class="lazy" data-src="img/consultations-bgel2.jpg" alt="">
+            </div>
+            <div class="bgel">
+               <img class="lazy" data-src="img/consultations-bgel3.jpg" alt="">
+            </div>
+            <div class="bgel">
+               <img class="lazy" data-src="img/consultations-bgel4.jpg" alt="">
+            </div>
+            <div class="bgel">
+               <img class="lazy" data-src="img/consultations-bgel5.jpg" alt="">
+            </div>
+         </div>
+      </section>
+      <section class="pickup">
+         <div class="mainContainer">
+            <div class="pickup_line"></div>
+            <div class="pickup_wrapp">
+               <div class="pickup_preview lazy" data-src="img/pickup-preview.jpg"></div>
+               <div class="pickup_content">
+                  <div class="pickup_content_sl-one">
+                     <div class="pickup_heading">Хочете підібрати ідеальну прикрасу або розробити унікальний виріб на замовлення?</div>
+                     <div class="pickup_descr">Записуйтесь на примірку і ми найближчим часом допоможемо вам у втіленні мрії! До зустрічі!</div>
+                     <form class="pickup_form">
+                        <input type="hidden" name="Form" value="ПІДІБРАТИ ПРИКРАСУ (ФУТЕР)">
+                        <input type="text" name="Phone" placeholder="Ваш номер" required>
+                        <button class="submit-btn">зателефонуйте мені</button>
+                     </form>
+                  </div>
+                  <div class="pickup_content_sl-ty hidden">
+                     <div class="pickup_heading">Дякуюємо за заявку! <br/>Ми зателефонуємо вам якомога швидше!</div>
+                     <div class="pickup_descr">Довго очікуєте на дзвінок? <br/>Зателефонуйте нам, будь ласка, самі:</div>
+                     <a href="tel:+380678520808" class="pickup_ty">+38 (067) 852 08 08</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="footer">
+         <div class="footer-round"></div>
+         <div class="footer_preview">
+            <div class="footer-preview-bg"><span>@KIMBERLI.BAR</span> <span>@KIMBERLI.BAR</span> <span>@KIMBERLI.BAR</span> <span>@KIMBERLI.BAR</span> <span>@KIMBERLI.BAR</span></div>
+            <div class="mainContainer">
+               <div class="footer_label">Хочете знати про наші заходи та акції?</div>
+               <div class="footer_socials">
+                  <div class="footer_socials_heading">Підписуйтесь на Kimberli Bar<br> у соціальних мережах</div>
+                  <div class="footer_socials_list">
+                     <a href="https://www.facebook.com/bar.kimberli/" target="_blank">
+                     <img src="img/facebook-item.svg" alt="">
+                     </a>
+                     <a href="https://www.instagram.com/bar.kimberli/" target="_blank">
+                     <img src="img/instagram-item.svg" alt="">
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="bg_elements">
+               <div class="bgel">
+                  <video loop="true" muted playsinline id="footerVideo">
+                     <source src="img/footer-bg-video2.mp4" type="video/mp4">
+                  </video>
+               </div>
+               <div class="bgel lazy" data-src="img/footer-preview3.jpg"></div>
+               <div class="bgel lazy" data-src="img/footer-preview2.jpg"></div>
+            </div>
+         </div>
+         <div class="footer_info">
+            <div class="mainContainer">
+               <div class="footer_info_line"></div>
+               <div class="footer_info_wrapp">
+                  <div class="footer_info_content">
+                     <div class="logo"><img src="img/footer-logo.svg" alt=""></div>
+                     <div class="footer_info_content_descr">Kimberli Bar — це багатогранний простір, де барне мистецтво поєднується з діамантами</div>
+                     <button class="submit-btn request-open-btn">забронювати</button>
+                  </div>
+                  <div class="footer_info_details">
+                     <a href="https://goo.gl/maps/rjc4kPrLyRXNvTt17" target="_blank" class="location-link">вул. Князів Острозьких, 8</a>
+                     <a href="tel:380678520808" class="location-link">+38 (067) 852 08 08</a>
+                     <ul class="footer_info_menu">
+                        <li><button class="menu-open-btn">Meню</button></li>
+                        <li><a href="#events">заходи</a></li>
+                        <li><a href="#consultations">прикраси</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer_nav">
+            <div class="mainContainer">
+               <div class="footer_nav_wrapp">
+                  <div class="footer_nav_descr">© 2023 Kimberli Jewelry Bar</div>
+                  <a href="#banner" class="footer_nav_link">Наверх</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div id="ty-popup" class="sli-popup_container click-obj">
+         <div class="sli-popup_background click-item popup-close" data-action="popup-close"></div>
+         <div class="sli-popup sli-request-popup popup-ty">
+            <button class="sli-popup_close click-item popup-close" data-action="popup-close">
+               <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.5 6.5L6.5 18.5" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
+                  <path d="M6.5 6.5L18.5 18.5" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
+               </svg>
+            </button>
+            <div class="sli-request-popup_content">
+               <div class="sli-request-popup_heading">ми вам скоро <br/> <span class="mob">зателе–фонуємо!</span> <span class="desk">зателефонуємо!</span></div>
+               <div class="sli-request-popup_form">
+                  <button class="submit-btn popup-close" data-action="popup-close">на головну</button>
+               </div>
+            </div>
+            <div class="sli-request-popup_soc">
+               <div class="sli-request-popup_soc_descr">Підписуйтесь на Kimberli Bar<br/> у соціальних мережах</div>
+               <div class="sli-request-popup_soc_list">
+                  <a href="https://www.facebook.com/bar.kimberli/" target="_blank">
+                  <img src="img/facebook-item.svg" alt="">
+                  </a>
+                  <a href="https://www.instagram.com/bar.kimberli/" target="_blank">
+                  <img src="img/instagram-item.svg" alt="">
+                  </a>
+               </div>
+            </div>
+            <div class="bg_elements">
+               <div class="bgel" style="background-image: url('img/catalog-item2.jpg');"></div>
+               <div class="bgel" style="background-image: url('img/consultations-bgel2.jpg');"></div>
+            </div>
+         </div>
       </div>
-    </div>
-  </section>
-
-  <div id="ty-popup" class="sli-popup_container click-obj">
-    <div class="sli-popup_background click-item popup-close" data-action="popup-close"></div>
-    <div class="sli-popup sli-request-popup popup-ty">
-      <button class="sli-popup_close click-item popup-close" data-action="popup-close">
-        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M18.5 6.5L6.5 18.5" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
-          <path d="M6.5 6.5L18.5 18.5" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
-        </svg>              
-      </button>
-      <div class="sli-request-popup_content">
-        <div class="sli-request-popup_heading">ми вам скоро <br/> <span class="mob">зателе–фонуємо!</span> <span class="desk">зателефонуємо!</span></div>
-        <div class="sli-request-popup_form">
-          <button class="submit-btn popup-close" data-action="popup-close">на головну</button>
-        </div>
+      <div id="request-popup" class="sli-popup_container click-obj">
+         <div class="sli-popup_background click-item popup-close" data-action="popup-close"></div>
+         <div class="sli-popup sli-request-popup">
+            <button class="sli-popup_close click-item popup-close" data-action="popup-close">
+               <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.5 6.5L6.5 18.5" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
+                  <path d="M6.5 6.5L18.5 18.5" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
+               </svg>
+            </button>
+            <div class="sli-request-popup_content">
+               <div class="sli-request-popup_heading">бронь столика<br> в kimberli</div>
+               <form class="sli-request-popup_form">
+                  <input type="hidden" name="Form" value="БРОНЬ СТОЛИКА (ПОПАП)">
+                  <input type="text" name="Phone" placeholder="Ваш номер" required>
+                  <button class="submit-btn">забронювати  столик</button>
+               </form>
+            </div>
+            <div class="sli-request-popup_descr">при бронюванні локаіції отримайте професійну фотосесію у подарунок!</div>
+            <div class="bg_elements">
+               <div class="bgel" style="background-image: url('img/gallery-img1.jpg');"></div>
+               <div class="bgel" style="background-image: url('img/consultations-bgel4.jpg');"></div>
+            </div>
+         </div>
       </div>
-      <div class="sli-request-popup_soc">
-        <div class="sli-request-popup_soc_descr">Підписуйтесь на Kimberli Bar<br/> у соціальних мережах</div>
-        <div class="sli-request-popup_soc_list">
-          <a href="https://www.facebook.com/bar.kimberli/" target="_blank">
-            <img src="img/facebook-item.svg" alt="">
-          </a>
-          <a href="https://www.instagram.com/bar.kimberli/" target="_blank">
-            <img src="img/instagram-item.svg" alt="">
-          </a>
-        </div>
+      <div id="location-popup" class="sli-popup_container click-obj">
+         <div class="sli-popup_background click-item popup-close" data-action="popup-close"></div>
+         <div class="sli-popup sli-request-popup popup-second">
+            <button class="sli-popup_close click-item popup-close" data-action="popup-close">
+               <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.5 6.5L6.5 18.5" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
+                  <path d="M6.5 6.5L18.5 18.5" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
+               </svg>
+            </button>
+            <div class="sli-request-popup_content">
+               <div class="sli-request-popup_heading">бронь локації<br> в kimberli</div>
+               <form class="sli-request-popup_form">
+                  <input type="hidden" name="Form" value="БРОНЬ ЛОКАЦІЇ (ПОПАП)">
+                  <input type="text" name="Phone" placeholder="Ваш номер" required>
+                  <button class="submit-btn">забронювати  локацію</button>
+               </form>
+            </div>
+            <div class="sli-request-popup_descr">при бронюванні локаіції отримайте професійну фотосесію у подарунок!</div>
+            <div class="bg_elements">
+               <div class="bgel" style="background-image: url('img/gallery-img2.jpg');"></div>
+               <div class="bgel" style="background-image: url('img/gallery-img4.jpg');"></div>
+            </div>
+         </div>
       </div>
-      <div class="bg_elements">
-        <div class="bgel" style="background-image: url('img/catalog-item2.jpg');"></div>
-        <div class="bgel" style="background-image: url('img/consultations-bgel2.jpg');"></div>
+      <div id="menu-popup" class="sli-popup_container click-obj">
+         <div class="sli-popup_background click-item popup-close" data-action="popup-close"></div>
+         <div class="sli-popup sli-request-popup popup-menu">
+            <button class="sli-popup_close click-item popup-close" data-action="popup-close">
+               <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.5 6.5L6.5 18.5" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
+                  <path d="M6.5 6.5L18.5 18.5" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
+               </svg>
+            </button>
+            <div class="sli-request-popup_content">
+               <div class="sli-request-popup_wrapp">
+                  <img src="img/menu-item5.jpg" alt="">
+               </div>
+            </div>
+            <div class="bg-element">
+               <div class="bg-element-container">
+                  <span>барне меню</span>
+                  <span>барне меню</span>
+                  <span>барне меню</span>
+                  <span>барне меню</span>
+                  <span>барне меню</span>
+                  <span>барне меню</span>
+                  <span>барне меню</span>
+                  <span>барне меню</span>
+                  <span>барне меню</span>
+               </div>
+            </div>
+            <a href="img/menu.pdf" target="_blank" class="download-btn" download="menu.pdf">
+               <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.5 15.5V19.5C21.5 20.0304 21.2893 20.5391 20.9142 20.9142C20.5391 21.2893 20.0304 21.5 19.5 21.5H5.5C4.96957 21.5 4.46086 21.2893 4.08579 20.9142C3.71071 20.5391 3.5 20.0304 3.5 19.5V15.5" stroke="#1C356E" stroke-linecap="square" stroke-linejoin="round"/>
+                  <path d="M7.5 10.5L12.5 15.5L17.5 10.5" stroke="#1C356E" stroke-linecap="square" stroke-linejoin="round"/>
+                  <path d="M12.5 14.5V3.5" stroke="#1C356E" stroke-linecap="square" stroke-linejoin="round"/>
+               </svg>
+            </a>
+         </div>
       </div>
-    </div>
-  </div>
-
-  <div id="request-popup" class="sli-popup_container click-obj">
-    <div class="sli-popup_background click-item popup-close" data-action="popup-close"></div>
-    <div class="sli-popup sli-request-popup">
-      <button class="sli-popup_close click-item popup-close" data-action="popup-close">
-        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M18.5 6.5L6.5 18.5" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
-          <path d="M6.5 6.5L18.5 18.5" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
-        </svg>              
-      </button>
-      <div class="sli-request-popup_content">
-        <div class="sli-request-popup_heading">бронь столика<br> в kimberli</div>
-        <form class="sli-request-popup_form">
-          <input type="text" placeholder="Ваш номер">
-          <button class="submit-btn" type="button">забронювати  столик</button>
-        </form>
-      </div>
-      <div class="sli-request-popup_descr">при бронюванні локаіції отримайте професійну фотосесію у подарунок!</div>
-      <div class="bg_elements">
-        <div class="bgel" style="background-image: url('img/gallery-img1.jpg');"></div>
-        <div class="bgel" style="background-image: url('img/consultations-bgel4.jpg');"></div>
-      </div>
-    </div>
-  </div>
-
-  <div id="location-popup" class="sli-popup_container click-obj">
-    <div class="sli-popup_background click-item popup-close" data-action="popup-close"></div>
-    <div class="sli-popup sli-request-popup popup-second">
-      <button class="sli-popup_close click-item popup-close" data-action="popup-close">
-        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M18.5 6.5L6.5 18.5" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
-          <path d="M6.5 6.5L18.5 18.5" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
-        </svg>              
-      </button>
-      <div class="sli-request-popup_content">
-        <div class="sli-request-popup_heading">бронь локації<br> в kimberli</div>
-        <form class="sli-request-popup_form">
-          <input type="text" placeholder="Ваш номер">
-          <button class="submit-btn" type="button">забронювати  локацію</button>
-        </form>
-      </div>
-      <div class="sli-request-popup_descr">при бронюванні локаіції отримайте професійну фотосесію у подарунок!</div>
-      <div class="bg_elements">
-        <div class="bgel" style="background-image: url('img/gallery-img2.jpg');"></div>
-        <div class="bgel" style="background-image: url('img/gallery-img4.jpg');"></div>
-      </div>
-    </div>
-  </div>
-
-  <div id="menu-popup" class="sli-popup_container click-obj">
-    <div class="sli-popup_background click-item popup-close" data-action="popup-close"></div>
-    <div class="sli-popup sli-request-popup popup-menu">
-      <button class="sli-popup_close click-item popup-close" data-action="popup-close">
-        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M18.5 6.5L6.5 18.5" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
-          <path d="M6.5 6.5L18.5 18.5" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
-        </svg>              
-      </button>
-      <div class="sli-request-popup_content">
-        <div class="sli-request-popup_wrapp">
-          <img src="img/menu-item1.1.jpg" alt="">
-        </div>
-      </div>
-      <div class="bg-element">
-        <div class="bg-element-container">
-          <span>барне меню</span>
-          <span>барне меню</span>
-          <span>барне меню</span>
-          <span>барне меню</span>
-          <span>барне меню</span>
-          <span>барне меню</span>
-          <span>барне меню</span>
-          <span>барне меню</span>
-          <span>барне меню</span>
-        </div>
-      </div>
-      <a href="img/menu.pdf" target="_blank" class="download-btn" download="menu.pdf">
-        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M21.5 15.5V19.5C21.5 20.0304 21.2893 20.5391 20.9142 20.9142C20.5391 21.2893 20.0304 21.5 19.5 21.5H5.5C4.96957 21.5 4.46086 21.2893 4.08579 20.9142C3.71071 20.5391 3.5 20.0304 3.5 19.5V15.5" stroke="#1C356E" stroke-linecap="square" stroke-linejoin="round"/>
-          <path d="M7.5 10.5L12.5 15.5L17.5 10.5" stroke="#1C356E" stroke-linecap="square" stroke-linejoin="round"/>
-          <path d="M12.5 14.5V3.5" stroke="#1C356E" stroke-linecap="square" stroke-linejoin="round"/>
-        </svg>          
-      </a>
-    </div>
-  </div>
-
-  <script src="js/jquery-3.6.3.min.js"></script>
-  <script src="libs/swiperjs/swiper.min.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.lazy.min.js"></script>
-  <script src="js/jquery.lazy.plugins.min.js"></script>
-
-  <script>
-    $(document).ready(function() {
-		  $('a[rel=gallery]').fancybox({});
-      $('.lazy').lazy();
-
-      $('.tab').on('click', function(evt) {
-        evt.preventDefault();
-        $('.tab').removeClass('active');
-        $('.tab[data-toggle-target="'+$(this).attr('data-toggle-target')+'"]').addClass('active');
-        var sel = this.getAttribute('data-toggle-target');
-        $('.tab-content').removeClass('active').filter(sel).addClass('active');
-      });
-
-      setTimeout(() => {
-        $('.catalog-food').removeClass('show');
-      },1000);
-    
-    let foodSwiper = new Swiper('.catalog-food .catalog_slider', {
-      loop: false,
-      roundLengths: true,
-      //autoplay: true,
-      slidesPerView: "auto",
-      //centeredSlides: true,
-      spaceBetween: 9,
-      allowTouchMove: false,
-
-      /*pagination: {
-        el: ".banner_pagination",
-      },*/
-      navigation: {
-        nextEl: '.catalog-food .catalog_slider_nav .next',
-        prevEl: '.catalog-food .catalog_slider_nav .prev',
-      },
-    });
-
-    let drinkSwiper = new Swiper('.catalog-drink .catalog_slider', {
-      loop: false,
-      roundLengths: true,
-      //autoplay: true,
-      slidesPerView: "auto",
-      //centeredSlides: true,
-      spaceBetween: 9,
-      allowTouchMove: false,
-
-      /*pagination: {
-        el: ".banner_pagination",
-      },*/
-      navigation: {
-        nextEl: '.catalog-drink .catalog_slider_nav .next',
-        prevEl: '.catalog-drink .catalog_slider_nav .prev',
-      },
-    });
-
-    let bannerSwiper = new Swiper('.banner-bg .swiper-container', {
-      loop: true,
-      roundLengths: true,
-      effect: 'fade',
-      autoplay: {
-        delay: 4000,
-      },
-      spaceBetween: 0,
-      allowTouchMove: false,
-      
-    });
-
-    $('.footer .bgel .footer-preview-bg').css({"-webkit-transform":"translateX(-"+$(window).width()+"px)"});
-
-    $('.request-open-btn').click(function(){
-      $('.header').removeClass('active');
-      $('#request-popup.sli-popup_container').addClass('active');
-    });
-
-    $('.location-open-btn').click(function(){
-      $('.header').removeClass('active');
-      $('#location-popup.sli-popup_container').addClass('active');
-    });
-
-    $('.menu-open-btn').click(function(){
-      $('.header').removeClass('active');
-      $('#menu-popup.sli-popup_container').addClass('active');
-      $('#menu-popup .bg-element-container').addClass('bg-element-container-run');
-    });
-
-    $('.ty-open-btn').click(function(){
-      $('.header').removeClass('active');
-      $('#ty-popup.sli-popup_container').addClass('active');
-    });
-
-    $('.popup-close').click(function(){
-      $('.sli-popup_container').removeClass('active');
-      $('#menu-popup .bg-element-container').removeClass('bg-element-container-run');
-    });
-
-    window.addEventListener('scroll', function() {
-      var element = document.querySelector('.location');
-      var position = element.getBoundingClientRect();
-      var elementSecond = document.querySelector('.footer');
-      var positionSecond = elementSecond.getBoundingClientRect();
-      var elementCircleText = document.querySelector('.events');
-      var positionCircleText = elementCircleText.getBoundingClientRect();
-      var header = document.querySelector('.header');
-      var headerPosition = header.getBoundingClientRect();
-      var consultations = document.querySelector('.consultations');
-      var consultationsPosition = consultations.getBoundingClientRect();
-      var atmosphere = document.querySelector('.atmosphere');
-      var atmospherePosition = atmosphere.getBoundingClientRect();
-      var restaurant = document.querySelector('.restaurant');
-      var restaurantPosition = restaurant.getBoundingClientRect();
-      var restauranttitle = document.querySelector('.restaurant-title');
-      var restauranttitlePosition = restauranttitle.getBoundingClientRect();
-
-      if(position.top <= 140 && position.top >= -610){
-        $('.location-round').addClass('radius-1');
-      }
-      if(position.top <= 120 && position.top >= -610){
-        $('.location-round').removeClass('radius-1');
-        $('.location-round').addClass('radius-2');
-      }
-      if(position.top <= 90 && position.top >= -610){
-        $('.location-round').removeClass('radius-2');
-        $('.location-round').addClass('radius-3');
-      }
-      if(position.top <= 60 && position.top >= -610){
-        $('.location-round').removeClass('radius-3');
-        $('.location-round').addClass('radius-4');
-      }
-      if(position.top <= 40 && position.top >= -610){
-        $('.location-round').removeClass('radius-4');
-        $('.location-round').addClass('radius-5');
-      }
-
-      if(position.top >= 50 && position.top <= 750){
-        $('.location-round').removeClass('radius-5');
-        $('.location-round').addClass('radius-4');
-      }
-      if(position.top >= 70 && position.top <= 750){
-        $('.location-round').removeClass('radius-4');
-        $('.location-round').addClass('radius-3');
-      }
-      if(position.top >= 100 && position.top <= 750){
-        $('.location-round').removeClass('radius-3');
-        $('.location-round').addClass('radius-2');
-      }
-      if(position.top >= 130 && position.top <= 750){
-        $('.location-round').removeClass('radius-2');
-        $('.location-round').addClass('radius-1');
-      }
-      if(position.top >= 160 && position.top <= 750){
-        $('.location-round').removeClass('radius-5');
-        $('.location-round').removeClass('radius-4');
-        $('.location-round').removeClass('radius-3');
-        $('.location-round').removeClass('radius-2');
-        $('.location-round').removeClass('radius-1');
-      }
-
-      
-      if(positionSecond.top <= 760 && positionSecond.top >= -610){
-        $('.footer-preview-bg').addClass('preview-run');
-      }
-      if(positionSecond.top >= 920 && positionSecond.top <= 1150){
-        $('.footer-preview-bg').removeClass('preview-run');
-      }
-
-      if(positionSecond.top <= 140 && positionSecond.top >= -610){
-        $('.footer-round').addClass('radius-1');
-      }
-      if(positionSecond.top <= 120 && positionSecond.top >= -610){
-        $('.footer-round').removeClass('radius-1');
-        $('.footer-round').addClass('radius-2');
-      }
-      if(positionSecond.top <= 90 && positionSecond.top >= -610){
-        $('.footer-round').removeClass('radius-2');
-        $('.footer-round').addClass('radius-3');
-      }
-      if(positionSecond.top <= 60 && positionSecond.top >= -610){
-        $('.footer-round').removeClass('radius-3');
-        $('.footer-round').addClass('radius-4');
-      }
-      if(positionSecond.top <= 50 && positionSecond.top >= -610){
-        $('.footer-round').removeClass('radius-4');
-        $('.footer-round').addClass('radius-5');
-      }
-
-      if(positionSecond.top >= 60 && positionSecond.top <= 550){
-        $('.footer-round').removeClass('radius-5');
-        $('.footer-round').addClass('radius-4');
-      }
-      if(positionSecond.top >= 70 && positionSecond.top <= 550){
-        $('.footer-round').removeClass('radius-4');
-        $('.footer-round').addClass('radius-3');
-      }
-      if(positionSecond.top >= 100 && positionSecond.top <= 550){
-        $('.footer-round').removeClass('radius-3');
-        $('.footer-round').addClass('radius-2');
-      }
-      if(positionSecond.top >= 130 && positionSecond.top <= 550){
-        $('.footer-round').removeClass('radius-2');
-        $('.footer-round').addClass('radius-1');
-      }
-      if(positionSecond.top >= 160 && positionSecond.top <= 550){
-        $('.footer-round').removeClass('radius-5');
-        $('.footer-round').removeClass('radius-4');
-        $('.footer-round').removeClass('radius-3');
-        $('.footer-round').removeClass('radius-2');
-        $('.footer-round').removeClass('radius-1');
-      }
-
-      var video = document.getElementById("footerVideo");
-      if(positionSecond.top <= 500 && positionSecond.top >= -10){
-        if (video.paused) {
-          video.play();
-        }
-      }
-      if(positionSecond.top >= 510 && positionSecond.top <= 950){
-          video.pause();
-      }
 
 
-      var logo = document.querySelector(".events-textbg")
-
-      if(positionCircleText.top <= 750 && positionCircleText.top >= -2177){ 
-        logo.style.transform = "rotate("+window.pageYOffset/30+"deg)";
-      }
-
-      if ($(window).width() > 992) {
-        if(consultationsPosition.top <= 450){
-          $('.consultations .bg_elements .bgel:nth-child(1)').css('margin-top', ''+(consultationsPosition.top*0.22)+'px');
-          $('.consultations .bg_elements .bgel:nth-child(2)').css('margin-top', ''+(consultationsPosition.top*0.05)+'px');
-          $('.consultations .bg_elements .bgel:nth-child(3)').css('margin-top', ''+(consultationsPosition.top*0.35)+'px');
-          $('.consultations .bg_elements .bgel:nth-child(4)').css('margin-top', ''+(consultationsPosition.top*0.29)+'px');
-          $('.consultations .bg_elements .bgel:nth-child(5)').css('margin-top', ''+(consultationsPosition.top*0.18)+'px');
-
-          $('.consultations .bg_elements .bgel:nth-child(1) img').css('margin-top', ''+(consultationsPosition.top*0.07)+'px');
-          $('.consultations .bg_elements .bgel:nth-child(2) img').css('margin-top', ''+(consultationsPosition.top*0.1)+'px');
-          $('.consultations .bg_elements .bgel:nth-child(3) img').css('margin-top', ''+(consultationsPosition.top*0.18)+'px');
-          $('.consultations .bg_elements .bgel:nth-child(4) img').css('margin-top', ''+(consultationsPosition.top*0.12)+'px');
-          $('.consultations .bg_elements .bgel:nth-child(5) img').css('margin-top', ''+(consultationsPosition.top*0.2)+'px');
-        }
-      }else{
-        if(consultationsPosition.top <= 450){
-          $('.consultations .bg_elements .bgel:nth-child(1)').css('margin-top', ''+(consultationsPosition.top*0.12)+'px');
-          $('.consultations .bg_elements .bgel:nth-child(2)').css('margin-top', ''+(consultationsPosition.top*0.07)+'px');
-          $('.consultations .bg_elements .bgel:nth-child(3)').css('margin-top', ''+(consultationsPosition.top*0.12)+'px');
-          $('.consultations .bg_elements .bgel:nth-child(4)').css('margin-top', ''+(consultationsPosition.top*0.11)+'px');
-          $('.consultations .bg_elements .bgel:nth-child(5)').css('margin-top', ''+(consultationsPosition.top*0.18)+'px');
-
-          $('.consultations .bg_elements .bgel:nth-child(1) img').css('margin-top', ''+(consultationsPosition.top*0.02)+'px');
-          $('.consultations .bg_elements .bgel:nth-child(2) img').css('margin-top', ''+(consultationsPosition.top*0.01)+'px');
-          $('.consultations .bg_elements .bgel:nth-child(3) img').css('margin-top', ''+(consultationsPosition.top*0.08)+'px');
-          $('.consultations .bg_elements .bgel:nth-child(4) img').css('margin-top', ''+(consultationsPosition.top*0.09)+'px');
-          $('.consultations .bg_elements .bgel:nth-child(5) img').css('margin-top', ''+(consultationsPosition.top*0.05)+'px');
-        }
-      }
-
-      if ($(window).width() > 992) {
-        if(atmospherePosition.top <= 750 && atmospherePosition.bottom >= 20){
-          $('.atmosphere .bg_elements .bgel:nth-child(1)').css('margin-top', ''+(atmospherePosition.top*0.12)+'px');
-          $('.atmosphere .bg_elements .bgel:nth-child(2)').css('margin-top', ''+(atmospherePosition.top*0.05)+'px');
-          $('.atmosphere .bg_elements .bgel:nth-child(3)').css('margin-top', ''+(atmospherePosition.top*0.15)+'px');
-          $('.atmosphere .bg_elements .bgel:nth-child(4)').css('margin-top', ''+(atmospherePosition.top*0.20)+'px');
-
-          $('.atmosphere .bg_elements .bgel:nth-child(1) img').css('margin-top', ''+(atmospherePosition.top*0.04)+'px');
-          $('.atmosphere .bg_elements .bgel:nth-child(2) img').css('margin-top', ''+(atmospherePosition.top*0.1)+'px');
-          $('.atmosphere .bg_elements .bgel:nth-child(3) img').css('margin-top', ''+(atmospherePosition.top*0.11)+'px');
-          $('.atmosphere .bg_elements .bgel:nth-child(4) img').css('margin-top', ''+(atmospherePosition.top*0.09)+'px');
-        }
-      }else{
-        if(atmospherePosition.top <= 750 && atmospherePosition.bottom >= 20){
-          $('.atmosphere .bg_elements .bgel:nth-child(1)').css('margin-top', ''+(atmospherePosition.top*0.11)+'px');
-          $('.atmosphere .bg_elements .bgel:nth-child(2)').css('margin-top', ''+(atmospherePosition.top*0.02)+'px');
-          $('.atmosphere .bg_elements .bgel:nth-child(3)').css('margin-top', ''+(atmospherePosition.top*0.1)+'px');
-          $('.atmosphere .bg_elements .bgel:nth-child(4)').css('margin-top', ''+(atmospherePosition.top*0.06)+'px');
-
-          $('.atmosphere .bg_elements .bgel:nth-child(1) img').css('margin-top', ''+(atmospherePosition.top*0.02)+'px');
-          $('.atmosphere .bg_elements .bgel:nth-child(2) img').css('margin-top', ''+(atmospherePosition.top*0.01)+'px');
-          $('.atmosphere .bg_elements .bgel:nth-child(3) img').css('margin-top', ''+(atmospherePosition.top*0.05)+'px');
-          $('.atmosphere .bg_elements .bgel:nth-child(4) img').css('margin-top', ''+(atmospherePosition.top*0.06)+'px');
-        }
-      }
-
-      if(restauranttitlePosition.top <= 760){
-        $('.restaurant-title-container').addClass('restaurant-title-run');
-      }
-      if(restauranttitlePosition.bottom <= 20 || restauranttitlePosition.top >= 770){
-        $('.restaurant-title-container').removeClass('restaurant-title-run');
-      }
-
-      if ($(window).width() > 992) {
-        if(restaurantPosition.top <= 750 && restaurantPosition.bottom >= 20){
-          $('.restaurant .bg_elements .bgel:nth-child(1)').css('margin-top', ''+(restaurantPosition.top*0.12)+'px');
-          $('.restaurant .bg_elements .bgel:nth-child(2)').css('margin-top', ''+(restaurantPosition.top*0.05)+'px');
-          $('.restaurant .bg_elements .bgel:nth-child(3)').css('margin-top', ''+(restaurantPosition.top*0.15)+'px');
-
-          $('.restaurant .bg_elements .bgel:nth-child(1) img').css('margin-top', ''+(restaurantPosition.top*0.06)+'px');
-          $('.restaurant .bg_elements .bgel:nth-child(2) img').css('margin-top', ''+(restaurantPosition.top*0.04)+'px');
-          $('.restaurant .bg_elements .bgel:nth-child(3) img').css('margin-top', ''+(restaurantPosition.top*0.11)+'px');
-        }
-      }else{
-        if(restaurantPosition.top <= 750 && restaurantPosition.bottom >= 20){
-          $('.restaurant .bg_elements .bgel:nth-child(1)').css('margin-top', ''+(restaurantPosition.top*0.11)+'px');
-          $('.restaurant .bg_elements .bgel:nth-child(2)').css('margin-top', ''+(restaurantPosition.top*0.13)+'px');
-          $('.restaurant .bg_elements .bgel:nth-child(3)').css('margin-top', ''+(restaurantPosition.top*0.03)+'px');
-
-          $('.restaurant .bg_elements .bgel:nth-child(1) img').css('margin-top', ''+(restaurantPosition.top*0.02)+'px');
-          $('.restaurant .bg_elements .bgel:nth-child(2) img').css('margin-top', ''+(restaurantPosition.top*0.01)+'px');
-          $('.restaurant .bg_elements .bgel:nth-child(3) img').css('margin-top', ''+(restaurantPosition.top*0.08)+'px');
-        }
-      }
-
-      var scroll = $(window).scrollTop();
-      if (scroll >= 130) {
-          $(".header").addClass("scroll");
-      } else {
-          $(".header").removeClass("scroll");
-      }
-    });
-
-    $('a[href*="#"], button[href*="#"]')
-    .not('[href="#"]')
-    .not('[href="#0"]')
-    .click(function(event) {
-      $('.header').removeClass('active');
-      if ( 
-        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-        && 
-        location.hostname == this.hostname
-      ) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
-          event.preventDefault();
-          $('html, body').animate({
-            scrollTop: target.offset().top
-          }, 700, function() {
-            var $target = $(target); 
-            if ($target.is(":focus")) { 
-              return false;
-            } else {
-              $target.attr('tabindex','-1'); 
-            };
-          });
-        }
-      }
-    });
-
-    $('.header-toggler').click(function(){
-      $('.header').toggleClass('active');
-    });
-
-    $('.pickup_form .submit-btn').click(function(){
-      $('.pickup_content_sl-one').addClass('hidden');
-      $('.pickup_content_sl-ty').removeClass('hidden');
-    });
-    $('#request-popup .sli-request-popup_form .submit-btn').click(function(){
-      $('.sli-popup_container').removeClass('active');
-      $('#ty-popup.sli-popup_container').addClass('active');
-    });
-    $('#location-popup .sli-request-popup_form .submit-btn').click(function(){
-      $('.sli-popup_container').removeClass('active');
-      $('#ty-popup.sli-popup_container').addClass('active');
-    });
-  });
-  </script>
-</body>
+      <script src="js/jquery-3.6.3.min.js"></script>
+      <script src="libs/swiperjs/swiper.min.js"></script>
+      <script src="js/jquery.fancybox.min.js"></script>
+      <script src="js/jquery.lazy.min.js"></script>
+      <script src="js/jquery.lazy.plugins.min.js"></script>
+      <script src="js/jquery.inputmask.bundle.min.js"></script>
+      <script src="js/main.js"></script>
+   </body>
 </html>

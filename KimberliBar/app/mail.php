@@ -6,8 +6,8 @@ $method = $_SERVER['REQUEST_METHOD'];
 $c = true;
 if ( $method === 'POST' ) {
 
-	$project_name = 'SoulHub';
-	$admin_email  = 'timetosoulhub@gmail.com';
+	$project_name = 'KimmberliBar (лендинг)';
+	$admin_email  = 'testtest@gmail.com';
 	$admin_email2  = 'shpirniy06@gmail.com';
 	$form_subject = 'Форма заявки';
 
@@ -23,8 +23,9 @@ if ( $method === 'POST' ) {
 	}
 } else if ( $method === 'GET' ) {
 
-	$project_name = 'SoulHub';
-	$admin_email  = 'timetosoulhub@gmail.com';
+	$project_name = 'KimmberliBar (лендинг)';
+	$admin_email  = 'testtest@gmail.com';
+	$admin_email2  = 'shpirniy06@gmail.com';
 	$form_subject = 'Форма заявки';
 
 	foreach ( $_GET as $key => $value ) {
@@ -50,10 +51,9 @@ $headers = "MIME-Version: 1.0" . PHP_EOL .
 'From: '.adopt($project_name).' <'.$admin_email.'>' . PHP_EOL .
 'Reply-To: '.$admin_email.'' . PHP_EOL;
 
-$fd = fopen("numbers.txt", 'a');    
+/*$fd = fopen("numbers.txt", 'a');    
 fwrite($fd, $value."\r\n");   
-fclose($fd);
+fclose($fd);*/
 
-mail($admin_email, adopt($form_subject), $message, $headers );
+/*mail($admin_email, adopt($form_subject), $message, $headers );*/
 mail($admin_email2, adopt($form_subject), $message, $headers );
-/*mail($admin_email3, adopt($form_subject), $message, $headers );*/
