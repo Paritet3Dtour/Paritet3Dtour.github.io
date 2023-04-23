@@ -98,6 +98,15 @@ button{
   font-size: 16px;
   line-height: 20px;
 }
+.header_phone{
+  font-family: "Oksana Bold", Arial, sans-serif;
+  color: #000;
+  vertical-align: baseline;
+  margin-right: 45px;
+}
+.header_menu-wrapp .header_phone{
+  display: none;
+}
 
 .banner{
   padding: 180px 0 149px;
@@ -2560,6 +2569,14 @@ button{
 }
 
 @media screen and (max-width: 992px){
+  .header_phone{
+    margin-right: 0;
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+  .header_menu-wrapp .header_phone{
+    display: block;
+  }
   .footer-request-ty{
     font-size: 19px;
     line-height: 25px;

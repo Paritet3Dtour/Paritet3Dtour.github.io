@@ -15,7 +15,7 @@ $(document).ready(function () {
     }
   }
 
-  function changeEvent(event) {
+  window.changeEvent = function(event) {
     if ($(event).closest(".events_item").hasClass("active")) {
       if ($(event).closest(".events_item").find("textarea").val().length >= 1) {
         $(event)
@@ -62,11 +62,8 @@ $(document).ready(function () {
     $("#events-list").append(
       '<div class="events_item" img-name=""> <div class="events_item_bg" ><button class="events_item-close"><img src="img/close-icon.svg" /></button></div> <div class="events_item_heading">Назва заходу</div> <div class="item-change"><div class="item-change-heading">Зображення</div><input name="img" type=' +
         "file" +
-        ' /><div class="item-change-heading">Текст</div><textarea name="text" type="text"></textarea></div> <button class="item-change-btn">Змінити</button></div>'
+        ' /><div class="item-change-heading">Текст</div><textarea name="text" type="text"></textarea></div> <button class="item-change-btn" onclick="changeEvent(this)">Змінити</button></div>'
     );
-    $(".item-change-btn").click(function () {
-      changeEvent($(this));
-    });
     $("input[type='file']").change(function () {
       readURL(this);
     });

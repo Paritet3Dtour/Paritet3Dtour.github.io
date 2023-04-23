@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru"> 
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
@@ -14,7 +14,7 @@
       <link rel="stylesheet" href="css/reset.css">
       <link rel="stylesheet" href="css/fonts.css">
       <link rel="stylesheet" href="libs/swiperjs/swiper.min.css">
-      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/promo.css">
 
       <!-- Google Tag Manager -->
       <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -34,9 +34,9 @@
          <div class="headerContainer">
             <div class="header_wrapp">
                <ul class="header_menu">
-                  <li class="header_menu_item"><button class="menu-open-btn">меню</button></li>
-                  <li class="header_menu_item"><a href="#events">заходи</a></li>
-                  <li class="header_menu_item"><a href="#consultations">прикраси</a></li>
+                  <li class="header_menu_item"><a href="#photo">Фото</a></li>
+                  <li class="header_menu_item"><a href="#restaurant">Локація</a></li>
+                  <li class="header_menu_item"><a href="#map">Контакти</a></li>
                </ul>
                <div class="header_logo">
                   <svg width="261" height="39" viewBox="0 0 261 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,7 +50,7 @@
                      <path d="M256.196 0V38.3427H261V0H256.196Z" fill="white"/>
                   </svg>
                </div>
-               <button class="header_link request-open-btn">
+               <button class="header_link location-open-btn">
                забронювати
                </button>
                <button class="header-toggler">
@@ -66,7 +66,7 @@
                <li class="header_menu_item-mob"><a href="#events">заходи</a></li>
                <li class="header_menu_item-mob"><a href="#consultations">прикраси</a></li>
             </ul>
-            <button class="submit-btn request-open-btn">
+            <button class="submit-btn location-open-btn">
             забронювати
             </button>
          </div>
@@ -74,11 +74,25 @@
       <section class="banner" id="banner">
          <div class="mainContainer">
             <div class="banner_content">
-               <div class="banner_heading">Перший <br> ювелірний бар <br> в Києві</div>
-               <div class="banner_descr">Kimberli Bar — це багатогранний простір, де барне<br> мистецтво поєднується з діамантами</div>
+               <div class="banner_heading">Перший ювелірний бар в Києві</div>
+               <div class="banner_descr">Ексклюзивна локація з унікальною атмосферою</div>
+               <div class="banner_location">
+                  <div class="banner_location_heading">Краще місце для:</div>
+                  <ul>
+                     <li>Проведення корпоративних заходів, бізнес-сніданків, бранчів або навчальних заходів</li>
+                     <li>Весільний магнит для тих, хто хоче зробити пропозицію, відзначити заручини, відсвяткувати затишне весілля та інше</li>
+                  </ul>
+               </div>
+               <form class="banner_form">
+                  <div class="banner_form_heading">Отримайте детальну консультацію у менеджера, він відповість на усі питання, розкаже про можливості локації та допоможе скласти концепцію заходу</div>
+                  <div class="banner_form_wrapp">
+                     <input type="hidden" name="Form" value="ПІДІБРАТИ ПРИКРАСУ (ФУТЕР)">
+                     <input type="text" name="Phone" placeholder="Ваш номер" required="">
+                     <button class="submit-btn">дізнатися деталі</button>
+                  </div>
+               </form>
             </div>
          </div>
-         <button class="submit-btn request-open-btn">забронювати</button>
          <div class="banner-bg">
             <div class="swiper-container">
                <div class="swiper-wrapper">
@@ -89,7 +103,18 @@
             </div>
          </div>
       </section>
-      <section class="atmosphere">
+      <section class="photo" id="photo">
+         <div class="mainContainer">
+            <div class="photo_heading">Фотографії заходів</div>
+         </div>
+         <div class="photoContainer">
+            <div class="photo_item"><a class="fancybox" rel="gallery" href="img/events-item1.jpg"></a><img class="lazy" data-src="img/events-item1.jpg" alt=""></div>
+            <div class="photo_item"><a class="fancybox" rel="gallery" href="img/events-item2.jpg"></a><img class="lazy" data-src="img/events-item2.jpg" alt=""></div>
+            <div class="photo_item"><a class="fancybox" rel="gallery" href="img/events-item3.jpg"></a><img class="lazy" data-src="img/events-item3.jpg" alt=""></div>
+            <div class="photo_item"><a class="fancybox" rel="gallery" href="img/events-item4.jpg"></a><img class="lazy" data-src="img/events-item4.jpg" alt=""></div>
+         </div>
+      </section>
+      <!--<section class="atmosphere">
          <div class="mainContainer">
             <div class="atmosphere_heading">
                це <br>атмосфера <br>що <br><span><img src="img/atmosphere-heading.svg" alt=""></span>
@@ -117,23 +142,28 @@
                <img class="lazy" data-src="img/atmosphere_bgel4.jpg" alt="">
             </div>
          </div>
-      </section>
+      </section>-->
       <section class="location">
          <div class="location-round"></div>
          <div class="mainContainer">
-            <div class="location_heading">це місце,<br>
-               <span><img src="img/location-heading.svg" alt=""></span>
-               <span class="mob"><img src="img/location-heading-mob.svg" alt=""></span><br>
-               бажання
+            <div class="location_heading">дізнайтесь про<br>
+               <span><img src="img/promo-form1.svg" alt=""></span>
+               <span class="mob"><img src="img/promo-form1.svg" alt=""></span><br>
+               kimberli bar
             </div>
             <div class="location_content">
-               <div class="location_content_heading">Тут дизайнери розповідають про нові колекції, музиканти роблять pre-party, а бізнесмени презентують нові проєкти.</div>
-               <div class="location_content_descr">Відчуйте цю надзвичайну атмосферу на смак! Забронюйте локацію та отримайте вигідну ціну!</div>
+               <div class="location_content_heading">Залиште номер телефону і адміністратор зателефонує до вас найближчим часом, щоб відповісти на всі ваші питання</div>
             </div>
-            <button class="submit-btn location-open-btn">забронювати  локацію</button>
+            <form class="location_form">
+               <div class="location_form_wrapp">
+                  <input type="hidden" name="Form" value="ПІДІБРАТИ ПРИКРАСУ (ФУТЕР)">
+                  <input type="text" name="Phone" placeholder="Ваш номер" required="">
+                  <button class="submit-btn">дізнатися деталі</button>
+               </div>
+            </form>
          </div>
       </section>
-      <section class="gallery">
+      <!--<section class="gallery">
          <div class="galleryContainer">
             <div class="gallery_item"><a class="fancybox" rel="gallery" href="img/gallery-img1.jpg"></a><img class="lazy" data-src="img/gallery-img1.jpg" alt=""></div>
             <div class="gallery_item"><a class="fancybox" rel="gallery" href="img/gallery-img2.jpg"></a><img class="lazy" data-src="img/gallery-img2.jpg" alt=""></div>
@@ -160,8 +190,8 @@
             <span>барне меню</span>
             <button class="restaurant-title-link menu-open-btn"></button>
          </div>
-      </div>
-      <section class="restaurant">
+      </div>-->
+      <!--<section class="restaurant">
          <div class="mainContainer">
             <div class="restaurant_heading">
                Це місце для<br>
@@ -310,7 +340,7 @@
                </div>
             </div>
          </div>
-      </section>
+      </section>-->
       <section class="events" id="events">
          <div class="events-textbg">
          </div>
@@ -318,39 +348,65 @@
          <div class="events-bg-second"></div>
          <div class="mainContainer">
             <div class="events_content">
-               <div class="events_content_heading">проведення заходів<br> в kimberli bar</div>
                <div class="events_content_descr">
                   <p>Концепція інтер’єру Kimberli Bar натхненна вишуканістю ювелірних прикрас. А сама ідея бару та шоу-руму два в одному робить досвід відвідувачів особливим. Нині, коли люди ведуть рахунок часу, як ніколи актуальною є багатофункціональність просторів. Тому, з турботою про вас і ваш час, був створений Kimberli Bar.</p>
                   <p>Унікальне поєднання мистецтва та смаку робить Kimberli Bar місцем must visit на карті столиці. Пропозиція руки та серця, вечеря з близькими людьми чи підписання контракту мрії. Ми потурбувалися, аби ви відчували себе тут розслаблено. </p>
                </div>
             </div>
          </div>
-         <div class="events_container">
-            <div class="events_list" id="events-list">
-               <!--<div class="events_item">
-                  <div class="events_item_bg lazy" data-src="img/events-item1.png"></div>
-                  <div class="events_item_heading">Незабутні освідчення</div>
+         
+         <div class="mainContainer">
+            <div class="pickup_wrapp">
+               <div class="pickup_preview lazy" data-src="img/gallery-img1.jpg"></div>
+               <div class="pickup_content">
+                  <div class="pickup_content_sl-one">
+                     <div class="pickup_heading">Дізнайтесь про переваги<br> kimberli bar</div>
+                     <form class="pickup_form">
+                        <input type="hidden" name="Form" value="ПІДІБРАТИ ПРИКРАСУ (ФУТЕР)">
+                        <input type="text" name="Phone" placeholder="Ваш номер" required>
+                        <button class="submit-btn">дізнатися деталі</button>
+                     </form>
                   </div>
-                  <div class="events_item">
-                  <div class="events_item_bg lazy" data-src="img/events-item2.png"></div>
-                  <div class="events_item_heading">Бізнес-зустрічі спільноти підприємців</div>
+                  <div class="pickup_content_sl-ty hidden">
+                     <div class="pickup_heading">Дякуюємо за заявку! <br/>Ми зателефонуємо вам якомога швидше!</div>
+                     <div class="pickup_descr">Довго очікуєте на дзвінок? <br/>Зателефонуйте нам, будь ласка, самі:</div>
+                     <a href="tel:380932537677" class="pickup_ty">+38 (093) 253 76 77</a>
                   </div>
-                  <div class="events_item">
-                  <div class="events_item_bg lazy" data-src="img/events-item3.png"></div>
-                  <div class="events_item_heading">Бранчі з підписниками</div>
-                  </div>
-                  <div class="events_item">
-                  <div class="events_item_bg lazy" data-src="img/events-item4.png"></div>
-                  <div class="events_item_heading">Затишні весілля</div>
-                  </div>-->
+               </div>
             </div>
          </div>
-         <div class="mainContainer">
-            <div class="events_blockquote">Забронюйте Kimberli Bar для проведення вашого заходу<br> та отримайте професійну фотосесію у подарунок!</div>
-            <button class="submit-btn location-open-btn">забронювати</button>
+      </section>
+      <section class="restaurant">
+         <div class="mainContainer">   
+            <div class="restaurant_heading">Локація</div>
+            <div class="restaurant_location">
+               <div class="restaurant_location_item">
+                  <div class="restaurant_location_text">Kimberli bar знаходиться на м. Арсенальна, на території завода "Арсенал"</div>
+                  <div class="restaurant_location_gallery">
+                     <div class="restaurant_location_gallery_item" style="background-image: url('img/gallery-img2.jpg');"></div>
+                     <div class="restaurant_location_gallery_item" style="background-image: url('img/gallery-img8.jpg');"></div>
+                     <div class="restaurant_location_gallery_item" style="background-image: url('img/gallery-img5.jpg');"></div>
+                  </div>
+               </div>
+               <div class="restaurant_location_item">
+                  <div class="restaurant_location_text">Унікальне місце в Києві для прогулянок гарним екстер'єром та фотозонами</div>
+                  <div class="restaurant_location_gallery">
+                     <div class="restaurant_location_gallery_item" style="background-image: url('img/atmosphere_bgel1.jpg');"></div>
+                     <div class="restaurant_location_gallery_item" style="background-image: url('img/consultations-bgel1.jpg');"></div>
+                  </div>
+               </div>
+               <div class="restaurant_location_item">
+                  <div class="restaurant_location_text">Охороняємий паркинг до 200 автомобілей (треба уточнювати кількість)</div>
+                  <div class="restaurant_location_gallery">
+                     <div class="restaurant_location_gallery_item" style="background-image: url('img/gallery-img7.jpg');"></div>
+                     <div class="restaurant_location_gallery_item" style="background-image: url('img/atmosphere_bgel2.jpg');"></div>
+                     <div class="restaurant_location_gallery_item" style="background-image: url('img/gallery-img9.jpg');"></div>
+                  </div>
+               </div>
+            </div>
          </div>
       </section>
-      <section class="consultations" id="consultations">
+      <!--<section class="consultations" id="consultations">
          <div class="mainContainer">
             <div class="consultations_top">
                <div class="consultations_heading">Ювелірні <span>консультанти</span> <span class="mob">консуль –танти</span></div>
@@ -379,8 +435,8 @@
                <img class="lazy" data-src="img/consultations-bgel5.jpg" alt="">
             </div>
          </div>
-      </section>
-      <section class="pickup">
+      </section>-->
+      <!--<section class="pickup">
          <div class="mainContainer">
             <div class="pickup_line"></div>
             <div class="pickup_wrapp">
@@ -403,6 +459,13 @@
                </div>
             </div>
          </div>
+      </section>-->
+      <section class="map" id="map">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9950318647834!2d30.543709499999995!3d50.4411932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfa8cff75b31%3A0x2c30e6155665775a!2z0YPQuy4g0JzQvtGB0LrQvtCy0YHQutCw0Y8sIDgsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1682280316250!5m2!1sru!2sua" width="100%" height="630" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         <a class="marker">
+            <embed class="marker-icon" src="https://raisky.travel/wp-content/themes/raisky/inc/img/marker-map.svg">
+               ВУЛ. КНЯЗІВ ОСТРОЗЬКИХ, 8
+         </a>
       </section>
       <section class="footer">
          <div class="footer-round"></div>
@@ -586,6 +649,9 @@
       <script src="js/jquery.lazy.min.js"></script>
       <script src="js/jquery.lazy.plugins.min.js"></script>
       <script src="js/jquery.inputmask.bundle.min.js"></script>
-      <script src="js/main.js"></script>
+      <script src="js/promo.js"></script>
+      <script>
+
+      </script>
    </body>
 </html>
