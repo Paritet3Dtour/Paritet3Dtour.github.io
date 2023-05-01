@@ -104,7 +104,7 @@ button{
   height: 100vh;
   min-height: 800px;
   padding-bottom: 140px;
-  padding-top: 160px;
+  padding-top: 130px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -145,25 +145,25 @@ button{
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-bottom: 20px;
-  font-size: 56px;
-  line-height: 61px;
+  margin-bottom: 15px;
+  font-size: 28px;
+  line-height: 34px;
 }
 .banner_descr{
   text-align: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #FFFFFF;
-  font-size: 15px;
-  line-height: 21px;
+  font-size: 14px;
+  line-height: 20px;
   font-family: "BasisGrotesquePro Light", Arial, sans-serif;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 .banner_location_heading{
   color: #fff;
-  font-size: 18px;
-  line-height: 25px;
-  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 15px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-family: "BasisGrotesquePro Light", Arial, sans-serif;
@@ -171,8 +171,8 @@ button{
 }
 .banner_location{
   margin: 0 auto;
-  max-width: 649px;
-  margin-bottom: 60px;
+  max-width: 508px;
+  margin-bottom: 45px;
 }
 .banner_location ul{
   color: #fff;
@@ -180,11 +180,11 @@ button{
   line-height: 24px;
 }
 .banner_location ul li{
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   position: relative;
   font-family: "BasisGrotesquePro Light", Arial, sans-serif;
   padding-left: 38px;
-  font-size: 15px;
+  font-size: 14px;
   text-transform: uppercase;
 }
 .banner_location ul li::after{
@@ -200,8 +200,9 @@ button{
 }
 .banner_form_wrapp{
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-start;
+  flex-direction: column;
 }
 .banner_form_heading{
   font-family: "CormorantInfant Regular", Arial, sans-serif;
@@ -210,14 +211,14 @@ button{
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 30px;
-  font-size: 22px;
-  line-height: 31px;
+  font-size: 28px;
+  line-height: 32px;
   position: relative;
   z-index: 1;
 }
 .banner_form{
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 971px;
   border: 1px solid rgba(0,0,0, 0.3);
   padding: 35px 50px;
   position: relative;
@@ -250,12 +251,21 @@ button{
   border-bottom: 1px solid #A58E3B;
   display: block;
   background: transparent;
+  margin: 0 auto;
+  max-width: 450px;
+  margin-bottom: 20px;
+}
+.banner_form_wrapp .submit-btn{
+  font-size: 14px;
+  width: 100%;
+  max-width: 450px;
 }
 .banner_form_wrapp input::placeholder{
   color: #fff;
-  opacity: 0.7;
+  opacity: 1;
   font-family: "BasisGrotesquePro Light", Arial, sans-serif;
   font-size: 22px;
+  text-transform: uppercase;
 }
 .banner_form_wrapp input:focus::placeholder{
   opacity: 0;
@@ -375,7 +385,7 @@ button{
   color: #FFFFFF;
   text-transform: uppercase;
   transition: all 0.4s;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 17px;
   padding-bottom: 2px;
   position: relative;
@@ -384,6 +394,7 @@ button{
   background: transparent;
   padding: 0;
   border: none;
+  font-family: "BasisGrotesquePro Light", Arial, sans-serif;
 }
 .header_menu_item::after{
   content: '';
@@ -434,7 +445,11 @@ button{
   position: absolute;
   top: 30px;
   left: 50%;
-  margin-left: -130px;
+  margin-left: -110px;
+}
+.header_logo svg{
+  width: 220px;
+  height: auto;
 }
 
 
@@ -648,7 +663,7 @@ button{
 }
 .location_form input::placeholder{
   color: #1C356E;
-  opacity: 0.2;
+  opacity: 1;
   font-family: "BasisGrotesquePro Light", Arial, sans-serif;
   font-size: 22px;
 }
@@ -798,7 +813,7 @@ button{
   background-color: #d9d6d1;
 }
 .restaurant_heading{
-  margin-bottom: 75px;
+  margin-bottom: 100px;
   text-align: center;
   letter-spacing: -0.04em;
   text-transform: uppercase;
@@ -989,9 +1004,12 @@ button{
   margin-right: 40px;
 }
 .events .pickup_content{
-  max-width: 455px;
-  min-width: 455px;
+  max-width: 410px;
+  min-width: 410px;
   min-height: auto;
+}
+.events .pickup_content .submit-btn{
+  width: 100%;
 }
 .events .pickup_heading{
   font-size: 32px;
@@ -1140,7 +1158,7 @@ button{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  /*margin-bottom: 40px;*/
 }
 .restaurant_location_text{
   font-size: 20px;
@@ -1150,10 +1168,22 @@ button{
   color: #1C356E;
 }
 .restaurant_location_gallery{
-  width: 500px;
-  height: 300px;
-  margin-left: 100px;
+  width: 100%;
+  height: 400px;
+  /*margin-left: 100px;*/
   position: relative;
+}
+.restaurant_location_gallery p{
+  font-size: 20px;
+  line-height: 29px;
+  max-width: 361px;
+  font-family: "BasisGrotesquePro Regular", Arial, sans-serif;
+  color: #1C356E;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 .restaurant_location_gallery_item{
   width: 300px;
@@ -1165,30 +1195,59 @@ button{
   left: 0;
   top: 0;
 }
-.restaurant_location_item:nth-child(1) .restaurant_location_gallery_item:nth-child(1){
-  left: 50px;
-  top: -30px;
+.restaurant_location_item:nth-child(1) .restaurant_location_gallery_item:nth-child(4){
+  left: 50%;
+  margin-left: -178px;
+  top: 113px;
+  transform: translateX(-414px);
+  width: 314px;
+  height: 210px;
+}
+.restaurant_location_item:nth-child(1) .restaurant_location_gallery_item:nth-child(5){
+  left: 50%;
+    margin-left: -90px;
+    top: 284px;
+    transform: translateX(161px);
+    width: 180px;
+    height: 120px;
 }
 .restaurant_location_item:nth-child(1) .restaurant_location_gallery_item:nth-child(2){
-  left: 205px;
-  top: 87px;
-  width: 300px;
-  height: 200px;
+  left: 50%;
+    margin-left: -196px;
+    top: 57px;
+    width: 400px;
+    height: 268px;
+    transform: translateX(412px);
 }
 .restaurant_location_item:nth-child(1) .restaurant_location_gallery_item:nth-child(3){
-  left: -54px;
-  top: 158px;
-}
-.restaurant_location_item:nth-child(2) .restaurant_location_gallery_item:nth-child(1){
-  left: 0;
-  top: 0;
-  width: 400px;
-  height: 207px;
+  left: 50%;
+    margin-left: -125px;
+    top: -28px;
+    transform: translateX(-268px);
+    width: 250px;
 }
 .restaurant_location_item:nth-child(2) .restaurant_location_gallery_item:nth-child(2){
-  top: 136px;
-  left: 206px;
-  height: 190px;
+  left: 50%;
+    top: 31px;
+    width: 378px;
+    height: 317px;
+    margin-left: -190px;
+    transform: translateX(-416px);
+}
+.restaurant_location_item:nth-child(2) .restaurant_location_gallery_item:nth-child(3){
+  top: 56px;
+    left: 50%;
+    height: 190px;
+    margin-left: -150px;
+    transform: translateX(410px);
+}
+.restaurant_location_item:nth-child(2) .restaurant_location_gallery_item:nth-child(4){
+  top: 236px;
+    left: 50%;
+    transform: translateX(319px);
+    width: 190px;
+    height: 153px;
+    margin-left: -95px;
 }
 .restaurant_location_item:nth-child(3) .restaurant_location_gallery_item:nth-child(1){
   left: 226px;
@@ -1196,17 +1255,35 @@ button{
   width: 300px;
   height: 167px;
 }
-.restaurant_location_item:nth-child(3) .restaurant_location_gallery_item:nth-child(2){
-  top: 171px;
-  left: 144px;
+.restaurant_location_item:nth-child(3) .restaurant_location_gallery_item:nth-child(4){
+  top: 265px;
   height: 158px;
-  width: 235px;
+    width: 222px;
+    left: 50%;
+    margin-left: -95px;
+    transform: translateX(-309px);
 }
 .restaurant_location_item:nth-child(3) .restaurant_location_gallery_item:nth-child(3){
   width: 259px;
   height: 152px;
   top: 72px;
   left: -67px;
+}
+.restaurant_location_item:nth-child(3) .restaurant_location_gallery_item:nth-child(3){
+  width: 320px;
+  height: 250px;
+  top: 31px;
+  left: 50%;
+  margin-left: -160px;
+  transform: translateX(-407px);
+}
+.restaurant_location_item:nth-child(3) .restaurant_location_gallery_item:nth-child(2){
+  width: 384px;
+  height: 280px;
+  left: 50%;
+  margin-left: -192px;
+  transform: translateX(439px);
+  top: 92px;
 }
 
 .map{
@@ -1416,6 +1493,7 @@ button{
 }
 .events .pickup_form input::placeholder{
   color: #fff;
+  opacity: 1;
 }
 .pickup_form input{
   width: 100%;
@@ -1521,17 +1599,16 @@ button{
 }
 .footer_preview{
   position: relative;
-  padding: 209px 0 40px;
-  min-height: 1000px;
+  padding: 234px 0 40px;
+  min-height: 700px;
 }
 .footer_label{
-  font-size: 15px;
-  line-height: 21px;
-  letter-spacing: 0.1em;
+  font-size: 17px;
+  line-height: 24px;
   text-transform: uppercase;
   color: #1C356E;
-  margin-bottom: 398px;
-  font-family: "BasisGrotesquePro Light", Arial, sans-serif;
+  margin-bottom: 37px;
+  font-family: "BasisGrotesquePro Regular", Arial, sans-serif;
 }
 .footer_socials_heading{
   margin-bottom: 24px;
@@ -1574,11 +1651,11 @@ button{
 }
 .footer .bg_elements .bgel:nth-child(1){
   width: 325px;
-  height: 638px;
-  top: 160px;
+  height: 400px;
+  top: 170px;
   left: 50%;
-  margin-left: -162px;
-  transform: translateX(170px);
+  margin-left: -210px;
+  transform: translateX(210px);
   z-index: 2;
   overflow: hidden;
 }
@@ -1598,16 +1675,16 @@ button{
 .footer .bg_elements .bgel:nth-child(2){
   width: 123px;
   height: 125px;
-  top: 434px;
+  top: 223px;
   left: 50%;
-  margin-left: -66px;
+  margin-left: -95px;
   transform: translateX(468px);
   z-index: 2;
 }
 .footer .bg_elements .bgel:nth-child(3){
   width: 284px;
   height: 288px;
-  top: 630px;
+  top: 385px;
   left: 50%;
   margin-left: -142px;
   transform: translateX(422px);
@@ -1741,6 +1818,24 @@ button{
   .footer_nav_link:hover{
     opacity: 1;
   }
+}
+
+.footer_label{
+  margin-bottom: 30px;
+}
+.footer_preview .pickup_form{
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 105px;
+}
+.footer_preview .pickup_form input{
+  margin-bottom: 20px;
+}
+.footer_preview .pickup_form input::placeholder{
+  opacity: 1;
+}
+.footer_preview .pickup_form .submit-btn{
+  width: 100%;
 }
 
 
