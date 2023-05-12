@@ -1,0 +1,22 @@
+/*
+ * Oksana font
+================================================================================ */
+
+@font-face {
+  font-family: 'Oksana Regular';
+  src: url('../fonts/OksanaSans.eot');
+  src: url('../fonts/OksanaSans.eot?#iefix') format('embedded-opentype'),
+   url('../fonts/OksanaSans.woff') format('woff'),
+   url('../fonts/OksanaSans.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+  font-family: 'Oksana Bold';
+  src: url('../fonts/OksanaSans-Bold.eot');
+  src: url('../fonts/OksanaSans-Bold.eot?#iefix') format('embedded-opentype'),
+   url('../fonts/OksanaSans-Bold.woff') format('woff'),
+   url('../fonts/OksanaSans-Bold.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
