@@ -2148,6 +2148,9 @@ a{
     flex-shrink: 0;
     margin-left: 12px;
   }
+  .last-news_top{
+    margin-bottom: 24px;
+  }
   .last-news_wrapp{
     display: block;
   }
