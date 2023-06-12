@@ -1395,6 +1395,9 @@ a{
 .popup_container.search-popup-container.active .popup{
   top: 0;
 }
+.search-popup_back{
+  display: none;
+}
 
 
 @media screen and (max-width: 1240px){
@@ -2296,6 +2299,39 @@ a{
   }
 
   .search-popup-container .popup_background{
-    
+    background: #EFF3F7;
+    backdrop-filter: none;
+  }
+  .search-popup-container .popup{
+    margin-top: 0;
+    padding-top: 60px;
+  }
+  .search-popup .section-heading{
+    margin-bottom: 24px;
+    color: #292929;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .search-popup .popup_close svg path{
+    stroke: #292929;
+  }
+  .search-popup .search-purchases_container{
+    background: transparent;
+  }
+  .search-popup_back{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    outline: none;
+    border: none;
+    background: transparent;
+    margin-bottom: 24px;
+    color: #EA0D44;
+    font-size: 16px;
+  }
+  .search-popup_back svg, .search-popup_back img{
+    max-width: 16px;
+    margin-right: 8px;
   }
 }
