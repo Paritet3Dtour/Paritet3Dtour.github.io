@@ -1,0 +1,3433 @@
+.cnt-page {
+  /*overflow-x: hidden;*/
+  background-color: #F2FAFB;
+  font-family: 'Gotham Pro', sans-serif;
+  font-weight: 300;
+  color: #000;
+  background: #fff;
+  min-height: 100vh;
+  width: 100%; }
+  .cnt-page * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+
+.cnt-page .mainContainer {
+  max-width: 1352px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  padding: 0 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.cnt-page textarea, .cnt-page input[type="text"], .cnt-page input[type="button"], .cnt-page input[type="submit"] {
+  box-sizing: border-box;
+  -webkit-appearance: none;}
+
+.cnt-page input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0; }
+
+.cnt-page input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0; }
+
+.cnt-page input[type="search"]::-webkit-search-decoration,
+.cnt-page input[type="search"]::-webkit-search-cancel-button,
+.cnt-page input[type="search"]::-webkit-search-results-button,
+.cnt-page input[type="search"]::-webkit-search-results-decoration {
+  display: none; }
+
+.cnt-page button, .cnt-page input, .cnt-page textarea {
+  font-family: 'Gotham Pro', sans-serif; }
+
+.cnt-page .hidden {
+  display: none !important; }
+
+.cnt-page .tab-content{
+  display: none !important;
+}
+.cnt-page .tab-content.active{
+  display: block !important;
+}
+.cnt-page .ski-catalog_list.tab-content.active{
+  display: flex !important;
+}
+
+
+.cnt-banner{
+  height: 900px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 80px;
+}
+/*.cnt-banner::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 84.9%, #000000 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}*/
+.cnt-banner_content{
+  position: relative;
+  z-index: 1;
+}
+.cnt-banner_heading{
+  margin-bottom: 0;
+  color: #FFFFFF;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 500;
+  max-width: 70%;
+  margin-bottom: 20px;
+}
+.cnt-banner_descr{
+  margin-bottom: 0;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  max-width: 907px;
+  margin-bottom: 45px;
+}
+.cnt-banner_params{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 102px;
+}
+.cnt-banner_params li{
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  margin-right: 48px;
+  display: flex;
+  align-items: center;
+}
+.cnt-banner_params li img{
+  margin-right: 15px;
+}
+.cnt-banner_params li:last-child{
+  margin-right: 0;
+}
+.cnt-banner .cnt-lead{
+  padding: 0;
+}
+.cnt-banner .cnt-lead_wrapp{
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: none;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 32px 70px;
+}
+.cnt-banner .cnt-lead_text{
+  color: #fff;
+}
+.cnt-banner .cnt-lead_form button[type="submit"]{
+  border: 1px solid #FFFFFF;
+  background: #fff;
+  color: #333434;
+}
+.cnt-banner .cnt-lead_form button[type="submit"]:hover{
+  color: #fff;
+}
+.cnt-lead{
+  padding-top: 54px;
+  padding-bottom: 54px;
+}
+.cnt-lead.blacklead{
+  background: #000000;
+}
+.cnt-lead_wrapp{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  background: #FFFFFF;
+  padding: 39px 49px 39px 73px;
+}
+.cnt-lead_user{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.cnt-lead_avatar{
+  position: relative;
+  flex-shrink: 0;
+  margin-right: 45px;
+  width: 69px;
+  height: 69px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+}
+.cnt-lead_avatar::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 14px;
+  height: 14px;
+  background: #9EC793;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.cnt-banner .cnt-lead_avatar::after{
+  display: none;
+}
+.cnt-banner .cnt-lead_avatar{
+  margin-right: 22px;
+}
+.cnt-lead_content{
+  flex-shrink: 0;
+}
+.cnt-lead_form{
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 48px;
+}
+.cnt-lead_form input{
+  width: 300px;
+  margin-right: 39px;
+  height: 51px;
+  border: 1px solid #898989;
+  padding: 0 16px 0 70px;
+  font-weight: 300;
+  border-radius: 3px;
+}
+.cnt-lead_form button[type="submit"]{
+  height: 51px;
+  padding: 0 43px;
+  color: #FFFFFF;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #333434;
+  border-radius: 3px;
+  background: #333434;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.cnt-lead_form button[type="submit"]:hover{
+  background-color: #000;
+  border-color: #000;
+}
+.cnt-lead_text{
+  width: 100%;
+}
+.cnt-lead_heading{
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.cnt-lead_descr{
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+}
+
+.cnt-locations{
+  position: relative;
+  overflow: hidden;
+  background-color: #000000;
+}
+.cnt-locations .swiper-container{
+  position: relative;
+  z-index: 2;
+}
+.cnt-locations_item_submit{
+  position: relative;
+  z-index: 2;
+}
+.cnt-locations_item_wrapp{
+  position: relative;
+  z-index: 3;
+}
+.cnt-locations_heading_title{
+  max-width: 760px;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+}
+.cnt-locations_heading{
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  top: 53px;
+}
+.cnt-locations_item{
+  min-height: 900px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.cnt-locations_item::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 15.1%, rgba(0, 0, 0, 0) 89.06%, #000000 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+.cnt-locations_item_wrapp{
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 70px;
+}
+.cnt-locations_item_info{
+  max-width: 970px;
+}
+.cnt-locations_item_info_top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 34px;
+}
+.cnt-locations_item_name{
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+}
+.cnt-locations_item_params{
+  flex-shrink: 0;
+  margin-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.cnt-locations_item_param{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-right: 20px;
+  font-size: 18px;
+  line-height: 22px;
+  height: 22px;
+}
+.cnt-locations_item_param .icon{
+  margin-right: 6px;
+}
+.cnt-locations_item_param.param-location{
+  font-weight: 500;
+  margin-left: 10px;
+}
+.cnt-locations_item_param.param-location .icon{
+  margin-right: 8px;
+}
+.cnt-locations_item_param:nth-child(3) .icon {
+  padding-bottom: 3px;
+}
+.cnt-locations_item_info_descr{
+  font-size: 16px;
+  line-height: 19px;
+}
+.cnt-locations_item_details{
+  flex-shrink: 0;
+  margin-left: 40px;
+}
+.cnt-locations_item_price{
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+}
+.cnt-locations_item_descr{
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 14px;
+}
+.cnt-locations_item_submit{
+  outline: none;
+  border: 1px solid #D7D2BE;
+  background: #D7D2BE;
+  border-radius: 3px;
+  height: 41px;
+  text-align: center;
+  padding: 5px 19px;
+  color: #333434;
+  font-size: 18px;
+  font-weight: 500;
+  width: 231px;
+  margin-left: auto;
+  display: block;
+}
+.cnt-locations_item_descr{
+  text-align: right;
+}
+.cnt-locations_nav button{
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  margin-top: -16px;
+}
+.cnt-locations_nav .prev{
+  left: 18px;
+}
+.cnt-locations_nav .next{
+  right: 18px;
+}
+.cnt-locations_pagination{
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  bottom: 20px;
+}
+.cnt-locations_pagination .swiper-pagination-bullet{
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid #fff;
+  display: inline-block;
+  margin: 0 6px;
+}
+.cnt-locations_pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background-color: #fff;
+}
+
+.cnt-locations-poss{
+  position: relative;
+  overflow: hidden;
+  background-color: #000000;
+}
+.cnt-locations-poss .swiper-container{
+  position: relative;
+  z-index: 2;
+}
+.cnt-locations-poss_item_submit{
+  position: relative;
+  z-index: 2;
+}
+.cnt-locations-poss_item_wrapp{
+  position: relative;
+  z-index: 3;
+}
+.cnt-locations-poss_heading_title{
+  max-width: 1270px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+  color: #D7D2BE;
+}
+.cnt-locations-poss_heading{
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  top: 120px;
+}
+.cnt-locations-poss_item{
+  min-height: 900px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.cnt-locations-poss_item::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 15.1%, rgba(0, 0, 0, 0) 89.06%, #000000 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+.cnt-locations-poss_item_wrapp{
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 90px;
+}
+.cnt-locations-poss_item_info{
+  max-width: 970px;
+}
+.cnt-locations-poss_item_name{
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+  margin-bottom: 20px;
+}
+.cnt-locations-poss_item_info_descr{
+  font-size: 16px;
+  line-height: 19px;
+  max-width: 740px;
+  margin-bottom: 40px;
+}
+.cnt-locations-poss_item_details{
+  flex-shrink: 0;
+  margin-left: 40px;
+}
+.cnt-locations-poss_item_price{
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+}
+.cnt-locations-poss_item_submit{
+  outline: none;
+  border: 1px solid #D7D2BE;
+  background: #D7D2BE;
+  border-radius: 3px;
+  height: 41px;
+  text-align: center;
+  padding: 5px 19px;
+  color: #333434;
+  font-size: 18px;
+  font-weight: 500;
+  width: 353px;
+  display: block;
+}
+.cnt-locations-poss_item_descr{
+  text-align: right;
+}
+.cnt-locations-poss_nav button{
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  margin-top: -16px;
+}
+.cnt-locations-poss_nav .prev{
+  left: 18px;
+}
+.cnt-locations-poss_nav .next{
+  right: 18px;
+}
+.cnt-locations-poss_pagination{
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  bottom: 20px;
+}
+.cnt-locations-poss_pagination .swiper-pagination-bullet{
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid #fff;
+  display: inline-block;
+  margin: 0 6px;
+}
+.cnt-locations-poss_pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background-color: #fff;
+}
+
+.cnt-whatwaiting{
+  background-color: #000000;
+  padding: 81px 0 55px;
+  position: relative;
+  overflow: hidden;
+}
+.cnt-whatwaiting_heading{
+  margin-bottom: 16px;
+  font-size: 48px;
+  line-height: 58px;
+  color: #fff;
+  font-weight: 500;
+}
+.cnt-whatwaiting_descr{
+  max-width: 1020px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  margin-bottom: 45px;
+}
+.cnt-whatwaiting_slide{
+  width: 472px;
+  height: 392px;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 20px 20px 34px 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.cnt-whatwaiting_slide::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 67.71%, rgba(0, 0, 0, 0.407407) 77.6%, #000000 100%);
+}
+/*.cnt-whatwaiting_slide span{
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  min-height: 55px;
+  position: relative;
+  z-index: 1;
+}*/
+.cnt-whatwaiting_item_wrapp{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: #fff;
+}
+.cnt-whatwaiting_item_name{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.cnt-whatwaiting_item_location{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 17px;
+}
+.cnt-whatwaiting_item_params{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.cnt-whatwaiting_item_param{
+  margin-right: 9px;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 21px;
+}
+.cnt-whatwaiting_item_param .icon{
+  margin-right: 6px;
+  flex-shrink: 0;
+}
+.cnt-whatwaiting_item_param:last-child{
+  margin-right: 0;
+}
+.cnt-whatwaiting_item_param:last-child .icon{
+  padding-bottom: 3px;
+}
+.cnt-whatwaiting_item_submit{
+  padding: 0;
+  outline: none;
+  border: 1px solid #D7D2BE;
+  background: #D7D2BE;
+  border-radius: 3px;
+  height: 29px;
+  text-align: center;
+  padding: 5px 19px;
+  color: #333434;
+  font-size: 13px;
+  font-weight: 500;
+}
+.cnt-whatwaiting_item_descr{
+  margin-bottom: 6px;
+  font-size: 14px;
+  line-height: 17px;
+}
+.cnt-whatwaiting_item_price{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+.cnt-whatwaiting_item_prices{
+  text-align: left;
+  width: max-content;
+  margin-left: auto;
+}
+.cnt-whatwaiting_item_location svg{
+  flex-shrink: 0;
+  margin-right: 5px;
+}
+.cnt-whatwaiting_slider{
+  position: relative;
+  z-index: 2;
+  margin-left: 105px;
+  overflow: visible;
+}
+.cnt-whatwaiting_nav{
+  padding-left: 110px;
+}
+.cnt-whatwaiting_nav .swiper-pagination, .cnt-buyvilla_nav .swiper-pagination{
+  position: static;
+  display: flex;
+  text-align: left;
+  justify-content: flex-start;
+  margin-bottom: 32px;
+}
+.cnt-whatwaiting_nav .swiper-pagination .swiper-pagination-bullet, .cnt-buyvilla_nav .swiper-pagination .swiper-pagination-bullet{
+  display: block;
+  width: 12px;
+  height: 3px;
+  background: #898989;
+  border-radius: 15px;
+  margin-right: 8px;
+  opacity: 1;
+}
+.cnt-whatwaiting_nav .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active, .cnt-buyvilla_nav .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  width: 80px;
+  background: #fff;
+}
+.cnt-buyvilla_nav .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background: #3D3737;
+}
+.cnt-whatwaiting_slider{
+  margin-bottom: 72px;
+}
+.cnt-whatwaiting_bnts button, .cnt-buyvilla_bnts button{
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  margin-right: 25px;
+  cursor: pointer;
+}
+.cnt-whatwaiting_bnts button:last-child, .cnt-buyvilla_bnts button:last-child{
+  margin-right: 0;
+}
+
+.cnt-map{
+  padding-top: 81px;
+  background: #000000;
+}
+.cnt-map_heading{
+  margin-bottom: 24px;
+  max-width: 900px;
+  color: #D7D2BE;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px
+}
+.cnt-map_descr{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+}
+.cnt-map_frame{
+  margin-top: 30px;
+  width: 100%;
+  height: 692px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.cnt-villas{
+  padding-top: 50px;
+  background-color: #000;
+  position: relative;
+  padding-bottom: 100px;
+}
+.cnt-villas .mainContainer{
+  position: relative;
+  z-index: 2;
+}
+.cnt-villas_filter{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-bottom: 44px;
+}
+.cnt-villas_filter_icon{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 18px;
+  flex-shrink: 0;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 10px;
+}
+.cnt-villas_filter_icon img{
+  margin-right: 13px;
+}
+.cnt-villas_filter_list{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+}
+.cnt-villas_filter_dropdown{
+  margin-right: 13px;
+  width: 100%;
+  position: relative;
+}
+.cnt-villas_filter_dropdown.countries-dropdown{
+  max-width: 210px;
+}
+.cnt-villas_filter_dropdown.peoples-dropdown{
+  max-width: 282px;
+}
+.cnt-villas_filter_dropdown.rooms-dropdown{
+  max-width: 185px;
+}
+.cnt-villas_filter_dropdown.baderoms-dropdown{
+  max-width: 227px;
+}
+.cnt-villas_filter_dropdown.price-dropdown{
+  max-width: 185px;
+}
+.cnt-villas_filter_dropdown.active .cnt-villas_filter_dropdown_content{
+  display: block;
+}
+.cnt-villas_filter_dropdown.active .cnt-villas_filter_dropdown_label::after{
+  transform: rotate(180deg);
+}
+.cnt-villas_filter_dropdown_content{
+  padding: 15px 20px;
+  background-color: #fff;
+  border: 1px solid #898989;
+  border-radius: 3px;
+  position: absolute;
+  width: 100%;
+  top: 56px;
+  left: 0;
+  z-index: 4;
+  max-height: 200px;
+  overflow: auto;
+  display: none;
+}
+.cnt-catalog_nav_check{
+  margin-bottom: 3px;
+}
+.cnt-catalog_nav_check:last-child{
+  margin-bottom: 0;
+}
+.cnt-catalog_nav_check input{
+  display: none;
+}
+.cnt-catalog_nav_check label{
+  padding-left: 30px;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  height: 20px;
+  display: block;
+  cursor: pointer;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.cnt-catalog_nav_check label::before{
+  content: '';
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+  display: block;
+  border: 1px solid #838383;
+  border-radius: 2px;
+}
+.cnt-catalog_nav_check input:checked + label::before{
+  background-color: #000000;
+  border-color: #000;
+  background-image: url('https://raisky.travel/wp-content/themes/raisky/inc/img/alpine/check-icon.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 14px;
+}
+.cnt-villas_filter_dropdown:last-child{
+  margin-right: 0;
+}
+.cnt-villas_filter_dropdown_label{
+  height: 51px;
+  padding: 5px 23px 5px 15px;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid #898989;
+  background: #FFFFFF;
+  border-radius: 3px;
+  color: #333434;
+  font-size: 15px;
+  position: relative;
+  cursor: pointer;
+}
+.cnt-villas_filter_dropdown_label::after{
+  content: '';
+  background-image: url('../img/dropdown-icon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  right: 8px;
+  top: 20px;
+}
+@media screen and (max-width: 992px){
+  .cnt-villas{
+    padding-top: 34px;
+  }
+  .cnt-villas_filter{
+    display: block;
+    margin-bottom: 26px;
+  }
+  .cnt-villas_filter_list{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .cnt-villas_filter_icon{
+    margin-top: 0;
+    margin-bottom: 18px;
+  }
+  .cnt-villas_filter_dropdown.countries-dropdown{
+    max-width: 144px;
+  }
+  .cnt-villas_filter_dropdown.peoples-dropdown{
+    max-width: 236px;
+  }
+  .cnt-villas_filter_dropdown.rooms-dropdown{
+    max-width: 131px;
+  }
+  .cnt-villas_filter_dropdown.baderoms-dropdown{
+    max-width: 189px;
+  }
+  .cnt-villas_filter_dropdown.price-dropdown{
+    max-width: 131px;
+  }
+  .cnt-villas_filter_dropdown{
+    margin-right: 5px;
+    margin-bottom: 6px;
+  }
+  .cnt-villas_filter_dropdown_label{
+    height: 39px;
+    font-size: 11px;
+    padding: 5px 19px 5px 10px;
+  }
+  .cnt-villas_filter_dropdown_label::after{
+    top: 14px;
+  }
+  .cnt-villas_filter_dropdown_content{
+    top: 42px;
+    width: 100%;
+    min-width: 235px;
+  }
+}
+
+
+
+.cnt-villas_item{
+  width: 31.5%;
+  margin-bottom: 90px;
+  color: #fff;
+}
+.cnt-villas_item_preview{
+  width: 100%;
+  height: 339px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 30px;
+}
+.cnt-villas_item_name{
+  margin-bottom: 2px;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 48px;
+}
+.cnt-villas_item_params{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.cnt-villas_item_param{
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-right: 9px;
+  height: 22px;
+}
+.cnt-villas_item_param:nth-child(1){
+  margin-right: 15px;
+}
+.cnt-villas_item_param .icon{
+  margin-right: 6px;
+}
+.cnt-villas_item_param:last-child .icon{
+  padding-bottom: 3px;
+}
+.cnt-villas_item_descr{
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 19px;
+}
+.cnt-villas_item_nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.cnt-villas_item_submit{
+  outline: none;
+  border: 1px solid #D7D2BE;
+  background: #D7D2BE;
+  border-radius: 3px;
+  height: 41px;
+  text-align: center;
+  padding: 5px 5px;
+  color: #333434;
+  font-size: 17px;
+  font-weight: 500;
+  width: 100%;
+  max-width: 211px;
+  display: block;
+  margin-top: 13px;
+}
+.cnt-villas_item_details{
+  flex-shrink: 0;
+  margin-left: 5px;
+  text-align: right;
+}
+.cnt-villas_item_price{
+  margin-bottom: 2px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+}
+.cnt-villas_item_details_descr{
+  font-size: 18px;
+  line-height: 22px;
+}
+.cnt-villas_loadmore{
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: 1px solid #D7D2BE;
+  background: #FFFFFF;
+  text-align: center;
+  min-width: 363px;
+  height: 65px;
+  padding: 5px 15px;
+  color: #333434;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.cnt-buyvilla{
+  position: relative;
+  padding: 84px 0 80px;
+}
+.cnt-buyvilla .mainContainer{
+  position: relative;
+  z-index: 3;
+}
+.cnt-buyvilla_heading{
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+  max-width: 1105px;
+}
+.cnt-buyvilla_descr{
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 19px;
+}
+.cnt-buyvilla_list{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.cnt-buyvilla_item{
+  width: 31%;
+}
+.cnt-buyvilla_item_preview{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 516px;
+  margin-bottom: 12px;
+  border-radius: 50px;
+}
+.cnt-buyvilla_item_name{
+  margin-bottom: 8px;
+  font-size: 38px;
+  line-height: 46px;
+  font-weight: 500;
+}
+.cnt-buyvilla_item_params{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+.cnt-buyvilla_item_param{
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-right: 9px;
+  height: 22px;
+}
+.cnt-buyvilla_item_param:first-child{
+  margin-right: 16px;
+}
+.cnt-buyvilla_item_param:last-child{
+  margin-right: 0;
+}
+.cnt-buyvilla_item_param:last-child .icon{
+  padding-bottom: 3px;
+}
+.cnt-buyvilla_item_param .icon{
+  margin-right: 6px;
+}
+.cnt-buyvilla_item_descr{
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+.cnt-buyvilla_item_price{
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+}
+.cnt-buyvilla_item_submit{
+  display: block;
+  transition: all 0.2s;
+  height: 57px;
+  text-align: center;
+  background: #D7D2BE;
+  outline: none;
+  border: 1px solid #D7D2BE;
+  border-radius: 3px;
+  color: #333434;
+  font-weight: 500;
+  font-size: 22px;
+  width: 270px;
+}
+.cnt-buyvilla::after{
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  left: 0;
+  bottom: 0;
+  content: '';
+  background-color: #fff;
+  z-index: 2;
+}
+.cnt-buyvilla_nav{
+  display: none;
+}
+
+.cnt-lead.greylead{
+  padding-top: 0;
+  padding-bottom: 76px;
+}
+.greylead .cnt-lead_wrapp{
+  padding: 32px 70px 33px 70px;
+  box-shadow: none;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+.greylead .cnt-lead_text{
+  color: #fff;
+}
+.greylead .cnt-lead_form button[type="submit"]{
+  background-color: #fff;
+  border-color: #fff;
+  color: #333434;
+}
+
+.cnt-faq{
+  padding: 84px 0 28px;
+  background-color: #000;
+  color: #FFFFFF;
+}
+.cnt-faq_heading{
+  text-transform: uppercase;
+  margin-bottom: 42px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+}
+.cnt-faq_list{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.cnt-faq_item{
+  width: 30%;
+}
+.cnt-faq_item_preview{
+  margin-bottom: 20px;
+  width: 100%;
+  height: 323px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.cnt-faq_item_heading{
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+}
+.cnt-faq_item_descr{
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 19px;
+}
+.cnt-faq_item_submit{
+  outline: none;
+  border: none;
+  width: max-content;
+  padding: 5px 58px;
+  color: #333434;
+  text-align: center;
+  font-size: 18px;
+  background: #D7D2BE;
+  border-radius: 3px;
+  height: 41px;
+  font-weight: 300;
+}
+.cnt-faq_loadmore{
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: 1px solid #D7D2BE;
+  background: #FFFFFF;
+  text-align: center;
+  min-width: 363px;
+  height: 65px;
+  padding: 5px 15px;
+  color: #333434;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.2s;
+  margin-top: 80px;
+}
+
+.cnt-benefits{
+  padding: 130px 0 46px;
+  background-color: #000;
+  position: relative;
+  color: #fff;
+}
+.cnt-benefits .mainContainer{
+  position: relative;
+  z-index: 2;
+}
+.cnt-benefits_top{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 45px;
+}
+.cnt-benefits_heading{
+  font-size: 48px;
+  line-height: 58px;
+  max-width: 635px;
+  flex-shrink: 0;
+  margin-right: 67px;
+  font-weight: 500;
+}
+.cnt-benefits_descr{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+.cnt-benefits_list{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.cnt-benefits_item{
+  margin-bottom: 40px;
+  width: 30%;
+}
+.cnt-benefits_item_preview{
+  width: 100%;
+  height: 323px;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50px;
+}
+.cnt-benefits_item_heading{
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+.cnt-benefits_item_descr{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.cnt-villas_manager{
+  background-color: #fff;
+  padding: 50px 0 60px;
+}
+.cnt-villas_manager_wrapp{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.cnt-villas_manager_avatar{
+  flex-shrink: 0;
+  margin-right: 52px;
+  padding: 12px 18px 12px 18px;
+  border: 0.5px solid #D7D2BE;
+  border-radius: 110px 0px 100px 0;
+  width: 494px;
+  height: 329px;
+  overflow: hidden; 
+}
+.cnt-villas_manager_avatar div{
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 100px 0px 100px 0px;
+}
+.cnt-villas_manager_info{
+  padding-top: 10px;
+}
+.cnt-villas_manager_label{
+  margin-bottom: 17px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.0703846px;
+  max-width: 453px;
+  color: #333434;
+}
+.cnt-villas_manager_label.mob{
+  display: none;
+}
+.cnt-villas_manager_name{
+  margin-bottom: 30px;
+  letter-spacing: 0.0703846px;
+  font-weight: 700;
+  font-size: 36px;
+  color: #333434;
+}
+.cnt-villas_manager_descr{
+  max-width: 658px;
+  letter-spacing: 0.0703846px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333434;
+}
+
+
+
+.cnt-service{
+  padding: 85px 0;
+}
+.cnt-service_wrapp{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.cnt-service_column{
+  width: 45%;
+  color: #333434;
+}
+.cnt-service_column_top{
+  margin-bottom: 56px;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 500;
+}
+.cnt-service_column_heading{
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+}
+.cnt-service_column_list{
+  margin-bottom: 47px;
+}
+.cnt-service_column_list_nav{
+  display: flex;
+  color: #898989;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+.cnt-service_column_list_nav li:nth-child(1){
+  width: 25%;
+}
+.cnt-service_column_list_nav li:nth-child(2){
+  text-align: center;
+  width: 20%;
+}
+.cnt-service_column_list_nav li:nth-child(3){
+  width: 50%;
+}
+.cnt-service_column_list_content li{
+  display: flex;
+  font-size: 16px;
+  line-height: 19px;
+}
+.cnt-service_column_list_content span:nth-child(1){
+  width: 25%;
+}
+.cnt-service_column_list_content span:nth-child(2){
+  text-align: center;
+  width: 20%;
+}
+.cnt-service_column_list_content span:nth-child(3){
+  width: 50%;
+}
+.cnt-service_column_benefits{
+  font-size: 16px;
+  line-height: 19px;
+  font-style: italic;
+  margin-bottom: 55px;
+  list-style: disc;
+  margin-left: 20px;
+}
+.cnt-service_column_params{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 45px;
+}
+.cnt-service_column_param{
+  display: flex;
+  align-items: center;
+  margin-right: 35px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+}
+.cnt-service_column_param:last-child{
+  margin-right: 0;
+}
+.cnt-service_column_param svg{
+  margin-right: 16px;
+}
+.cnt-service_column_price{
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.cnt-service_column_price svg{
+  margin-right: 16px;
+}
+.cnt-service_column_notes{
+  padding: 21px 16px 24px 29px;
+  border: 1px solid #000000;
+  border-radius: 30px;
+}
+.cnt-service_column_notes_heading{
+  margin-bottom: 9px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+}
+.cnt-service_column_notes li{
+  font-size: 16px;
+  line-height: 19px;
+}
+.cnt-service_column:nth-child(2) .cnt-service_column_top{
+  margin-bottom: 120px;
+}
+.cnt-service_column:nth-child(2) .cnt-service_column_benefits{
+  margin-bottom: 70px;
+}
+
+
+
+
+.cnt-expert{
+  margin: 94px 0 87px;
+}
+.cnt-expert_wrapp{
+  display: flex;
+  justify-content: space-between;
+}
+.cnt-expert_preview{
+  flex-shrink: 0;
+  margin-right: 54px;
+  border: 0.5px solid #D7D2BE;
+  border-radius: 110px 0px;
+  padding: 24px 16px 0 0;
+  max-width: 437px;
+  width: 100%;
+  overflow: hidden;
+}
+.cnt-expert_preview.mobile{
+  display: none;
+}
+.cnt-expert_preview_img{
+  width: 100%;
+  height: 673px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 100px 0px;
+}
+.cnt-expert_content{
+  width: 100%;
+  padding-top: 25px;
+}
+.cnt-expert_heading{
+  margin-bottom: 16px;
+  width: 100%;
+  max-width: 453px;
+  color: #333434;
+  letter-spacing: 0.0703846px;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.cnt-expert_name{
+  margin-bottom: 47px;
+  letter-spacing: 0.0703846px;
+  color: #333434;
+  font-size: 36px;
+  line-height: 41px;
+  font-weight: bold;
+}
+.cnt-expert_nav{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 70px;
+}
+.cnt-expert_submit{
+  padding: 0 37px;
+  height: 49px;
+  border-radius: 3px;
+  border: 1px solid #333434;
+  text-align: center;
+  background: #333434;
+  color: #FFFFFF;
+  font-size: 14px;
+  margin-right: 31px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.cnt-expert_submit:hover{
+  background: #000;
+  border-color: #000;
+}
+.cnt-expert_call{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.cnt-expert_call:hover .cnt-expert_call_number{
+  opacity: 1;
+}
+.cnt-expert_call_toggler{
+  margin-right: 16px;
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #333434;
+  cursor: pointer;
+}
+.cnt-expert_call_number{
+  padding: 16px;
+  text-align: center;
+  color: #333434;
+  font-size: 14px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 1px;
+  transition: all 0.2s;
+  opacity: 0;
+}
+.cnt-expert_adventages{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.cnt-expert_adventage{
+  margin-bottom: 77px;
+  max-width: 315px;
+  width: 100%;
+}
+.cnt-expert_adventage_heading{
+  color: #333434;
+  letter-spacing: 0.0703846px;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.cnt-expert_adventage_descr{
+  padding-left: 74px;
+  color: #333434;
+  letter-spacing: 0.0703846px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+
+
+
+.cnt-advantages{
+  padding: 95px 0 130px;
+  background: #000000;
+  color: #fff;
+}
+.cnt-advantages_heading{
+  text-align: center;
+  margin-bottom: 114px;
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 500;
+}
+.cnt-advantages_list{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 0 40px;
+}
+.cnt-advantages_item{
+  width: 21%;
+  margin-bottom: 56px;
+}
+.cnt-advantages_item_icon{
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+.cnt-advantages_item_descr{
+  text-align: center;
+  margin: 0 auto;
+  max-width: 180px;
+  color: #D7D2BE;
+  font-size: 16px;
+  line-height: 19px;
+}
+.cnt-advantages_item.text-item{
+  border: 1px solid #D7D2BE;
+  border-radius: 6px;
+  height: 187px;
+  color: #D7D2BE;
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 13px;
+}
+
+
+.cnt-bottom{
+  padding-top: 75px;
+}
+.cnt-bottom_heading{
+  margin-bottom: 41px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 500;
+}
+.cnt-bottom_descr{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 866px;
+  padding-bottom: 70px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333434;
+}
+.cnt-bottom_preview{
+  width: 100%;
+  height: 430px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.cnt-bottom_preview::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+.bg-line-container{
+  position: relative;
+}
+.cnt-bgline{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  max-width: 1352px;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+  transform: translateX(-50%);
+  opacity: 0.2;
+  z-index: 1;
+}
+.cnt-bgline span{
+  display: block;
+  width: 25%;
+  height: 100%;
+  border-right: 1px solid #D7D2BE;
+}
+.cnt-bgline span:first-child{
+  border-left: 1px solid #D7D2BE;
+}
+
+
+/** POPUP**/
+.cnt-popup_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 10px;
+  opacity: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: -10; }
+  .cnt-popup_container.active {
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition-delay: 0.1;
+         -o-transition-delay: 0.1;
+            transition-delay: 0.1;
+    z-index: 999999; }
+    .cnt-popup_container.active .cnt-popup {
+      bottom: 0;
+      -webkit-transition: all 0.6s ease-in-out;
+      -o-transition: all 0.6s ease-in-out;
+      transition: all 0.6s ease-in-out;
+      -webkit-transition-delay: 0.1;
+           -o-transition-delay: 0.1;
+              transition-delay: 0.1; }
+
+.cnt-popup_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.cnt-popup {
+  position: relative;
+  z-index: 200;
+  width: 100%;
+  max-width: 656px;
+  margin: auto;
+  background-color: #FFFFFF;
+  bottom: -100vh;
+  -webkit-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out; }
+
+.cnt-popup_close {
+  position: absolute;
+  top: 9px;
+  right: 8px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+
+.cnt-request-popup{
+  max-width: 494px;
+  border-radius: 6px;
+}
+.cnt-request-popup__content{
+  padding: 45px 40px 50px;
+}
+.cnt-request-popup__heading{
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+  color: #333434;
+  letter-spacing: 0.0703846px;
+}
+.cnt-request-popup__descr{
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333434;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.0703846px;
+}
+.cnt-popup_close{
+  padding: 0;
+  border: none;
+  margin: 0;
+  background: transparent;
+}
+.cnt-popup_close:focus{
+  outline: none;
+}
+
+.cnt-request-popup form input{
+  width: 100%;
+  height: 47px;
+  background: transparent;
+  padding: 0 30px 0 0;
+  font-size: 16px;
+  margin-bottom: 18px;
+  border: none;
+  font-weight: 300;
+  border-bottom: 1px solid #898989;
+}
+.cnt-request-popup form input::placeholder{
+  color: #898989;
+  font-size: 16px;
+  font-weight: 300;
+}
+.cnt-request-popup form textarea{
+  resize: none;
+  width: 100%;
+  background: transparent;
+  padding: 11px;
+  font-size: 16px;
+  margin-bottom: 18px;
+  height: 105px;
+  border-radius: 6px;
+  font-weight: 300;
+  border: 1px solid #898989;
+}
+.cnt-request-popup form textarea::placeholder{
+  color: #898989;
+  font-size: 16px;
+  font-weight: 300;
+}
+.cnt-request-popup form button[type="submit"]{
+  border-radius: 3px;
+  border: 1px solid #333434;
+  background: #333434;
+  text-align: center;
+  margin: 0 auto;
+  padding: 17px 43px;
+  display: block;
+  width: max-content;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 38px;
+  transition: all 0.2s;
+}
+.cnt-request-popup form button[type="submit"]:hover{
+  background: #000;
+  border-color: #000;
+}
+.cnt-request-popup .request-doc{
+  margin: 0 auto;
+  text-align: center;
+  color: #898989;
+  letter-spacing: 0.0703846px;
+  font-size: 12px;
+  line-height: 13px;
+}
+.cnt-request-popup .request-doc a{
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #D7D2BE;
+}
+
+
+
+@media screen and (max-width: 1320px){
+  .cnt-banner_heading{
+    max-width: 100%;
+  }
+  .cnt-banner_descr{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .cnt-banner_params li{
+    font-size: 16px;
+    margin-right: 32px;
+  }
+  .cnt-banner_params li:last-child{
+    margin-right: 0;
+  }
+  .cnt-banner_heading{
+    font-size: 72px;
+  }
+  .cnt-banner_descr{
+    font-size: 20px;
+  }
+  .cnt-lead_wrapp{
+    padding: 39px 24px 39px 24px;
+  }
+  .cnt-lead_avatar{
+    margin-right: 25px;
+  }
+  .cnt-lead_form{
+    margin-left: 24px;
+  }
+  .cnt-lead_form input{
+    margin-right: 24px;
+    width: 220px;
+  }
+  .cnt-catalog_heading{
+    font-size: 30px;
+  }
+  .cnt-catalog_top{
+    margin-bottom: 40px;
+  }
+  .cnt-catalog_item_submit{
+    font-size: 15px;
+  }
+  .cnt-catalog_item_name{
+    font-size: 20px;
+  }
+  .cnt-catalog_item_params{
+    font-size: 16px;
+  }
+  .cnt-catalog_item_price span{
+    font-size: 25px;
+  }
+  .cnt-expert_preview{
+    max-width: 337px;
+    margin-right: 34px;
+  }
+  .cnt-expert_adventage_descr{
+    padding-left: 34px;
+    font-size: 14px;
+  }
+  .cnt-expert_adventage{
+    max-width: 275px;
+  }
+  .cnt-reviews_slider{
+    max-width: 905px;
+  }
+  .cnt-banner_heading{
+    font-size: 40px;
+    line-height: 42px;
+  }
+  .cnt-banner_descr{
+    font-size: 16px;
+  }
+  .cnt-banner_params li{
+    font-size: 15px;
+  }
+  .cnt-banner_params{
+    margin-bottom: 120px;
+  }
+  .cnt-banner{
+    height: 800px;
+  }
+  .cnt-whatwaiting_heading{
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .cnt-step.step_one, .cnt-step.step_three, .cnt-step.step_seven, .step_eleven{
+    height: 700px;
+  }
+  .cnt-step__heading{
+    font-size: 36px;
+    line-height: 45px;
+    margin-right: 40px;
+  }
+  .cnt-step__param{
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .cnt-step.step_ten .cnt-step_wrapp{
+    display: block;
+  }
+  .cnt-step.step_ten .cnt-step_ten_list{
+    width: 100%;
+  }
+  .cnt-step.step_ten .cnt-step_ten_column{
+    align-items: center;
+  }
+  .cnt-step_ten_column:nth-child(even) .cnt-step_ten_column_preview{
+    height: 300px;
+  }
+  .cnt-step.step_ten .cnt-step_ten_content{
+    width: 100%;
+    margin-top: 50px;
+  }
+  .cnt-service_column_list_content li, .cnt-service_column_benefits{
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .cnt-service_column_param{
+    font-size: 16px;
+  }
+  .cnt-service_column_price{
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .cnt-service_column_notes li{
+    font-size: 14px;
+  }
+  .cnt-service{
+    padding-bottom: 35px;
+  }
+  .cnt-tours_heading{
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 45px;
+  }
+  .cnt-tours_slider{
+    margin-bottom: 50px;
+  }
+  .cnt-whatwaiting_slider{
+    margin-left: 0;
+  }
+  .cnt-whatwaiting_nav{
+    padding-left: 0;
+  }
+  .cnt-banner .cnt-lead_wrapp{
+    padding: 32px 24px;
+  }
+  .cnt-locations_heading_title{
+    font-size: 40px;
+    line-height: 42px;
+  }
+  .cnt-locations_item_info_top{
+    display: block;
+  }
+  .cnt-locations_item_name{
+    font-size: 42px;
+    line-height: 52px;
+    margin-bottom: 20px;
+  }
+  .cnt-locations_item_info_descr{
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cnt-locations_pagination .swiper-pagination-bullet{
+    width: 16px;
+    height: 16px;
+  }
+  .cnt-locations_item_param{
+    font-size: 16px;
+  }
+  .cnt-locations_item_price{
+    font-size: 36px;
+    line-height: 48px;
+    text-align: right;
+  }
+  .cnt-map_heading{
+    font-size: 42px;
+    line-height: 52px;
+  }
+  .cnt-villas_item_preview{
+    height: 239px;
+    margin-bottom: 20px;
+  }
+  .cnt-villas_item_name{
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 6px;
+  }
+  .cnt-villas_item_params{
+    flex-wrap: wrap;
+  }
+  .cnt-villas_item_param:nth-child(1){
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .cnt-villas_item_descr{
+    font-size: 13px;
+    line-height: 17px;
+    margin-bottom: 15px;
+  }
+  .cnt-villas_item_nav{
+    flex-direction: column-reverse;
+  }
+  .cnt-villas_item_details{
+    width: 100%;
+    padding-right: 20px;
+  }
+  .cnt-villas_item_price{
+    font-size: 23px;
+    line-height: 27px;
+  }
+  .cnt-villas_item_details_descr{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .cnt-villas_item_submit{
+    width: 100%;
+    max-width: 100%
+  }
+  .cnt-villas_loadmore{
+    min-width: 350px;
+    font-size: 14px;
+    height: 56px;
+  }
+  .cnt-buyvilla_heading{
+    font-size: 42px;
+    line-height: 52px;
+  }
+  .cnt-buyvilla_item_preview{
+    height: 320px;
+  }
+  .cnt-buyvilla_item_name{
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .cnt-buyvilla_item_params{
+    flex-wrap: wrap;
+  }
+  .cnt-buyvilla_item_param:first-child{
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .cnt-buyvilla_item_descr{
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .cnt-buyvilla_item_price{
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .cnt-buyvilla_item_submit{
+    width: 100%;
+    font-size: 18px;
+  }
+  .greylead .cnt-lead_wrapp{
+    padding: 32px 30px 33px 30px;
+  }
+  .cnt-locations-poss_heading_title{
+    font-size: 42px;
+    line-height: 52px;
+  }
+  .cnt-locations-poss_item_name{
+    font-size: 42px;
+    line-height: 52px;
+    margin-bottom: 20px;
+  }
+  .cnt-locations-poss_item_info_descr{
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cnt-locations-poss_item_price{
+    font-size: 36px;
+    line-height: 48px;
+    text-align: right;
+  }
+  .cnt-locations-poss_item_submit{
+    font-size: 15px;
+  }
+  .cnt-locations-poss_pagination .swiper-pagination-bullet{
+    width: 16px;
+    height: 16px;
+  }
+  .cnt-faq_heading{
+    font-size: 42px;
+    line-height: 52px;
+  }
+  .cnt-faq_item_preview{
+    height: 260px;
+  }
+  .cnt-faq_item_heading{
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .cnt-faq_item_descr{
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cnt-faq_item_submit{
+    width: 100%;
+  }
+  .cnt-faq_loadmore{
+    font-size: 14px;
+    height: 56px;
+    min-width: 350px;
+  }
+  .cnt-benefits_top{
+    display: block;
+  }
+  .cnt-benefits_heading{
+    margin-right: 0;
+    font-size: 42px;
+    line-height: 52px;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .cnt-benefits_descr{
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cnt-benefits_item_preview{
+    height: 260px;
+  }
+  .cnt-benefits_item_heading{
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 15px;
+  }
+  .cnt-benefits_item_descr{
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .cnt-villas_manager_avatar{
+    width: 325px;
+  }
+  .cnt-villas_manager_label {
+    font-size: 16px;
+  }
+  .cnt-villas_manager_name{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .cnt-villas_manager_descr{
+    max-width: 558px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .cnt-villas_manager_info{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .cnt-lead_wrapp{
+    display: block;
+  }
+  .cnt-lead_content{
+    display: block;
+  }
+  .cnt-bgline{
+    display: none;
+  }
+  .cnt-banner_heading{
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 6px;
+  }
+  .cnt-banner_descr{
+    width: 100%;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .cnt-banner{
+    height: 468px;
+  }
+  .cnt-lead{
+    margin: 0;
+    padding: 0;
+  }
+  .cnt-lead_wrapp{
+    box-shadow: none;
+    padding: 50px 0;
+  }
+  .cnt-lead_descr{
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .cnt-lead_user{
+    margin-bottom: 39px;
+  }
+  .cnt-lead_form{
+    margin-left: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  .cnt-lead_form input{
+    width: 100%;
+    margin-right: 0;
+    max-width: 100%;
+    margin-bottom: 31px;
+  }
+  .cnt-lead_form button[type="submit"]{
+    width: 100%;
+    font-size: 14px;
+  }
+  .cnt-expert_wrapp{
+    display: block;
+  }
+  .cnt-expert_preview{
+    display: none;
+  }
+  .cnt-expert_content{
+    padding-top: 0;
+  }
+  .cnt-expert{
+    margin-top: 55px;
+    margin-bottom: 72px;
+  }
+  .cnt-expert_heading{
+    margin-bottom: 16px;
+  }
+  .cnt-expert_user{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .cnt-expert_preview.mobile{
+    display: block;
+    width: 158px;
+    margin-right: 15px;
+    padding-top: 10px;
+    padding-right: 5px;
+    height: 313px;
+    background-size: cover;
+  }
+  .cnt-expert_preview_img{
+    height: 313px;
+  }
+  .cnt-expert_name{
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .cnt-expert_nav{
+    margin-bottom: 0;
+    display: block;
+  }
+  .cnt-expert_submit{
+    margin-right: 0;
+    width: 100%;
+    font-size: 12px;
+    height: 46px;
+    padding: 0 10px;
+    margin-bottom: 37px;
+  }
+  .cnt-expert_call_toggler{
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+  }
+  .cnt-expert_call_toggler svg{
+    width: 10px;
+    height: 10px;
+  }
+  .cnt-expert_call_number{
+    opacity: 1;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 11px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .cnt-expert_user_info{
+    width: 100%;
+  }
+  .cnt-expert_user{
+    margin-bottom: 44px;
+  }
+  .cnt-expert_adventages{
+    display: block;
+  }
+  .cnt-expert_adventage{
+    width: 100%;
+    margin-bottom: 42px;
+    max-width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .cnt-expert_adventage:last-child{
+    margin-bottom: 0;
+  }
+  .cnt-expert_adventage_descr{
+    padding-left: 15px;
+    width: 55%;
+    line-height: 17px;
+  }
+  .cnt-reviews{
+    padding: 61px 0 74px;
+  }
+  .cnt-reviews_heading{
+    margin-bottom: 23px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .cnt-reviews_slider{
+    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .cnt-reviews_slide{
+    padding: 22px 13px 13px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  }
+  .cnt-reviews_slide_user{
+    margin-bottom: 35px;
+  }
+  .cnt-reviews_slider_nav{
+    display: none;
+  }
+  .cnt-reviews .mainContainer{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .cnt-instruction{
+    padding-top: 55px;
+    padding-bottom: 79px;
+  }
+  .cnt-instruction_heading{
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .cnt-instruction_descr{
+    margin-bottom: 62px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: left;
+  }
+  .cnt-instruction_list{
+    display: block;
+  }
+  .cnt-instruction_item{
+    width: 100%;
+    display: block;
+    margin-bottom: 45px;
+  }
+  .cnt-instruction_item:last-child{
+    margin-bottom: 0;
+  }
+  .cnt-instruction_item_icon{
+    margin-right: 0;
+    background-position: left center;
+  }
+  .cnt-instruction_item_descr{
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .cnt-catalog{
+    padding-top: 55px;
+    padding-bottom: 110px;
+  }
+  .cnt-catalog_top{
+    display: block;
+    margin-bottom: 82px;
+  }
+  .cnt-catalog_heading{
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .cnt-catalog_descr{
+    font-size: 14px;
+    line-height: 17px;
+    width: 100%;
+  }
+  .cnt-catalog_list{
+    display: block;
+  }
+  .cnt-catalog_item{
+    width: 100%;
+    margin-bottom: 49px;
+  }
+  .cnt-catalog_item:last-child{
+    margin-bottom: 0;
+  }
+  .cnt-catalog_item_name{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .cnt-catalog_item_preview{
+    margin-bottom: 19px;
+  }
+  .cnt-catalog_item_params{
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .cnt-catalog_item_nav{
+    width: 100%;
+    display: block;
+  }
+  .cnt-catalog_item_price span{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .cnt-catalog_item_price{
+    margin-bottom: 22px;
+  }
+  .cnt-catalog_item_submit{
+    width: 100%;
+    font-size: 14px;
+  }
+  .cnt-advantages{
+    padding: 58px 0 50px;
+  }
+  .cnt-advantages_heading{
+    text-align: left;
+    margin-bottom: 78px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .cnt-advantages_list{
+    padding: 0;
+  }
+  .cnt-advantages_item{
+    width: 48%;
+    margin-bottom: 50px;
+  }
+  .cnt-advantages_item.text-item{
+    height: 156px;
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .cnt-advantages_item_icon{
+    width: 72px;
+    height: 72px;
+  }
+  .cnt-advantages_item_descr{
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cnt-bottom{
+    padding-top: 58px;
+  }
+  .cnt-bottom_heading{
+    text-align: left;
+    margin-bottom: 21px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .cnt-bottom_descr{
+    font-size: 14px;
+    line-height: 17px;
+    padding-bottom: 47px;
+  }
+  .cnt-bottom_preview{
+    height: 573px;
+    background-position: 32% center;
+  }
+  .cnt-hobbies.prt2{
+    display: none;
+  }
+  .cnt-hobbies_hobbies-section{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .cnt-hobbies{
+    padding-top: 35px;
+    padding-bottom: 44px;
+  }
+  .cnt-hobbies_heading{
+    margin-bottom: 6px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .cnt-hobbies_descr{
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: left;
+  }
+  .cnt-hobbies_list{
+    flex-wrap: nowrap;
+  }
+  .cnt-hobbies_item.mob-item{
+    display: flex;
+  }
+  .cnt-hobbies_item{
+    height: 542px !important;
+    margin-bottom: 0;
+  }
+  .cnt-hobbies_item_content{
+    padding-left: 15px;
+    padding-right: 15px;
+    height: auto;
+    min-height: auto;
+    padding-bottom: 10px;
+  }
+  .cnt-hobbies_item_heading{
+    margin-bottom: 14px;
+  }
+  .cnt-hobbies_slider_nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 24px;
+  }
+  .cnt-hobbies_slider_nav button{
+    padding: 0;
+    background: transparent;
+    margin-right: 45px;
+    border: none;
+    outline: none;
+  }
+  .cnt-hobbies_slider_nav button:last-child{
+    margin-right: 0;
+  }
+  .cnt-request-popup__content{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .cnt-request-popup__heading{
+    font-size: 28px;
+  }
+  .cnt-request-popup__descr{
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .cnt-banner{
+    height: auto;
+    padding-top: 150px;
+    padding-bottom: 64px;
+  }
+  .cnt-banner_heading{
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .cnt-banner_descr{
+    margin-bottom: 34px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cnt-banner_params{
+    margin-bottom: 100px;
+  }
+  .cnt-banner_params li{
+    font-size: 14px;
+    margin-right: 24px;
+    margin-bottom: 14px;
+  }
+  .cnt-banner_params li img{
+    margin-right: 10px;
+  }
+  .cnt-banner_params li:last-child{
+    margin-right: 0;
+  }
+  .cnt-banner .cnt-lead_wrapp{
+    padding: 25px 23px 28px 23px;
+  }
+  .cnt-whatwaiting{
+    padding-top: 65px;
+    padding-bottom: 75px;
+  }
+  .cnt-whatwaiting_heading{
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .cnt-whatwaiting_descr{
+    margin-bottom: 48px;
+  }
+  .cnt-whatwaiting_slide{
+    width: 306px;
+    padding: 34px 15px;
+  }
+  .cnt-whatwaiting_slider{
+    margin-bottom: 55px;
+  }
+  .cnt-lead.blacklead{
+    background: #fff;
+  }
+  .cnt-step.step_one, .cnt-step.step_three, .cnt-step.step_seven, .step_eleven{
+    height: auto;
+    min-height: 800px;
+  }
+  .step_one{
+    flex-direction: column;
+    padding: 41px 0;
+  }
+  .cnt-step__top{
+    display: block;
+    margin-bottom: 30px;
+  }
+  .cnt-step__heading{
+    margin-right: 0;
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .cnt-step__param img{
+    margin-right: 13px;
+  }
+  .cnt-step__param{
+    font-size: 18px;
+  }
+  .cnt-step__descr{
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .step_two{
+    padding-top: 40px;
+    padding-bottom: 28px;
+  }
+  .step_two .mainContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .step_two .cnt-step__top{
+    order: 0;
+  }
+  .step_two .cnt-step__preview{
+    order: 1;
+  }
+  .step_two .cnt-step__descr{
+    order: 2;
+  }
+  .cnt-step__preview{
+    margin-bottom: 28px;
+  }
+  .step_two .cnt-step__descr{
+    display: block;
+  }
+  .step_two .cnt-step__descr__column{
+    width: 100%;
+    margin-bottom: 28px;
+  }
+  .step_two .cnt-step__descr__column:last-child{
+    margin-bottom: 0;
+  }
+  .cnt-step.step_three{
+    padding-top: 41px;
+    flex-direction: column;
+  }
+  .step_three .cnt-step__descr{
+    display: block;
+  }
+  .step_three .cnt-step__descr__column{
+    width: 100%;
+  }
+  .cnt-step.step_for{
+    padding-top: 41px;
+    padding-bottom: 82px;
+  }
+  .step_for .cnt-step__descr__column{
+    width: 100%;
+  }
+  .cnt-step__param{
+    align-items: flex-start;
+  }
+  .cnt-step__params{
+    align-items: flex-start;
+  }
+  .step_for .cnt-step__top{
+    margin-bottom: 42px;
+  }
+  .cnt-step.step_five{
+    padding-top: 41px;
+  }
+  .cnt-step_wrapp{
+    display: block;
+  }
+  .cnt-step_content{
+    width: 100%;
+  }
+  .cnt-step.step_five .cnt-step__descr .cnt-step__descr__column{
+    margin-bottom: 25px;
+  }
+  .cnt-step.step_five .cnt-step_preview{
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+  }
+  .cnt-step.step_six{
+    padding-top: 41px;
+    padding-bottom: 65px;
+  }
+  .cnt-step_contcolumn{
+    width: 100%;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cnt-step.step_six .cnt-step_wrapp{
+    margin-bottom: 55px;
+  }
+  .cnt-step.step_six .cnt-step_preview{
+    height: 300px;
+  }
+  .step_seven{
+    flex-direction: column;
+    padding-top: 41px;
+  }
+  .step_seven .cnt-step__top{
+    margin-bottom: 20px;
+  }
+  .cnt-step.step_eight{
+    padding-top: 41px;
+    padding-bottom: 65px;
+  }
+  .step_eight .cnt-step__descr__column{
+    width: 100%;
+  }
+  .step_eight .cnt-step__top{
+    margin-bottom: 10px;
+  }
+  .cnt-step.step_nine{
+    padding-top: 41px;
+    padding-bottom: 63px;
+  }
+  .cnt-step.step_nine .cnt-step__descr .cnt-step__descr__column{
+    margin-bottom: 30px;
+  }
+  .cnt-step.step_nine .cnt-step_preview{
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+  }
+  .cnt-step.step_ten{
+    padding-top: 41px;
+    padding-bottom: 90px;
+  }
+  .cnt-step_ten_list{
+    display: block;
+  }
+  .cnt-step.step_ten .cnt-step_ten_column{
+    display: block;
+  }
+  .cnt-step_ten_column_preview{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 28px;
+    height: 335px;
+  }
+  .cnt-step_ten_content_descr, .cnt-step_ten_column_descr{
+    font-size: 14px;
+  }
+  .cnt-step.step_ten .cnt-step_ten_column{
+    margin-bottom: 90px;
+  }
+  .cnt-step.step_ten .cnt-step_ten_column:last-child{
+    margin-bottom: 0;
+  }
+  .cnt-step_ten_column:nth-child(even) .cnt-step_ten_column_preview{
+    margin-left: 0;
+    height: 409px;
+  }
+  .step_eleven{
+    flex-direction: column;
+    padding-top: 41px;
+  }
+  .cnt-step.step_twelve{
+    padding-top: 41px;
+    padding-bottom: 65px;
+  }
+  .step_twelve .cnt-step__descr__column{
+    width: 100%;
+  }
+  .cnt-step.step_thirteen{
+    padding-top: 41px;
+    padding-bottom: 60px;
+  }
+  .cnt-step.step_thirteen .cnt-step__descr{
+    margin-bottom: 30px;
+  }
+  .cnt-step.step_thirteen .cnt-step_preview{
+    height: 335px;
+  }
+  .cnt-step.step_fourteen{
+    padding-top: 41px;
+    padding-bottom: 65px;
+  }
+  .step_fourteen .cnt-step__descr{
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cnt-service{
+    padding-top: 65px;
+  }
+  .cnt-service_wrapp{
+    display: block;
+  }
+  .cnt-service_column{
+    width: 100%;
+  }
+  .cnt-service_column_top{
+    margin-bottom: 28px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .cnt-service_column_heading{
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cnt-service_column_list_nav{
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .cnt-service_column_list_content li, .cnt-service_column_benefits{
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .cnt-service_column_list{
+    margin-bottom: 30px;
+  }
+  .cnt-service_column_benefits{
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 45px;
+  }
+  .cnt-service_column_param{
+    margin-right: 0;
+  }
+  .cnt-service_column_params{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .cnt-service_column{
+    margin-bottom: 120px;
+  }
+  .cnt-service_column:last-child{
+    margin-bottom: 0;
+  }
+  .cnt-service_column:nth-child(2) .cnt-service_column_top{
+    margin-bottom: 24px;
+  }
+  .cnt-service_column:nth-child(2) .cnt-service_column_benefits{
+    margin-bottom: 40px;
+  }
+  .cnt-service_column_notes{
+    padding: 34px 13px;
+  }
+  .cnt-service_column_notes_heading{
+    margin-bottom: 22px;
+  }
+  .cnt-tours{
+    padding-top: 65px;
+    padding-bottom: 63px;
+  }
+  .cnt-tours_heading{
+    margin-bottom: 52px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .cnt-tours_slide{
+    width: 306px;
+    height: 473px;
+  }
+  .cnt-banner_params{
+    margin-bottom: 43px;
+  }
+  .cnt-lead_form input{
+    margin-bottom: 16px;
+  }
+  .cnt-whatwaiting{
+    padding-top: 38px;
+  }
+  .cnt-whatwaiting_heading{
+    margin-bottom: 10px;
+  }
+  .cnt-whatwaiting_descr{
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 40px;
+  }
+  .cnt-whatwaiting_slide{
+    height: 384px;
+    padding: 34px 10px 13px 10px;
+  }
+  .cnt-whatwaiting_item_wrapp{
+    display: block;
+  }
+  .cnt-whatwaiting_item_name{
+    margin-bottom: 3px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .cnt-whatwaiting_item_location{
+    margin-bottom: 5px;
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .cnt-whatwaiting_item_param{
+    font-size: 11px;
+  }
+  .cnt-whatwaiting_item_param .icon img{
+    max-width: 12px;
+    height: auto;
+  }
+  .cnt-whatwaiting_item_param:last-child .icon{
+    padding-bottom: 1px;
+  }
+  .cnt-whatwaiting_item_details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 11px;
+  }
+  .cnt-whatwaiting_item_prices{
+    margin: 0;
+  }
+  .cnt-whatwaiting_item_price{
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cnt-whatwaiting_item_descr{
+    font-size: 11px;
+    line-height: 12px;
+  }
+  .cnt-whatwaiting_item_submit{
+    font-size: 13px;
+  }
+  .cnt-whatwaiting_slide{
+    width: 257px;
+  }
+  .cnt-locations_heading_title{
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .cnt-locations_heading{
+    top: 30px;
+  }
+  .cnt-locations_item{
+    min-height: 812px;
+  }
+  .cnt-locations_item_name{
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 10px;
+  }
+  .cnt-locations_nav{
+    display: none;
+  }
+  .cnt-locations_item_params{
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+  }
+  .cnt-locations_item_param.param-location{
+    margin: 0;
+    width: 100%;
+    margin-top: 7px;
+  }
+  .cnt-locations_item_wrapp{
+    display: block; 
+  }
+  .cnt-locations_item_info_top{
+    margin-bottom: 20px;
+  }
+  .cnt-locations_item_info_descr{
+    margin-bottom: 20px;
+  }
+  .cnt-locations_item_details{
+    margin: 0;
+    display: flex;
+  }
+  .cnt-locations_item_price{
+    text-align: left;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .cnt-locations_item_descr{
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 0;
+  }
+  .cnt-locations_item_submit{
+    height: 40px;
+    padding: 10px;
+    max-width: 160px;
+    width: 100%;
+    font-size: 14px;
+  }
+  .cnt-map{
+    padding-top: 64px;
+  }
+  .cnt-map_heading{
+    margin-bottom: 18px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .cnt-map_descr{
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .cnt-map_frame{
+    display: none;
+  }
+  .cnt-villas_item{
+    width: 100%;
+    margin-bottom: 46px;
+  }
+  .cnt-villas_item_preview{
+    height: 262px;
+    margin-bottom: 14px;
+  }
+  .cnt-villas_item_name{
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .cnt-villas_item_params{
+    margin-bottom: 13px;
+  }
+  .cnt-villas_item_descr{
+    margin-bottom: 13px;
+  }
+  .cnt-villas_item_nav{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .cnt-villas_item_submit{
+    margin: 0;
+    padding: 5px;
+    max-width: 122px;
+    flex-shrink: 0;
+    margin-right: 10px;
+    width: 100%;
+    height: 38px;
+    font-size: 12px;
+  }
+  .cnt-villas_item_details{
+    padding: 0;
+    width: 100%;
+    flex-shrink: 1;
+    margin-left: 0;
+  }
+  .cnt-villas_item_price{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .cnt-villas_item_details_descr{
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .cnt-villas_loadmore{
+    width: max-content;
+    height: 47px;
+    padding: 10px 26px;
+    font-size: 12px;
+    min-width: auto;
+    margin-top: 15px;
+  }
+  .cnt-villas{
+    padding-bottom: 55px;
+  }
+  .cnt-buyvilla{
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+  .cnt-buyvilla_heading{
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 22px;
+  }
+  .cnt-buyvilla_descr{
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .cnt-buyvilla_item{
+    width: 232px;
+  }
+  .cnt-buyvilla_list{
+    flex-wrap: wrap;
+  }
+  .cnt-buyvilla_item_preview{
+    margin-bottom: 20px;
+  }
+  .cnt-buyvilla_item_name{
+    margin-bottom: 16px;
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .cnt-buyvilla_item_descr{
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+  .cnt-buyvilla_item_price{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .cnt-buyvilla_item_submit{
+    font-size: 14px;
+    height: 41px;
+    width: 100%;
+    max-width: 188px;
+    padding: 5px 15px;
+  }
+  .cnt-lead.greylead{
+    padding-bottom: 0;
+  }
+  .greylead .cnt-lead_wrapp{
+    padding: 50px 0;
+    border-radius: 0;
+    background: transparent;
+    color: #333434;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+  .greylead .cnt-lead_text{
+    color: #333434;
+  }
+  .greylead .cnt-lead_form button[type="submit"]{
+    background: #333434;
+    color: #fff;
+  }
+  .cnt-locations-poss_heading{
+    top: 37px;
+  }
+  .cnt-locations-poss_heading_title{
+    color: #D7D2BE;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .cnt-locations-poss_nav{
+    display: none;
+  }
+  .cnt-locations-poss_item{
+    min-height: 632px;
+  }
+  .cnt-locations-poss_item_name{
+    margin-bottom: 11px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .cnt-locations-poss_item_info_descr{
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 90px;
+  }
+  .cnt-locations-poss_item_wrapp{
+    display: block;
+    padding-bottom: 80px;
+  }
+  .cnt-locations-poss_item_submit{
+    max-width: auto;
+    width: auto;
+    padding: 5px 19px;
+    font-size: 14px;
+  }
+  .cnt-locations-poss_item_details{
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    bottom: 147px;
+    left: 0;
+  }
+  .cnt-locations-poss_item_price{
+    text-align: left;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 0;
+  }
+  .cnt-locations-poss_item_descr{
+    text-align: left;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cnt-faq{
+    padding-top: 40px;
+  }
+  .cnt-faq_heading{
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 29px;
+    max-width: 260px;
+  }
+  .cnt-faq_list{
+    display: block;
+  }
+  .cnt-faq_item{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .cnt-faq_item:last-child{
+    margin-bottom: 0;
+  }
+  .cnt-faq_item_preview{
+    height: 279px;
+    margin-bottom: 16px;
+  }
+  .cnt-faq_item_heading{
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .cnt-faq_item_descr{
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 16px;
+  }
+  .cnt-faq_item_submit{
+    height: 41px;
+    padding: 5px 52px;
+    font-size: 14px;
+    width: auto;
+    max-width: auto;
+  }
+  .cnt-faq_loadmore{
+    margin-top: 44px;
+  }
+  .cnt-faq_loadmore{
+    width: auto;
+    max-width: auto;
+    min-width: auto;
+    height: 53px;
+    padding: 5px 35px;
+    font-size: 16px;
+  }
+  .cnt-benefits{
+    padding-top: 40px;
+  }
+  .cnt-benefits_heading{
+    margin-bottom: 18px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .cnt-benefits_descr{
+    margin-bottom: 18px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cnt-benefits_list{
+    display: block;
+  }
+  .cnt-benefits_item{
+    width: 100%;
+    margin-bottom: 28px;
+  }
+  .cnt-benefits_item_preview{
+    height: 262px;
+    border-radius: 50px;
+    margin-bottom: 23px;
+  }
+  .cnt-benefits_item_heading{
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  .cnt-villas_manager{
+    padding-top: 51px;
+    padding-bottom: 45px;
+  }
+  .cnt-villas_manager_wrapp{
+    display: block;
+  }
+  .cnt-villas_manager_avatar{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 330px;
+    margin-bottom: 15px;
+    padding: 8px 15px 8px 10px;
+    border-radius: 110px 0px 110px 0;
+  }
+  .cnt-villas_manager_avatar div{
+    border-radius: 110px 0px 110px 0;
+  }
+  .cnt-villas_manager_label{
+    margin-bottom: 13px;
+    font-size: 18px;
+    line-height: 21px;
+    display: none;
+  }
+  .cnt-villas_manager_label.mob{
+    display: block;
+  }
+  .cnt-villas_manager_descr{
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .cnt-villas_manager_name{
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .cnt-buyvilla_nav{
+    display: block;
+    margin-top: 52px;
+  }
+}
+@media screen and (max-width: 359px){
+  .cnt-service_column_price{
+    font-size: 26px;
+    line-height: 32px;
+  }
+}

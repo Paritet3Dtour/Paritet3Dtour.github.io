@@ -98,7 +98,7 @@
       </div>
     </div>
   </div>
-  <div class="mainContainer">
+  <div class="mainContainer header-container">
     <div class="header_main">
       <div class="header_column">
         <a href="#" class="header_logo"></a>
@@ -111,7 +111,9 @@
               Ще
             </button>
             <div class="dropdown-content">
-              test
+              <a href="#">test</a>
+              <a href="#">test</a>
+              <a href="#">test</a>
             </div>
           </div>
         </nav>
@@ -124,7 +126,83 @@
           <a href="#" class="login-link">Вхід</a>
           <button class="main-btn">Реєстрація</button>
         </div>
+        <button type="button" class="header-toggler">
+          <span></span><span></span><span></span>
+        </button>
       </div>
+    </div>
+  </div>
+  <div class="header-mobile">
+    <div class="search-purchases_field">
+      <input class="search-input" type="text" placeholder="Знайти закупівлю">
+      <button class="search-purchases_submit">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 11.5H22M22 11.5L10.5217 1M22 11.5L10.5217 23" stroke="#EA0D44" stroke-width="1.5"/>
+        </svg>              
+      </button>
+    </div>
+    <nav class="header_menu">
+      <a href="#">Закупівлі Prozorro</a>
+      <a href="#">Prozorro.Маркет</a>
+      <a href="#">Комерційні закупівлі</a>
+      <div class="dropdown-container">
+        <button class="dropdown-toggler">
+          Ще
+        </button>
+        <div class="dropdown-content">
+          <a href="#">test</a>
+          <a href="#">test</a>
+          <a href="#">test</a>
+        </div>
+      </div>
+    </nav>
+    <div class="header_contacts">
+      <div class="header_contacts_schedule">Пн - Пт, 08:00 - 19:00</div>
+      <a href="tel:0800330331" class="header_contacts_link">
+        <div class="icon">
+          <img src="img/phone-icon.svg" alt="">
+        </div>
+        0 800 330 331
+      </a>
+      <a href="tel:0443344410" class="header_contacts_link">
+        <div class="icon">
+          <img src="img/phone-icon.svg" alt="">
+        </div>
+        044 33 444 10
+      </a>
+      <a href="#" class="header_contacts_link">
+        <div class="icon">
+          <img src="img/viber-icon.svg" alt="">
+        </div>
+        Viber
+      </a>
+      <a href="#" class="header_contacts_link">
+        <div class="icon">
+          <img src="img/whatsapp-icon.svg" alt="">
+        </div>
+        Whatsapp
+      </a>
+      <a href="#" class="header_contacts_link">
+        <div class="icon">
+          <img src="img/telegram-icon.svg" alt="">
+        </div>
+        Telegram
+      </a>
+      <a href="#" class="main-btn">Замовити дзвінок</a>
+    </div>
+    <div class="header_languages">
+      <a href="#" class="active">
+        <img src="img/language-flag-ua.svg" alt="">
+        Укр
+      </a>
+      <a href="#">
+        <img src="img/language-flag-ua.svg" alt="">
+        Рус
+      </a>
+      <a href="#">
+        <img src="img/language-flag-ua.svg" alt="">
+        Eng
+      </a>
     </div>
   </div>
 </header>
@@ -196,6 +274,18 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 11.5H22M22 11.5L10.5217 1M22 11.5L10.5217 23" stroke="#EA0D44" stroke-width="1.5"/>
             </svg>              
+          </a>
+        </div>
+        <div class="banner_slider_item request-item swiper-slide">
+          <div class="logo">
+            Потрібна допомога?
+          </div>
+          <div class="descr">Передзвонимо і відповимо на питання</div>
+          <a href="#" class="link-btn">
+            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.6667 11.7802V13.7802C14.6674 13.9659 14.6294 14.1497 14.555 14.3198C14.4806 14.4899 14.3715 14.6426 14.2347 14.7681C14.0979 14.8937 13.9364 14.9892 13.7605 15.0487C13.5846 15.1082 13.3983 15.1303 13.2133 15.1136C11.1619 14.8907 9.19134 14.1897 7.46001 13.0669C5.84923 12.0433 4.48356 10.6777 3.46001 9.06689C2.33333 7.3277 1.63217 5.34756 1.41334 3.28689C1.39668 3.10254 1.41859 2.91673 1.47767 2.74131C1.53676 2.56589 1.63172 2.40469 1.75652 2.26797C1.88131 2.13126 2.03321 2.02203 2.20253 1.94724C2.37186 1.87245 2.5549 1.83374 2.74001 1.83356H4.74001C5.06354 1.83038 5.3772 1.94495 5.62251 2.15592C5.86783 2.36689 6.02806 2.65986 6.07334 2.98023C6.15775 3.62027 6.31431 4.24871 6.54001 4.85356C6.6297 5.09218 6.64911 5.3515 6.59594 5.60081C6.54277 5.85012 6.41925 6.07897 6.24001 6.26023L5.39334 7.10689C6.34238 8.77592 7.72431 10.1579 9.39334 11.1069L10.24 10.2602C10.4213 10.081 10.6501 9.95746 10.8994 9.90429C11.1487 9.85112 11.4081 9.87053 11.6467 9.96023C12.2515 10.1859 12.88 10.3425 13.52 10.4269C13.8439 10.4726 14.1396 10.6357 14.351 10.8852C14.5624 11.1348 14.6748 11.4533 14.6667 11.7802Z" stroke="#EA0D44" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>              
+            Замовити             
           </a>
         </div>
       </div>
@@ -344,7 +434,7 @@
     </div>
   </div>
 </section>
-<section class="statistics bg-grey">
+<section class="statistics statistics-customers bg-grey">
   <div class="statistics_top">
     <div class="mainContainer">
       <div class="statistics_top_wrapp">
@@ -466,6 +556,13 @@
         <div class="preview">
           <img src="img/additional-services_preview1.png" alt="">
         </div>
+        <button class="additional-services_item_more">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="23.5" fill="white" stroke="#E90F45"/>
+            <rect x="23.25" y="12" width="1.5" height="24" fill="#E90F45"/>
+            <rect x="36" y="23.25" width="1.5" height="24" transform="rotate(90 36 23.25)" fill="#E90F45"/>
+          </svg>            
+        </button>
       </div>
       <div class="additional-services_item">
         <div class="content">
@@ -477,9 +574,12 @@
         <div class="preview">
           <a href="https://garantiya.com/" target="_blank" class="preview_link">
             <img src="img/additional-services_preview2.png" alt="">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 8.63636H16M16 8.63636L7.65217 1M16 8.63636L7.65217 17" stroke="#EA0D44" stroke-width="1.5"/>
-            </svg>              
+            <span>
+              <span class="preview_link_text">Детальніше</span>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 8.63636H16M16 8.63636L7.65217 1M16 8.63636L7.65217 17" stroke="#EA0D44" stroke-width="1.5"/>
+              </svg>       
+            </span>       
           </a>
         </div>
       </div>
@@ -515,6 +615,13 @@
         <div class="preview">
           <img src="img/additional-services_preview5.png" alt="">
         </div>
+        <button class="additional-services_item_more">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="23.5" fill="white" stroke="#E90F45"/>
+            <rect x="23.25" y="12" width="1.5" height="24" fill="#E90F45"/>
+            <rect x="36" y="23.25" width="1.5" height="24" transform="rotate(90 36 23.25)" fill="#E90F45"/>
+          </svg>            
+        </button>
       </div>
       <div class="additional-services_item">
         <div class="content">
@@ -604,9 +711,19 @@
         <div class="search-purchases_field">
           <input class="search-input" type="text" placeholder="Номер закупівлі, назва компанії, ЄДРПОУ або будь-яке ключове слово">
           <button class="search-purchases_submit">
+            <span>Пошук</span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 11.5H22M22 11.5L10.5217 1M22 11.5L10.5217 23" stroke="#EA0D44" stroke-width="1.5"/>
             </svg>              
+          </button>
+          <button class="search-purchases_show-filter">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="7" width="16" height="2" rx="1" fill="#EA0D44"/>
+              <rect x="4" y="15" width="16" height="2" rx="1" fill="#EA0D44"/>
+              <rect x="7" y="14" width="4" height="4" rx="2" fill="white" stroke="#EA0D44" stroke-width="2"/>
+              <rect x="13" y="6" width="4" height="4" rx="2" fill="white" stroke="#EA0D44" stroke-width="2"/>
+            </svg> 
+            <span>Показати фільтри</span>             
           </button>
         </div>
         <div class="search-purchases_filters">
@@ -796,7 +913,7 @@
   </div>
 </footer>
 
-<div id="search-popup" class="popup_container search-popup-container">
+<div id="search-popup" class="popup_container search-popup-container active">
   <div class="popup_background click-item popup-close" data-action="popup-close"></div>
   <div class="popup search-popup">
     <button class="popup_close" data-action="popup-close">
@@ -818,9 +935,19 @@
           <div class="search-purchases_field">
             <input class="search-input" type="text" placeholder="Номер закупівлі, назва компанії, ЄДРПОУ або будь-яке ключове слово">
             <button class="search-purchases_submit">
+              <span>Пошук</span>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 11.5H22M22 11.5L10.5217 1M22 11.5L10.5217 23" stroke="#EA0D44" stroke-width="1.5"/>
               </svg>              
+            </button>
+            <button class="search-purchases_show-filter">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="7" width="16" height="2" rx="1" fill="#EA0D44"/>
+                <rect x="4" y="15" width="16" height="2" rx="1" fill="#EA0D44"/>
+                <rect x="7" y="14" width="4" height="4" rx="2" fill="white" stroke="#EA0D44" stroke-width="2"/>
+                <rect x="13" y="6" width="4" height="4" rx="2" fill="white" stroke="#EA0D44" stroke-width="2"/>
+              </svg> 
+              <span>Показати фільтри</span>             
             </button>
           </div>
           <div class="search-purchases_filters">
@@ -847,14 +974,21 @@
 <script src="libs/swiperjs/swiper.min.js"></script>
 
 <script>
+  if(document.body.offsetWidth > 992){
+    let bannerSlider = new Swiper(".banner_slider", {
+      loop: false,
+      slidesPerView: 4,
+      spaceBetween: 16,
+    });
+  };
+  
   let clientsSlider = new Swiper(".clients_slider", {
     loop: true,
     roundLengths: true,
     //autoplay: true,
-    slidesPerView: 4,
+    slidesPerView: 'auto',
     //centeredSlides: true,
-    spaceBetween: 16,
-    allowTouchMove: false,
+    spaceBetween: 12,
 
     pagination: {
       el: ".clients_pagination",
@@ -863,14 +997,14 @@
       nextEl: ".clients_nav .next",
       prevEl: ".clients_nav .prev",
     },
-  });
 
-  let bannerSlider = new Swiper(".banner_slider", {
-    loop: false,
-    //autoplay: true,
-    slidesPerView: 4,
-    //centeredSlides: true,
-    spaceBetween: 16,
+    breakpoints: {
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 16,
+        allowTouchMove: false,
+      }
+    }
   });
 
   $('.dropdown-toggler').click(function(){
@@ -887,6 +1021,18 @@
 
   $('[data-action="popup-close"]').click(function(){
     $(this).closest('.popup_container').removeClass('active');
+  });
+
+  $('.additional-services_item_more').click(function(){
+    $(this).closest('.additional-services_item').toggleClass('active');
+  });
+
+  $('.footer_menu_heading').click(function(){
+    $(this).closest('.footer_menu_column').toggleClass('active');
+  });
+
+  $('.header-toggler').click(function(){
+    $(this).closest('.header').toggleClass('active');
   });
 </script>
 

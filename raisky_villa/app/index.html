@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content_language" content="ru">
+  <meta name="description" content="Personal Tour">
+  <title>Personal Tour</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="libs/swiperjs/swiper.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head> 
+ 
+<body>
+
+  <div class="cnt-page">
+
+    <div class="cnt-banner bg-line-container" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 84.9%, #000000 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(img/villa-banner.jpg);">
+      <div class="mainContainer">
+        <div class="cnt-banner_content">
+          <h1 class="cnt-banner_heading">Арендуйте роскошную виллу в лучших уголках этой планеты</h1>
+          <h2 class="cnt-banner_descr">Наши специалисты знают все о подборе luxury вилл по всему миру.<br/> Посмотрите каталог и обращайтесь, чтобы подобрать то, что необходимо именно Вам</h2>
+          <ul class="cnt-banner_params">
+            <li>
+              <img src="img/cnt-bannerparam3.svg" alt="">
+              <span>Большой выбор вилл по всему миру</span>
+            </li>
+            <li>
+              <img src="img/cnt-bannerparam4.svg" alt="">
+              <span>Связь с консультантом 24/7</span>
+            </li>
+            <li>
+              <img src="img/cnt-bannerparam5.svg" alt="">
+              <span>Удобная оплата</span>
+            </li>
+          </ul>
+          <div class="cnt-lead">
+            <div class="cnt-lead_wrapp">
+              <div class="cnt-lead_user">
+                <div class="cnt-lead_avatar" style="background-image: url(img/lead-avatar.png);"></div>
+                <div class="cnt-lead_text">
+                  <div class="cnt-lead_heading">Получите лучшее предложение по luxury вилле</div>
+                  <div class="cnt-lead_descr">Оставьте свой контактный номер и наш консультант вышлет для Вас лучшие варианты вилл</div>
+                </div>
+              </div>
+              <div class="cnt-lead_content">
+                <div class="cnt-lead_form">
+                  <form action="">
+                    <input type="text">
+                    <button type="submit">Получить предложение</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cnt-bgline">
+        <span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="cnt-whatwaiting">
+      <div class="mainContainer">
+        <h2 class="cnt-whatwaiting_heading">Рекомендации на сезон лето-2023</h2>
+        <div class="cnt-whatwaiting_descr">Эти виллы мы рекомендуем арендовать в сезоне осень-2023. Здесь комфортная температура воздуха для этого времени года, цена соответствует качеству и где рядом есть множество мест для спокойного и активного отдыха </div>
+      <div class="cnt-whatwaiting_slider swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide cnt-whatwaiting_slide" style="background-image: url('img/whatwaiting-slide1.jpg');">
+            <div class="cnt-whatwaiting_item_wrapp">
+              <div class="cnt-whatwaiting_item_info">
+                <div class="cnt-whatwaiting_item_name">VILLA DONNA</div>
+                <div class="cnt-whatwaiting_item_location">
+                  <svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1.8817C3.28922 1.8817 1.02857 4.23362 1.02857 7.21479C1.02857 8.04712 1.46717 9.16086 2.15743 10.3686C2.83631 11.5564 3.71368 12.7596 4.49786 13.7492C4.92229 14.2849 5.20174 14.6348 5.45199 14.8597C5.68022 15.0649 5.83256 15.1186 6 15.1186C6.16744 15.1186 6.31978 15.0649 6.54801 14.8597C6.79826 14.6348 7.07771 14.2849 7.50214 13.7492C8.28632 12.7596 9.16369 11.5564 9.84257 10.3686C10.5328 9.16086 10.9714 8.04712 10.9714 7.21479C10.9714 4.23362 8.71078 1.8817 6 1.8817ZM0 7.21479C0 3.74301 2.65143 0.86377 6 0.86377C9.34857 0.86377 12 3.74301 12 7.21479C12 8.32823 11.4411 9.63934 10.7378 10.8697C10.0232 12.1201 9.11117 13.3682 8.31152 14.3774L8.28485 14.411C7.89454 14.9037 7.56204 15.3234 7.23961 15.6132C6.88784 15.9294 6.49993 16.1365 6 16.1365C5.50007 16.1365 5.11216 15.9294 4.7604 15.6132C4.43797 15.3234 4.10546 14.9037 3.71515 14.411L3.68848 14.3774C2.88883 13.3682 1.97676 12.1201 1.26215 10.8697C0.55893 9.63934 0 8.32823 0 7.21479ZM3.42857 7.48034C3.42857 6.07487 4.57984 4.93551 6 4.93551C7.42016 4.93551 8.57143 6.07487 8.57143 7.48034C8.57143 8.88582 7.42016 10.0252 6 10.0252C4.57984 10.0252 3.42857 8.88582 3.42857 7.48034ZM6 5.95344C5.1479 5.95344 4.45714 6.63706 4.45714 7.48034C4.45714 8.32363 5.1479 9.00724 6 9.00724C6.8521 9.00724 7.54286 8.32363 7.54286 7.48034C7.54286 6.63706 6.8521 5.95344 6 5.95344Z" fill="white"/>
+                  </svg>
+                  о.Миконос, Греция                
+                </div>
+                <div class="cnt-whatwaiting_item_params">
+                  <div class="cnt-whatwaiting_item_param">
+                    <div class="icon">
+                      <img src="img/villa-slider-param1.png" alt="">
+                    </div>
+                    10 чел
+                  </div>
+                  <div class="cnt-whatwaiting_item_param">
+                    <div class="icon">
+                      <img src="img/villa-slider-param2.png" alt="">
+                    </div>
+                    3
+                  </div>
+                  <div class="cnt-whatwaiting_item_param">
+                    <div class="icon">
+                      <img src="img/villa-slider-param3.png" alt="">
+                    </div>
+                    2
+                  </div>
+                </div>
+              </div>
+              <div class="cnt-whatwaiting_item_details">
+                <div class="cnt-whatwaiting_item_prices">
+                  <div class="cnt-whatwaiting_item_price">от 3 500 $</div>
+                  <div class="cnt-whatwaiting_item_descr">за неделю</div>
+                </div>
+                <button class="cnt-whatwaiting_item_submit" type="button">Подробнее</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide cnt-whatwaiting_slide" style="background-image: url('img/whatwaiting-slide2.jpg');">
+            <div class="cnt-whatwaiting_item_wrapp">
+              <div class="cnt-whatwaiting_item_info">
+                <div class="cnt-whatwaiting_item_name">VILLA ANDALUSIA</div>
+                <div class="cnt-whatwaiting_item_location">
+                  <svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1.8817C3.28922 1.8817 1.02857 4.23362 1.02857 7.21479C1.02857 8.04712 1.46717 9.16086 2.15743 10.3686C2.83631 11.5564 3.71368 12.7596 4.49786 13.7492C4.92229 14.2849 5.20174 14.6348 5.45199 14.8597C5.68022 15.0649 5.83256 15.1186 6 15.1186C6.16744 15.1186 6.31978 15.0649 6.54801 14.8597C6.79826 14.6348 7.07771 14.2849 7.50214 13.7492C8.28632 12.7596 9.16369 11.5564 9.84257 10.3686C10.5328 9.16086 10.9714 8.04712 10.9714 7.21479C10.9714 4.23362 8.71078 1.8817 6 1.8817ZM0 7.21479C0 3.74301 2.65143 0.86377 6 0.86377C9.34857 0.86377 12 3.74301 12 7.21479C12 8.32823 11.4411 9.63934 10.7378 10.8697C10.0232 12.1201 9.11117 13.3682 8.31152 14.3774L8.28485 14.411C7.89454 14.9037 7.56204 15.3234 7.23961 15.6132C6.88784 15.9294 6.49993 16.1365 6 16.1365C5.50007 16.1365 5.11216 15.9294 4.7604 15.6132C4.43797 15.3234 4.10546 14.9037 3.71515 14.411L3.68848 14.3774C2.88883 13.3682 1.97676 12.1201 1.26215 10.8697C0.55893 9.63934 0 8.32823 0 7.21479ZM3.42857 7.48034C3.42857 6.07487 4.57984 4.93551 6 4.93551C7.42016 4.93551 8.57143 6.07487 8.57143 7.48034C8.57143 8.88582 7.42016 10.0252 6 10.0252C4.57984 10.0252 3.42857 8.88582 3.42857 7.48034ZM6 5.95344C5.1479 5.95344 4.45714 6.63706 4.45714 7.48034C4.45714 8.32363 5.1479 9.00724 6 9.00724C6.8521 9.00724 7.54286 8.32363 7.54286 7.48034C7.54286 6.63706 6.8521 5.95344 6 5.95344Z" fill="white"/>
+                  </svg>
+                  о.Миконос, Греция                
+                </div>
+                <div class="cnt-whatwaiting_item_params">
+                  <div class="cnt-whatwaiting_item_param">
+                    <div class="icon">
+                      <img src="img/villa-slider-param1.png" alt="">
+                    </div>
+                    10 чел
+                  </div>
+                  <div class="cnt-whatwaiting_item_param">
+                    <div class="icon">
+                      <img src="img/villa-slider-param2.png" alt="">
+                    </div>
+                    3
+                  </div>
+                  <div class="cnt-whatwaiting_item_param">
+                    <div class="icon">
+                      <img src="img/villa-slider-param3.png" alt="">
+                    </div>
+                    2
+                  </div>
+                </div>
+              </div>
+              <div class="cnt-whatwaiting_item_details">
+                <div class="cnt-whatwaiting_item_prices">
+                  <div class="cnt-whatwaiting_item_price">от 3 500 $</div>
+                  <div class="cnt-whatwaiting_item_descr">за неделю</div>
+                </div>
+                <button class="cnt-whatwaiting_item_submit" type="button">Подробнее</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide cnt-whatwaiting_slide" style="background-image: url('img/whatwaiting-slide1.jpg');">
+            <div class="cnt-whatwaiting_item_wrapp">
+              <div class="cnt-whatwaiting_item_info">
+                <div class="cnt-whatwaiting_item_name">VILLA ANDALUSIA</div>
+                <div class="cnt-whatwaiting_item_location">
+                  <svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1.8817C3.28922 1.8817 1.02857 4.23362 1.02857 7.21479C1.02857 8.04712 1.46717 9.16086 2.15743 10.3686C2.83631 11.5564 3.71368 12.7596 4.49786 13.7492C4.92229 14.2849 5.20174 14.6348 5.45199 14.8597C5.68022 15.0649 5.83256 15.1186 6 15.1186C6.16744 15.1186 6.31978 15.0649 6.54801 14.8597C6.79826 14.6348 7.07771 14.2849 7.50214 13.7492C8.28632 12.7596 9.16369 11.5564 9.84257 10.3686C10.5328 9.16086 10.9714 8.04712 10.9714 7.21479C10.9714 4.23362 8.71078 1.8817 6 1.8817ZM0 7.21479C0 3.74301 2.65143 0.86377 6 0.86377C9.34857 0.86377 12 3.74301 12 7.21479C12 8.32823 11.4411 9.63934 10.7378 10.8697C10.0232 12.1201 9.11117 13.3682 8.31152 14.3774L8.28485 14.411C7.89454 14.9037 7.56204 15.3234 7.23961 15.6132C6.88784 15.9294 6.49993 16.1365 6 16.1365C5.50007 16.1365 5.11216 15.9294 4.7604 15.6132C4.43797 15.3234 4.10546 14.9037 3.71515 14.411L3.68848 14.3774C2.88883 13.3682 1.97676 12.1201 1.26215 10.8697C0.55893 9.63934 0 8.32823 0 7.21479ZM3.42857 7.48034C3.42857 6.07487 4.57984 4.93551 6 4.93551C7.42016 4.93551 8.57143 6.07487 8.57143 7.48034C8.57143 8.88582 7.42016 10.0252 6 10.0252C4.57984 10.0252 3.42857 8.88582 3.42857 7.48034ZM6 5.95344C5.1479 5.95344 4.45714 6.63706 4.45714 7.48034C4.45714 8.32363 5.1479 9.00724 6 9.00724C6.8521 9.00724 7.54286 8.32363 7.54286 7.48034C7.54286 6.63706 6.8521 5.95344 6 5.95344Z" fill="white"/>
+                  </svg>
+                  о.Миконос, Греция                
+                </div>
+                <div class="cnt-whatwaiting_item_params">
+                  <div class="cnt-whatwaiting_item_param">
+                    <div class="icon">
+                      <img src="img/villa-slider-param1.png" alt="">
+                    </div>
+                    10 чел
+                  </div>
+                  <div class="cnt-whatwaiting_item_param">
+                    <div class="icon">
+                      <img src="img/villa-slider-param2.png" alt="">
+                    </div>
+                    3
+                  </div>
+                  <div class="cnt-whatwaiting_item_param">
+                    <div class="icon">
+                      <img src="img/villa-slider-param3.png" alt="">
+                    </div>
+                    2
+                  </div>
+                </div>
+              </div>
+              <div class="cnt-whatwaiting_item_details">
+                <div class="cnt-whatwaiting_item_prices">
+                  <div class="cnt-whatwaiting_item_price">от 3 500 $</div>
+                  <div class="cnt-whatwaiting_item_descr">за неделю</div>
+                </div>
+                <button class="cnt-whatwaiting_item_submit" type="button">Подробнее</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide cnt-whatwaiting_slide" style="background-image: url('img/whatwaiting-slide2.jpg');">
+            <div class="cnt-whatwaiting_item_wrapp">
+              <div class="cnt-whatwaiting_item_info">
+                <div class="cnt-whatwaiting_item_name">VILLA ANDALUSIA</div>
+                <div class="cnt-whatwaiting_item_location">
+                  <svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1.8817C3.28922 1.8817 1.02857 4.23362 1.02857 7.21479C1.02857 8.04712 1.46717 9.16086 2.15743 10.3686C2.83631 11.5564 3.71368 12.7596 4.49786 13.7492C4.92229 14.2849 5.20174 14.6348 5.45199 14.8597C5.68022 15.0649 5.83256 15.1186 6 15.1186C6.16744 15.1186 6.31978 15.0649 6.54801 14.8597C6.79826 14.6348 7.07771 14.2849 7.50214 13.7492C8.28632 12.7596 9.16369 11.5564 9.84257 10.3686C10.5328 9.16086 10.9714 8.04712 10.9714 7.21479C10.9714 4.23362 8.71078 1.8817 6 1.8817ZM0 7.21479C0 3.74301 2.65143 0.86377 6 0.86377C9.34857 0.86377 12 3.74301 12 7.21479C12 8.32823 11.4411 9.63934 10.7378 10.8697C10.0232 12.1201 9.11117 13.3682 8.31152 14.3774L8.28485 14.411C7.89454 14.9037 7.56204 15.3234 7.23961 15.6132C6.88784 15.9294 6.49993 16.1365 6 16.1365C5.50007 16.1365 5.11216 15.9294 4.7604 15.6132C4.43797 15.3234 4.10546 14.9037 3.71515 14.411L3.68848 14.3774C2.88883 13.3682 1.97676 12.1201 1.26215 10.8697C0.55893 9.63934 0 8.32823 0 7.21479ZM3.42857 7.48034C3.42857 6.07487 4.57984 4.93551 6 4.93551C7.42016 4.93551 8.57143 6.07487 8.57143 7.48034C8.57143 8.88582 7.42016 10.0252 6 10.0252C4.57984 10.0252 3.42857 8.88582 3.42857 7.48034ZM6 5.95344C5.1479 5.95344 4.45714 6.63706 4.45714 7.48034C4.45714 8.32363 5.1479 9.00724 6 9.00724C6.8521 9.00724 7.54286 8.32363 7.54286 7.48034C7.54286 6.63706 6.8521 5.95344 6 5.95344Z" fill="white"/>
+                  </svg>
+                  о.Миконос, Греция                
+                </div>
+                <div class="cnt-whatwaiting_item_params">
+                  <div class="cnt-whatwaiting_item_param">
+                    <div class="icon">
+                      <img src="img/villa-slider-param1.png" alt="">
+                    </div>
+                    10 чел
+                  </div>
+                  <div class="cnt-whatwaiting_item_param">
+                    <div class="icon">
+                      <img src="img/villa-slider-param2.png" alt="">
+                    </div>
+                    3
+                  </div>
+                  <div class="cnt-whatwaiting_item_param">
+                    <div class="icon">
+                      <img src="img/villa-slider-param3.png" alt="">
+                    </div>
+                    2
+                  </div>
+                </div>
+              </div>
+              <div class="cnt-whatwaiting_item_details">
+                <div class="cnt-whatwaiting_item_prices">
+                  <div class="cnt-whatwaiting_item_price">от 3 500 $</div>
+                  <div class="cnt-whatwaiting_item_descr">за неделю</div>
+                </div>
+                <button class="cnt-whatwaiting_item_submit" type="button">Подробнее</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide cnt-whatwaiting_slide" style="background-image: url('img/whatwaiting-slide3.jpg');">
+            <div class="cnt-whatwaiting_item_wrapp">
+              <div class="cnt-whatwaiting_item_info">
+                <div class="cnt-whatwaiting_item_name">VILLA ANDALUSIA</div>
+                <div class="cnt-whatwaiting_item_location">
+                  <svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1.8817C3.28922 1.8817 1.02857 4.23362 1.02857 7.21479C1.02857 8.04712 1.46717 9.16086 2.15743 10.3686C2.83631 11.5564 3.71368 12.7596 4.49786 13.7492C4.92229 14.2849 5.20174 14.6348 5.45199 14.8597C5.68022 15.0649 5.83256 15.1186 6 15.1186C6.16744 15.1186 6.31978 15.0649 6.54801 14.8597C6.79826 14.6348 7.07771 14.2849 7.50214 13.7492C8.28632 12.7596 9.16369 11.5564 9.84257 10.3686C10.5328 9.16086 10.9714 8.04712 10.9714 7.21479C10.9714 4.23362 8.71078 1.8817 6 1.8817ZM0 7.21479C0 3.74301 2.65143 0.86377 6 0.86377C9.34857 0.86377 12 3.74301 12 7.21479C12 8.32823 11.4411 9.63934 10.7378 10.8697C10.0232 12.1201 9.11117 13.3682 8.31152 14.3774L8.28485 14.411C7.89454 14.9037 7.56204 15.3234 7.23961 15.6132C6.88784 15.9294 6.49993 16.1365 6 16.1365C5.50007 16.1365 5.11216 15.9294 4.7604 15.6132C4.43797 15.3234 4.10546 14.9037 3.71515 14.411L3.68848 14.3774C2.88883 13.3682 1.97676 12.1201 1.26215 10.8697C0.55893 9.63934 0 8.32823 0 7.21479ZM3.42857 7.48034C3.42857 6.07487 4.57984 4.93551 6 4.93551C7.42016 4.93551 8.57143 6.07487 8.57143 7.48034C8.57143 8.88582 7.42016 10.0252 6 10.0252C4.57984 10.0252 3.42857 8.88582 3.42857 7.48034ZM6 5.95344C5.1479 5.95344 4.45714 6.63706 4.45714 7.48034C4.45714 8.32363 5.1479 9.00724 6 9.00724C6.8521 9.00724 7.54286 8.32363 7.54286 7.48034C7.54286 6.63706 6.8521 5.95344 6 5.95344Z" fill="white"/>
+                  </svg>
+                  о.Миконос, Греция                
+                </div>
+                <div class="cnt-whatwaiting_item_params">
+                  <div class="cnt-whatwaiting_item_param">
+                    <div class="icon">
+                      <img src="img/villa-slider-param1.png" alt="">
+                    </div>
+                    10 чел
+                  </div>
+                  <div class="cnt-whatwaiting_item_param">
+                    <div class="icon">
+                      <img src="img/villa-slider-param2.png" alt="">
+                    </div>
+                    3
+                  </div>
+                  <div class="cnt-whatwaiting_item_param">
+                    <div class="icon">
+                      <img src="img/villa-slider-param3.png" alt="">
+                    </div>
+                    2
+                  </div>
+                </div>
+              </div>
+              <div class="cnt-whatwaiting_item_details">
+                <div class="cnt-whatwaiting_item_prices">
+                  <div class="cnt-whatwaiting_item_price">от 3 500 $</div>
+                  <div class="cnt-whatwaiting_item_descr">за неделю</div>
+                </div>
+                <button class="cnt-whatwaiting_item_submit" type="button">Подробнее</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="cnt-whatwaiting_nav">
+          <div class="swiper-pagination"></div>
+          <div class="cnt-whatwaiting_bnts">
+            <button class="prev">
+              <svg width="29" height="15" viewBox="0 0 29 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 7.5L7.5 1M1 7.5L7.5 14M1 7.5H28.5" stroke="white"/>
+              </svg>                
+            </button>
+            <button class="next">
+              <svg width="29" height="15" viewBox="0 0 29 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27.5 7.5L21 14M27.5 7.5L21 0.999999M27.5 7.5L5.68248e-07 7.5" stroke="white"/>
+              </svg>                               
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="cnt-bgline">
+        <span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="cnt-locations">
+      <div class="cnt-locations_heading">
+        <div class="mainContainer">
+          <div class="cnt-locations_heading_title">Вдохновитесь этими эксклюзивными локациями...</div>
+        </div>
+      </div>
+      <div class="cnt-locations_nav">
+        <button class="prev">
+          <svg width="66" height="33" viewBox="0 0 66 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 16.5L16.3636 1M1 16.5L16.3636 32M1 16.5H66" stroke="white"/>
+          </svg>            
+        </button>
+        <button class="next">
+          <svg width="66" height="33" viewBox="0 0 66 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M65 16.5L49.6364 32M65 16.5L49.6364 1M65 16.5L4.33529e-06 16.5" stroke="white"/>
+          </svg>            
+        </button>
+      </div>
+      <div class="cnt-locations_slider swiper-container">
+        <div class="swiper-wrapper">
+          <div class="cnt-locations_item swiper-slide" style="background-image: url('img/location-item-slide.jpeg');">
+            <div class="mainContainer">
+              <div class="cnt-locations_item_wrapp">
+                <div class="cnt-locations_item_info">
+                  <div class="cnt-locations_item_info_top">
+                    <div class="cnt-locations_item_name">Вилла ди Каприо</div>
+                    <div class="cnt-locations_item_params">
+                      <div class="cnt-locations_item_param">
+                        <div class="icon">
+                          <img src="img/villa-slider-param1.png" alt="">
+                        </div>
+                        10 чел
+                      </div>
+                      <div class="cnt-locations_item_param">
+                        <div class="icon">
+                          <img src="img/villa-slider-param2.png" alt="">
+                        </div>
+                        3
+                      </div>
+                      <div class="cnt-locations_item_param">
+                        <div class="icon">
+                          <img src="img/villa-slider-param3.png" alt="">
+                        </div>
+                        2
+                      </div>
+                      <div class="cnt-locations_item_param param-location">
+                        <div class="icon">
+                          <svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1.8817C3.28922 1.8817 1.02857 4.23362 1.02857 7.21479C1.02857 8.04712 1.46717 9.16086 2.15743 10.3686C2.83631 11.5564 3.71368 12.7596 4.49786 13.7492C4.92229 14.2849 5.20174 14.6348 5.45199 14.8597C5.68022 15.0649 5.83256 15.1186 6 15.1186C6.16744 15.1186 6.31978 15.0649 6.54801 14.8597C6.79826 14.6348 7.07771 14.2849 7.50214 13.7492C8.28632 12.7596 9.16369 11.5564 9.84257 10.3686C10.5328 9.16086 10.9714 8.04712 10.9714 7.21479C10.9714 4.23362 8.71078 1.8817 6 1.8817ZM0 7.21479C0 3.74301 2.65143 0.86377 6 0.86377C9.34857 0.86377 12 3.74301 12 7.21479C12 8.32823 11.4411 9.63934 10.7378 10.8697C10.0232 12.1201 9.11117 13.3682 8.31152 14.3774L8.28485 14.411C7.89454 14.9037 7.56204 15.3234 7.23961 15.6132C6.88784 15.9294 6.49993 16.1365 6 16.1365C5.50007 16.1365 5.11216 15.9294 4.7604 15.6132C4.43797 15.3234 4.10546 14.9037 3.71515 14.411L3.68848 14.3774C2.88883 13.3682 1.97676 12.1201 1.26215 10.8697C0.55893 9.63934 0 8.32823 0 7.21479ZM3.42857 7.48034C3.42857 6.07487 4.57984 4.93551 6 4.93551C7.42016 4.93551 8.57143 6.07487 8.57143 7.48034C8.57143 8.88582 7.42016 10.0252 6 10.0252C4.57984 10.0252 3.42857 8.88582 3.42857 7.48034ZM6 5.95344C5.1479 5.95344 4.45714 6.63706 4.45714 7.48034C4.45714 8.32363 5.1479 9.00724 6 9.00724C6.8521 9.00724 7.54286 8.32363 7.54286 7.48034C7.54286 6.63706 6.8521 5.95344 6 5.95344Z" fill="white"/>
+                          </svg>                        
+                        </div>
+                        Малага, Испания
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cnt-locations_item_info_descr">
+                    Место, куда любит приезжать знаменитый представитель мира искусства и звезда культовой ленты «Титаник» Леонардо ди Каприо. Сейчас особняк в пригороде Лос-Анджелеса – это современная вилла. Она располагает 18 комнатами, интерьеры которых выполнены в белоснежной гамме. Кстати, на полу здесь можно увидеть натуральное дерево, а на кухне и в ванной комнате – мрамор. Еще одно вложение – это дорогая мебель, выполненная известными во всем мире дизайнерами. К примеру, в особняке есть стулья Eames Chair и даже столы Tulip, ставшие украшением столовой зоны.
+                  </div>
+                </div>
+                <div class="cnt-locations_item_details">
+                  <div class="cnt-locations_item_prices">
+                    <div class="cnt-locations_item_price">от 9 500 $</div>
+                    <div class="cnt-locations_item_descr">за неделю</div>
+                  </div>
+                  <button class="cnt-locations_item_submit" type="button">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cnt-locations_item swiper-slide" style="background-image: url('img/location-item-slide.jpeg');">
+            <div class="mainContainer">
+              <div class="cnt-locations_item_wrapp">
+                <div class="cnt-locations_item_info">
+                  <div class="cnt-locations_item_info_top">
+                    <div class="cnt-locations_item_name">Вилла ди Каприо2</div>
+                    <div class="cnt-locations_item_params">
+                      <div class="cnt-locations_item_param">
+                        <div class="icon">
+                          <img src="img/villa-slider-param1.png" alt="">
+                        </div>
+                        10 чел
+                      </div>
+                      <div class="cnt-locations_item_param">
+                        <div class="icon">
+                          <img src="img/villa-slider-param2.png" alt="">
+                        </div>
+                        3
+                      </div>
+                      <div class="cnt-locations_item_param">
+                        <div class="icon">
+                          <img src="img/villa-slider-param3.png" alt="">
+                        </div>
+                        2
+                      </div>
+                      <div class="cnt-locations_item_param param-location">
+                        <div class="icon">
+                          <svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1.8817C3.28922 1.8817 1.02857 4.23362 1.02857 7.21479C1.02857 8.04712 1.46717 9.16086 2.15743 10.3686C2.83631 11.5564 3.71368 12.7596 4.49786 13.7492C4.92229 14.2849 5.20174 14.6348 5.45199 14.8597C5.68022 15.0649 5.83256 15.1186 6 15.1186C6.16744 15.1186 6.31978 15.0649 6.54801 14.8597C6.79826 14.6348 7.07771 14.2849 7.50214 13.7492C8.28632 12.7596 9.16369 11.5564 9.84257 10.3686C10.5328 9.16086 10.9714 8.04712 10.9714 7.21479C10.9714 4.23362 8.71078 1.8817 6 1.8817ZM0 7.21479C0 3.74301 2.65143 0.86377 6 0.86377C9.34857 0.86377 12 3.74301 12 7.21479C12 8.32823 11.4411 9.63934 10.7378 10.8697C10.0232 12.1201 9.11117 13.3682 8.31152 14.3774L8.28485 14.411C7.89454 14.9037 7.56204 15.3234 7.23961 15.6132C6.88784 15.9294 6.49993 16.1365 6 16.1365C5.50007 16.1365 5.11216 15.9294 4.7604 15.6132C4.43797 15.3234 4.10546 14.9037 3.71515 14.411L3.68848 14.3774C2.88883 13.3682 1.97676 12.1201 1.26215 10.8697C0.55893 9.63934 0 8.32823 0 7.21479ZM3.42857 7.48034C3.42857 6.07487 4.57984 4.93551 6 4.93551C7.42016 4.93551 8.57143 6.07487 8.57143 7.48034C8.57143 8.88582 7.42016 10.0252 6 10.0252C4.57984 10.0252 3.42857 8.88582 3.42857 7.48034ZM6 5.95344C5.1479 5.95344 4.45714 6.63706 4.45714 7.48034C4.45714 8.32363 5.1479 9.00724 6 9.00724C6.8521 9.00724 7.54286 8.32363 7.54286 7.48034C7.54286 6.63706 6.8521 5.95344 6 5.95344Z" fill="white"/>
+                          </svg>                        
+                        </div>
+                        Малага, Испания
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cnt-locations_item_info_descr">
+                    Место, куда любит приезжать знаменитый представитель мира искусства и звезда культовой ленты «Титаник» Леонардо ди Каприо. Сейчас особняк в пригороде Лос-Анджелеса – это современная вилла. Она располагает 18 комнатами, интерьеры которых выполнены в белоснежной гамме. Кстати, на полу здесь можно увидеть натуральное дерево, а на кухне и в ванной комнате – мрамор. Еще одно вложение – это дорогая мебель, выполненная известными во всем мире дизайнерами. К примеру, в особняке есть стулья Eames Chair и даже столы Tulip, ставшие украшением столовой зоны.
+                  </div>
+                </div>
+                <div class="cnt-locations_item_details">
+                  <div class="cnt-locations_item_prices">
+                    <div class="cnt-locations_item_price">от 9 500 $</div>
+                    <div class="cnt-locations_item_descr">за неделю</div>
+                  </div>
+                  <button class="cnt-locations_item_submit" type="button">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="cnt-bgline">
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+      <div class="cnt-locations_pagination swiper-pagination"></div>
+    </div>
+
+    <div class="cnt-map">
+      <div class="mainContainer">
+        <div class="cnt-map_heading">Арендуйте виллу для проживания, которая вам по душе.... </div>
+        <div class="cnt-map_descr">Выберите в фильтре необходимые параметры или посмотрите все виллы и оставьте заявку нам, чтобы узнать детали</div>
+      </div>
+      <div class="cnt-map_frame" style="background-image: url('img/cnt-map.png');"></div>
+    </div>
+
+    <div class="cnt-villas">
+      <div class="mainContainer">
+        <div class="cnt-villas_filter">
+          <div class="cnt-villas_filter_icon">
+            <img src="img/filter-icon.png" alt="">
+            <span>Фильтр</span>
+          </div>
+          <div class="cnt-villas_filter_list">
+            <div class="cnt-villas_filter_dropdown countries-dropdown">
+              <div class="cnt-villas_filter_dropdown_label">Все направления </div>
+              <div class="cnt-villas_filter_dropdown_content">
+                <div class="cnt-catalog_nav_check">
+                  <input type="checkbox" id="size1" value="size1" data-min="6" data-max="10" checked="">
+                  <label for="size1"><span class="min">6</span> - <span class="max">10 ч.</span></label>
+                </div>
+                <div class="cnt-catalog_nav_check">
+                  <input type="checkbox" id="size2" value="size1" data-min="10" data-max="20" checked="">
+                  <label for="size1"><span class="min">10</span> - <span class="max">20 ч.</span></label>
+                </div>
+                <div class="cnt-catalog_nav_check">
+                  <input type="checkbox" id="size3" value="size1" data-min="20" data-max="30" checked="">
+                  <label for="size1"><span class="min">20</span> - <span class="max">30 ч.</span></label>
+                </div>
+              </div>
+            </div>
+            <div class="cnt-villas_filter_dropdown peoples-dropdown">
+              <div class="cnt-villas_filter_dropdown_label">Максимальное кол-во человек</div>
+              <div class="cnt-villas_filter_dropdown_content">
+                <div class="cnt-catalog_nav_check">
+                  <input type="checkbox" id="size1" value="size1" data-min="6" data-max="10" checked="">
+                  <label for="size1"><span class="min">6</span> - <span class="max">10 ч.</span></label>
+                </div>
+                <div class="cnt-catalog_nav_check">
+                  <input type="checkbox" id="size2" value="size1" data-min="10" data-max="20" checked="">
+                  <label for="size1"><span class="min">10</span> - <span class="max">20 ч.</span></label>
+                </div>
+                <div class="cnt-catalog_nav_check">
+                  <input type="checkbox" id="size3" value="size1" data-min="20" data-max="30" checked="">
+                  <label for="size1"><span class="min">20</span> - <span class="max">30 ч.</span></label>
+                </div>
+              </div>
+            </div>
+            <div class="cnt-villas_filter_dropdown rooms-dropdown">
+              <div class="cnt-villas_filter_dropdown_label">Кол-во спален </div>
+              <div class="cnt-villas_filter_dropdown_content">
+                <div class="cnt-catalog_nav_check">
+                  <input type="checkbox" id="size1" value="size1" data-min="6" data-max="10" checked="">
+                  <label for="size1"><span class="min">6</span> - <span class="max">10 ч.</span></label>
+                </div>
+                <div class="cnt-catalog_nav_check">
+                  <input type="checkbox" id="size2" value="size1" data-min="10" data-max="20" checked="">
+                  <label for="size1"><span class="min">10</span> - <span class="max">20 ч.</span></label>
+                </div>
+                <div class="cnt-catalog_nav_check">
+                  <input type="checkbox" id="size3" value="size1" data-min="20" data-max="30" checked="">
+                  <label for="size1"><span class="min">20</span> - <span class="max">30 ч.</span></label>
+                </div>
+              </div>
+            </div>
+            <div class="cnt-villas_filter_dropdown baderoms-dropdown">
+              <div class="cnt-villas_filter_dropdown_label">Кол-во ванных комнат</div>
+              <div class="cnt-villas_filter_dropdown_content">
+                <div class="cnt-catalog_nav_check">
+                  <input type="checkbox" id="size1" value="size1" data-min="6" data-max="10" checked="">
+                  <label for="size1"><span class="min">6</span> - <span class="max">10 ч.</span></label>
+                </div>
+                <div class="cnt-catalog_nav_check">
+                  <input type="checkbox" id="size2" value="size1" data-min="10" data-max="20" checked="">
+                  <label for="size1"><span class="min">10</span> - <span class="max">20 ч.</span></label>
+                </div>
+                <div class="cnt-catalog_nav_check">
+                  <input type="checkbox" id="size3" value="size1" data-min="20" data-max="30" checked="">
+                  <label for="size1"><span class="min">20</span> - <span class="max">30 ч.</span></label>
+                </div>
+              </div>
+            </div>
+            <div class="cnt-villas_filter_dropdown price-dropdown">
+              <div class="cnt-villas_filter_dropdown_label">Цена</div>
+              <div class="cnt-villas_filter_dropdown_content">
+                <div class="cnt-catalog_nav_check">
+                  <input type="checkbox" id="size1" value="size1" data-min="6" data-max="10" checked="">
+                  <label for="size1"><span class="min">6</span> - <span class="max">10 ч.</span></label>
+                </div>
+                <div class="cnt-catalog_nav_check">
+                  <input type="checkbox" id="size2" value="size1" data-min="10" data-max="20" checked="">
+                  <label for="size1"><span class="min">10</span> - <span class="max">20 ч.</span></label>
+                </div>
+                <div class="cnt-catalog_nav_check">
+                  <input type="checkbox" id="size3" value="size1" data-min="20" data-max="30" checked="">
+                  <label for="size1"><span class="min">20</span> - <span class="max">30 ч.</span></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cnt-villas_list">
+          <div class="cnt-villas_item">
+            <div class="cnt-villas_item_preview" style="background-image: url('img/cnt-villa1.png');"></div>
+            <div class="cnt-villas_item_name">Вилла Veroni</div>
+            <div class="cnt-villas_item_params">
+              <div class="cnt-villas_item_param">
+                <div class="icon">
+                  <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1.01793C3.28922 1.01793 1.02857 3.36985 1.02857 6.35102C1.02857 7.18335 1.46717 8.29709 2.15743 9.50481C2.83631 10.6926 3.71368 11.8958 4.49786 12.8855C4.92229 13.4211 5.20174 13.771 5.45199 13.996C5.68022 14.2011 5.83256 14.2548 6 14.2548C6.16744 14.2548 6.31978 14.2011 6.54801 13.996C6.79826 13.771 7.07771 13.4211 7.50214 12.8855C8.28632 11.8958 9.16369 10.6926 9.84257 9.50481C10.5328 8.29709 10.9714 7.18335 10.9714 6.35102C10.9714 3.36985 8.71078 1.01793 6 1.01793ZM0 6.35102C0 2.87924 2.65143 0 6 0C9.34857 0 12 2.87924 12 6.35102C12 7.46446 11.4411 8.77557 10.7378 10.006C10.0232 11.2563 9.11117 12.5045 8.31152 13.5136L8.28485 13.5473C7.89454 14.0399 7.56204 14.4596 7.23961 14.7494C6.88784 15.0657 6.49993 15.2727 6 15.2727C5.50007 15.2727 5.11216 15.0657 4.7604 14.7494C4.43797 14.4596 4.10546 14.0399 3.71515 13.5473L3.68848 13.5136C2.88883 12.5045 1.97676 11.2563 1.26215 10.006C0.55893 8.77557 0 7.46446 0 6.35102ZM3.42857 6.61657C3.42857 5.2111 4.57984 4.07174 6 4.07174C7.42016 4.07174 8.57143 5.2111 8.57143 6.61657C8.57143 8.02205 7.42016 9.16141 6 9.16141C4.57984 9.16141 3.42857 8.02205 3.42857 6.61657ZM6 5.08967C5.1479 5.08967 4.45714 5.77329 4.45714 6.61657C4.45714 7.45986 5.1479 8.14347 6 8.14347C6.8521 8.14347 7.54286 7.45986 7.54286 6.61657C7.54286 5.77329 6.8521 5.08967 6 5.08967Z" fill="white"/>
+                  </svg>                    
+                </div>
+                о.Миконос, Греция
+              </div>
+              <div class="cnt-villas_item_param">
+                <div class="icon">
+                  <img src="img/villa-slider-param1.png" alt="">
+                </div>
+                10 чел
+              </div>
+              <div class="cnt-villas_item_param">
+                <div class="icon">
+                  <img src="img/villa-slider-param2.png" alt="">
+                </div>
+                3
+              </div>
+              <div class="cnt-villas_item_param">
+                <div class="icon">
+                  <img src="img/villa-slider-param3.png" alt="">
+                </div>
+                2
+              </div>
+            </div>
+            <div class="cnt-villas_item_descr">
+              Хотите пожить в настоящем аристократическом замке, в окружении огромного старинного парка? Такая возможность есть сегодня у каждого. Замок Veroni принимает гостей в любое время. 
+            </div>
+            <div class="cnt-villas_item_nav">
+              <button class="cnt-villas_item_submit">Подробнее</button>
+              <div class="cnt-villas_item_details">
+                <div class="cnt-villas_item_price">от 19 500 $</div>
+                <div class="cnt-villas_item_details_descr">за неделю</div>
+              </div>
+            </div>
+          </div>
+          <div class="cnt-villas_item">
+            <div class="cnt-villas_item_preview" style="background-image: url('img/cnt-villa1.png');"></div>
+            <div class="cnt-villas_item_name">Вилла Veroni</div>
+            <div class="cnt-villas_item_params">
+              <div class="cnt-villas_item_param">
+                <div class="icon">
+                  <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1.01793C3.28922 1.01793 1.02857 3.36985 1.02857 6.35102C1.02857 7.18335 1.46717 8.29709 2.15743 9.50481C2.83631 10.6926 3.71368 11.8958 4.49786 12.8855C4.92229 13.4211 5.20174 13.771 5.45199 13.996C5.68022 14.2011 5.83256 14.2548 6 14.2548C6.16744 14.2548 6.31978 14.2011 6.54801 13.996C6.79826 13.771 7.07771 13.4211 7.50214 12.8855C8.28632 11.8958 9.16369 10.6926 9.84257 9.50481C10.5328 8.29709 10.9714 7.18335 10.9714 6.35102C10.9714 3.36985 8.71078 1.01793 6 1.01793ZM0 6.35102C0 2.87924 2.65143 0 6 0C9.34857 0 12 2.87924 12 6.35102C12 7.46446 11.4411 8.77557 10.7378 10.006C10.0232 11.2563 9.11117 12.5045 8.31152 13.5136L8.28485 13.5473C7.89454 14.0399 7.56204 14.4596 7.23961 14.7494C6.88784 15.0657 6.49993 15.2727 6 15.2727C5.50007 15.2727 5.11216 15.0657 4.7604 14.7494C4.43797 14.4596 4.10546 14.0399 3.71515 13.5473L3.68848 13.5136C2.88883 12.5045 1.97676 11.2563 1.26215 10.006C0.55893 8.77557 0 7.46446 0 6.35102ZM3.42857 6.61657C3.42857 5.2111 4.57984 4.07174 6 4.07174C7.42016 4.07174 8.57143 5.2111 8.57143 6.61657C8.57143 8.02205 7.42016 9.16141 6 9.16141C4.57984 9.16141 3.42857 8.02205 3.42857 6.61657ZM6 5.08967C5.1479 5.08967 4.45714 5.77329 4.45714 6.61657C4.45714 7.45986 5.1479 8.14347 6 8.14347C6.8521 8.14347 7.54286 7.45986 7.54286 6.61657C7.54286 5.77329 6.8521 5.08967 6 5.08967Z" fill="white"/>
+                  </svg>                    
+                </div>
+                о.Миконос, Греция
+              </div>
+              <div class="cnt-villas_item_param">
+                <div class="icon">
+                  <img src="img/villa-slider-param1.png" alt="">
+                </div>
+                10 чел
+              </div>
+              <div class="cnt-villas_item_param">
+                <div class="icon">
+                  <img src="img/villa-slider-param2.png" alt="">
+                </div>
+                3
+              </div>
+              <div class="cnt-villas_item_param">
+                <div class="icon">
+                  <img src="img/villa-slider-param3.png" alt="">
+                </div>
+                2
+              </div>
+            </div>
+            <div class="cnt-villas_item_descr">
+              Хотите пожить в настоящем аристократическом замке, в окружении огромного старинного парка? Такая возможность есть сегодня у каждого. Замок Veroni принимает гостей в любое время. 
+            </div>
+            <div class="cnt-villas_item_nav">
+              <button class="cnt-villas_item_submit">Подробнее</button>
+              <div class="cnt-villas_item_details">
+                <div class="cnt-villas_item_price">от 19 500 $</div>
+                <div class="cnt-villas_item_details_descr">за неделю</div>
+              </div>
+            </div>
+          </div>
+          <div class="cnt-villas_item">
+            <div class="cnt-villas_item_preview" style="background-image: url('img/cnt-villa1.png');"></div>
+            <div class="cnt-villas_item_name">Вилла Veroni</div>
+            <div class="cnt-villas_item_params">
+              <div class="cnt-villas_item_param">
+                <div class="icon">
+                  <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1.01793C3.28922 1.01793 1.02857 3.36985 1.02857 6.35102C1.02857 7.18335 1.46717 8.29709 2.15743 9.50481C2.83631 10.6926 3.71368 11.8958 4.49786 12.8855C4.92229 13.4211 5.20174 13.771 5.45199 13.996C5.68022 14.2011 5.83256 14.2548 6 14.2548C6.16744 14.2548 6.31978 14.2011 6.54801 13.996C6.79826 13.771 7.07771 13.4211 7.50214 12.8855C8.28632 11.8958 9.16369 10.6926 9.84257 9.50481C10.5328 8.29709 10.9714 7.18335 10.9714 6.35102C10.9714 3.36985 8.71078 1.01793 6 1.01793ZM0 6.35102C0 2.87924 2.65143 0 6 0C9.34857 0 12 2.87924 12 6.35102C12 7.46446 11.4411 8.77557 10.7378 10.006C10.0232 11.2563 9.11117 12.5045 8.31152 13.5136L8.28485 13.5473C7.89454 14.0399 7.56204 14.4596 7.23961 14.7494C6.88784 15.0657 6.49993 15.2727 6 15.2727C5.50007 15.2727 5.11216 15.0657 4.7604 14.7494C4.43797 14.4596 4.10546 14.0399 3.71515 13.5473L3.68848 13.5136C2.88883 12.5045 1.97676 11.2563 1.26215 10.006C0.55893 8.77557 0 7.46446 0 6.35102ZM3.42857 6.61657C3.42857 5.2111 4.57984 4.07174 6 4.07174C7.42016 4.07174 8.57143 5.2111 8.57143 6.61657C8.57143 8.02205 7.42016 9.16141 6 9.16141C4.57984 9.16141 3.42857 8.02205 3.42857 6.61657ZM6 5.08967C5.1479 5.08967 4.45714 5.77329 4.45714 6.61657C4.45714 7.45986 5.1479 8.14347 6 8.14347C6.8521 8.14347 7.54286 7.45986 7.54286 6.61657C7.54286 5.77329 6.8521 5.08967 6 5.08967Z" fill="white"/>
+                  </svg>                    
+                </div>
+                о.Миконос, Греция
+              </div>
+              <div class="cnt-villas_item_param">
+                <div class="icon">
+                  <img src="img/villa-slider-param1.png" alt="">
+                </div>
+                10 чел
+              </div>
+              <div class="cnt-villas_item_param">
+                <div class="icon">
+                  <img src="img/villa-slider-param2.png" alt="">
+                </div>
+                3
+              </div>
+              <div class="cnt-villas_item_param">
+                <div class="icon">
+                  <img src="img/villa-slider-param3.png" alt="">
+                </div>
+                2
+              </div>
+            </div>
+            <div class="cnt-villas_item_descr">
+              Хотите пожить в настоящем аристократическом замке, в окружении огромного старинного парка? Такая возможность есть сегодня у каждого. Замок Veroni принимает гостей в любое время. 
+            </div>
+            <div class="cnt-villas_item_nav">
+              <button class="cnt-villas_item_submit">Подробнее</button>
+              <div class="cnt-villas_item_details">
+                <div class="cnt-villas_item_price">от 19 500 $</div>
+                <div class="cnt-villas_item_details_descr">за неделю</div>
+              </div>
+            </div>
+          </div>
+          <div class="cnt-villas_item">
+            <div class="cnt-villas_item_preview" style="background-image: url('img/cnt-villa1.png');"></div>
+            <div class="cnt-villas_item_name">Вилла Veroni</div>
+            <div class="cnt-villas_item_params">
+              <div class="cnt-villas_item_param">
+                <div class="icon">
+                  <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1.01793C3.28922 1.01793 1.02857 3.36985 1.02857 6.35102C1.02857 7.18335 1.46717 8.29709 2.15743 9.50481C2.83631 10.6926 3.71368 11.8958 4.49786 12.8855C4.92229 13.4211 5.20174 13.771 5.45199 13.996C5.68022 14.2011 5.83256 14.2548 6 14.2548C6.16744 14.2548 6.31978 14.2011 6.54801 13.996C6.79826 13.771 7.07771 13.4211 7.50214 12.8855C8.28632 11.8958 9.16369 10.6926 9.84257 9.50481C10.5328 8.29709 10.9714 7.18335 10.9714 6.35102C10.9714 3.36985 8.71078 1.01793 6 1.01793ZM0 6.35102C0 2.87924 2.65143 0 6 0C9.34857 0 12 2.87924 12 6.35102C12 7.46446 11.4411 8.77557 10.7378 10.006C10.0232 11.2563 9.11117 12.5045 8.31152 13.5136L8.28485 13.5473C7.89454 14.0399 7.56204 14.4596 7.23961 14.7494C6.88784 15.0657 6.49993 15.2727 6 15.2727C5.50007 15.2727 5.11216 15.0657 4.7604 14.7494C4.43797 14.4596 4.10546 14.0399 3.71515 13.5473L3.68848 13.5136C2.88883 12.5045 1.97676 11.2563 1.26215 10.006C0.55893 8.77557 0 7.46446 0 6.35102ZM3.42857 6.61657C3.42857 5.2111 4.57984 4.07174 6 4.07174C7.42016 4.07174 8.57143 5.2111 8.57143 6.61657C8.57143 8.02205 7.42016 9.16141 6 9.16141C4.57984 9.16141 3.42857 8.02205 3.42857 6.61657ZM6 5.08967C5.1479 5.08967 4.45714 5.77329 4.45714 6.61657C4.45714 7.45986 5.1479 8.14347 6 8.14347C6.8521 8.14347 7.54286 7.45986 7.54286 6.61657C7.54286 5.77329 6.8521 5.08967 6 5.08967Z" fill="white"/>
+                  </svg>                    
+                </div>
+                о.Миконос, Греция
+              </div>
+              <div class="cnt-villas_item_param">
+                <div class="icon">
+                  <img src="img/villa-slider-param1.png" alt="">
+                </div>
+                10 чел
+              </div>
+              <div class="cnt-villas_item_param">
+                <div class="icon">
+                  <img src="img/villa-slider-param2.png" alt="">
+                </div>
+                3
+              </div>
+              <div class="cnt-villas_item_param">
+                <div class="icon">
+                  <img src="img/villa-slider-param3.png" alt="">
+                </div>
+                2
+              </div>
+            </div>
+            <div class="cnt-villas_item_descr">
+              Хотите пожить в настоящем аристократическом замке, в окружении огромного старинного парка? Такая возможность есть сегодня у каждого. Замок Veroni принимает гостей в любое время. 
+            </div>
+            <div class="cnt-villas_item_nav">
+              <button class="cnt-villas_item_submit">Подробнее</button>
+              <div class="cnt-villas_item_details">
+                <div class="cnt-villas_item_price">от 19 500 $</div>
+                <div class="cnt-villas_item_details_descr">за неделю</div>
+              </div>
+            </div>
+          </div>
+          <div class="cnt-villas_item">
+            <div class="cnt-villas_item_preview" style="background-image: url('img/cnt-villa1.png');"></div>
+            <div class="cnt-villas_item_name">Вилла Veroni</div>
+            <div class="cnt-villas_item_params">
+              <div class="cnt-villas_item_param">
+                <div class="icon">
+                  <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1.01793C3.28922 1.01793 1.02857 3.36985 1.02857 6.35102C1.02857 7.18335 1.46717 8.29709 2.15743 9.50481C2.83631 10.6926 3.71368 11.8958 4.49786 12.8855C4.92229 13.4211 5.20174 13.771 5.45199 13.996C5.68022 14.2011 5.83256 14.2548 6 14.2548C6.16744 14.2548 6.31978 14.2011 6.54801 13.996C6.79826 13.771 7.07771 13.4211 7.50214 12.8855C8.28632 11.8958 9.16369 10.6926 9.84257 9.50481C10.5328 8.29709 10.9714 7.18335 10.9714 6.35102C10.9714 3.36985 8.71078 1.01793 6 1.01793ZM0 6.35102C0 2.87924 2.65143 0 6 0C9.34857 0 12 2.87924 12 6.35102C12 7.46446 11.4411 8.77557 10.7378 10.006C10.0232 11.2563 9.11117 12.5045 8.31152 13.5136L8.28485 13.5473C7.89454 14.0399 7.56204 14.4596 7.23961 14.7494C6.88784 15.0657 6.49993 15.2727 6 15.2727C5.50007 15.2727 5.11216 15.0657 4.7604 14.7494C4.43797 14.4596 4.10546 14.0399 3.71515 13.5473L3.68848 13.5136C2.88883 12.5045 1.97676 11.2563 1.26215 10.006C0.55893 8.77557 0 7.46446 0 6.35102ZM3.42857 6.61657C3.42857 5.2111 4.57984 4.07174 6 4.07174C7.42016 4.07174 8.57143 5.2111 8.57143 6.61657C8.57143 8.02205 7.42016 9.16141 6 9.16141C4.57984 9.16141 3.42857 8.02205 3.42857 6.61657ZM6 5.08967C5.1479 5.08967 4.45714 5.77329 4.45714 6.61657C4.45714 7.45986 5.1479 8.14347 6 8.14347C6.8521 8.14347 7.54286 7.45986 7.54286 6.61657C7.54286 5.77329 6.8521 5.08967 6 5.08967Z" fill="white"/>
+                  </svg>                    
+                </div>
+                о.Миконос, Греция
+              </div>
+              <div class="cnt-villas_item_param">
+                <div class="icon">
+                  <img src="img/villa-slider-param1.png" alt="">
+                </div>
+                10 чел
+              </div>
+              <div class="cnt-villas_item_param">
+                <div class="icon">
+                  <img src="img/villa-slider-param2.png" alt="">
+                </div>
+                3
+              </div>
+              <div class="cnt-villas_item_param">
+                <div class="icon">
+                  <img src="img/villa-slider-param3.png" alt="">
+                </div>
+                2
+              </div>
+            </div>
+            <div class="cnt-villas_item_descr">
+              Хотите пожить в настоящем аристократическом замке, в окружении огромного старинного парка? Такая возможность есть сегодня у каждого. Замок Veroni принимает гостей в любое время. 
+            </div>
+            <div class="cnt-villas_item_nav">
+              <button class="cnt-villas_item_submit">Подробнее</button>
+              <div class="cnt-villas_item_details">
+                <div class="cnt-villas_item_price">от 19 500 $</div>
+                <div class="cnt-villas_item_details_descr">за неделю</div>
+              </div>
+            </div>
+          </div>
+          <div class="cnt-villas_item">
+            <div class="cnt-villas_item_preview" style="background-image: url('img/cnt-villa1.png');"></div>
+            <div class="cnt-villas_item_name">Вилла Veroni</div>
+            <div class="cnt-villas_item_params">
+              <div class="cnt-villas_item_param">
+                <div class="icon">
+                  <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1.01793C3.28922 1.01793 1.02857 3.36985 1.02857 6.35102C1.02857 7.18335 1.46717 8.29709 2.15743 9.50481C2.83631 10.6926 3.71368 11.8958 4.49786 12.8855C4.92229 13.4211 5.20174 13.771 5.45199 13.996C5.68022 14.2011 5.83256 14.2548 6 14.2548C6.16744 14.2548 6.31978 14.2011 6.54801 13.996C6.79826 13.771 7.07771 13.4211 7.50214 12.8855C8.28632 11.8958 9.16369 10.6926 9.84257 9.50481C10.5328 8.29709 10.9714 7.18335 10.9714 6.35102C10.9714 3.36985 8.71078 1.01793 6 1.01793ZM0 6.35102C0 2.87924 2.65143 0 6 0C9.34857 0 12 2.87924 12 6.35102C12 7.46446 11.4411 8.77557 10.7378 10.006C10.0232 11.2563 9.11117 12.5045 8.31152 13.5136L8.28485 13.5473C7.89454 14.0399 7.56204 14.4596 7.23961 14.7494C6.88784 15.0657 6.49993 15.2727 6 15.2727C5.50007 15.2727 5.11216 15.0657 4.7604 14.7494C4.43797 14.4596 4.10546 14.0399 3.71515 13.5473L3.68848 13.5136C2.88883 12.5045 1.97676 11.2563 1.26215 10.006C0.55893 8.77557 0 7.46446 0 6.35102ZM3.42857 6.61657C3.42857 5.2111 4.57984 4.07174 6 4.07174C7.42016 4.07174 8.57143 5.2111 8.57143 6.61657C8.57143 8.02205 7.42016 9.16141 6 9.16141C4.57984 9.16141 3.42857 8.02205 3.42857 6.61657ZM6 5.08967C5.1479 5.08967 4.45714 5.77329 4.45714 6.61657C4.45714 7.45986 5.1479 8.14347 6 8.14347C6.8521 8.14347 7.54286 7.45986 7.54286 6.61657C7.54286 5.77329 6.8521 5.08967 6 5.08967Z" fill="white"/>
+                  </svg>                    
+                </div>
+                о.Миконос, Греция
+              </div>
+              <div class="cnt-villas_item_param">
+                <div class="icon">
+                  <img src="img/villa-slider-param1.png" alt="">
+                </div>
+                10 чел
+              </div>
+              <div class="cnt-villas_item_param">
+                <div class="icon">
+                  <img src="img/villa-slider-param2.png" alt="">
+                </div>
+                3
+              </div>
+              <div class="cnt-villas_item_param">
+                <div class="icon">
+                  <img src="img/villa-slider-param3.png" alt="">
+                </div>
+                2
+              </div>
+            </div>
+            <div class="cnt-villas_item_descr">
+              Хотите пожить в настоящем аристократическом замке, в окружении огромного старинного парка? Такая возможность есть сегодня у каждого. Замок Veroni принимает гостей в любое время. 
+            </div>
+            <div class="cnt-villas_item_nav">
+              <button class="cnt-villas_item_submit">Подробнее</button>
+              <div class="cnt-villas_item_details">
+                <div class="cnt-villas_item_price">от 19 500 $</div>
+                <div class="cnt-villas_item_details_descr">за неделю</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="cnt-villas_loadmore">СМОТРЕТЬ БОЛЬШЕ ВАРИАНТОВ</button>
+      </div>
+      <div class="cnt-bgline">
+        <span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="cnt-buyvilla">
+      <div class="mainContainer">
+        <div class="cnt-buyvilla_heading">Или приобретите свою собственную виллу за рубежом</div>
+        <div class="cnt-buyvilla_descr">Посмотрите варианты или обратитесь к нам, если бы хотели увидеть больше вариантов под Ваши пожелания</div>
+        <div class="cnt-buyvilla_container">
+          <div class="cnt-buyvilla_slider swiper-container">
+            <div class="swiper-wrapper">
+              <div class="cnt-buyvilla_item swiper-slide">
+                <div class="cnt-buyvilla_item_preview" style="background-image: url('img/buyvilla-preview.jpeg');"></div>
+                <div class="cnt-buyvilla_item_name">Вилла Julia</div>
+                <div class="cnt-buyvilla_item_params">
+                  <div class="cnt-buyvilla_item_param">
+                    <div class="icon">
+                      <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1.01793C3.28922 1.01793 1.02857 3.36985 1.02857 6.35102C1.02857 7.18335 1.46717 8.29709 2.15743 9.50481C2.83631 10.6926 3.71368 11.8958 4.49786 12.8855C4.92229 13.4211 5.20174 13.771 5.45199 13.996C5.68022 14.2011 5.83256 14.2548 6 14.2548C6.16744 14.2548 6.31978 14.2011 6.54801 13.996C6.79826 13.771 7.07771 13.4211 7.50214 12.8855C8.28632 11.8958 9.16369 10.6926 9.84257 9.50481C10.5328 8.29709 10.9714 7.18335 10.9714 6.35102C10.9714 3.36985 8.71078 1.01793 6 1.01793ZM0 6.35102C0 2.87924 2.65143 0 6 0C9.34857 0 12 2.87924 12 6.35102C12 7.46446 11.4411 8.77557 10.7378 10.006C10.0232 11.2563 9.11117 12.5045 8.31152 13.5136L8.28485 13.5473C7.89454 14.0399 7.56204 14.4596 7.23961 14.7494C6.88784 15.0657 6.49993 15.2727 6 15.2727C5.50007 15.2727 5.11216 15.0657 4.7604 14.7494C4.43797 14.4596 4.10546 14.0399 3.71515 13.5473L3.68848 13.5136C2.88883 12.5045 1.97676 11.2563 1.26215 10.006C0.55893 8.77557 0 7.46446 0 6.35102ZM3.42857 6.61657C3.42857 5.2111 4.57984 4.07174 6 4.07174C7.42016 4.07174 8.57143 5.2111 8.57143 6.61657C8.57143 8.02205 7.42016 9.16141 6 9.16141C4.57984 9.16141 3.42857 8.02205 3.42857 6.61657ZM6 5.08967C5.1479 5.08967 4.45714 5.77329 4.45714 6.61657C4.45714 7.45986 5.1479 8.14347 6 8.14347C6.8521 8.14347 7.54286 7.45986 7.54286 6.61657C7.54286 5.77329 6.8521 5.08967 6 5.08967Z" fill="black"/>
+                      </svg>                                  
+                    </div>
+                    о.Миконос, Греция
+                  </div>
+                  <div class="cnt-buyvilla_item_param">
+                    <div class="icon">
+                      <img src="img/villa-slider-param1-black.png" alt="">
+                    </div>
+                    10 чел
+                  </div>
+                  <div class="cnt-buyvilla_item_param">
+                    <div class="icon">
+                      <img src="img/villa-slider-param2-black.png" alt="">
+                    </div>
+                    3
+                  </div>
+                  <div class="cnt-buyvilla_item_param">
+                    <div class="icon">
+                      <img src="img/villa-slider-param3-black.png" alt="">
+                    </div>
+                    2
+                  </div>
+                </div>
+                <div class="cnt-buyvilla_item_descr">Посмотрите варианты или обратитесь к нам, если бы хотели увидеть больше вариантов под Ваши пожелания</div>
+                <div class="cnt-buyvilla_item_price">4 430 000 $</div>
+                <button class="cnt-buyvilla_item_submit" type="button">Подробнее</button>
+              </div>
+
+              <div class="cnt-buyvilla_item swiper-slide">
+                <div class="cnt-buyvilla_item_preview" style="background-image: url('img/buyvilla-preview.jpeg');"></div>
+                <div class="cnt-buyvilla_item_name">Вилла Julia</div>
+                <div class="cnt-buyvilla_item_params">
+                  <div class="cnt-buyvilla_item_param">
+                    <div class="icon">
+                      <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1.01793C3.28922 1.01793 1.02857 3.36985 1.02857 6.35102C1.02857 7.18335 1.46717 8.29709 2.15743 9.50481C2.83631 10.6926 3.71368 11.8958 4.49786 12.8855C4.92229 13.4211 5.20174 13.771 5.45199 13.996C5.68022 14.2011 5.83256 14.2548 6 14.2548C6.16744 14.2548 6.31978 14.2011 6.54801 13.996C6.79826 13.771 7.07771 13.4211 7.50214 12.8855C8.28632 11.8958 9.16369 10.6926 9.84257 9.50481C10.5328 8.29709 10.9714 7.18335 10.9714 6.35102C10.9714 3.36985 8.71078 1.01793 6 1.01793ZM0 6.35102C0 2.87924 2.65143 0 6 0C9.34857 0 12 2.87924 12 6.35102C12 7.46446 11.4411 8.77557 10.7378 10.006C10.0232 11.2563 9.11117 12.5045 8.31152 13.5136L8.28485 13.5473C7.89454 14.0399 7.56204 14.4596 7.23961 14.7494C6.88784 15.0657 6.49993 15.2727 6 15.2727C5.50007 15.2727 5.11216 15.0657 4.7604 14.7494C4.43797 14.4596 4.10546 14.0399 3.71515 13.5473L3.68848 13.5136C2.88883 12.5045 1.97676 11.2563 1.26215 10.006C0.55893 8.77557 0 7.46446 0 6.35102ZM3.42857 6.61657C3.42857 5.2111 4.57984 4.07174 6 4.07174C7.42016 4.07174 8.57143 5.2111 8.57143 6.61657C8.57143 8.02205 7.42016 9.16141 6 9.16141C4.57984 9.16141 3.42857 8.02205 3.42857 6.61657ZM6 5.08967C5.1479 5.08967 4.45714 5.77329 4.45714 6.61657C4.45714 7.45986 5.1479 8.14347 6 8.14347C6.8521 8.14347 7.54286 7.45986 7.54286 6.61657C7.54286 5.77329 6.8521 5.08967 6 5.08967Z" fill="black"/>
+                      </svg>                                  
+                    </div>
+                    о.Миконос, Греция
+                  </div>
+                  <div class="cnt-buyvilla_item_param">
+                    <div class="icon">
+                      <img src="img/villa-slider-param1-black.png" alt="">
+                    </div>
+                    10 чел
+                  </div>
+                  <div class="cnt-buyvilla_item_param">
+                    <div class="icon">
+                      <img src="img/villa-slider-param2-black.png" alt="">
+                    </div>
+                    3
+                  </div>
+                  <div class="cnt-buyvilla_item_param">
+                    <div class="icon">
+                      <img src="img/villa-slider-param3-black.png" alt="">
+                    </div>
+                    2
+                  </div>
+                </div>
+                <div class="cnt-buyvilla_item_descr">Посмотрите варианты или обратитесь к нам, если бы хотели увидеть больше вариантов под Ваши пожелания</div>
+                <div class="cnt-buyvilla_item_price">4 430 000 $</div>
+                <button class="cnt-buyvilla_item_submit" type="button">Подробнее</button>
+              </div>
+
+              <div class="cnt-buyvilla_item swiper-slide">
+                <div class="cnt-buyvilla_item_preview" style="background-image: url('img/buyvilla-preview.jpeg');"></div>
+                <div class="cnt-buyvilla_item_name">Вилла Julia</div>
+                <div class="cnt-buyvilla_item_params">
+                  <div class="cnt-buyvilla_item_param">
+                    <div class="icon">
+                      <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6 1.01793C3.28922 1.01793 1.02857 3.36985 1.02857 6.35102C1.02857 7.18335 1.46717 8.29709 2.15743 9.50481C2.83631 10.6926 3.71368 11.8958 4.49786 12.8855C4.92229 13.4211 5.20174 13.771 5.45199 13.996C5.68022 14.2011 5.83256 14.2548 6 14.2548C6.16744 14.2548 6.31978 14.2011 6.54801 13.996C6.79826 13.771 7.07771 13.4211 7.50214 12.8855C8.28632 11.8958 9.16369 10.6926 9.84257 9.50481C10.5328 8.29709 10.9714 7.18335 10.9714 6.35102C10.9714 3.36985 8.71078 1.01793 6 1.01793ZM0 6.35102C0 2.87924 2.65143 0 6 0C9.34857 0 12 2.87924 12 6.35102C12 7.46446 11.4411 8.77557 10.7378 10.006C10.0232 11.2563 9.11117 12.5045 8.31152 13.5136L8.28485 13.5473C7.89454 14.0399 7.56204 14.4596 7.23961 14.7494C6.88784 15.0657 6.49993 15.2727 6 15.2727C5.50007 15.2727 5.11216 15.0657 4.7604 14.7494C4.43797 14.4596 4.10546 14.0399 3.71515 13.5473L3.68848 13.5136C2.88883 12.5045 1.97676 11.2563 1.26215 10.006C0.55893 8.77557 0 7.46446 0 6.35102ZM3.42857 6.61657C3.42857 5.2111 4.57984 4.07174 6 4.07174C7.42016 4.07174 8.57143 5.2111 8.57143 6.61657C8.57143 8.02205 7.42016 9.16141 6 9.16141C4.57984 9.16141 3.42857 8.02205 3.42857 6.61657ZM6 5.08967C5.1479 5.08967 4.45714 5.77329 4.45714 6.61657C4.45714 7.45986 5.1479 8.14347 6 8.14347C6.8521 8.14347 7.54286 7.45986 7.54286 6.61657C7.54286 5.77329 6.8521 5.08967 6 5.08967Z" fill="black"/>
+                      </svg>                                  
+                    </div>
+                    о.Миконос, Греция
+                  </div>
+                  <div class="cnt-buyvilla_item_param">
+                    <div class="icon">
+                      <img src="img/villa-slider-param1-black.png" alt="">
+                    </div>
+                    10 чел
+                  </div>
+                  <div class="cnt-buyvilla_item_param">
+                    <div class="icon">
+                      <img src="img/villa-slider-param2-black.png" alt="">
+                    </div>
+                    3
+                  </div>
+                  <div class="cnt-buyvilla_item_param">
+                    <div class="icon">
+                      <img src="img/villa-slider-param3-black.png" alt="">
+                    </div>
+                    2
+                  </div>
+                </div>
+                <div class="cnt-buyvilla_item_descr">Посмотрите варианты или обратитесь к нам, если бы хотели увидеть больше вариантов под Ваши пожелания</div>
+                <div class="cnt-buyvilla_item_price">4 430 000 $</div>
+                <button class="cnt-buyvilla_item_submit" type="button">Подробнее</button>
+              </div>
+
+            </div>
+          </div>
+          <div class="cnt-buyvilla_nav">
+            <div class="swiper-pagination"></div>
+            <div class="cnt-buyvilla_bnts">
+              <button class="prev">
+                <svg width="29" height="15" viewBox="0 0 29 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 7.5L7.5 1M1 7.5L7.5 14M1 7.5H28.5" stroke="#0C0B0B"/>
+                </svg>                                 
+              </button>
+              <button class="next">
+                <svg width="29" height="15" viewBox="0 0 29 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M27.5 7.5L21 14M27.5 7.5L21 0.999999M27.5 7.5L5.68248e-07 7.5" stroke="#0C0B0B"/>
+                </svg>                                              
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="cnt-bgline">
+        <span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="cnt-lead greylead">
+      <div class="mainContainer">
+        <div class="cnt-lead_wrapp">
+          <div class="cnt-lead_user">
+            <div class="cnt-lead_avatar" style="background-image: url(img/lead-avatar.png);"></div>
+            <div class="cnt-lead_text">
+              <div class="cnt-lead_heading">Или оставьте заявку</div>
+              <div class="cnt-lead_descr">И наш эксперт по аренде недвижимости свяжется с Вами, уточнит пожелания и предложит лучшие варианты</div>
+            </div>
+          </div>
+          <div class="cnt-lead_content">
+            <div class="cnt-lead_form">
+              <form action="">
+                <input type="text">
+                <button type="submit">Оставить заявку</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cnt-locations-poss">
+      <div class="cnt-locations-poss_heading">
+        <div class="mainContainer">
+          <div class="cnt-locations-poss_heading_title">... А если хочется чего-то особенного, тогда обратите внимание на эти возможности...</div>
+        </div>
+      </div>
+      <div class="cnt-locations-poss_nav">
+        <button class="prev">
+          <svg width="66" height="33" viewBox="0 0 66 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 16.5L16.3636 1M1 16.5L16.3636 32M1 16.5H66" stroke="white"/>
+          </svg>            
+        </button>
+        <button class="next">
+          <svg width="66" height="33" viewBox="0 0 66 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M65 16.5L49.6364 32M65 16.5L49.6364 1M65 16.5L4.33529e-06 16.5" stroke="white"/>
+          </svg>            
+        </button>
+      </div>
+      <div class="cnt-locations-poss_slider swiper-container">
+        <div class="swiper-wrapper">
+          <div class="cnt-locations-poss_item swiper-slide" style="background-image: url('img/location-bg-poss1.jpeg');">
+            <div class="mainContainer">
+              <div class="cnt-locations-poss_item_wrapp">
+                <div class="cnt-locations-poss_item_info">
+                  <div class="cnt-locations-poss_item_name">АРЕНДА ОСТРОВА ИЛИ ЗАМКА</div>
+                  <div class="cnt-locations-poss_item_info_descr">
+                    Хотите максимального уединения? Что ж, у нас есть для Вас кое-что особенное.Арендуйте остров и насладитесь особенной атмосферой от дыха на другом конце Земли. Куда бы вы отправились?
+                  </div>
+                  <button class="cnt-locations-poss_item_submit" type="button">Смотреть острова для аренды</button>
+                </div>
+                <div class="cnt-locations-poss_item_details">
+                  <div class="cnt-locations-poss_item_prices">
+                    <div class="cnt-locations-poss_item_price">от 16 000 $</div>
+                    <div class="cnt-locations-poss_item_descr">за неделю</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="cnt-bgline">
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+      <div class="cnt-locations-poss_pagination swiper-pagination"></div>
+    </div>
+
+    <div class="cnt-faq">
+      <div class="mainContainer">
+        <div class="cnt-faq_heading">ПОЛЕЗНАЯ ИНФОРМАЦИЯ</div>
+        <div class="cnt-faq_list">
+          <div class="cnt-faq_item">
+            <div class="cnt-faq_item_preview" style="background-image: url('img/villa-fag1-img.jpeg');"></div>
+            <div class="cnt-faq_item_heading">ТОП-10 ВИЛЛ 2023 года</div>
+            <div class="cnt-faq_item_descr">Отправьтесь в страну на частном самолете и получите удовольствие от полного путешествия с лучшим сервисом.</div>
+            <button class="cnt-faq_item_submit">Читать</button>
+          </div>
+          <div class="cnt-faq_item">
+            <div class="cnt-faq_item_preview" style="background-image: url('img/villa-fag1-img.jpeg');"></div>
+            <div class="cnt-faq_item_heading">Где была Дженифер Лопез?</div>
+            <div class="cnt-faq_item_descr">Отправьтесь в страну на частном самолете и получите удовольствие от полного путешествия с лучшим сервисом.</div>
+            <button class="cnt-faq_item_submit">Читать</button>
+          </div>
+          <div class="cnt-faq_item">
+            <div class="cnt-faq_item_preview" style="background-image: url('img/villa-fag1-img.jpeg');"></div>
+            <div class="cnt-faq_item_heading">Лучшие отельные виллы</div>
+            <div class="cnt-faq_item_descr">Отправьтесь в страну на частном самолете и получите удовольствие от полного путешествия с лучшим сервисом.</div>
+            <button class="cnt-faq_item_submit">Читать</button>
+          </div>
+        </div>
+        <button class="cnt-faq_loadmore">ЧИТАТЬ ВСЕ МАТЕРИАЛЫ</button>
+      </div>
+    </div>
+
+    <div class="cnt-benefits">
+      <div class="mainContainer">
+        <div class="cnt-benefits_top">
+          <div class="cnt-benefits_heading">КРОМЕ АРЕНДЫ И ПОКУПКИ ВИЛЛ, МЫ МОЖЕМ ПОМОЧЬ ВАМ С</div>
+          <div class="cnt-benefits_descr">Обратитесь к нам, чтобы получить доступ к It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</div>
+        </div>
+        <div class="cnt-benefits_list">
+          <div class="cnt-benefits_item">
+            <div class="cnt-benefits_item_preview" style="background-image: url('img/villas-benefit1.jpeg');"></div>
+            <div class="cnt-benefits_item_heading">АРЕНДА БИЗНЕС ДЖЕТА</div>
+            <div class="cnt-benefits_item_descr">Отправьтесь в страну на частном самолете и получите удовольствие от полного путешествия с лучшим сервисом.</div>
+          </div>
+          <div class="cnt-benefits_item">
+            <div class="cnt-benefits_item_preview" style="background-image: url('img/villas-benefit1.jpeg');"></div>
+            <div class="cnt-benefits_item_heading">АРЕНДА БИЗНЕС ДЖЕТА</div>
+            <div class="cnt-benefits_item_descr">Отправьтесь в страну на частном самолете и получите удовольствие от полного путешествия с лучшим сервисом.</div>
+          </div>
+          <div class="cnt-benefits_item">
+            <div class="cnt-benefits_item_preview" style="background-image: url('img/villas-benefit1.jpeg');"></div>
+            <div class="cnt-benefits_item_heading">АРЕНДА БИЗНЕС ДЖЕТА</div>
+            <div class="cnt-benefits_item_descr">Отправьтесь в страну на частном самолете и получите удовольствие от полного путешествия с лучшим сервисом.</div>
+          </div>
+          <div class="cnt-benefits_item">
+            <div class="cnt-benefits_item_preview" style="background-image: url('img/villas-benefit1.jpeg');"></div>
+            <div class="cnt-benefits_item_heading">АРЕНДА БИЗНЕС ДЖЕТА</div>
+            <div class="cnt-benefits_item_descr">Отправьтесь в страну на частном самолете и получите удовольствие от полного путешествия с лучшим сервисом.</div>
+          </div>
+          <div class="cnt-benefits_item">
+            <div class="cnt-benefits_item_preview" style="background-image: url('img/villas-benefit1.jpeg');"></div>
+            <div class="cnt-benefits_item_heading">АРЕНДА БИЗНЕС ДЖЕТА</div>
+            <div class="cnt-benefits_item_descr">Отправьтесь в страну на частном самолете и получите удовольствие от полного путешествия с лучшим сервисом.</div>
+          </div>
+          <div class="cnt-benefits_item">
+            <div class="cnt-benefits_item_preview" style="background-image: url('img/villas-benefit1.jpeg');"></div>
+            <div class="cnt-benefits_item_heading">АРЕНДА БИЗНЕС ДЖЕТА</div>
+            <div class="cnt-benefits_item_descr">Отправьтесь в страну на частном самолете и получите удовольствие от полного путешествия с лучшим сервисом.</div>
+          </div>
+        </div>
+      </div>
+      <div class="cnt-bgline">
+        <span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="cnt-villas_manager">
+      <div class="mainContainer">
+        <div class="cnt-villas_manager_wrapp">
+          <div class="cnt-villas_manager_label mob">ВАШ ПЕРСОНАЛЬНЫЙ ЭКСПЕРТ В ПОДБОРЕ РОСКОШНОЙ ВИЛЛЫ</div>
+          <div class="cnt-villas_manager_avatar">
+            <div style="background-image: url('img/villas-manager.jpeg');"></div>
+          </div>
+          <div class="cnt-villas_manager_info">
+            <div class="cnt-villas_manager_label">ВАШ ПЕРСОНАЛЬНЫЙ ЭКСПЕРТ В ПОДБОРЕ РОСКОШНОЙ ВИЛЛЫ</div>
+            <div class="cnt-villas_manager_name">Роман Ларионов</div>
+            <div class="cnt-villas_manager_descr">Оставьте свой контактный номер телефона и наш эксперт свяжется с Вами и сориентирует по деталям </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="cnt-advantages bg-line-container">
+      <div class="mainContainer">
+        <h2 class="cnt-advantages_heading">Преимущества при выборе RaiSky Travel Concierge</h2>
+        <div class="cnt-advantages_list">
+          <div class="cnt-advantages_item text-item">
+            Заботимся о вашем путешествии, словно едем в него сами
+          </div>
+          <div class="cnt-advantages_item">
+            <div class="cnt-advantages_item_icon">
+              <img src="img/cnt-advantage1.svg" alt="">
+            </div>
+            <div class="cnt-advantages_item_descr">Круглосуточная поддежка</div>
+          </div>
+          <div class="cnt-advantages_item">
+            <div class="cnt-advantages_item_icon">
+              <img src="img/cnt-advantage2.svg" alt="">
+            </div>
+            <div class="cnt-advantages_item_descr">Премиальный сегмент</div>
+          </div>
+          <div class="cnt-advantages_item">
+            <div class="cnt-advantages_item_icon">
+              <img src="img/cnt-advantage3.svg" alt="">
+            </div>
+            <div class="cnt-advantages_item_descr">Качество продукта</div>
+          </div>
+          <div class="cnt-advantages_item">
+            <div class="cnt-advantages_item_icon">
+              <img src="img/cnt-advantage4.svg" alt="">
+            </div>
+            <div class="cnt-advantages_item_descr">Многолетний опыт</div>
+          </div>
+          <div class="cnt-advantages_item">
+            <div class="cnt-advantages_item_icon">
+              <img src="img/cnt-advantage5.svg" alt="">
+            </div>
+            <div class="cnt-advantages_item_descr">Персональный менеджмент</div>
+          </div>
+          <div class="cnt-advantages_item">
+            <div class="cnt-advantages_item_icon">
+              <img src="img/cnt-advantage6.svg" alt="">
+            </div>
+            <div class="cnt-advantages_item_descr">Строгая конфиденциальность</div>
+          </div>
+          <div class="cnt-advantages_item">
+            <div class="cnt-advantages_item_icon">
+              <img src="img/cnt-advantage7.svg" alt="">
+            </div>
+            <div class="cnt-advantages_item_descr">Эксклюзивные предложения</div>
+          </div>
+        </div>
+      </div>
+      <div class="cnt-bgline">
+        <span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+
+    <div id="request-popup" class="cnt-popup_container click-obj">
+      <div class="cnt-popup_background click-item popup-close" data-action="popup-close"></div>
+      <div class="cnt-popup cnt-request-popup">
+        <button class="cnt-popup_close click-item popup-close" data-action="popup-close">
+          <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="22.0979" width="31.2513" height="1.27556" transform="rotate(-45 0 22.0979)" fill="#898989"/>
+            <rect x="22.0981" y="23" width="31.2513" height="1.27556" transform="rotate(-135 22.0981 23)" fill="#898989"/>
+          </svg>                     
+        </button>
+        <div class="cnt-request-popup__content">
+          <div class="cnt-request-popup__heading">Форма для связи</div>
+          <div class="cnt-request-popup__descr">Заполните форму и оставьте заявку, Ваш специалист скоро свяжется с Вами</div>
+          <form action="">
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="text" placeholder="Телефон" required>
+            <input type="E-mail" placeholder="E-mail" required>
+            <textarea placeholder="Комментарий...">
+            </textarea>
+            <button type="submit">Оставить заявку</button>
+            <div class="request-doc">
+              <div>Нажимая кнопку, Вы соглашаетесь с </div>
+              <a href="#">условиями обработки персональных данных</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="libs/swiperjs/swiper.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+
+  let mySwiperWhatwaiting = new Swiper('.cnt-whatwaiting_slider', {
+    direction: 'horizontal',
+    slidesPerView: "auto",
+    loop: false,
+    spaceBetween: 16,
+    pagination: {
+      el: ".cnt-whatwaiting_nav .swiper-pagination",
+    },
+    navigation: {
+      nextEl: '.cnt-whatwaiting_nav .next',
+      prevEl: '.cnt-whatwaiting_nav .prev',
+    },
+    breakpoints: {
+      992: {
+        spaceBetween: 28,
+      },
+    }
+  });
+
+  let mySwiperBuyvilla = new Swiper('.cnt-buyvilla_slider', {
+    direction: 'horizontal',
+    slidesPerView: "auto",
+    loop: false,
+    spaceBetween: 16,
+    pagination: {
+      el: ".cnt-buyvilla_nav .swiper-pagination",
+    },
+    navigation: {
+      nextEl: '.cnt-buyvilla_nav .next',
+      prevEl: '.cnt-buyvilla_nav .prev',
+    },
+    breakpoints: {
+      1300: {
+        spaceBetween: 45,
+      },
+      992: {
+        spaceBetween: 30,
+      },
+    },
+    
+  });
+
+  let mySwiperLocations = new Swiper('.cnt-locations_slider', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    loop: false,
+    spaceBetween: 0,
+    effect: 'fade',
+    pagination: {
+      el: ".cnt-locations_pagination",
+    },
+    navigation: {
+      nextEl: '.cnt-locations_nav .next',
+      prevEl: '.cnt-locations_nav .prev',
+    },
+  });
+
+  let mySwiperLocationsPoss = new Swiper('.cnt-locations-poss_slider', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    loop: false,
+    spaceBetween: 0,
+    effect: 'fade',
+    pagination: {
+      el: ".cnt-locations-poss_pagination",
+    },
+    navigation: {
+      nextEl: '.cnt-locations-poss_nav .next',
+      prevEl: '.cnt-locations-poss_nav .prev',
+    },
+  });
+
+  $('.request-toggler').click(function(){
+    $("#request-popup").addClass('active');
+  })
+  $('.popup-close').click(function(){
+    $(".cnt-popup_container").removeClass('active');
+  });
+
+
+  $('.cnt-villas_filter_dropdown_label').click(function(){
+    $(this).closest('.cnt-villas_filter_dropdown').toggleClass('active');
+  })
+</script>
+
+</body>
+</html>
