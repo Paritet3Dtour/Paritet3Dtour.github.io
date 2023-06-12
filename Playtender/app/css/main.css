@@ -380,7 +380,7 @@ a{
 .header-toggler span:last-child{
   margin-bottom: 0;
 }
-/** HEADER BEGIN **/
+/** HEADER END **/
 
 /** BANNER START **/
 .banner{
@@ -404,12 +404,13 @@ a{
   font-size: 18px;
   line-height: 27px;
 }
-.banner_slider.swiper-container{
-  padding-bottom: 40px;
-  margin-bottom: -40px;
+.banner_list{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
 }
-.banner_slider_item{
-  max-width: 288px;
+.banner_card{
+  width: calc(25% - 12px);
   border-radius: 12px;
   box-shadow: 0px 38px 222px rgba(0, 0, 0, 0.02), 0px 6.57914px 27.7978px rgba(0, 0, 0, 0.0152498);
   background: #FFFFFF;
@@ -418,27 +419,28 @@ a{
   flex-direction: column;
   align-items: center;
   min-height: 245px;
+  position: relative;
 }
-.banner_slider_item.request-item .logo{
+.banner_card.request-item .logo{
   font-size: 18px;
   line-height: 23px;
   text-align: center;
 }
-.banner_slider_item.request-item .link-btn svg, .banner_slider_item.request-item .link-btn img{
+.banner_card.request-item .link-btn svg, .banner_card.request-item .link-btn img{
   margin-right: 8px;
 }
-.banner_slider_item .tooltip{
+.banner_card .tooltip{
   position: absolute;
   right: 20px;
   top: 20px;
 }
 @media screen and (min-width: 992px){
-  .banner_slider_item:nth-child(4) .tooltip::after, .banner_slider_item:nth-child(5) .tooltip::after{
+  .banner_card:nth-child(4) .tooltip::after, .banner_card:nth-child(5) .tooltip::after{
     left: auto;
     right: -15px;
   }
 }
-.banner_slider_item .logo{
+.banner_card .logo{
   width: 100%;
   height: 64px;
   margin-bottom: 13px;
@@ -446,17 +448,17 @@ a{
   align-items: center;
   justify-content: center;
 }
-.banner_slider_item .logo img{
+.banner_card .logo img{
   max-width: 140px;
   max-height: 64px;
 }
-.banner_slider_item .descr{
+.banner_card .descr{
   text-align: center;
   font-size: 20px;
   line-height: 26px;
   margin-bottom: 22px;
 }
-/** BANNER BEGIN **/
+/** BANNER END **/
 
 /** LAST-PURCHASES START **/
 .last-purchases{
@@ -524,7 +526,7 @@ a{
   color: #0096E0;
   background: #DFE9FE;
 }
-/** LAST-PURCHASES BEGIN **/
+/** LAST-PURCHASES END **/
 
 /** ADDITIONAL-SERVICES START **/
 .additional-services{
@@ -606,6 +608,7 @@ a{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .additional-services_item .preview_link_text{
   display: none;
@@ -623,7 +626,7 @@ a{
   outline: none;
   transition: all 0.2s;
 }
-/** ADDITIONAL-SERVICES BEGIN **/
+/** ADDITIONAL-SERVICES END **/
 
 /** STATISTICS START **/
 .statistics{
@@ -722,7 +725,7 @@ a{
   line-height: 22px;
   color: #9DA4AC;
 }
-/** STATISTICS BEGIN **/
+/** STATISTICS END **/
 
 /** ABOUT-US START **/
 .about-us{
@@ -806,7 +809,7 @@ a{
 .about-us_item_images img:last-child{
   margin-right: 0;
 }
-/** ABOUT-US BEGIN **/
+/** ABOUT-US END **/
 
 /** LAST-NEWS START **/
 .last-news{
@@ -924,7 +927,7 @@ a{
   height: 100%;
   z-index: 2;
 }
-/** LAST-NEWS BEGIN **/
+/** LAST-NEWS END **/
 
 /** FAQ START **/
 .faq{
@@ -975,7 +978,7 @@ a{
   line-height: 24px;
   margin-bottom: 24px;
 }
-/** FAQ BEGIN **/
+/** FAQ END **/
 
 /** FOOTER START **/
 .footer{
@@ -1110,7 +1113,7 @@ a{
   border-top: 1px solid #282829;
   padding: 20px 0;
 }
-/** FOOTER BEGIN **/
+/** FOOTER END **/
 
 /** SEARCH-PURCHASES START **/
 .search-purchases{
@@ -1231,7 +1234,7 @@ a{
 .search-purchases_show-filter svg, .search-purchases_show-filter img{
   margin-right: 8px;
 }
-/** SEARCH-PURCHASES BEGIN **/
+/** SEARCH-PURCHASES END **/
 
 /** ClIENTS START **/
 .clients{
@@ -1290,7 +1293,7 @@ a{
   font-size: 24px;
   line-height: 28px;
 }
-/** ClIENTS BEGIN **/
+/** ClIENTS END **/
 
 /** POPUP **/
 .popup_container {
@@ -1412,7 +1415,7 @@ a{
     line-height: 20px
   }
 
-
+  /** HEADER START **/
   .header_logo{
     width: 130px;
     height: 25px;
@@ -1426,13 +1429,14 @@ a{
   .header_search{
     margin-right: 22px;
   }
+  /** HEADER END **/
 
-
+  /** BANNER START **/
   .banner_title{
     font-size: 50px;
     line-height: 57px;
   }
-  .banner_slider_item .descr{
+  .banner_card .descr{
     font-size: 16px;
     line-height: 22px
   }
@@ -1443,8 +1447,9 @@ a{
     font-size: 36px;
     line-height: 44px;
   }
+  /** BANNER END **/
 
-
+  /** STATISTICS START **/
   .statistics_info_descr{
     max-width: 530px;
     margin-left: 25px;
@@ -1453,8 +1458,9 @@ a{
     font-size: 38px;
     line-height: 47px;
   }
+  /** STATISTICS END **/
 
-
+  /** CLIENTS START **/
   .clients_nav button{
     max-width: 55px;
   }
@@ -1465,8 +1471,9 @@ a{
     font-size: 14px;
     line-height: 20px;
   }
+  /** CLIENTS END **/
 
-
+  /** ADDITIONAL-SERVICES START **/
   .additional-services_item{
     padding: 30px 15px;
   }
@@ -1482,8 +1489,9 @@ a{
     font-size: 14px;
     line-height: 20px;
   }
+  /** ADDITIONAL-SERVICES END **/
 
-
+  /** ABOUT-US START **/
   .about-us_item_params .params_item .value{
     font-size: 38px;
     line-height: 47px;
@@ -1499,8 +1507,9 @@ a{
   .about-us_item_params{
     margin-bottom: 0;
   }
+  /** ABOUT-US END **/
 
-
+  /** LAST-NEWS START **/
   .last-news_main .heading{
     font-size: 20px;
     line-height: 29px;
@@ -1509,14 +1518,16 @@ a{
     font-size: 16px;
     line-height: 22px;
   }
+  /** LAST-NEWS END **/
 
-
+  /** FAQ START **/
   .faq_item .heading{
     font-size: 20px;
     line-height: 25px;
   }
+  /** FAQ END **/
 
-
+  /** FOOTER START **/
   .footer_phones a{
     font-size: 20px;
     line-height: 25px;
@@ -1532,6 +1543,7 @@ a{
     font-size: 14px;
     line-height: 20px;
   }
+  /** FOOTER END **/
 }
 
 
@@ -1564,7 +1576,7 @@ a{
     max-height: 18px;
   }
 
-
+  /** HEADER START **/
   .header_top{
     display: none;
   }
@@ -1723,13 +1735,14 @@ a{
     transform: rotate(-45deg);
     margin-top: -6px;
   }
+  /** HEADER END **/
   
-  
+  /** BANNER START **/
   .banner{
     padding-top: 100px;
     padding-bottom: 40px;
     background-size: 91%;
-    background-position-y: 41%;
+    background-position-y: 56%;
     background-position-x: 80%;
   }
   .banner_content{
@@ -1744,7 +1757,7 @@ a{
     font-size: 16px;
     line-height: 24px;
   }
-  .banner_slider_item{
+  .banner_card{
     width: 50%;
     max-width: 50%;
     border-radius: 0;
@@ -1753,68 +1766,69 @@ a{
     box-shadow: none;
     border-bottom: 1px solid #D5DEE8;
   }
-  .banner_slider_item:nth-child(1){
+  .banner_card:nth-child(1){
     border-top-left-radius: 10px;
     border-top: 1px solid #D5DEE8;
   }
-  .banner_slider_item:nth-child(2){
+  .banner_card:nth-child(2){
     border-top-right-radius: 10px;
     border-top: 1px solid #D5DEE8;
   }
-  .banner_slider_item:nth-child(5){
+  .banner_card:nth-child(3){
     border-bottom-left-radius: 10px;
   }
-  .banner_slider_item:nth-child(6){
+  .banner_card:nth-child(4){
     border-bottom-right-radius: 10px;
   }
-  .banner_slider_item:nth-child(odd){
+  .banner_card:nth-child(odd){
     border-right: 1px solid #D5DEE8;
     border-left: 1px solid #D5DEE8;
     border-bottom: 1px solid #D5DEE8;
   }
-  .banner_slider_item:nth-child(even){
+  .banner_card:nth-child(even){
     border-bottom: 1px solid #D5DEE8;
     border-right: 1px solid #D5DEE8;
   }
   .banner_slider.swiper-container{
     overflow: visible;
   }
-  .banner_slider_item .logo{
+  .banner_card .logo{
     height: 56px;
     margin-bottom: 0;
   }
-  .banner_slider_item .descr{
+  .banner_card .descr{
     margin-bottom: 12px;
     font-size: 14px;
     line-height: 18px;
   }
-  .banner_slider_item .logo img{
+  .banner_card .logo img{
     max-height: 46px;
     max-width: 120px;
   }
-  .banner_slider .swiper-wrapper{
+  .banner_list{
     flex-wrap: wrap;
     box-shadow: 0px 38px 222px rgba(0, 0, 0, 0.02), 0px 6.57914px 27.7978px rgba(0, 0, 0, 0.0152498);
     border-radius: 12px;
   }
-  .banner_slider_item .tooltip{
+  .banner_card .tooltip{
     top: 17px;
     right: 13px;
   }
-  .banner_slider_item .tooltip::after{
+  .banner_card .tooltip::after{
     left: -100px;
     top: 30px;
   }
-  .banner_slider_item .tooltip::before{
+  .banner_card .tooltip::before{
     left: -4px;
     top: 23px;
   }
-  .banner_slider_item:nth-child(even) .tooltip::after{
+  .banner_card:nth-child(even) .tooltip::after{
     left: -224px;
     top: 30px;
   }
+  /** BANNER END **/
 
-
+  /** LAST-PURCHASES START **/
   .last-purchases{
     padding-top: 40px;
     padding-bottom: 28px;
@@ -1838,8 +1852,9 @@ a{
   .last-purchases_item:nth-child(-n+5){
     display: flex;
   }
+  /** LAST-PURCHASES END **/
 
-
+  /** STATISTICS START **/
   .statistics{
     padding-top: 40px;
     padding-bottom: 20px;
@@ -1902,8 +1917,9 @@ a{
   .statistics_item.link-item .heading img, .statistics_item.link-item .heading svg{
     max-width: 16px;
   }
+  /** STATISTICS END **/
 
-
+  /** CLIENTS START **/
   .clients{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1942,8 +1958,9 @@ a{
   .clients_pagination{
     padding-right: 12px;
   }
+  /** CLIENTS END **/
 
-
+  /** ADDITIONAL-SERVICES START **/
   .additional-services{
     padding-top: 20px;
     padding-bottom: 40px;
@@ -2038,8 +2055,9 @@ a{
   .additional-services_item.horizontal-item.active .additional-services_item_more{
     transform: rotate(45deg);
   }
+  /** ADDITIONAL-SERVICES END **/
 
-
+  /** ABOUT-US START **/
   .about-us{
     padding-top: 40px;
     padding-bottom: 40px;
@@ -2094,8 +2112,9 @@ a{
     font-size: 20px;
     line-height: 30px;
   }
+  /** ABOUT-US END **/
 
-
+  /** SEARCH-PURCHASES START **/
   .search-purchases{
     padding-top: 40px;
     padding-bottom: 40px;
@@ -2146,8 +2165,9 @@ a{
   .search-purchases_show-filter{
     display: flex;
   }
+  /** SEARCH-PURCHASES END **/
 
-
+  /** LAST-NEWS START **/
   .last-news{
     padding-top: 40px;
     padding-bottom: 20px;
@@ -2180,8 +2200,9 @@ a{
     display: block;
     width: 100%;
   }
+  /** LAST-NEWS END **/
 
-
+  /** FAQ START **/
   .faq{
     padding-top: 20px;
     padding-bottom: 40px;
@@ -2205,8 +2226,9 @@ a{
     line-height: 21px;
     margin-bottom: 16px;
   }
+  /** FAQ END **/
 
-
+  /** FOOTER START **/
   .footer{
     padding-top: 40px;
   }
@@ -2307,7 +2329,9 @@ a{
     padding: 24px 0;
     text-align: left;
   }
+  /** FOOTER END **/
 
+  /** SEARCH-POPUP START **/
   .search-popup-container .popup_background{
     background: #EFF3F7;
     backdrop-filter: none;
@@ -2344,4 +2368,5 @@ a{
     max-width: 16px;
     margin-right: 8px;
   }
+  /** SEARCH-POPUP END **/
 }
