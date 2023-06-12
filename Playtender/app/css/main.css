@@ -1907,6 +1907,8 @@ a{
   .clients{
     padding-top: 20px;
     padding-bottom: 20px;
+    overflow: hidden;
+    width: 100%;
   }
   .clients_nav{
     display: none;
@@ -1933,6 +1935,12 @@ a{
   .clients_item .logo img{
     max-width: 95px;
     max-height: 95px;
+  }
+  .clients_slider.swiper-container{
+    width: calc(100% + 12px);
+  }
+  .clients_pagination{
+    padding-right: 12px;
   }
 
 
