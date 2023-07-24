@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content_language" content="en">
+  <meta name="description" content="ZAC">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <title>ZAC</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="libs/swiperjs/swiper.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="mainContainer">
+    <div class="header_wrapp">
+      <div class="header_main">
+        <button class="header_catalog">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="6.5" cy="6.5" r="2.5" fill="#112E52"/>
+            <circle cx="6.5" cy="17.5" r="2.5" fill="#112E52"/>
+            <circle cx="17.5" cy="6.5" r="2.5" fill="#112E52"/>
+            <circle cx="17.5" cy="17.5" r="2.5" fill="#112E52"/>
+          </svg>          
+          Catalog of products
+        </button>
+        <div class="header_nav">
+          <ul class="header_menu">
+            <li class="header_menu_item">
+              <a href="#">Purchasing</a>
+            </li>
+            <li class="header_menu_item">
+              <a href="#">About us</a>
+            </li>
+            <li class="header_menu_item">
+              <a href="#">Services</a>
+            </li>
+            <li class="header_menu_item">
+              <a href="#">Shareholders</a>
+            </li>
+            <li class="header_menu_item">
+              <a href="#">Contacts</a>
+            </li>
+          </ul>
+          <div class="header_lang dropdown-container">
+            <div class="dropdown-toggler">
+              <span>Eng</span>
+            </div>
+            <div class="dropdown-content">
+              <a href="#">Укр</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header_logo">
+        <svg width="138" height="138" viewBox="0 0 138 138" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M104.578 34.4587C95.4169 22.3788 83.3779 14.8648 68.4609 11.9168C65.6761 11.4616 62.869 11.1556 60.0516 11H55.6313C40.0107 11.9211 26.7677 17.961 15.9023 29.1198C6.05044 39.7034 0.749656 52.2507 0 66.7616V70.7523C0.187858 74.6726 0.710862 78.5697 1.56328 82.4008C4.54106 94.4037 10.6504 104.47 19.8914 112.601C37.1773 96.3689 54.4094 80.084 71.5875 63.746V63.4224C66.143 63.4576 60.7164 63.4217 55.3078 63.3146V56.6275C59.5377 54.727 63.7423 52.7856 67.9219 50.8032L42.6937 50.5875C42.6937 48.4304 42.6578 46.2733 42.5859 44.1162H86.3578C86.3937 46.3819 86.3578 48.6468 86.25 50.9111C82.7454 52.5836 79.2235 54.2374 75.6844 55.8725L86.3578 56.0882C86.3765 57.5622 86.3585 59.0363 86.3039 60.5103C66.4815 79.5857 46.626 98.6224 26.7375 117.62L28.4625 118.914C38.3467 124.73 49.0561 127.408 60.5906 126.95C74.985 126.174 87.4194 120.907 97.8937 111.149C108.597 100.79 114.598 88.1524 115.898 73.2373H138V34.517C126.859 34.5321 115.719 34.5126 104.578 34.4587ZM33.7992 34.8362C33.7453 47.5988 33.7529 73.2201 33.7529 73.2201L54.1219 73.2869C54.1219 73.2869 32.1885 93.9522 21.3469 104.242C20.7595 103.875 20.2322 103.421 19.7836 102.893C8.89884 90.1384 4.94572 75.434 7.92422 58.7803C10.7834 45.775 17.5576 35.3309 28.2469 27.4481C42.2057 17.9114 57.3354 15.5386 73.6359 20.3296C81.8955 23.0583 87.9211 27.2744 95.0906 33.7577C95.4141 34.0478 96.4329 34.8448 96.4329 34.8448L95.3548 34.8362H33.7992ZM108.891 73.5609C107.212 89.1641 100.06 101.586 87.4359 110.825C74.9398 119.279 61.2835 121.939 46.4672 118.807C43.033 118.038 39.7031 116.861 36.5484 115.301C51.1391 101.28 65.7656 87.2946 80.4281 73.3452C89.9329 73.2373 99.4563 73.2014 108.998 73.2373C108.939 73.336 108.903 73.4465 108.891 73.5609Z" fill="white"/>
+        </svg>                   
+        <span>Zaporizhzhia <br>Abrasive Plant <br>PJSC</span>
+      </div>
+      <button type="button" class="header-toggler">
+        <div class="icon">
+          <span></span><span></span><span></span>
+        </div>
+        Menu
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="banner" style="background-image: url('img/banner.jpg');">
+  <div class="mainContainer">
+    <div class="banner_content">
+      <h1 class="banner_title">We are experts in the production <br>of abrasives and grinding materials</h1>
+      <a href="#" class="white-btn">About company</a>
+    </div>
+    <a href="#" target="_blank" class="banner_link">
+      <img src="img/playtender-logo-white.svg" alt="">
+      <span>Buy in Playtender</span>
+    </a>
+  </div>
+</section>
+
+<section class="products">
+  <div class="mainContainer">
+    <div class="products-info">
+      <div class="products_heading">
+        <span>
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="17" width="34" height="13" fill="#FFE70D"/>
+            <rect y="4" width="34" height="13" fill="#0094FF"/>
+          </svg>
+          Made in Ukraine</span>
+        <b>The best products for exceptional results</b>
+      </div>
+      <div class="products_descr">
+        Something like an omnipresent eye or an all-pervading artificial superintelligence 
+      </div>
+    </div>
+    <div class="products_list"> 
+      <div class="products_item raw">
+        <div class="products_item_labels">
+          <div class="products_item_label">The first category</div>
+          <div class="products_item_label">The second category</div>
+          <div class="products_item_label">The third category</div>
+          <div class="products_item_label">The third category</div>
+        </div>
+        <a href="#" class="products_item_download">
+          Download catalog
+        </a>
+        <div class="products_item_wrapp"> 
+          <div class="products_item_content">
+            <div class="products_item_name">Raw</div>
+            <div class="products_item_descr">A tool for professionals and an exquisite result</div>
+          </div>
+          <a href="#" class="products_item_link"></a>
+        </div>
+      </div>
+
+      <div class="products_item tool">
+        <div class="products_item_labels">
+          <div class="products_item_label">The first category</div>
+          <div class="products_item_label">The second category</div>
+          <div class="products_item_label">The third category</div>
+        </div>
+        <a href="#" class="products_item_download">
+          Download catalog
+        </a>
+        <div class="products_item_wrapp"> 
+          <div class="products_item_content">
+            <div class="products_item_name">Tool</div>
+            <div class="products_item_descr">A tool for professionals and an exquisite result</div>
+          </div>
+          <a href="#" class="products_item_link"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="product-benefits">
+  <div class="mainContainer">
+    <div class="product-benefits_wrapp">
+      <div class="product-benefits_heading">Product benefits</div>
+      <div class="product-benefits_slider swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide product-benefits_item">
+            <div class="product-benefits_item_heading">It is qualitative, simple and safe</div>
+            <div class="product-benefits_item_descr">Something like an omnipresent eye or an all-pervading artificial superintelligence from The Matrix that can reach anywhere and detect a violation.</div>
+          </div>
+          <div class="swiper-slide product-benefits_item">
+            <div class="product-benefits_item_heading">Сompliance with modern standards</div>
+            <div class="product-benefits_item_descr">In November 2020, a recertification audit was held by the accredited certification body QSCert-Ukraine b.v. to meet the requirements of the ISO 9000 series standards.</div>
+          </div>
+          <div class="swiper-slide product-benefits_item">
+            <div class="product-benefits_item_heading">It is qualitative, simple and safe</div>
+            <div class="product-benefits_item_descr">Something like an omnipresent eye or an all-pervading artificial superintelligence from The Matrix that can reach anywhere and detect a violation.</div>
+          </div>
+        </div>
+        <div class="product-benefits_nav">
+          <button type="button" class="prev">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="15" height="2" transform="matrix(-1 0 0 1 23 12)" fill="#112E52"/>
+              <path d="M9 9H8L1 14H9V9Z" fill="#112E52"/>
+            </svg>
+          </button>
+          <div class="product-benefits-pagination"></div>
+          <button type="button" class="next">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="12" width="15" height="2" fill="#112E52"/>
+              <path d="M15 9H16L23 14H15V9Z" fill="#112E52"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="company">
+  <div class="mainContainer">
+    <div class="company_preview-mob" style="background-image: url('img/company-preview.jpg');"></div>
+    <div class="company_heading">
+      <span>company</span>
+      <b>Private joint-stock company «Zaporizhsky Abrasive Combine» is the only manufacturer of grinding materials in Ukraine and one of the largest manufacturers of abrasives in Eastern Europe.</b>
+    </div>
+    <div class="company_wrapp">
+      <div class="company_info">
+        <div class="company_descr">Has powerful production potential and produces products based on modern technologies.</div>
+        <a href="#" class="white-btn">More about us</a>
+      </div>
+      <div class="company_preview" style="background-image: url('img/company-preview.jpg');"></div>
+    </div>
+  </div>
+</section>
+
+<section class="advantages">  
+  <div class="mainContainer">
+    <div class="advantages_heading">
+      <span>Advantages</span>
+      <b>One of the largest manufacturers of abrasives in Eastern Europe.</b>
+    </div>
+    <div class="advantages_slider swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide advantages_item">
+          <div class="advantages_item_number">20</div>
+          <div class="advantages_item_heading">years</div>
+          <div class="advantages_item_descr">Project experience and international consulting.</div>
+        </div>
+        <div class="swiper-slide advantages_item">
+          <div class="advantages_item_number">16</div>
+          <div class="advantages_item_heading">directors</div>
+          <div class="advantages_item_descr">Board of experience of professionals</div>
+        </div>
+        <div class="swiper-slide advantages_item">
+          <div class="advantages_item_number">700</div>
+          <div class="advantages_item_heading">tons</div>
+          <div class="advantages_item_descr">Recycled abrasive for product and sale</div>
+        </div>
+        <div class="swiper-slide advantages_item">
+          <div class="advantages_item_number">45 professionals</div>
+          <div class="advantages_item_heading">workers</div>
+          <div class="advantages_item_descr">Trained and certified employees</div>
+        </div>
+      </div>
+    </div>
+    <div class="advantages_nav">
+      <button type="button" class="prev">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="15" height="2" transform="matrix(-1 0 0 1 23 12)" fill="#112E52"/>
+          <path d="M9 9H8L1 14H9V9Z" fill="#112E52"/>
+        </svg>
+      </button>
+      <div class="advantages-pagination"></div>
+      <button type="button" class="next">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="12" width="15" height="2" fill="#112E52"/>
+          <path d="M15 9H16L23 14H15V9Z" fill="#112E52"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="partners">
+  <div class="mainContainer">
+    <div class="partners_wrapp">
+      <div class="partners_info">
+        <div class="partners_heading">Trust the best</div>
+        <div class="partners_descr">More than 100 companies trust our products</div>
+        <div class="partners_nav">
+          <button type="button" class="prev">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="15" height="2" transform="matrix(-1 0 0 1 23 12)" fill="#112E52"/>
+              <path d="M9 9H8L1 14H9V9Z" fill="#112E52"/>
+            </svg>              
+          </button>
+          <div class="partners-pagination"></div>
+          <button type="button" class="next">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="12" width="15" height="2" fill="#112E52"/>
+              <path d="M15 9H16L23 14H15V9Z" fill="#112E52"/>
+            </svg>              
+          </button>
+        </div>
+      </div>
+      <div class="partners_slider swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide partners_item">
+            <img src="img/partner-logo1.svg" alt="">
+          </div>
+          <div class="swiper-slide partners_item">
+            <img src="img/partner-logo2.svg" alt="">
+          </div>
+          <div class="swiper-slide partners_item">
+            <img src="img/partner-logo3.svg" alt="">
+          </div>
+          <div class="swiper-slide partners_item">
+            <img src="img/partner-logo1.svg" alt="">
+          </div>
+          <div class="swiper-slide partners_item">
+            <img src="img/partner-logo2.svg" alt="">
+          </div>
+          <div class="swiper-slide partners_item">
+            <img src="img/partner-logo3.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="last-news">
+  <div class="mainContainer"> 
+    <div class="last-news_heading">
+      <span>News</span>
+      <b>Latest company events</b>
+    </div>
+    <div class="last-news_wrapp">  
+      <div class="last-news_main" style="background-image: url('img/last-new1.jpg');">
+        <a href="#" class="link"></a>
+        <div class="date">Jun 23, 2023</div>
+        <div class="heading">Private joint-stock company «Zaporizhsky Abrasive Combine» </div>
+      </div>
+      <div class="last-news_list">
+        <div class="last-news_item">
+          <a href="#" class="link"></a>
+          <div class="preview" style="background-image: url('img/last-new2.jpg');"></div>
+          <div class="content">
+            <div class="heading">Private joint-stock company «Zaporizhsky Abrasive Combine» </div>
+            <div class="descr">Something like an omnipresent eye or an all-pervading artificial superintelligence from The Matrix that ...</div>
+            <div class="date">Jun 23, 2023</div>
+          </div>
+        </div>
+        <div class="last-news_item">
+          <a href="#" class="link"></a>
+          <div class="preview" style="background-image: url('img/last-new3.jpg');"></div>
+          <div class="content">
+            <div class="heading">Private joint-stock company «Zaporizhsky Abrasive Combine» </div>
+            <div class="descr">Something like an omnipresent eye or an all-pervading artificial superintelligence from The Matrix that ...</div>
+            <div class="date">Jun 23, 2023</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="blue-btn last-news_more">All news</a>
+  </div>
+</section>
+
+<section class="presentation" style="background-image: url('img/presentation-bg.png');">
+  <div class="mainContainer">
+    <div class="presentation_headding">Ecology — Ecology</div>
+    <div class="presentation_preview"><img src="img/presentatiion-preview.png" alt=""></div>
+    <div class="presentation_content">
+      <div class="presentation_content_heading">We take care of the environment and clean air of our planet</div>
+      <a href="#" class="white-btn">Ecology</a>
+    </div>
+  </div>
+</section>
+
+<section class="contacts">
+  <div class="contacts-bg"></div>
+  <div class="mainContainer">
+    <div class="contacts_wrapp">
+      <div class="contacts_request">
+        <div class="contacts_request_heading">Call us or ask a question on the website</div>
+        <form class="contacts_request_form">
+          <div class="form-item">
+            <input type="text" placeholder="Enter you name*" required>
+            <div class="label">Name</div>
+          </div>
+          <div class="form-item">
+            <input type="text" placeholder="Enter your email*" required>
+            <div class="label">Email</div>
+          </div>
+          <div class="form-item">
+            <input type="text" placeholder="Enter your phone number*" required>
+            <div class="label">Phone</div>
+          </div>
+          <div class="form-item">
+            <input type="text" placeholder="Ask your question">
+            <div class="label">Message</div>
+          </div>
+          <button type="submit" class="blue-btn form-submit">Send</button>
+        </form>
+      </div>
+      <div class="contacts_info">
+        <div class="contacts_info_heading">Contact us</div>
+        <div class="contacts_info_numbers">
+          <a href="tel:380984563432" class="contacts_info_number">+380 98 456 34 32</a>
+          <a href="tel:380673442323" class="contacts_info_number">+380 67 344 23 23</a>
+          <div class="contacts_info_descr">Every day until 20:00</div>
+        </div>
+        <div class="contacts_info_mails">
+          <div class="contacts_info_descr">E-mail</div>
+          <a href="mailto:zapabrasiv@gmail.com" class="contacts_info_mail">Zapabrasiv@<br>gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"> 
+  <div class="mainContainer">
+    <div class="footer_wrapp">
+      <div class="footer_menu">
+        <button type="button" class="footer_menu_catalog">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="6.5" cy="6.5" r="2.5" fill="#112E52"/>
+            <circle cx="6.5" cy="17.5" r="2.5" fill="#112E52"/>
+            <circle cx="17.5" cy="6.5" r="2.5" fill="#112E52"/>
+            <circle cx="17.5" cy="17.5" r="2.5" fill="#112E52"/>
+          </svg>            
+          Catalog of products
+        </button>
+        <ul class="footer_menu_list">
+          <li class="footer_menu_item">
+            <a href="#">Purchasing</a>
+          </li>
+          <li class="footer_menu_item">
+            <a href="#">About us</a>
+          </li>
+          <li class="footer_menu_item">
+            <a href="#">Services</a>
+          </li>
+          <li class="footer_menu_item">
+            <a href="#">Shareholders</a>
+          </li>
+          <li class="footer_menu_item">
+            <a href="#">Contacts</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer_info">
+        <div class="footer_address">
+          <div class="footer_label">Address</div>
+          <a href="#">St. Oleksia Parady, 44, Zaporizhzhia, 69600, Ukraine</a>
+        </div>
+        <div class="footer_socials">
+          <div class="footer_label">Social networks</div>
+          <div class="footer_socials_list">
+            <a href="#">
+              <img src="img/youtube-icon.svg" alt="">
+              YouTube
+            </a>
+            <a href="#">
+              <img src="img/tg-icon.svg" alt="">
+              Telegram
+            </a>
+            <a href="#">
+              <img src="img/fb-icon.svg" alt="">
+              Facebook
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_bottom">
+        <div class="footer_bottom_label">© 2023 ALL RIGHTS RESERVED</div>
+        <div class="footer_bottom_links">
+          <a href="#">PRIVACY POLICY</a>
+          <a href="#">ACCESSIBILITY PLAN</a>
+        </div>
+        <button class="footer-up">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 8L12.6508 7.24074H11.3492L12 8ZM19 14H20V13.5401L19.6508 13.2407L19 14ZM5 14L4.34921 13.2407L4 13.5401V14H5ZM20 15V14H18V15H20ZM19.6508 13.2407L12.6508 7.24074L11.3492 8.75926L18.3492 14.7593L19.6508 13.2407ZM11.3492 7.24074L4.34921 13.2407L5.65079 14.7593L12.6508 8.75926L11.3492 7.24074ZM4 14V15H6V14H4Z" fill="#112E52"/>
+          </svg>         
+          Up   
+        </button>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" crossorigin="anonymous"></script>
+<script src="libs/swiperjs/swiper.min.js"></script>
+<script>
+  let partnersSlider = new Swiper(".partners_slider", {
+    loop: false,
+    roundLengths: true,
+    slidesPerView: 2,
+    spaceBetween: 10,
+
+    pagination: {
+      el: ".partners_nav .partners-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".partners_nav .next",
+      prevEl: ".partners_nav .prev",
+    },
+
+    breakpoints: {
+      1600: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 25,
+      }
+    }
+  });
+
+  let advantagesSlider = new Swiper(".advantages_slider", {
+    loop: false,
+    roundLengths: true,
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+
+    pagination: {
+      el: ".advantages_nav .advantages-pagination",
+      type: "progressbar",
+    },
+    navigation: {
+      nextEl: ".advantages_nav .next",
+      prevEl: ".advantages_nav .prev",
+    },
+
+    breakpoints: {
+      1200: {
+        spaceBetween: 60,
+      }
+    }
+  });
+
+  let productBenefitsSlider = new Swiper(".product-benefits_slider", {
+    loop: false,
+    roundLengths: true,
+    slidesPerView: 'auto',
+    spaceBetween: 40,
+
+    pagination: {
+      el: ".product-benefits_nav .product-benefits-pagination",
+      type: "progressbar",
+    },
+    navigation: {
+      nextEl: ".product-benefits_nav .next",
+      prevEl: ".product-benefits_nav .prev",
+    },
+
+    breakpoints: {
+      1600: {
+        spaceBetween: 90,
+      },
+      1200: {
+        spaceBetween: 60,
+      },
+      768: {
+        spaceBetween: 100,
+      }
+    }
+  });
+
+  $('.footer-up').click(function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  $('.dropdown-toggler').click(function(){
+    $(this).closest('.dropdown-container').toggleClass('active');
+  });
+</script>
+
+</body>
+</html>
