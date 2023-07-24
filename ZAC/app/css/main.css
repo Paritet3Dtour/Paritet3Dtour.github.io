@@ -3056,3 +3056,74 @@ a{
     margin-right: 0;
   }
 }
+
+@media screen and (max-width: 369px){
+  .products_heading b{
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .products-info{
+    margin-bottom: 80px;
+  }
+  .products_item{
+    height: 400px;
+    min-height: 400px;
+  }
+  .product-benefits_item{
+    width: 270px;
+    min-height: 305px;
+  }
+  .company_heading b{
+    font-size: 22px;
+    line-height: 31px;
+  }
+  .company_heading{
+    margin-bottom: 30px;
+  }
+  .advantages_heading b{
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .advantages_heading{
+    margin-bottom: 80px;
+  }
+  .advantages_item{
+    width: 100%;
+  }
+  .advantages_item:last-child{
+    width: auto;
+  }
+  .advantages_item_number{
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .last-news_heading b{
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .last-news_main .heading{
+    font-size: 26px;
+    line-height: 33px;
+  }
+  .last-news_item .heading{
+    font-size: 26px;
+    line-height: 33px;
+  }
+  .presentation_headding{
+    font-size: 78px;
+    line-height: 78px;
+  }
+  .contacts_info_number{
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .contacts_request .form-item input{
+    font-size: 22px;
+  }
+  .footer_bottom_links a{
+    font-size: 13px;
+  }
+  .footer_bottom_label{
+    font-size: 13px;
+  }
+}
