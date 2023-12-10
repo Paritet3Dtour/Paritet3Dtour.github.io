@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content_language" content="ru">
+  <meta name="description" content="Playtender">
+  <!--<link rel="icon" type="image/x-icon" href="img/favicon.ico">-->
+  <title>Playtender</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="https://playtender.com.ua/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://playtender.com.ua/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://playtender.com.ua/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://playtender.com.ua/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://playtender.com.ua/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://playtender.com.ua/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://playtender.com.ua/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://playtender.com.ua/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://playtender.com.ua/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="https://playtender.com.ua/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://playtender.com.ua/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="https://playtender.com.ua/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://playtender.com.ua/favicon-16x16.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="libs/swiperjs/swiper.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+<div class="tariffs-section">
+  <div class="tariffs_container">
+    <div class="tariffs_top">
+      <div class="tariffs_nav">
+        <button type="button" class="tab-toggler tariffs_nav_item active" data-target="commercial">Тарифи для комерційного замовника</button>
+        <button type="button" class="tab-toggler tariffs_nav_item" data-target="individual">Ідивідуальні пропозиції</button>
+      </div>
+      <div class="tariffs_top_wrapp">
+      <div class="tab-container tariffs_info" data-target="commercial">
+        <div class="tariffs_info_heading">Тарифи для комерційного замовника</div>
+        <div class="tariffs_info_descr"> Участь зареєстрованих на майданчику Playtender Публічні закупівлі Prozorro активних Постачальників безкоштовна.</div>
+      </div>
+      <div class="tab-container tariffs_info individual-type hidden" data-target="individual">
+        <div class="tariffs_info_heading">Ідивідуальні пропозиції</div>
+        <div class="tariffs_info_descr"> Участь зареєстрованих на майданчику Playtender Публічні закупівлі Prozorro активних Постачальників безкоштовна.</div>
+      </div>
+      <div class="tariffs_menu">
+        <div class="tab-container tariffs_individual hidden" data-target="individual">
+          Доопрацювання майданчика за ТЗ Замовника з розміщенням на серверах PLAYTENDER
+        </div>
+        <div class="tab-container tariffs_slider swiper-container" data-target="commercial">
+          <div class="swiper-wrapper tariffs_list">
+            <div class="tariffs_item swiper-slide" data-type="type-one">
+              <div class="tariffs_item_heading">СКРУДЖ</div>
+              <div class="tariffs_item_type">Постачальник:</div>
+              <div class="tariffs_item_cost">
+                <span class="price">299</span>
+                <span class="currency">грн/міс</span>
+              </div>
+              <div class="tariffs_item_label">
+                <img src="img/gift-icon.svg" alt="gift-icon">
+                <span>2 участі безкоштовно</span>
+              </div>
+              <div class="tariffs_item_descr">Замовник: безкоштовно</div>
+            </div>
+            <div class="tariffs_item swiper-slide" data-type="type-two">
+              <div class="tariffs_item_heading">Старт</div>
+              <div class="tariffs_item_type">Замовник:</div>
+              <div class="tariffs_item_cost">
+                <span class="price">4800</span>
+                <span class="currency">грн/міс <span class="tax">з ПДВ</span></span>
+              </div>
+              <div class="tariffs_item_descr">Постачальник: безкоштовно</div>
+            </div>
+            <div class="tariffs_item primary swiper-slide" data-type="type-three">
+              <div class="tariffs_item_heading">ОПТИМАЛЬНИЙ</div>
+              <div class="tariffs_item_type">Замовник:</div>
+              <div class="tariffs_item_cost">
+                <span class="price">7800</span>
+                <span class="currency">грн/міс <span class="tax">з ПДВ</span></span>
+              </div>
+              <div class="tariffs_item_label">
+                <img src="img/star-icon.svg" alt="star-icon">
+                <span>Популярний</span>
+              </div>
+              <div class="tariffs_item_descr">Постачальник: безкоштовно</div>
+            </div>
+            <div class="tariffs_item swiper-slide" data-type="type-for">
+              <div class="tariffs_item_heading">Корпоративний</div>
+              <div class="tariffs_item_type">Замовник:</div>
+              <div class="tariffs_item_cost">
+                <span class="price">11200</span>
+                <span class="currency">грн/міс <span class="tax">з ПДВ</span></span>
+              </div>
+              <div class="tariffs_item_descr">Постачальник: безкоштовно</div>
+            </div>
+          </div>
+          <div class="tariffs_slider_nav">
+            <button type="button" class="prev">
+              <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 7L1 13" stroke="#171A38" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button type="button" class="next">
+              <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 7L1 13" stroke="#171A38" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                
+            </button>
+          </div>
+        </div>
+        <div class="tariffs_slider_pagination swiper-pagination"></div>
+        <!--<div class="tab-container tariffs_list" data-target="commercial">
+          <div class="tariffs_item">
+            <div class="tariffs_item_heading">СКРУДЖ</div>
+            <div class="tariffs_item_type">Постачальник:</div>
+            <div class="tariffs_item_cost">
+              <span class="price">299</span>
+              <span class="currency">грн/міс</span>
+            </div>
+            <div class="tariffs_item_label">
+              <img src="img/gift-icon.svg" alt="gift-icon">
+              <span>2 участі безкоштовно</span>
+            </div>
+            <div class="tariffs_item_descr">Замовник: безкоштовно</div>
+          </div>
+          <div class="tariffs_item">
+            <div class="tariffs_item_heading">Старт</div>
+            <div class="tariffs_item_type">Замовник:</div>
+            <div class="tariffs_item_cost">
+              <span class="price">4800</span>
+              <span class="currency">грн/міс <span class="tax">з ПДВ</span></span>
+            </div>
+            <div class="tariffs_item_descr">Постачальник: безкоштовно</div>
+          </div>
+          <div class="tariffs_item primary">
+            <div class="tariffs_item_heading">ОПТИМАЛЬНИЙ</div>
+            <div class="tariffs_item_type">Замовник:</div>
+            <div class="tariffs_item_cost">
+              <span class="price">7800</span>
+              <span class="currency">грн/міс <span class="tax">з ПДВ</span></span>
+            </div>
+            <div class="tariffs_item_label">
+              <img src="img/star-icon.svg" alt="star-icon">
+              <span>Популярний</span>
+            </div>
+            <div class="tariffs_item_descr">Постачальник: безкоштовно</div>
+          </div>
+          <div class="tariffs_item">
+            <div class="tariffs_item_heading">Корпоративний</div>
+            <div class="tariffs_item_type">Замовник:</div>
+            <div class="tariffs_item_cost">
+              <span class="price">11200</span>
+              <span class="currency">грн/міс <span class="tax">з ПДВ</span></span>
+            </div>
+            <div class="tariffs_item_descr">Постачальник: безкоштовно</div>
+          </div>
+        </div>-->
+      </div>
+    </div>
+    </div>
+    <div class="tariffs_table tab-container" data-target="commercial">
+      <div class="tariffs_table_content">
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Ідентифікація через КЕП</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Безкоштовне навчання по роботі з платформою</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Управління ролями та правами доступу внутрішніх співробітників</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Необмежена кількість внутрішніх співробітників (облікових записів)</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Необмежена кількість внутрішніх співробітників (облікових записів)</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one">5</div>
+          <div class="tariffs_table_item type-two">1</div>
+          <div class="tariffs_table_item type-three primary">10</div>
+          <div class="tariffs_table_item type-for">30</div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Кількість закупівельних процедур на місяць</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one">необмежено</div>
+          <div class="tariffs_table_item type-two">необмежено</div>
+          <div class="tariffs_table_item type-three primary">необмежено</div>
+          <div class="tariffs_table_item type-for">необмежено</div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Автоматичне інформування постачальникам про закупівлю</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Функція «Онлайн-чат»</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Супровід персонального менеджера</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Закупівля за зразком</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Редагування оголошеної закупівлі</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Завантажування документів архівом</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Автоматичне продовження закупівлі</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Формування індивідуальних звітів через конструктор</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Вибір типу процедури: закупівля, продаж, запит цінових пропозицій</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Вибір ціни з ПДВ / без ПДВ</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Автоматична розсилка про завершення торгів</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Індивідуальні запрошення постачальників на e-mail</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Можливість для постачальника ставити питання замовнику</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Звіти по постачальникам щодо результатів торгів в Excel, PDF</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Автоматичне сповіщення про зміну кращої ціни</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Відображення кількості переглядів закупівлі</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Відображення переліку компаній, які переглянули закупівлю</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Відображення кількості поданих пропозицій</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Сесія між торгами (по закінченні сесії 18-00 автоматичне перенесення на наступний робочий день)</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Закупівля з відтермінуванням в часі</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two">немає</div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Конвертація цінових пропозицій у валюті</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two">немає</div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Експорт даних до Excel</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two">немає</div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Множинний вибір переможців</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two">немає</div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Тендер з банківською гарантією</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two">немає</div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">*Підключення додаткових функцій</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two">немає</div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Індивідуальний звіт за зразком замовника</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two">немає</div>
+          <div class="tariffs_table_item type-three primary"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Інтеграція з програмними продуктами замовника (1С, SAP тощо)</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two">немає</div>
+          <div class="tariffs_table_item type-three primary">немає</div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Доопрацювання майданчика за технічним завданням замовника.</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one"><span class="active-check"></span></div>
+          <div class="tariffs_table_item type-two">немає</div>
+          <div class="tariffs_table_item type-three primary">немає</div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Допомога в побудові внутрішнього положення про проведення закупівель</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-one">немає</div>
+          <div class="tariffs_table_item type-two">немає</div>
+          <div class="tariffs_table_item type-three primary">немає</div>
+          <div class="tariffs_table_item type-for"><span class="active-check"></span></div>
+        </div>
+      </div>
+      </div>
+      <div class="tariffs_table_hint">*Можливість підключення додаткових функцій — платна функція, узгоджується індивідуально</div>
+    </div>
+
+    <div class="tariffs_table full-table tab-container hidden" data-target="individual">
+      <div class="tariffs_table_content">
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Ідентифікація через КЕП</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-descr">Створення індивідуального майданчика за ТЗ Замовника з розміщенням на серверах Замовника</div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Безкоштовне навчання по роботі з платформою</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Управління ролями та правами доступу внутрішніх співробітників</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-descr">Повний супровід закупівель для Замовника Gettender</div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Необмежена кількість внутрішніх співробітників (облікових записів)</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item type-descr">Компанії, у яких немає спеціалістів із закупівель, можуть скористатись нашою послугою "Закупівельна команда на аутсорсі". Наші спеціалісти швидко та професійно виконають завдання. Ми самостійно підготуємо необхідну технічну та кваліфікаційну документацію, пропрацюємо ринок постачальників та надамо найкращі пропозиції.</div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Кількість облікових записів. Кожен додатковий — 200грн з ПДВ</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item">5</div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Кількість закупівельних процедур на місяць</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item">необмежено</div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Автоматичне інформування постачальникам про закупівлю</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Функція «Онлайн-чат»</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Супровід персонального менеджера</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Закупівля за зразком</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Редагування оголошеної закупівлі</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Завантажування документів архівом</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Автоматичне продовження закупівлі</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Формування індивідуальних звітів через конструктор</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Вибір типу процедури: закупівля, продаж, запит цінових пропозицій</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Вибір ціни з ПДВ / без ПДВ</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Автоматична розсилка про завершення торгів</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Індивідуальні запрошення постачальників на e-mail</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Можливість для постачальника ставити питання замовнику</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Звіти по постачальникам щодо результатів торгів в Excel, PDF</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Автоматичне сповіщення про зміну кращої ціни</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Відображення кількості переглядів закупівлі</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Відображення переліку компаній, які переглянули закупівлю</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Відображення кількості поданих пропозицій</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Сесія між торгами (по закінченні сесії 18-00 автоматичне перенесення на наступний робочий день)</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Закупівля з відтермінуванням в часі</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Конвертація цінових пропозицій у валюті</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Експорт даних до Excel</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Множинний вибір переможців</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Тендер з банківською гарантією</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">*Підключення додаткових функцій</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Індивідуальний звіт за зразком замовника</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Інтеграція з програмними продуктами замовника (1С, SAP тощо)</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Доопрацювання майданчика за технічним завданням замовника.</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item"><span class="active-check"></span></div>
+        </div>
+      </div>
+      <div class="tariffs_table_row">
+        <div class="tariffs_table_item type">Допомога в побудові внутрішнього положення про проведення закупівель</div>
+        <div class="tariffs_table_list">
+          <div class="tariffs_table_item">немає</div>
+        </div>
+      </div>
+      </div>
+      <div class="tariffs_table_hint">*Можливість підключення додаткових функцій — платна функція, узгоджується індивідуально</div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" crossorigin="anonymous"></script>
+<script src="libs/swiperjs/swiper.min.js"></script>
+<script>
+  $('.tab-toggler').click(function(){
+    $('.tab-toggler').removeClass('active');
+    $(this).addClass('active');
+    $('.tab-container').addClass('hidden');
+    $('.tab-container[data-target="'+$(this).attr('data-target')+'"]').removeClass('hidden');
+  });
+
+  $(document).ready(function(){
+    if ($(window).width() < 996) {
+      $('.tariffs_table_item.type-one').addClass('active');
+
+      let tariffsSlider = new Swiper(".tariffs_slider", {
+        loop: false,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        spaceBetween: 22,
+
+        pagination: {
+          el: ".tariffs_slider_pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".tariffs_slider_nav .next",
+          prevEl: ".tariffs_slider_nav .prev",
+        },
+      });
+      tariffsSlider.on('slideChange', function (e) {
+        let currentSlide = $('.tariffs_item')[tariffsSlider.activeIndex];
+        $('.tariffs_table_item').removeClass('active');
+        $('.tariffs_table_item.'+$(currentSlide).attr('data-type')+'').addClass('active');
+      });
+    }
+  });
+</script>
+
+</body>
+</html>

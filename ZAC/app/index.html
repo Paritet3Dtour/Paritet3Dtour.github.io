@@ -9,7 +9,7 @@
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <title>ZAC</title>
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/fonts.css"> 
   <link rel="stylesheet" href="libs/swiperjs/swiper.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -19,6 +19,16 @@
   <div class="mainContainer">
     <div class="header_wrapp">
       <div class="header_main">
+        <div class="header_main_nav">
+          <span>Menu</span>
+          <button class="close" type="button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="7.05078" y="5.63672" width="16" height="2" transform="rotate(45 7.05078 5.63672)" fill="#112E52"/>
+              <rect width="16" height="2" transform="matrix(-0.707107 0.707107 0.707107 0.707107 16.9492 5.63672)" fill="#112E52"/>
+            </svg>              
+            Close
+          </button>
+        </div>
         <button class="header_catalog">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="6.5" cy="6.5" r="2.5" fill="#112E52"/>
@@ -51,7 +61,54 @@
               <span>Eng</span>
             </div>
             <div class="dropdown-content">
+              <a href="#" class="active">Eng</a>
               <a href="#">Укр</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="header_tools">
+          <button type="button" class="header_tools_back">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 19.2757C17 19.543 16.6769 19.6769 16.4879 19.4879L11.2121 14.2121C11.095 14.095 11.095 13.905 11.2121 13.7879L16.4879 8.51213C16.6769 8.32314 17 8.45699 17 8.72426L17 19.2757Z" fill="#112E52"/>
+            </svg>              
+            Back
+          </button>
+          <div class="header_tool">
+            <div class="header_tool_heading">Raw</div>
+            <div class="header_tool_list">
+              <a href="#" class="header_tool_item">The first category</a>
+              <a href="#" class="header_tool_item">The second category</a>
+              <a href="#" class="header_tool_item">The third category</a>
+              <a href="#" class="header_tool_item">The third category</a>
+            </div>
+            <a href="#" class="header_tool_link">
+              <img src="img/header-tool-icon.svg" alt="">
+              <span>Download catalog</span>             
+            </a>
+          </div>
+          <div class="header_tool">
+            <div class="header_tool_heading">Tool</div>
+            <div class="header_tool_list">
+              <a href="#" class="header_tool_item">The first category</a>
+              <a href="#" class="header_tool_item">The second category</a>
+              <a href="#" class="header_tool_item">The third category</a>
+            </div>
+            <a href="#" class="header_tool_link">
+              <img src="img/header-tool-icon.svg" alt="">
+              <span>Download catalog</span>             
+            </a>
+          </div>
+          <div class="header_products">
+            <div class="header_products_wrapp">
+              <div class="header_products_heading">Products in Playtender</div>
+              <div class="header_products_preview">
+                <img src="img/header-products-preview.png" alt="">
+              </div>
+              <a href="#" class="header_products_link">
+                <img src="img/header-products-icon.svg" alt="">
+                <span>Buy in Playtender</span>             
+              </a>
             </div>
           </div>
         </div>
@@ -334,7 +391,9 @@
 <section class="presentation" style="background-image: url('img/presentation-bg.png');">
   <div class="mainContainer">
     <div class="presentation_headding">Ecology — Ecology</div>
-    <div class="presentation_preview"><img src="img/presentatiion-preview.png" alt=""></div>
+    <div class="presentation_preview">
+      <img src="img/ecology/1.png" alt="">
+    </div>
     <div class="presentation_content">
       <div class="presentation_content_heading">We take care of the environment and clean air of our planet</div>
       <a href="#" class="white-btn">Ecology</a>
@@ -462,6 +521,37 @@
 <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" crossorigin="anonymous"></script>
 <script src="libs/swiperjs/swiper.min.js"></script>
 <script>
+
+  function ecologyAnimation(){
+    let ecologyImages = $('.presentation_preview img');
+    var timesRun = 1;
+    var interval = setInterval(function(){
+        ecologyImages.attr('src', 'img/ecology/'+timesRun+'.png');
+        timesRun += 1;
+        if(timesRun === 43){
+            clearInterval(interval);
+        }
+    }, 25); 
+  };
+
+  if ($(window).width() > 992){
+  let stopScroll = false;
+      $(window).scroll(function() {
+        if(stopScroll === false){
+        var hT = $('.presentation_content_heading').offset().top,
+            hH = $('.presentation_content_heading').outerHeight(),
+            wH = $(window).height(),
+            wS = $(this).scrollTop();
+        if (wS > (hT+hH-wH)){
+          ecologyAnimation();
+            stopScroll = true;
+        }
+      }
+      });
+  }else{
+    $('.presentation_preview img').attr('src', 'img/ecology/42.png');
+  }
+
   let partnersSlider = new Swiper(".partners_slider", {
     loop: false,
     roundLengths: true,
@@ -539,6 +629,19 @@
     }
   });
 
+  $('.header-toggler').click(function(){
+    $('.header').addClass('active');
+  });
+  $('.header_main_nav .close').click(function(){
+    $('.header').removeClass('active');
+    $('.header').removeClass('catalog-active');
+  });
+  $('.header_catalog').click(function(){
+    $('.header').addClass('catalog-active');
+  });
+  $('.header_tools_back').click(function(){
+    $('.header').removeClass('catalog-active');
+  });
   $('.footer-up').click(function(){
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });

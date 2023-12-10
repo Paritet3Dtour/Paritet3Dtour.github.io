@@ -6,9 +6,10 @@ $method = $_SERVER['REQUEST_METHOD'];
 $c = true;
 if ( $method === 'POST' ) {
 
-	$project_name = 'SoulHub';
-	$admin_email  = 'timetosoulhub@gmail.com';
-	$admin_email2  = 'shpirniy06@gmail.com';
+	$project_name = 'SoulHub mail';
+	$admin_email  = 'manager@soulhub.com.ua';
+	$admin_email2  = 'timetosoulhub@gmail.com';
+	$admin_email3  = 'shpirniy06@gmail.com';
 	$form_subject = 'Форма заявки';
 
 	foreach ( $_POST as $key => $value ) {
@@ -23,8 +24,10 @@ if ( $method === 'POST' ) {
 	}
 } else if ( $method === 'GET' ) {
 
-	$project_name = 'SoulHub';
-	$admin_email  = 'timetosoulhub@gmail.com';
+	$project_name = 'SoulHub mail';
+	$admin_email  = 'manager@soulhub.com.ua';
+	$admin_email2  = 'timetosoulhub@gmail.com';
+	$admin_email3  = 'shpirniy06@gmail.com';
 	$form_subject = 'Форма заявки';
 
 	foreach ( $_GET as $key => $value ) {
@@ -56,4 +59,4 @@ fclose($fd);
 
 mail($admin_email, adopt($form_subject), $message, $headers );
 mail($admin_email2, adopt($form_subject), $message, $headers );
-/*mail($admin_email3, adopt($form_subject), $message, $headers );*/
+mail($admin_email3, adopt($form_subject), $message, $headers );
