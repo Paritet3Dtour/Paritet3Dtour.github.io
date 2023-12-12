@@ -33,7 +33,7 @@
   <div class="tariffs_container">
     <div class="tariffs_top">
       <div class="tariffs_nav">
-        <button type="button" class="tab-toggler tariffs_nav_item active" data-target="commercial">Тарифи для комерційного замовника</button>
+        <button type="button" class="tab-toggler tariffs_nav_item active" data-target="commercial"><span class="desk">Тарифи</span> <span>для</span> комерційного замовника</button>
         <button type="button" class="tab-toggler tariffs_nav_item" data-target="individual">Ідивідуальні пропозиції</button>
       </div>
       <div class="tariffs_top_wrapp">
@@ -108,54 +108,8 @@
               </svg>                
             </button>
           </div>
+          <div class="tariffs_slider_pagination swiper-pagination"></div>
         </div>
-        <div class="tariffs_slider_pagination swiper-pagination"></div>
-        <!--<div class="tab-container tariffs_list" data-target="commercial">
-          <div class="tariffs_item">
-            <div class="tariffs_item_heading">СКРУДЖ</div>
-            <div class="tariffs_item_type">Постачальник:</div>
-            <div class="tariffs_item_cost">
-              <span class="price">299</span>
-              <span class="currency">грн/міс</span>
-            </div>
-            <div class="tariffs_item_label">
-              <img src="img/gift-icon.svg" alt="gift-icon">
-              <span>2 участі безкоштовно</span>
-            </div>
-            <div class="tariffs_item_descr">Замовник: безкоштовно</div>
-          </div>
-          <div class="tariffs_item">
-            <div class="tariffs_item_heading">Старт</div>
-            <div class="tariffs_item_type">Замовник:</div>
-            <div class="tariffs_item_cost">
-              <span class="price">4800</span>
-              <span class="currency">грн/міс <span class="tax">з ПДВ</span></span>
-            </div>
-            <div class="tariffs_item_descr">Постачальник: безкоштовно</div>
-          </div>
-          <div class="tariffs_item primary">
-            <div class="tariffs_item_heading">ОПТИМАЛЬНИЙ</div>
-            <div class="tariffs_item_type">Замовник:</div>
-            <div class="tariffs_item_cost">
-              <span class="price">7800</span>
-              <span class="currency">грн/міс <span class="tax">з ПДВ</span></span>
-            </div>
-            <div class="tariffs_item_label">
-              <img src="img/star-icon.svg" alt="star-icon">
-              <span>Популярний</span>
-            </div>
-            <div class="tariffs_item_descr">Постачальник: безкоштовно</div>
-          </div>
-          <div class="tariffs_item">
-            <div class="tariffs_item_heading">Корпоративний</div>
-            <div class="tariffs_item_type">Замовник:</div>
-            <div class="tariffs_item_cost">
-              <span class="price">11200</span>
-              <span class="currency">грн/міс <span class="tax">з ПДВ</span></span>
-            </div>
-            <div class="tariffs_item_descr">Постачальник: безкоштовно</div>
-          </div>
-        </div>-->
       </div>
     </div>
     </div>
@@ -485,7 +439,7 @@
       <div class="tariffs_table_row">
         <div class="tariffs_table_item type">Ідентифікація через КЕП</div>
         <div class="tariffs_table_list">
-          <div class="tariffs_table_item type-descr">Створення індивідуального майданчика за ТЗ Замовника з розміщенням на серверах Замовника</div>
+          <div class="tariffs_table_item type-descr"><span class="active-check"></span> <p>Створення індивідуального майданчика за ТЗ Замовника з розміщенням на серверах Замовника</p></div>
         </div>
       </div>
       <div class="tariffs_table_row">
@@ -497,13 +451,13 @@
       <div class="tariffs_table_row">
         <div class="tariffs_table_item type">Управління ролями та правами доступу внутрішніх співробітників</div>
         <div class="tariffs_table_list">
-          <div class="tariffs_table_item type-descr">Повний супровід закупівель для Замовника Gettender</div>
+          <div class="tariffs_table_item type-descr"><span class="active-check"></span> <p>Повний супровід закупівель для Замовника Gettender</p></div>
         </div>
       </div>
       <div class="tariffs_table_row">
         <div class="tariffs_table_item type">Необмежена кількість внутрішніх співробітників (облікових записів)</div>
         <div class="tariffs_table_list">
-          <div class="tariffs_table_item type-descr">Компанії, у яких немає спеціалістів із закупівель, можуть скористатись нашою послугою "Закупівельна команда на аутсорсі". Наші спеціалісти швидко та професійно виконають завдання. Ми самостійно підготуємо необхідну технічну та кваліфікаційну документацію, пропрацюємо ринок постачальників та надамо найкращі пропозиції.</div>
+          <div class="tariffs_table_item type-descr"><span class="active-check"></span> <p>Компанії, у яких немає спеціалістів із закупівель, можуть скористатись нашою послугою "Закупівельна команда на аутсорсі". Наші спеціалісти швидко та професійно виконають завдання. Ми самостійно підготуємо необхідну технічну та кваліфікаційну документацію, пропрацюємо ринок постачальників та надамо найкращі пропозиції.</p></div>
         </div>
       </div>
       <div class="tariffs_table_row">
@@ -707,6 +661,8 @@
     $(this).addClass('active');
     $('.tab-container').addClass('hidden');
     $('.tab-container[data-target="'+$(this).attr('data-target')+'"]').removeClass('hidden');
+    $('.tariffs_nav').attr('data-target', $(this).attr('data-target'));
+    $('.tariffs_top').attr('data-target', $(this).attr('data-target'));
   });
 
   $(document).ready(function(){
