@@ -108,119 +108,173 @@
         <div class="content-main">
           <div class="content-container">
             <div class="content-top">
-              <div class="content-heading">Інформація про власника</div>
-              <div class="content-descr">Вкажіть інформацію про власника транспортного засобу</div>
-            </div>
-            <div class="owner-container">
-              <div class="owner-type">
-                <div class="form-label required">Тип власника</div>
-                <div class="radio-group">
-                  <div class="radio-input">
-                    <input type="radio" name="owner_type" id="type1" checked>
-                    <div class="label">Фізична особа</div>
-                  </div>
-                  <div class="radio-input">
-                    <input type="radio" name="owner_type" id="type2">
-                    <div class="label">Юридична особа</div>
-                  </div>
-                </div>
-              </div>
-              <div class="owner-ipn">
-                <div class="form-label required">ІПН власника</div>
-                <div class="search-container">
-                  <input type="text" placeholder="Введіть номер" value="20933092329364" required>
-                  <button type="button" class="search-clear">
-                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M8.01562 2.03906L5.55469 4.5L8.01562 6.98438C8.32031 7.26562 8.32031 7.75781 8.01562 8.03906C7.73438 8.34375 7.24219 8.34375 6.96094 8.03906L4.5 5.57812L2.01562 8.03906C1.73438 8.34375 1.24219 8.34375 0.960938 8.03906C0.65625 7.75781 0.65625 7.26562 0.960938 6.98438L3.42188 4.5L0.960938 2.03906C0.65625 1.75781 0.65625 1.26562 0.960938 0.984375C1.24219 0.679688 1.73438 0.679688 2.01562 0.984375L4.5 3.44531L6.96094 0.984375C7.24219 0.679688 7.73438 0.679688 8.01562 0.984375C8.32031 1.26562 8.32031 1.75781 8.01562 2.03906Z" fill="#1D1F24"/>
-                    </svg>                      
-                  </button>
-                  <button type="button" class="search-submit">
-                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.75 5.375C9.75 6.45312 9.39844 7.46094 8.8125 8.25781L11.7656 11.2344C12.0703 11.5156 12.0703 12.0078 11.7656 12.2891C11.4844 12.5938 10.9922 12.5938 10.7109 12.2891L7.73438 9.3125C6.9375 9.92188 5.92969 10.25 4.875 10.25C2.17969 10.25 0 8.07031 0 5.375C0 2.70312 2.17969 0.5 4.875 0.5C7.54688 0.5 9.75 2.70312 9.75 5.375ZM4.875 8.75C6.07031 8.75 7.17188 8.11719 7.78125 7.0625C8.39062 6.03125 8.39062 4.74219 7.78125 3.6875C7.17188 2.65625 6.07031 2 4.875 2C3.65625 2 2.55469 2.65625 1.94531 3.6875C1.33594 4.74219 1.33594 6.03125 1.94531 7.0625C2.55469 8.11719 3.65625 8.75 4.875 8.75Z" fill="#4338CA"/>
-                    </svg>                    
-                    Шукати
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="message-alert success">
-              <div class="icon"><img src="img/green-user-icon.svg" alt="user-icon"></div>
-              <div class="text">
-                <div class="heading">За вказаним ІПН в базі знайдено клієнта.</div>
-              </div>
+              <div class="content-heading">Ідентифікація транспортного засобу</div>
+              <div class="content-descr">Внесіть дані для первинного протоколу за чек-листом</div>
             </div>
 
-            <div class="order-form">
-              <div class="form-group">
-                <label for="" class="form-label required">Прізвище</label>
-                <input type="text" value="Тимченко" disabled>
-              </div>
-              <div class="form-group">
-                <label for="" class="form-label required">Імʼя</label>
-                <input type="text" value="Олексій" disabled>
-              </div>
-              <div class="form-group">
-                <label for="" class="form-label required">По-батькові</label>
-                <input type="text" value="Сергійович" disabled>
-              </div>
-              <div class="form-group">
-                <label for="" class="form-label">Населений пункт</label>
-                <input type="text" value="м. Київ, Україна" disabled>
-              </div>
-              <div class="form-group">
-                <label for="" class="form-label">Вулиця</label>
-                <input type="text" value="Тираспільська" disabled>
-              </div>
-              <div class="form-groups">
-                <div class="form-group">
-                  <label for="" class="form-label">Будинок</label>
-                  <input type="text" value="58" disabled>
+            <div class="form-group w-50 mb-24">
+              <div class="form-label required">Тип транспортного засобу</div>
+              <input type="text" value="Легковий автомобіль">
+            </div>
+
+            <div class="vin-container">
+              <div class="form-label required">VIN-код</div>
+              <div class="vin-container_wrapp">
+                <div class="vin-container_list">
+                  <div class="vin-container_items">
+                    <div class="vin-container_item">
+                      <div class="number">1</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">2</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">3</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">4</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">5</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">6</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">7</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">8</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">9</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">10</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">11</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">12</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">13</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">14</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">15</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">16</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">17</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">18</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">19</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">20</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">21</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">22</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">23</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">24</div>
+                      <div class="value">V</div>
+                    </div>
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label for="" class="form-label">Квартира</label>
-                  <input type="text" value="17" disabled>
-                </div>
+
+                <button class="vin-container_submit second-btn">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.75 5.375C9.75 6.45312 9.39844 7.46094 8.8125 8.25781L11.7656 11.2344C12.0703 11.5156 12.0703 12.0078 11.7656 12.2891C11.4844 12.5938 10.9922 12.5938 10.7109 12.2891L7.73438 9.3125C6.9375 9.92188 5.92969 10.25 4.875 10.25C2.17969 10.25 0 8.07031 0 5.375C0 2.70312 2.17969 0.5 4.875 0.5C7.54688 0.5 9.75 2.70312 9.75 5.375ZM4.875 8.75C6.07031 8.75 7.17188 8.11719 7.78125 7.0625C8.39062 6.03125 8.39062 4.74219 7.78125 3.6875C7.17188 2.65625 6.07031 2 4.875 2C3.65625 2 2.55469 2.65625 1.94531 3.6875C1.33594 4.74219 1.33594 6.03125 1.94531 7.0625C2.55469 8.11719 3.65625 8.75 4.875 8.75Z" fill="#4338CA"/>
+                  </svg>                    
+                  Ідентифікувати ТЗ
+                </button>
               </div>
-              <div class="form-group">
-                <label for="" class="form-label required">Серія та/або номер паспорта</label>
-                <input type="text" value="МЕ909213" disabled>
-              </div>
-              <div class="form-group">
-                <label for="" class="form-label required">Номер телефону</label>
-                <input type="text" value="+38 093 123 45 67" disabled>
+              <div class="check-input">
+                <input type="checkbox" name="vin-type" id="vin-type">
+                <div class="label">Нестандартний код</div>
               </div>
             </div>
+            
+
           </div>
           <div class="content-links">
+            <a href="" class="back-btn">
+              <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.21094 4.98438L4.96094 1.23438C5.24219 0.929688 5.73438 0.929688 6.01562 1.23438C6.32031 1.51562 6.32031 2.00781 6.01562 2.28906L3.55469 4.75H10.75C11.1484 4.75 11.5 5.10156 11.5 5.5C11.5 5.92188 11.1484 6.25 10.75 6.25H3.55469L6.01562 8.73438C6.32031 9.01562 6.32031 9.50781 6.01562 9.78906C5.73438 10.0938 5.24219 10.0938 4.96094 9.78906L1.21094 6.03906C0.90625 5.75781 0.90625 5.26562 1.21094 4.98438Z" fill="#4338CA"/>
+              </svg>                
+              Назад
+            </a>
             <button class="main-btn white-btn">Зберегти як чернетку</button>
-            <button class="main-btn">Застосувати</button>
+            <button class="main-btn grey-btn">Зберегти дані</button>
           </div>
         </div>
 
 
         <div class="content-nav">
-          <div class="content-nav_item status-process">  
+          <div class="content-nav_item status-ready">  
             <div class="icon">
               <img class="icon-default" src="img/nav-user-icon.svg" alt="user-icon">
               <img class="icon-active" src="img/nav-user-icon-active.svg" alt="user-icon">
+              <img class="icon-ready" src="img/nav-user-icon-ready.svg" alt="user-icon">
             </div>
             <span>Власник ТЗ</span>
           </div>
-          <div class="content-nav_item">  
+          <div class="content-nav_item status-ready">  
             <div class="icon">
               <img class="icon-default" src="img/nav-payment-icon.svg" alt="payment-icon">
               <img class="icon-active" src="img/nav-payment-icon-active.svg" alt="payment-icon">
+              <img class="icon-ready" src="img/nav-payment-icon-black.svg" alt="payment-icon">
             </div>
             <span>Оплата</span>
           </div>
-          <div class="content-nav_item">  
+          <div class="content-nav_item status-ready">  
             <div class="icon">
               <img class="icon-default" src="img/nav-documents-icon.svg" alt="documents-icon">
               <img class="icon-active" src="img/nav-documents-icon-active.svg" alt="documents-icon">
+              <img class="icon-ready" src="img/nav-documents-icon-black.svg" alt="documents-icon">
             </div>
             <span>Документи</span>
           </div>
-          <div class="content-nav_item">  
+          <div class="content-nav_item status-process">  
             <div class="icon">
               <img class="icon-default" src="img/nav-car-icon.svg" alt="car-icon">
               <img class="icon-active" src="img/nav-car-icon-active.svg" alt="car-icon">

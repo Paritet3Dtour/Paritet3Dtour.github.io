@@ -85,7 +85,7 @@
         <div class="title-container">
           <div class="title">Заявки</div>
         </div>
-        <button class="main-btn plus-btn">Додати заявку</button>
+        <button class="main-btn plus-btn popup-open" data-target="create-order-popup">Додати заявку</button>
       </div>
     </div>
   </div>
@@ -104,7 +104,98 @@
 
 </div>
 
+<div id="create-order-popup" class="popup_container click-obj">
+  <div class="popup_background click-item popup-close" data-action="popup-close"></div>
+  <div class="popup create-order-popup">
+    <button class="popup_close popup-close">
+      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9.18359 1.49609L5.90234 4.77734L9.15625 8.03125C9.42969 8.27734 9.42969 8.6875 9.15625 8.93359C8.91016 9.20703 8.5 9.20703 8.25391 8.93359L4.97266 5.67969L1.71875 8.93359C1.47266 9.20703 1.0625 9.20703 0.816406 8.93359C0.542969 8.6875 0.542969 8.27734 0.816406 8.00391L4.07031 4.75L0.816406 1.49609C0.542969 1.25 0.542969 0.839844 0.816406 0.566406C1.0625 0.320312 1.47266 0.320312 1.74609 0.566406L5 3.84766L8.25391 0.59375C8.5 0.320312 8.91016 0.320312 9.18359 0.59375C9.42969 0.839844 9.42969 1.25 9.18359 1.49609Z" fill="#111827"/>
+      </svg>        
+    </button>
+    <div class="popup-content">
+      <div class="create-order-container">
+        <div class="top-group">
+          <div class="heading">Додати нову заявку</div>
+          <div class="info">
+            <div class="info-item">
+              ID: 164437839
+              <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5 9.9375C10.7188 9.9375 10.9375 9.74609 10.9375 9.5V3.92188L9.07812 2.0625H5.25C5.00391 2.0625 4.8125 2.28125 4.8125 2.5V9.5C4.8125 9.74609 5.00391 9.9375 5.25 9.9375H10.5ZM5.25 11.25C4.26562 11.25 3.5 10.4844 3.5 9.5V2.5C3.5 1.54297 4.26562 0.75 5.25 0.75H9.07812C9.40625 0.75 9.76172 0.914062 10.0078 1.16016L11.8398 2.99219C12.0859 3.23828 12.25 3.59375 12.25 3.92188V9.5C12.25 10.4844 11.457 11.25 10.5 11.25H5.25ZM1.75 4.25H2.625V5.5625H1.75C1.50391 5.5625 1.3125 5.78125 1.3125 6V13C1.3125 13.2461 1.50391 13.4375 1.75 13.4375H7C7.21875 13.4375 7.4375 13.2461 7.4375 13V12.125H8.75V13C8.75 13.9844 7.95703 14.75 7 14.75H1.75C0.765625 14.75 0 13.9844 0 13V6C0 5.04297 0.765625 4.25 1.75 4.25Z" fill="#6B6E75"></path>
+              </svg>                
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="" class="form-label required">Назва заявки</label>
+          <input type="text" placeholder="Введіть назву заявки" required>
+        </div>
+        <div class="form-group">
+          <label for="" class="form-label required">Послуга</label>
+          <div class="radio-group">
+            <div class="radio-input">
+              <input type="radio" name="service_type" id="type1" checked>
+              <div class="label">Сертифікація ТЗ</div>
+            </div>
+            <div class="radio-input">
+              <input type="radio" name="service_type" id="type2" disabled>
+              <div class="label">Техогляд ТЗ</div>
+            </div>
+            <div class="radio-input">
+              <input type="radio" name="service_type" id="type3" disabled>
+              <div class="label">Техограф</div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="" class="form-label required">Дата та час заявки</label>
+          <div class="datetime-group">
+            <div class="date-field">
+              <input type="text" value="10.10.23" placeholder="Оберіть дату" required>
+            </div>
+            <div class="time-field">
+              <input type="text" value="12:00" placeholder="Оберіть час" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="" class="form-label required">Лабораторія</label>
+          <select name="" id="">
+            <option value="">Option1</option>
+            <option value="">Option2</option>
+            <option value="">Option3</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="" class="form-label required">Відповідальний спеціаліст</label>
+          <select name="" id="">
+            <option value="">Option1</option>
+            <option value="">Option2</option>
+            <option value="">Option3</option>
+          </select>
+        </div>
+      </div>
+      <div class="popup-nav">
+        <button class="main-btn">Створити заявку</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
 <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" crossorigin="anonymous"></script>
+<script>
+  $('.popup-open').click(function(e){
+    e.preventDefault();
+
+    let targetPopup = $(this).attr('data-target');
+    $(`.popup_container#${targetPopup}`).addClass('active');
+  });
+
+  $('.popup_container .popup-close').click(function(){
+    $(this).closest($('.popup_container')).removeClass('active');
+  });
+</script>
 </body>
 </html>
