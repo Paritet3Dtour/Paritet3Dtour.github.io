@@ -51,7 +51,7 @@
             </div>
             Автомобілі
           </a>
-          <a href="#" class="nav-item active">
+          <a href="#" class="nav-item">
             <div class="icon">
               <img class="icon-default" src="img/menu-icon-users.svg" alt="users-icon">   
               <img class="icon-active" src="img/menu-icon-users-active.svg" alt="users-icon">                                  
@@ -79,40 +79,11 @@
     </div>
   </header>
 
-  <div class="top-nav">
-    <div class="mainContainer">
-      <div class="top-nav_wrapp">
-        <div class="top-nav_labels">
-          <div class="top-nav_label active">Користувачі</div>
-          <div class="top-nav_label">Спеціалісти</div>
-        </div>
-        <div class="top-nav_togglers">
-          <div class="top-nav_toggler active">Спеціалісти</div>
-          <div class="top-nav_toggler">Лабораторії</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="top-section top-steps">
     <div class="mainContainer">
-      <div class="top-section_wrapp">
+      <div class="top-section_wrapp" style="min-height: auto;">
         <div class="title-container">
-          <a href="" class="back-btn mb-20">
-            <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.21094 4.98438L4.96094 1.23438C5.24219 0.929688 5.73438 0.929688 6.01562 1.23438C6.32031 1.51562 6.32031 2.00781 6.01562 2.28906L3.55469 4.75H10.75C11.1484 4.75 11.5 5.10156 11.5 5.5C11.5 5.92188 11.1484 6.25 10.75 6.25H3.55469L6.01562 8.73438C6.32031 9.01562 6.32031 9.50781 6.01562 9.78906C5.73438 10.0938 5.24219 10.0938 4.96094 9.78906L1.21094 6.03906C0.90625 5.75781 0.90625 5.26562 1.21094 4.98438Z" fill="#4338CA"></path>
-            </svg>                
-            Назад
-          </a>
-          <div class="title">Тимченко Олексій Сергійович</div>
-          <div class="info">
-            <div class="info-item">
-              ID: 2378402819
-              <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.5 9.9375C10.7188 9.9375 10.9375 9.74609 10.9375 9.5V3.92188L9.07812 2.0625H5.25C5.00391 2.0625 4.8125 2.28125 4.8125 2.5V9.5C4.8125 9.74609 5.00391 9.9375 5.25 9.9375H10.5ZM5.25 11.25C4.26562 11.25 3.5 10.4844 3.5 9.5V2.5C3.5 1.54297 4.26562 0.75 5.25 0.75H9.07812C9.40625 0.75 9.76172 0.914062 10.0078 1.16016L11.8398 2.99219C12.0859 3.23828 12.25 3.59375 12.25 3.92188V9.5C12.25 10.4844 11.457 11.25 10.5 11.25H5.25ZM1.75 4.25H2.625V5.5625H1.75C1.50391 5.5625 1.3125 5.78125 1.3125 6V13C1.3125 13.2461 1.50391 13.4375 1.75 13.4375H7C7.21875 13.4375 7.4375 13.2461 7.4375 13V12.125H8.75V13C8.75 13.9844 7.95703 14.75 7 14.75H1.75C0.765625 14.75 0 13.9844 0 13V6C0 5.04297 0.765625 4.25 1.75 4.25Z" fill="#6B6E75"/>
-              </svg>                
-            </div>
-          </div>
+          <div class="title">Дані профілю</div>
         </div>
       </div>
     </div>
@@ -123,54 +94,45 @@
       <div class="content-section_wrapp">
         <div class="content-main">
           <div class="content-container">
-            
-            <div class="order-form mb-24">
+            <div class="order-form">
               <div class="form-group">
                 <div class="form-label required">Прізвище</div>
-                <input type="text" value="Тимченко">
+                <input type="text" placeholder="Введіть" value="Aleksandrova">
               </div>
               <div class="form-group">
                 <div class="form-label required">Імʼя</div>
-                <input type="text" value="Олексій">
+                <input type="text" placeholder="Введіть" value="Marina">
               </div>
               <div class="form-group">
-                <div class="form-label required">По-батькові</div>
-                <input type="text" value="Сергійович">
-              </div>
-              <div class="form-group">
-                <div class="form-label required">Лабораторія</div>
-                <select name="" id="">
-                  <option value="" disabled selected hidden>Оберіть тип Лабораторія</option>
-                  <option value="">тип 1</option>
-                  <option value="">тип 2</option>
-                </select>
+                <div class="form-label">По-батькові</div>
+                <input type="text" placeholder="Введіть">
               </div>
               <div class="form-group">
                 <div class="form-label required">Права користувача</div>
                 <select name="" id="">
-                  <option value="" disabled selected hidden>Оберіть права користувача</option>
+                  <option value="">Керівник лабораторії</option>
                   <option value="">тип 1</option>
                   <option value="">тип 2</option>
                 </select>
               </div>
+              <div class="form-group"></div>
+              <div class="form-group"></div>
               <div class="form-group">
+                <div class="form-label">Телефон</div>
+                <input type="text" placeholder="Введіть" value="+38 093 876 45 67">
               </div>
               <div class="form-group">
-                <div class="form-label required">Телефон</div>
-                <input type="text" value="+38 093 876 45 67">
-              </div>
-              <div class="form-group">
-                <div class="form-label required">Email</div>
-                <input type="text" value="tymchenko@mail.ua">
+                <div class="form-label">Email</div>
+                <input type="text" placeholder="Введіть" value="tymchenko@mail.ua">
               </div>
             </div>
 
-            <div class="documents-container">
+            <div class="documents-container mt-24">
               <div class="documents-item selected-item" style="max-width: 474px;">
                 <div class="form-label">Паспорт громадянина</div>
                 <div class="documents-item_wrapp">
                   <div class="documents-item_preview user-preview">
-                    <img src="img/specialist-avatar.png" alt="">
+                    <img src="img/profile-avatar.png" alt="">
                   </div>
                   <div class="documents-item_info">
                     <div class="details">
@@ -208,53 +170,52 @@
           </div>
         </div>
 
-        <div class="order-nav">
-          <div class="order-nav_container">
-            <div class="order-nav_heading mb-24">Інформація</div>
-            <div class="order-nav_inform">
-              <div class="avatar">
-                <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.5625 1.0625V2H6.9375V1.0625C6.9375 0.757812 7.17188 0.5 7.5 0.5C7.80469 0.5 8.0625 0.757812 8.0625 1.0625V2H9C9.82031 2 10.5 2.67969 10.5 3.5V3.875V5V11C10.5 11.8438 9.82031 12.5 9 12.5H1.5C0.65625 12.5 0 11.8438 0 11V5V3.875V3.5C0 2.67969 0.65625 2 1.5 2H2.4375V1.0625C2.4375 0.757812 2.67188 0.5 3 0.5C3.30469 0.5 3.5625 0.757812 3.5625 1.0625ZM1.125 5V11C1.125 11.2109 1.28906 11.375 1.5 11.375H9C9.1875 11.375 9.375 11.2109 9.375 11V5H1.125Z" fill="#BFC8E5"/>
-                </svg>                  
-              </div>
-              <div class="info">
-                <div class="heading">10.10.2023</div>
-                <div class="descr">09:15</div>
-              </div>
+
+        <div class="content-nav ns">
+          <div class="content-nav_item status-process">  
+            <div class="icon">
+              <img class="icon-active" src="img/nav-user-icon-active.svg" alt="user-icon">
+              <img class="icon-ready" src="img/nav-user-icon-ready.svg" alt="user-icon">
             </div>
-            <div class="order-nav_inform">
-              <div class="avatar">
-                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6 0.5C6.84375 0.5 7.59375 0.992188 7.96875 1.71875C8.74219 1.46094 9.63281 1.64844 10.2422 2.25781C10.8516 2.86719 11.0391 3.75781 10.7812 4.53125C11.5078 4.90625 12 5.65625 12 6.5C12 7.36719 11.5078 8.11719 10.7812 8.49219C11.0391 9.26562 10.8516 10.1328 10.2422 10.7422C9.63281 11.3516 8.74219 11.5391 7.96875 11.3047C7.59375 12.0312 6.84375 12.5 6 12.5C5.13281 12.5 4.38281 12.0312 4.00781 11.3047C3.23438 11.5391 2.36719 11.3516 1.75781 10.7422C1.14844 10.1328 0.960938 9.26562 1.19531 8.49219C0.46875 8.11719 0 7.36719 0 6.5C0 5.65625 0.46875 4.90625 1.19531 4.53125C0.960938 3.75781 1.14844 2.86719 1.75781 2.25781C2.36719 1.64844 3.23438 1.46094 4.00781 1.71875C4.38281 0.992188 5.13281 0.5 6 0.5ZM8.64844 5.39844C8.85938 5.1875 8.85938 4.83594 8.64844 4.625C8.41406 4.39062 8.0625 4.39062 7.85156 4.625L5.25 7.22656L4.14844 6.125C3.91406 5.89062 3.5625 5.89062 3.35156 6.125C3.11719 6.33594 3.11719 6.6875 3.35156 6.89844L4.85156 8.39844C5.0625 8.63281 5.41406 8.63281 5.64844 8.39844L8.64844 5.39844Z" fill="#BFC8E5"/>
-                </svg>                  
-              </div>
-              <div class="info">
-                <div class="heading">115</div>
-                <div class="descr">Виконаних заявок</div>
-              </div>
+            <span>Дані профілю</span>
+          </div>
+          <div class="content-nav_item status-ready">  
+            <div class="icon">
+              <img class="icon-active" src="img/nav-subscribe-icon-active.svg" alt="subscribe-icon">
+              <img class="icon-ready" src="img/nav-subscribe-icon-black.svg" alt="subscribe-icon">
             </div>
+            <span>Підписка</span>
+            <svg style="margin-left: auto;" width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 0.625C8.38281 0.625 8.73828 0.84375 8.92969 1.17188L14.8359 11.2344C15.0273 11.5898 15.0273 12 14.8359 12.3281C14.6445 12.6836 14.2891 12.875 13.9062 12.875H2.09375C1.68359 12.875 1.32812 12.6836 1.13672 12.3281C0.945312 12 0.945312 11.5898 1.13672 11.2344L7.04297 1.17188C7.23438 0.84375 7.58984 0.625 8 0.625ZM8 4.125C7.61719 4.125 7.34375 4.42578 7.34375 4.78125V7.84375C7.34375 8.22656 7.61719 8.5 8 8.5C8.35547 8.5 8.65625 8.22656 8.65625 7.84375V4.78125C8.65625 4.42578 8.35547 4.125 8 4.125ZM8.875 10.25C8.875 9.78516 8.46484 9.375 8 9.375C7.50781 9.375 7.125 9.78516 7.125 10.25C7.125 10.7422 7.50781 11.125 8 11.125C8.46484 11.125 8.875 10.7422 8.875 10.25Z" fill="#FBBF24"/>
+            </svg>              
           </div>
-          <div class="order-nav_specialist-order">
-            <button class="specialist-btn mb-8">
-              <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.3125 1.40625C8.3125 1.05078 8.58594 0.75 8.96875 0.75H13.3164C13.6992 0.75 13.9727 1.05078 13.9727 1.40625V5.78125C13.9727 6.16406 13.6992 6.4375 13.3164 6.4375C12.9609 6.4375 12.6602 6.16406 12.6602 5.78125V2.99219L6.5625 9.08984C6.31641 9.36328 5.90625 9.36328 5.66016 9.08984C5.38672 8.84375 5.38672 8.43359 5.66016 8.16016L11.7578 2.0625H8.96875C8.58594 2.0625 8.3125 1.78906 8.3125 1.40625ZM1.96875 1.625H5.46875C5.82422 1.625 6.125 1.92578 6.125 2.28125C6.125 2.66406 5.82422 2.9375 5.46875 2.9375H1.96875C1.58594 2.9375 1.3125 3.23828 1.3125 3.59375V12.7812C1.3125 13.1641 1.58594 13.4375 1.96875 13.4375H11.1562C11.5117 13.4375 11.8125 13.1641 11.8125 12.7812V9.28125C11.8125 8.92578 12.0859 8.625 12.4688 8.625C12.8242 8.625 13.125 8.92578 13.125 9.28125V12.7812C13.125 13.875 12.2227 14.75 11.1562 14.75H1.96875C0.875 14.75 0 13.875 0 12.7812V3.59375C0 2.52734 0.875 1.625 1.96875 1.625Z" fill="#4338CA"/>
-              </svg>                            
-              Заявки спеціаліста
-            </button>
-            <div class="descr">Перегляньте список призначених заявок</div>
+          <div class="content-nav_item status-ready">  
+            <div class="icon">
+              <img class="icon-active" src="img/nav-pay-icon-active.svg" alt="pay-icon">
+              <img class="icon-ready" src="img/nav-pay-icon-black.svg" alt="pay-icon">
+            </div>
+            <span>Отримання оплати</span>
           </div>
-          <div class="order-nav_specialist-order">
-            <button class="specialist-btn mb-8">
-              <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.6875 5.5625C5.6875 5.86328 5.71484 6.13672 5.76953 6.41016C5.82422 6.62891 5.76953 6.84766 5.60547 7.01172L1.3125 11.3047V13.4375H3.0625V12.3438C3.0625 11.9883 3.33594 11.6875 3.71875 11.6875H4.8125V10.5938C4.8125 10.2383 5.08594 9.9375 5.46875 9.9375H6.94531L7.73828 9.14453C7.90234 8.98047 8.12109 8.92578 8.33984 8.98047C8.61328 9.03516 8.88672 9.0625 9.1875 9.0625C11.1016 9.0625 12.6875 7.50391 12.6875 5.5625C12.6875 3.64844 11.1016 2.0625 9.1875 2.0625C7.24609 2.0625 5.6875 3.64844 5.6875 5.5625ZM9.1875 0.75C11.8398 0.75 14 2.91016 14 5.5625C14 8.24219 11.8398 10.375 9.1875 10.375C8.91406 10.375 8.66797 10.375 8.42188 10.3203L7.68359 11.0586C7.54688 11.1953 7.38281 11.25 7.21875 11.25H6.125V12.3438C6.125 12.7266 5.82422 13 5.46875 13H4.375V14.0938C4.375 14.4766 4.07422 14.75 3.71875 14.75H0.65625C0.273438 14.75 0 14.4766 0 14.0938V11.0312C0 10.8672 0.0546875 10.7031 0.191406 10.5664L4.42969 6.32812C4.375 6.08203 4.375 5.83594 4.375 5.5625C4.375 2.91016 6.50781 0.75 9.1875 0.75ZM10.0625 5.5625C9.57031 5.5625 9.1875 5.17969 9.1875 4.6875C9.1875 4.22266 9.57031 3.8125 10.0625 3.8125C10.5273 3.8125 10.9375 4.22266 10.9375 4.6875C10.9375 5.17969 10.5273 5.5625 10.0625 5.5625Z" fill="#4338CA"/>
-              </svg>                                         
-              Відновити пароль спеціаліста
-            </button>
-            <div class="descr">Посилання для відновлення буде відправлено на Email спеціаліста.</div>
+          <div class="content-nav_item status-ready">  
+            <div class="icon">
+              <img class="icon-active" src="img/nav-settings-icon-active.svg" alt="settings-icon">
+              <img class="icon-ready" src="img/nav-settings-icon-black.svg" alt="settings-icon">
+            </div>
+            <span>Сповіщення</span>
           </div>
-          <button type="button" class="return-btn w-full">
-            Видалити спеціаліста
-          </button>
+          <div class="content-nav_item status-ready">  
+            <div class="icon">
+              <img class="icon-active" src="img/nav-password-icon-active.svg" alt="password-icon">
+              <img class="icon-ready" src="img/nav-password-icon-black.svg" alt="password-icon">
+            </div>
+            <span>Пароль</span>
+          </div>
+          <div class="content-nav_item status-ready">  
+            <div class="icon">
+              <img class="icon-ready" src="img/nav-exit-icon.svg" alt="exit-icon">
+            </div>
+            <span>Вийти</span>
+          </div>
         </div>
       </div>
     </div>

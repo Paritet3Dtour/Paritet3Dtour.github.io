@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content_language" content="uk">
+  <meta name="description" content="Certi.Car">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <title>Certi.Car</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="cabinet-page">
+  <header class="header">
+    <div class="mainContainer">
+      <div class="header_wrapp">
+        <a href="index.html" class="header_logo"></a>
+        <nav class="header_nav">
+          <a href="#" class="nav-item">
+            <div class="icon">
+              <div class="icon-count">1</div>
+              <img class="icon-default" src="img/menu-icon-orders.svg" alt="orders-icon">   
+              <img class="icon-active" src="img/menu-icon-orders-active.svg" alt="orders-icon">   
+            </div>
+            Заявки
+          </a>
+          <a href="#" class="nav-item">
+            <div class="icon">
+              <img class="icon-default" src="img/menu-icon-journal.svg" alt="journal-icon">       
+              <img class="icon-active" src="img/menu-icon-journal-active.svg" alt="journal-icon">           
+            </div>
+            Журнал
+          </a>
+          <a href="#" class="nav-item">
+            <div class="icon">
+              <img class="icon-default" src="img/menu-icon-clients.svg" alt="clients-icon">      
+              <img class="icon-active" src="img/menu-icon-clients-active.svg" alt="clients-icon">                        
+            </div>
+            Клієнти
+          </a>
+          <a href="#" class="nav-item">
+            <div class="icon">
+              <img class="icon-default" src="img/menu-icon-cars.svg" alt="cars-icon">             
+              <img class="icon-active" src="img/menu-icon-cars-active.svg" alt="cars-icon">             
+            </div>
+            Автомобілі
+          </a>
+          <a href="#" class="nav-item">
+            <div class="icon">
+              <img class="icon-default" src="img/menu-icon-users.svg" alt="users-icon">   
+              <img class="icon-active" src="img/menu-icon-users-active.svg" alt="users-icon">                                  
+            </div>
+            Користувачі
+          </a>
+          <a href="#" class="nav-item">
+            <div class="icon">
+              <img class="icon-default" src="img/menu-icon-settings.svg" alt="settings-icon">   
+              <img class="icon-active" src="img/menu-icon-settings-active.svg" alt="settings-icon">                              
+            </div>
+            Налаштування
+          </a>
+        </nav>
+        <div class="header_profile">
+          <div class="header_profile_content">
+            <div class="name">Marina Aleksandrova</div>
+            <div class="role">Admin</div>
+          </div>
+          <div class="header_profile_avatar" style="background-image: url('img/profile-avatar.png');">
+            <div class="icon-count">8</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="top-section top-steps">
+    <div class="mainContainer">
+      <div class="top-section_wrapp" style="min-height: auto;">
+        <div class="title-container">
+          <div class="title">Налаштування отримання оплати</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <div class="mainContainer">
+      <div class="content-section_wrapp">
+        <div class="content-main">
+          <div class="content-container">
+            <div class="content-top">
+              <div class="content-heading">Вартість послуг</div>
+              <div class="content-descr">Вкажіть вартість послуги сертифікації для кожного із типів транспорту</div>
+            </div>
+            <div class="order-form">
+              <div class="form-group column-inputs" style="margin-bottom: 40px;">
+                <div class="form-label required">Тип ТЗ</div>
+                <input type="text" placeholder="Введіть" value="Легковий автомобіль">
+                <input type="text" placeholder="Введіть" value="Напівпричіп">
+                <input type="text" placeholder="Введіть" value="Вантажівка до 15т">
+                <input type="text" placeholder="Введіть" value="Вантажівка до 40т">
+              </div>
+              <div class="form-group column-inputs">
+                <div class="form-label required">Вартість, грн</div>
+                <input type="text" placeholder="Введіть" value="4300">
+                <input type="text" placeholder="Введіть" value="1800">
+                <input type="text" placeholder="Введіть" value="7100">
+                <input type="text" placeholder="Введіть" value="9600">
+              </div>
+              <div class="form-group column-inputs">
+                <div class="form-label required">Посилання на оплату/коментар</div>
+                <input type="text" placeholder="Введіть" value="https:/monobank.ua/pay/027350732058">
+                <input type="text" placeholder="Введіть" value="https:/monobank.ua/pay/02735073234">
+                <input type="text" placeholder="Введіть" value="4141 6758 6345 6723">
+                <input type="text" placeholder="Введіть" value="4141 6758 6345 6723">
+              </div>
+              <div class="content-heading w-full" style="margin-bottom: 20px;">Доступні методи оплати</div>
+              <div class="check-group">
+                <div class="check-input">
+                  <input type="checkbox" name="check1" id="check1" checked>
+                  <div class="label">Картою</div>
+                </div>
+                <div class="check-input">
+                  <input type="checkbox" name="check2" id="check2" checked>
+                  <div class="label">Готівкою</div>
+                </div>
+                <div class="check-input">
+                  <input type="checkbox" name="check3" id="check3" checked>
+                  <div class="label">Банківський переказ</div>
+                </div>
+              </div>
+              <div class="content-heading w-full" style="margin-top: 40px;">Дані для оплати</div>
+              <div class="content-descr w-full" style="margin-bottom: 20px; margin-top: 4px;">Вкажіть необхідні дані для здійснення оплати</div>
+              <div class="form-group w-full">
+                <div class="form-label required">Назва юридичної особи</div>
+                <input type="text" placeholder="Введіть назву">
+              </div>
+              <div class="form-group">
+                <div class="form-label required">Код ЭДРПОУ </div>
+                <input type="text" placeholder="Введіть код ЭДРПОУ">
+              </div>
+              <div class="form-group">
+                <div class="form-label required">IBAN</div>
+                <input type="text" placeholder="Введіть IBAN">
+              </div>
+              <div class="form-group">
+                <div class="form-label required">МФО банку</div>
+                <input type="text" placeholder="Введіть МФО банку">
+              </div>
+            </div>
+
+          </div>
+          <div class="content-links">
+            <button class="main-btn">Зберегти дані</button>
+          </div>
+        </div>
+
+
+        <div class="content-nav ns">
+          <div class="content-nav_item status-ready">  
+            <div class="icon">
+              <img class="icon-active" src="img/nav-user-icon-active.svg" alt="user-icon">
+              <img class="icon-ready" src="img/nav-user-icon-ready.svg" alt="user-icon">
+            </div>
+            <span>Дані профілю</span>
+          </div>
+          <div class="content-nav_item status-ready">  
+            <div class="icon">
+              <img class="icon-active" src="img/nav-subscribe-icon-active.svg" alt="subscribe-icon">
+              <img class="icon-ready" src="img/nav-subscribe-icon-black.svg" alt="subscribe-icon">
+            </div>
+            <span>Підписка</span>
+            <svg style="margin-left: auto;" width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 0.625C8.38281 0.625 8.73828 0.84375 8.92969 1.17188L14.8359 11.2344C15.0273 11.5898 15.0273 12 14.8359 12.3281C14.6445 12.6836 14.2891 12.875 13.9062 12.875H2.09375C1.68359 12.875 1.32812 12.6836 1.13672 12.3281C0.945312 12 0.945312 11.5898 1.13672 11.2344L7.04297 1.17188C7.23438 0.84375 7.58984 0.625 8 0.625ZM8 4.125C7.61719 4.125 7.34375 4.42578 7.34375 4.78125V7.84375C7.34375 8.22656 7.61719 8.5 8 8.5C8.35547 8.5 8.65625 8.22656 8.65625 7.84375V4.78125C8.65625 4.42578 8.35547 4.125 8 4.125ZM8.875 10.25C8.875 9.78516 8.46484 9.375 8 9.375C7.50781 9.375 7.125 9.78516 7.125 10.25C7.125 10.7422 7.50781 11.125 8 11.125C8.46484 11.125 8.875 10.7422 8.875 10.25Z" fill="#FBBF24"/>
+            </svg>              
+          </div>
+          <div class="content-nav_item status-process">  
+            <div class="icon">
+              <img class="icon-active" src="img/nav-pay-icon-active.svg" alt="pay-icon">
+              <img class="icon-ready" src="img/nav-pay-icon-black.svg" alt="pay-icon">
+            </div>
+            <span>Отримання оплати</span>
+          </div>
+          <div class="content-nav_item status-ready">  
+            <div class="icon">
+              <img class="icon-active" src="img/nav-settings-icon-active.svg" alt="settings-icon">
+              <img class="icon-ready" src="img/nav-settings-icon-black.svg" alt="settings-icon">
+            </div>
+            <span>Сповіщення</span>
+          </div>
+          <div class="content-nav_item status-ready">  
+            <div class="icon">
+              <img class="icon-active" src="img/nav-password-icon-active.svg" alt="password-icon">
+              <img class="icon-ready" src="img/nav-password-icon-black.svg" alt="password-icon">
+            </div>
+            <span>Пароль</span>
+          </div>
+          <div class="content-nav_item status-ready">  
+            <div class="icon">
+              <img class="icon-ready" src="img/nav-exit-icon.svg" alt="exit-icon">
+            </div>
+            <span>Вийти</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

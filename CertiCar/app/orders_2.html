@@ -295,7 +295,7 @@
               </svg>                
               Видати сертифікат
             </button>
-            <button class="cancel-btn w-full">
+            <button class="cancel-btn w-full popup-open" data-target="refuse-certificate-popup">
               <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.43359 1.49609L6.15234 4.77734L9.40625 8.03125C9.67969 8.27734 9.67969 8.6875 9.40625 8.93359C9.16016 9.20703 8.75 9.20703 8.50391 8.93359L5.22266 5.67969L1.96875 8.93359C1.72266 9.20703 1.3125 9.20703 1.06641 8.93359C0.792969 8.6875 0.792969 8.27734 1.06641 8.00391L4.32031 4.75L1.06641 1.49609C0.792969 1.25 0.792969 0.839844 1.06641 0.566406C1.3125 0.320312 1.72266 0.320312 1.99609 0.566406L5.25 3.84766L8.50391 0.59375C8.75 0.320312 9.16016 0.320312 9.43359 0.59375C9.67969 0.839844 9.67969 1.25 9.43359 1.49609Z" fill="#EF746D"/>
               </svg>                            
@@ -340,11 +340,54 @@
       </div>
     </div>
   </div>
+</div>
 
+<div id="refuse-certificate-popup" class="popup_container click-obj">
+  <div class="popup_background click-item popup-close" data-action="popup-close"></div>
+  <div class="popup refuse-certificate-popup">
+    <div class="popup-content">
+      <div class="refuse-certificate-container">
+        <div class="top-group">
+          <div class="heading">Відмовити у видачі сертифікату</div>
+          <div class="descr">Підтвердіть відмову видачі сертифікату та вкажіть причину відмови. </div>
+        </div>
+        <div class="form-group mb-24">
+          <div class="form-label required">Вкажіть причину відмови</div>
+          <select name="" id="">
+            <option value="" disabled selected hidden>Оберіть зі списку</option>
+            <option value="">тип 1</option>
+            <option value="">тип 2</option>
+          </select>
+        </div>
+        <div class="form-group mb-24">
+          <div class="form-label">Додати коментар</div>
+          <textarea placeholder="Введіть текст"></textarea>
+        </div>
+
+       
+      <div class="popup-nav">
+        <button class="return-btn popup-close " style="background-color: #F8F8F8; margin-right: auto;">Скасувати відмову</button>
+        <button class="main-btn">Підтвердити відмову</button>
+      </div>
+
+    </div>
+  </div>
 </div>
 
 
 <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" crossorigin="anonymous"></script>
+<script>
+  $('.popup-open').click(function(e){
+    e.preventDefault();
+
+    let targetPopup = $(this).attr('data-target');
+    $(`.popup_container#${targetPopup}`).addClass('active');
+  });
+
+  $('.popup_container .popup-close').click(function(){
+    $(this).closest($('.popup_container')).removeClass('active');
+  });
+</script>
 <script>
   $('.edit-container_toggler').click(function(){
     let container = $(this).closest('.edit-container');
