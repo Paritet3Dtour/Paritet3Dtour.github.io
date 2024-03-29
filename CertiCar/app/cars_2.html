@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content_language" content="uk">
+  <meta name="description" content="Certi.Car">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <title>Certi.Car</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="cabinet-page">
+  <header class="header">
+    <div class="mainContainer">
+      <div class="header_wrapp">
+        <a href="index.html" class="header_logo"></a>
+        <nav class="header_nav">
+          <a href="#" class="nav-item">
+            <div class="icon">
+              <div class="icon-count">1</div>
+              <img class="icon-default" src="img/menu-icon-orders.svg" alt="orders-icon">   
+              <img class="icon-active" src="img/menu-icon-orders-active.svg" alt="orders-icon">   
+            </div>
+            Заявки
+          </a>
+          <a href="#" class="nav-item">
+            <div class="icon">
+              <img class="icon-default" src="img/menu-icon-journal.svg" alt="journal-icon">       
+              <img class="icon-active" src="img/menu-icon-journal-active.svg" alt="journal-icon">           
+            </div>
+            Журнал
+          </a>
+          <a href="#" class="nav-item">
+            <div class="icon">
+              <img class="icon-default" src="img/menu-icon-clients.svg" alt="clients-icon">      
+              <img class="icon-active" src="img/menu-icon-clients-active.svg" alt="clients-icon">                        
+            </div>
+            Клієнти
+          </a>
+          <a href="#" class="nav-item active">
+            <div class="icon">
+              <img class="icon-default" src="img/menu-icon-cars.svg" alt="cars-icon">             
+              <img class="icon-active" src="img/menu-icon-cars-active.svg" alt="cars-icon">             
+            </div>
+            Автомобілі
+          </a>
+          <a href="#" class="nav-item">
+            <div class="icon">
+              <img class="icon-default" src="img/menu-icon-users.svg" alt="users-icon">   
+              <img class="icon-active" src="img/menu-icon-users-active.svg" alt="users-icon">                                  
+            </div>
+            Користувачі
+          </a>
+          <a href="#" class="nav-item">
+            <div class="icon">
+              <img class="icon-default" src="img/menu-icon-settings.svg" alt="settings-icon">   
+              <img class="icon-active" src="img/menu-icon-settings-active.svg" alt="settings-icon">                              
+            </div>
+            Налаштування
+          </a>
+        </nav>
+        <div class="header_profile">
+          <div class="header_profile_content">
+            <div class="name">Marina Aleksandrova</div>
+            <div class="role">Admin</div>
+          </div>
+          <div class="header_profile_avatar" style="background-image: url('img/profile-avatar.png');">
+            <div class="icon-count">8</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="top-section top-steps">
+    <div class="mainContainer">
+      <div class="top-section_wrapp">
+        <div class="title-container">
+          <div class="title">Додати новий автомобіль</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <div class="mainContainer">
+      <div class="content-section_wrapp">
+        <div class="content-main">
+          <div class="content-container">
+            <div class="content-top">
+              <div class="content-heading">Додати новий автомобіль</div>
+              <div class="content-descr">Вкажіть основні дані транспортного засобу</div>
+            </div>
+
+            <div class="order-form mb-0">
+              <div class="form-group">
+                <div class="form-label required">Тип транспортного засобу</div>
+                <select name="" id="">
+                  <option value="" selected>Легковий автомобіль</option>
+                  <option value="">тип 2</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <div class="form-label required">Лабораторія</div>
+                <select name="" id="">
+                  <option value="" disabled selected hidden>Назва лабораторії</option>
+                  <option value="">тип 1</option>
+                  <option value="">тип 2</option>
+                </select>
+              </div>
+              <div class="form-groups">
+                <div class="form-label required">Дата та час додавання автомобіля</div>
+                <div class="form-group">
+                  <div class="date-field">
+                    <input type="text" value="10.10.23" placeholder="Оберіть дату" required="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="time-field">
+                    <input type="text" value="12:00" placeholder="Оберіть час" required="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="vin-container">
+              <div class="form-label required">VIN-код</div>
+              <div class="vin-container_wrapp">
+                <div class="vin-container_list">
+                  <div class="vin-container_items">
+                    <div class="vin-container_item">
+                      <div class="number">1</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">2</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">3</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">4</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">5</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">6</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">7</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">8</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">9</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">10</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">11</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">12</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">13</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">14</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">15</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">16</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">17</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">18</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">19</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">20</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">21</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">22</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">23</div>
+                      <div class="value">V</div>
+                    </div>
+                    <div class="vin-container_item">
+                      <div class="number">24</div>
+                      <div class="value">V</div>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="vin-container_submit second-btn">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.75 5.375C9.75 6.45312 9.39844 7.46094 8.8125 8.25781L11.7656 11.2344C12.0703 11.5156 12.0703 12.0078 11.7656 12.2891C11.4844 12.5938 10.9922 12.5938 10.7109 12.2891L7.73438 9.3125C6.9375 9.92188 5.92969 10.25 4.875 10.25C2.17969 10.25 0 8.07031 0 5.375C0 2.70312 2.17969 0.5 4.875 0.5C7.54688 0.5 9.75 2.70312 9.75 5.375ZM4.875 8.75C6.07031 8.75 7.17188 8.11719 7.78125 7.0625C8.39062 6.03125 8.39062 4.74219 7.78125 3.6875C7.17188 2.65625 6.07031 2 4.875 2C3.65625 2 2.55469 2.65625 1.94531 3.6875C1.33594 4.74219 1.33594 6.03125 1.94531 7.0625C2.55469 8.11719 3.65625 8.75 4.875 8.75Z" fill="#4338CA"/>
+                  </svg>                    
+                  Ідентифікувати ТЗ
+                </button>
+              </div>
+              <div class="check-input">
+                <input type="checkbox" name="vin-type" id="vin-type">
+                <div class="label">Нестандартний код</div>
+              </div>
+            </div>
+            
+
+          </div>
+          <div class="content-links">
+            <button class="return-btn">Скасувати додавання</button>
+            <button class="main-btn white-btn">Зберегти як чернетку</button>
+            <button class="main-btn grey-btn">Далі: Фотографії ТЗ</button>
+          </div>
+        </div>
+
+
+        <div class="content-nav">
+          <div class="content-nav_item status-process">  
+            <div class="icon">
+              <img class="icon-default" src="img/nav-car-icon.svg" alt="car-icon">
+              <img class="icon-active" src="img/nav-car-icon-active.svg" alt="car-icon">
+              <img class="icon-ready" src="img/nav-car-icon-black.svg" alt="car-icon">
+            </div>
+            <span>Основні дані</span>
+          </div>
+          <div class="content-nav_item">  
+            <div class="icon">
+              <img class="icon-default" src="img/nav-photo-icon.svg" alt="photo-icon">
+            </div>
+            <span>Фотографії ТЗ</span>
+          </div>
+          <div class="content-nav_item">  
+            <div class="icon">
+              <img class="icon-default" src="img/nav-confirmation-icon.svg" alt="confirmation-icon">
+              <img class="icon-active" src="img/nav-confirmation-icon-active.svg" alt="confirmation-icon">
+              <img class="icon-ready" src="img/nav-confirmation-icon-black.svg" alt="confirmation-icon">
+            </div>
+            <span>Первинний огляд ТЗ</span>
+          </div>
+          <div class="content-nav_item">  
+            <div class="icon">
+              <img class="icon-default" src="img/nav-documents-icon.svg" alt="documents-icon">
+              <img class="icon-active" src="img/nav-documents-icon-active.svg" alt="documents-icon">
+              <img class="icon-ready" src="img/nav-documents-icon-black.svg" alt="documents-icon">
+            </div>
+            <span>Загальні параметри</span>
+          </div>
+          <div class="content-nav_item">  
+            <div class="icon">
+              <img class="icon-default" src="img/nav-settings-icon.svg" alt="settings-icon">
+            </div>
+            <span>Технічні параметри</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

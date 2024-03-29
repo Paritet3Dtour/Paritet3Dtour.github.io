@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content_language" content="uk">
+  <meta name="description" content="Certi.Car">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <title>Certi.Car</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="cabinet-page">
+  <header class="header">
+    <div class="mainContainer">
+      <div class="header_wrapp">
+        <a href="index.html" class="header_logo"></a>
+        <nav class="header_nav">
+          <a href="#" class="nav-item">
+            <div class="icon">
+              <div class="icon-count">1</div>
+              <img class="icon-default" src="img/menu-icon-orders.svg" alt="orders-icon">   
+              <img class="icon-active" src="img/menu-icon-orders-active.svg" alt="orders-icon">   
+            </div>
+            Заявки
+          </a>
+          <a href="#" class="nav-item active">
+            <div class="icon">
+              <img class="icon-default" src="img/menu-icon-journal.svg" alt="journal-icon">       
+              <img class="icon-active" src="img/menu-icon-journal-active.svg" alt="journal-icon">           
+            </div>
+            Журнал
+          </a>
+          <a href="#" class="nav-item">
+            <div class="icon">
+              <img class="icon-default" src="img/menu-icon-clients.svg" alt="clients-icon">      
+              <img class="icon-active" src="img/menu-icon-clients-active.svg" alt="clients-icon">                        
+            </div>
+            Клієнти
+          </a>
+          <a href="#" class="nav-item">
+            <div class="icon">
+              <img class="icon-default" src="img/menu-icon-cars.svg" alt="cars-icon">             
+              <img class="icon-active" src="img/menu-icon-cars-active.svg" alt="cars-icon">             
+            </div>
+            Автомобілі
+          </a>
+          <a href="#" class="nav-item">
+            <div class="icon">
+              <img class="icon-default" src="img/menu-icon-users.svg" alt="users-icon">   
+              <img class="icon-active" src="img/menu-icon-users-active.svg" alt="users-icon">                                  
+            </div>
+            Користувачі
+          </a>
+          <a href="#" class="nav-item">
+            <div class="icon">
+              <img class="icon-default" src="img/menu-icon-settings.svg" alt="settings-icon">   
+              <img class="icon-active" src="img/menu-icon-settings-active.svg" alt="settings-icon">                              
+            </div>
+            Налаштування
+          </a>
+        </nav>
+        <div class="header_profile">
+          <div class="header_profile_content">
+            <div class="name">Marina Aleksandrova</div>
+            <div class="role">Admin</div>
+          </div>
+          <div class="header_profile_avatar" style="background-image: url('img/profile-avatar.png');">
+            <div class="icon-count">8</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="orders-section">
+    <div class="mainContainer">
+      <div class="orders-section_wrapp">
+        <div class="orders-section_content">
+          <div class="top-section_wrapp mb-24">
+            <div class="title-container">
+              <div class="title">Журнал <span class="count">8</span></div>
+            </div>
+            <button class="main-btn popup-open" data-target="new-journal-popup">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.62688 15.75L6.22125 9L10.3275 12.6506C10.4561 12.7649 10.6091 12.8481 10.7749 12.8939C10.9407 12.9397 11.1148 12.947 11.2837 12.915C11.4543 12.8831 11.6151 12.8121 11.7537 12.7077C11.8923 12.6033 12.0048 12.4682 12.0825 12.3131L15.1875 6.13125L14.1637 5.625L11.0756 11.8125L6.96938 8.16188C6.84405 8.04533 6.6938 7.95891 6.53004 7.9092C6.36628 7.85949 6.19334 7.84779 6.02437 7.875C5.85752 7.90268 5.69905 7.96764 5.56076 8.06502C5.42246 8.16241 5.30791 8.28973 5.22563 8.4375L2.25 14.0625V1.125H1.125V15.75C1.125 16.0484 1.24353 16.3345 1.4545 16.5455C1.66548 16.7565 1.95163 16.875 2.25 16.875H16.875V15.75H2.62688Z" fill="white"/>
+              </svg>                
+              Сформувати звіт
+            </button>
+          </div>
+          <div class="export-filter">
+            <div class="heading">Експортувати:</div>
+            <div class="form-group">
+              <div class="calendar-field prefix-field">
+                <span class="label-descr">з</span>
+                <input type="text" placeholder="Оберіть дату" value="10.12.2023">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="calendar-field prefix-field">
+                <span class="label-descr">по</span>
+                <input type="text" placeholder="Оберіть дату" value="10.12.2023">
+              </div>
+            </div>
+            <button class="main-btn blue-btn">
+              <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.83398 9V15C3.83398 15.3978 3.99202 15.7794 4.27332 16.0607C4.55463 16.342 4.93616 16.5 5.33398 16.5H14.334C14.7318 16.5 15.1133 16.342 15.3946 16.0607C15.6759 15.7794 15.834 15.3978 15.834 15V9" stroke="#4338CA" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12.834 4.5L9.83398 1.5L6.83398 4.5" stroke="#4338CA" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.83398 1.5V11.25" stroke="#4338CA" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                
+              Експортувати
+            </button>
+          </div>
+          <div class="orders-section_list">
+            <div class="orders-section_item">
+              <a href="#" class="orders-section_item_link"></a>
+              <div class="orders-section_item_main">
+                <div class="orders-section_item_top">
+                  <div class="orders-section_item_name">Заявка М1</div>
+                  <div class="orders-section_item_code">20933092329364</div>
+                </div>
+                <div class="orders-section_item_info">
+                  <div class="orders-section_item_company">
+                    <div class="logo" style="background-image: url('img/company-logo.png');"></div>
+                    <span>Заколот</span>
+                  </div>
+                  <div class="orders-section_item_manager">
+                    <div class="avatar" style="background-image: url('img/manager-avatar.png');"></div>
+                    <span>Коваленко Тетяна Андріївна</span>
+                  </div>
+                  <div class="orders-section_item_id">
+                    Знегеровано: <span>10.10.2023 09:15</span>
+                  </div>
+                  <div class="orders-section_item_id">
+                    Підписано: <span>10.10.2023 09:15</span>
+                  </div>
+                </div>
+              </div>
+              <div class="orders-section_item_details">
+                <div class="orders-section_item_toggler">
+                  <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 9L5 5L1 1" stroke="#4338CA" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>                    
+                </div>
+                <div class="orders-section_item_date">
+                  10.10.2023 09:15
+                </div>
+              </div>
+            </div>
+            <div class="orders-section_item">
+              <a href="#" class="orders-section_item_link"></a>
+              <div class="orders-section_item_main">
+                <div class="orders-section_item_top">
+                  <div class="orders-section_item_name">Заявка М1</div>
+                  <div class="orders-section_item_code">20933092329364</div>
+                </div>
+                <div class="orders-section_item_info">
+                  <div class="orders-section_item_company">
+                    <div class="logo" style="background-image: url('img/company-logo.png');"></div>
+                    <span>Заколот</span>
+                  </div>
+                  <div class="orders-section_item_manager">
+                    <div class="avatar" style="background-image: url('img/manager-avatar.png');"></div>
+                    <span>Коваленко Тетяна Андріївна</span>
+                  </div>
+                  <div class="orders-section_item_id">
+                    Знегеровано: <span>10.10.2023 09:15</span>
+                  </div>
+                  <div class="orders-section_item_id">
+                    Підписано: <span>10.10.2023 09:15</span>
+                  </div>
+                </div>
+              </div>
+              <div class="orders-section_item_details">
+                <div class="orders-section_item_toggler">
+                  <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 9L5 5L1 1" stroke="#4338CA" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>                    
+                </div>
+                <div class="orders-section_item_date">
+                  10.10.2023 09:15
+                </div>
+              </div>
+            </div>
+            <div class="orders-section_item">
+              <a href="#" class="orders-section_item_link"></a>
+              <div class="orders-section_item_main">
+                <div class="orders-section_item_top">
+                  <div class="orders-section_item_name">Заявка М1</div>
+                  <div class="orders-section_item_code">20933092329364</div>
+                </div>
+                <div class="orders-section_item_info">
+                  <div class="orders-section_item_company">
+                    <div class="logo" style="background-image: url('img/company-logo.png');"></div>
+                    <span>Заколот</span>
+                  </div>
+                  <div class="orders-section_item_manager">
+                    <div class="avatar" style="background-image: url('img/manager-avatar.png');"></div>
+                    <span>Коваленко Тетяна Андріївна</span>
+                  </div>
+                  <div class="orders-section_item_id">
+                    Знегеровано: <span>10.10.2023 09:15</span>
+                  </div>
+                  <div class="orders-section_item_id">
+                    Підписано: <span>10.10.2023 09:15</span>
+                  </div>
+                </div>
+              </div>
+              <div class="orders-section_item_details">
+                <div class="orders-section_item_toggler">
+                  <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 9L5 5L1 1" stroke="#4338CA" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>                    
+                </div>
+                <div class="orders-section_item_date">
+                  10.10.2023 09:15
+                </div>
+              </div>
+            </div>
+            <div class="orders-section_item">
+              <a href="#" class="orders-section_item_link"></a>
+              <div class="orders-section_item_main">
+                <div class="orders-section_item_top">
+                  <div class="orders-section_item_name">Заявка М1</div>
+                  <div class="orders-section_item_code">20933092329364</div>
+                </div>
+                <div class="orders-section_item_info">
+                  <div class="orders-section_item_company">
+                    <div class="logo" style="background-image: url('img/company-logo.png');"></div>
+                    <span>Заколот</span>
+                  </div>
+                  <div class="orders-section_item_manager">
+                    <div class="avatar" style="background-image: url('img/manager-avatar.png');"></div>
+                    <span>Коваленко Тетяна Андріївна</span>
+                  </div>
+                  <div class="orders-section_item_id">
+                    Знегеровано: <span>10.10.2023 09:15</span>
+                  </div>
+                  <div class="orders-section_item_id">
+                    Підписано: <span>10.10.2023 09:15</span>
+                  </div>
+                </div>
+              </div>
+              <div class="orders-section_item_details">
+                <div class="orders-section_item_toggler">
+                  <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 9L5 5L1 1" stroke="#4338CA" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>                    
+                </div>
+                <div class="orders-section_item_date">
+                  10.10.2023 09:15
+                </div>
+              </div>
+            </div>
+            <div class="orders-section_item">
+              <a href="#" class="orders-section_item_link"></a>
+              <div class="orders-section_item_main">
+                <div class="orders-section_item_top">
+                  <div class="orders-section_item_name">Заявка М1</div>
+                  <div class="orders-section_item_code">20933092329364</div>
+                </div>
+                <div class="orders-section_item_info">
+                  <div class="orders-section_item_company">
+                    <div class="logo" style="background-image: url('img/company-logo.png');"></div>
+                    <span>Заколот</span>
+                  </div>
+                  <div class="orders-section_item_manager">
+                    <div class="avatar" style="background-image: url('img/manager-avatar.png');"></div>
+                    <span>Коваленко Тетяна Андріївна</span>
+                  </div>
+                  <div class="orders-section_item_id">
+                    Знегеровано: <span>10.10.2023 09:15</span>
+                  </div>
+                  <div class="orders-section_item_id">
+                    Підписано: <span>10.10.2023 09:15</span>
+                  </div>
+                </div>
+              </div>
+              <div class="orders-section_item_details">
+                <div class="orders-section_item_toggler">
+                  <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 9L5 5L1 1" stroke="#4338CA" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>                    
+                </div>
+                <div class="orders-section_item_date">
+                  10.10.2023 09:15
+                </div>
+              </div>
+            </div>
+            <div class="orders-section_item">
+              <a href="#" class="orders-section_item_link"></a>
+              <div class="orders-section_item_main">
+                <div class="orders-section_item_top">
+                  <div class="orders-section_item_name">Заявка М1</div>
+                  <div class="orders-section_item_code">20933092329364</div>
+                </div>
+                <div class="orders-section_item_info">
+                  <div class="orders-section_item_company">
+                    <div class="logo" style="background-image: url('img/company-logo.png');"></div>
+                    <span>Заколот</span>
+                  </div>
+                  <div class="orders-section_item_manager">
+                    <div class="avatar" style="background-image: url('img/manager-avatar.png');"></div>
+                    <span>Коваленко Тетяна Андріївна</span>
+                  </div>
+                  <div class="orders-section_item_id">
+                    Знегеровано: <span>10.10.2023 09:15</span>
+                  </div>
+                  <div class="orders-section_item_id">
+                    Підписано: <span>10.10.2023 09:15</span>
+                  </div>
+                </div>
+              </div>
+              <div class="orders-section_item_details">
+                <div class="orders-section_item_toggler">
+                  <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 9L5 5L1 1" stroke="#4338CA" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>                    
+                </div>
+                <div class="orders-section_item_date">
+                  10.10.2023 09:15
+                </div>
+              </div>
+            </div>
+            <div class="orders-section_item">
+              <a href="#" class="orders-section_item_link"></a>
+              <div class="orders-section_item_main">
+                <div class="orders-section_item_top">
+                  <div class="orders-section_item_name">Заявка М1</div>
+                  <div class="orders-section_item_code">20933092329364</div>
+                </div>
+                <div class="orders-section_item_info">
+                  <div class="orders-section_item_company">
+                    <div class="logo" style="background-image: url('img/company-logo.png');"></div>
+                    <span>Заколот</span>
+                  </div>
+                  <div class="orders-section_item_manager">
+                    <div class="avatar" style="background-image: url('img/manager-avatar.png');"></div>
+                    <span>Коваленко Тетяна Андріївна</span>
+                  </div>
+                  <div class="orders-section_item_id">
+                    Знегеровано: <span>10.10.2023 09:15</span>
+                  </div>
+                  <div class="orders-section_item_id">
+                    Підписано: <span>10.10.2023 09:15</span>
+                  </div>
+                </div>
+              </div>
+              <div class="orders-section_item_details">
+                <div class="orders-section_item_toggler">
+                  <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 9L5 5L1 1" stroke="#4338CA" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>                    
+                </div>
+                <div class="orders-section_item_date">
+                  10.10.2023 09:15
+                </div>
+              </div>
+            </div>
+            <div class="orders-section_item">
+              <a href="#" class="orders-section_item_link"></a>
+              <div class="orders-section_item_main">
+                <div class="orders-section_item_top">
+                  <div class="orders-section_item_name">Заявка М1</div>
+                  <div class="orders-section_item_code">20933092329364</div>
+                </div>
+                <div class="orders-section_item_info">
+                  <div class="orders-section_item_company">
+                    <div class="logo" style="background-image: url('img/company-logo.png');"></div>
+                    <span>Заколот</span>
+                  </div>
+                  <div class="orders-section_item_manager">
+                    <div class="avatar" style="background-image: url('img/manager-avatar.png');"></div>
+                    <span>Коваленко Тетяна Андріївна</span>
+                  </div>
+                  <div class="orders-section_item_id">
+                    Знегеровано: <span>10.10.2023 09:15</span>
+                  </div>
+                  <div class="orders-section_item_id">
+                    Підписано: <span>10.10.2023 09:15</span>
+                  </div>
+                </div>
+              </div>
+              <div class="orders-section_item_details">
+                <div class="orders-section_item_toggler">
+                  <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 9L5 5L1 1" stroke="#4338CA" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>                    
+                </div>
+                <div class="orders-section_item_date">
+                  10.10.2023 09:15
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="orders-filters">
+          <div class="heading">Фільтрувати</div>
+          <div class="form-group">
+            <div class="form-label">Назва документа</div>
+            <div class="search-field">
+              <input type="text" placeholder="Почніть вводити">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-label">ІПН/ЭДРПОУ власника</div>
+            <div class="search-field">
+              <input type="text" placeholder="Почніть вводити">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-label">Тип документа</div>
+            <select name="" id="">
+              <option value="" selected="">Всі</option>
+              <option value="">1</option>
+              <option value="">2</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <div class="form-label">Статус підписання</div>
+            <select name="" id="">
+              <option value="" selected="">Всі</option>
+              <option value="">1</option>
+              <option value="">2</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <div class="form-label">Лабораторія</div>
+            <select name="" id="">
+              <option value="" selected="">Всі</option>
+              <option value="">1</option>
+              <option value="">2</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <div class="form-label">Спеціаліст</div>
+            <select name="" id="">
+              <option value="" selected="">Всі</option>
+              <option value="">1</option>
+              <option value="">2</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <div class="form-label">Згенеровано</div>
+            <div class="date-field">
+              <input type="text" placeholder="Оберіть дату" value="10.10.2024 - 20.12.2024">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-label">Підписано</div>
+            <div class="date-field">
+              <input type="text" placeholder="Оберіть дату" value="10.10.2024 - 20.12.2024">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div id="new-journal-popup" class="popup_container click-obj active">
+  <div class="popup_background click-item popup-close" data-action="popup-close"></div>
+  <div class="popup new-journal-popup">
+    <div class="popup-content">
+      <div class="new-journal-container success">
+        <img src="img/success-iconn.svg" alt="">
+        <div class="heading">Звіт успішно сформовано!</div>
+        <div class="descr">Через декілька секунд він завантажиться автоматично</div>
+        <div class="policy">Не завантажується файл? <a href="#">Завантажити вручну</a></div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" crossorigin="anonymous"></script>
+<script>
+  $('.popup-open').click(function(e){
+    e.preventDefault();
+
+    let targetPopup = $(this).attr('data-target');
+    $(`.popup_container#${targetPopup}`).addClass('active');
+  });
+
+  $('.popup_container .popup-close').click(function(){
+    $(this).closest($('.popup_container')).removeClass('active');
+  });
+</script>
+</body>
+</html>
