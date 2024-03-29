@@ -2263,6 +2263,9 @@ html {
   .orders-filters .form-group{
     margin-bottom: 24px;
   }
+  .orders-filters .form-groups .form-group{
+    width: calc(50% - 6px);
+  }
   .orders-filters .form-group:last-child{
     margin-bottom: 0;
   }
