@@ -927,6 +927,9 @@ html {
     display: flex;
     align-items: flex-start;
   }
+  .check-toggler .label.profile-messages-label{
+    font-size: 18px;
+  }
   .check-toggler .label span{
     margin-left: 12px;
   }
@@ -1138,6 +1141,47 @@ html {
     align-items: flex-start;
     flex-wrap: wrap;
     margin-bottom: -24px;
+  }
+  .price-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: -8px;
+  }
+  .price-form .form-group{
+    width: calc(25% - 12px);
+    margin-bottom: 8px;
+  }
+  .services-price-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: -8px;
+  }
+  .services-price-form .form-group{
+    width: calc(20% - 12px);
+    margin-bottom: 8px;
+  }
+  .services-price-form .form-group.condition{
+    width: calc(13% - 12px);
+    margin-bottom: 8px;
+  }
+  .services-price-form .form-group.price{
+    width: calc(17% - 5px);
+    margin-bottom: 8px;
+  }
+  .services-price-form .form-group.link{
+    width: calc(29% - 5px);
+    margin-bottom: 8px;
+  }
+  .services-price-form .descr{
+    font-size: 10px;
+    color: #6B7280;
+    width: 100%;
+    text-align: right;
+    margin-top: 2px;
   }
   .form-delimitr{
     display: block;
@@ -2356,6 +2400,7 @@ html {
   .orders-section_item_info{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
   }
   .orders-section_item_company{
     display: flex;
@@ -2455,6 +2500,8 @@ html {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+    flex-shrink: 0;
+    margin-left: 12px;
   }
   .orders-section_item_toggler{
     width: 32px;
@@ -2488,8 +2535,35 @@ html {
     border-radius: 800px;
     margin-right: 14px;
   }
+  .order-alert.alert-yellow{
+    background: #FFF4BB;
+  }
+  .order-alert.alert-blue{
+    background: #EAECFF;
+  }
+  .order-alert.alert-red{
+    background: #FEF2F2;
+  }
+  .order-alert.alert-red{
+    background: #E5FAE9;
+  }
   .order-alert img, .order-alert svg{
     margin-right: 8px;
+  }
+  .order-count{
+    position: absolute;
+    right: 8px;
+    top: -8px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DC2626;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 500;
   }
 
   .users-section_item{
@@ -3656,6 +3730,7 @@ html {
     .message-alert .descr{
       margin-top: 6px;
       font-size: 13px;
+      line-height: 19px;
     }
 
     .documents-item_wrapp{
@@ -3698,6 +3773,211 @@ html {
       font-size: 13px;
     }
     .documents-item .size{
+      font-size: 13px;
+    }
+    .owner-ipn{
+      max-width: 400px;
+    }
+    .content-heading{
+      font-size: 18px;
+    }
+    .content-descr{
+      font-size: 13px;
+    }
+    .message-alert{
+      padding: 21px;
+    }
+    .form-label{
+      font-size: 13px;
+    }
+    .form-group input, .form-group select{
+      font-size: 13px;
+    }
+    .message-alert.submit-alert .main-btn{
+      max-width: 30%;
+    }
+    .content-top-tabs .tabs-item{
+      padding: 16px 32px 16px 16px;
+    }
+    .content-top-tabs .tabs-item::after{
+      right: 10px;
+    }
+    .content-top-tabs .tabs-item{
+      font-size: 13px;
+    }
+    .accordion-toplink{
+      font-size: 14px;
+      padding-left: 42px;
+    }
+    .accordion-toplink::before{
+      left: 20px;
+    }
+    .radio-group .radio-input, .check-group .check-input{
+      margin-right: 20px;
+    }
+    .radio-group .radio-input:last-child, .check-group .check-input:last-child{
+      margin-right: 0;
+    }
+    .form-heading{
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+    .check-input .label{
+      font-size: 13px;
+    }
+    .form-groups.pendant-groups .form-group{
+      width: calc(33.3% - 8px);
+      margin-bottom: 12px;
+    }
+    .orders-filters{
+      max-width: 260px;
+      padding: 20px;
+    }
+    .orders-filters .heading{
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+    .orders-section_item_name{
+      font-size: 15px;
+    }
+    .orders-section_item_date{
+      display: block;
+      text-align: right;
+    }
+    .order-alert{
+      margin-right: 0;
+      margin-bottom: 6px;
+    }
+    .orders-filters .form-group{
+      margin-bottom: 19px;
+    }
+    .order-nav{
+      max-width: 275px;
+    }
+    .order-nav_toggler{
+      font-size: 15px;
+    }
+    .order-nav_heading{
+      font-size: 15px;
+    }
+    .form-groups .form-group{
+      width: calc(50% - 4px);
+    }
+    .date-field::after{
+      width: 40px;
+    }
+    .time-field::after{
+      width: 40px;
+    }
+    .date-field input{
+      padding-right: 48px;
+    }
+    .time-field input{
+      padding-right: 48px;
+    }
+    .cars-section_item_name{
+      font-size: 15px;
+    }
+    .users-section_item_name{
+      font-size: 15px;
+      margin-right: 16px;
+    }
+    .login-container .heading{
+      font-size: 22px;
+    }
+    .settings-section_item_name{
+      font-size: 15px;
+    }
+    .settings-section_item{
+      padding-left: 22px;
+    }
+    .settings-section_item_code{
+      font-size: 11px;
+    }
+    .formular_fields_heading{
+      font-size: 16px;
+    }
+    .formular_fields{
+      padding: 24px;
+    }
+    .formular_fields_item_name{
+      font-size: 13px;
+    }
+    .formular-params_heading{
+      font-size: 16px;
+    }
+    .check-toggler .label{
+      font-size: 13px;
+    }
+    .check-toggler .label .descr{
+      margin-top: 3px;
+    }
+    .formular_fields_item_edit{
+      display: block;
+    }
+    .formular_fields_item_edit .label{
+      margin-top: 5px;
+    }
+    .settings-section_item_code{
+      font-size: 11px;
+    }
+    .formulas-filters{
+      max-width: 270px;
+    }
+    .main-btn{
+      font-size: 13px;
+    }
+    .formulas-structure_label{
+      margin-bottom: 5px;
+    }
+    .label-toggler-handbooks{
+      font-size: 13px;
+    }
+    .orders-section_item_info{
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+    .orders-section_item_id{
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+    .orders-section_item_company{
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+    .orders-section_item_top{
+      margin-bottom: 9px;
+    }
+    .orders-section_item_code{
+      font-size: 11px;
+    }
+    .new-journal-popup .heading{
+      font-size: 18px;
+    }
+    .users-section_item_avatar{
+      width: 50px;
+      height: 50px;
+    }
+    .check-toggler .label.profile-messages-label{
+      font-size: 14px;
+    }
+    .subscriptions_item{
+      width: calc(33.333% - 12px);
+    }
+    .subscriptions_item_info{
+      padding: 24px 18px 18px 18px;
+    }
+    .subscriptions_item_price{
+      font-size: 20px;
+      line-height: 26px;
+    }
+    .subscriptions_item_descr{
+      margin-bottom: 12px;
+    }
+    .subscriptions_item_details{
+      padding: 24px 18px 30px 18px;
+    }
+    .subscriptions_item_details li{
       font-size: 13px;
     }
   }
