@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "PlumbCondensedBold";
+    src: url("../fonts/PlumbCondensedBold/PlumbCondensedBold.eot");
+    src: url("../fonts/PlumbCondensedBold/PlumbCondensedBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PlumbCondensedBold/PlumbCondensedBold.woff2")format("woff2"),
+    url("../fonts/PlumbCondensedBold/PlumbCondensedBold.woff")format("woff"),
+    url("../fonts/PlumbCondensedBold/PlumbCondensedBold.ttf")format("truetype"),
+}
+@font-face {
+    font-family: "InterRegular";
+    src: url("../fonts/Inter/Inter-Regular.ttf")format("truetype"),
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content_language" content="uk">
+  <meta name="description" content="Reberna">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <title>Reberna</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="mainContainer">
+    <div class="header_wrapp">
+      <div class="header-info">
+        <div class="header-title">Гості, що очікують посадку</div>
+        <button class="header-submit main-btn red-btn popup-btn" popup-target="#create-guest-popup">Додати гостей</button>
+      </div>
+      <div class="header-profile">
+        <div class="header-profile_info">
+          <div class="name">anton17_hostes</div>
+          <a href="#" class="exit">
+            <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.3125 7.71875L5.3125 11.7188C5.6875 12.125 6.34375 12.125 6.71875 11.7188C7.125 11.3438 7.125 10.6875 6.71875 10.3125L4.4375 8H11C11.5625 8 12 7.5625 12 7C12 6.46875 11.5625 6 11 6H4.4375L6.71875 3.71875C7.125 3.34375 7.125 2.6875 6.71875 2.3125C6.34375 1.90625 5.6875 1.90625 5.3125 2.3125L1.3125 6.3125C0.90625 6.6875 0.90625 7.34375 1.3125 7.71875ZM12 2H14C14.5625 2 15 2.46875 15 3V11C15 11.5625 14.5625 12 14 12H12C11.4688 12 11 12.4688 11 13C11 13.5625 11.4688 14 12 14H14C15.6562 14 17 12.6562 17 11V3C17 1.34375 15.6562 0 14 0H12C11.4688 0 11 0.46875 11 1C11 1.5625 11.4688 2 12 2Z" fill="#CA383A"/>
+            </svg>              
+            вийти
+          </a>
+        </div>
+        <div class="header-profile_avatar">
+          <img src="img/default-avatar.svg" alt="profile-avatar">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="guests-container">
+  <div class="mainContainer">
+    <div class="guests-wrapp">
+      <div class="guests_row labels">
+        <div class="guests_col user">Особисті дані</div>
+        <div class="guests_col count">К-сть гостей</div>
+        <div class="guests_col place">Зал/тераса</div>
+        <div class="guests_col time">Створено</div>
+      </div>
+      <div class="guests_list">
+        <div class="guests_row">
+          <div class="guests_col user">
+            Олександр
+            <div class="phone">+380 093 817 39 62</div>
+          </div>
+          <div class="guests_col count">
+            4
+          </div>
+          <div class="guests_col place">
+            Тераса
+          </div>
+          <div class="guests_col time">
+            22:10
+            <div class="date">22.08.2024 </div>
+          </div>
+          <div class="guests_col nav">
+            <button class="delete-btn popup-btn" popup-target="#delete-guest-popup"></button>
+            <button class="green-btn confirm-btn popup-btn" popup-target="#add-guest-popup"></button>
+          </div>
+        </div>
+        <div class="guests_row">
+          <div class="guests_col user">
+            Марина
+            <div class="phone">+380 093 817 39 62</div>
+          </div>
+          <div class="guests_col count">
+            2
+          </div>
+          <div class="guests_col place">
+            Зал
+          </div>
+          <div class="guests_col time">
+            22:17
+            <div class="date">22.08.2024 </div>
+          </div>
+          <div class="guests_col nav">
+            <button class="delete-btn popup-btn" popup-target="#delete-guest-popup"></button>
+            <button class="green-btn confirm-btn popup-btn" popup-target="#add-guest-popup"></button>
+          </div>
+        </div>
+        <div class="guests_row">
+          <div class="guests_col user">
+            Микита
+            <div class="phone">+380 093 817 39 62</div>
+          </div>
+          <div class="guests_col count">
+            6
+          </div>
+          <div class="guests_col place">
+            Тераса
+          </div>
+          <div class="guests_col time">
+            22:30
+            <div class="date">22.08.2024 </div>
+          </div>
+          <div class="guests_col nav">
+            <button class="delete-btn popup-btn" popup-target="#delete-guest-popup"></button>
+            <button class="green-btn confirm-btn popup-btn" popup-target="#add-guest-popup"></button>
+          </div>
+        </div>
+        <div class="guests_row">
+          <div class="guests_col user">
+            Семен
+            <div class="phone">+380 093 817 39 62</div>
+          </div>
+          <div class="guests_col count">
+            4
+          </div>
+          <div class="guests_col place">
+            Тераса
+          </div>
+          <div class="guests_col time">
+            22:33
+            <div class="date">22.08.2024 </div>
+          </div>
+          <div class="guests_col nav">
+            <button class="delete-btn popup-btn" popup-target="#delete-guest-popup"></button>
+            <button class="green-btn confirm-btn popup-btn" popup-target="#add-guest-popup"></button>
+          </div>
+        </div>
+        <div class="guests_row">
+          <div class="guests_col user">
+            Олександр
+            <div class="phone">+380 093 817 39 62</div>
+          </div>
+          <div class="guests_col count">
+            4
+          </div>
+          <div class="guests_col place">
+            Тераса
+          </div>
+          <div class="guests_col time">
+            22:10
+            <div class="date">22.08.2024 </div>
+          </div>
+          <div class="guests_col nav">
+            <button class="delete-btn popup-btn" popup-target="#delete-guest-popup"></button>
+            <button class="green-btn confirm-btn popup-btn" popup-target="#add-guest-popup"></button>
+          </div>
+        </div>
+        <div class="guests_row">
+          <div class="guests_col user">
+            Марина
+            <div class="phone">+380 093 817 39 62</div>
+          </div>
+          <div class="guests_col count">
+            2
+          </div>
+          <div class="guests_col place">
+            Зал
+          </div>
+          <div class="guests_col time">
+            22:17
+            <div class="date">22.08.2024 </div>
+          </div>
+          <div class="guests_col nav">
+            <button class="delete-btn popup-btn" popup-target="#delete-guest-popup"></button>
+            <button class="green-btn confirm-btn popup-btn" popup-target="#add-guest-popup"></button>
+          </div>
+        </div>
+        <div class="guests_row">
+          <div class="guests_col user">
+            Микита
+            <div class="phone">+380 093 817 39 62</div>
+          </div>
+          <div class="guests_col count">
+            6
+          </div>
+          <div class="guests_col place">
+            Тераса
+          </div>
+          <div class="guests_col time">
+            22:30
+            <div class="date">22.08.2024 </div>
+          </div>
+          <div class="guests_col nav">
+            <button class="delete-btn popup-btn" popup-target="#delete-guest-popup"></button>
+            <button class="green-btn confirm-btn popup-btn" popup-target="#add-guest-popup"></button>
+          </div>
+        </div>
+        <div class="guests_row">
+          <div class="guests_col user">
+            Семен
+            <div class="phone">+380 093 817 39 62</div>
+          </div>
+          <div class="guests_col count">
+            4
+          </div>
+          <div class="guests_col place">
+            Тераса
+          </div>
+          <div class="guests_col time">
+            22:33
+            <div class="date">22.08.2024 </div>
+          </div>
+          <div class="guests_col nav">
+            <button class="delete-btn popup-btn" popup-target="#delete-guest-popup"></button>
+            <button class="green-btn confirm-btn popup-btn" popup-target="#add-guest-popup"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="delete-guest-popup" class="popup-container">
+  <div class="popup-background popup-close"></div>
+  <div class="confirm-popup delete-guest-popup popup">
+     <div class="popup_content">
+      <div class="confirm-popup_heading">
+        <img src="img/delete-icon-popup.svg" alt="delete-icon">          
+        Видалити гостя?
+      </div>
+      <div class="confirm-popup_descr">Ви збираєтеся видалити гостя із списку очікування. <br> Цю дію неможливо буде відмінити.</div>
+     <div class="popup_nav">
+        <button class="main-btn cancel-btn popup-close">Відмінити</button>
+        <button class="main-btn red-btn">Підтвердити</button>
+     </div>
+     </div>
+  </div>
+</div>
+
+<div id="add-guest-popup" class="popup-container">
+  <div class="popup-background popup-close"></div>
+  <div class="confirm-popup add-guest-popup popup">
+     <div class="popup_content">
+      <div class="confirm-popup_heading">
+        <img src="img/check-icon-popup.svg" alt="delete-icon">          
+        Підтвердити посадку?
+      </div>
+      <div class="confirm-popup_descr">Підтвердіть, якщо звільнився столик для цього гостя. <br> Цю дію неможливо буде відмінити.</div>
+     <div class="popup_nav">
+        <button class="main-btn cancel-btn popup-close">Відмінити</button>
+        <button class="main-btn green-btn">Підтвердити</button>
+     </div>
+     </div>
+  </div>
+</div>
+
+<div id="create-guest-popup" class="popup-container">
+  <div class="popup-background popup-close"></div>
+  <div class="create-popup popup">
+     <div class="popup_content">
+      <div class="create-popup_heading">Додати нового гостя</div>
+      <div class="create-popup_descr">Заповніть інформацію про гостя, щоб додати його в список очікування. </div>
+      <form action="" class="create-popup_form">
+        <div class="form-group">
+          <div class="label">Ім’я гостя</div>
+          <input type="text" placeholder="Введіть ім’я" required>
+        </div>
+        <div class="form-group">
+          <div class="label">Номер телефону</div>
+          <input type="text" placeholder="Введіть номер телефону" required>
+        </div>
+        <div class="form-group">
+          <div class="label">Кількість гостей</div>
+          <input type="number" placeholder="Введіть кількість" required>
+        </div>
+        <div class="form-group">
+          <div class="label">Посадка</div>
+          <div class="radio-group">
+            <div class="radio-group_item">
+              <input type="radio" id="type_1" name="place" value="type_1" checked />
+              <label for="type_1">Байдуже</label>
+            </div>
+            <div class="radio-group_item">
+              <input type="radio" id="type_2" name="place" value="type_2" checked />
+              <label for="type_2">Зал</label>
+            </div>
+            <div class="radio-group_item">
+              <input type="radio" id="type_3" name="place" value="type_3" checked />
+              <label for="type_3">Тераса</label>
+            </div>
+          </div>
+        </div>
+      </form>
+     <div class="popup_nav">
+        <button class="main-btn cancel-btn popup-close">Відмінити</button>
+        <button class="main-btn red-btn">Зберегти</button>
+     </div>
+     </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("click", function (event) {
+  if (event.target.classList.contains("popup-btn")) {
+    document.querySelectorAll('.popup-container').forEach(function (popup) {
+      popup.classList.remove('active');
+    });
+    const popupTarget = document.querySelector(event.target.getAttribute('popup-target'));
+    if (popupTarget) {
+      popupTarget.classList.add('active');
+    }
+  }
+
+  if (event.target.classList.contains("popup-close")) {
+    const closestPopup = event.target.closest('.popup-container');
+    if (closestPopup) {
+      closestPopup.classList.remove('active');
+    }
+  }
+});
+</script>
+</body>
+</html>
