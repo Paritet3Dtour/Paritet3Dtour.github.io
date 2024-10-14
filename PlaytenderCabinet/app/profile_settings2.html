@@ -7,7 +7,7 @@
   <meta http-equiv="content_language" content="ru">
   <meta name="description" content="Playtender">
   <!--<link rel="icon" type="image/x-icon" href="img/favicon.ico">-->
-  <title>Playtender - Публічні закупівлі</title>
+  <title>Playtender - Налаштування профілю</title>
   <link rel="apple-touch-icon" sizes="57x57" href="https://playtender.com.ua/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="https://playtender.com.ua/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="https://playtender.com.ua/apple-icon-72x72.png">
@@ -38,7 +38,7 @@
       </div>
       <div class="sidebar_menu">
         <div class="sidebar_menu_group">
-          <a class="sidebar_menu_item active">
+          <a class="sidebar_menu_item">
             <div class="icon">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.542 2.29163C10.8498 1.5994 9.71138 1.65562 9.09073 2.4127C8.9315 2.60693 8.81854 2.83485 8.7604 3.07919L8.72676 3.22057C8.62881 3.63228 8.41849 4.00873 8.11924 4.30798L5.49414 6.93308C5.19813 7.22908 4.82578 7.43711 4.41854 7.53401L4.32752 7.55566C4.04572 7.62271 3.7834 7.75447 3.56136 7.94051C2.72217 8.64363 2.6662 9.91494 3.44035 10.6891L6.83687 14.0856C7.69336 14.9421 9.11642 14.8137 9.8058 13.8178C9.87477 13.7182 9.93425 13.6123 9.98348 13.5016L10.0556 13.3393C10.2467 12.9095 10.5153 12.5186 10.8479 12.186L11.2731 11.7607L15.5061 15.9936C15.7794 16.267 16.2226 16.267 16.496 15.9936C16.7694 15.7203 16.7694 15.277 16.496 15.0037L12.2631 10.7707L13.3568 9.67707C13.7028 9.33103 14.1095 9.05162 14.5567 8.85279L14.7291 8.77614C14.8157 8.73763 14.899 8.69201 14.978 8.63975C15.8837 8.04117 16.0129 6.76252 15.2453 5.99485L11.542 2.29163ZM14.2553 6.9848L10.5521 3.28158C10.4452 3.17464 10.2693 3.18333 10.1734 3.30028C10.1488 3.33028 10.1314 3.36549 10.1224 3.40324L10.0887 3.54461C9.9308 4.20845 9.59169 4.81542 9.10919 5.29793L6.48409 7.92303C6.00483 8.40229 5.40195 8.73911 4.74259 8.89599L4.65157 8.91764C4.58129 8.93437 4.51586 8.96723 4.46048 9.01363C4.25119 9.18899 4.23722 9.50607 4.4303 9.69915L7.82682 13.0957C8.06564 13.3345 8.46245 13.2987 8.65468 13.021C8.67391 12.9932 8.69049 12.9637 8.70422 12.9328L8.77636 12.7706C9.03724 12.1838 9.40386 11.6501 9.85792 11.196L12.3668 8.68712C12.8343 8.21963 13.3838 7.84216 13.9879 7.57355L14.1603 7.4969C14.1762 7.48981 14.1916 7.48141 14.2061 7.47179C14.3729 7.36158 14.3967 7.12615 14.2553 6.9848Z" fill="#132341" fill-opacity="0.7"/>
@@ -150,14 +150,6 @@
 
     <div class="sidebar_bottom">
       <div class="sidebar_inentify">
-        <div class="sidebar_inentify_alert">
-          <div class="info">
-            <div class="heading">Не ідентифіковано</div>
-            <div class="descr">Для створення закупівлі або інших дій вам потрібно пройти акредитацію</div>
-          </div>
-          <button class="main-btn white-blue-btn">Пройти акредитацію</button>
-          <div class="hint"></div>
-        </div>
         <div class="sidebar_inentify_link">
           <div class="icon">
             <img src="img/icons/navbar/indentify.svg" alt="indentify-icon">
@@ -188,18 +180,15 @@
   <div class="main-container">
     <header class="header">
       <div class="header_wrapp">
-        <div class="header_nav">
-          <a href="#" class="header_nav_item active">Всі закупівлі</a>
-          <a href="#" class="header_nav_item">Мої закупівлі</a>
-        </div>
-        <div class="header_menu">
-          <button class="header_menu_btn main-btn blue-btn">
+        <a href="#" class="back-btn">
+          <div class="icon">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 8H12" stroke="white" stroke-width="1.3" stroke-linecap="round"/>
-              <path d="M8 4L8 12" stroke="white" stroke-width="1.3" stroke-linecap="round"/>
-            </svg>    
-            <span>Створити закупівлю</span>          
-          </button>
+              <path d="M9.5 11.5L6 8L9.5 4.5" stroke="#132341" stroke-opacity="0.7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>              
+          </div>
+          <span>Назад</span>
+        </a>
+        <div class="header_menu">
           <div class="header_menu_togglers">
             <button class="header_menu_toggler">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -222,133 +211,99 @@
       </div>
     </header>
 
-    <div class="content-container">
-      <div class="purchase-top">
-        <a href="#" class="back-btn">
-          <div class="icon">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.5 11.5L6 8L9.5 4.5" stroke="#132341" stroke-opacity="0.7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>              
+    <div class="content-container white-container">
+      <div class="setting-profile-container">
+        <div class="content-top">
+          <div class="content-heading">Налаштування профілю</div>
+          <div class="content-descr">Ваша особиста інформація та налаштування безпеки облікового запису.</div>
+        </div>
+        <div class="setting-group">
+          <div class="info">
+            <div class="heading">Фото профілю</div>
+            <div class="descr">Рекомендуємо завантажувати власне зображення</div>
           </div>
-          <span>До списку</span>
-        </a>
-        <div class="purchase-id">
-          №: 000164
-          <button class="copy-btn">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.5 7.5C1.5 6.39543 2.39543 5.5 3.5 5.5H8.5C9.60457 5.5 10.5 6.39543 10.5 7.5V12.5C10.5 13.6046 9.60457 14.5 8.5 14.5H3.5C2.39543 14.5 1.5 13.6046 1.5 12.5V7.5Z" stroke="#5E6573" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M7.5 2.1H12.5V0.9H7.5V2.1ZM13.9 3.5V8.5H15.1V3.5H13.9ZM13.9 8.5C13.9 9.2732 13.2732 9.9 12.5 9.9V11.1C13.9359 11.1 15.1 9.93594 15.1 8.5H13.9ZM12.5 2.1C13.2732 2.1 13.9 2.7268 13.9 3.5H15.1C15.1 2.06406 13.9359 0.9 12.5 0.9V2.1ZM7.5 0.9C6.06406 0.9 4.9 2.06406 4.9 3.5H6.1C6.1 2.7268 6.7268 2.1 7.5 2.1V0.9Z" fill="#5E6573"/>
-            </svg>              
-          </button>
+          <div class="content">
+            <div class="setting-avatar-container">
+              <div class="profile-avatar bg-green">dw</div>
+              <div class="nav">
+                <div class="change-avatar-container">
+                  <button class="main-btn default-btn" id="changeAvatarToggler">Змінити зображення</button>
+                  <div class="change-avatar-popup">
+                    <div class="bg-list">
+                      <button class="bg-item bg-green active"></button>
+                      <button class="bg-item bg-blue"></button>
+                      <button class="bg-item bg-purple"></button>
+                      <button class="bg-item bg-yellow"></button>
+                      <button class="bg-item bg-orange"></button>
+                      <button class="bg-item bg-red"></button>
+                    </div>
+                    <button class="main-btn blue-btn">Завантажити</button>
+                  </div>
+                </div>
+                <button class="main-btn transparent-btn" disabled>Видалити</button>
+              </div>
+            </div>
+         </div>
         </div>
-      </div>
-      <div class="purchase-nav">
-        <div class="label">RFI-Запит інформації</div>
-        <div class="menu">
-          <button class="main-btn transparent-btn">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14 5.67798C14 4.02131 12.6007 2.67798 10.8747 2.67798C9.58467 2.67798 8.47667 3.42864 8 4.49998C7.52333 3.42864 6.41533 2.67798 5.12467 2.67798C3.4 2.67798 2 4.02131 2 5.67798C2 10.4913 8 13.678 8 13.678C8 13.678 14 10.4913 14 5.67798Z" stroke="#5E6573" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>                
-            <span>До обраного</span>
-          </button>
-          <button class="main-btn transparent-btn">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4.5 12.5H3.5C2.39543 12.5 1.5 11.6046 1.5 10.5V6.5C1.5 5.39543 2.39543 4.5 3.5 4.5L12.5 4.5C13.6046 4.5 14.5 5.39543 14.5 6.5V10.5C14.5 11.6046 13.6046 12.5 12.5 12.5H11.5" stroke="#5E6573" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M11.5 4.5V2.5C11.5 1.94772 11.0523 1.5 10.5 1.5L5.5 1.5C4.94772 1.5 4.5 1.94772 4.5 2.5L4.5 4.5" stroke="#5E6573" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M4.5 11.5C4.5 10.9477 4.94772 10.5 5.5 10.5L10.5 10.5C11.0523 10.5 11.5 10.9477 11.5 11.5V13.5C11.5 14.0523 11.0523 14.5 10.5 14.5H5.5C4.94772 14.5 4.5 14.0523 4.5 13.5V11.5Z" stroke="#5E6573" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M3.5 7.5H5.5" stroke="#5E6573" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>                
-            <span>На друк</span>
-          </button>
-        </div>
-      </div>
 
-      <div class="purchase-wrapp">
-        <div class="purchase-content">
-          <div class="heading">Студентські квитки державного зразка (ДК 021:2015 - 22450000-9 - Друкована продукція з елементами захисту)</div>
-          <div class="descr">Відвантаження Товару здійснюється на АЗС, що обслуговують талони Постачальника, які розміщені не більше 30 км від місцезнаходження Покупця: с.Білоцерківка, Миргородського району, Полтавської област...</div>
-          <div class="purchase-info">
-            <div class="purchase-info_group">
-              <div class="label">Номер процедури</div>
-              <div class="value">000248</div>
+        <div class="setting-group">
+          <div class="info">
+            <div class="heading">Ваше ім’я,фамілія та по батькові</div>
+          </div>
+          <div class="content">
+            <div class="form-group">
+              <input type="text" placeholder="Введіть..." value="Daniel">
             </div>
-            <div class="purchase-info_group">
-              <div class="label">Замовник</div>
-              <div class="value">Майорщинська загальноосвітня школа I-III ступенів Гребінківської міської ради Полтавської області.</div>
+            <div class="form-group">
+              <input type="text" placeholder="Введіть..." value="White">
             </div>
-            <div class="purchase-info_group">
-              <div class="label">Основний класифікатор <br>ДК 021:2015</div>
-              <div class="value">33600000-6 Фармацевтична продукція</div>
-            </div>
-            <div class="purchase-info_group">
-              <div class="label">Додаткові класифікатори <br>ДК 021:2015</div>
-              <div class="value">09132000-3 - Бензин <br>09134200-9 - Дизельне паливо</div>
-            </div>
-            <div class="purchase-info_group">
-              <div class="label">Забезпечення пропозиції</div>
-              <div class="value">5 000.00 грн</div>
-            </div>
-            <div class="purchase-info_group">
-              <div class="label">Подача вище бюджету</div>
-              <div class="value">Так</div>
-            </div>
-            <div class="purchase-info_group">
-              <div class="label">Подача по всім номенклатурам</div>
-              <div class="value">Ні</div>
-            </div>
-            <div class="purchase-info_group">
-              <div class="label">Відкрите посилання на тендер</div>
-              <div class="value"><a href="#">milkmarket.playtender.xyz</a></div>
-            </div>
-            <div class="purchase-info_group">
-              <div class="label">Період подачі пропозицій</div>
-              <div class="value">08.02.2024, 12:41 - 08.02.2024, 13:04</div>
-            </div>
-            <div class="purchase-info_group">
-              <div class="label">Кваліфікація</div>
-              <div class="value">з 14.03.2024 23:20</div>
+            <div class="form-group">
+              <input type="text" placeholder="Введіть..." value="Junior">
             </div>
           </div>
         </div>
 
-        <div class="purchase-config">
-          <div class="status">Кваліфікайція: 2 дні</div>
-          <div class="details">
-            <div class="label">Очікувана вартість:</div>
-            <div class="heading">Не визначена</div>
-            <a href="#" class="main-btn white-blue-btn guarantee-btn">
-              Гарантія - 5 000.00
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.5 1.5H4.00001C2.65382 1.5 1.56251 2.5913 1.56251 3.93749L1.5 12C1.5 13.3462 2.59131 14.4375 3.9375 14.4375H12.0625C13.4087 14.4375 14.5 13.3462 14.5 12V8.5M10.4371 1.50021L14.5 1.50001M14.5 1.50001V5.5M14.5 1.50001L7.59315 8.34351" stroke="#2898FF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>                
-            </a>
-            <button class="main-btn default-btn middle-btn">Створити за зразком</button>
+        <div class="setting-group">
+          <div class="info">
+            <div class="heading">Контактна інформація</div>
+            <div class="descr">Ця інформація не буде відображатися іншим користувачам</div>
           </div>
-          <div class="bottom">Повернутися до прийому пропозицій</div>
-        </div>
-      </div>
-
-      <div class="tabs-container">
-        <div class="tabs-nav">
-          <a href="#" class="active">Основна інформація</a>
-          <a href="#">Питання <span class="count">0</span></a>
-          <a href="#">Перегляди тендеру <span class="count active">3</span></a>
-          <a href="#">Історія торгів</a>
-        </div>
-        <div class="tabs-content">
-          <div class="nomenclature-container">
-            <div class="item">
-              <div class="label">Номенклатура</div>
-              <span class="delimiter"></span>
-              <button class="main-btn transparent-btn">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.0012 1.5V11M8.0012 11L12.5 7M8.0012 11L3.49999 7M14.5 11.5V12.5C14.5 13.6046 13.6046 14.5 12.5 14.5H3.5C2.39543 14.5 1.5 13.6046 1.5 12.5V11.5" stroke="#5E6573" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                  
-                Завантажити архівом
-              </button>
+          <div class="content">
+            <div class="form-group edit-group">
+              <input type="text" placeholder="Введіть e-mail адресу" value="iov.mail.zt@gmail.com" class="mail-field">
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Введіть e-mail адресу для сповіщень" class="mail-field">
+              <div class="descr">Ви можете вказати адресу на яку будуть надсилатися тільки сповіщення</div>
+            </div>
+            <div class="form-group">
+              <div class="prefix-group">
+                <div class="prefix">+380</div>
+                <input type="text" placeholder="Введіть..." value="0972233444">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="prefix-group">
+                <div class="prefix">https://</div>
+                <input type="text" placeholder="Введіть адресу вашого сайту">
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Введіть номер факсу">
             </div>
           </div>
         </div>
+
+        <div class="setting-group">
+          <div class="info">
+            <div class="heading">Зміна паролю</div>
+            <div class="descr">Рекомендуємо створити надійний пароль. Надійний пароль має містити понад вісім символів: великі та малі літери, цифри, спеціальні символи</div>
+          </div>
+          <div class="content">
+            <button class="main-btn default-btn">Змінити пароль</button>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
