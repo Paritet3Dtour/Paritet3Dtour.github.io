@@ -115,4 +115,49 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  const notificationsPopup = document.querySelector('.notifications-popup');
+  if(notificationsPopup){
+    document.querySelector('.header_menu_toggler').addEventListener('click', function() {
+      notificationsPopup.classList.toggle("active");
+      this.classList.toggle("active");
+    });
+
+    document.querySelector('.notifications-popup_top .main-btn').addEventListener('click', function() {
+      document.querySelectorAll('.notifications-message').forEach(b => b.classList.remove('new'));
+      this.remove();
+    });
+
+    document.querySelectorAll('.notifications-nav-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.notifications-nav-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        
+        const target = this.getAttribute('data-target');
+        const messages = document.querySelectorAll('.notifications-message');
+    
+        messages.forEach(message => {
+          const messageTarget = message.getAttribute('data-target');
+          if (target === 'all' || target === messageTarget) {
+            message.style.display = '';
+          } else {
+            message.style.display = 'none';
+          }
+        });
+      });
+    });
+  }
+
+  const profilePopup = document.querySelector('.profile-popup');
+  if(profilePopup){
+    document.querySelector('.profile-toggler').addEventListener('click', function() {
+      profilePopup.classList.toggle("active");
+      document.querySelector('.sidebar_profile').classList.toggle("active");
+    });
+
+    document.querySelector('.theme-toggler').addEventListener('click', function() {
+      document.querySelector('.theme-popup').classList.add("active");
+      document.querySelector('.sidebar_profile').classList.add("active");
+      profilePopup.classList.remove("active");
+    });
+  }
 });
