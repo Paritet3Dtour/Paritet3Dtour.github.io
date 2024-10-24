@@ -510,6 +510,61 @@ a{
   display: none;
 }
 
+.add-guest-alert{
+  width: 640px;
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -320px;
+  background-color: #276D20;
+  padding: 20px 46px 20px 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+.add-guest-alert_wrapp{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.add-guest-alert_icon{
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+.add-guest-alert_heading{
+  margin-bottom: 4px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: 'InterRegular';
+}
+.add-guest-alert_descr{
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: 'InterRegular';
+}
+.add-guest-alert .close{
+  position: absolute;
+  right: 16px;
+  top: 20px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.add-guest-alert .progress-bar{
+  height: 3px;
+  background-color: #32D583;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: width linear;
+  width: 0%;
+}
+
 
 @media screen and (max-width: 1100px){
   .mainContainer{

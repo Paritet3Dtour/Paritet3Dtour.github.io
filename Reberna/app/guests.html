@@ -287,10 +287,24 @@
       </form>
      <div class="popup_nav">
         <button class="main-btn cancel-btn popup-close">Відмінити</button>
-        <button class="main-btn red-btn">Зберегти</button>
+        <button class="main-btn red-btn" id="saveUser">Зберегти</button>
      </div>
      </div>
   </div>
+</div>
+
+<div class="add-guest-alert hidden">
+  <div class="add-guest-alert_wrapp">
+    <div class="add-guest-alert_icon"><img src="img/add-guest-icon.svg" alt=""></div>
+    <div class="add-guest-alert_info">
+      <div class="add-guest-alert_heading">Гостя додано</div>
+      <div class="add-guest-alert_descr">Нового гостя додано до списку очікування.</div>
+    </div>
+  </div>
+  <button class="close">
+    <img src="img/close-icon.svg" alt="">
+  </button>
+  <div class="progress-bar"></div>
 </div>
 
 <script>
@@ -312,6 +326,29 @@
     }
   }
 });
+
+const saveUser = document.querySelector('#saveUser');
+  if (saveUser) {
+    saveUser.addEventListener('click', function() {
+      document.querySelector('#create-guest-popup').classList.remove('active');
+      document.querySelector('.add-guest-alert').style.opacity = '1';
+      document.querySelector('.add-guest-alert').classList.remove('hidden');
+      document.querySelector('.add-guest-alert .progress-bar').style.width = '0';
+      document.querySelector('.add-guest-alert .progress-bar').style.transitionDuration = '6s';
+      setTimeout(() => {
+        document.querySelector('.add-guest-alert .progress-bar').style.width = '100%';
+      }, 100);
+
+      setTimeout(() => {
+          document.querySelector('.add-guest-alert').style.opacity = '0';
+          setTimeout(() => document.querySelector('.add-guest-alert').classList.add('hidden'), 500);
+      }, 6000);
+      
+      document.querySelector('.add-guest-alert .close').addEventListener('click', () => {
+        document.querySelector('.add-guest-alert').classList.add('hidden')
+      });
+    });
+  }
 </script>
 </body>
 </html>
