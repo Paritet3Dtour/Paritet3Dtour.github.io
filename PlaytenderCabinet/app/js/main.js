@@ -117,9 +117,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const notificationsPopup = document.querySelector('.notifications-popup');
   if(notificationsPopup){
-    document.querySelector('.header_menu_toggler').addEventListener('click', function() {
-      notificationsPopup.classList.toggle("active");
-      this.classList.toggle("active");
+    document.querySelector('.notifications-toggler').addEventListener('click', function() {
+      notificationsPopup.classList.add("active");
+      this.classList.add("active");
     });
 
     document.querySelector('.notifications-popup_top .main-btn').addEventListener('click', function() {
@@ -145,6 +145,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
     });
+    document.addEventListener('click', function(event) {
+      let notificationsPopup = document.querySelector('.notifications-popup');
+      let toggler = document.querySelector('.notifications-toggler');
+    
+      if (notificationsPopup.classList.contains('active') && !notificationsPopup.contains(event.target) && !toggler.contains(event.target)) {
+        notificationsPopup.classList.remove('active');
+        toggler.classList.remove('active');
+      }
+    });
   }
 
   const profilePopup = document.querySelector('.profile-popup');
@@ -159,5 +168,55 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelector('.sidebar_profile').classList.add("active");
       profilePopup.classList.remove("active");
     });
+    document.addEventListener('click', function(event) {
+      let profilePopup = document.querySelector('.profile-popup');
+      let themePopup = document.querySelector('.theme-popup');
+      let sidebar = document.querySelector('.sidebar_profile');
+    
+      if (profilePopup.classList.contains('active') && !profilePopup.contains(event.target) && !sidebar.contains(event.target)) {
+        profilePopup.classList.remove('active');
+        sidebar.classList.remove('active');
+      }else if(themePopup.classList.contains('active') && !themePopup.contains(event.target) && !sidebar.contains(event.target)){
+        themePopup.classList.remove('active');
+        sidebar.classList.remove('active');
+      }
+    });
   }
+
+
+  // Функция для установки выбранной темы
+  function setThemeColor(color) {
+    // Удаляем предыдущие классы themeColor
+    document.body.className = document.body.className.replace(/\bthemeColor-\S+/g, '');
+    // Добавляем новый класс themeColor с выбранным цветом
+    document.body.classList.add(`themeColor-${color}`);
+    // Сохраняем выбор в localStorage
+    localStorage.setItem('themeColor', color);
+  }
+
+  // Функция для установки активности кнопки и применения цвета
+  function activateColorButton(color) {
+    document.querySelectorAll('.color-item').forEach((button) => {
+      button.classList.remove('active');
+      if (button.getAttribute('data-select') === color) {
+        button.classList.add('active');
+      }
+    });
+  }
+
+  // Загрузка темы при открытии страницы
+    const savedColor = localStorage.getItem('themeColor') || 'blue'; // Цвет по умолчанию
+    setThemeColor(savedColor);
+    activateColorButton(savedColor);
+    
+    // Обработчик нажатия на кнопки
+    document.querySelectorAll('.color-item').forEach((button) => {
+      button.addEventListener('click', () => {
+        const selectedColor = button.getAttribute('data-select');
+        setThemeColor(selectedColor);
+        activateColorButton(selectedColor);
+      });
+    });
+
 });
+

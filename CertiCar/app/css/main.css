@@ -546,6 +546,71 @@ html {
   .title-container .info-item svg{
     margin-left: 8px;
   }
+
+  .protocol-container{
+    min-width: 245px;
+  }
+  .protocol-container_title{
+    color: #1D1F24;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+  }
+  .protocol-container_title svg{
+    margin-left: 7px;
+    cursor: pointer;
+  }
+  .protocol-container_details{
+    display: flex;
+    align-items: center;
+  }
+  .protocol-container_detail{
+    color: #6B6E75;
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+  }
+  .protocol-container_detail:last-child{
+    margin-right: 0;
+  }
+  .protocol-container_detail strong{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 3px;
+  }
+  .protocol-container_details .form-group{
+    display: flex;
+    align-items: center;
+    margin-right: 7px;
+  }
+  .protocol-container_details .form-group input, .protocol-container_details .form-group .date-field{
+    max-width: 115px;
+  }
+  .protocol-container_details .form-group .form-label.required{
+    padding-right: 14px;
+    margin-bottom: 0;
+  }
+  .protocol-container_details .form-group input:not(.multiselect input){
+    height: 38px;
+    padding: 5px 10px;
+  }
+  .protocol-container_details .form-group input{
+    height: 38px;
+  }
+  .protocol-container_details .form-group .date-field:after{
+    background-size: 13px;
+    width: 35px;
+  }
+  .protocol-container_details .main-btn{
+    height: 38px;
+    margin-left: 5px;
+    font-size: 13px;
+  }
+  
   .top-section_links{
     display: flex;
     justify-content: flex-end;
