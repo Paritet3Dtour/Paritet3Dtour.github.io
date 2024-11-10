@@ -219,39 +219,49 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-  // Функция для установки выбранной темы
-  function setTheme(color) {
-    // Удаляем предыдущие классы themeColor
-    document.body.className = document.body.className.replace(/\btheme-\S+/g, '');
-    // Добавляем новый класс themeColor с выбранным цветом
-    document.body.classList.add(`theme-${color}`);
-    // Сохраняем выбор в localStorage
+// Функция для установки выбранной темы
+function setTheme(color) {
+  // Проверяем наличие класса dark-example
+  const isDarkExample = document.body.classList.contains('dark-example');
+  
+  // Удаляем предыдущие классы themeColor
+  document.body.className = document.body.className.replace(/\btheme-\S+/g, '');
+  
+  // Устанавливаем тему theme-dark, если есть класс dark-example, иначе выбранный цвет
+  const themeColor = isDarkExample ? 'dark' : color;
+  document.body.classList.add(`theme-${themeColor}`);
+  
+  // Сохраняем выбор в localStorage, только если класс dark-example отсутствует
+  if (!isDarkExample) {
     localStorage.setItem('theme', color);
   }
+  
+  // Активируем соответствующую кнопку
+  activateThemeButton(themeColor);
+}
 
-  // Функция для установки активности кнопки и применения цвета
-  function activateThemeButton(color) {
-    document.querySelectorAll('.theme-item').forEach((button) => {
-      button.classList.remove('active');
-      if (button.getAttribute('data-select') === color) {
-        button.classList.add('active');
-      }
-    });
-  }
+// Функция для установки активности кнопки и применения цвета
+function activateThemeButton(color) {
+  document.querySelectorAll('.theme-item').forEach((button) => {
+    button.classList.remove('active');
+    if (button.getAttribute('data-select') === color) {
+      button.classList.add('active');
+    }
+  });
+}
 
-  // Загрузка темы при открытии страницы
-    const savedTheme = localStorage.getItem('theme') || 'blue'; // Цвет по умолчанию
-    setTheme(savedTheme);
-    activateThemeButton(savedTheme);
-    
-    // Обработчик нажатия на кнопки
-    document.querySelectorAll('.theme-item').forEach((button) => {
-      button.addEventListener('click', () => {
-        const selectedTheme = button.getAttribute('data-select');
-        setTheme(selectedTheme);
-        activateThemeButton(selectedTheme);
-      });
-    });
+// Загрузка темы при открытии страницы
+const savedTheme = localStorage.getItem('theme') || 'blue'; // Цвет по умолчанию
+setTheme(savedTheme);
+
+// Обработчик нажатия на кнопки
+document.querySelectorAll('.theme-item').forEach((button) => {
+  button.addEventListener('click', () => {
+    const selectedTheme = button.getAttribute('data-select');
+    setTheme(selectedTheme);
+  });
+});
+
 
 });
 

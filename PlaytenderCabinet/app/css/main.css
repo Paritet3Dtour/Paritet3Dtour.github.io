@@ -2626,6 +2626,27 @@ input.mail-field{
 .promo-group{
   margin-bottom: 20px;
 }
+.promo-item{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.promo-item:last-child{
+  margin-bottom: 0;
+}
+.promo-item a{
+  margin-bottom: 0;
+}
+.promo-item a.dark{
+  color: #000;
+}
+.promo-item .delimetr{
+  width: 30px;
+  height: 1px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: rgba(235, 237, 240, 1);
+}
 .promo-group a:last-child{
   margin-bottom: 0;
 }
@@ -2643,7 +2664,6 @@ a.promo-heading{
 }
 .promo-list a{
   display: block;
-  margin-bottom: 4px;
   color: #2898FF;
 }
 
