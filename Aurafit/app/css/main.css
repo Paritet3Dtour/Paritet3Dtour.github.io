@@ -170,6 +170,10 @@ a{
   font-size: 12px;
   line-height: 24px;
   border-radius: 200px;
+  transition: all 0.2s;
+}
+.header_lang a:hover{
+  background: rgba(255, 255, 255, 0.2);
 }
 .header_lang a.active{
   color: #060606;
@@ -256,6 +260,7 @@ a{
   transition: all 0.2s;
   background-color: #F19503;
   border: 1px solid transparent;
+  width: max-content;
 }
 .banner_btn .mob{
   display: none;
@@ -281,7 +286,7 @@ a{
   transition: transform 0.3s ease-in-out;
 }
 .banner_btn:hover .icon svg {
-  animation: slideArrow 0.6s ease-in-out forwards;
+  animation: slideArrow 0.4s ease-in-out forwards;
 }
 @keyframes slideArrow {
   0% { transform: translateX(0); }
@@ -297,7 +302,7 @@ a{
   transition: transform 0.3s ease-in-out;
 }
 .directions_item_info:hover .directions_item_btn svg{
-  animation: slideArrow 0.6s ease-in-out forwards;
+  animation: slideArrow 0.4s ease-in-out forwards;
 }
 .main-btn .icon{
   overflow: hidden;
@@ -306,7 +311,7 @@ a{
   transition: transform 0.3s ease-in-out;
 }
 .main-btn:hover .icon svg{
-  animation: slideArrow 0.6s ease-in-out forwards;
+  animation: slideArrow 0.4s ease-in-out forwards;
 }
 
 .banner_heading span {
@@ -676,6 +681,24 @@ a{
 .reviews_nav_btns button.swiper-button-disabled svg path{
   fill: #BCBCBD;
 }
+.reviews_nav_btns button.swiper-button-disabled:hover svg path{
+  fill: #BCBCBD;
+}
+.reviews_nav_btns button:hover svg path{
+  transition: all 0.2s;
+}
+.reviews_nav_btns button:hover svg path{
+  fill: #F19503;
+}
+.popup_slider_nav_btns button.swiper-button-disabled:hover svg path{
+  fill: #BCBCBD;
+}
+.popup_slider_nav_btns button:hover svg path{
+  transition: all 0.2s;
+}
+.popup_slider_nav_btns button:hover svg path{
+  fill: #F19503;
+}
 .reviews_nav_progress{
   display: flex;
   align-items: center;
@@ -721,6 +744,7 @@ a{
   font-weight: 500;
   font-size: 80px;
   line-height: 80px;
+  transition: all 2s ease;
 }
 .statistics_item_descr{
   font-size: 16px;
@@ -1201,6 +1225,10 @@ body.open-menu .menu-container{
   font-size: 12px;
   line-height: 24px;
   border-radius: 200px;
+  transition: all 0.2s;
+}
+.menu-container_lang a:hover{
+  background: rgba(255, 255, 255, 0.2);
 }
 .menu-container_lang a.active{
   background-color: #fff;
@@ -1333,29 +1361,148 @@ body.open-menu .menu-container{
   z-index: 100;
   width: 100%;
   height: 100%;
-  background-color: rgba(000, 000, 000, 0.5);
+  background-color: rgba(000, 000, 000, 0.7);
 }
 .popup {
   position: relative;
   z-index: 200;
   width: 100%;
-  max-width: 840px;
+  max-width: 1224px;
   margin: auto;
-  background-color: #FFFFFF;
+  background-color: #060606;
   bottom: -100vh;
   transition: all 0.6s ease-in-out;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 40px;
+  border-radius: 40px;
 }
-.confirm-popup{
-  max-width: 452px;
-}
-.confirm-popup_heading{
+.popup_close{
+  position: absolute;
+  right: 12px;
+  top: 12px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+}
+.popup_close svg{
+  transition: all 0.2s;
+}
+.popup_close:hover svg{
+  transform: rotate(90deg);
+}
+
+.popup_heading{
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+}
+.popup_subheading{
   margin-bottom: 12px;
   font-size: 24px;
-  line-height: 27px;
+  line-height: 28px;
+}
+.popup_descr{
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 28px;
+}
+.popup_slider{
+  width: 100%;
+}
+.popup_slider_slide{
+  height: 322px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 24px;
+}
+.popup_slider_nav{
+  margin-top: 24px;
+}
+
+.popup_slider_nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popup_slider_nav_btns{
+  flex-shrink: 0;
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+}
+.popup_slider_nav_btns button{
+  background-color: #fff;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s;
+  margin-right: 12px;
+  border: none;
+  outline: none;
+}
+.popup_slider_nav_btns button:last-child{
+  margin-right: 0;
+}
+.popup_slider_nav_btns button.swiper-button-disabled svg path{
+  fill: #BCBCBD;
+}
+.popup_slider_nav_progress{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.popup_slider_nav_progress .slide-counter{
+  flex-shrink: 0;
+  margin-right: 24px;
+  font-size: 12px;
+}
+.popup_slider_nav_progress .progress-bar{
+  width: 100%;
+  height: 1px;
+  background-color: #383838;
+}
+.popup_slider_nav_progress .progress-bar_fill {
+  height: 100%;
+  width: 0%;
+  background: #F19503;
+  transition: width 0.3s ease;
+}
+.popup_slider_nav_pagination{
+  display: none;
+}
+
+
+.oferta-section{
+  padding-top: 168px;
+  padding-bottom: 100px;
+}
+.oferta-section_heading{
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+}
+.oferta-section_subheading{
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 40px;
+}
+.oferta-section_content p{
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  margin-bottom: 12px;
 }
 
 
@@ -1765,6 +1912,7 @@ body.open-menu .menu-container{
   .directions_item_descr{
     font-size: 14px;
     line-height: 18px;
+    max-width: 228px;
   }
   .directions_item_btn{
     margin-left: 16px;
@@ -2240,4 +2388,71 @@ body.open-menu .menu-container{
   .menu-container_bottom .menu-container_lang{display: flex;}
   .faq_bg-icon{display: none;}
   .statistics_bg-icon{display: none;}
+  .popup.sli-request-popup{
+    padding: 40px 20px;
+    border-radius: 24px;
+  }
+  .popup_close{
+    width: 40px;
+    height: 40px;
+  }
+  .popup_close svg{
+    width: 20px;
+  }
+  .popup_heading{
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .popup_subheading{
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .popup_descr{
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .popup_slider_slide{
+    height: 322px;
+    width: 80%;
+  }
+  .popup_slider_nav_progress{
+    display: none;
+  }
+  .popup_slider_nav_btns{
+    display: none;
+  }
+  .popup_slider_container{
+    margin-right: -20px;
+    width: calc(100% + 20px);
+  }
+  .popup_slider_nav{
+    margin-top: 20px;
+  }
+  .popup_slider_nav_pagination{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .oferta-section{
+    padding-top: 108px;
+    padding-bottom: 50px;
+  }
+  .oferta-section_heading{
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .oferta-section_subheading{
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 12px;
+    margin-top: 20px;
+  }
+  .oferta-section_content p{
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
