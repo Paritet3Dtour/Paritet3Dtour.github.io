@@ -116,6 +116,9 @@
         </a>
       </div>
     </div>
+    <div class="banner__video-wrapp" style="display: none;">
+      <div class="banner__video" id="player"></div>
+    </div> 
   </section>
 
   <section class="directions" id="directions">
@@ -998,6 +1001,65 @@
   <script src="js/jquery.inputmask.bundle.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          videoId:  '7gH0H4aunJU',
+          playerVars: {
+            autoplay: 1,
+            controls: 0,
+            loop: 1,
+            showinfo: 0,
+            disablekb: 1,
+            modestbranding: 1,
+            iv_load_policy: 3,
+            rel: 0
+          },
+          events: {
+            'onStateChange': onPlayerStateChange,
+            'onReady': onPlayerReady,
+          }
+        });
+      }
+
+      function play(){
+        player.playVideo();
+      }
+
+      function onPlayerReady(event) { 
+        player.mute();
+        setTimeout(() => {
+          player.playVideo();
+          $('.banner__video-wrapp').show();
+        },500);
+      }
+
+      var done = false;
+      function onPlayerStateChange(event) {
+        if(event.data === 0){
+          player.playVideo();
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+      jQuery(document).ready(function($){
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > $('.banner').height()) {
+            player.pauseVideo();
+          }else{
+            player.playVideo();
+          }
+        })
+      })
+    
+
+
     function animateNumbers() {
       const stats = document.querySelectorAll('.statistics_item_value');
       
