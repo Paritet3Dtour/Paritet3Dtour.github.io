@@ -942,10 +942,15 @@ a{
 
 .map{
   margin: 200px 0;
+  position: relative;
+}
+.map-container{
+  width: 100%;
+  height: 788px;
+  border-radius: 40px;
 }
 .map_wrapp{
   width: 100%;
-  height: 788px;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -962,6 +967,7 @@ a{
   font-size: 18px;
   line-height: 24px;
   font-weight: 500;
+  z-index: 2;
 }
 .map_item_location{
   display: flex;
@@ -1355,7 +1361,7 @@ body.open-menu .menu-container{
   height: 100%;
   min-width: 100vw;
   min-height: 100vh;
-  padding: 10px;
+  padding: 20px 10px;
   opacity: 0;
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
@@ -1392,6 +1398,8 @@ body.open-menu .menu-container{
   transition: all 0.6s ease-in-out;
   padding: 40px;
   border-radius: 40px;
+  max-height: calc(100vh - 40px);
+  overflow: auto;
 }
 .popup_close{
   position: absolute;
@@ -1497,6 +1505,12 @@ body.open-menu .menu-container{
 }
 .popup_slider_nav_pagination{
   display: none;
+}
+.popup_group{
+  margin-bottom: 40px;
+}
+.popup_group:last-child{
+  margin-bottom: 0;
 }
 
 
@@ -2472,5 +2486,14 @@ body.open-menu .menu-container{
     margin-bottom: 8px;
     font-size: 16px;
     line-height: 22px;
+  }
+  .popup_group{
+    margin-bottom: 30px;
+  }
+  .map-container{
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    height: 218px;
+    border-radius: 24px;
   }
 }

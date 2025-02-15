@@ -6,9 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta http-equiv="content_language" content="uk">
   <meta name="description" content="Aurafit">
+  <link rel="shortcut icon" href="img/favicon.ico"/>
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <title>Aurafit</title>
   <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/main.css">
@@ -537,7 +539,7 @@
       <div class="directions_list">
         <div class="directions_item">
           <div class="directions_item_preview" style="background-image: url('img/abon1.jpg');"></div>
-          <div class="directions_item_info">
+          <div class="directions_item_info" data-fancybox="subscription" data-src="img/subscriptions/subscription_kids.jpg">
             <div class="directions_item_details">
               <div class="directions_item_name">Для дітей</div>
             </div>
@@ -551,7 +553,7 @@
 
         <div class="directions_item">
           <div class="directions_item_preview" style="background-image: url('img/abon2.jpg');"></div>
-          <div class="directions_item_info">
+          <div class="directions_item_info" data-fancybox="subscription_kids" data-src="img/subscriptions/subscription.jpg">
             <div class="directions_item_details">
               <div class="directions_item_name">Для дорослих</div>
             </div>
@@ -573,7 +575,7 @@
       <div class="directions_list">
         <div class="directions_item">
           <div class="directions_item_preview" style="background-image: url('img/rozk1.jpg');"></div>
-          <div class="directions_item_info">
+          <div class="directions_item_info" data-fancybox="schedule_kids" data-src="img/schedule/schedule_kids.jpg">
             <div class="directions_item_details">
               <div class="directions_item_name">Для дітей</div>
             </div>
@@ -587,7 +589,7 @@
 
         <div class="directions_item">
           <div class="directions_item_preview" style="background-image: url('img/rozk2.jpg');"></div>
-          <div class="directions_item_info">
+          <div class="directions_item_info" data-fancybox="schedule" data-src="img/schedule/schedule.jpg">
             <div class="directions_item_details">
               <div class="directions_item_name">Для дорослих</div>
             </div>
@@ -738,7 +740,7 @@
             </a>
           </div>
         </div>
-        <div class="map_preview mob" style="background-image: url('img/map-preview_mob.png');"></div>
+        <div id="map" class="map-container"></div>
       </div>
     </div>
   </section>
@@ -957,38 +959,78 @@
       </button>
       <div class="popup_content">
         <div class="popup_heading"></div>
-        <div class="popup_subheading"></div>
-        <div class="popup_descr">
-          
-        </div>
-        <div class="popup_slider">
-          <div class="popup_slider_container swiper-container">
-            <div class="swiper-wrapper">
+        <div class="popup_group one">
+          <div class="popup_subheading"></div>
+          <div class="popup_descr">
+            
+          </div>
+          <div class="popup_slider">
+            <div class="popup_slider_container one swiper-container">
+              <div class="swiper-wrapper">
+              </div>
+            </div>
+
+            <div class="popup_slider_nav">
+              <div class="popup_slider_nav_pagination"></div>
+              <div class="popup_slider_nav_progress">
+                <div class="slide-counter">
+                  <span class="current-slide">1</span> / <span class="total-slides">8</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-bar_fill"></div>
+                </div>
+              </div>
+
+              <div class="popup_slider_nav_btns">
+                <button class="prev">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.4694 3.96944L6.96939 11.4694C6.89965 11.5391 6.84433 11.6218 6.80659 11.7129C6.76885 11.8039 6.74942 11.9015 6.74942 12.0001C6.74942 12.0986 6.76885 12.1962 6.80659 12.2873C6.84433 12.3783 6.89965 12.461 6.96939 12.5307L14.4694 20.0307C14.6101 20.1714 14.801 20.2505 15 20.2505C15.199 20.2505 15.3899 20.1714 15.5306 20.0307C15.6714 19.89 15.7504 19.6991 15.7504 19.5001C15.7504 19.301 15.6714 19.1102 15.5306 18.9694L8.56032 12.0001L15.5306 5.0307C15.6003 4.96101 15.6556 4.87829 15.6933 4.78724C15.731 4.6962 15.7504 4.59862 15.7504 4.50007C15.7504 4.40152 15.731 4.30394 15.6933 4.2129C15.6556 4.12185 15.6003 4.03913 15.5306 3.96944C15.461 3.89976 15.3782 3.84449 15.2872 3.80678C15.1961 3.76906 15.0986 3.74965 15 3.74965C14.9015 3.74965 14.8039 3.76906 14.7128 3.80678C14.6218 3.84449 14.5391 3.89976 14.4694 3.96944Z" fill="#060606"/>
+                  </svg>
+                </button>
+                <button class="next">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.53061 3.96944L17.0306 11.4694C17.1003 11.5391 17.1557 11.6218 17.1934 11.7129C17.2312 11.8039 17.2506 11.9015 17.2506 12.0001C17.2506 12.0986 17.2312 12.1962 17.1934 12.2873C17.1557 12.3783 17.1003 12.461 17.0306 12.5307L9.53062 20.0307C9.38988 20.1714 9.19901 20.2505 8.99999 20.2505C8.80097 20.2505 8.61009 20.1714 8.46936 20.0307C8.32863 19.89 8.24957 19.6991 8.24957 19.5001C8.24957 19.301 8.32863 19.1102 8.46936 18.9694L15.4397 12.0001L8.46936 5.0307C8.39968 4.96101 8.34441 4.87829 8.30669 4.78724C8.26898 4.6962 8.24957 4.59862 8.24957 4.50007C8.24957 4.40152 8.26898 4.30394 8.30669 4.2129C8.34441 4.12185 8.39968 4.03913 8.46936 3.96944C8.53905 3.89976 8.62177 3.84449 8.71282 3.80678C8.80386 3.76906 8.90144 3.74965 8.99999 3.74965C9.09854 3.74965 9.19612 3.76906 9.28716 3.80678C9.37821 3.84449 9.46093 3.89976 9.53061 3.96944Z" fill="#060606"/>
+                  </svg>                  
+                </button>
+              </div>
             </div>
           </div>
+        </div>
 
-          <div class="popup_slider_nav">
-            <div class="popup_slider_nav_pagination"></div>
-            <div class="popup_slider_nav_progress">
-              <div class="slide-counter">
-                <span class="current-slide">1</span> / <span class="total-slides">8</span>
-              </div>
-              <div class="progress-bar">
-                <div class="progress-bar_fill"></div>
+        <div class="popup_group two">
+          <div class="popup_subheading two"></div>
+          <div class="popup_descr two">
+            
+          </div>
+          <div class="popup_slider two">
+            <div class="popup_slider_container two swiper-container">
+              <div class="swiper-wrapper">
               </div>
             </div>
 
-            <div class="popup_slider_nav_btns">
-              <button class="prev">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14.4694 3.96944L6.96939 11.4694C6.89965 11.5391 6.84433 11.6218 6.80659 11.7129C6.76885 11.8039 6.74942 11.9015 6.74942 12.0001C6.74942 12.0986 6.76885 12.1962 6.80659 12.2873C6.84433 12.3783 6.89965 12.461 6.96939 12.5307L14.4694 20.0307C14.6101 20.1714 14.801 20.2505 15 20.2505C15.199 20.2505 15.3899 20.1714 15.5306 20.0307C15.6714 19.89 15.7504 19.6991 15.7504 19.5001C15.7504 19.301 15.6714 19.1102 15.5306 18.9694L8.56032 12.0001L15.5306 5.0307C15.6003 4.96101 15.6556 4.87829 15.6933 4.78724C15.731 4.6962 15.7504 4.59862 15.7504 4.50007C15.7504 4.40152 15.731 4.30394 15.6933 4.2129C15.6556 4.12185 15.6003 4.03913 15.5306 3.96944C15.461 3.89976 15.3782 3.84449 15.2872 3.80678C15.1961 3.76906 15.0986 3.74965 15 3.74965C14.9015 3.74965 14.8039 3.76906 14.7128 3.80678C14.6218 3.84449 14.5391 3.89976 14.4694 3.96944Z" fill="#060606"/>
-                </svg>
-              </button>
-              <button class="next">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.53061 3.96944L17.0306 11.4694C17.1003 11.5391 17.1557 11.6218 17.1934 11.7129C17.2312 11.8039 17.2506 11.9015 17.2506 12.0001C17.2506 12.0986 17.2312 12.1962 17.1934 12.2873C17.1557 12.3783 17.1003 12.461 17.0306 12.5307L9.53062 20.0307C9.38988 20.1714 9.19901 20.2505 8.99999 20.2505C8.80097 20.2505 8.61009 20.1714 8.46936 20.0307C8.32863 19.89 8.24957 19.6991 8.24957 19.5001C8.24957 19.301 8.32863 19.1102 8.46936 18.9694L15.4397 12.0001L8.46936 5.0307C8.39968 4.96101 8.34441 4.87829 8.30669 4.78724C8.26898 4.6962 8.24957 4.59862 8.24957 4.50007C8.24957 4.40152 8.26898 4.30394 8.30669 4.2129C8.34441 4.12185 8.39968 4.03913 8.46936 3.96944C8.53905 3.89976 8.62177 3.84449 8.71282 3.80678C8.80386 3.76906 8.90144 3.74965 8.99999 3.74965C9.09854 3.74965 9.19612 3.76906 9.28716 3.80678C9.37821 3.84449 9.46093 3.89976 9.53061 3.96944Z" fill="#060606"/>
-                </svg>                  
-              </button>
+            <div class="popup_slider_nav">
+              <div class="popup_slider_nav_pagination"></div>
+              <div class="popup_slider_nav_progress">
+                <div class="slide-counter">
+                  <span class="current-slide">1</span> / <span class="total-slides">8</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-bar_fill"></div>
+                </div>
+              </div>
+
+              <div class="popup_slider_nav_btns">
+                <button class="prev">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.4694 3.96944L6.96939 11.4694C6.89965 11.5391 6.84433 11.6218 6.80659 11.7129C6.76885 11.8039 6.74942 11.9015 6.74942 12.0001C6.74942 12.0986 6.76885 12.1962 6.80659 12.2873C6.84433 12.3783 6.89965 12.461 6.96939 12.5307L14.4694 20.0307C14.6101 20.1714 14.801 20.2505 15 20.2505C15.199 20.2505 15.3899 20.1714 15.5306 20.0307C15.6714 19.89 15.7504 19.6991 15.7504 19.5001C15.7504 19.301 15.6714 19.1102 15.5306 18.9694L8.56032 12.0001L15.5306 5.0307C15.6003 4.96101 15.6556 4.87829 15.6933 4.78724C15.731 4.6962 15.7504 4.59862 15.7504 4.50007C15.7504 4.40152 15.731 4.30394 15.6933 4.2129C15.6556 4.12185 15.6003 4.03913 15.5306 3.96944C15.461 3.89976 15.3782 3.84449 15.2872 3.80678C15.1961 3.76906 15.0986 3.74965 15 3.74965C14.9015 3.74965 14.8039 3.76906 14.7128 3.80678C14.6218 3.84449 14.5391 3.89976 14.4694 3.96944Z" fill="#060606"/>
+                  </svg>
+                </button>
+                <button class="next">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.53061 3.96944L17.0306 11.4694C17.1003 11.5391 17.1557 11.6218 17.1934 11.7129C17.2312 11.8039 17.2506 11.9015 17.2506 12.0001C17.2506 12.0986 17.2312 12.1962 17.1934 12.2873C17.1557 12.3783 17.1003 12.461 17.0306 12.5307L9.53062 20.0307C9.38988 20.1714 9.19901 20.2505 8.99999 20.2505C8.80097 20.2505 8.61009 20.1714 8.46936 20.0307C8.32863 19.89 8.24957 19.6991 8.24957 19.5001C8.24957 19.301 8.32863 19.1102 8.46936 18.9694L15.4397 12.0001L8.46936 5.0307C8.39968 4.96101 8.34441 4.87829 8.30669 4.78724C8.26898 4.6962 8.24957 4.59862 8.24957 4.50007C8.24957 4.40152 8.26898 4.30394 8.30669 4.2129C8.34441 4.12185 8.39968 4.03913 8.46936 3.96944C8.53905 3.89976 8.62177 3.84449 8.71282 3.80678C8.80386 3.76906 8.90144 3.74965 8.99999 3.74965C9.09854 3.74965 9.19612 3.76906 9.28716 3.80678C9.37821 3.84449 9.46093 3.89976 9.53061 3.96944Z" fill="#060606"/>
+                  </svg>                  
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -999,8 +1041,383 @@
 
   <script src="js/jquery-3.6.3.min.js"></script>
   <script src="js/jquery.inputmask.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <script src="js/swiper.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8UzD4dT-aUT2spiIXkz9zBoSO8JHKynU&callback=initMap" async defer></script>
+
   <script>
+    function initMap() {
+      const mapOptions = {
+        center: { lat: 49.996631, lng: 36.358970 },
+        zoom: 16,
+        mapTypeControl: false,
+        styles: [
+        {
+        "featureType": "all",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "saturation": 36
+            },
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 40
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 17
+            },
+            {
+                "weight": 1.2
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.country",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.country",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.country",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.province",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.locality",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "saturation": "-100"
+            },
+            {
+                "lightness": "30"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.locality",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.neighborhood",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.land_parcel",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "gamma": "0.00"
+            },
+            {
+                "lightness": "74"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.man_made",
+        "elementType": "all",
+        "stylers": [
+            {
+                "lightness": "3"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 29
+            },
+            {
+                "weight": 0.2
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 18
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 19
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    }
+        ],
+      };
+
+      const map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+      const marker = new google.maps.Marker({
+        position: { lat: 49.996631, lng: 36.358970 },
+        map: map,
+        icon: {
+          url: "img/map-point-icon.svg",
+          scaledSize: new google.maps.Size(40, 40)
+        }
+      });
+    }
+
+      Fancybox.bind('[data-fancybox]', {
+        compact: false,
+        contentClick: "iterateZoom",
+        Images: {
+          Panzoom: {
+            maxScale: 2,
+          },
+        },
+        Toolbar: {
+          display: {
+            left: [
+              "infobar",
+            ],
+            middle : [],
+            right: [
+              "iterateZoom",
+              "close",
+            ],
+          }
+        }
+      });    
       var tag = document.createElement('script');
       tag.src = "https://www.youtube.com/iframe_api";
       var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -1009,7 +1426,7 @@
       var player;
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-          videoId:  '7gH0H4aunJU',
+          videoId:  '8BatL035_ec',
           playerVars: {
             autoplay: 1,
             controls: 0,
@@ -1114,42 +1531,61 @@
 
     document.addEventListener("DOMContentLoaded", function () {
       let popupSwiper;
+      let popupSwiperTwo;
       const directionsData = [
         {
           name: "Басейн",
           subname: "Подзаголовок",
           description: "Найсучасніша система глибокого очищення води",
-          images: ["img/directions_item1.jpg", "img/directions_item2.jpg", "img/directions_item3.jpg", "img/directions_item4.jpeg", "img/directions_item5.jpg"]
+          images: ["img/directions_item1.jpg", "img/directions_item2.jpg", "img/directions_item3.jpg", "img/directions_item4.jpeg", "img/directions_item5.jpg"],
+          subnameTwo: "Подзаголовок",
+          descriptionTwo: "Найсучасніша система глибокого очищення води",
+          imagesTwo: ["img/directions_item1.jpg", "img/directions_item2.jpg", "img/directions_item3.jpg", "img/directions_item4.jpeg", "img/directions_item5.jpg"]
         },
         {
           name: "Тренажерний зал",
           subname: "Подзаголовок",
           description: "Силові тренування, вільні ваги, кардіо-зона",
-          images: ["img/directions_item1.jpg", "img/directions_item2.jpg", "img/directions_item3.jpg", "img/directions_item4.jpeg", "img/directions_item5.jpg"]
+          images: ["img/directions_item1.jpg", "img/directions_item2.jpg", "img/directions_item3.jpg", "img/directions_item4.jpeg", "img/directions_item5.jpg"],
+          subnameTwo: "Подзаголовок",
+          descriptionTwo: "Найсучасніша система глибокого очищення води",
+          imagesTwo: ["img/directions_item1.jpg", "img/directions_item2.jpg", "img/directions_item3.jpg", "img/directions_item4.jpeg", "img/directions_item5.jpg"]
         },
         {
           name: "Спа-комплекс",
           subname: "Подзаголовок",
           description: "Сауна, масаж для повного відновлення",
-          images: ["img/directions_item1.jpg", "img/directions_item2.jpg", "img/directions_item3.jpg", "img/directions_item4.jpeg", "img/directions_item5.jpg"]
+          images: ["img/directions_item1.jpg", "img/directions_item2.jpg", "img/directions_item3.jpg", "img/directions_item4.jpeg", "img/directions_item5.jpg"],
+          subnameTwo: "Подзаголовок",
+          descriptionTwo: "Найсучасніша система глибокого очищення води",
+          imagesTwo: ["img/directions_item1.jpg", "img/directions_item2.jpg", "img/directions_item3.jpg", "img/directions_item4.jpeg", "img/directions_item5.jpg"]
         },
         {
           name: "Групові заняття",
           subname: "Подзаголовок",
           description: "Різноманітні класи для всіх рівнів підготовки",
-          images: ["img/directions_item1.jpg", "img/directions_item2.jpg", "img/directions_item3.jpg", "img/directions_item4.jpeg", "img/directions_item5.jpg"]
+          images: ["img/directions_item1.jpg", "img/directions_item2.jpg", "img/directions_item3.jpg", "img/directions_item4.jpeg", "img/directions_item5.jpg"],
+          subnameTwo: "Подзаголовок",
+          descriptionTwo: "Найсучасніша система глибокого очищення води",
+          imagesTwo: ["img/directions_item1.jpg", "img/directions_item2.jpg", "img/directions_item3.jpg", "img/directions_item4.jpeg", "img/directions_item5.jpg"]
         },
         {
           name: "Секції для дітей",
           subname: "Подзаголовок",
           description: "Фітнес і плавання для дітей від 3 місяців",
-          images: ["img/directions_item1.jpg", "img/directions_item2.jpg", "img/directions_item3.jpg", "img/directions_item4.jpeg", "img/directions_item5.jpg"]
+          images: ["img/directions_item1.jpg", "img/directions_item2.jpg", "img/directions_item3.jpg", "img/directions_item4.jpeg", "img/directions_item5.jpg"],
+          subnameTwo: "Подзаголовок",
+          descriptionTwo: "Найсучасніша система глибокого очищення води",
+          imagesTwo: ["img/directions_item1.jpg", "img/directions_item2.jpg", "img/directions_item3.jpg", "img/directions_item4.jpeg", "img/directions_item5.jpg"]
         },
         {
           name: "Сквош",
           subname: "Подзаголовок",
           description: "Один із двох майданчиків у Харкові",
-          images: ["img/directions_item1.jpg", "img/directions_item2.jpg", "img/directions_item3.jpg", "img/directions_item4.jpeg", "img/directions_item5.jpg"]
+          images: ["img/directions_item1.jpg", "img/directions_item2.jpg", "img/directions_item3.jpg", "img/directions_item4.jpeg", "img/directions_item5.jpg"],
+          subnameTwo: "Подзаголовок",
+          descriptionTwo: "Найсучасніша система глибокого очищення води",
+          imagesTwo: ["img/directions_item1.jpg", "img/directions_item2.jpg", "img/directions_item3.jpg", "img/directions_item4.jpeg", "img/directions_item5.jpg"]
         }
       ];
 
@@ -1158,6 +1594,9 @@
       const popupsubTitle = popup.querySelector(".popup_subheading");
       const popupDescr = popup.querySelector(".popup_descr");
       const popupSlider = popup.querySelector(".popup_slider .swiper-wrapper");
+      const popupsubTitleTwo = popup.querySelector(".popup_subheading.two");
+      const popupDescrTwo = popup.querySelector(".popup_descr.two");
+      const popupSliderTwo = popup.querySelector(".popup_slider.two .swiper-wrapper");
       const closeButton = popup.querySelector("#directions-popup .popup-close");
 
       document.querySelectorAll(".directions_item_info").forEach((item, index) => {
@@ -1171,15 +1610,25 @@
             popupSlider.innerHTML = data.images
               .map((img) => `<div class="popup_slider_slide swiper-slide" style="background-image: url('${img}');"></div>`)
               .join("");
-            document.querySelector('#directions-popup .total-slides').textContent = data.images.length;
+            document.querySelector('#directions-popup .popup_group.one .total-slides').textContent = data.images.length;
+            popupsubTitleTwo.textContent = data.subnameTwo;
+            popupDescrTwo.textContent = data.descriptionTwo;
+            popupSliderTwo.innerHTML = data.imagesTwo
+              .map((img) => `<div class="popup_slider_slide swiper-slide" style="background-image: url('${img}');"></div>`)
+              .join("");
+            document.querySelector('#directions-popup .popup_group.two .total-slides').textContent = data.images.length;
             popup.classList.add('active');
 
             setTimeout(() => {
         if (popupSwiper) {
           popupSwiper.destroy(true, true);
         }
-        const popupSliderContainer = popup.querySelector(".popup_slider_container");
-        console.log(popupSwiper);
+        if (popupSwiperTwo) {
+          popupSwiperTwo.destroy(true, true);
+        }
+        const popupSliderContainer = popup.querySelector(".popup_slider_container.one");
+        const popupSliderContainerTwo = popup.querySelector(".popup_slider_container.two");
+
         popupSwiper = new Swiper(popupSliderContainer, {
           loop: false,
           roundLengths: true,
@@ -1189,11 +1638,11 @@
           spaceBetween: 12,
           allowTouchMove: true,
           pagination: {
-            el: ".popup_slider_nav_pagination",
+            el: ".popup_group.one .popup_slider_nav_pagination",
           },
           navigation: {
-            nextEl: '.popup_slider_nav_btns .next',
-            prevEl: '.popup_slider_nav_btns .prev',
+            nextEl: '.popup_group.one .popup_slider_nav_btns .next',
+            prevEl: '.popup_group.one .popup_slider_nav_btns .prev',
           },
           breakpoints: {
             992: {
@@ -1210,15 +1659,55 @@
             }
           }
         });
+
+        popupSwiperTwo = new Swiper(popupSliderContainerTwo, {
+          loop: false,
+          roundLengths: true,
+          autoplay: false,
+          slidesPerView: 'auto',
+          centeredSlides: false,
+          spaceBetween: 12,
+          allowTouchMove: true,
+          pagination: {
+            el: ".popup_group.two .popup_slider_nav_pagination",
+          },
+          navigation: {
+            nextEl: '.popup_group.two .popup_slider_nav_btns .next',
+            prevEl: '.popup_group.two .popup_slider_nav_btns .prev',
+          },
+          breakpoints: {
+            992: {
+                slidesPerView: 4,
+                spaceBetween: 24,
+            }
+          },
+          on: {
+            init: function () {
+              updateProgressPopupTwo(this);
+            },
+            slideChange: function () {
+              updateProgressPopupTwo(this);
+            }
+          }
+        });
         function updateProgressPopup(swiper) {
           const totalSlides = swiper.slides.length;
           const maxVisibleSlides = swiper.params.slidesPerView;
           const currentIndex = swiper.realIndex + maxVisibleSlides;
           const progress = (currentIndex / totalSlides) * 100;
-          document.querySelector('.popup_slider .progress-bar_fill').style.width = Math.min(progress, 100) + '%';
-          document.querySelector('.popup_slider .current-slide').textContent = Math.min(currentIndex, totalSlides);
+          document.querySelector('.popup_group.one .popup_slider .progress-bar_fill').style.width = Math.min(progress, 100) + '%';
+          document.querySelector('.popup_group.one .popup_slider .current-slide').textContent = Math.min(currentIndex, totalSlides);
         }
         popupSwiper.update();
+        function updateProgressPopupTwo(swiper) {
+          const totalSlides = swiper.slides.length;
+          const maxVisibleSlides = swiper.params.slidesPerView;
+          const currentIndex = swiper.realIndex + maxVisibleSlides;
+          const progress = (currentIndex / totalSlides) * 100;
+          document.querySelector('.popup_group.two .popup_slider .progress-bar_fill').style.width = Math.min(progress, 100) + '%';
+          document.querySelector('.popup_group.two .popup_slider .current-slide').textContent = Math.min(currentIndex, totalSlides);
+        }
+        popupSwiperTwo.update();
       }, 50);
           }
         });
@@ -1229,6 +1718,10 @@
           if (popupSwiper) {
             popupSwiper.destroy(true, true);
             popupSwiper = null;
+          }
+          if (popupSwiperTwo) {
+            popupSwiperTwo.destroy(true, true);
+            popupSwiperTwo = null;
           }
           popup.classList.remove("active");
         });
