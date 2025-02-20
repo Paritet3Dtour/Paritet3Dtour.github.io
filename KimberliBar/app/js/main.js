@@ -83,11 +83,13 @@ $(document).ready(function () {
   $(".request-open-btn").click(function () {
     $(".header").removeClass("active");
     $("#request-popup.sli-popup_container").addClass("active");
+    dataLayer.push({'event':'bron_stolika'});
   });
 
   $(".location-open-btn").click(function () {
     $(".header").removeClass("active");
     $("#location-popup.sli-popup_container").addClass("active");
+    dataLayer.push({'event':'bron_lokacjii'});
   });
 
   $(".menu-open-btn").click(function () {
@@ -515,6 +517,9 @@ $(document).ready(function () {
     $(".header").toggleClass("active");
   });
 
+  $(".pickup_form .submit-btn").click(function(){
+    dataLayer.push({'event':'call_me_bar'});
+  });
   $(".pickup_form").submit(function (e) { 
     e.preventDefault();
     var th = $(this);

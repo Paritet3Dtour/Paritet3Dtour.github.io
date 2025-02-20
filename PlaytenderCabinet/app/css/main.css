@@ -720,6 +720,9 @@ body{
   align-items: center;
   justify-content: flex-end;
 }
+.header_menu .main-btn{
+  margin-left: 8px;
+}
 .header_nav_item{
   margin-right: 4px;
   padding: 7px 12px;

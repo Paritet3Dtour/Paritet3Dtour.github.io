@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content_language" content="uk">
+  <meta name="description" content="Certi.Car">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <title>Certi.Car</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Hotjar Tracking Code for https://app.product-lab.ai/ -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3713700,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5KJ1J8N3YV"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-5KJ1J8N3YV');
+</script>
+
+<script>
+window.analytics = {};
+function juneify(writeKey) { 
+    window.analytics._writeKey = writeKey;
+    var script = document.createElement("script");
+    script.type = "application/javascript";
+    script.onload = function () {
+        window.analytics.page();
+    }
+    script.src = "https://unpkg.com/@june-so/analytics-next/dist/umd/standalone.js";
+    var first = document.getElementsByTagName('script')[0];
+    first.parentNode.insertBefore(script, first);
+}
+juneify("Q6i7042kISOfVu41");
+
+document.addEventListener('DOMContentLoaded', function () {
+  setTimeout(function() {
+    if(window.location.pathname === '/privacypolicy/'){
+      window.analytics.track('Onload policy');
+    }else if(window.location.pathname === '/termsofservice/'){
+      window.analytics.track('Onload terms');
+    }else{
+      window.analytics.track('Onload landing');
+    }
+  }, 500);
+});
+</script>
+
+  <style>
+.accord-navs{
+  width: 100%;
+  display: flex;
+  align-self: stretch;
+  justify-content: space-between;
+  border-bottom: transparent;
+  margin: 0 auto;
+  position: relative;
+      max-width: 585px;
+  padding-bottom: 3px;
+}
+.accord-navs-wrapp{
+    width: 100%;
+    overflow: auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+.accord-navs::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(121, 125, 127);
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+}
+.accord-nav{
+  display: inline-block;
+  width: auto;
+  padding-left: 0px;
+  text-indent: 0px;
+  height: 35px;
+  line-height: 30px;
+  background-color: transparent;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0);
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(121, 125, 127);
+  font-size: 12px;
+  letter-spacing: 0px;
+  cursor: pointer;
+  position: relative;
+}
+.accord-nav::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
+.accord-nav.active::after{
+  background-color: #000;
+    z-index: 1;
+    opacity: 0.3;
+}
+.accord-progress {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 0;
+      height: 2px;
+  z-index: 2;
+  opacity: 0;
+      background-color: #000;
+  transition: width 10s linear;
+  }
+.accord-nav.active .accord-progress{
+	opacity: 1;
+}
+.accord-nav.active{
+  color: #000;
+}
+.accord-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+}
+.accord-content.active{
+  display: flex;
+}
+.accord-text_heading{
+  margin-bottom: 10px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  color: rgba(32, 39, 42, 1);
+  text-align: left;
+}
+.accord-text_descr{
+  margin-bottom: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  font-style: normal;
+  color: rgba(32, 39, 42, 1);
+}
+.accord-text{
+    max-width: 382px;
+    margin-top: 30px;
+}
+.accord-preview{
+  /*height: 220px;*/
+  max-width: auto;
+height: 300px;
+  flex-shrink: 0;
+}
+.accord-preview img{
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.accord-heading{
+  margin-bottom: 30px;
+      font-family: Poppins;
+    font-weight: 600;
+    font-size: 20px;
+  line-height: 30px;
+    letter-spacing: -0.2px;
+    font-style: normal;
+    color: rgba(32, 39, 42, 1);
+    text-align: center;
+  line-height: 42px;
+  font-size: 30px;
+}
+.accord-heading p{
+	margin:0;
+}
+.accord-heading .tab1{
+  background-color: #D9DEFB;
+}
+.accord-heading .tab2{
+  background-color: #F2CC94;
+}
+.accord-heading .tab3{
+  background-color: #9BDDA8;
+}
+.accord-heading .tab4{
+  background-color: #B2E2FC;
+}
+.accord-heading .tab5{
+  background-color: #FAD978;
+}
+.accord-heading .tab6{
+  background-color: #FFAFA3;
+}
+
+.accord-btn{
+ margin-top: 20px;
+ width: 130px;
+height: 36px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+      border-radius: 8px;
+      background-color: rgb(32, 39, 42);
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    letter-spacing: 0px;
+  text-decoration: none;
+}
+.accord-btn:hover{
+      background-color: rgb(133, 224, 163);
+  color: rgb(0, 0, 0);
+}
+
+
+
+.discovery-section{
+        padding-top: 121px;
+    }
+    .discovery-section_container{
+        margin: 0 auto;
+        max-width: 1223px;
+    }
+    .discovery-section_heading{
+        margin-bottom: 50px;
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 38px;
+        letter-spacing: -0.2px;
+        font-style: normal;
+        color: rgba(32, 39, 42, 1);
+        text-align: center;
+    }
+    .discovery-section_wrapp{
+        display: flex;
+        display: flex;
+        -webkit-box-align: unset;
+        align-items: unset;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+    .discovery-section_preview{
+        display: flex;
+        width: 65%;
+        height: auto;
+        position: relative;
+        flex-direction: column;
+        transition: opacity 0.3s ease 0s;
+        opacity: 1;
+    }
+    .discovery-section_preview_item{
+        width: 100%;
+        flex-direction: column;
+        position: sticky;
+        -webkit-box-align: center;
+        align-items: center;
+        /*height: 70vh;*/
+        top: 1px;
+        display: flex;
+    }
+    .preview-wrapp{
+        top: 0px;
+        transition: opacity 0.4s ease 0s;
+        display: flex;
+        position: absolute;
+        z-index: 5;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        max-height: 100vh;
+    }
+    .preview-wrapp.active{
+        opacity: 1;
+        z-index: 10;
+    }
+    .preview-div{
+        width: 100%;
+        display: flex;
+    }
+    .preview-div img{
+        color: transparent;
+        object-fit: contain;
+        width: 100%;
+        min-width: auto;
+        max-width: 100%;
+        height: auto;
+        min-height: auto;
+        max-height: 100%;
+    }
+    .discovery-section_content{
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 35%;
+    }
+    .discovery-section_item{
+        height: 70vh;
+        padding-top: 30px;
+        padding-bottom: 200px;
+    }
+    .discovery-section_item_heading{
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: -0.2px;
+        font-style: normal;
+        color: rgba(32, 39, 42, 1);
+        text-align: left;
+        margin-bottom: 18px;
+    }
+    .discovery-section_item_subheading{
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        font-style: normal;
+        color: rgba(32, 39, 42, 1);
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .discovery-section_item_descr{
+        text-align: left;
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        font-style: normal;
+        color: rgba(32, 39, 42, 1);
+        margin-bottom: 20px;
+    }
+    .discovery-section_item_btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 36px;
+        background-color: rgb(32, 39, 42);
+        border-radius: 8px;
+        border-width: 1px;
+        border-color: rgb(32, 39, 42);
+        font-family: Poppins;
+        font-weight: 400;
+        font-style: normal;
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+        letter-spacing: 0px;
+        min-width: 130px;
+        text-decoration: none;
+        width: max-content;
+    }
+
+
+
+.accord-navs-mob{
+  width: 100%;
+  display: flex;
+  align-self: stretch;
+  justify-content: space-between;
+  border-bottom: transparent;
+  max-width: max-content;
+  margin: 0 auto;
+  position: relative;
+  width: max-content;
+  padding-bottom: 3px;
+}
+.accord-navs-wrapp-mob{
+    width: calc(100% + 20px);
+    overflow: auto;
+    margin-right: -20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.accord-navs-mob::after{
+  content: '';
+  display: block;
+  width: calc(100% - 20px);
+  height: 1px;
+  background-color: rgb(121, 125, 127);
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+}
+.accord-nav-mob{
+  display: inline-block;
+  width: auto;
+  padding-left: 0px;
+  text-indent: 0px;
+  height: 35px;
+  line-height: 30px;
+  background-color: transparent;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0);
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(121, 125, 127);
+  font-size: 12px;
+  letter-spacing: 0px;
+  cursor: pointer;
+  position: relative;
+    margin-right: 20px;
+}
+.accord-nav-mob::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
+.accord-nav-mob.active::after{
+      background-color: #000;
+    z-index: 1;
+    opacity: 0.3;
+}
+.accord-progress {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 0;
+      height: 2px;
+  z-index: 2;
+  opacity: 0;
+      background-color: #000;
+      transition: width 10s linear;
+  }
+.accord-nav-mob.active .accord-progress{
+	opacity: 1;
+}
+.accord-nav-mob.active{
+  color: #000;
+}
+.accord-content-mob{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+  flex-direction: column-reverse;
+      /*padding: 16px 16px 24px;
+    border-radius: 8px;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-top: 10px;
+    border: 1px solid rgb(231, 237, 246);
+  box-shadow: rgba(71, 103, 136, 0.04) 0px 4px 5px 0px, rgba(71, 103, 136, 0.05) 0px 6px 10px 0px;*/
+}
+.accord-content-mob.active{
+  display: flex;
+}
+.accord-text_heading-mob{
+  margin-bottom: 4px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  color: rgba(32, 39, 42, 1);
+  text-align: left;
+}
+.accord-text_descr-mob{
+  margin-bottom: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  font-style: normal;
+  color: rgba(32, 39, 42, 1);
+}
+.accord-text-mob{
+  max-width: 100%;
+  margin-top: 20px;
+}
+.accord-preview-mob{
+  height: 220px;
+  max-width: 360px;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+.accord-preview-mob img{
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.accord-heading-mob{
+  margin-bottom: 24px;
+      font-family: Poppins;
+    font-weight: 600;
+    font-size: 20px;
+  line-height: 30px;
+    letter-spacing: -0.2px;
+    font-style: normal;
+    color: rgba(32, 39, 42, 1);
+    text-align: center;
+  
+}
+.accord-heading-mob p{
+	margin:0;
+}
+.accord-heading-mob .tab1{
+  background-color: #D9DEFB;
+}
+.accord-heading-mob .tab2{
+  background-color: #F2CC94;
+}
+.accord-heading-mob .tab3{
+  background-color: #9BDDA8;
+}
+.accord-heading-mob .tab4{
+  background-color: #B2E2FC;
+}
+.accord-heading-mob .tab5{
+  background-color: #FAD978;
+}
+.accord-heading-mob .tab6{
+  background-color: #FFAFA3;
+}
+
+.accord-btn-mob{
+ margin-top: 20px;
+ width: 130px;
+height: 36px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+      border-radius: 8px;
+      background-color: rgb(32, 39, 42);
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    letter-spacing: 0px;
+  text-decoration: none;
+}
+.accord-btn-mob:hover{
+      background-color: rgb(133, 224, 163);
+  color: rgb(0, 0, 0);
+}
+  </style>
+</head>
+<body>
+
+  <div class="accord-section">
+    <div class="accord-heading">
+  		<p>Guided AI-powered process</p>
+      	<p><span id="accord-color-heading" class="tab1">for Product Visionaries</span></p>
+  	</div>
+  	<div class="accord-navs-wrapp">
+    <div class="accord-navs">
+        <div class="accord-nav active" data-target="tab1">Designers<div class="accord-progress"></div></div>
+      	<div class="accord-nav" data-target="tab5">Product Managers<div class="accord-progress"></div></div>
+      	<div class="accord-nav" data-target="tab6">Startups<div class="accord-progress"></div></div>
+        <div class="accord-nav" data-target="tab3">Agencies<div class="accord-progress"></div></div>
+        <div class="accord-nav" data-target="tab4">Marketers<div class="accord-progress"></div></div>
+      	<div class="accord-nav" data-target="tab2">Enterprises<div class="accord-progress"></div></div>
+    </div>
+    </div>
+    <div class="accord-contents">
+        <div class="accord-content active" data-target="tab1">
+            <div class="accord-text">
+                <div class="accord-text_heading">Creativity Boost</div>
+                <div class="accord-text_descr">Streamline profiling and persona creation to enrich designs, fostering more profound empathy with users</div>
+                <div class="accord-text_heading">Enhanced Collaboration</div>
+                <div class="accord-text_descr">Utilize generated documents for synchronization within teams to ensure better alignment toward mutual goal</div>
+              	<a class="accord-btn" href="https://app.product-lab.ai/">Try now</a>
+            </div>
+            <div class="accord-preview">
+                <img src="https://i.ibb.co/x3hPdMd/landing-guide-preview1.png" alt="landing-guide-preview1" border="0"> 
+            </div>
+        </div>
+        <div class="accord-content" data-target="tab2">
+            <div class="accord-text">
+                <div class="accord-text_heading">Accelerated Innovations</div>
+                <div class="accord-text_descr">Reduce time to innovation for quicker adaptation to market trends and opportunities</div>
+                <div class="accord-text_heading">Effortless Personalization</div>
+                <div class="accord-text_descr">Seamlessly customize your services to meet diverse customer needs and preferences</div>
+              <a class="accord-btn" href="https://app.product-lab.ai/">Try now</a>
+            </div>
+            <div class="accord-preview">
+              	<img src="https://i.ibb.co/hYkCrz3/landing-guide-preview5.png" alt="landing-guide-preview5" style="height: 315px;" border="0">
+                <!--<img src="https://i.ibb.co/rZgnhR0/landing-guide-preview2.png" alt="landing-guide-preview2" border="0" style="height: 315px;">-->
+            </div>
+        </div>
+      	<div class="accord-content" data-target="tab6">
+            <div class="accord-text">
+                <div class="accord-text_heading">MVP Development</div>
+                <div class="accord-text_descr">Accelerate MVP creation for launching faster to iterate product ideas in the market</div>
+                <div class="accord-text_heading">Focus on Hypotheses</div>
+                <div class="accord-text_descr">Identify and validate customers' hypotheses from day 1, persuing your Product Market Fit</div>
+              <a class="accord-btn" href="https://app.product-lab.ai/">Try now</a>
+            </div>
+            <div class="accord-preview">
+                <img src="https://i.ibb.co/6W6c5Bg/landing-guide-preview6-1.png" alt="landing-guide-preview6" style="height: 315px;" border="0">
+            </div>
+        </div>
+        <div class="accord-content" data-target="tab3">
+            <div class="accord-text">
+                <div class="accord-text_heading">Streamlined Delivery</div>
+                <div class="accord-text_descr">Optimize workflows for efficient project delivery and better client satisfaction</div>
+                <div class="accord-text_heading">Compelling Proposals</div>
+                <div class="accord-text_descr">Craft persuasive proposals backed by data-driven insights for increased client acquisition and retention</div>
+              <a class="accord-btn" href="https://app.product-lab.ai/">Try now</a>
+            </div>
+            <div class="accord-preview">
+                <img src="https://i.ibb.co/10JWKb2/landing-guide-preview3.png" alt="landing-guide-preview3" style="height: 315px;" border="0">
+            </div>
+        </div>
+        <div class="accord-content" data-target="tab4">
+            <div class="accord-text">
+                <div class="accord-text_heading">Targeted Campaign</div>
+                <div class="accord-text_descr">Utilize deep customer insights to perform highly targeted campaigns, ensuring relevance and effectiveness</div>
+                <div class="accord-text_heading">Data-driven Strategy</div>
+                <div class="accord-text_descr">Tailor product adoption strategies based on a profound understanding of customer segments and their journeys</div>
+              <a class="accord-btn" href="https://app.product-lab.ai/">Try now</a>
+            </div>
+            <div class="accord-preview">
+                <img src="https://i.ibb.co/fk3b2LF/landing-guide-preview4.png" alt="landing-guide-preview4" style="height: 315px;" border="0">
+            </div>
+        </div>
+        <div class="accord-content" data-target="tab5">
+            <div class="accord-text">
+                <div class="accord-text_heading">Quick Onboarding</div>
+                <div class="accord-text_descr">Rapidly comprehend any product, facilitating effective decision-making and strategy development</div>
+                <div class="accord-text_heading">Performance Boost</div>
+                <div class="accord-text_descr">Improve product metrics by having a profound understanding of customers, ensuring personalized strategies</div>
+              <a class="accord-btn" href="https://app.product-lab.ai/">Try now</a>
+            </div>
+            <div class="accord-preview">
+              	<img src="https://i.ibb.co/rZgnhR0/landing-guide-preview2.png" alt="landing-guide-preview2" style="height: 315px;" border="0">
+                <!--<img src="https://i.ibb.co/hYkCrz3/landing-guide-preview5.png" alt="landing-guide-preview5" border="0" style="height: 310px;">-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Получаем все элементы с классом .accord-nav
+const accordNavs = document.querySelectorAll('.accord-nav');
+
+// Функция для переключения вкладок
+function switchTab() {
+    // Находим активную вкладку
+    const activeNav = document.querySelector('.accord-nav.active');
+    let nextNav = activeNav.nextElementSibling;
+
+    // Если следующая вкладка отсутствует, возвращаемся к первой
+    if (!nextNav) {
+        nextNav = accordNavs[0];
+    }
+
+    // Снимаем активный класс со всех вкладок
+    accordNavs.forEach(nav => {
+        nav.classList.remove('active');
+        nav.querySelector('.accord-progress').style.width = '0';
+        void nav.offsetWidth; // Перезапуск анимации
+    });
+
+    // Добавляем активный класс к следующей вкладке
+    nextNav.classList.add('active');
+
+    // Запускаем прогресс индикатор
+    nextNav.querySelector('.accord-progress').style.width = '100%';
+
+    // Получаем значение атрибута data-target для текущего элемента .accord-nav
+    const targetId = nextNav.getAttribute('data-target');
+
+    // Получаем все элементы .accord-content
+    const accordContents = document.querySelectorAll('.accord-content');
+
+    // Снимаем активный класс со всех вкладок содержимого
+    accordContents.forEach(content => {
+        content.classList.remove('active');
+    });
+
+    // Отображаем соответствующее содержимое
+    const targetContent = document.querySelector(`.accord-content[data-target="${targetId}"]`);
+    if (targetContent) {
+        targetContent.classList.add('active');
+    }
+
+    // Изменяем класс элемента .accord-color-heading
+    const element = document.getElementById('accord-color-heading');
+    if (element) {
+        element.className = '';
+        element.classList.add(`${targetId}`);
+    }
+}
+
+// Устанавливаем интервал для автоматического переключения вкладок
+setInterval(switchTab, 10000);
+
+// Добавляем обработчик события клика для каждого элемента .accord-nav
+accordNavs.forEach(nav => {
+    nav.addEventListener('click', () => {
+        // Очищаем активный класс у всех вкладок
+        accordNavs.forEach(nav => nav.classList.remove('active'));
+
+        // Добавляем активный класс к текущей вкладке
+        nav.classList.add('active');
+
+        // Очищаем прогресс индикаторы у всех вкладок
+        accordNavs.forEach(nav => {
+            nav.querySelector('.accord-progress').style.width = '0';
+            void nav.offsetWidth; // Перезапуск анимации
+        });
+
+        // Запускаем прогресс индикатор
+        nav.querySelector('.accord-progress').style.width = '100%';
+
+        // Получаем значение атрибута data-target для текущего элемента .accord-nav
+        const targetId = nav.getAttribute('data-target');
+
+        // Снимаем активный класс со всех вкладок содержимого
+        const accordContents = document.querySelectorAll('.accord-content');
+        accordContents.forEach(content => {
+            content.classList.remove('active');
+        });
+
+        // Отображаем соответствующее содержимое
+        const targetContent = document.querySelector(`.accord-content[data-target="${targetId}"]`);
+        if (targetContent) {
+            targetContent.classList.add('active');
+        }
+
+        // Изменяем класс элемента .accord-color-heading
+        const element = document.getElementById('accord-color-heading');
+        if (element) {
+            element.className = '';
+            element.classList.add(`${targetId}`);
+        }
+    });
+});
+
+ // Запуск прогресс индикатора для первой вкладки с небольшой задержкой
+    setTimeout(() => {
+        document.querySelector('.accord-nav.active .accord-progress').style.width = '100%';
+    }, 10);
+</script>
+
+
+
+
+<!-----------  MOBILE   -------------->
+<div class="accord-section-mob">
+  <div class="accord-heading-mob">
+    <p>Guided AI-powered process</p>
+      <p><span id="accord-color-heading-mob" class="tab1">for Product Visionaries</span></p>
+  </div>
+  <div class="accord-navs-wrapp-mob">
+  <div class="accord-navs-mob">
+      <div class="accord-nav-mob active" data-target="tab1">Designers <div class="accord-progress"></div></div>
+      <div class="accord-nav-mob" data-target="tab5">Product Managers <div class="accord-progress"></div></div>
+      <div class="accord-nav-mob" data-target="tab6">Startups <div class="accord-progress"></div></div>
+      <div class="accord-nav-mob" data-target="tab3">Agencies <div class="accord-progress"></div></div>
+      <div class="accord-nav-mob" data-target="tab4">Marketers <div class="accord-progress"></div></div>
+      <div class="accord-nav-mob" data-target="tab2">Enterprises <div class="accord-progress"></div></div>
+  </div>
+  </div>
+  <div class="accord-contents-mob">
+      <div class="accord-content-mob active" data-target="tab1">
+          <div class="accord-text-mob">
+              <div class="accord-text_heading-mob">Creativity Boost</div>
+              <div class="accord-text_descr-mob">Streamline profiling and persona creation to enrich designs, fostering more profound empathy with users</div>
+              <div class="accord-text_heading-mob">Enhanced Collaboration</div>
+              <div class="accord-text_descr-mob">Utilize generated documents for synchronization within teams to ensure better alignment toward mutual goal</div>
+              <a class="accord-btn-mob" href="https://app.product-lab.ai/">Try now</a>
+          </div>
+          <div class="accord-preview-mob">
+              <img src="https://i.ibb.co/x3hPdMd/landing-guide-preview1.png" alt="landing-guide-preview1" border="0"> 
+          </div>
+      </div>
+      <div class="accord-content-mob" data-target="tab2">
+          <div class="accord-text-mob">
+              <div class="accord-text_heading-mob">Accelerated Innovations</div>
+              <div class="accord-text_descr-mob">Reduce time to innovation for quicker adaptation to market trends and opportunities</div>
+              <div class="accord-text_heading-mob">Effortless Personalization</div>
+              <div class="accord-text_descr-mob">Seamlessly customize your services to meet diverse customer needs and preferences</div>
+            <a class="accord-btn-mob" href="https://app.product-lab.ai/">Try now</a>
+          </div>
+          <div class="accord-preview-mob">
+              <img src="https://i.ibb.co/hYkCrz3/landing-guide-preview5.png" alt="landing-guide-preview5" border="0">
+              <!--<img src="https://i.ibb.co/rZgnhR0/landing-guide-preview2.png" alt="landing-guide-preview2" border="0" style="height: 315px;">-->
+          </div>
+      </div>
+      <div class="accord-content-mob" data-target="tab6">
+          <div class="accord-text-mob">
+              <div class="accord-text_heading-mob">MVP Development</div>
+              <div class="accord-text_descr-mob">Accelerate MVP creation for launching faster to iterate product ideas in the market</div>
+              <div class="accord-text_heading-mob">Focus on Hypotheses</div>
+              <div class="accord-text_descr-mob">Identify and validate customers' hypotheses from day 1, persuing your Product Market Fit</div>
+            <a class="accord-btn-mob" href="https://app.product-lab.ai/">Try now</a>
+          </div>
+          <div class="accord-preview-mob">
+              <img src="https://i.ibb.co/6W6c5Bg/landing-guide-preview6-1.png" alt="landing-guide-preview6" border="0">
+          </div>
+      </div>
+      <div class="accord-content-mob" data-target="tab3">
+          <div class="accord-text-mob">
+              <div class="accord-text_heading-mob">Streamlined Delivery</div>
+              <div class="accord-text_descr-mob">Optimize workflows for efficient project delivery and better client satisfaction</div>
+              <div class="accord-text_heading-mob">Compelling Proposals</div>
+              <div class="accord-text_descr-mob">Craft persuasive proposals backed by data-driven insights for increased client acquisition and retention</div>
+            <a class="accord-btn-mob" href="https://app.product-lab.ai/">Try now</a>
+          </div>
+          <div class="accord-preview-mob">
+              <img src="https://i.ibb.co/10JWKb2/landing-guide-preview3.png" alt="landing-guide-preview3" border="0">
+          </div>
+      </div>
+      <div class="accord-content-mob" data-target="tab4">
+          <div class="accord-text-mob">
+              <div class="accord-text_heading-mob">Targeted Campaign</div>
+              <div class="accord-text_descr-mob">Utilize deep customer insights to perform highly targeted campaigns, ensuring relevance and effectiveness</div>
+              <div class="accord-text_heading-mob">Data-driven Strategy</div>
+              <div class="accord-text_descr-mob">Tailor product adoption strategies based on a profound understanding of customer segments and their journeys</div>
+            <a class="accord-btn-mob" href="https://app.product-lab.ai/">Try now</a>
+          </div>
+          <div class="accord-preview-mob">
+              <img src="https://i.ibb.co/fk3b2LF/landing-guide-preview4.png" alt="landing-guide-preview4" border="0">
+          </div>
+      </div>
+      <div class="accord-content-mob" data-target="tab5">
+          <div class="accord-text-mob">
+              <div class="accord-text_heading-mob">Quick Onboarding</div>
+              <div class="accord-text_descr-mob">Rapidly comprehend any product, facilitating effective decision-making and strategy development</div>
+              <div class="accord-text_heading-mob">Performance Boost</div>
+              <div class="accord-text_descr-mob">Improve product metrics by having a profound understanding of customers, ensuring personalized strategies</div>
+            <a class="accord-btn-mob" href="https://app.product-lab.ai/">Try now</a>
+          </div>
+          <div class="accord-preview-mob">
+              <img src="https://i.ibb.co/rZgnhR0/landing-guide-preview2.png" alt="landing-guide-preview2" border="0">
+              <!--<img src="https://i.ibb.co/hYkCrz3/landing-guide-preview5.png" alt="landing-guide-preview5" border="0" style="height: 310px;">-->
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<script>
+// Получаем все элементы с классом .accord-nav
+const accordNavs = document.querySelectorAll('.accord-nav-mob');
+
+// Функция для переключения вкладок
+function switchTab() {
+  // Находим активную вкладку
+  const activeNav = document.querySelector('.accord-nav-mob.active');
+  let nextNav = activeNav.nextElementSibling;
+
+  // Если следующая вкладка отсутствует, возвращаемся к первой
+  if (!nextNav) {
+      nextNav = accordNavs[0];
+  }
+
+  // Снимаем активный класс со всех вкладок
+  accordNavs.forEach(nav => {
+      nav.classList.remove('active');
+      nav.querySelector('.accord-progress').style.width = '0';
+      void nav.offsetWidth; // Перезапуск анимации
+  });
+
+  // Добавляем активный класс к следующей вкладке
+  nextNav.classList.add('active');
+
+  // Запускаем прогресс индикатор
+  nextNav.querySelector('.accord-progress').style.width = '100%';
+
+  // Получаем значение атрибута data-target для текущего элемента .accord-nav
+  const targetId = nextNav.getAttribute('data-target');
+
+  // Получаем все элементы .accord-content
+  const accordContents = document.querySelectorAll('.accord-content-mob');
+
+  // Снимаем активный класс со всех вкладок содержимого
+  accordContents.forEach(content => {
+      content.classList.remove('active');
+  });
+
+  // Отображаем соответствующее содержимое
+  const targetContent = document.querySelector(`.accord-content-mob[data-target="${targetId}"]`);
+  if (targetContent) {
+      targetContent.classList.add('active');
+  }
+
+  // Изменяем класс элемента .accord-color-heading
+  const element = document.getElementById('accord-color-heading-mob');
+  if (element) {
+      element.className = '';
+      element.classList.add(`${targetId}`);
+  }
+}
+
+// Устанавливаем интервал для автоматического переключения вкладок
+setInterval(switchTab, 10000);
+
+// Добавляем обработчик события клика для каждого элемента .accord-nav
+accordNavs.forEach(nav => {
+  nav.addEventListener('click', () => {
+      // Очищаем активный класс у всех вкладок
+      accordNavs.forEach(nav => nav.classList.remove('active'));
+
+      // Добавляем активный класс к текущей вкладке
+      nav.classList.add('active');
+
+      // Очищаем прогресс индикаторы у всех вкладок
+      accordNavs.forEach(nav => {
+          nav.querySelector('.accord-progress').style.width = '0';
+          void nav.offsetWidth; // Перезапуск анимации
+      });
+
+      // Запускаем прогресс индикатор
+      nav.querySelector('.accord-progress').style.width = '100%';
+
+      // Получаем значение атрибута data-target для текущего элемента .accord-nav
+      const targetId = nav.getAttribute('data-target');
+
+      // Снимаем активный класс со всех вкладок содержимого
+      const accordContents = document.querySelectorAll('.accord-content-mob');
+      accordContents.forEach(content => {
+          content.classList.remove('active');
+      });
+
+      // Отображаем соответствующее содержимое
+      const targetContent = document.querySelector(`.accord-content-mob[data-target="${targetId}"]`);
+      if (targetContent) {
+          targetContent.classList.add('active');
+      }
+
+      // Изменяем класс элемента .accord-color-heading
+      const element = document.getElementById('accord-color-heading-mob');
+      if (element) {
+          element.className = '';
+          element.classList.add(`${targetId}`);
+      }
+  });
+});
+
+// Запуск прогресс индикатора для первой вкладки с небольшой задержкой
+  setTimeout(() => {
+      document.querySelector('.accord-nav-mob.active .accord-progress').style.width = '100%';
+  }, 10);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content_language" content="uk">
+  <meta name="description" content="Certi.Car">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <title>Certi.Car</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+.accord-navs-mob{
+  width: 100%;
+  display: flex;
+  align-self: stretch;
+  justify-content: space-between;
+  border-bottom: transparent;
+  max-width: max-content;
+  margin: 0 auto;
+  position: relative;
+  width: max-content;
+  padding-bottom: 3px;
+}
+.accord-navs-wrapp-mob{
+    width: calc(100% + 20px);
+    overflow: auto;
+    margin-right: -20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.accord-navs-mob::after{
+  content: '';
+  display: block;
+  width: calc(100% - 20px);
+  height: 1px;
+  background-color: rgb(121, 125, 127);
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+}
+.accord-nav-mob{
+  display: inline-block;
+  width: auto;
+  padding-left: 0px;
+  text-indent: 0px;
+  height: 35px;
+  line-height: 30px;
+  background-color: transparent;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0);
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(121, 125, 127);
+  font-size: 12px;
+  letter-spacing: 0px;
+  cursor: pointer;
+  position: relative;
+    margin-right: 20px;
+}
+.accord-nav-mob::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
+.accord-nav-mob.active::after{
+      background-color: #000;
+    z-index: 1;
+    opacity: 0.3;
+}
+.accord-progress {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 0;
+      height: 2px;
+  z-index: 2;
+  opacity: 0;
+      background-color: #000;
+      /*transition: width 10s linear;*/
+  }
+.accord-nav-mob.active .accord-progress {
+            width: 0; /* Сброс прогресса */
+        }
+.accord-nav-mob.active .accord-progress{
+	opacity: 1;
+}
+.accord-nav-mob.active{
+  color: #000;
+}
+.accord-content-mob{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+  flex-direction: column-reverse;
+      /*padding: 16px 16px 24px;
+    border-radius: 8px;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-top: 10px;
+    border: 1px solid rgb(231, 237, 246);
+  box-shadow: rgba(71, 103, 136, 0.04) 0px 4px 5px 0px, rgba(71, 103, 136, 0.05) 0px 6px 10px 0px;*/
+}
+.accord-content-mob.active{
+  display: flex;
+}
+.accord-text_heading-mob{
+  margin-bottom: 4px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  color: rgba(32, 39, 42, 1);
+  text-align: left;
+}
+.accord-text_descr-mob{
+  margin-bottom: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  font-style: normal;
+  color: rgba(32, 39, 42, 1);
+}
+.accord-text-mob{
+  max-width: 100%;
+  margin-top: 20px;
+}
+.accord-preview-mob{
+  height: 220px;
+  max-width: 360px;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+.accord-preview-mob img{
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.accord-heading-mob{
+  margin-bottom: 24px;
+      font-family: Poppins;
+    font-weight: 600;
+    font-size: 20px;
+  line-height: 30px;
+    letter-spacing: -0.2px;
+    font-style: normal;
+    color: rgba(32, 39, 42, 1);
+    text-align: center;
+  
+}
+.accord-heading-mob p{
+	margin:0;
+}
+.accord-heading-mob .tab1{
+  background-color: #D9DEFB;
+}
+.accord-heading-mob .tab2{
+  background-color: #F2CC94;
+}
+.accord-heading-mob .tab3{
+  background-color: #9BDDA8;
+}
+.accord-heading-mob .tab4{
+  background-color: #B2E2FC;
+}
+.accord-heading-mob .tab5{
+  background-color: #FAD978;
+}
+.accord-heading-mob .tab6{
+  background-color: #FFAFA3;
+}
+
+.accord-btn-mob{
+ margin-top: 20px;
+ width: 130px;
+height: 36px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+      border-radius: 8px;
+      background-color: rgb(32, 39, 42);
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    letter-spacing: 0px;
+  text-decoration: none;
+}
+.accord-btn-mob:hover{
+      background-color: rgb(133, 224, 163);
+  color: rgb(0, 0, 0);
+}
+  </style>
+</head>
+<body>
+
+  <div class="accord-section-mob">
+    <div class="accord-heading-mob">
+  		<p>Guided AI-powered process</p>
+      	<p><span id="accord-color-heading-mob" class="tab1">for Product Visionaries</span></p>
+  	</div>
+  	<div class="accord-navs-wrapp-mob">
+    <div class="accord-navs-mob">
+        <div class="accord-nav-mob active" data-target="tab1">Designers <div class="accord-progress"></div></div>
+      	<div class="accord-nav-mob" data-target="tab5">Product Managers <div class="accord-progress"></div></div>
+      	<div class="accord-nav-mob" data-target="tab6">Startups <div class="accord-progress"></div></div>
+        <div class="accord-nav-mob" data-target="tab3">Agencies <div class="accord-progress"></div></div>
+        <div class="accord-nav-mob" data-target="tab4">Marketers <div class="accord-progress"></div></div>
+      	<div class="accord-nav-mob" data-target="tab2">Enterprises <div class="accord-progress"></div></div>
+    </div>
+    </div>
+    <div class="accord-contents-mob">
+        <div class="accord-content-mob active" data-target="tab1">
+            <div class="accord-text-mob">
+                <div class="accord-text_heading-mob">Creativity Boost</div>
+                <div class="accord-text_descr-mob">Streamline profiling and persona creation to enrich designs, fostering more profound empathy with users</div>
+                <div class="accord-text_heading-mob">Enhanced Collaboration</div>
+                <div class="accord-text_descr-mob">Utilize generated documents for synchronization within teams to ensure better alignment toward mutual goal</div>
+              	<a class="accord-btn-mob" href="https://app.product-lab.ai/">Try now</a>
+            </div>
+            <div class="accord-preview-mob">
+                <img src="https://i.ibb.co/x3hPdMd/landing-guide-preview1.png" alt="landing-guide-preview1" border="0"> 
+            </div>
+        </div>
+        <div class="accord-content-mob" data-target="tab2">
+            <div class="accord-text-mob">
+                <div class="accord-text_heading-mob">Accelerated Innovations</div>
+                <div class="accord-text_descr-mob">Reduce time to innovation for quicker adaptation to market trends and opportunities</div>
+                <div class="accord-text_heading-mob">Effortless Personalization</div>
+                <div class="accord-text_descr-mob">Seamlessly customize your services to meet diverse customer needs and preferences</div>
+              <a class="accord-btn-mob" href="https://app.product-lab.ai/">Try now</a>
+            </div>
+            <div class="accord-preview-mob">
+              	<img src="https://i.ibb.co/hYkCrz3/landing-guide-preview5.png" alt="landing-guide-preview5" border="0">
+                <!--<img src="https://i.ibb.co/rZgnhR0/landing-guide-preview2.png" alt="landing-guide-preview2" border="0" style="height: 315px;">-->
+            </div>
+        </div>
+      	<div class="accord-content-mob" data-target="tab6">
+            <div class="accord-text-mob">
+                <div class="accord-text_heading-mob">MVP Development</div>
+                <div class="accord-text_descr-mob">Accelerate MVP creation for launching faster to iterate product ideas in the market</div>
+                <div class="accord-text_heading-mob">Focus on Hypotheses</div>
+                <div class="accord-text_descr-mob">Identify and validate customers' hypotheses from day 1, persuing your Product Market Fit</div>
+              <a class="accord-btn-mob" href="https://app.product-lab.ai/">Try now</a>
+            </div>
+            <div class="accord-preview-mob">
+                <img src="https://i.ibb.co/6W6c5Bg/landing-guide-preview6-1.png" alt="landing-guide-preview6" border="0">
+            </div>
+        </div>
+        <div class="accord-content-mob" data-target="tab3">
+            <div class="accord-text-mob">
+                <div class="accord-text_heading-mob">Streamlined Delivery</div>
+                <div class="accord-text_descr-mob">Optimize workflows for efficient project delivery and better client satisfaction</div>
+                <div class="accord-text_heading-mob">Compelling Proposals</div>
+                <div class="accord-text_descr-mob">Craft persuasive proposals backed by data-driven insights for increased client acquisition and retention</div>
+              <a class="accord-btn-mob" href="https://app.product-lab.ai/">Try now</a>
+            </div>
+            <div class="accord-preview-mob">
+                <img src="https://i.ibb.co/10JWKb2/landing-guide-preview3.png" alt="landing-guide-preview3" border="0">
+            </div>
+        </div>
+        <div class="accord-content-mob" data-target="tab4">
+            <div class="accord-text-mob">
+                <div class="accord-text_heading-mob">Targeted Campaign</div>
+                <div class="accord-text_descr-mob">Utilize deep customer insights to perform highly targeted campaigns, ensuring relevance and effectiveness</div>
+                <div class="accord-text_heading-mob">Data-driven Strategy</div>
+                <div class="accord-text_descr-mob">Tailor product adoption strategies based on a profound understanding of customer segments and their journeys</div>
+              <a class="accord-btn-mob" href="https://app.product-lab.ai/">Try now</a>
+            </div>
+            <div class="accord-preview-mob">
+                <img src="https://i.ibb.co/fk3b2LF/landing-guide-preview4.png" alt="landing-guide-preview4" border="0">
+            </div>
+        </div>
+        <div class="accord-content-mob" data-target="tab5">
+            <div class="accord-text-mob">
+                <div class="accord-text_heading-mob">Quick Onboarding</div>
+                <div class="accord-text_descr-mob">Rapidly comprehend any product, facilitating effective decision-making and strategy development</div>
+                <div class="accord-text_heading-mob">Performance Boost</div>
+                <div class="accord-text_descr-mob">Improve product metrics by having a profound understanding of customers, ensuring personalized strategies</div>
+              <a class="accord-btn-mob" href="https://app.product-lab.ai/">Try now</a>
+            </div>
+            <div class="accord-preview-mob">
+              	<img src="https://i.ibb.co/rZgnhR0/landing-guide-preview2.png" alt="landing-guide-preview2" border="0">
+                <!--<img src="https://i.ibb.co/hYkCrz3/landing-guide-preview5.png" alt="landing-guide-preview5" border="0" style="height: 310px;">-->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+  const accordNavs = document.querySelectorAll('.accord-nav-mob');
+  let switchInterval;
+  let progressAnimationFrame;
+  
+  // Функция для переключения вкладок
+  function switchTab(nextNav = null) {
+      const activeNav = document.querySelector('.accord-nav-mob.active');
+      nextNav = nextNav || activeNav.nextElementSibling;
+  
+      if (!nextNav) {
+          nextNav = accordNavs[0];
+      }
+  
+      accordNavs.forEach(nav => {
+          nav.classList.remove('active');
+          nav.querySelector('.accord-progress').style.width = '0';
+      });
+  
+      nextNav.classList.add('active');
+      nextNav.querySelector('.accord-progress').style.width = '0';
+      scrollToActiveTab(nextNav);
+  
+      const targetId = nextNav.getAttribute('data-target');
+      const accordContents = document.querySelectorAll('.accord-content-mob');
+  
+      accordContents.forEach(content => {
+          content.classList.remove('active');
+      });
+  
+      const targetContent = document.querySelector(`.accord-content-mob[data-target="${targetId}"]`);
+      if (targetContent) {
+          targetContent.classList.add('active');
+      }
+  
+      const element = document.getElementById('accord-color-heading-mob');
+      if (element) {
+          element.className = '';
+          element.classList.add(`${targetId}`);
+      }
+  
+      // Очищаем предыдущую анимацию
+      cancelAnimationFrame(progressAnimationFrame);
+  
+      // Запускаем анимацию прогресса
+      animateProgress(nextNav.querySelector('.accord-progress'));
+  }
+
+  function scrollToActiveTab(activeTab) {
+        const wrapper = document.querySelector('.accord-navs-wrapp-mob');
+        const wrapperRect = wrapper.getBoundingClientRect();
+        const activeTabRect = activeTab.getBoundingClientRect();
+
+        if (activeTabRect.left < wrapperRect.left || activeTabRect.right > wrapperRect.right) {
+            wrapper.scrollTo({
+                left: activeTab.offsetLeft - wrapper.offsetWidth / 2 + activeTab.offsetWidth / 2,
+                behavior: 'smooth'
+            });
+        }
+    }
+  
+  // Функция для запуска интервала переключения вкладок
+  function startSwitchingTabs() {
+      switchInterval = setInterval(() => switchTab(), 10000);
+  }
+  
+  // Функция для обработки клика по вкладке
+  function handleNavClick(nav) {
+      accordNavs.forEach(nav => {
+          nav.classList.remove('active');
+          nav.querySelector('.accord-progress').style.width = '0';
+      });
+  
+      nav.classList.add('active');
+      nav.querySelector('.accord-progress').style.width = '0';
+      scrollToActiveTab(nav);
+  
+      const targetId = nav.getAttribute('data-target');
+      const accordContents = document.querySelectorAll('.accord-content-mob');
+  
+      accordContents.forEach(content => {
+          content.classList.remove('active');
+      });
+  
+      const targetContent = document.querySelector(`.accord-content-mob[data-target="${targetId}"]`);
+      if (targetContent) {
+          targetContent.classList.add('active');
+      }
+  
+      const element = document.getElementById('accord-color-heading-mob');
+      if (element) {
+          element.className = '';
+          element.classList.add(`${targetId}`);
+      }
+  
+      clearInterval(switchInterval);
+      startSwitchingTabs();
+  
+      // Очищаем предыдущую анимацию
+      cancelAnimationFrame(progressAnimationFrame);
+  
+      // Запускаем анимацию прогресса
+      animateProgress(nav.querySelector('.accord-progress'));
+  }
+  
+  // Функция для анимации прогресса
+  function animateProgress(progressBar) {
+      let startTime;
+  
+      function updateProgress(timestamp) {
+          if (!startTime) startTime = timestamp;
+          const elapsed = timestamp - startTime;
+          const progress = Math.min(elapsed / 10000, 1) * 100; // Прогресс в процентах
+  
+          progressBar.style.width = `${progress}%`;
+  
+          if (progress < 100) {
+              progressAnimationFrame = requestAnimationFrame(updateProgress);
+          }
+      }
+  
+      progressAnimationFrame = requestAnimationFrame(updateProgress);
+  }
+  
+  accordNavs.forEach(nav => {
+      nav.addEventListener('click', () => handleNavClick(nav));
+  });
+  
+  // Запуск прогресс индикатора для первой вкладки с небольшой задержкой
+  setTimeout(() => {
+      animateProgress(document.querySelector('.accord-nav-mob.active .accord-progress'));
+  }, 10);
+  
+  // Запуск автоматического переключения вкладок
+  startSwitchingTabs();
+  
+  </script>
+
+</body>
+</html>

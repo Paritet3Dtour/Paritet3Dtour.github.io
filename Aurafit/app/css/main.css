@@ -1072,7 +1072,7 @@ a{
   font-size: 24px;
   line-height: 32px;
 }
-.footer_container_heading span.mob{
+.footer_container_heading b.mob{
   display: none;
 }
 .footer_container_descr{
@@ -1122,6 +1122,9 @@ a{
   flex-shrink: 0;
   margin-left: 20px;
   margin-right: 20px;
+}
+.footer_container_preview img{
+  max-width: 230px;
 }
 .footer_bottom{
   display: flex;
@@ -2262,8 +2265,8 @@ body.open-menu .menu-container{
   .socials .title b{
     display: none;
   }
-  .socials .title b.mob{
-    display: block;
+  .socials .title{
+     justify-content: flex-end;
   }
   .socials .title .link{
     font-size: 24px;

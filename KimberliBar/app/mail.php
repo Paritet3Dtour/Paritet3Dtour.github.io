@@ -7,8 +7,11 @@ $c = true;
 if ( $method === 'POST' ) {
 
 	$project_name = 'KimmberliBar (лендинг)';
-	$admin_email  = 'testtest@gmail.com';
-	$admin_email2  = 'shpirniy06@gmail.com';
+	$admin_email  = 'kimberli.jewellery@gmail.com';
+	$admin_email2  = 'marketing@kimberli.ua';
+	$admin_email3  = 'Mdapple23@gmail.com';
+	$admin_email4  = 'Kimberlibar@ukr.net';
+	$admin_email5  = 'shpirniy06@gmail.com';
 	$form_subject = 'Форма заявки';
 
 	foreach ( $_POST as $key => $value ) {
@@ -24,8 +27,11 @@ if ( $method === 'POST' ) {
 } else if ( $method === 'GET' ) {
 
 	$project_name = 'KimmberliBar (лендинг)';
-	$admin_email  = 'testtest@gmail.com';
-	$admin_email2  = 'shpirniy06@gmail.com';
+	$admin_email  = 'kimberli.jewellery@gmail.com';
+	$admin_email2  = 'marketing@kimberli.ua';
+	$admin_email3  = 'Mdapple23@gmail.com';
+	$admin_email4  = 'Kimberlibar@ukr.net';
+	$admin_email5  = 'shpirniy06@gmail.com';
 	$form_subject = 'Форма заявки';
 
 	foreach ( $_GET as $key => $value ) {
@@ -55,5 +61,8 @@ $headers = "MIME-Version: 1.0" . PHP_EOL .
 fwrite($fd, $value."\r\n");   
 fclose($fd);*/
 
-/*mail($admin_email, adopt($form_subject), $message, $headers );*/
+mail($admin_email, adopt($form_subject), $message, $headers );
 mail($admin_email2, adopt($form_subject), $message, $headers );
+mail($admin_email3, adopt($form_subject), $message, $headers );
+mail($admin_email4, adopt($form_subject), $message, $headers );
+mail($admin_email5, adopt($form_subject), $message, $headers );
