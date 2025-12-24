@@ -415,22 +415,39 @@ input::-webkit-outer-spin-button {
 .aside-main {
 	z-index: 11;
 	position: relative;
-	width: 200px;
-	min-width: 200px;
-	border-right: 1px solid #ebecec;
-	background-color: #fff
+	width: 250px;
+	min-width: 250px;
+	
+}
+.main-container{
+	background: radial-gradient(50% 94.76% at 50% 50%, #B1B1B1 0%, #4B4B4B 100%);
+}
+.main{
+	background: #fff !important;
 }
 
 .aside-main.rolled {
-	width: 56px;
-	min-width: 56px;
+	width: 119px;
+	min-width: 119px;
 	overflow: hidden
 }
 
 .aside-main.rolled .aside_toggler {
 	transform: rotate(180deg);
 	margin-right: 0;
-	right: 12px
+	/*right: 12px*/
+}
+.aside-main.rolled .aside_item{
+	padding-left: 24px;
+	padding-right: 24px;
+	display: flex;
+	justify-content: center;
+}
+.aside-main.rolled .aside_label{
+	width: max-content;
+}
+.aside-main.rolled .aside_label img{
+	margin-right: 0;
 }
 
 .aside-main.rolled .aside_label:after,
@@ -446,13 +463,14 @@ input::-webkit-outer-spin-button {
 }
 
 .logotype {
-	min-height: 87px;
+	min-height: 174px;
 	position: relative;
-	border-bottom: 2px solid #e46914
-}
-
-.logotype figure {
-	padding: 16px 30px
+	padding: 16px 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 75px;
+	padding-bottom: 50px;
 }
 
 .logotype figure img {
@@ -467,8 +485,11 @@ input::-webkit-outer-spin-button {
 	background: transparent;
 	width: 32px;
 	height: 32px;
-	margin-top: -16px;
-	margin-right: -16px
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	right: 4px;
+    top: 115px;
 }
 
 .aside_toggler img,
@@ -481,25 +502,37 @@ input::-webkit-outer-spin-button {
 }
 
 .aside_menu {
-	color: #24272d;
-	font-size: 12px;
-	font-weight: 300;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 700;
 	line-height: 1.16
 }
 
 .aside_item {
 	position: relative;
-	border-bottom: 1px solid #ebecec
+	padding: 0 8px 0 18px;
+	margin-bottom: 8px;
 }
 
 .aside_item:last-of-type {
-	border-bottom: none
+	border-bottom: none;
+	margin-bottom: 0;
 }
 
 .aside_label {
 	display: flex;
 	align-items: center;
-	padding: 12px 20px 12px 16px
+	height: 42px;
+	padding: 0 11px;
+	border-radius: 10px;
+	background: transparent;
+	transition: all 0.2s;
+}
+.aside_label.active{
+	background: rgba(255, 255, 255, 0.45);
+}
+.aside_label:hover {
+	background: rgba(255, 255, 255, 0.45);
 }
 
 .aside_item-accordion .aside_label:after {
@@ -526,7 +559,7 @@ input::-webkit-outer-spin-button {
 	display: block;
 	width: 24px;
 	min-width: 24px;
-	margin-right: 4px
+	margin-right: 16px
 }
 
 .aside_label span {
@@ -636,9 +669,9 @@ input::-webkit-outer-spin-button {
 	}
 }
 
-.header-main {
+/*.header-main {
 	border-bottom: 1px solid #f2f4f8
-}
+}*/
 
 .header_container {
 	display: flex;
@@ -649,7 +682,7 @@ input::-webkit-outer-spin-button {
 .header_box {
 	flex-shrink: 0;
 	display: flex;
-	border-left: 1px solid #f2f4f8
+	/*border-left: 1px solid #f2f4f8*/
 }
 
 .header-message {
@@ -657,8 +690,8 @@ input::-webkit-outer-spin-button {
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	max-width: 56%;
-	color: #f56107;
+	max-width: 100%;
+	color: #4C4C4C;
 	font-size: 14px;
 	line-height: 20px
 }
@@ -687,8 +720,8 @@ input::-webkit-outer-spin-button {
 	justify-content: center;
 	align-items: center;
 	min-height: 55px;
-	padding: 13px 32px;
-	border-right: 1px solid #f2f4f8
+	padding: 13px 0px;
+	/*border-right: 1px solid #f2f4f8*/
 }
 
 .header_item.logout {
@@ -696,7 +729,7 @@ input::-webkit-outer-spin-button {
 }
 
 .header_item.logout a {
-	padding: 15px 32px
+	padding: 15px 0;
 }
 
 .header_item.logout a svg path {
@@ -704,7 +737,7 @@ input::-webkit-outer-spin-button {
 }
 
 .header_item.logout a:hover svg path {
-	stroke: #f57c1d
+	stroke: #616161
 }
 
 .header_link {
