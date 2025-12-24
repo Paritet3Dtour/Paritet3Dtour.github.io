@@ -963,11 +963,11 @@ input::-webkit-outer-spin-button {
 	height: 100%;
 	min-width: 100vw;
 	min-height: 100vh;
-	background-color: #fff;
 	opacity: 0;
 	font-weight: 300;
 	font-size: 18px;
-	line-height: 1.2
+	line-height: 1.2;
+	background: radial-gradient(50% 94.76% at 50% 50%, #B1B1B1 0%, #4B4B4B 100%);
 }
 
 .menu_mobile.active {
@@ -994,17 +994,20 @@ input::-webkit-outer-spin-button {
 	overflow-y: auto
 }
 
-.menu_mobile_list_item {
+/*.menu_mobile_list_item {
 	border-bottom: 1px solid #f2f4f8
-}
+}*/
 
 .menu_mobile_list_label {
 	position: relative;
 	display: flex;
 	align-items: center;
 	padding: 20px;
-	background-color: #fff;
-	transition: all .2s ease-in-out
+	transition: all .2s ease-in-out;
+	background-color: transparent;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 700;
 }
 
 .menu_mobile_list_item-accordion .menu_mobile_list_label {
@@ -1012,7 +1015,7 @@ input::-webkit-outer-spin-button {
 }
 
 .menu_mobile_list_label-gray {
-	background-color: #f5f5f5
+	background-color: rgba(255, 255, 255, 0.45);
 }
 
 .menu_mobile_list_item-accordion .menu_mobile_list_label:after {
@@ -1039,7 +1042,7 @@ input::-webkit-outer-spin-button {
 	display: block;
 	width: 24px;
 	min-width: 24px;
-	margin-right: 4px
+	margin-right: 16px
 }
 
 .menu_mobile_list_links {
@@ -1157,7 +1160,7 @@ input::-webkit-outer-spin-button {
 	margin-top: 10px;
 	font-size: 14px;
 	line-height: 20px;
-	color: #f56107
+	color: #fff;
 }
 
 .banner_block {
