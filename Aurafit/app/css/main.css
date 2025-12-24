@@ -1219,6 +1219,7 @@ body.open-menu .menu-container{
   height: 100vh;
   transform: translateX(101%);
   transition: all 0.4s;
+  overflow: auto;
 }
 .menu-container_nav{
   display: flex;
@@ -1538,6 +1539,14 @@ body.open-menu .menu-container{
   line-height: 32px;
   font-weight: 400;
   margin-bottom: 12px;
+}
+
+.directions.second.schedule .directions_item:nth-child(1) .directions_item_preview{
+  background-position: center -21px;
+}
+
+.directions.second.schedule .directions_item:nth-child(1) .directions_item_preview{
+  background-position: center -21px;
 }
 
 
@@ -2407,15 +2416,18 @@ body.open-menu .menu-container{
   .menu-container_list a{
     font-size: 24px;
     line-height: 28px;
-    padding: 20px 0;
+    padding: 16px 0;
     margin: 0;
+  }
+  .menu-container_list a:hover{
+    color: #fff;
   }
   .menu-container_list{
     margin-top: -20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .menu-container_bottom{
-    margin-top: auto;
+    margin-top: 5px;
   }
   .menu-container__tg{
     display: none;
@@ -2499,4 +2511,96 @@ body.open-menu .menu-container{
     height: 218px;
     border-radius: 24px;
   }
+  .directions.second.schedule .directions_item:nth-child(1) .directions_item_preview{
+    background-position: center -41px;
+  }
 }
+
+/** NOTIFICATION **/
+.notification {
+  background-color: #32363E;
+  color: white;
+  border-radius: 12px;
+  transition: opacity 0.5s ease;
+  position: fixed;
+  bottom: 4px;
+  right: 12px;
+  border: 1px solid #4A515C;
+  max-width: 400px;
+  padding: 16px 40px 12px 44px;
+  overflow: hidden;
+  z-index: 10;
+}
+  .notification::after{
+    content: '';
+    position: absolute;
+    left: 14px;
+    top: 18px;
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/circle-check-icon-16.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+  .notification.progress {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .notification.progress::after{
+    top: 21px;
+  }
+  .notification.progress .progress-circle{
+    top: 23px;
+  }
+  .notification .heading {
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .notification .descr {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #A0A5B1;
+  }
+  .notification .close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 28px;
+    height: 28px;
+    background-image: url('../img/close-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center center;
+  }
+  .notification .progress-bar {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 3px;
+    background-color: #32D583;
+    width: 0%;
+    transition: width linear;
+  }
+  .notification .progress-circle {
+    position: absolute;
+    top: 19px;
+    right: 18px;
+  }
+  .notification .background {
+    fill: none;
+    stroke-width: 2;
+  }
+  .notification .progress {
+    fill: none;
+    stroke-width: 2;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    transition: stroke-dashoffset 0.05s linear;
+  }
