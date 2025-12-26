@@ -263,6 +263,22 @@ $(document).ready(function () {
   }
 
 
+  $('.services_card').on('click', function() {
+    const $card = $(this);
+    
+    if ($card.find('.services_card_toggler').length === 0) {
+      return;
+    }
+    
+    const isActive = $card.hasClass('active');
+    
+    $('.services_card').removeClass('active');
+    
+    if (!isActive) {
+      $card.addClass('active');
+    }
+  });
+
   $('a[href*="#"], button[href*="#"]')
     .not('[href="#"]')
     .not('[href="#0"]')
@@ -296,5 +312,31 @@ $(document).ready(function () {
         }
       }
     });
+
+  const $header = $('.header');
+  let ticking = false;
+  
+  function handleScroll() {
+    const scrollTop = $(window).scrollTop();
+    
+    if (scrollTop > 0) {
+      $header.addClass('scrolled');
+    } else {
+      $header.removeClass('scrolled');
+    }
+    
+    ticking = false;
+  }
+  
+  function onScroll() {
+    if (!ticking) {
+      window.requestAnimationFrame(handleScroll);
+      ticking = true;
+    }
+  }
+  
+  handleScroll();
+  
+  $(window).on('scroll', onScroll);
 
 });
