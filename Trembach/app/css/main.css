@@ -712,7 +712,7 @@ a.contacts_item_descr{
   position: static;
   padding-top: 20px;
   justify-content: center;
-  display: block;
+  display: none;
 }
 .swiper-pagination-bullet{
   width: 10px;

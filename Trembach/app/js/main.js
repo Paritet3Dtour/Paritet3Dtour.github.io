@@ -230,12 +230,37 @@ $(document).ready(function () {
 
   $("a[rel=gallery]").fancybox({});
 
-  let sercivesSwiper = new Swiper(".sercives_slider", {
-    loop: false,
-    roundLengths: true,
-    slidesPerView: "auto",
-    /*effect: "fade",*/
-    spaceBetween: 12,
+  let sercivesSwiper = null;
+  
+  function initServicesSwiper() {
+    const windowWidth = $(window).width();
+    const sliderElement = document.querySelector(".sercives_slider");
+    
+    if (windowWidth < 992 && sliderElement) {
+      if (!sercivesSwiper) {
+        sercivesSwiper = new Swiper(".sercives_slider", {
+          loop: false,
+          roundLengths: true,
+          slidesPerView: "auto",
+          spaceBetween: 12,
+        });
+      }
+    } else {
+      if (sercivesSwiper) {
+        sercivesSwiper.destroy(true, true);
+        sercivesSwiper = null;
+      }
+    }
+  }
+  
+  initServicesSwiper();
+  
+  let resizeTimeout;
+  $(window).on('resize', function() {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(function() {
+      initServicesSwiper();
+    }, 250);
   });
 
   let aboutSwiper = new Swiper(".about_slider", {
