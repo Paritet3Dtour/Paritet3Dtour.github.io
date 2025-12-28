@@ -724,10 +724,136 @@ a.contacts_item_descr{
   background-color: #353535;
 }
 
+.header_mob{
+  display: none;
+}
+
+.mobile_menu{
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  backdrop-filter: blur(12px);
+  transition: all 0.2s;
+  transform: translateX(-100%);
+}
+.mobile_menu.active{
+  transform: translateX(0);
+}
+.mobile_menu_wrapp{
+  width: 302px;
+  height: 100%;
+  background-color: #fff;
+  padding: 12px 12px 40px 12px;
+  display: flex;
+  flex-direction: column;
+}
+.mobile_menu_top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile_menu .header_logo .heading{
+  color: #353535;
+}
+.mobile_menu .header_logo .descr{
+  color: #82858C;
+}
+.mobile_menu .header_logo .icon path{
+  fill: #353535;
+}
+.mobile_menu_close{
+  background: transparent;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  flex-shrink: 0;
+  margin-left: 20px;
+  border: none;
+  cursor: pointer;
+}
+.mobile_menu_list{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.mobile_menu_list a{
+  margin-bottom: 40px;
+  font-size: 32px;
+  line-height: 40px;
+  color: #353535;
+  font-weight: 700;
+  display: block;
+}
+.mobile_menu_list a:last-child{
+  margin-bottom: 0;
+}
+
+.mobile_menu .header_mob_phone{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 24px;
+  font-weight: 700;
+  color: #353535;
+  margin-bottom: 50px;
+}
+.mobile_menu .header_mob_phone svg{
+  flex-shrink: 0;
+  margin-right: 8px;
+}
+.mobile_menu .contacts_socials{
+  margin: 0;
+  padding: 0;
+}
+.mobile_menu_bottom{
+  margin-top: auto;
+}
+
 @media screen and (max-width: 992px) {
-  .header{
+  .header_menu{
     display: none;
   }
+  .header_contacts{
+    display: none;
+  }
+  .header_mob{
+    display: flex;
+  }
+  .header_toggler{
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    margin-left: 12px;
+    outline: none;
+    border: none;
+  }
+  .header_logo .icon svg{
+    width: 28px;
+  }
+  .header_logo .heading{
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 4px;
+  }
+  .header_logo .descr{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .header_wrapp{
+    padding: 16px 0;
+  }
+  .header.scrolled .header_wrapp{
+    padding: 10px 0;
+  }
+  .header.scrolled .header_mob_phone svg path{
+    stroke: #353535;
+  }
+  .header.scrolled .header_toggler svg rect{
+    fill: #353535;
+  }
+
   .mainContainer{
     padding: 0 12px;
   }
