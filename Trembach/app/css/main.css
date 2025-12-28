@@ -712,6 +712,7 @@ a.contacts_item_descr{
   position: static;
   padding-top: 20px;
   justify-content: center;
+  display: block;
 }
 .swiper-pagination-bullet{
   width: 10px;
@@ -880,5 +881,8 @@ a.contacts_item_descr{
   .services_submit{
     width: 100%;
     margin-top: 0;
+  }
+  .about_wrapp .swiper-pagination{
+    display: flex;
   }
 }
