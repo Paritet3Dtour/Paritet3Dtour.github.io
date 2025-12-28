@@ -1021,6 +1021,8 @@ a.contacts_item_descr{
 
   .services{
     padding: 40px 0;
+    width: 100%;
+    overflow: hidden;
   }
   .services_card{
     width: 305px;
