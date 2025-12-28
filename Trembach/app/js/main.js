@@ -316,11 +316,22 @@ $(document).ready(function () {
     }
   });
 
+  $('.header_toggler').on('click', function() {
+    $('.header').addClass('hidden');
+    $('.mobile_menu').addClass('active');
+  });
+
+  $('.mobile_menu_close').on('click', function() {
+    $('.header').removeClass('hidden');
+    $('.mobile_menu').removeClass('active');
+  });
+
   $('a[href*="#"], button[href*="#"]')
     .not('[href="#"]')
     .not('[href="#0"]')
     .click(function (event) {
-      $(".header").removeClass("active");
+      $(".mobile_menu").removeClass("active");
+      $(".header").removeClass("hidden");
       if (
         location.pathname.replace(/^\//, "") ==
           this.pathname.replace(/^\//, "") &&
