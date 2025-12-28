@@ -764,6 +764,7 @@ a.contacts_item_descr{
   backdrop-filter: blur(12px);
   transition: all 0.2s;
   transform: translateX(-100%);
+  display: none;
 }
 .mobile_menu.active{
   transform: translateX(0);
@@ -838,6 +839,9 @@ a.contacts_item_descr{
 }
 
 @media screen and (max-width: 992px) {
+  .mobile_menu{
+    display: block;
+  }
   .header_menu{
     display: none;
   }

@@ -326,6 +326,20 @@ $(document).ready(function () {
     $('.mobile_menu').removeClass('active');
   });
 
+  $(document).on('click', function(e) {
+    const $mobileMenu = $('.mobile_menu');
+    const $mobileMenuWrapp = $('.mobile_menu_wrapp');
+    
+    if ($mobileMenu.hasClass('active')) {
+      if (!$mobileMenuWrapp.is(e.target) && 
+          $mobileMenuWrapp.has(e.target).length === 0 &&
+          !$(e.target).closest('.header_toggler').length) {
+        $('.header').removeClass('hidden');
+        $mobileMenu.removeClass('active');
+      }
+    }
+  });
+
   $('a[href*="#"], button[href*="#"]')
     .not('[href="#"]')
     .not('[href="#0"]')
