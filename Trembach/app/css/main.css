@@ -1012,3 +1012,32 @@ a.contacts_item_descr{
     display: flex;
   }
 }
+
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Небольшая задержка для карточек */
+.services_card.animate-on-scroll {
+  transition-delay: 0s;
+}
+
+.services_card.animate-on-scroll.animate-in {
+  transition-delay: 0s;
+}
+
+.reviews_card.animate-on-scroll {
+  transition-delay: 0s;
+}
+
+.reviews_card.animate-on-scroll.animate-in {
+  transition-delay: 0s;
+}

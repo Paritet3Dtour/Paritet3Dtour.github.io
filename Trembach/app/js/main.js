@@ -387,4 +387,35 @@ $(document).ready(function () {
   
   $(window).on('scroll', onScroll);
 
+  const animateOnScroll = () => {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    const elementsToAnimate = document.querySelectorAll(
+      'section:not(.banner), .blockquote, .services_card, .reviews_card, .contacts_item'
+    );
+
+    elementsToAnimate.forEach(el => {
+      el.classList.add('animate-on-scroll');
+      observer.observe(el);
+    });
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', animateOnScroll);
+  } else {
+    animateOnScroll();
+  }
+
 });
