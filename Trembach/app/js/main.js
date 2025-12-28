@@ -230,6 +230,14 @@ $(document).ready(function () {
 
   $("a[rel=gallery]").fancybox({});
 
+  let sercivesSwiper = new Swiper(".sercives_slider", {
+    loop: false,
+    roundLengths: true,
+    slidesPerView: "auto",
+    /*effect: "fade",*/
+    spaceBetween: 12,
+  });
+
   let aboutSwiper = new Swiper(".about_slider", {
     loop: false,
     roundLengths: true,
@@ -239,6 +247,10 @@ $(document).ready(function () {
     navigation: {
       nextEl: ".about_slider-wrapp .about_slider_nav .next",
       prevEl: ".about_slider-wrapp .about_slider_nav .prev",
+    },
+    pagination: {
+      el: ".about_slider-wrapp .swiper-pagination",
+      clickable: true
     },
   });
 
