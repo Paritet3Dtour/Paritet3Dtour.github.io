@@ -4609,7 +4609,21 @@ input[disabled] {
 	z-index: 10;
 	padding-right: 42px;
 	padding-bottom: 25px;
-	width: 100%
+	width: calc(100% - 250px)
+}
+.aside-main.rolled + .main .application-fixed-bottom{
+	width: calc(100% - 119px);
+}
+
+@media screen and (max-width: 1100px){
+	.application-fixed-bottom{
+		width: 100%;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.aside-main.rolled + .main .application-fixed-bottom{
+		width: 100%;
+	}
 }
 
 .application-fixed-bottom .total {
