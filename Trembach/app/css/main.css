@@ -622,6 +622,7 @@ a.contacts_item_descr{
   align-items: center;
   justify-content: center;
   margin-right: 16px;
+  cursor: pointer;
 }
 .contacts_socials_item:last-child{
   margin-right: 0;

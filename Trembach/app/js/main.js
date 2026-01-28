@@ -218,6 +218,22 @@ function initMap() {
 
 $(document).ready(function () {
 
+  $(document).on('click', '.viber-btn', function () {
+  const phone = $(this).data('phone');
+  if (!phone) return;
+
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    window.location.href = `viber://chat?number=%2B${phone}`;
+  } else {
+    window.open(`https://viber.me/${phone}`, '_blank');
+  }
+});
+
+
+
+
   if (typeof google !== 'undefined' && google.maps) {
     initMap();
   } else {
