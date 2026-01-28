@@ -477,10 +477,10 @@ button{
   gap: 24px;
 }
 .reviews_slider_one .reviews_slider_track{
-  animation: scroll-left 40s linear infinite;
+  animation: scroll-left 80s linear infinite;
 }
 .reviews_slider_two .reviews_slider_track{
-  animation: scroll-right 40s linear infinite;
+  animation: scroll-right 80s linear infinite;
 }
 .reviews_slider_one.paused .reviews_slider_track,
 .reviews_slider_two.paused .reviews_slider_track{
