@@ -315,6 +315,24 @@ $(document).ready(function () {
     });
   }
 
+  const reviewsCards = document.querySelectorAll('.reviews_card');
+  reviewsCards.forEach(card => {
+    const slider = card.closest('.reviews_slider');
+    if (!slider) return;
+
+    card.addEventListener('touchstart', function(e) {
+      slider.classList.add('paused');
+    }, { passive: true });
+
+    card.addEventListener('touchend', function(e) {
+      slider.classList.remove('paused');
+    }, { passive: true });
+
+    card.addEventListener('touchcancel', function(e) {
+      slider.classList.remove('paused');
+    }, { passive: true });
+  });
+
 
   $('.services_card').on('click', function() {
     const $card = $(this);
