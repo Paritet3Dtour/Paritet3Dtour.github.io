@@ -495,6 +495,11 @@ button{
   justify-content: space-between;
   width: 568px;
   flex-shrink: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
 }
 .reviews_card_descr{
   font-size: 20px;
