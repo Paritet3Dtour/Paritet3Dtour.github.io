@@ -1079,3 +1079,7 @@ a.contacts_item_descr{
 .reviews_card.animate-on-scroll.animate-in {
   transition-delay: 0s;
 }
+
+#current-year{
+  vertical-align: baseline;
+}
