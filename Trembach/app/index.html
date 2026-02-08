@@ -958,7 +958,10 @@
 
       <section class="footer-bottom">
          <div class="mainContainer">
-            © 2005— 2025 Трембач В. М.
+            © 2005 — <span id="current-year"></span> Трембач В. М.
+            <script>
+              document.getElementById('current-year').textContent = new Date().getFullYear();
+            </script>
          </div>
       </section>
 
