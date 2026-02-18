@@ -561,6 +561,7 @@ button{
 .contacts_container #google-map{
   width: 100%;
   height: 100%;
+  height: 740px;
 }
 
 .contacts_container{
@@ -1048,6 +1049,9 @@ a.contacts_item_descr{
   }
   .about_wrapp .swiper-pagination{
     display: flex;
+  }
+  .contacts_container #google-map{
+    height: 400px;
   }
 }
 

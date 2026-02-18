@@ -1,7 +1,18 @@
 function initMap() {
   const address = "вул. Пирогова, буд. 2 / вул. Б. Хмельницького, буд. 37, під'їзд № 1, офіс № 1, м. Київ";
   
-  const location = { lat: 50.4501, lng: 30.5234 }; 
+  const location = { lat:  50.446830148088665, lng: 30.506603855820302 };
+
+
+  const centerOffset = { lat: -0.0005, lng: -0.004 };
+  const mapCenter = {
+    lat: location.lat + centerOffset.lat,
+    lng: location.lng + centerOffset.lng
+  };
+
+  function getMapCenter() {
+    return window.innerWidth <= 992 ? location : mapCenter;
+  }
   
   const mapStyles = [
     {
@@ -173,13 +184,13 @@ function initMap() {
   
   const mapElement = document.getElementById('google-map');
   if (!mapElement) {
-    console.error('Элемент #google-map не найден');
+    console.error('Element #google-map not found');
     return;
   }
 
   const map = new google.maps.Map(mapElement, {
     zoom: 17,
-    center: location,
+    center: getMapCenter(),
     styles: mapStyles,
     disableDefaultUI: false,
     zoomControl: true,
