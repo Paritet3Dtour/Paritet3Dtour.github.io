@@ -384,6 +384,11 @@ button{
   left: 0;
   top: 0;
 }
+.about_slider .swiper-slide.insta-slide img{
+  height: 400px;
+  width: 100%;
+  object-fit: contain;
+}
 
 .about_content{
   width: 100%;
@@ -708,6 +713,9 @@ a.contacts_item_descr{
     width: 500px;
     margin-right: 40px;
   }
+  .about_slider .swiper-slide.insta-slide img{
+    height: 354px;
+  }
   .about_slider .swiper-slide img{
     width: 100%;
     height: auto;
@@ -938,6 +946,14 @@ a.contacts_item_descr{
   .about_slider-wrapp{
     width: 100%;
     margin-right: 0;
+  }
+  .about_slider .swiper-slide.insta-slide img{
+    height: 260px;
+  }
+  .about_slider .swiper-slide.insta-slide{
+    display: flex;
+    align-items: center;
+    height: auto;
   }
   .about_slider .swiper-slide .icon svg{
     width: 103px;
