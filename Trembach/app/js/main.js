@@ -1,17 +1,26 @@
 function initMap() {
   const address = "вул. Пирогова, буд. 2 / вул. Б. Хмельницького, буд. 37, під'їзд № 1, офіс № 1, м. Київ";
   
-  const location = { lat:  50.446830148088665, lng: 30.506603855820302 };
+  const location = { lat:  50.447010148088675, lng: 30.506703855820302 };
 
 
-  const centerOffset = { lat: -0.0005, lng: -0.004 };
+  const centerOffset = { lat: -0.0009, lng: -0.004 };
   const mapCenter = {
     lat: location.lat + centerOffset.lat,
     lng: location.lng + centerOffset.lng
   };
+  const centerOffsetMobile = { lat: -0.0009, lng: -0.001 };
+  const mapCenterMobile = {
+    lat: location.lat + centerOffsetMobile.lat,
+    lng: location.lng + centerOffsetMobile.lng
+  };
 
   function getMapCenter() {
-    return window.innerWidth <= 992 ? location : mapCenter;
+    return window.innerWidth <= 992 ? mapCenterMobile : mapCenter;
+  }
+
+  function getMapZoom() {
+    return window.innerWidth <= 992 ? 16 : 17;
   }
   
   const mapStyles = [
@@ -189,7 +198,7 @@ function initMap() {
   }
 
   const map = new google.maps.Map(mapElement, {
-    zoom: 17,
+    zoom: getMapZoom(),
     center: getMapCenter(),
     styles: mapStyles,
     disableDefaultUI: false,
@@ -224,6 +233,23 @@ function initMap() {
 
   marker.addListener('click', () => {
     infoWindow.open(map, marker);
+  });
+
+  // Second metro marker
+  const locationBelow = { lat:  50.444370, lng: 30.505913 };
+
+  const markerIconSvg = '<svg width="54" height="33" viewBox="0 0 54 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.0541 0L0 33H10.9459L17.027 20.6866L27 33L36.973 20.6866L43.0541 33H54L37.9459 0L27 15.2687L16.0541 0Z" fill="#FF0000"/></svg>';
+  const markerIconUrl = 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(markerIconSvg);
+
+  const markerBelow = new google.maps.Marker({
+    position: locationBelow,
+    map: map,
+    icon: {
+      url: markerIconUrl,
+      scaledSize: new google.maps.Size(28, 28),
+      anchor: new google.maps.Point(14, 28)
+    },
+    animation: google.maps.Animation.DROP
   });
 }
 
